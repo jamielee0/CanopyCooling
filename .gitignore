@@ -73,3 +73,7 @@ Thumbs.db
 *.swp
 .idea/
 .vscode/
+
+# ---- generated figures (regenerated from code; not committed) ----
+figures/*
+!figures/README.md
