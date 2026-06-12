@@ -11,10 +11,12 @@ Pipeline
 33. Using the Copernicus Climate Data Store API (cdsapi), request four ERA5-Land
     hourly variables over the config bounding box, for ALL hours, for the warm
     season 1 June - 30 September of every year 2018-2024 (the long record is
-    needed for the Section 11 climatology). The request is CHUNKED BY YEAR — one
-    CDS job per year — because CDS requests queue and a per-year granularity is
-    restartable and keeps each job comfortably inside the request-size limits.
-    Each raw NetCDF is saved to data/raw/era5land/ and recorded in the manifest.
+    needed for the Section 11 climatology). The request is CHUNKED BY CALENDAR
+    MONTH — one CDS job per (year, month) — because CDS requests queue AND enforce
+    a per-request cost limit: a whole year of 4 variables x hourly (~11.7k fields)
+    is rejected as "too large", whereas one month (~2.9k fields) passes
+    comfortably. Per-month chunks are also restartable. Each raw NetCDF is saved
+    to data/raw/era5land/ and recorded in the manifest.
         2m_temperature                (t2m)   - air temperature        [K]
         2m_dewpoint_temperature       (d2m)   - dewpoint temperature   [K]
         volumetric_soil_water_layer_1 (swvl1) - soil moisture 0-7 cm   [m3/m3]
@@ -160,16 +162,18 @@ def area_for_cdsapi() -> list[float]:
     return [max_lat, min_lon, min_lat, max_lon]
 
 
-def build_cds_request(year: int) -> dict:
-    """Build the CDS API request dict for one warm season of one year.
+def build_cds_request(year: int, month: str) -> dict:
+    """Build the CDS API request dict for one calendar month of one year.
 
-    All four variables, every day of June-September, every hour, clipped to the
-    study area; NetCDF, unarchived so a single .nc comes back.
+    All four variables, every day, every hour of the month, clipped to the study
+    area; NetCDF, unarchived so a single .nc comes back. One month of 4 variables
+    at hourly resolution (~2.9k fields) sits comfortably under the CDS per-request
+    cost limit (a whole year does not).
     """
     return {
         "variable": list(CDS_VARIABLES),
         "year": str(year),
-        "month": season_months(),
+        "month": [month],
         "day": all_days(),
         "time": all_hours(),
         "area": area_for_cdsapi(),
@@ -256,11 +260,11 @@ def append_to_manifest(rows: Sequence[dict], manifest_csv: Path | None = None) -
     log.info("manifest: appended %d row(s) -> %s", len(new_rows), manifest_csv)
 
 
-def _manifest_row(path: Path, year: int) -> dict:
-    """Build the manifest row for one downloaded raw year file."""
+def _manifest_row(path: Path, year: int, month: str) -> dict:
+    """Build the manifest row for one downloaded raw (year, month) file."""
     today = _dt.datetime.now(_dt.timezone.utc).date().isoformat()
     return {
-        "source": f"{PROVIDER}: {DATASET} (warm season {year})",
+        "source": f"{PROVIDER}: {DATASET} ({year}-{month})",
         "dataset": DATASET_ID,
         "filename": path.name,
         "download_date": today,
@@ -331,9 +335,9 @@ def _ensure_unarchived_netcdf(path: Path) -> Path:
     return path
 
 
-def year_target(raw_dir: Path, year: int) -> Path:
-    """Local path for one downloaded year file."""
-    return raw_dir / f"era5land_{year}.nc"
+def chunk_target(raw_dir: Path, year: int, month: str) -> Path:
+    """Local path for one downloaded (year, month) file."""
+    return raw_dir / f"era5land_{year}_{month}.nc"
 
 
 def _is_valid_netcdf(path: Path) -> bool:
@@ -345,55 +349,57 @@ def _is_valid_netcdf(path: Path) -> bool:
         return False
 
 
-def download_year(client, year: int, raw_dir: Path, force: bool = False) -> Path:
-    """Submit one per-year CDS request, wait in the queue, and save the NetCDF.
+def download_chunk(client, year: int, month: str, raw_dir: Path,
+                   force: bool = False) -> Path:
+    """Submit one (year, month) CDS request, wait in the queue, save the NetCDF.
 
-    Restartable: an already-present, openable year file is reused unless --force.
+    Restartable: an already-present, openable chunk file is reused unless --force.
     """
-    target = year_target(raw_dir, year)
+    target = chunk_target(raw_dir, year, month)
     if target.exists() and not force and _is_valid_netcdf(target):
-        log.info("year %d: reusing existing %s (%.1f MB)", year, target.name,
+        log.info("%d-%s: reusing existing %s (%.1f MB)", year, month, target.name,
                  target.stat().st_size / 1e6)
         return target
 
-    request = build_cds_request(year)
-    log.info("year %d: submitting CDS request (queues at CDS — may take a while) "
-             "vars=%d months=%s area=%s", year, len(CDS_VARIABLES),
-             ",".join(season_months()), area_for_cdsapi())
+    request = build_cds_request(year, month)
+    log.info("%d-%s: submitting CDS request (queues at CDS — may take a while) "
+             "vars=%d area=%s", year, month, len(CDS_VARIABLES), area_for_cdsapi())
     client.retrieve(DATASET, request, str(target))       # blocks: queue -> run -> download
     _ensure_unarchived_netcdf(target)
-    log.info("year %d: downloaded %s (%.1f MB)", year, target.name,
+    log.info("%d-%s: downloaded %s (%.1f MB)", year, month, target.name,
              target.stat().st_size / 1e6)
     return target
 
 
 def download_all(year_list: Sequence[int], raw_dir: Path, force: bool = False) -> list[Path]:
-    """Download every requested year, recording each in the manifest as it lands.
+    """Download every (year, month) chunk, recording each in the manifest as it lands.
 
-    One year failing (queue error, transient CDS outage) does not abort the rest;
+    One chunk failing (queue error, transient CDS outage) does not abort the rest;
     failures are logged and the run continues, so a re-run fills only the gaps.
     """
     raw_dir.mkdir(parents=True, exist_ok=True)
     client = make_client()
+    months = season_months()
+    chunks = [(y, m) for y in year_list for m in months]
     got: list[Path] = []
-    for i, year in enumerate(year_list, 1):
-        log.info("=== year %d (%d/%d) ===", year, i, len(year_list))
+    for i, (year, month) in enumerate(chunks, 1):
+        log.info("=== %d-%s (%d/%d) ===", year, month, i, len(chunks))
         try:
-            path = download_year(client, year, raw_dir, force=force)
+            path = download_chunk(client, year, month, raw_dir, force=force)
         except Exception as exc:  # noqa: BLE001 - report and keep going
-            log.error("year %d FAILED: %s: %s", year, type(exc).__name__, exc)
+            log.error("%d-%s FAILED: %s: %s", year, month, type(exc).__name__, exc)
             continue
-        append_to_manifest([_manifest_row(path, year)])
+        append_to_manifest([_manifest_row(path, year, month)])
         got.append(path)
-    if len(got) != len(year_list):
-        log.warning("downloaded %d of %d year(s); the climatology will be "
+    if len(got) != len(chunks):
+        log.warning("downloaded %d of %d month-chunk(s); the record will be "
                     "incomplete until the rest are fetched (re-run to fill gaps).",
-                    len(got), len(year_list))
+                    len(got), len(chunks))
     return got
 
 
-def discover_local_years(raw_dir: Path) -> list[Path]:
-    """All era5land_<year>.nc files already present locally (for --skip-download)."""
+def discover_local_chunks(raw_dir: Path) -> list[Path]:
+    """All era5land_*.nc files already present locally (for --skip-download)."""
     return sorted(raw_dir.glob("era5land_*.nc"))
 
 
@@ -552,8 +558,8 @@ def run(
     yrs = list(year_list) if year_list else years()
 
     if skip_download:
-        paths = discover_local_years(raw_dir)
-        log.info("--skip-download: found %d local year file(s) in %s",
+        paths = discover_local_chunks(raw_dir)
+        log.info("--skip-download: found %d local chunk file(s) in %s",
                  len(paths), raw_dir)
         if not paths:
             raise SystemExit(f"No local ERA5-Land files in {raw_dir}; run without "

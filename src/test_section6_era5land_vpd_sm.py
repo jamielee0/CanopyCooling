@@ -79,13 +79,14 @@ def test_request_builder() -> None:
     check(sec6.area_for_cdsapi() == [33.92, -112.55, 33.20, -111.55],
           "area reordered to [North, West, South, East]")
 
-    req = sec6.build_cds_request(2023)
+    req = sec6.build_cds_request(2023, "07")
     check(req["variable"] == [
         "2m_temperature", "2m_dewpoint_temperature",
         "volumetric_soil_water_layer_1", "volumetric_soil_water_layer_2"],
         "the four ERA5-Land variables requested, in order")
     check(req["year"] == "2023", "year stringified")
-    check(req["month"] == ["06", "07", "08", "09"], "request months Jun-Sep")
+    check(req["month"] == ["07"], "request is one calendar month (cost-limit chunk)")
+    check(len(req["day"]) == 31, "request asks for all days of the month")
     check(len(req["time"]) == 24, "request asks for all hours")
     check(req["data_format"] == "netcdf", "data_format netcdf")
     check(req["download_format"] == "unarchived", "download_format unarchived (single .nc)")
@@ -182,14 +183,14 @@ def test_manifest_append() -> None:
 def test_manifest_row_and_checksum() -> None:
     print("\n[manifest row + streaming checksum]")
     with tempfile.TemporaryDirectory() as d:
-        p = Path(d) / "era5land_2023.nc"
+        p = Path(d) / "era5land_2023_07.nc"
         p.write_bytes(b"not-really-netcdf-but-fine-for-a-checksum")
         import hashlib
         check(sec6.sha256_file(p) == hashlib.sha256(p.read_bytes()).hexdigest(),
               "streaming sha256 matches hashlib")
-        row = sec6._manifest_row(p, 2023)
+        row = sec6._manifest_row(p, 2023, "07")
         check(set(row) == set(sec6._MANIFEST_COLUMNS), "row has exactly the schema keys")
-        check(row["dataset"] == sec6.DATASET_ID and row["filename"] == "era5land_2023.nc",
+        check(row["dataset"] == sec6.DATASET_ID and row["filename"] == "era5land_2023_07.nc",
               "row dataset + filename correct")
         check(row["checksum"].startswith("sha256:"), "checksum tagged sha256:")
 
