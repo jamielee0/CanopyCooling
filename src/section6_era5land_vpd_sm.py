@@ -485,7 +485,19 @@ def compute_vpd_sm(ds: "xr.Dataset") -> "xr.Dataset":
 
 
 def save_interim(ds: "xr.Dataset", interim_dir: Path) -> Path:
-    """Save the hourly VPD + SM dataset to data/interim/ as NetCDF."""
+    """Save the hourly VPD + SM dataset to data/interim/ as NetCDF.
+
+    Why the sys.modules line: xarray.to_netcdf calls dask's get_scheduler, which
+    calls _distributed_available() -> ``from distributed import Client``. On this
+    Windows box that import dies with ssl.SSLError (a malformed certificate in the
+    Windows trust store breaks tornado's module-level SSL init). dask only catches
+    ImportError there, so the SSLError propagates and crashes the write. We never
+    use distributed (the data is a few MB), so park a sentinel in sys.modules that
+    turns the probe into a *caught* ImportError, and dask falls back to a local
+    scheduler.
+    """
+    sys.modules.setdefault("distributed", None)
+
     interim_dir.mkdir(parents=True, exist_ok=True)
     out = interim_dir / INTERIM_NAME
     encoding = {v: {"zlib": True, "complevel": 4} for v in ("vpd", "sm")}
