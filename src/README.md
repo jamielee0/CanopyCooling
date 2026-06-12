@@ -58,6 +58,26 @@ utilities. Importable as a package alongside `config.py`.
   `nodata=0`; for the categorical layer 0 = "no class" (correct), but for
   impervious/canopy 0 % is a **valid** value, so those two are read unmasked —
   masking them would silently drop every 0 % cell and bias the mean upward.
+- `section7_precip_drought.py` — Section 7: precipitation history and drought
+  state. PRISM daily **ppt** (2018–2024, web service `get/us/4km`, CONUS GeoTIFF
+  clipped to the bbox) → **antecedent precipitation** rolling totals over the
+  **preceding** 30/60/90 days; **GRIDMET DROUGHT** (`pdsi`, `spei30d`, `spei90d`)
+  pulled from Earth Engine with `geemap.download_ee_image` at native scale (no
+  Drive); PRISM mean air temperature **tmean** for the analysis seasons (an
+  independent cross-check on ERA5-Land air temperature in Section 11). Every layer
+  is reprojected to EPSG:32612 and resampled to the 70 m grid (**bilinear** — all
+  are continuous) as Zarr cubes. `test_section7_precip_drought.py` covers its pure
+  logic. Run: `python src/section7_precip_drought.py` (`--skip-drought` /
+  `--skip-prism` to run one source, `--skip-download` to reuse `data/raw/prism/`,
+  `--years 2023` to grid one season).
+
+  **Robustness (download-heavy job on a flaky host).** Each PRISM daily file is
+  rate-limited to twice per IP per day; the downloader is resumable and a
+  rate-limited day **self-heals via the 800 m endpoint** (a different file)
+  averaged back onto the 4 km clip grid. If the host's SSL trust store is corrupt
+  (which breaks every HTTPS client), it transparently falls back to certifi's CA
+  bundle for that run. The coarse fields (PRISM ~4 km, GRIDMET ~4.6 km) smoothed
+  onto 70 m are **regional context**, not block-scale detail.
 - `section8_neighborhood_tree.py` — Section 8: neighborhood attributes (ACS income
   & %-people-of-colour, CDC SVI), the Phoenix tree inventory with functional types,
   and Microsoft building footprints — all for the study area.

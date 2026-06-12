@@ -32,6 +32,24 @@ Current contents (regenerate from `src/`):
   `../processed/reference_grid.tif`. Raw 30 m downloads live in
   `../raw/landcover/` and are recorded in `../manifest.csv`.
 
+Section 7 (precipitation history + drought state):
+- `prism_antecedent_precip_70m.zarr` — antecedent precipitation, vars `ppt_30d` /
+  `ppt_60d` / `ppt_90d` (**mm**, float32), one slice per warm-season day 2018–2024
+  (854). Rolling totals over the **preceding** 30/60/90 days, computed from the full
+  PRISM daily series (the Jan-2018 lead-in makes the 90-day window complete from
+  each season's start). `ppt_90d` ≥ `ppt_60d` ≥ `ppt_30d` by construction.
+- `prism_tmean_70m.zarr` — PRISM mean air temperature (`tmean`, **°C**), warm-season
+  days 2018–2024 (854); an independent cross-check on the ERA5-Land air temperature
+  (Section 11).
+- `gridmet_drought_70m.zarr` — GRIDMET DROUGHT (`pdsi`, `spei30d`, `spei90d`), one
+  slice per warm-season pentad 2018–2024 (168).
+
+  All three are **bilinear** resamples of coarse regional fields (PRISM ~4 km,
+  GRIDMET ~4.6 km) onto the 70 m grid — regional context, not block-scale detail —
+  in EPSG:32612, aligned to `../processed/reference_grid.tif` (reopen with
+  `decode_coords="all"` to recover the CRS). Raw daily/pentad clips live in
+  `../raw/prism/` and `../raw/drought/`, recorded in `../manifest.csv`.
+
 Section 8 (neighborhood + tree attributes):
 - `neighborhood_blockgroups_32612.parquet` — Maricopa block-group polygons
   (EPSG:32612) with `median_income` (ACS B19013_001E), `pct_poc` (%-people-of-colour
