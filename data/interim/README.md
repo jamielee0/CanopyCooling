@@ -31,3 +31,27 @@ Current contents (regenerate from `src/`):
   percent", "above 70 percent" — are in percent). All three align exactly to
   `../processed/reference_grid.tif`. Raw 30 m downloads live in
   `../raw/landcover/` and are recorded in `../manifest.csv`.
+
+Section 8 (neighborhood + tree attributes):
+- `neighborhood_blockgroups_32612.parquet` — Maricopa block-group polygons
+  (EPSG:32612) with `median_income` (ACS B19013_001E), `pct_poc` (%-people-of-colour
+  from B03002), `total_pop`, the joined `svi` (`RPL_THEMES`) + themes 1–4, `GEOID`
+  and `TRACT_GEOID`. **SVI is inherited from the parent TRACT** (first 11 digits of
+  the block-group GEOID): it varies at tract scale, not block-group scale.
+- `acs_median_income_70m.tif`, `acs_pct_people_of_colour_70m.tif`,
+  `cdc_svi_rpl_themes_70m.tif` — those three block-group attributes rasterized onto
+  the 70 m grid by **nearest / value-per-cell** (float32, nodata NaN). Each cell
+  carries its neighborhood's value; aligned exactly to `../processed/reference_grid.tif`.
+- `phoenix_tree_inventory.parquet` — cleaned ASU "Treelytics" street-tree inventory
+  (22,507 trees, EPSG:32612) with `species_botanical`/`species_common`, the PRIMARY
+  functional descriptors `water_use` (drought_tolerant/mesic) + `leaf_habit`
+  (deciduous/evergreen), and `planting_year`. **`planting_year` is the INVENTORY year**
+  (flag `planting_year_is_inventory=True`) — no Phoenix inventory exposes a true
+  planting year. Central-Phoenix coverage, top ~20 species (see `src/README.md`).
+- `building_footprints_32612.parquet` — ~1.47 M Microsoft building-footprint polygons
+  for the bbox (EPSG:32612), kept as vectors for the Section 10 tall-building
+  exclusion buffer. From the Planetary Computer `ms-buildings` STAC (quadkey-filtered);
+  fallback is the USBuildingFootprints Arizona release. Large + git-ignored.
+
+  Section 8 raw inputs live in `../raw/acs/`, `../raw/svi/` (user-supplied SVI CSV),
+  `../raw/trees/`, `../raw/footprints/` and are recorded in `../manifest.csv`.
