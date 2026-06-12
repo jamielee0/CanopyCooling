@@ -27,3 +27,34 @@ utilities. Importable as a package alongside `config.py`.
   exist in ECOSTRESS Collection 2. As confirmed on Earthdata Search, the PT-JPL
   ET for the pilot window is the `PTJPLSMinst` layer of `ECO_L3T_JET` v002; ESI
   is `ECO_L4T_ESI` v002 (with its `PET` layer). See the module header for detail.
+- `section4_sentinel2_indices.py` — Section 4: build warm-season median NDVI and
+  NDMI composites from `COPERNICUS/S2_SR_HARMONIZED` in Earth Engine and pull them
+  straight to disk with `geemap.download_ee_image` (no Drive round-trip), then
+  resample onto the 70 m grid. `test_section4_sentinel2_indices.py` covers its
+  pure logic.
+- `section5_landcover.py` — Section 5: acquire the impervious-surface %, tree-canopy
+  % and NLCD land-cover **class** layers and put all three on the 70 m grid, with
+  **no manual download**. `test_section5_landcover.py` covers its pure logic.
+  Run: `python src/section5_landcover.py` (`--coarse-scale 300` for a smoke test,
+  `--skip-download` to reuse `data/raw/landcover/`, `--layers` to subset).
+
+  **Datasets (most recent available; logged + recorded in the manifest).**
+  Impervious % and land-cover class come from the most-recent OFFICIAL NLCD release
+  carrying both layers in one CONUS image — `USGS/NLCD_RELEASES/2021_REL/NLCD`
+  (year **2021**, bands `impervious`, `landcover`). Tree canopy % comes from the
+  current (non-deprecated) USFS Tree Canopy Cover collection
+  `projects/gtac-data-publish/assets/TCC/Product_Version/2025-6` (CONUS, year
+  **2025**, band `NLCD_Percent_Tree_Canopy_Cover`). All native 30 m.
+
+  **Resampling (the crux).** Impervious % and canopy % are resampled 30 m → 70 m
+  by exact **AREA-WEIGHTED AVERAGING** (each 70 m cell = the area-weighted mean of
+  the 30 m cells it covers); this is unit-tested against a hand computation and
+  cross-checked against GDAL `average`. The land-cover **class** layer is
+  categorical and is resampled by **NEAREST NEIGHBOUR** only — never averaged /
+  bilinear, which would invent fractional classes (Section 9 pitfall).
+
+  **Units / gotcha.** The saved %-layers keep native **percent (0–100)** units
+  (the Section 10 thresholds are stated in percent). geedim tags the downloads
+  `nodata=0`; for the categorical layer 0 = "no class" (correct), but for
+  impervious/canopy 0 % is a **valid** value, so those two are read unmasked —
+  masking them would silently drop every 0 % cell and bias the mean upward.
