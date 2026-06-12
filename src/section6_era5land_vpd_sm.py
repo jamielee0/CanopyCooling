@@ -271,12 +271,35 @@ def _manifest_row(path: Path, year: int) -> dict:
 # =========================================================================== #
 # CDS download  (step 33) — needs cdsapi at run time
 # --------------------------------------------------------------------------- #
+def _load_project_dotenv() -> None:
+    """Load the gitignored repo-root .env into the environment (no overwrite).
+
+    Mirrors src/check_auth.py and src/section2 so a run can pick up local CDS
+    credentials (CDSAPI_URL / CDSAPI_KEY) from the project .env without exporting
+    them by hand. Real environment variables and ~/.cdsapirc take precedence.
+    """
+    env_path = _REPO_ROOT / ".env"
+    if not env_path.exists():
+        return
+    for raw in env_path.read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, val = (part.strip() for part in line.split("=", 1))
+        if len(val) >= 2 and val[0] == val[-1] and val[0] in "\"'":
+            val = val[1:-1]
+        os.environ.setdefault(key, val)
+
+
 def make_client() -> "cdsapi.Client":
     """Construct a cdsapi client (reads ~/.cdsapirc or CDSAPI_URL/CDSAPI_KEY).
 
-    Kept non-quiet so the queue status (queued / running / completed) cdsapi
-    emits is surfaced through logging while a request waits in the CDS queue.
+    The project .env is loaded first (no overwrite) so CDS creds can live there
+    alongside the other services' creds. Kept non-quiet so the queue status
+    (queued / running / completed) cdsapi emits is surfaced through logging
+    while a request waits in the CDS queue.
     """
+    _load_project_dotenv()
     return cdsapi.Client()
 
 
