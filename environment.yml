@@ -46,6 +46,16 @@ dependencies:
   - geemap>=0.35
   - geedim>=1.7          # Section 4: geemap.download_ee_image tiles/stitches EE composites to local GeoTIFFs
   - cdsapi>=0.7
+  - requests>=2.32       # Section 8: Census + ArcGIS REST + footprints HTTP (sync; uses certifi CAs)
+  # Section 8 building footprints: Microsoft Planetary Computer STAC `ms-buildings`.
+  - pystac-client>=0.8   # query the STAC API for the bbox items
+  - planetary-computer>=1.0  # sign the (anonymous) Azure blob assets
+  - adlfs>=2024.4        # read the signed abfs:// GeoParquet partitions into geopandas
+  # NOTE (this machine only): adlfs pulls azure-storage-blob -> openssl 3.6.3, whose
+  # stricter cert parsing trips a malformed entry in the local Windows cert store and
+  # breaks `import aiohttp`/earthaccess. Pinned openssl=3.6.2 here as a workaround; on
+  # a machine with a clean cert store this pin is unnecessary.
+  - openssl=3.6.2
 
   # --- modelling / stats / changepoint ---
   - scikit-learn=1.6

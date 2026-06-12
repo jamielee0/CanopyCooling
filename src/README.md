@@ -58,3 +58,59 @@ utilities. Importable as a package alongside `config.py`.
   `nodata=0`; for the categorical layer 0 = "no class" (correct), but for
   impervious/canopy 0 % is a **valid** value, so those two are read unmasked —
   masking them would silently drop every 0 % cell and bias the mean upward.
+- `section8_neighborhood_tree.py` — Section 8: neighborhood attributes (ACS income
+  & %-people-of-colour, CDC SVI), the Phoenix tree inventory with functional types,
+  and Microsoft building footprints — all for the study area.
+  `test_section8_neighborhood_tree.py` covers its pure logic. Run:
+  `python src/section8_neighborhood_tree.py` (`--parts acs,svi,trees,footprints,grid`
+  to subset, `--skip-download` to reuse `data/raw/`, `--footprints-source
+  auto|stac|fallback`).
+
+  **ACS (step 42).** ACS 5-year, vintage **2024**, block-group level, Maricopa
+  County (state `04`, county `013`): `B19013_001E` (median household income) and the
+  whole `B03002` table. **%-people-of-colour** = `100 × (B03002_001E − B03002_003E)
+  / B03002_001E` — i.e. everyone who is *not* non-Hispanic White alone. Census **jam
+  values** (e.g. `-666666666`) are mapped to null, never averaged. Block-group
+  polygons come from TIGER/Line 2024 (`tl_2024_04_bg.zip`, filtered to county 013)
+  and are joined by GEOID. Saved to `data/raw/acs/`.
+
+  **SVI tract → block-group inheritance (step 43, important).** The CDC/ATSDR SVI is
+  **tract level**; the user places the CSV in `data/raw/svi/`. It is **joined DOWN to
+  block groups by FIPS: every block group inherits its parent tract's SVI value**,
+  because the first 11 digits of a 12-digit block-group GEOID *are* the tract GEOID
+  (block groups nest within tracts). **SVI therefore varies at TRACT scale, not
+  block-group scale, in this analysis.** The overall ranking `RPL_THEMES` is used
+  (themes 1–4 retained); the `-999` missing sentinel is nulled.
+
+  **Tree inventory (step 44) — source resolution.** The protocol names "City of
+  Phoenix open-data portal (phoenixopendata.com); ASU Treelytics". The phoenixopendata
+  CKAN portal does **not** host a per-tree inventory (its 160 datasets were
+  enumerated; only street-landscape-maintenance *zones* match "tree"). The real
+  inventory is the ASU-hosted service the protocol calls "ASU Treelytics":
+  `street_trees_gao_map_by_species__WFL1` (FeatureServer layer 1), **22,507**
+  inventoried street/park trees with botanical + common species. **Functional type is
+  the PRIMARY descriptor** — `water_use` (drought-tolerant vs mesic) and `leaf_habit`
+  (deciduous vs evergreen) from a documented genus/species lookup; species detail is
+  secondary (protocol pitfall: inventories are uneven). Coverage is central Phoenix
+  (the ASU "GAO" flight area, ~the core of the bbox); top ~20 species. **There is no
+  planting-year field** in any accessible Phoenix inventory, so `planting_year`
+  carries the **inventory** year and is flagged `planting_year_is_inventory=True`.
+
+  **Building footprints (step 45) — primary STAC, automatic fallback.** Primary:
+  the **Microsoft Planetary Computer STAC `ms-buildings`** collection — discovered
+  with `pystac-client`, signed with `planetary-computer` (anonymous; no key), read
+  from the signed `abfs://` GeoParquet with geopandas. The US item is partitioned by
+  **Bing level-9 quadkey**; only the quadkey partitions covering the bbox are read
+  (~1.47 M polygons), then clipped and reprojected to **EPSG:32612** (kept as vector
+  polygons for the Section 10 tall-building buffer). Fallback (only if the STAC read
+  fails): the Microsoft USBuildingFootprints `Arizona.geojson.zip`, clipped to the
+  bbox. **Local cert-store caveat:** `adlfs`'s azure stack pulls `openssl 3.6.3`,
+  whose stricter parsing trips a malformed cert in this machine's Windows store and
+  breaks `import aiohttp`/earthaccess; `environment.yml` pins `openssl=3.6.2` to work
+  around it (unnecessary on a clean machine).
+
+  **Rasterization (step 46).** Block-group income, %-people-of-colour and the joined
+  SVI are burned onto the 70 m reference grid by **NEAREST / value-per-cell** (each
+  cell takes the value of the block group containing its centre) — these are
+  already-aggregated quantities, never bilinear (Section 9 pitfall). All three align
+  exactly to `../processed/reference_grid.tif`.
