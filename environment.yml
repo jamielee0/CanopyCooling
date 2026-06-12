@@ -44,6 +44,7 @@ dependencies:
   - earthaccess>=0.12
   - earthengine-api>=1.4
   - geemap>=0.35
+  - geedim>=1.7          # Section 4: geemap.download_ee_image tiles/stitches EE composites to local GeoTIFFs
   - cdsapi>=0.7
 
   # --- modelling / stats / changepoint ---

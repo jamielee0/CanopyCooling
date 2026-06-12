@@ -28,3 +28,17 @@ Project scaffolding for Section 0 of the protocol.
   > confirmed on Earthdata Search: the protocol's example name `ECO_L3T_ET_PT-JPL`
   > does not exist in Collection 2 — PT-JPL ET is the `PTJPLSMinst` layer of
   > `ECO_L3T_JET` v002, and ESI is `ECO_L4T_ESI` v002.
+- **Section 4** — `src/section4_sentinel2_indices.py`: Sentinel-2
+  (`COPERNICUS/S2_SR_HARMONIZED`) warm-season **NDVI** and **NDMI** median
+  composites, pulled straight to local disk with `geemap.download_ee_image`
+  (geedim under the hood — tiles + stitches, **no manual Drive step**) →
+  `data/raw/sentinel2/`, then reprojected/resampled (bilinear) onto the 70 m grid
+  → `data/interim/s2_{ndvi,ndmi}_warmseason_median_2023_70m.tif`. A visual-check
+  overlay (`figures/sentinel2_ndvi_highveg_overlay.png`) confirms high-NDVI pixels
+  fall on known Phoenix parks / tree-lined areas.
+
+  > **NDMI is a 20 m product, not 10 m.** The SWIR band (B11) is native 20 m,
+  > coarser than the 10 m red/NIR bands, so NDMI is downloaded at 20 m and is
+  > never presented as a true 10 m layer. NDVI (B4, B8) is a genuine 10 m product.
+  > Both are resampled *consistently* (bilinear) onto the common 70 m grid.
+  > Requires `geedim` (added to `environment.yml`) and an Earth Engine login.
