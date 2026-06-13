@@ -8462,3 +8462,21 @@ https://services.nacse.org/prism/data/get/us/4km/tmean/20230929 (PRISM daily tme
 https://services.nacse.org/prism/data/get/us/4km/tmean/20230930 (PRISM daily tmean; bbox subset),PRISM_daily_4km,prism_tmean_20230930_bbox.tif,2026-06-13,sha256:cb39e4dadeb77a09dcba43c84414917cae426278a2de30253af3c096985c2ada
 Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2019-06),reanalysis-era5-land,era5land_2019_06.nc,2026-06-13,sha256:18661880ee114091d2cd335c32736dbd030907eb8dc97380bfaa243c459b621b
 Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2019-07),reanalysis-era5-land,era5land_2019_07.nc,2026-06-13,sha256:76b178cf16bd095a1f584dff498f91019b1eed184b9a532834a3a96a864dd043
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2019-08),reanalysis-era5-land,era5land_2019_08.nc,2026-06-13,sha256:af06a858554684e39fb2ab25263bd63b28e4896e7a18502184b26120d58c7fd1
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2019-09),reanalysis-era5-land,era5land_2019_09.nc,2026-06-13,sha256:8b588c00939d906f791845d7cbda8dba82a6212313e8e47c504238d81c64b15e
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2020-06),reanalysis-era5-land,era5land_2020_06.nc,2026-06-13,sha256:55e36a7471bd8c877e08808bdb802ed51c225c0a1881c17030f4c25f89ee59ab
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2020-07),reanalysis-era5-land,era5land_2020_07.nc,2026-06-13,sha256:b26594119293f9822b62342e45b78772cc903b90aa82f963776e9907ecd87e78
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2020-08),reanalysis-era5-land,era5land_2020_08.nc,2026-06-13,sha256:e47cc897ff9ddd1472e70b34dadace24c3b71946f33d930bb93eb48cdf6c6561
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2020-09),reanalysis-era5-land,era5land_2020_09.nc,2026-06-13,sha256:436d0d2b2fd897667703400f5018e0a134c001cb117fe3c2c3c19bf7bb1ec2ed
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2021-06),reanalysis-era5-land,era5land_2021_06.nc,2026-06-13,sha256:1aba5d8c51047b84edb393ee998e29a3c530c3706204e733b7af0b3a0e3dcf64
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2021-07),reanalysis-era5-land,era5land_2021_07.nc,2026-06-13,sha256:4ee450419d4b0e2f2bda314bd4aa255de62afa20b75f1a0a969b96422d896dad
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2021-08),reanalysis-era5-land,era5land_2021_08.nc,2026-06-13,sha256:b16709eaf57c99b6e09847f08f13c71a3c91005677b56f1d7a66bc65e24e550f
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2021-09),reanalysis-era5-land,era5land_2021_09.nc,2026-06-13,sha256:21148715ea27c633fbf70e57cad7a7cd79418e4a7f6fabb7177e8a5c3b5c584e
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2022-06),reanalysis-era5-land,era5land_2022_06.nc,2026-06-13,sha256:ee4d4958710197c0d6505a352ee85ccf4934b1800b62549d34fcd6f68a57d69f
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2022-07),reanalysis-era5-land,era5land_2022_07.nc,2026-06-13,sha256:14457d4c6ecb639794d314565a2aea15fe346444bcb46cc60aedb76f8fee505b
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2022-08),reanalysis-era5-land,era5land_2022_08.nc,2026-06-13,sha256:1517a4559474b713131f010af8dd4fa89ffd1c5e97a1449bae680d77e4c613fc
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2022-09),reanalysis-era5-land,era5land_2022_09.nc,2026-06-13,sha256:b1cbde9a261400a755de3be97061efef2cf583f357e1a63e864584ca3d5938c4
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2024-06),reanalysis-era5-land,era5land_2024_06.nc,2026-06-13,sha256:372f9beb4e2f97fa1c40a85318e6f19f977ddb315945c0e35137161ba8eab0c1
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2024-07),reanalysis-era5-land,era5land_2024_07.nc,2026-06-13,sha256:ab95f09be0f3338895181c6b790ba4214ae8e9abfa64c8e8d2b15f6e5be4db29
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2024-08),reanalysis-era5-land,era5land_2024_08.nc,2026-06-13,sha256:9a281f80ec4c5ec4f766100dacdb708d230c863e402b9e32d7498d9451279069
+Copernicus Climate Data Store (ECMWF): reanalysis-era5-land (2024-09),reanalysis-era5-land,era5land_2024_09.nc,2026-06-13,sha256:f6188fd5b5396a7b1b09b45fe3d4200ae3bb8050b8b05e9e657530332dd1f2f5
