@@ -610,10 +610,12 @@ def download_prism_day(element: str, date: _dt.date, raw_dir: Path,
     """
     out_path = raw_dir / prism_raw_filename(element, date)
     if out_path.exists() and out_path.stat().st_size > 0:
-        if win is None:                          # need the window geometry anyway
-            import rasterio
-            with rasterio.open(out_path) as ds:
-                win = ClipWindow(0, 0, ds.width, ds.height, ds.transform, ds.crs)
+        # Pass ``win`` THROUGH unchanged - never rebuild it from the cached clip.
+        # The clip's own window is (0, 0, clip_w, clip_h); using that to read a
+        # freshly-downloaded CONUS grid would read its top-left corner (offshore
+        # Pacific = nodata) instead of the Phoenix bbox. A None win here just means
+        # the first FRESH download in this series computes the correct CONUS window
+        # via _compute_clip_window (deterministic, so every day still aligns).
         return out_path, win, False, "cached"
     arr, win, source = _fetch_prism_clip(element, date, win)
     _write_clip(arr, win, out_path)
@@ -828,9 +830,20 @@ def _native_stack_dataarray(paths: Sequence[Path], dates: Sequence[_dt.date],
     """
     first = rioxarray.open_rasterio(paths[0], masked=True).squeeze("band", drop=True)
     data = np.empty((len(paths), first.sizes["y"], first.sizes["x"]), dtype="float32")
+    empty: list[str] = []
     for i, p in enumerate(paths):
         da = rioxarray.open_rasterio(p, masked=True).squeeze("band", drop=True)
         data[i] = da.values
+        if not np.isfinite(data[i]).any():       # an entirely-nodata clip is a bug
+            empty.append(p.name)
+    if empty:
+        # Over a land bbox a PRISM clip is never all-nodata; this means the clip
+        # read the wrong CONUS window (a resumed-run bug) or the source was empty.
+        log.error("%s: %d/%d native clips are ENTIRELY nodata (e.g. %s) - these "
+                  "would grid to all-NaN; delete them from data/raw/prism/ and "
+                  "re-download.", name, len(empty), len(paths), empty[:5])
+        raise RuntimeError(f"{name}: {len(empty)} all-nodata clip(s); refusing to "
+                           f"build a cube with empty seasons (first: {empty[0]})")
     cube = xr.DataArray(
         data, dims=("time", "y", "x"),
         coords={"time": pd.to_datetime(list(dates)), "y": first.y.values, "x": first.x.values},
