@@ -371,6 +371,29 @@ def download_chunk(client, year: int, month: str, raw_dir: Path,
     return target
 
 
+def _keep_system_awake() -> None:
+    """Best-effort: ask Windows not to sleep while the long download runs.
+
+    The 2018-2024 pull is a few hours of mostly waiting on the CDS queue; if the
+    machine sleeps, the polling process is suspended and the run stalls (this
+    happened once overnight). Assert ES_SYSTEM_REQUIRED for the life of the
+    process (Windows releases it automatically on exit). No-op off Windows or on
+    failure. NOTE: this blocks *idle* sleep, not a laptop lid-close — keep the lid
+    open / on power for the duration too.
+    """
+    if os.name != "nt":
+        return
+    try:
+        import ctypes
+
+        ES_CONTINUOUS = 0x80000000
+        ES_SYSTEM_REQUIRED = 0x00000001
+        ctypes.windll.kernel32.SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED)
+        log.info("requested system stay-awake for the duration of the download")
+    except Exception as exc:  # noqa: BLE001
+        log.warning("could not request stay-awake (%s); keep the machine awake manually", exc)
+
+
 def download_all(year_list: Sequence[int], raw_dir: Path, force: bool = False) -> list[Path]:
     """Download every (year, month) chunk, recording each in the manifest as it lands.
 
@@ -378,6 +401,7 @@ def download_all(year_list: Sequence[int], raw_dir: Path, force: bool = False) -
     failures are logged and the run continues, so a re-run fills only the gaps.
     """
     raw_dir.mkdir(parents=True, exist_ok=True)
+    _keep_system_awake()
     client = make_client()
     months = season_months()
     chunks = [(y, m) for y in year_list for m in months]
