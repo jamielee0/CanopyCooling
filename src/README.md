@@ -138,3 +138,56 @@ utilities. Importable as a package alongside `config.py`.
   cell takes the value of the block group containing its centre) — these are
   already-aggregated quantities, never bilinear (Section 9 pitfall). All three align
   exactly to `../processed/reference_grid.tif`.
+- `section9_harmonize.py` — Section 9: **harmonize every layer onto the common 70 m
+  grid and time-match to the ECOSTRESS overpasses** (steps 47–51). Reads only
+  `data/interim/` + `data/processed/reference_grid.tif` (no network). Produces the
+  single aligned multi-variable analysis cube `../data/processed/analysis_cube_70m.zarr`.
+  `test_section9_harmonize.py` covers its pure logic. Run:
+  `python src/section9_harmonize.py` (`--no-figures` to skip the QA figure,
+  `--verify-only` to re-open the saved cube and re-run the verification + spot check).
+
+  **Already-gridded vs. resampled (steps 47–48).** Sections 2–8 wrote every gridded
+  layer to the reference grid already, so step 47 is a **verification** (the module
+  asserts identical CRS / cell size / origin / rows / cols for each layer, and refuses
+  to proceed otherwise), not a re-snap. The **one** layer Section 9 itself resamples is
+  **ERA5-Land** (Section 6; native ~9 km, EPSG:4326) — a continuous field, so
+  **bilinear** (step 48 names VPD and soil moisture explicitly). Every other layer was
+  resampled with the correct method in its own section: **bilinear** for the continuous
+  layers (LST/ET/ESI/NDVI/NDMI/impervious/canopy/precip/drought/tmean), **nearest** for
+  the categorical/already-aggregated ones (land-cover class, block-group income/%POC/
+  SVI). The `landcover_class` layer is carried through as **integer** classes — never
+  bilinear (the Section 9 pitfall; the module asserts no fractional classes on reload).
+
+  **Master overpass axis.** The **66 ECOSTRESS LST overpasses** (Section 2 cube) are the
+  master axis. The LST cube has no `overpass_key` coord, so it is reconstructed as
+  `{orbit}_{scene}_{YYYYMMDDTHHMMSS}` (the Section 3 format) and used to place the 45
+  paired **ET/ESI/PET** slices onto their overpasses (NaN on the other 21). ET/ESI
+  remain *supporting evidence only* (Section 3 caveat) and are not resampled again.
+
+  **Time-matching rule (step 49).** For each overpass: **ERA5 VPD + soil moisture** at
+  the **nearest hour** (overpass UTC rounded to the hour — only the matching 8×10 hourly
+  slice is bilinear-reprojected, 66 small reprojections, not all 20 496 hours);
+  **antecedent precip (`ppt_30/60/90d`) + PRISM `tmean`** at the **exact calendar date**;
+  **GRIDMET drought (`pdsi`/`spei30d`/`spei90d`)** at the **pentad whose 5-day window
+  contains the date** (`pentad_start ≤ D < pentad_start+5`). The delivered drought cube
+  holds only warm-season pentads, so the 2 earliest pilot overpasses (2023-06-02/-03,
+  before the first 2023 pentad on 06-04) have **no containing pentad and are left NaN**
+  for drought — an honest absence, *not* the previous September's pentad (~8 months
+  stale). ERA5-Land on the 70 m grid is a smooth **regional** background (the same
+  coarse-field caveat as PRISM/GRIDMET), not a block-scale measurement.
+
+  **Deliverable + the tidy-Parquet decision (step 50).** The primary deliverable is the
+  gridded **`analysis_cube_70m.zarr`** (dims `overpass=66 × y=1155 × x=1339`; reopen with
+  `decode_coords="all"`). A **full pixel × overpass tidy table (~100 M rows) is
+  deliberately NOT produced** at this stage — the analysis pixels are not defined until
+  Section 10, so a per-pixel long table would be wasteful. Instead a **small 66-row
+  per-overpass table** `analysis_overpass_table.parquet` records the matched
+  hour/date/pentad, `in_et`/`in_esi`, and the regional-mean drivers for a quick scan.
+
+  **Alignment verified (step 51).** `figures/section9_alignment_spotcheck.png` and the
+  run log print every layer's value at three known pixels (lon/lat **verified against the
+  NDVI/impervious/canopy layers**, nudged off adjacent roads onto the feature): **Encanto
+  Park** (NDVI 0.46, canopy 14 %, impervious 5 %, LST ≈ 310 K — coolest), the **I-10/I-17
+  "Stack" interchange** (NDVI 0.02, impervious 91 %, canopy 0 %, LST ≈ 316 K — hottest,
+  ET ≈ 4 W m⁻²), and **Papago Golf Course** (NDVI 0.56, impervious 1 %, canopy 0 % — very
+  green turf but *no tree canopy*, distinct from the park, highest ET ≈ 209 W m⁻²).
