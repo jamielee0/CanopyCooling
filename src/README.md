@@ -112,9 +112,12 @@ utilities. Importable as a package alongside `config.py`.
   the PRIMARY descriptor** — `water_use` (drought-tolerant vs mesic) and `leaf_habit`
   (deciduous vs evergreen) from a documented genus/species lookup; species detail is
   secondary (protocol pitfall: inventories are uneven). Coverage is central Phoenix
-  (the ASU "GAO" flight area, ~the core of the bbox); top ~20 species. **There is no
-  planting-year field** in any accessible Phoenix inventory, so `planting_year`
-  carries the **inventory** year and is flagged `planting_year_is_inventory=True`.
+  (the ASU "GAO" flight area, ~the core of the bbox); top ~20 species. **A true
+  planting year is unavailable** in any accessible Phoenix inventory: the source
+  survey date is kept as `inventory_year` (the year the tree was *surveyed*, not
+  planted — **do not use it for tree age**), and `planting_year` is present but
+  **null for every record** (protocol step 44 retains planting year only "where
+  available").
 
   **Building footprints (step 45) — primary STAC, automatic fallback.** Primary:
   the **Microsoft Planetary Computer STAC `ms-buildings`** collection — discovered
@@ -122,9 +125,10 @@ utilities. Importable as a package alongside `config.py`.
   from the signed `abfs://` GeoParquet with geopandas. The US item is partitioned by
   **Bing level-9 quadkey**; only the quadkey partitions covering the bbox are read
   (~1.47 M polygons), then clipped and reprojected to **EPSG:32612** (kept as vector
-  polygons for the Section 10 tall-building buffer). Fallback (only if the STAC read
-  fails): the Microsoft USBuildingFootprints `Arizona.geojson.zip`, clipped to the
-  bbox. **Local cert-store caveat:** `adlfs`'s azure stack pulls `openssl 3.6.3`,
+  polygons for the Section 10 tall-building buffer). **This primary STAC route
+  produced the delivered layer** (item `United States_2022-07-06`). Fallback (only if
+  the STAC read fails, which it did not): the Microsoft USBuildingFootprints
+  `Arizona.geojson.zip`, clipped to the bbox. **Local cert-store caveat:** `adlfs`'s azure stack pulls `openssl 3.6.3`,
   whose stricter parsing trips a malformed cert in this machine's Windows store and
   breaks `import aiohttp`/earthaccess; `environment.yml` pins `openssl=3.6.2` to work
   around it (unnecessary on a clean machine).

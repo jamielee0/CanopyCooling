@@ -9,8 +9,9 @@ Deliverables (checkpoint, Section 8)
 ------------------------------------
 * Gridded neighborhood income, %-people-of-colour, and social-vulnerability layers
   on the 70 m reference grid (data/interim/*_70m.tif).
-* A cleaned tree inventory with functional-type and planting-year fields
-  (data/interim/phoenix_tree_inventory.parquet).
+* A cleaned tree inventory with functional-type and inventory-year fields
+  (data/interim/phoenix_tree_inventory.parquet). NB: a true planting year is
+  unavailable, so planting_year is present but null (see the tree note below).
 * Building-footprint polygons for the study area, EPSG:32612, kept as vectors for
   the Section 10 exclusion buffer (data/interim/building_footprints_32612.parquet).
 All raw downloads are recorded in data/manifest.csv with a SHA-256 checksum.
@@ -48,13 +49,15 @@ Phoenix street-tree inventory with species is the ASU-hosted ArcGIS service the
 protocol calls "ASU Treelytics":
     street_trees_gao_map_by_species__WFL1  (FeatureServer layer 1, 'top20_trees_gao_')
 22,507 inventoried street/park trees with botanical + common species, condition,
-DBH and an INVENTORY date (~2011). It covers central Phoenix (the ASU "GAO" flight
-area, roughly the core of the study bbox) and the top ~20 species. There is NO
-planting-year field in any accessible Phoenix inventory, so the planting-year
-column is the INVENTORY year and is flagged as such (planting_year_is_inventory).
-This matches the protocol's own pitfall: inventories are uneven; use broad
-FUNCTIONAL TYPES (drought-tolerant vs mesic; deciduous vs evergreen) as the
-primary descriptor and treat species as secondary.
+DBH and a SURVEY date (~2011). It covers central Phoenix (the ASU "GAO" flight
+area, roughly the core of the study bbox) and the top ~20 species. A TRUE PLANTING
+YEAR IS UNAVAILABLE in any accessible Phoenix inventory: the survey date is kept as
+``inventory_year`` (the year the tree was surveyed, NOT planted -- do not use it for
+tree age), and ``planting_year`` is present but NULL for every record, since protocol
+step 44 retains planting year only "where available". This matches the protocol's own
+pitfall: inventories are uneven; use broad FUNCTIONAL TYPES (drought-tolerant vs
+mesic; deciduous vs evergreen) as the primary descriptor and treat species as
+secondary.
 
 Building-footprints route (primary STAC, automatic fallback)
 ------------------------------------------------------------
@@ -644,11 +647,17 @@ def fetch_tree_inventory(raw_dir: Path | None = None,
 
 
 def clean_tree_inventory(geojson_path: Path) -> gpd.GeoDataFrame:
-    """Build the cleaned tree inventory: species, planting(=inventory) year, functypes.
+    """Build the cleaned tree inventory: species, functional types, inventory year.
 
     Reprojected to EPSG:32612. Adds water_use + leaf_habit (the PRIMARY functional
-    descriptor) from the species, and planting_year (the INVENTORY year -- there is
-    no planting-year field in the source, flagged by planting_year_is_inventory).
+    descriptor) from the species.
+
+    YEAR FIELDS -- read carefully. A TRUE PLANTING YEAR IS UNAVAILABLE: no accessible
+    Phoenix tree inventory (including this ASU GAO source) exposes one. The source
+    INV_DATE is the SURVEY date, kept as ``inventory_year``; it must NOT be read as a
+    planting date or used to derive tree age. Protocol step 44 retains planting year
+    only "where available", so ``planting_year`` is present but NULL for every record
+    (honest absence), never aliased to the inventory year.
     """
     gdf = gpd.read_file(geojson_path)
     if gdf.crs is None:
@@ -660,14 +669,13 @@ def clean_tree_inventory(geojson_path: Path) -> gpd.GeoDataFrame:
     ft = gdf["species_botanical"].map(functional_type)
     gdf["water_use"] = ft.map(lambda t: t[0])       # drought_tolerant | mesic | unknown
     gdf["leaf_habit"] = ft.map(lambda t: t[1])      # deciduous | evergreen | unknown
+    # inventory_year = the SURVEY year (from INV_DATE). NOT a planting date.
     gdf["inventory_year"] = gdf.get("INV_DATE").map(inventory_year_from_epoch_ms)
-    # No planting-year field exists in any accessible Phoenix inventory; the
-    # planting_year column carries the INVENTORY year and is flagged as such.
-    gdf["planting_year"] = gdf["inventory_year"]
-    gdf["planting_year_is_inventory"] = True
+    # True planting year is unavailable in any accessible Phoenix source -> all null.
+    gdf["planting_year"] = np.nan
 
     keep = ["species_botanical", "species_common", "water_use", "leaf_habit",
-            "planting_year", "planting_year_is_inventory", "inventory_year",
+            "inventory_year", "planting_year",
             "DBH1", "HEIGHT", "COND", "LANDUSE", "geometry"]
     keep = [c for c in keep if c in gdf.columns]
     gdf = gdf[keep].copy()
