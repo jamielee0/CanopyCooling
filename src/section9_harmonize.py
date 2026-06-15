@@ -62,8 +62,9 @@ Time-matching rule (step 49) -- documented precisely
   delivered cube holds only WARM-SEASON pentads. The matched pentad is the one
   whose 5-day window CONTAINS the overpass date. The pentads within a season are
   spaced exactly 5 days, so this assigns a pentad at most 5 days old to every
-  overpass that falls on/after the season's first pentad. The 2 earliest pilot
-  overpasses (2023-06-02, -03) precede the first 2023 pentad (2023-06-04); they
+  overpass that falls on/after the season's first pentad. The 3 earliest pilot
+  overpasses (two on 2023-06-02, one on 2023-06-03) precede the first 2023 pentad
+  (2023-06-04); they
   have NO containing pentad and are left NaN for drought, rather than being given
   the previous season's last pentad (2022-09-27, ~8 months stale and cross-season
   -- a meaningless "nearest preceding" match). Honest absence over a stale value.
