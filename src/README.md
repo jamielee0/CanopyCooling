@@ -438,3 +438,75 @@ utilities. Importable as a package alongside `config.py`.
   components, plus the spatial-mean CSI per overpass with the heatwave window shaded) and
   `figures/section12_csi_extreme_date_map.png` (the 70 m CSI field for the highest-CSI
   overpass).
+
+- `section13_master_table.py` — Section 13: **compute the cooling advantage and assemble the
+  master analysis table** (steps 67–71). Reads the Section 9 cube (`lst`/`et`/`esi`/`pdsi` +
+  static `ndvi`/`canopy`/`impervious`), the Section 12 `csi`, the Section 11 `vpd_z`/`ndmi_z`,
+  the Section 10 class raster (`section10_pixel_class_70m.tif`) and paired-BG list
+  (`section10_paired_neighborhoods.csv`), the block-group attributes and the tree inventory
+  (no network). Produces `../data/processed/master_table.parquet` — **the single input to every
+  analysis from here on.** `test_section13_master_table.py` covers its pure logic. Run:
+  `python src/section13_master_table.py` (`--no-figures` to skip the QA figure, `--verify-only`
+  to re-open the saved table and re-run verify + QC).
+
+  **Granularity: one row per (paired neighborhood, overpass).** Only the **9 paired block
+  groups** (Section 10's paired design) enter, over the 66 overpasses → up to 594 candidate
+  rows, but a row is **emitted only where the cooling advantage is computable** — the BG must
+  have **≥ 1 tree pixel AND ≥ 1 reference pixel with finite LST on that overpass** (so both
+  step-67 means exist). **264 rows** result (9 neighborhoods × 54 distinct overpasses; some
+  small-tree BGs have no finite tree-LST on some overpasses, hence < 594).
+
+  **Primary outcome — cooling advantage (step 67).** `cooling_advantage = mean LST(reference)
+  − mean LST(tree)` over the BG's finite-LST pixels that overpass (Kelvin = °C, a temperature
+  difference). Positive = trees cooler than the surrounding built surfaces; near zero = the
+  benefit is gone. Because both terms come from the **same overpass**, shared weather and
+  time-of-day cancel. **It can be negative and is never clipped.** Observed spread: **min
+  −6.35, median +2.81, mean +3.66, max +23.06 K; 43/264 (16.3 %) negative** — mostly positive
+  (trees cooler) with a tail to/below zero (the negatives are mostly small-magnitude pre-dawn
+  overpasses; the +23 K max is a single-tree-pixel BG — noise the count columns expose).
+
+  **Mechanism + stressor over the TREE pixels (step 68).** `mean_et_tree`, `mean_esi_tree`
+  (ET/ESI mean over the BG's tree pixels — **NaN on the 21 overpasses without ET/ESI**, ~22.7 %
+  of rows, Section 3 caveat), and `mean_csi_tree`, `mean_vpd_z_tree`, `mean_water_supply_z_tree`
+  (CSI / VPD-z / NDMI-z means over the tree pixels; CSI/VPD-z are nearly spatially uniform —
+  ERA5 ~9 km — while NDMI-z varies spatially and is static in time).
+
+  **Modifiers.** `mean_impervious` / `mean_canopy` are **neighborhood-level** means over all
+  valid BG pixels (a context modifier — the built-ness of the whole neighborhood, *not* just
+  the tree pixels). `aridity` = the **BG-mean PDSI** that overpass (**negative = drier**; NaN on
+  the 3 earliest pilot overpasses with no containing pentad — 9/264 rows). `irrigation_proxy` is
+  the documented step-70 composite (below). `functional_type` = the **modal `water_use`**
+  (drought_tolerant vs mesic) among inventory trees inside the BG (modal `leaf_habit` carried as
+  `functional_leaf_habit`); **`unknown` for all 9 paired BGs here** because the street-tree
+  inventory covers only a compact **central-Phoenix** box (UTM ~386–405 km E / 3694–3713 km N)
+  while the paired BGs sit on the metro periphery — a direct point-in-polygon join finds **zero**
+  inventory trees in any paired BG. This is the protocol's anticipated "central-Phoenix coverage
+  → many BGs unknown" limitation, handled gracefully (not a join bug).
+
+  **Irrigation-likelihood proxy (step 70) — DOCUMENTED FORMULA.**
+  `irrigation_proxy = mean( norm(turf_fraction), norm(income), norm(1 − impervious_fraction) )`
+  where `norm(c) = (c − min c)/(max c − min c)` **across the 9 paired neighborhoods** (equal
+  1/3 weights; result in [0,1], higher = more likely irrigated). `turf_fraction` = share of BG
+  pixels with **NDVI > `NDVI_THR` (0.50) AND canopy < `REF_CANOPY_MAX` (20 %)** — the irrigated
+  *green-but-not-tree* lawn/turf signature (high NDVI without canopy); `income` = ACS median
+  household income (**missing → paired-BG median before normalization**; one BG); `1 −
+  impervious_fraction` = perviousness (`impervious %/100`). It is **static per BG** (no overpass
+  dependence) and a **documented heuristic that ranks** neighborhoods by irrigation likelihood,
+  **not a measurement** of water applied. Observed range over rows: **[0.009, 0.742]**.
+
+  **Neighborhood + counts.** `median_income` / `pct_poc` / `svi` come from the block-group
+  attributes (the parquet, for exactness). **All pixel-count columns are KEPT** for the Section
+  14 minimum-count filter: `n_tree_px` / `n_ref_px` (static, from the class raster),
+  `n_tree_valid` / `n_ref_valid` (finite-LST pixels that overpass — the actual sample sizes), and
+  `n_good_obs = min(n_tree_valid, n_ref_valid)` (the binding paired sample size). **Thin paired
+  sample (carried, not hidden):** ranges `n_tree_px` 1–171 (one BG, 040139412001, has 171; the
+  others 1–6), `n_ref_px` 332–1122, `n_good_obs` 1–171 (median 2) — so **many rows rest on a
+  single tree pixel**, which the Section 14 threshold estimate must be reported with.
+
+  **Deliverable (`data/processed/`, git-ignored).** `master_table.parquet` (264 rows × 26
+  columns; one row per paired neighborhood per overpass; columns grouped identifiers / outcome /
+  mechanism / stressor / modifiers / neighborhood / counts), re-opened and **asserted on reload**
+  (every column present, one row per (neighborhood, overpass), `cooling_advantage == reference −
+  tree`, `n_good_obs == min(n_tree_valid, n_ref_valid)`, and every row has ≥ 1 finite tree &
+  reference pixel). QA figure: `figures/section13_cooling_advantage_distribution.png` (the
+  cooling-advantage distribution + the per-overpass spread).

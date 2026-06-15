@@ -159,3 +159,55 @@ Current contents (regenerate from `src/`):
   per-overpass table (`overpass_key`, `time`, `era5_hour`, `season_part`, `in_heatwave_2023`,
   and the spatial-mean `csi`/`demand_stress`/`supply_stress`), sorted by spatial-mean CSI, for
   a quick scan and the compound-extreme confirmation.
+- `master_table.parquet` — **Section 13 deliverable:** the **master analysis table** — the
+  study's primary outcome (the cooling advantage) plus every variable assembled into one
+  analysis-ready table, **one row per paired neighborhood per overpass** (steps 67–71). Built by
+  `src/section13_master_table.py`; **the single input to every analysis from here on.**
+  - **shape** **264 rows × 26 columns**. Row = one (paired-neighborhood `GEOID`, overpass) pair.
+    Only the **9 paired block groups** (Section 10) over the 66 overpasses enter (≤ 594
+    candidates), and a row is **emitted only where the cooling advantage is computable** — the BG
+    has **≥ 1 tree pixel AND ≥ 1 reference pixel with finite LST on that overpass**. Result: 264
+    rows spanning **9 neighborhoods × 54 distinct overpasses**.
+  - **columns by group.** *Identifiers:* `neighborhood_id` (12-digit GEOID), `overpass_timestamp`
+    (UTC datetime), `overpass_key`, `city` (`"Phoenix"`). *Primary outcome:* `cooling_advantage`.
+    *Mechanism (tree pixels):* `mean_et_tree`, `mean_esi_tree`. *Stressor (tree pixels):*
+    `mean_csi_tree`, `mean_vpd_z_tree`, `mean_water_supply_z_tree`. *Modifiers:* `mean_impervious`,
+    `mean_canopy`, `aridity`, `irrigation_proxy`, `functional_type` (+ detail
+    `functional_leaf_habit`). *Neighborhood:* `median_income`, `pct_poc`, `svi`. *Counts:*
+    `n_tree_px`, `n_ref_px`, `n_tree_valid`, `n_ref_valid`, `n_good_obs`. (Detail columns
+    `mean_lst_tree`/`mean_lst_reference` are also kept so the cooling-advantage identity is
+    auditable.)
+  - **`cooling_advantage` (primary outcome, step 67)** = `mean LST(reference) − mean LST(tree)`
+    over the BG's finite-LST pixels that overpass (**Kelvin = °C**, a temperature difference).
+    Positive = trees cooler; near zero = benefit gone. Same-overpass differencing cancels weather
+    and time-of-day. **Can be negative; NOT clipped.** Spread: **min −6.35 / median +2.81 / mean
+    +3.66 / max +23.06 K; 43/264 (16.3 %) negative** — mostly positive (trees cooler) with a
+    near-zero/negative tail (small pre-dawn overpasses; the +23 K max is a one-tree-pixel BG).
+  - **mechanism/stressor (step 68)** are means over the BG's **tree-dominated pixels**.
+    `mean_et_tree`/`mean_esi_tree` are **NaN on the 21 overpasses without ET/ESI** (~22.7 % of
+    rows; Section 3 caveat). `aridity` = **BG-mean PDSI** that overpass (**negative = drier**; NaN
+    on the 3 earliest overpasses with no containing pentad). `mean_impervious`/`mean_canopy` are
+    **neighborhood-level** means over all valid BG pixels (context modifiers, not tree-pixel means).
+  - **`irrigation_proxy` (step 70) — documented heuristic, static per BG.**
+    `irrigation_proxy = mean( norm(turf_fraction), norm(income), norm(1 − impervious_fraction) )`,
+    `norm(c) = (c − min c)/(max c − min c)` **across the 9 paired neighborhoods** (equal 1/3
+    weights, [0,1], higher = more likely irrigated). `turf_fraction` = share of BG pixels with
+    **NDVI > 0.50 AND canopy < 20 %** (irrigated green-but-not-tree = lawn/turf); `income` = ACS
+    median income (**missing → paired-BG median before norm**); `1 − impervious_fraction` =
+    perviousness. **Ranks** neighborhoods by irrigation likelihood; **not a measurement** of water
+    applied. Range over rows **[0.009, 0.742]**.
+  - **`functional_type` is `unknown` for all 9 paired BGs.** The modal `water_use` among inventory
+    trees inside the BG — but the street-tree inventory covers only **central Phoenix** (UTM
+    ~386–405 km E / 3694–3713 km N) and the paired BGs are on the periphery, so a point-in-polygon
+    join finds **zero** inventory trees in any of them. The protocol's anticipated central-Phoenix
+    limitation, handled gracefully.
+  - **counts KEPT for the Section 14 minimum-count filter.** `n_tree_px`/`n_ref_px` (static, from
+    the class raster), `n_tree_valid`/`n_ref_valid` (finite-LST that overpass — the actual sample
+    sizes), `n_good_obs = min(n_tree_valid, n_ref_valid)`. **Thin paired sample (carried, not
+    hidden):** `n_tree_px` **1–171** (one BG has 171; the rest 1–6), `n_ref_px` 332–1122,
+    `n_good_obs` 1–171 (median **2**) → many rows rest on a single tree pixel; the Section 14
+    threshold estimate must be reported with this caveat.
+  - Re-opened and **asserted on reload**: every column present; one row per (neighborhood,
+    overpass); `cooling_advantage == mean_lst_reference − mean_lst_tree`; `n_good_obs ==
+    min(n_tree_valid, n_ref_valid)`; every row ≥ 1 finite tree & reference pixel. QA figure
+    `figures/section13_cooling_advantage_distribution.png`.
