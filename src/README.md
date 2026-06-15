@@ -374,3 +374,67 @@ utilities. Importable as a package alongside `config.py`.
   results note is `docs/section11_anomaly_qc_note.md`. The run re-opens the saved store and
   **asserts geometry == `reference_grid.tif`** (CRS/shape/transform), 66 overpasses, all z +
   climatology vars present and float, and that `ndmi_z` is constant across overpasses.
+- `section12_compound_stress.py` — Section 12: **combine the standardized demand and supply
+  anomalies into the Compound Stress Index (CSI)** (steps 62–66). Reads **only** the Section 11
+  `data/processed/section11_zscores_70m.zarr` z-scores (no network). Produces
+  `../data/processed/section12_csi_70m.zarr`. `test_section12_compound_stress.py` covers its
+  pure logic. Run: `python src/section12_compound_stress.py` (`--no-figures` to skip the QC
+  figures, `--verify-only` to re-open the saved store and re-run verify + QC). `config.py`
+  gains the baseline weights `WEIGHT_DEMAND = 0.5`, `WEIGHT_SUPPLY = 0.5`.
+
+  **Definitions (from the Section 11 z-scores — never raw values).** **Demand stress** =
+  the positive part of the VPD z-score, **`demand = max(vpd_z, 0)`** (step 62; only
+  above-normal VPD is stressful). **Supply stress** = the positive part of the **negated**
+  water-supply z-score, **`supply = max(-ndmi_z, 0)`** (step 63; low water → positive stress,
+  so a below-normal NDMI — a *negative* z — becomes a positive contribution). Baseline
+  **`CSI = WEIGHT_DEMAND·demand + WEIGHT_SUPPLY·supply`** with **equal weights 0.5/0.5**
+  (step 64). **CSI ≥ 0 everywhere** (built from non-negative parts with non-negative weights;
+  near 0 = near-normal, large = a compound heat–drought extreme).
+
+  **The COMMON PITFALL is guarded both ways.** If the supply stress were built from **raw
+  NDMI** instead of its z-score, it would not be on the demand stress's scale and the
+  equal-weight combination would be dominated by whichever variable has the larger numeric
+  range. This module reads **only** `vpd_z` and `ndmi_z` from the Section 11 store (never the
+  raw VPD/NDMI in the Section 9 cube); `_assert_inputs_are_zscores` **fails the build** unless
+  `ndmi_z` is mean ≈ 0 / std ≈ 1 (a raw NDMI field is mean ≈ −0.07 / std ≈ 0.09) and `vpd_z`
+  straddles 0 (raw VPD in kPa is ≥ 0); and the unit tests prove the supply stress built from
+  the z-score carries a balanced ~half of the CSI while a raw-NDMI supply is swamped by demand.
+
+  **Demand is TIME-VARYING; SUPPLY is STATIC IN TIME (carried forward from Section 11).**
+  `vpd_z` varies per overpass (true temporal climatology), so the demand stress varies in
+  time. `ndmi_z` is a **spatial** standardization of the single 2023 NDMI composite (Section 11
+  decision B) — **constant across the 66 overpasses** — so the supply stress is **constant in
+  time** (asserted on reload: `supply_stress` is identical across overpasses). **Consequence
+  (stated plainly):** because the supply term is the same for every overpass, the **temporal
+  ranking of the spatial-mean CSI equals the ranking of the VPD demand** (verified in-code: the
+  CSI and demand orderings are identical) — i.e. *the highest-CSI dates are the highest
+  VPD-demand dates*.
+
+  **Confirming the compound extremes (step 65 deliverable).** CSI min/mean/max = **0.000 /
+  0.421 / 5.453** (≥ 0 everywhere; **98.96 %** of pixel-overpass cells finite). Because VPD-z is
+  standardized **per hour-of-day** (Section 11), a calm low-variance night can post a high z
+  without being a heat extreme, so a brittle top-1 is unreliable; the **robust statistic is the
+  heatwave-window ENRICHMENT** (reused verbatim from Section 11 — single source of truth). The
+  known 2023 peak-heat window (≥110 °F streak ~Jun 30 – Jul 30, Phoenix's hottest month on
+  record) is **23 % of all overpasses but 64 % of the top-11 highest-CSI overpasses → 2.80×
+  enriched** (identical for CSI and demand, as expected from the static supply). 7 of the
+  top-10 highest-CSI overpasses fall in July; the strict #1 is 2023-09-10 (a high-VPD-z calm
+  pre-dawn overpass — exactly the per-hour-standardization subtlety, which is why enrichment,
+  not top-1, is reported), and the #2 is **2023-07-20**, a core heatwave date.
+
+  **Sensitivity HOOKS (step 66) — present but NOT run.** `compute_csi(demand, supply,
+  w_demand, w_supply)` is a **parameterised** function so the unequal-weight test is a trivial
+  re-call; `copula_weights(...)` is a **`NotImplementedError` STUB** (a clearly-labelled
+  placeholder for the copula-derived weights, with a `# TODO Section 12 step 66` note) that is
+  **deliberately not executed**. The baseline deliverable uses the equal 0.5/0.5 weights only.
+
+  **Deliverables (`data/processed/`, git-ignored).** `section12_csi_70m.zarr` (dims
+  `overpass = 66 × y = 1155 × x = 1339`; vars `csi`, `demand_stress`, `supply_stress`; aligned
+  to `reference_grid.tif`, asserted on reload — CRS/shape/transform, 66 overpasses, all vars
+  float, **CSI ≥ 0 everywhere**, and `supply_stress` constant in time) and
+  `section12_csi_overpass_summary.parquet` (66-row per-overpass spatial-mean csi/demand/supply
+  + season part + in-heatwave flag, sorted by CSI). Figures:
+  `figures/section12_csi_distribution.png` (the CSI distribution with the demand/supply
+  components, plus the spatial-mean CSI per overpass with the heatwave window shaded) and
+  `figures/section12_csi_extreme_date_map.png` (the 70 m CSI field for the highest-CSI
+  overpass).
