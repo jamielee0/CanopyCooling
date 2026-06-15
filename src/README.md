@@ -510,3 +510,59 @@ utilities. Importable as a package alongside `config.py`.
   tree`, `n_good_obs == min(n_tree_valid, n_ref_valid)`, and every row has ≥ 1 finite tree &
   reference pixel). QA figure: `figures/section13_cooling_advantage_distribution.png` (the
   cooling-advantage distribution + the per-overpass spread).
+- `section14_threshold.py` — **Section 14: exploratory analysis + the first threshold estimate**
+  (steps 72–79) — the **final section** of the pilot and the **first scientific result**. This is
+  the **reusable analysis logic** that the deliverable notebook
+  (`notebooks/14_exploratory_threshold.ipynb`) imports and calls; it reads **nothing** and writes
+  **nothing** (the notebook does the IO — reading only `data/processed/master_table.parquet` — and
+  the figures). numpy / pandas / (pwlf, ruptures, statsmodels, scipy) only.
+  `test_section14_threshold.py` exercises the risky numerics on tiny synthetic series in the canopy
+  env (no IO). Run the notebook: `python -m`-free —
+  `conda run -n canopy jupyter nbconvert --to notebook --execute --inplace
+  notebooks/14_exploratory_threshold.ipynb`; run the tests:
+  `conda run -n canopy python src/test_section14_threshold.py`.
+
+  **What it computes.** `describe_shape` (Pearson/Spearman/OLS slope of the scatter, step 72);
+  `bin_means` (per-bin mean / SEM / count of cooling advantage, NaN-pairwise-dropped, step 73 — and
+  reused for the ET/ESI overlay, step 74); `apply_min_count` (the minimum-`n_tree_valid` filter,
+  step 75); `linear_fit` and `segmented_fit` (the null straight-line model and the one-breakpoint
+  continuous piecewise fit via `pwlf`, step 76) with `compare_linear_segmented` (ΔR² / ΔAIC — is the
+  kink worth it?); `bootstrap_breakpoint` (row-resampled CI for the breakpoint + `spans_fraction` =
+  CI width as a fraction of the CSI range, step 77); `changepoint_csi` (an **independent** single
+  change-point on the CSI-ordered cooling-advantage sequence via `ruptures` l2 mean-shift, step 78);
+  `et_declines_beyond` (mean ET below vs above the candidate threshold — the mechanistic check, step
+  74); and `methods_agree` + `threshold_verdict` (the **honesty gate**, steps 78–79).
+
+  **The honesty gate (the protocol's common pitfall, encoded in code — non-negotiable).** A
+  segmented regression **always** returns a breakpoint, even on a straight line or pure noise (proven
+  in the unit tests). `threshold_verdict` therefore reports a threshold as **credible only if ALL of**:
+  (i) the two methods **agree** — the `ruptures` change-point lies inside the breakpoint's bootstrap
+  CI *or* within a documented tolerance (`AGREE_TOLERANCE_FRACTION = 0.20` of the CSI range, which
+  absorbs the known pwlf-knee-vs-ruptures-mean-shift location offset); (ii) the breakpoint is **well
+  identified** — the bootstrap CI width is < `WIDE_CI_FRACTION = 0.5` of the CSI range; (iii) a
+  **bend is visible** — the post-break slope is ≥ `BEND_SLOPE_DROP = 0.5` K/CSI-unit more negative
+  than the pre-break slope; and (iv) **ET corroborates** — mean ET declines beyond the candidate
+  threshold. Otherwise the verdict is **"no robust threshold detected"** — an explicitly valid
+  outcome. (The wide-CI gate also rejects the degenerate case where a CI spanning the whole range
+  trivially "contains" the change-point.) `analyze_sample` runs the whole pipeline on one
+  (CSI, cooling-advantage[, ET]) sample and returns a `ThresholdVerdict`.
+
+  **Phoenix pilot result — NO ROBUST THRESHOLD DETECTED** (`docs/section14_results_note.md`). Run on
+  three samples — the **full** 9-BG sample (`n_tree_valid ≥ 1`, n = 264), a **modest** filter
+  (`≥ 3`, n = 107), and the **robust** subset (`≥ 10`, n = 31, which collapses to the single
+  well-sampled BG `040139412001` — the thin-sample sensitivity made explicit) — the verdict is the
+  **same in all three**: the cooling-advantage vs CSI relationship is **flat** (|Pearson r| < 0.1,
+  p > 0.3 everywhere; linear R² ≈ 0.001–0.009), the segmented kink is **not preferred** over a
+  straight line (ΔAIC = +1.4 / +1.5 / +2.1, all > 0), the breakpoint is **not identified** (bootstrap
+  CI spans **62 % / 88 % / 97 %** of the CSI range; the full-sample bootstrap distribution is
+  multimodal), the two methods do **not** agree on a well-identified break, and **ET shows no
+  decline** beyond the candidate breakpoint (no mechanistic signature). This is the **expected**
+  outcome for the pilot, driven by (a) the **thin paired sample** (9 BGs, one dominant, median
+  `n_good_obs` = 2; the most extreme cooling advantages rest on a single tree pixel — not clipped,
+  but down-weighted by the min-count filter and reported via sensitivity) and (b) a **CSI axis that
+  is ≈ a VPD-demand axis** (the NDMI supply z is static in time, so the between-BG CSI spread is ~10×
+  smaller than the within-BG temporal spread). A defensible threshold needs the denser, multi-city
+  sample of the **cross-city phase** that this section gates into. Figures (`figures/section14_*.png`):
+  the scatter, the binned mean ± SEM, the ET/ESI overlay, the distribution/QC panel, and the
+  segmented-fit + bootstrap-CI-histogram. **The executed notebook is the deliverable** (committed with
+  outputs; it is code/output, not data).
