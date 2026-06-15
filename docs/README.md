@@ -9,3 +9,15 @@ and decisions. Tracked in git as text/markdown.
   proof, the 2023-heatwave-window enrichment of extreme VPD-z, and the documented NDMI
   spatial-standardization deviation (single 2023 composite → no temporal climatology
   possible). Written by `src/section11_anomalies.py`.
+- `section14_results_note.md` — **Section 14** results note (step 79): the **first scientific
+  result** — the pilot threshold estimate for cooling advantage vs the Compound Stress Index,
+  its uncertainty from **two independent methods** (segmented-regression breakpoint + bootstrap
+  CI, and an independent `ruptures` change-point), the ET corroboration, and the data-adequacy
+  caveats. **Verdict: no robust threshold detected** (a valid outcome under the protocol's
+  common-pitfall gate, not a failure): the relationship is flat (|Pearson r| < 0.1, p > 0.3 in
+  every sample), the segmented kink is **not** preferred over a straight line (ΔAIC > 0
+  everywhere), the breakpoint is **not** identified (bootstrap CI spans 62–97 % of the CSI
+  range), the two methods do not agree on a well-identified break, and ET shows no mechanistic
+  decline. Driven by the **thin paired sample** (9 BGs, one dominant; median `n_good_obs` = 2)
+  and a CSI axis that is ~entirely **temporal VPD-demand** (the NDMI supply z is static in time).
+  Produced by `notebooks/14_exploratory_threshold.ipynb` (logic in `src/section14_threshold.py`).
