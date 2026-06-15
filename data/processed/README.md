@@ -44,30 +44,36 @@ Current contents (regenerate from `src/`):
   `src/section10_classify_pixels.py`. uint8, aligned exactly to `reference_grid.tif`
   (CRS/shape/transform asserted on reload), nodata 255. **Codebook** (in the band tags):
   **0 = excluded/other, 1 = tree-dominated, 2 = reference, 3 = excluded-by-building-
-  buffer**. **At the pre-registered start thresholds (`config.NDVI_THR` 0.5,
-  `CANOPY_THR` 70 %, `IMPERV_THR` 20 %, not water, `MIN_OBS` 20) the tree and reference
-  counts are 0** — the 70 m canopy layer maxes at ≈ 69.5 % (30 m USFS TCC area-averaged to
-  70 m never reaches 70 %), so only codes 0 and 3 appear. This is the honest pre-
-  registered result; see `section10_threshold_sensitivity.csv` for where pixels appear as
-  `CANOPY_THR` is lowered, and `src/README.md` (Section 10, "GATE CONCERN") for the full
-  explanation.
+  buffer**. Built at the **operating thresholds** (`config.NDVI_THR` 0.5, `CANOPY_THR`
+  **40 %** [operating; 70 % pre-registered is unachievable at 70 m — the canopy layer maxes
+  at **69.53 %**, so 30 m USFS TCC area-averaged to 70 m never reaches 70 %], `IMPERV_THR`
+  20 %, not water, `MIN_OBS` 20): **195 tree pixels, 6 019 reference pixels, 187 667 px
+  excluded by the building buffer**. The 40 % operating `CANOPY_THR` is the sweep-driven
+  point chosen via the ≥10-paired-neighborhood rule (40 % floor); see
+  `section10_threshold_sensitivity.csv` for the full canopy dependence and `src/README.md`
+  (Section 10, "OPERATING `CANOPY_THR`") for the full explanation.
 - `section10_paired_neighborhoods.csv` — **Section 10:** the paired-neighborhood list
   (`GEOID`, `n_tree_px`, `n_ref_px`) — block groups that contain **both** a tree-dominated
-  pixel and a reference pixel (step 55). **Empty at the start thresholds** (0 tree pixels →
-  no pairs); 4 paired block groups appear at the canopy = 50 % operating point.
+  pixel and a reference pixel (step 55). At the operating `CANOPY_THR = 40 %` there are
+  **9 paired block groups** (a thin paired design — a genuine limitation for the Section 14
+  threshold estimate, which must be reported with this caveat). At the pre-registered 70 %
+  bar it would be empty (0 tree pixels → no pairs).
 - `section10_threshold_sensitivity.csv` — **Section 10** (step 57): tree/reference/paired
-  counts as each threshold (`NDVI_THR`, `CANOPY_THR`, `IMPERV_THR`, `MIN_OBS`,
-  `TALL_BUILDING_MIN_AREA_M2`) is varied around its start value, under two baselines
-  (`start` = all other thresholds pre-registered; `operating_point` = others swept with
-  `CANOPY_THR` at the documented 50 % operating point, so each threshold's effect is
-  visible despite the canopy-ceiling). Columns: `varied`, `value`, `baseline`,
-  `canopy_thr`, `n_tree_px`, `n_ref_px`, `n_paired_blockgroups`, `is_start`,
-  `n_tall_buildings`.
+  counts as each threshold (`NDVI_THR`, `CANOPY_THR` [swept **35 → 70 %**], `IMPERV_THR`,
+  `MIN_OBS`, `TALL_BUILDING_MIN_AREA_M2`) is varied, under two baselines:
+  `operating_point` (other thresholds pre-registered, `CANOPY_THR` at the **40 %**
+  operating point — so each threshold's effect is visible) and `preregistered`
+  (`CANOPY_THR` held at the **70 %** pre-registered bar — every row **0**, the 69.53 % data
+  ceiling). The full canopy sweep makes the dependence on lowering the bar explicit (70 %
+  → 0 px; 50/45/40 % → 4/7/9 paired). Columns: `varied`, `value`, `baseline`,
+  `canopy_thr`, `n_tree_px`, `n_ref_px`, `n_paired_blockgroups`, `is_operating` (the live
+  operating value of each swept threshold), `is_operating_point` (the **adopted** operating
+  `CANOPY_THR` row), `n_tall_buildings`.
 - `section10_validation_sample.csv` — **Section 10** (step 56): a sample of classified
   tree-dominated pixels for visual validation — `pixel_id, row, col, lon, lat, ndvi,
   canopy_pct, impervious_pct, genuine_canopy`. **`genuine_canopy` is left BLANK for the
   user** to mark yes/no over `figures/section10_treepixel_validation_overlay.png` (a
   per-pixel 1 m aerial chip grid). The human agreement rate is **pending user review** —
   an automated *provisional* cross-check is printed by the run but is **not** the reported
-  rate. Because the start thresholds yield 0 tree pixels, the sample is drawn at the
-  canopy = 50 % operating point (logged; the saved class raster is unaffected).
+  rate. The sample is drawn at the operating `CANOPY_THR = 40 %` — exactly the tree pixels
+  that enter the analysis.

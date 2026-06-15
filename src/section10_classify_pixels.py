@@ -70,20 +70,30 @@ Two real data gaps, handled explicitly (documented choices)
     the provisional automated number and the placeholder for the true human rate
     ("PENDING USER REVIEW"). The human agreement rate is filled in by the user.
 
-A GATE CONCERN you must know about (reported honestly, not hidden)
-------------------------------------------------------------------
+THE CANOPY DATA CEILING and the OPERATING THRESHOLD (reported honestly, not hidden)
+-----------------------------------------------------------------------------------
 The 70 m canopy layer (USFS TCC, 30 m, AREA-WEIGHTED-averaged to 70 m in Section 5)
-has a MAXIMUM value of ~69.5 %: averaging 30 m canopy cells into 70 m cells dilutes
-the peaks, so no 70 m cell reaches the pre-registered CANOPY_THR = 70 %. At the
-START thresholds the tree-dominated count is therefore ZERO, and with it the paired-
-neighborhood count is zero. This is a real data-vs-threshold tension (a sparse-
-canopy desert city imaged at 70 m), NOT a code bug. We keep CANOPY_THR = 70 in
-config.py exactly as pre-registered AND run at it (the saved primary classification
-is the honest start-threshold result). The SENSITIVITY TABLE is the deliverable that
-resolves it: sweeping CANOPY_THR down (65/60/55/50 %) shows where tree pixels appear
-(56 at >50 %). For the VISUAL-VALIDATION overlay to be useful at all, the sample is
-drawn from the lowest swept CANOPY_THR that yields tree pixels when the start set is
-empty -- clearly LABELLED with the canopy threshold actually used. See the README.
+has a MAXIMUM value of 69.53 % (mean 0.88 %): averaging 30 m canopy cells into 70 m
+cells dilutes the peaks, so NO 70 m cell reaches the pre-registered CANOPY_THR = 70 %.
+At the pre-registered 70 % bar the tree-dominated count is ZERO, and with it the
+paired-neighborhood count is zero -- a confirmed data ceiling for a sparse-canopy
+desert city imaged at 70 m, NOT a code bug. The protocol's Section 10 gate explicitly
+sanctions re-tuning when the paired design is starved ("Few pairs or poor agreement
+means re-tune thresholds before continuing"), so the OPERATING CANOPY_THR is lowered
+to a data-driven value by a documented rule: the HIGHEST canopy threshold in
+{40, 45, 50} that yields >= 10 PAIRED NEIGHBORHOODS (all other thresholds at their
+pre-registered start values). In Phoenix NONE of {40,45,50} reaches 10 paired
+neighborhoods (40 % -> 9, 45 % -> 7, 50 % -> 4), so the rule falls back to the 40 %
+FLOOR (a 40 % canopy 70 m cell is already ~45x the Phoenix mean -> a strong
+tree-dominated signal; lower would dilute the meaning). The adopted operating point is
+therefore CANOPY_THR = 40 %, giving 9 paired neighborhoods -- a GENUINE LIMITATION
+that the Section 14 threshold estimate MUST be reported WITH. The 70 % pre-registration
+is preserved in config.CANOPY_THR_PREREGISTERED, and the SENSITIVITY TABLE keeps the
+FULL canopy sweep (35/40/45/50/55/60/65/70 %), so the dependence on lowering the bar --
+and the 70 % data ceiling (0 px) -- is fully visible. This is a documented,
+protocol-gate-sanctioned operating point, NOT a silent change. The visual-validation
+sample is drawn at the operating CANOPY_THR (the pixels that actually enter the
+analysis). See config.py and the README for the full account.
 
 Deliverables (checkpoint, Section 10; data/processed/, git-ignored)
 -------------------------------------------------------------------
@@ -94,8 +104,9 @@ Deliverables (checkpoint, Section 10; data/processed/, git-ignored)
 * section10_paired_neighborhoods.csv -- GEOID, n_tree_px, n_ref_px for the block
   groups that contain BOTH a tree and a reference pixel.
 * section10_threshold_sensitivity.csv -- tree/reference/paired counts as each of
-  NDVI_THR, CANOPY_THR, IMPERV_THR, MIN_OBS and TALL_BUILDING_MIN_AREA_M2 is varied
-  around its start value.
+  NDVI_THR, CANOPY_THR (35..70 %), IMPERV_THR, MIN_OBS and TALL_BUILDING_MIN_AREA_M2
+  is varied, under two baselines (canopy at the OPERATING point vs the PRE-REGISTERED
+  70 % bar); the adopted operating CANOPY_THR row is flagged is_operating_point.
 * section10_validation_sample.csv  -- the visual-validation sample (blank
   genuine_canopy column for the user).
 * figures/section10_treepixel_validation_overlay.png -- the aerial overlay.
@@ -170,10 +181,13 @@ CLASS_CODEBOOK = {
     CLASS_BUILDING_BUFFER: "excluded-by-building-buffer",
 }
 
-# Sensitivity sweep grids: each threshold varied AROUND its config start value
-# (step 57). Built once so the start value is always included and flagged.
+# Sensitivity sweep grids: each threshold varied AROUND its operating value
+# (step 57). Built once so the operating value is always included and flagged.
+# CANOPY is swept FINELY from the 40 % operating floor up to the 70 % pre-
+# registered bar (which the 69.53 % data ceiling makes unreachable -> 0 px), so
+# the whole canopy dependence -- and the data ceiling -- is visible in one table.
 SENS_NDVI = (0.40, 0.45, 0.50, 0.55, 0.60)
-SENS_CANOPY = (50.0, 55.0, 60.0, 65.0, 70.0)   # spans the 69.5 % data ceiling
+SENS_CANOPY = (35.0, 40.0, 45.0, 50.0, 55.0, 60.0, 65.0, 70.0)  # 40 % op floor -> 70 % ceiling
 SENS_IMPERV = (10.0, 20.0, 30.0, 40.0)
 SENS_MIN_OBS = (10, 15, 20, 25, 30)
 SENS_TALL_AREA = (500.0, 1000.0, 1500.0, 2000.0)
@@ -334,13 +348,13 @@ def classify(ndvi, canopy, impervious, landcover, obs_count, bg_index,
 
 def sensitivity_row(label: str, value, ndvi, canopy, impervious, landcover,
                     obs_count, bg_index, building_excluded, *, params: dict,
-                    baseline: str = "start") -> dict:
+                    baseline: str = "operating_point") -> dict:
     """One sensitivity-table row: classify with ``params`` and return the counts.
 
     ``label``/``value`` name which threshold is being varied to ``value``; ``params``
-    is the full threshold dict used for this run (start values except the one varied).
-    ``baseline`` records whether the OTHER thresholds are at their pre-registered
-    'start' values or at the documented canopy 'operating_point' (see
+    is the full threshold dict used for this run (operating values except the one
+    varied). ``baseline`` records whether the canopy bar is at the 'operating_point'
+    (config.CANOPY_THR) or held at the 'preregistered' 70 % bar (see
     :func:`build_sensitivity_table`). The canopy threshold actually used is reported
     in the ``canopy_thr`` column so the operating point is explicit.
     """
@@ -499,7 +513,15 @@ def write_paired_neighborhoods(paired: "pd.DataFrame", lookup: "pd.DataFrame",
 # Sensitivity table (step 57)
 # =========================================================================== #
 def start_params() -> dict:
-    """The pre-registered start thresholds from config.py as a dict."""
+    """The OPERATING thresholds from config.py as a dict.
+
+    ``canopy_thr`` is ``config.CANOPY_THR`` -- the sweep-driven OPERATING POINT (40 %),
+    NOT the pre-registered 70 % bar (which the 69.53 % data ceiling makes unreachable;
+    see :func:`derive_operating_canopy_thr` and ``config.CANOPY_THR_PREREGISTERED``).
+    Every OTHER threshold (NDVI/IMPERV/MIN_OBS/water/reference/built) is at its
+    pre-registered start value -- only the canopy bar was re-tuned, under the protocol
+    Section 10 gate. (Name kept for the unit tests / validation path that call it.)
+    """
     return {
         "ndvi_thr": float(config.NDVI_THR),
         "canopy_thr": float(config.CANOPY_THR),
@@ -511,32 +533,70 @@ def start_params() -> dict:
     }
 
 
-def operating_canopy_thr(inp: dict, bg_index: np.ndarray, building_excluded: np.ndarray,
-                         base: dict) -> float:
-    """The lowest swept CANOPY_THR that yields >=1 tree pixel (the operating point).
+# The operating-point selection rule (documented; pre-registered bar is preserved in
+# config.CANOPY_THR_PREREGISTERED). Keep the canopy bar as HIGH as the data allows
+# while yielding enough paired neighborhoods for the Section 14 regression.
+OP_MIN_PAIRED = 10                       # target: >= this many paired neighborhoods
+OP_CANDIDATES = (50.0, 45.0, 40.0)       # highest-first; >=10-paired wins
+OP_FLOOR = 40.0                          # never go below this (a 40 % 70 m cell is
+                                         # ~45x the Phoenix mean -> strong tree signal)
 
-    Used to make the sensitivity table informative when the START canopy threshold
-    zeroes every count (the ~69.5 % canopy-ceiling gate concern): the OTHER-threshold
-    sweeps are ALSO run with CANOPY_THR fixed at this operating point so their effect
-    on the counts is visible. Returns config.CANOPY_THR unchanged if it already yields
-    tree pixels.
+
+def derive_operating_canopy_thr(inp: dict, bg_index: np.ndarray,
+                                building_excluded: np.ndarray, base: dict
+                                ) -> tuple[float, dict]:
+    """Derive the operating CANOPY_THR from the sweep by the documented rule.
+
+    Rule (protocol Section 10 gate -- "few pairs ... re-tune thresholds"): the HIGHEST
+    canopy threshold in OP_CANDIDATES (= {40, 45, 50}) that yields >= OP_MIN_PAIRED
+    (10) PAIRED NEIGHBORHOODS, with all OTHER thresholds at their pre-registered start
+    values. If none reaches the target, fall back to the OP_FLOOR (40 %) -- never lower
+    (a 40 % canopy 70 m cell is already ~45x the Phoenix mean of 0.88 %, a strong
+    tree-dominated signal; going lower would dilute the meaning), and flag that Phoenix
+    yields fewer than the target number of pairs (a genuine limitation for Section 14).
+
+    Returns ``(operating_canopy_thr, info)`` where ``info`` records the per-candidate
+    paired counts, whether the target was met, and the chosen value. This is the
+    SINGLE source of truth for the operating point; ``config.CANOPY_THR`` is asserted
+    to equal it at run time so the saved config and the derivation never drift.
     """
-    keep = ~np.asarray(building_excluded, dtype=bool)
-    for ct in (config.CANOPY_THR, *sorted(SENS_CANOPY)):
-        t = tree_mask(inp["ndvi"], inp["canopy"], inp["impervious"], inp["landcover"],
-                      inp["obs_count"], ndvi_thr=base["ndvi_thr"], canopy_thr=ct,
-                      imperv_thr=base["imperv_thr"], min_obs=base["min_obs"],
-                      water_class=base["water_class"]) & keep
-        if int(t.sum()) > 0:
-            return float(ct)
-    return float(config.CANOPY_THR)
+    paired_by_ct: dict[float, int] = {}
+    for ct in sorted(set(OP_CANDIDATES)):
+        params = dict(base)
+        params["canopy_thr"] = ct
+        _, _, counts = classify(
+            inp["ndvi"], inp["canopy"], inp["impervious"], inp["landcover"],
+            inp["obs_count"], bg_index, building_excluded,
+            ndvi_thr=params["ndvi_thr"], canopy_thr=ct, imperv_thr=params["imperv_thr"],
+            min_obs=params["min_obs"], water_class=params["water_class"],
+            ref_canopy_max=params["ref_canopy_max"], built_classes=params["built_classes"])
+        paired_by_ct[ct] = int(counts["n_paired_blockgroups"])
+
+    chosen = None
+    for ct in OP_CANDIDATES:                 # highest-first
+        if paired_by_ct.get(ct, 0) >= OP_MIN_PAIRED:
+            chosen = float(ct)
+            break
+    target_met = chosen is not None
+    if chosen is None:
+        chosen = float(OP_FLOOR)
+    info = {"paired_by_candidate": paired_by_ct, "target_met": target_met,
+            "min_paired_target": OP_MIN_PAIRED, "n_paired_at_operating": paired_by_ct.get(chosen, 0),
+            "operating_canopy_thr": chosen}
+    return chosen, info
 
 
-def _sweep(common: dict, base: dict, baseline: str) -> list[dict]:
-    """Sweep NDVI/CANOPY/IMPERV/MIN_OBS around their start values under one baseline.
+def _sweep(common: dict, base: dict, baseline: str, *, mark_op_ct: float | None = None
+           ) -> list[dict]:
+    """Sweep NDVI/CANOPY/IMPERV/MIN_OBS around their operating values under one baseline.
 
     ``base`` carries the fixed value of every OTHER threshold; ``baseline`` labels
-    whether those others are at 'start' or at the canopy 'operating_point'.
+    whether those others are at the canopy 'operating_point' (canopy = config.CANOPY_THR)
+    or 'preregistered' (canopy = config.CANOPY_THR_PREREGISTERED -> the honest all-zero
+    pre-registration). The CANOPY_THR sweep itself is emitted ONCE (under the operating
+    baseline) and spans the whole 35->70 % grid, so the pre-registered 70 % row (0 px,
+    the data ceiling) is already visible there. ``mark_op_ct`` flags the adopted
+    operating canopy value in the CANOPY_THR sweep via the is_operating_point column.
     """
     rows: list[dict] = []
     sweeps = [
@@ -545,65 +605,72 @@ def _sweep(common: dict, base: dict, baseline: str) -> list[dict]:
         ("IMPERV_THR", "imperv_thr", SENS_IMPERV, config.IMPERV_THR),
         ("MIN_OBS", "min_obs", SENS_MIN_OBS, config.MIN_OBS),
     ]
-    for label, key, grid, start in sweeps:
-        # CANOPY_THR is the same sweep under either baseline -> only emit it once.
-        if label == "CANOPY_THR" and baseline != "start":
+    for label, key, grid, op_val in sweeps:
+        # CANOPY_THR spans the full grid under the operating baseline only (emit once).
+        if label == "CANOPY_THR" and baseline != "operating_point":
             continue
         for v in grid:
             params = dict(base)
             params[key] = v
             r = sensitivity_row(label, v, params=params, baseline=baseline, **common)
-            r["is_start"] = bool(v == start and baseline == "start")
+            # is_operating: the row whose ONLY-varied threshold sits at its operating
+            # value, under the operating baseline (the live classification's setting).
+            r["is_operating"] = bool(v == op_val and baseline == "operating_point")
+            r["is_operating_point"] = bool(
+                label == "CANOPY_THR" and mark_op_ct is not None and v == mark_op_ct)
             rows.append(r)
     return rows
 
 
 def build_sensitivity_table(inp: dict, bg_index: np.ndarray, interim: Path) -> "pd.DataFrame":
-    """Vary each threshold around its start value and record tree/ref/paired counts.
+    """Vary each threshold around its operating value and record tree/ref/paired counts.
 
-    Two baselines, because the pre-registered CANOPY_THR = 70 % zeroes every count
-    (the ~69.5 % canopy-ceiling gate concern), which would make the other sweeps an
-    uninformative wall of zeros:
-      * baseline='start' -- every OTHER threshold at its pre-registered start value
-        (the honest pre-registered picture; rows are 0 wherever canopy>70 % gates);
-      * baseline='operating_point' -- the OTHER thresholds swept with CANOPY_THR fixed
-        at the documented operating point (the lowest swept canopy that yields tree
-        pixels, 50 %), so NDVI/IMPERV/MIN_OBS/tall-area actually move the counts and
-        their sensitivity is visible.
-    NDVI/CANOPY/IMPERV/MIN_OBS use the START tall-building buffer (only the
+    Two baselines, because the PRE-REGISTERED canopy bar (CANOPY_THR_PREREGISTERED =
+    70 %) zeroes every count -- the 69.53 % canopy data ceiling (30 m USFS TCC area-
+    averaged to 70 m never reaches 70 %), which is exactly the gate concern that
+    sanctioned re-tuning:
+      * baseline='operating_point' -- every OTHER threshold at its pre-registered start
+        value with CANOPY_THR at the OPERATING point (config.CANOPY_THR = 40 %), so the
+        NDVI/IMPERV/MIN_OBS/tall-area sweeps actually move the counts and their
+        sensitivity is visible; the CANOPY_THR sweep itself (35->70 %) lives here and
+        shows the FULL canopy dependence, including the 70 % pre-registered row (0 px,
+        the data ceiling). The adopted operating canopy row is flagged is_operating_point.
+      * baseline='preregistered' -- the OTHER thresholds swept with CANOPY_THR held at
+        the PRE-REGISTERED 70 % bar (every row 0 -- the honest pre-registration picture,
+        preserved so the dependence on lowering canopy is explicit, not hidden).
+    NDVI/CANOPY/IMPERV/MIN_OBS use the operating tall-building buffer (only the
     classification threshold changes). TALL_BUILDING_MIN_AREA_M2 is swept separately
-    (its buffer mask recomputed per area value) under BOTH baselines. The pre-
-    registered start value of each parameter is marked is_start=True; ``canopy_thr``
-    records the canopy threshold actually in force for each row.
+    (its buffer mask recomputed per area value) under BOTH baselines. ``canopy_thr``
+    records the canopy threshold actually in force for each row; ``is_operating`` marks
+    the live classification's setting of each threshold; ``is_operating_point`` marks
+    the ADOPTED operating canopy value in the CANOPY_THR sweep.
     """
-    base = start_params()
+    base = start_params()                              # canopy at the OPERATING point
+    base_pre = dict(base)
+    base_pre["canopy_thr"] = float(config.CANOPY_THR_PREREGISTERED)  # the 70 % bar
     base_buffer, _ = building_buffer_mask(
         interim, min_area_m2=config.TALL_BUILDING_MIN_AREA_M2, buffer_m=config.BUFFER_M)
     common = dict(ndvi=inp["ndvi"], canopy=inp["canopy"], impervious=inp["impervious"],
                   landcover=inp["landcover"], obs_count=inp["obs_count"],
                   bg_index=bg_index, building_excluded=base_buffer)
 
-    op_ct = operating_canopy_thr(inp, bg_index, base_buffer, base)
-    base_op = dict(base)
-    base_op["canopy_thr"] = op_ct
-
     rows: list[dict] = []
-    rows += _sweep(common, base, baseline="start")
-    if op_ct != config.CANOPY_THR:
-        rows += _sweep(common, base_op, baseline="operating_point")
+    rows += _sweep(common, base, baseline="operating_point",
+                   mark_op_ct=float(config.CANOPY_THR))
+    rows += _sweep(common, base_pre, baseline="preregistered")
 
     # TALL_BUILDING_MIN_AREA_M2: recompute the buffer per area value, under BOTH
-    # baselines (start canopy=70 -> zeros; operating canopy -> visible effect).
-    for baseline, bparams in (("start", base), ("operating_point", base_op)):
-        if baseline == "operating_point" and op_ct == config.CANOPY_THR:
-            continue
+    # baselines (operating canopy -> visible effect; pre-registered 70 -> zeros).
+    for baseline, bparams in (("operating_point", base), ("preregistered", base_pre)):
         for v in SENS_TALL_AREA:
             buf, n_tall = building_buffer_mask(interim, min_area_m2=v, buffer_m=config.BUFFER_M)
             common_v = dict(common)
             common_v["building_excluded"] = buf
             r = sensitivity_row("TALL_BUILDING_MIN_AREA_M2", v, params=bparams,
                                 baseline=baseline, **common_v)
-            r["is_start"] = bool(v == config.TALL_BUILDING_MIN_AREA_M2 and baseline == "start")
+            r["is_operating"] = bool(
+                v == config.TALL_BUILDING_MIN_AREA_M2 and baseline == "operating_point")
+            r["is_operating_point"] = False
             r["n_tall_buildings"] = n_tall
             rows.append(r)
 
@@ -856,8 +923,8 @@ def verify_raster(out_path: Path, reference: "xr.DataArray", inp: dict,
     raster = da.values
     rr, cc = np.where(raster == CLASS_TREE)
     if rr.size == 0:
-        log.warning("  (no saved tree pixels at the start thresholds -> "
-                    "criteria-recheck skipped; see the GATE CONCERN in the header)")
+        log.warning("  (no saved tree pixels -> criteria-recheck skipped; at the "
+                    "operating CANOPY_THR this should not happen -- see the header)")
         return
     rng = np.random.default_rng(seed)
     k = min(10, rr.size)
@@ -883,29 +950,24 @@ def verify_raster(out_path: Path, reference: "xr.DataArray", inp: dict,
 # =========================================================================== #
 # Orchestration / CLI
 # =========================================================================== #
-def _operating_canopy_for_validation(inp: dict, bg_index: np.ndarray,
-                                     building_excluded: np.ndarray, params: dict
-                                     ) -> tuple[np.ndarray, float]:
-    """Pick the tree mask used for the VALIDATION sample.
+def _validation_tree_mask(inp: dict, building_excluded: np.ndarray, params: dict
+                          ) -> tuple[np.ndarray, float]:
+    """The tree mask used for the VALIDATION sample -- at the OPERATING thresholds.
 
-    Prefer the START thresholds. If they yield zero tree pixels (the canopy-ceiling
-    gate concern), step CANOPY_THR DOWN through the sensitivity grid until tree
-    pixels appear, so the overlay/CSV are actually usable. Returns (tree_mask, the
-    canopy threshold used). The PRIMARY saved raster is unaffected -- this only
-    chooses what to show the user for inspection.
+    Sampling is done at the live OPERATING thresholds (``params``, i.e. canopy =
+    config.CANOPY_THR = 40 %), so the overlay/CSV show exactly the tree pixels that
+    enter the analysis. (Earlier the pre-registered 70 % bar yielded 0 tree pixels and
+    the sample had to be drawn at a lowered canopy; with the adopted operating point
+    the primary classification already has tree pixels, so no special-casing is
+    needed.) Returns ``(tree_mask, canopy_thr_used)``.
     """
     keep = ~np.asarray(building_excluded, dtype=bool)
-    ct = operating_canopy_thr(inp, bg_index, building_excluded, params)
+    ct = float(params["canopy_thr"])
     tree = tree_mask(
         inp["ndvi"], inp["canopy"], inp["impervious"], inp["landcover"],
         inp["obs_count"], ndvi_thr=params["ndvi_thr"], canopy_thr=ct,
         imperv_thr=params["imperv_thr"], min_obs=params["min_obs"],
         water_class=params["water_class"]) & keep
-    if ct != params["canopy_thr"]:
-        log.warning("Validation: START canopy>%.0f%% yields 0 tree pixels "
-                    "(canopy data ceiling ~69.5%%); sampling at canopy>%.0f%% "
-                    "instead so the overlay is usable (PRIMARY raster unaffected)",
-                    params["canopy_thr"], ct)
     return tree, ct
 
 
@@ -923,8 +985,38 @@ def run(make_figures: bool = True, use_basemap: bool = True,
     building_excluded, n_tall = building_buffer_mask(
         interim, min_area_m2=config.TALL_BUILDING_MIN_AREA_M2, buffer_m=config.BUFFER_M)
 
-    # ---- classify at the PRE-REGISTERED start thresholds (the deliverable) - #
-    params = start_params()
+    # ---- derive + ASSERT the operating canopy threshold ------------------- #
+    # The pre-registered CANOPY_THR_PREREGISTERED = 70 % is unachievable at 70 m (the
+    # canopy layer maxes at 69.53 %), so it yields 0 tree pixels. The OPERATING canopy
+    # threshold is derived here from the documented >=10-paired-neighborhood rule and
+    # MUST equal config.CANOPY_THR (so the saved config and the derivation never drift).
+    params = start_params()                            # canopy at the OPERATING point
+    op_ct, op_info = derive_operating_canopy_thr(
+        inp, bg_index, building_excluded, params)
+    log.info("=" * 70)
+    log.info("OPERATING CANOPY_THR derivation (rule: HIGHEST of %s with >=%d paired "
+             "neighborhoods; else %.0f%% floor):",
+             tuple(int(c) for c in OP_CANDIDATES), OP_MIN_PAIRED, OP_FLOOR)
+    for ct in sorted(op_info["paired_by_candidate"]):
+        log.info("    canopy>%.0f%% -> %d paired neighborhoods", ct,
+                 op_info["paired_by_candidate"][ct])
+    log.info("  pre-registered bar      : %.0f%% (config.CANOPY_THR_PREREGISTERED; "
+             "0 tree px -- 70 m data ceiling 69.53%%)", config.CANOPY_THR_PREREGISTERED)
+    log.info("  ADOPTED operating CANOPY_THR: %.0f%%  (%s; %d paired neighborhoods)",
+             op_ct, "target met" if op_info["target_met"]
+             else f"NONE of {tuple(int(c) for c in OP_CANDIDATES)} reached "
+                  f"{OP_MIN_PAIRED} -> {OP_FLOOR:.0f}%% floor",
+             op_info["n_paired_at_operating"])
+    if not op_info["target_met"]:
+        log.warning("  LIMITATION: Phoenix yields only %d paired neighborhoods at the "
+                    "%.0f%% operating floor (< the %d target). The Section 14 threshold "
+                    "estimate MUST be reported WITH this caveat (thin paired design).",
+                    op_info["n_paired_at_operating"], op_ct, OP_MIN_PAIRED)
+    assert float(config.CANOPY_THR) == float(op_ct), (
+        f"config.CANOPY_THR={config.CANOPY_THR} != derived operating point {op_ct}; "
+        f"update config.CANOPY_THR to the operating value.")
+
+    # ---- classify at the OPERATING thresholds (the deliverable) ----------- #
     raster, paired, counts = classify(
         inp["ndvi"], inp["canopy"], inp["impervious"], inp["landcover"],
         inp["obs_count"], bg_index, building_excluded,
@@ -937,40 +1029,36 @@ def run(make_figures: bool = True, use_basemap: bool = True,
     write_class_raster(raster, processed / PIXEL_CLASS_TIF)
     write_paired_neighborhoods(paired, lookup, processed / PAIRED_CSV)
     results.update({"class_raster": processed / PIXEL_CLASS_TIF,
-                    "paired_csv": processed / PAIRED_CSV, "counts": counts})
+                    "paired_csv": processed / PAIRED_CSV, "counts": counts,
+                    "operating_info": op_info})
 
     # ---- HEADLINE counts (step 2 of the definition of done) --------------- #
     obs = inp["obs_count"]
     log.info("=" * 70)
-    log.info("HEADLINE COUNTS (start thresholds: NDVI>%.2f, canopy>%.0f%%, "
-             "imperv<%.0f%%, not water, obs>=%d):", params["ndvi_thr"],
-             params["canopy_thr"], params["imperv_thr"], params["min_obs"])
-    log.info("  tree-dominated pixels   : %d", counts["n_tree_px"])
-    log.info("  reference pixels        : %d", counts["n_ref_px"])
-    log.info("  paired neighborhoods    : %d", counts["n_paired_blockgroups"])
+    log.info("HEADLINE COUNTS (OPERATING thresholds: NDVI>%.2f, canopy>%.0f%% "
+             "[operating; 70%% pre-registered], imperv<%.0f%%, not water, obs>=%d):",
+             params["ndvi_thr"], params["canopy_thr"], params["imperv_thr"],
+             params["min_obs"])
+    log.info("  tree-dominated pixels    : %d", counts["n_tree_px"])
+    log.info("  reference pixels         : %d", counts["n_ref_px"])
+    log.info("  paired neighborhoods     : %d", counts["n_paired_blockgroups"])
     log.info("  pixels excluded by buffer: %d  (%d 'tall' footprints > %.0f m2)",
              counts["n_building_excluded"], n_tall, config.TALL_BUILDING_MIN_AREA_M2)
     log.info("  obs-count map: min=%d median=%d max=%d  frac>=%d = %.3f",
              int(obs.min()), int(np.median(obs)), int(obs.max()), params["min_obs"],
              float((obs >= params["min_obs"]).mean()))
-    if counts["n_tree_px"] == 0:
-        log.warning("  GATE CONCERN: 0 tree pixels at canopy>%.0f%% because the 70 m "
-                    "canopy layer maxes at ~69.5%% (30 m TCC area-averaged to 70 m). "
-                    "The sensitivity table below shows where tree pixels appear as "
-                    "CANOPY_THR is lowered. The saved raster is the honest start-"
-                    "threshold result.", params["canopy_thr"])
 
     # ---- sensitivity table (step 57) -------------------------------------- #
     sens = build_sensitivity_table(inp, bg_index, interim)
     sens.to_csv(processed / SENSITIVITY_CSV, index=False)
     results["sensitivity_csv"] = processed / SENSITIVITY_CSV
     log.info("=" * 70)
-    log.info("SENSITIVITY TABLE (counts as each threshold is varied; * = start value):")
+    log.info("SENSITIVITY TABLE (counts as each threshold is varied; "
+             "@ = operating value, OP = adopted operating CANOPY_THR):")
     _print_sensitivity(sens)
 
     # ---- visual validation (step 56 / data gap 2) ------------------------- #
-    val_tree, canopy_used = _operating_canopy_for_validation(
-        inp, bg_index, building_excluded, params)
+    val_tree, canopy_used = _validation_tree_mask(inp, building_excluded, params)
     rows, cols = sample_tree_pixels(val_tree, bg_index, n=validation_n, seed=seed)
     sample = write_validation_sample(rows, cols, inp, canopy_used,
                                      processed / VALIDATION_CSV)
@@ -1007,11 +1095,11 @@ def run(make_figures: bool = True, use_basemap: bool = True,
 
 def _print_sensitivity(sens: "pd.DataFrame") -> None:
     """Pretty-print the sensitivity table grouped by baseline, then varied threshold."""
-    labels = {"start": "OTHER thresholds at PRE-REGISTERED START values "
-                       "(canopy>70%% gates -> mostly 0)",
-              "operating_point": "OTHER thresholds at the canopy OPERATING POINT "
-                                 "(so each threshold's effect is visible)"}
-    for baseline in ("start", "operating_point"):
+    labels = {"operating_point": "OTHER thresholds pre-registered, canopy at the "
+                                 "OPERATING POINT (so each threshold's effect is visible)",
+              "preregistered": "canopy held at the PRE-REGISTERED 70%% bar "
+                               "(0 everywhere -- the 69.53%% data ceiling)"}
+    for baseline in ("operating_point", "preregistered"):
         sub = sens[sens["baseline"] == baseline]
         if sub.empty:
             continue
@@ -1019,11 +1107,14 @@ def _print_sensitivity(sens: "pd.DataFrame") -> None:
         for label, grp in sub.groupby("varied", sort=False):
             log.info("  %s:", label)
             for _, r in grp.iterrows():
-                star = " *" if r.get("is_start") else "  "
+                # @ marks the live operating value of each swept threshold; OP marks
+                # the ADOPTED operating CANOPY_THR in the canopy sweep.
+                flag = "OP" if r.get("is_operating_point") else (
+                    " @" if r.get("is_operating") else "  ")
                 extra = f"  [canopy>{r['canopy_thr']:.0f}%]"
                 if "n_tall_buildings" in r and not pd.isna(r["n_tall_buildings"]):
                     extra += f"  (n_tall={int(r['n_tall_buildings'])})"
-                log.info("    %s value=%-7s tree=%-6d ref=%-7d paired=%-4d%s", star,
+                log.info("    %s value=%-7s tree=%-6d ref=%-7d paired=%-4d%s", flag,
                          r["value"], int(r["n_tree_px"]), int(r["n_ref_px"]),
                          int(r["n_paired_blockgroups"]), extra)
 

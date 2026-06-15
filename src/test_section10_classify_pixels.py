@@ -300,10 +300,19 @@ def test_sensitivity_row_monotone_in_canopy() -> None:
 
 
 def test_config_constants_present() -> None:
-    print("\n[Section 10 config constants exist with the pre-registered start values]")
+    print("\n[Section 10 config constants: pre-registered start values + canopy operating point]")
     import config
     check(config.NDVI_THR == 0.5, "NDVI_THR start = 0.5")
-    check(config.CANOPY_THR == 70.0, "CANOPY_THR start = 70.0")
+    # CANOPY_THR is the sweep-driven OPERATING point (40 %); the 70 % pre-registration
+    # is preserved in CANOPY_THR_PREREGISTERED. The 70 % bar is unachievable at 70 m
+    # (the canopy layer maxes at 69.53 %), so it is NOT the operating value -- see the
+    # config.py comment and the section10 header. The operating point was chosen by the
+    # >=10-paired-neighborhood rule (40 % floor; Phoenix yields only 9 pairs).
+    check(config.CANOPY_THR == 40.0, "CANOPY_THR operating = 40.0 (sweep-driven floor)")
+    check(config.CANOPY_THR_PREREGISTERED == 70.0,
+          "CANOPY_THR_PREREGISTERED = 70.0 (pre-registered bar, unachievable at 70 m)")
+    check(config.CANOPY_THR < config.CANOPY_THR_PREREGISTERED,
+          "operating CANOPY_THR is below the pre-registered bar (re-tuned, not raised)")
     check(config.IMPERV_THR == 20.0, "IMPERV_THR start = 20.0")
     check(config.MIN_OBS == 20, "MIN_OBS start = 20")
     check(config.BUFFER_M == 70.0, "BUFFER_M start = 70.0")
