@@ -170,8 +170,9 @@ utilities. Importable as a package alongside `config.py`.
   **antecedent precip (`ppt_30/60/90d`) + PRISM `tmean`** at the **exact calendar date**;
   **GRIDMET drought (`pdsi`/`spei30d`/`spei90d`)** at the **pentad whose 5-day window
   contains the date** (`pentad_start ≤ D < pentad_start+5`). The delivered drought cube
-  holds only warm-season pentads, so the 2 earliest pilot overpasses (2023-06-02/-03,
-  before the first 2023 pentad on 06-04) have **no containing pentad and are left NaN**
+  holds only warm-season pentads, so the 3 earliest pilot overpasses (two on
+  2023-06-02, one on 2023-06-03; before the first 2023 pentad on 06-04) have
+  **no containing pentad and are left NaN**
   for drought — an honest absence, *not* the previous September's pentad (~8 months
   stale). ERA5-Land on the 70 m grid is a smooth **regional** background (the same
   coarse-field caveat as PRISM/GRIDMET), not a block-scale measurement.

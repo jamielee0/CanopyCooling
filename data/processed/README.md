@@ -19,8 +19,8 @@ Current contents (regenerate from `src/`):
     (W m⁻²), `vpd` (kPa), `sm` (m³ m⁻³), `ppt_30d`/`ppt_60d`/`ppt_90d` (mm),
     `pdsi`/`spei30d`/`spei90d` (index), `tmean` (°C). **ET/ESI/PET are present only on
     their 45 paired overpasses** (NaN on the other 21; Section 3 caveat — supporting
-    evidence only). **Drought is NaN on the 2 earliest pilot overpasses** (2023-06-02/-03,
-    before the first 2023 pentad — no containing pentad).
+    evidence only). **Drought is NaN on the 3 earliest pilot overpasses** (two on
+    2023-06-02, one on 2023-06-03; before the first 2023 pentad — no containing pentad).
   - **static vars** `(y, x)`, stored once: `ndvi`, `ndmi` (—), `impervious`, `canopy`
     (percent 0–100), `landcover_class` (**uint8 NLCD class codes — categorical**, never
     bilinear), `median_income` (USD), `pct_poc` (percent), `svi` (percentile 0–1).
