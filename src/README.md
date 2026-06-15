@@ -3,6 +3,27 @@
 Python source for the protocol: data access, processing, modelling, and
 utilities. Importable as a package alongside `config.py`.
 
+- `run_all.py` — **the end-to-end pipeline driver** (the project's `make all`): a
+  declarative, ordered registry of all **15 steps (0–14)** from raw download to
+  the first threshold, each with its exact command, key outputs, and whether it
+  needs network/auth or has a manual prerequisite. Flags: `--from N` / `--to N`
+  (contiguous range), `--only N[,M,…]`, `--dry-run` (print the ordered plan +
+  manual/network legend, run nothing), `--check-deliverables` (read-only
+  PASS/MISSING audit of every step's outputs), `--skip-download` (forward the
+  download-skip flag to the sections that support it), `-v`. **Default with no
+  flags prints the plan + a usage hint — it does NOT auto-run the multi-hour
+  download pipeline.** Each step runs via the same `conda run -n canopy python …`
+  launcher (or `jupyter nbconvert --execute` for the Section 14 notebook), output
+  streamed, stops on the first failure. Sections **9–14 are the network-free,
+  cleanly re-runnable processing half**; re-run them from saved interim with
+  `run_all.py --from 9 --skip-download`. The **3–4 manual touch-points** (S0 the
+  one-time account logins; S7 the PRISM rate-limit fallback; S8 the user-placed
+  CDC SVI CSV; + configured EE/CDS/Census credentials for the networked steps)
+  are flagged in `--dry-run`. Full dependency DAG, step table, and re-run recipe:
+  **`docs/pipeline.md`**. `test_run_all.py` covers its pure logic (registry
+  well-formedness, `--from/--to/--only` selection, the manual/network flags,
+  command construction — runs nothing). Run:
+  `conda run -n canopy python src/run_all.py --dry-run`.
 - `check_auth.py` — minimal authenticated smoke test for the four services
   (Earthdata, Earth Engine, CDS, Census). Run: `python src/check_auth.py`.
 - `build_reference_grid.py` — Section 1: derive/regenerate the 70 m reference grid.
