@@ -77,3 +77,46 @@ Current contents (regenerate from `src/`):
   an automated *provisional* cross-check is printed by the run but is **not** the reported
   rate. The sample is drawn at the operating `CANOPY_THR = 40 %` — exactly the tree pixels
   that enter the analysis.
+- `section11_zscores_70m.zarr` — **Section 11 deliverable:** standardized-anomaly
+  (z-score) fields for the Compound-Stress-Index stress variables, built by
+  `src/section11_anomalies.py` (steps 58–61). Reopen with
+  `xr.open_zarr(..., decode_coords="all")`.
+  - **dims** `overpass = 66 × y = 1155 × x = 1339`; geometry identical to
+    `reference_grid.tif` (asserted on write **and** on reload).
+  - **z-score vars** `(overpass, y, x)`, all dimensionless: `vpd_z`, `sm_z` (the soil-
+    moisture **check**), `ndmi_z` (the **water-supply** z). **Saved climatology** (kept to
+    interpret results later — step 4 deliverable): `vpd_clim_mean`/`vpd_clim_std` (kPa),
+    `sm_clim_mean`/`sm_clim_std` (m³ m⁻³).
+  - **coords** `overpass`, `overpass_key`, `time`, `era5_hour` (the overpass axis is reused
+    verbatim from the Section 9 cube), plus `y`/`x` and a CF `spatial_ref`.
+  - **Two methods, by what data exist (documented in the module header + the QC note).**
+    **`vpd_z` / `sm_z` — rigorous temporal climatology:** for each overpass (day-of-year
+    *D*, matched ERA5 hour *H*, year *Y* = 2023) the **normal** = mean of ERA5-Land values
+    at hour == *H* over all days with |doy − D| ≤ `CLIMATOLOGY_WINDOW_DAYS` (**15**) across
+    2018–2024 **excluding year Y** (leave-one-year-out); **std** over the same set;
+    `z = (observed − normal)/std`. Computed in **native ERA5 8×10 hourly space, then
+    bilinear-regridded to 70 m**. The ±15-day window is **clipped** to the warm season
+    (one-sided at the June/September edges — expected). **`ndmi_z` — spatial
+    standardization (a documented, data-forced deviation):** Section 4 produced **only one**
+    2023 NDMI composite, so a temporal day-of-year climatology is **impossible**; instead
+    `z_NDMI = (NDMI − μ)/σ` over **all valid 70 m NDMI pixels** (μ ≈ −0.0677, σ ≈ 0.0850,
+    n = **1 544 052** px), **broadcast across all 66 overpasses** (it varies by pixel, not
+    by overpass — **constant in time**). Consequence: the water-supply stress feeding
+    Section 12 is a spatial field constant in time; the CSI's *temporal* variation comes
+    from VPD. (Asserted on reload: `ndmi_z` is identical across overpasses.)
+  - **QC (step 4; full account in `docs/section11_anomaly_qc_note.md`).** Whole-record
+    mean/std: `vpd_z` **+0.12 / 0.95** (on target), `sm_z` **−0.09 / 0.45** (mean ≈ 0; std
+    < 1 is a **real single-pilot-year** property — 2023 overpass-hour soil moisture varied
+    less than the 2018–2024 spread; identical native & regridded, so not a pipeline bug;
+    SM is the protocol's *check*), `ndmi_z` **0.00 / 1.00** (by construction). The seasonal
+    cycle is **demonstrably removed as a function of day-of-year**: the day-of-year VPD
+    normal tracks the within-season march (3.74 → 2.83 kPa, Jun → Sep) while a whole-season
+    normal is flat (3.32 kPa) — so the residual June-low/July-high z pattern is **real 2023
+    weather** (cool-humid early June, the record July heat), not the whole-season pitfall.
+    Extreme positive VPD-z: the 2023-06-30…07-30 heatwave window is **23 % of overpasses
+    but 64 % of the top-11 VPD-z → 2.80× enriched** (#2 overall is 2023-07-20). Compressed
+    (Blosc/zstd), one overpass per chunk.
+- `section11_zscores_overpass_summary.parquet` — **Section 11** companion: a **66-row**
+  per-overpass table (`overpass_key`, `time`, `era5_hour`, `season_part`,
+  `in_heatwave_2023`, and regional area-mean `vpd_z`/`sm_z`/`ndmi_z` + the VPD/SM
+  climatology means/stds) for a quick scan and the QC tables.
