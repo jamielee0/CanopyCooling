@@ -3,6 +3,11 @@
 Written documentation: protocol notes, method descriptions, data dictionaries,
 and decisions. Tracked in git as text/markdown.
 
+- `pipeline.md` — **end-to-end reproduction guide**: the full dependency DAG
+  (0 → 14), each step's command + key outputs, the driver (`src/run_all.py`)
+  usage, the 3–4 manual touch-points, and how to re-run the network-free
+  processing half (9–14) from saved interim (`run_all.py --from 9
+  --skip-download`).
 - `section11_anomaly_qc_note.md` — **Section 11** results/QC note (step 4): the
   standardized-anomaly (z-score) QC outcomes for VPD, NDMI (water supply) and soil
   moisture — whole-record mean/std, the day-of-year-vs-whole-season seasonal-cycle-removal
