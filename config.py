@@ -107,7 +107,29 @@ GRID_GDAL_GEOTRANSFORM: tuple = (355460.0, 70.0, 0.0, 3754380.0, 0.0, -70.0)
 
 # --- tree-dominated pixel = ALL of these (step 52) ------------------------
 NDVI_THR: float = 0.5        # warm-season median NDVI strictly above this
-CANOPY_THR: float = 70.0     # tree-canopy PERCENT strictly above this (high)
+# CANOPY_THR is the SENSITIVITY-DRIVEN OPERATING POINT, not the pre-registered
+# 70 %. The pre-registered 70 % bar is UNACHIEVABLE at 70 m: the tree-canopy
+# layer (USFS TCC, 30 m, AREA-WEIGHTED-averaged to 70 m in Section 5) MAXES at
+# 69.53 % (mean 0.88 %), because averaging 30 m canopy cells into 70 m cells
+# dilutes the peaks -> ZERO 70 m cells reach 70 %, so the pre-registered bar
+# yields 0 tree-dominated pixels and 0 paired neighborhoods (a confirmed data
+# ceiling for a sparse-canopy desert city imaged at 70 m, NOT a bug). The
+# protocol's Section 10 gate explicitly sanctions re-tuning the threshold when
+# the paired design is starved ("Few pairs or poor agreement means re-tune
+# thresholds before continuing"). The operating value below was chosen by a
+# documented sweep rule: the HIGHEST canopy threshold in {40, 45, 50} that
+# yields >= 10 paired neighborhoods; none of {40,45,50} reaches 10 in Phoenix
+# (40 % -> 9, 45 % -> 7, 50 % -> 4), so the rule falls back to the 40 % FLOOR
+# (a 40 % canopy 70 m cell is already ~45x the Phoenix mean of 0.88 % -> a
+# strong tree-dominated signal; going lower would dilute the meaning). At 40 %
+# Phoenix yields only 9 paired neighborhoods -- a GENUINE LIMITATION to carry
+# into the Section 14 threshold estimate, which MUST be reported WITH this
+# caveat. The full dependence is visible in section10_threshold_sensitivity.csv.
+# This is a documented, protocol-gate-sanctioned operating point, NOT a silent
+# change: CANOPY_THR_PREREGISTERED preserves the 70 % pre-registration.
+CANOPY_THR: float = 40.0     # OPERATING tree-canopy PERCENT (sweep-driven; see above)
+CANOPY_THR_PREREGISTERED: float = 70.0   # pre-registered bar; unachievable at 70 m
+                                         # (layer max 69.53 %) -> preserved for honesty
 IMPERV_THR: float = 20.0     # impervious PERCENT strictly below this (low)
 MIN_OBS: int = 20            # >= this many finite/good-quality ECOSTRESS LST obs
 WATER_CLASS: int = 11        # NLCD "open water" -> excluded ("not water")
@@ -175,8 +197,9 @@ if __name__ == "__main__":
     print(f"GRID_SHAPE      = {GRID_SHAPE} (rows, cols)")
     print(f"GRID_ORIGIN_XY  = {GRID_ORIGIN_XY}")
     print(f"GRID_BOUNDS     = {GRID_BOUNDS} (left, bottom, right, top)")
-    print("--- Section 10 thresholds (pre-registered start values) ---")
-    print(f"NDVI_THR={NDVI_THR}  CANOPY_THR={CANOPY_THR}  IMPERV_THR={IMPERV_THR}  "
+    print("--- Section 10 thresholds (others pre-registered; canopy at the operating point) ---")
+    print(f"NDVI_THR={NDVI_THR}  CANOPY_THR={CANOPY_THR} (operating; "
+          f"pre-registered {CANOPY_THR_PREREGISTERED})  IMPERV_THR={IMPERV_THR}  "
           f"MIN_OBS={MIN_OBS}")
     print(f"REF_CANOPY_MAX={REF_CANOPY_MAX}  BUILT_CLASSES={BUILT_CLASSES}  "
           f"WATER_CLASS={WATER_CLASS}")

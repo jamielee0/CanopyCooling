@@ -205,14 +205,16 @@ utilities. Importable as a package alongside `config.py`.
 
   **Tree-dominated rule (step 52) — the AND of five criteria.** A pixel is
   tree-dominated iff warm-season median **NDVI > `NDVI_THR`** (0.5) **AND** tree-canopy
-  **percent > `CANOPY_THR`** (70) **AND** impervious **percent < `IMPERV_THR`** (20)
-  **AND** it is **not water** (`landcover_class != WATER_CLASS`, NLCD 11) **AND** it has
-  **≥ `MIN_OBS`** (20) finite/good-quality ECOSTRESS LST observations across the 66
-  overpasses (`obs_count` = per-pixel count of finite `lst` in the cube; each overpass's
-  LST is already QC'd in Section 2). The protocol **pitfall is encoded by the
-  conjunction**: high NDVI *alone* (well-watered grass / golf turf) does **not** qualify
-  — canopy must *also* be high. It is the **combination** of high NDVI **with** high
-  canopy that isolates trees. (Unit-tested, incl. the irrigated-grass case.)
+  **percent > `CANOPY_THR`** (**40 %**, the *operating* point — see "OPERATING
+  CANOPY_THR" below; the **70 %** pre-registration is unachievable at 70 m) **AND**
+  impervious **percent < `IMPERV_THR`** (20) **AND** it is **not water**
+  (`landcover_class != WATER_CLASS`, NLCD 11) **AND** it has **≥ `MIN_OBS`** (20)
+  finite/good-quality ECOSTRESS LST observations across the 66 overpasses (`obs_count` =
+  per-pixel count of finite `lst` in the cube; each overpass's LST is already QC'd in
+  Section 2). The protocol **pitfall is encoded by the conjunction**: high NDVI *alone*
+  (well-watered grass / golf turf) does **not** qualify — canopy must *also* be high. It
+  is the **combination** of high NDVI **with** high canopy that isolates trees.
+  (Unit-tested, incl. the irrigated-grass case.)
 
   **Reference rule (step 53) + pairing (step 55).** A non-tree reference pixel has **low
   canopy** (`canopy < REF_CANOPY_MAX`, **20 %**), a **built** surface (`landcover_class`
@@ -235,20 +237,39 @@ utilities. Importable as a package alongside `config.py`.
   "tall" set is buffered. The area threshold is a config parameter and is in the
   sensitivity sweep.
 
-  **GATE CONCERN — 0 tree pixels at the pre-registered `CANOPY_THR = 70 %` (reported
-  honestly).** The 70 m canopy layer (USFS TCC, 30 m, **area-weighted-averaged** to 70 m
-  in Section 5) **maxes at ≈ 69.5 %**: averaging 30 m canopy cells into 70 m cells dilutes
-  the peaks, so **no 70 m cell reaches 70 %**. At the start thresholds the tree count is
-  therefore **0**, and the paired-neighborhood count is **0** — a real data-vs-threshold
-  tension (a sparse-canopy desert city imaged at 70 m), **not a code bug**. We keep
-  `CANOPY_THR = 70` in `config.py` exactly as pre-registered **and** run at it (the saved
-  `section10_pixel_class_70m.tif` is the honest start-threshold result; only codes 0 and
-  3 appear). The **sensitivity table resolves it**: lowering `CANOPY_THR` to 65/60/55/50 %
-  yields **2 / 7 / 29 / 56** tree pixels and **1 / 1 / 2 / 4** paired neighborhoods. (At
-  the **canopy = 50 % operating point** the table also shows that **NDVI_THR and IMPERV_THR
-  are not binding** — the count is flat at 56 across their sweeps — while **MIN_OBS is**:
-  95 → 56 → 8 → 1 tree px as it rises 10/15 → 20 → 25 → 30. So canopy and the observation
-  count, not NDVI/impervious, are what limit the tree set.)
+  **OPERATING `CANOPY_THR = 40 %` — the pre-registered 70 % bar is unachievable at 70 m
+  (a documented, protocol-gate-sanctioned operating point, NOT a silent change).** The
+  70 m canopy layer (USFS TCC, 30 m, **area-weighted-averaged** to 70 m in Section 5)
+  **maxes at 69.53 %** (mean 0.88 %): averaging 30 m canopy cells into 70 m cells dilutes
+  the peaks, so **no 70 m cell reaches 70 %**. At the pre-registered `CANOPY_THR = 70 %`
+  the tree count is **0** and the paired-neighborhood count is **0** — a **confirmed data
+  ceiling** for a sparse-canopy desert city imaged at 70 m, **not a code bug**. The
+  protocol's **Section 10 gate explicitly sanctions re-tuning** ("Few pairs or poor
+  agreement means re-tune thresholds before continuing"), so `CANOPY_THR` is lowered to a
+  **data-driven operating value** by a documented rule: the **HIGHEST canopy threshold in
+  {40, 45, 50} that yields ≥ 10 paired neighborhoods** (all other thresholds at their
+  pre-registered start values). The start-baseline canopy sweep is **35 → 70 %**:
+
+  | `CANOPY_THR` | tree px | reference px | paired neighborhoods |
+  |---|---|---|---|
+  | 35 % *(context only, below floor)* | 314 | 9 391 | 14 |
+  | **40 % — adopted operating point** | **195** | **6 019** | **9** |
+  | 45 % | 112 | 4 235 | 7 |
+  | 50 % | 56 | 2 561 | 4 |
+  | 55 / 60 / 65 / 70 % | 29 / 7 / 2 / **0** | 1 329 / 819 / 819 / **0** | 2 / 1 / 1 / **0** |
+
+  **None of {40, 45, 50} reaches 10 paired neighborhoods** (40 % → 9, 45 % → 7, 50 % → 4),
+  so the rule falls back to the **40 % floor** — never lower (a 40 % canopy 70 m cell is
+  already **~45× the Phoenix mean** of 0.88 %, a strong tree-dominated signal; lower would
+  dilute the meaning). The adopted operating point is therefore **`CANOPY_THR = 40 %`**,
+  giving **9 paired neighborhoods**. *(35 % clears 10, at 14 pairs, but it is **below the
+  floor** and shown for context only, not adopted.)* The **70 % pre-registration is
+  preserved** in `config.CANOPY_THR_PREREGISTERED`, and the **dependence is fully visible**
+  in `section10_threshold_sensitivity.csv` (the full 35 → 70 % canopy sweep, the 70 % bar
+  row at 0 px, and `is_operating_point` flagging the adopted 40 % row). **9 paired
+  neighborhoods is a thin paired design — a genuine limitation that the Section 14
+  threshold estimate MUST be reported WITH.** The sensitivity table (operating baseline)
+  also shows which *other* thresholds bind at the 40 % operating point.
 
   **Visual validation (step 56) — imagery + a human eye; the human rate is PENDING USER
   REVIEW (never fabricated).** We cannot make the genuine-canopy call ourselves, so
@@ -261,18 +282,20 @@ utilities. Importable as a package alongside `config.py`.
   with a **blank `genuine_canopy`** column for the user to mark yes/no; (d) prints an
   **automated provisional cross-check** (the share of sampled pixels also clearing a
   *stricter* NDVI+canopy bar — a proxy, **not** a human judgement) and a clearly-labelled
-  **placeholder for the true human agreement rate (`PENDING USER REVIEW`)**. *Because the
-  start thresholds yield 0 tree pixels, the validation sample is drawn at the documented
-  canopy operating point (50 %) so the overlay/CSV are usable; the primary saved raster is
-  unaffected and this is logged.*
+  **placeholder for the true human agreement rate (`PENDING USER REVIEW`)**. The sample is
+  drawn at the **operating `CANOPY_THR = 40 %`** — exactly the tree pixels that enter the
+  analysis.
 
   **Deliverables (`data/processed/`, git-ignored).** `section10_pixel_class_70m.tif`
   (per-pixel class raster aligned to `reference_grid.tif`; **codebook 0 = excluded/other,
   1 = tree-dominated, 2 = reference, 3 = excluded-by-building-buffer**, in the band tags),
   `section10_paired_neighborhoods.csv` (`GEOID, n_tree_px, n_ref_px`),
   `section10_threshold_sensitivity.csv` (tree/ref/paired counts as each threshold is
-  varied, under both the pre-registered-start and the operating-point baselines), and the
-  validation sample CSV. Figures: the validation chip grid +
-  `figures/section10_pixel_class_map.png`. The run re-opens the saved raster, **asserts it
+  varied, under two baselines — `operating_point` = canopy at the 40 % operating point,
+  `preregistered` = canopy held at the 70 % bar [0 everywhere]; the adopted operating
+  canopy row is flagged `is_operating_point`), and the validation sample CSV. Figures: the
+  validation chip grid + `figures/section10_pixel_class_map.png`. The run **derives the
+  operating `CANOPY_THR` from the ≥10-paired rule and asserts it equals `config.CANOPY_THR`**
+  (so config and the derivation never drift), re-opens the saved raster, **asserts it
   aligns to `reference_grid.tif`** (CRS/shape/transform) and re-checks a random sample of
   tree pixels against the config thresholds.
