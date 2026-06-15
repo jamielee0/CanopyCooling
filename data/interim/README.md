@@ -63,13 +63,20 @@ Section 8 (neighborhood + tree attributes):
 - `phoenix_tree_inventory.parquet` — cleaned ASU "Treelytics" street-tree inventory
   (22,507 trees, EPSG:32612) with `species_botanical`/`species_common`, the PRIMARY
   functional descriptors `water_use` (drought_tolerant/mesic) + `leaf_habit`
-  (deciduous/evergreen), and `planting_year`. **`planting_year` is the INVENTORY year**
-  (flag `planting_year_is_inventory=True`) — no Phoenix inventory exposes a true
-  planting year. Central-Phoenix coverage, top ~20 species (see `src/README.md`).
+  (deciduous/evergreen), and `inventory_year`. **A true planting year is unavailable**
+  — no accessible Phoenix inventory exposes one — so `inventory_year` is the **survey
+  year** (when the tree was inventoried, ~2010–2021) and **must NOT be read as a
+  planting date or used to derive tree age**; the `planting_year` column is present
+  but **null for every record** (protocol step 44 retains planting year only "where
+  available"). Central-Phoenix coverage, top ~20 species (see `src/README.md`).
 - `building_footprints_32612.parquet` — ~1.47 M Microsoft building-footprint polygons
   for the bbox (EPSG:32612), kept as vectors for the Section 10 tall-building
-  exclusion buffer. From the Planetary Computer `ms-buildings` STAC (quadkey-filtered);
-  fallback is the USBuildingFootprints Arizona release. Large + git-ignored.
+  exclusion buffer. **Fetched programmatically from the Microsoft Planetary Computer
+  STAC `ms-buildings` collection** (item `United States_2022-07-06`, signed with
+  planetary-computer, Bing level-9 quadkey partitions covering the bbox) — the
+  intended primary source, recorded in `../manifest.csv`. (The USBuildingFootprints
+  Arizona release is an automatic fallback only if the STAC read fails; it was not
+  used.) Large + git-ignored.
 
   Section 8 raw inputs live in `../raw/acs/`, `../raw/svi/` (user-supplied SVI CSV),
   `../raw/trees/`, `../raw/footprints/` and are recorded in `../manifest.csv`.
