@@ -192,3 +192,87 @@ utilities. Importable as a package alongside `config.py`.
   "Stack" interchange** (NDVI 0.02, impervious 91 %, canopy 0 %, LST ≈ 316 K — hottest,
   ET ≈ 4 W m⁻²), and **Papago Golf Course** (NDVI 0.56, impervious 1 %, canopy 0 % — very
   green turf but *no tree canopy*, distinct from the park, highest ET ≈ 209 W m⁻²).
+- `section10_classify_pixels.py` — Section 10: **classify tree-dominated and non-tree
+  urban reference pixels — the paired design** (steps 52–57). Reads the Section 9
+  `data/processed/analysis_cube_70m.zarr` + the Section 8 block-group and building-
+  footprint parquets (no network except the contextily aerial basemap for the
+  validation overlay). **All thresholds are pre-registered named constants in
+  `config.py`** so the sensitivity analysis is just a change of numbers there.
+  `test_section10_classify_pixels.py` covers its pure logic. Run:
+  `python src/section10_classify_pixels.py` (`--no-figures` to skip both figures,
+  `--no-basemap` for a plain overlay without tile download, `--validation-n N`,
+  `--seed N`).
+
+  **Tree-dominated rule (step 52) — the AND of five criteria.** A pixel is
+  tree-dominated iff warm-season median **NDVI > `NDVI_THR`** (0.5) **AND** tree-canopy
+  **percent > `CANOPY_THR`** (70) **AND** impervious **percent < `IMPERV_THR`** (20)
+  **AND** it is **not water** (`landcover_class != WATER_CLASS`, NLCD 11) **AND** it has
+  **≥ `MIN_OBS`** (20) finite/good-quality ECOSTRESS LST observations across the 66
+  overpasses (`obs_count` = per-pixel count of finite `lst` in the cube; each overpass's
+  LST is already QC'd in Section 2). The protocol **pitfall is encoded by the
+  conjunction**: high NDVI *alone* (well-watered grass / golf turf) does **not** qualify
+  — canopy must *also* be high. It is the **combination** of high NDVI **with** high
+  canopy that isolates trees. (Unit-tested, incl. the irrigated-grass case.)
+
+  **Reference rule (step 53) + pairing (step 55).** A non-tree reference pixel has **low
+  canopy** (`canopy < REF_CANOPY_MAX`, **20 %**), a **built** surface (`landcover_class`
+  in `BUILT_CLASSES` = NLCD developed **21/22/23/24** — *not* water, *not* bare desert:
+  barren 31 / shrub 52 / grassland 71 are excluded), and ≥ `MIN_OBS` observations. Then
+  pixels are **paired by block group**: only block groups containing **both** a tree
+  pixel and a reference pixel enter the analysis; tree/reference pixels in unpaired block
+  groups are demoted to "other". The per-pixel **block-group index map** is produced here
+  by rasterizing the block-group **GEOID** onto the 70 m grid by **centroid containment**
+  (Section 8 rasterized only the block-group *attributes*, not the GEOID).
+
+  **Tall-building buffer (step 54) — `TALL_BUILDING_MIN_AREA_M2 = 1000 m²` (a documented
+  proxy).** The Microsoft footprints carry **geometry only — there is no height field** —
+  so "tall/large" is proxied by footprint **area**: Phoenix is overwhelmingly low-rise,
+  so large footprints are the commercial / multi-storey stock. 1000 m² sits just below
+  the 99th percentile of footprint area (~1665 m²) → the largest ~2 % of the ~1.47 M
+  footprints (**29,861** buildings); buffering *only* those by **`BUFFER_M` = 70 m**
+  excludes **187,667 px (≈ 12 %** of the grid). Buffering *all* 1.47 M footprints would
+  over-exclude the whole built area (the protocol's explicit warning), so only the proxy
+  "tall" set is buffered. The area threshold is a config parameter and is in the
+  sensitivity sweep.
+
+  **GATE CONCERN — 0 tree pixels at the pre-registered `CANOPY_THR = 70 %` (reported
+  honestly).** The 70 m canopy layer (USFS TCC, 30 m, **area-weighted-averaged** to 70 m
+  in Section 5) **maxes at ≈ 69.5 %**: averaging 30 m canopy cells into 70 m cells dilutes
+  the peaks, so **no 70 m cell reaches 70 %**. At the start thresholds the tree count is
+  therefore **0**, and the paired-neighborhood count is **0** — a real data-vs-threshold
+  tension (a sparse-canopy desert city imaged at 70 m), **not a code bug**. We keep
+  `CANOPY_THR = 70` in `config.py` exactly as pre-registered **and** run at it (the saved
+  `section10_pixel_class_70m.tif` is the honest start-threshold result; only codes 0 and
+  3 appear). The **sensitivity table resolves it**: lowering `CANOPY_THR` to 65/60/55/50 %
+  yields **2 / 7 / 29 / 56** tree pixels and **1 / 1 / 2 / 4** paired neighborhoods. (At
+  the **canopy = 50 % operating point** the table also shows that **NDVI_THR and IMPERV_THR
+  are not binding** — the count is flat at 56 across their sweeps — while **MIN_OBS is**:
+  95 → 56 → 8 → 1 tree px as it rises 10/15 → 20 → 25 → 30. So canopy and the observation
+  count, not NDVI/impervious, are what limit the tree set.)
+
+  **Visual validation (step 56) — imagery + a human eye; the human rate is PENDING USER
+  REVIEW (never fabricated).** We cannot make the genuine-canopy call ourselves, so
+  Section 10: (a) samples up to **60** classified tree pixels **spread across** their
+  block groups (reproducible `seed`); (b) renders a **per-pixel aerial chip grid** over
+  **Esri World Imagery** (1 m, via contextily — no auth) to
+  `figures/section10_treepixel_validation_overlay.png` (each chip a ~160 m window with a
+  box on the 70 m pixel — so a human can actually judge canopy *per pixel*, which a single
+  full-extent overlay cannot); (c) writes `data/processed/section10_validation_sample.csv`
+  with a **blank `genuine_canopy`** column for the user to mark yes/no; (d) prints an
+  **automated provisional cross-check** (the share of sampled pixels also clearing a
+  *stricter* NDVI+canopy bar — a proxy, **not** a human judgement) and a clearly-labelled
+  **placeholder for the true human agreement rate (`PENDING USER REVIEW`)**. *Because the
+  start thresholds yield 0 tree pixels, the validation sample is drawn at the documented
+  canopy operating point (50 %) so the overlay/CSV are usable; the primary saved raster is
+  unaffected and this is logged.*
+
+  **Deliverables (`data/processed/`, git-ignored).** `section10_pixel_class_70m.tif`
+  (per-pixel class raster aligned to `reference_grid.tif`; **codebook 0 = excluded/other,
+  1 = tree-dominated, 2 = reference, 3 = excluded-by-building-buffer**, in the band tags),
+  `section10_paired_neighborhoods.csv` (`GEOID, n_tree_px, n_ref_px`),
+  `section10_threshold_sensitivity.csv` (tree/ref/paired counts as each threshold is
+  varied, under both the pre-registered-start and the operating-point baselines), and the
+  validation sample CSV. Figures: the validation chip grid +
+  `figures/section10_pixel_class_map.png`. The run re-opens the saved raster, **asserts it
+  aligns to `reference_grid.tif`** (CRS/shape/transform) and re-checks a random sample of
+  tree pixels against the config thresholds.

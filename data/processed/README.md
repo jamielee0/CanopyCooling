@@ -39,3 +39,35 @@ Current contents (regenerate from `src/`):
   sanity scan. A full pixel × overpass tidy table is deliberately **not** produced here —
   the analysis pixels are not defined until Section 10 (a per-pixel long table would be
   ~100 M rows and wasteful at this stage). See `src/README.md` (Section 9) for detail.
+- `section10_pixel_class_70m.tif` — **Section 10 deliverable:** the per-pixel
+  classification of the paired design (steps 52–57), built by
+  `src/section10_classify_pixels.py`. uint8, aligned exactly to `reference_grid.tif`
+  (CRS/shape/transform asserted on reload), nodata 255. **Codebook** (in the band tags):
+  **0 = excluded/other, 1 = tree-dominated, 2 = reference, 3 = excluded-by-building-
+  buffer**. **At the pre-registered start thresholds (`config.NDVI_THR` 0.5,
+  `CANOPY_THR` 70 %, `IMPERV_THR` 20 %, not water, `MIN_OBS` 20) the tree and reference
+  counts are 0** — the 70 m canopy layer maxes at ≈ 69.5 % (30 m USFS TCC area-averaged to
+  70 m never reaches 70 %), so only codes 0 and 3 appear. This is the honest pre-
+  registered result; see `section10_threshold_sensitivity.csv` for where pixels appear as
+  `CANOPY_THR` is lowered, and `src/README.md` (Section 10, "GATE CONCERN") for the full
+  explanation.
+- `section10_paired_neighborhoods.csv` — **Section 10:** the paired-neighborhood list
+  (`GEOID`, `n_tree_px`, `n_ref_px`) — block groups that contain **both** a tree-dominated
+  pixel and a reference pixel (step 55). **Empty at the start thresholds** (0 tree pixels →
+  no pairs); 4 paired block groups appear at the canopy = 50 % operating point.
+- `section10_threshold_sensitivity.csv` — **Section 10** (step 57): tree/reference/paired
+  counts as each threshold (`NDVI_THR`, `CANOPY_THR`, `IMPERV_THR`, `MIN_OBS`,
+  `TALL_BUILDING_MIN_AREA_M2`) is varied around its start value, under two baselines
+  (`start` = all other thresholds pre-registered; `operating_point` = others swept with
+  `CANOPY_THR` at the documented 50 % operating point, so each threshold's effect is
+  visible despite the canopy-ceiling). Columns: `varied`, `value`, `baseline`,
+  `canopy_thr`, `n_tree_px`, `n_ref_px`, `n_paired_blockgroups`, `is_start`,
+  `n_tall_buildings`.
+- `section10_validation_sample.csv` — **Section 10** (step 56): a sample of classified
+  tree-dominated pixels for visual validation — `pixel_id, row, col, lon, lat, ndvi,
+  canopy_pct, impervious_pct, genuine_canopy`. **`genuine_canopy` is left BLANK for the
+  user** to mark yes/no over `figures/section10_treepixel_validation_overlay.png` (a
+  per-pixel 1 m aerial chip grid). The human agreement rate is **pending user review** —
+  an automated *provisional* cross-check is printed by the run but is **not** the reported
+  rate. Because the start thresholds yield 0 tree pixels, the sample is drawn at the
+  canopy = 50 % operating point (logged; the saved class raster is unaffected).

@@ -92,6 +92,53 @@ GRID_TRANSFORM: tuple = (70.0, 0.0, 355460.0, 0.0, -70.0, 3754380.0)
 GRID_GDAL_GEOTRANSFORM: tuple = (355460.0, 70.0, 0.0, 3754380.0, 0.0, -70.0)
 
 
+# ===========================================================================
+# SECTION 10 - PAIRED-DESIGN PIXEL CLASSIFICATION THRESHOLDS
+# ---------------------------------------------------------------------------
+# The pre-registered ("start") thresholds for classifying tree-dominated and
+# non-tree urban reference pixels (protocol steps 52-57). They are NAMED
+# CONSTANTS so the sensitivity analysis just changes numbers here. Section 10
+# sweeps each of these around its start value and reports how the tree/
+# reference/paired-neighborhood counts respond.
+#
+# Units note: canopy and impervious are stored as PERCENT (0-100) in Section 5,
+# so CANOPY_THR / IMPERV_THR / REF_CANOPY_MAX are in PERCENT, not fractions.
+# ===========================================================================
+
+# --- tree-dominated pixel = ALL of these (step 52) ------------------------
+NDVI_THR: float = 0.5        # warm-season median NDVI strictly above this
+CANOPY_THR: float = 70.0     # tree-canopy PERCENT strictly above this (high)
+IMPERV_THR: float = 20.0     # impervious PERCENT strictly below this (low)
+MIN_OBS: int = 20            # >= this many finite/good-quality ECOSTRESS LST obs
+WATER_CLASS: int = 11        # NLCD "open water" -> excluded ("not water")
+
+# --- non-tree urban reference pixel (step 53) -----------------------------
+# "Low canopy fraction" + a BUILT (not water, not bare desert) surface, in a
+# block group that also holds >=1 tree-dominated pixel. NLCD developed classes
+# are the "built" set; bare-desert classes (barren 31 / shrub 52 / grassland 71)
+# are NOT eligible. REF_CANOPY_MAX is the "low canopy" ceiling: set to 20 % to
+# mirror IMPERV_THR's "low" cut and to sit well above the 99th percentile of the
+# 70 m canopy layer (~12 %), so it admits genuinely low-canopy built pixels
+# without being so loose it is meaningless (raising it 20->30 % changes the
+# reference count by <0.1 %, so 20 % already captures the built low-canopy set).
+BUILT_CLASSES: tuple = (21, 22, 23, 24)   # NLCD developed: open/low/med/high
+REF_CANOPY_MAX: float = 20.0              # reference canopy PERCENT strictly below this
+
+# --- tall-building exclusion buffer (step 54) -----------------------------
+# Exclude any pixel within BUFFER_M of a "tall"/large building footprint to
+# avoid facade-radiated heat. The Microsoft footprints carry GEOMETRY ONLY (no
+# height/storeys field), so "tall" is a documented PROXY by footprint AREA:
+# Phoenix is overwhelmingly low-rise, and large footprints are the commercial /
+# multi-storey stock. TALL_BUILDING_MIN_AREA_M2 = 1000 m2 sits just below the
+# 99th percentile of footprint area (~1665 m2) -> ~the largest ~2 % of the
+# ~1.47 M footprints (29,861 buildings); buffering ONLY those by 70 m removes
+# ~12 % of the grid (buffering all 1.47 M would over-exclude the whole built
+# area, which the protocol warns against). It is a parameter so it is part of
+# the sensitivity story.
+BUFFER_M: float = 70.0                    # exclusion-buffer radius (metres)
+TALL_BUILDING_MIN_AREA_M2: float = 1000.0  # footprint-area proxy for "tall/large"
+
+
 # --------------------------------------------------------------------------- #
 # Credential references (read from the standard locations each library uses).
 # These are pointers only - populate them yourself via the normal login flow.
@@ -128,4 +175,10 @@ if __name__ == "__main__":
     print(f"GRID_SHAPE      = {GRID_SHAPE} (rows, cols)")
     print(f"GRID_ORIGIN_XY  = {GRID_ORIGIN_XY}")
     print(f"GRID_BOUNDS     = {GRID_BOUNDS} (left, bottom, right, top)")
+    print("--- Section 10 thresholds (pre-registered start values) ---")
+    print(f"NDVI_THR={NDVI_THR}  CANOPY_THR={CANOPY_THR}  IMPERV_THR={IMPERV_THR}  "
+          f"MIN_OBS={MIN_OBS}")
+    print(f"REF_CANOPY_MAX={REF_CANOPY_MAX}  BUILT_CLASSES={BUILT_CLASSES}  "
+          f"WATER_CLASS={WATER_CLASS}")
+    print(f"BUFFER_M={BUFFER_M}  TALL_BUILDING_MIN_AREA_M2={TALL_BUILDING_MIN_AREA_M2}")
     print(f"EARTHENGINE_PROJECT = {EARTHENGINE_PROJECT or '(unset)'}")
