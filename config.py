@@ -177,6 +177,24 @@ TALL_BUILDING_MIN_AREA_M2: float = 1000.0  # footprint-area proxy for "tall/larg
 CLIMATOLOGY_WINDOW_DAYS: int = 15        # +/- days of the day-of-year moving window
 
 
+# ===========================================================================
+# SECTION 12 - COMPOUND STRESS INDEX (CSI) WEIGHTS
+# ---------------------------------------------------------------------------
+# The BASELINE equal weights for combining the two standardized stress
+# components into the Compound Stress Index (protocol step 64):
+#   CSI = WEIGHT_DEMAND * demand_stress + WEIGHT_SUPPLY * supply_stress
+# where demand_stress = max(vpd_z, 0) (the positive part of the VPD z-score,
+# step 62) and supply_stress = max(-ndmi_z, 0) (the positive part of the NEGATED
+# water-supply z-score, step 63) -- BOTH z-scores from Section 11, never raw
+# values (the protocol's common pitfall: raw NDMI is on a different scale and
+# would dominate the equal-weight sum). The weights are NAMED CONSTANTS so the
+# step-66 sensitivity tests (unequal weights, copula-derived weights) are just a
+# change of numbers here; only the equal-weight baseline is run now.
+# ===========================================================================
+WEIGHT_DEMAND: float = 0.5   # baseline weight on the demand (VPD z+) stress
+WEIGHT_SUPPLY: float = 0.5   # baseline weight on the supply (-NDMI z)+ stress
+
+
 # --------------------------------------------------------------------------- #
 # Credential references (read from the standard locations each library uses).
 # These are pointers only - populate them yourself via the normal login flow.
@@ -222,4 +240,6 @@ if __name__ == "__main__":
     print(f"BUFFER_M={BUFFER_M}  TALL_BUILDING_MIN_AREA_M2={TALL_BUILDING_MIN_AREA_M2}")
     print("--- Section 11 anomalies ---")
     print(f"CLIMATOLOGY_WINDOW_DAYS={CLIMATOLOGY_WINDOW_DAYS} (+/- days, day-of-year window)")
+    print("--- Section 12 compound stress index (baseline equal weights) ---")
+    print(f"WEIGHT_DEMAND={WEIGHT_DEMAND}  WEIGHT_SUPPLY={WEIGHT_SUPPLY}")
     print(f"EARTHENGINE_PROJECT = {EARTHENGINE_PROJECT or '(unset)'}")

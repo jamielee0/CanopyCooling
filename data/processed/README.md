@@ -120,3 +120,42 @@ Current contents (regenerate from `src/`):
   per-overpass table (`overpass_key`, `time`, `era5_hour`, `season_part`,
   `in_heatwave_2023`, and regional area-mean `vpd_z`/`sm_z`/`ndmi_z` + the VPD/SM
   climatology means/stds) for a quick scan and the QC tables.
+- `section12_csi_70m.zarr` — **Section 12 deliverable:** the **Compound Stress Index (CSI)**
+  for every pixel and every overpass, built by `src/section12_compound_stress.py` from the
+  Section 11 z-scores (steps 62–66). Reopen with `xr.open_zarr(..., decode_coords="all")`.
+  - **dims** `overpass = 66 × y = 1155 × x = 1339`; geometry identical to `reference_grid.tif`
+    (asserted on write **and** on reload).
+  - **vars** `(overpass, y, x)`, all dimensionless: `csi` (the baseline equal-weight CSI),
+    `demand_stress` (`max(vpd_z, 0)`, time-varying), `supply_stress` (`max(-ndmi_z, 0)`,
+    **constant in time**).
+  - **coords** `overpass`, `overpass_key`, `time`, `era5_hour` (the overpass axis is reused
+    verbatim from the Section 11 store / Section 9 cube), plus `y`/`x` and a CF `spatial_ref`.
+  - **Definitions (from the Section 11 z-scores — never raw values).** `demand_stress` = the
+    positive part of the VPD z-score, **`max(vpd_z, 0)`** (step 62; only above-normal VPD is
+    stressful). `supply_stress` = the positive part of the **negated** water-supply z-score,
+    **`max(-ndmi_z, 0)`** (step 63; low water → positive stress, so a below-normal NDMI — a
+    *negative* z — becomes a positive contribution). **`csi = WEIGHT_DEMAND·demand_stress +
+    WEIGHT_SUPPLY·supply_stress`** with **baseline equal weights 0.5/0.5** (`config.WEIGHT_DEMAND`
+    / `config.WEIGHT_SUPPLY`; step 64). **CSI ≥ 0 everywhere** (non-negative parts, non-negative
+    weights). The build **refuses to run unless the inputs are z-scores** (`ndmi_z` mean ≈ 0 /
+    std ≈ 1, `vpd_z` straddles 0) — the protocol's common pitfall (raw NDMI would dominate the
+    equal-weight sum) is guarded in code, not just in prose.
+  - **`supply_stress` is CONSTANT IN TIME** because `ndmi_z` is a single-composite **spatial**
+    standardization (Section 11 decision B), so it is identical for every overpass (asserted on
+    reload). **Consequence:** the temporal ranking of the spatial-mean CSI **equals** the
+    ranking of the VPD demand — *the highest-CSI dates are the highest VPD-demand dates*.
+  - **QC (step 65).** CSI min/mean/max = **0.000 / 0.421 / 5.453**; **CSI ≥ 0 everywhere**;
+    **98.96 %** of pixel-overpass cells finite. The highest-CSI dates coincide with the
+    summer-2023 compound extremes via the **robust heatwave-window enrichment** (VPD-z is
+    standardized per hour-of-day, so a brittle top-1 is unreliable): the 2023-06-30…07-30
+    peak-heat window is **23 % of overpasses but 64 % of the top-11 highest-CSI → 2.80×
+    enriched** (identical for CSI and demand; 7 of the top-10 fall in July; #2 overall is
+    2023-07-20). Compressed (Blosc/zstd), one overpass per chunk.
+  - **Sensitivity hooks (step 66) — not run here.** The CSI computation is a parameterised
+    `compute_csi(demand, supply, w_demand, w_supply)` (unequal-weight test = a trivial re-call)
+    and `copula_weights()` is a `NotImplementedError` placeholder for the copula-derived weights.
+    The baseline deliverable uses the equal 0.5/0.5 weights only.
+- `section12_csi_overpass_summary.parquet` — **Section 12** companion: a **66-row**
+  per-overpass table (`overpass_key`, `time`, `era5_hour`, `season_part`, `in_heatwave_2023`,
+  and the spatial-mean `csi`/`demand_stress`/`supply_stress`), sorted by spatial-mean CSI, for
+  a quick scan and the compound-extreme confirmation.
