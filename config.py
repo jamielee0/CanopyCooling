@@ -161,6 +161,22 @@ BUFFER_M: float = 70.0                    # exclusion-buffer radius (metres)
 TALL_BUILDING_MIN_AREA_M2: float = 1000.0  # footprint-area proxy for "tall/large"
 
 
+# ===========================================================================
+# SECTION 11 - ANOMALIES & DESEASONALIZATION (z-scores)
+# ---------------------------------------------------------------------------
+# Half-width (in days) of the DAY-OF-YEAR moving window used to build the
+# seasonal-normal climatology (protocol step 58): the normal for a calendar day
+# D is the mean of all observations within +/- CLIMATOLOGY_WINDOW_DAYS of D
+# (same hour-of-day, for the sub-daily VPD/SM fields) across all years in
+# CLIMATOLOGY_YEARS, with the observation's own year left out (leave-one-year-out,
+# step 60). The window is CLIPPED to the available warm-season data, so the
+# earliest/latest overpasses get a one-sided window (documented, expected).
+# Always normalising as a function of day-of-year (NOT one whole-season mean) is
+# the protocol's explicit pitfall guard.
+# ===========================================================================
+CLIMATOLOGY_WINDOW_DAYS: int = 15        # +/- days of the day-of-year moving window
+
+
 # --------------------------------------------------------------------------- #
 # Credential references (read from the standard locations each library uses).
 # These are pointers only - populate them yourself via the normal login flow.
@@ -204,4 +220,6 @@ if __name__ == "__main__":
     print(f"REF_CANOPY_MAX={REF_CANOPY_MAX}  BUILT_CLASSES={BUILT_CLASSES}  "
           f"WATER_CLASS={WATER_CLASS}")
     print(f"BUFFER_M={BUFFER_M}  TALL_BUILDING_MIN_AREA_M2={TALL_BUILDING_MIN_AREA_M2}")
+    print("--- Section 11 anomalies ---")
+    print(f"CLIMATOLOGY_WINDOW_DAYS={CLIMATOLOGY_WINDOW_DAYS} (+/- days, day-of-year window)")
     print(f"EARTHENGINE_PROJECT = {EARTHENGINE_PROJECT or '(unset)'}")
