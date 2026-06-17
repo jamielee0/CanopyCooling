@@ -538,8 +538,18 @@ utilities. Importable as a package alongside `config.py`.
   **Mechanism + stressor over the TREE pixels (step 68).** `mean_et_tree`, `mean_esi_tree`
   (ET/ESI mean over the BG's tree pixels — **NaN on the 21 overpasses without ET/ESI**, ~22.7 %
   of rows, Section 3 caveat), and `mean_csi_tree`, `mean_vpd_z_tree`, `mean_water_supply_z_tree`
-  (CSI / VPD-z / NDMI-z means over the tree pixels; CSI/VPD-z are nearly spatially uniform —
-  ERA5 ~9 km — while NDMI-z varies spatially and is static in time).
+  (CSI / VPD-z / NDMI-z means over the tree pixels). VPD-z is nearly spatially uniform (ERA5
+  ~9 km); NDMI-z varies spatially **and now varies per overpass** (Section 11 redo: `ndmi_z` is a
+  temporal day-of-year LOYO anomaly), so `mean_water_supply_z_tree` and `mean_csi_tree` are
+  **time-varying** (supply is **no longer static** in time). Within the dominant BG
+  `040139412001` (34 overpass rows) `mean_csi_tree` spans **0.020–0.928** (std 0.26) and
+  `mean_water_supply_z_tree` spans **−0.54–+0.58** — a real per-overpass spread (≈0 before).
+  *Outlier note (checked):* the **domain-wide** `ndmi_z`/CSI carry extreme outliers (up to ±50 /
+  CSI ≈ 22) at the ~53 k stable bare/paved pixels where NDMI's climatological std is tiny, **but
+  the 195 tree pixels are well-behaved** (`ndmi_z` within ±3.6; tree clim-std median 0.053). This
+  table averages CSI/supply/NDMI-z over **tree pixels only**, so it is **unaffected** by those
+  outliers — over all 264 rows the tree-pixel stressor means stay sane: `mean_csi_tree` ≤ 1.50,
+  `mean_water_supply_z_tree` ∈ [−2.76, +1.07], `mean_vpd_z_tree` ∈ [−2.50, +2.38] (none |z| > 10).
 
   **Modifiers.** `mean_impervious` / `mean_canopy` are **neighborhood-level** means over all
   valid BG pixels (a context modifier — the built-ness of the whole neighborhood, *not* just
