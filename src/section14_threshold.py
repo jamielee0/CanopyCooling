@@ -49,10 +49,13 @@ The interpretation caveat we MUST carry (from Sections 10-13)
   minimum-count filter (e.g. n_tree_valid >= 10) collapses the sample toward that single
   well-sampled BG -- so we report BOTH (a) the full 9-BG sample (noisy) and (b) the robust
   single-BG subset (~temporal-only) and reconcile them.
-* CSI's TEMPORAL variation is driven by VPD demand (the NDMI water-supply z is a static-in-
-  time SPATIAL field -- Section 11/12). So across rows CSI = VPD-demand (temporal, ~spatially
-  uniform) + NDMI (spatial across the 9 BGs); the "threshold in CSI" is largely a VPD-demand
-  axis. State this so the result is read correctly.
+* CSI now varies in BOTH space and time from BOTH terms: VPD demand (temporal) AND the NDMI
+  water-supply z, which -- since the `temporal-ndmi-supply` re-run -- is a TEMPORAL day-of-year
+  LOYO anomaly (Section 11/12 redo), no longer a static-in-time spatial field. So the CSI is no
+  longer ~a pure VPD-demand axis: the between-BG (spatial) spread of BG-mean CSI roughly tripled
+  (0.027 -> 0.081) and the within/between ratio fell from ~10x to ~4x. (The original static-NDMI
+  run is on `main`, 711c7f9.) State this so the result is read correctly: the supply axis is now
+  richer, yet the threshold result is unchanged -- the binding limit is the thin sample below.
 * mean_et_tree / mean_esi_tree are NaN on ~22.7 % of rows (the non-ET overpasses) -- dropped
   pairwise in the ET overlay / corroboration, never imputed.
 
