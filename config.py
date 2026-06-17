@@ -195,6 +195,45 @@ WEIGHT_DEMAND: float = 0.5   # baseline weight on the demand (VPD z+) stress
 WEIGHT_SUPPLY: float = 0.5   # baseline weight on the supply (-NDMI z)+ stress
 
 
+# ===========================================================================
+# SECTION 16 (REASON #2 FIX) - PIXEL-LEVEL PAIRING DESIGN OPERATING POINTS
+# ---------------------------------------------------------------------------
+# A SEPARATE, ADDED config block for the pixel-level local-pairing + clustering-
+# aware threshold analysis (src/section16_*.py). These are NEW constants -- they
+# are NEVER substituted for the Section 10 BG-pipeline constants above. The BG
+# pipeline keeps using CANOPY_THR = 40 / MIN_OBS = 20 / CANOPY_THR_PREREGISTERED
+# = 70 UNTOUCHED; master_table.parquet (BG-level, 264 rows) is NOT regenerated.
+#
+# WHY a relaxed pixel-design operating point (Section 15 lever assessment):
+#  * Section 14 found NO ROBUST THRESHOLD at the BG level (9 paired BGs, ONE
+#    holding 87.7% of tree px, median n_good_obs = 2). The binding limitation is
+#    the THIN, SPATIALLY-CLUSTERED paired sample, not the CSI signal.
+#  * The pixel design dissolves the BG-aggregation step by differencing each
+#    tree pixel against its LOCAL reference pixels (within R metres) at the SAME
+#    overpass, then re-aggregating to spatial CLUSTERS for honest inference.
+#  * Relaxing canopy 40 -> 30 is the binding gain (paired BG 9 -> 17, tree px
+#    195 -> 639, dominant-BG share 87.7% -> 74.6%, queen clusters ~75 -> ~178);
+#    relaxing MIN_OBS 20 -> 15 is a near-free reliability relaxation (+137 px,
+#    all with obs in [15, 19]). 30 % is the FLOOR (still ~34x the 0.88% Phoenix
+#    mean canopy -> "tree-dominated" stays defensible); never go below it.
+#  * ALL OTHER Section 10 gates are UNCHANGED: NDVI > 0.5, impervious < 20 %,
+#    not-water (NLCD 11), the reference rule, and the tall-building buffer.
+# ===========================================================================
+CANOPY_THR_PIXEL: float = 30.0   # pixel-design operating canopy PERCENT floor (NOT
+                                 # the BG pipeline's CANOPY_THR=40; never go below 30)
+MIN_OBS_PIXEL: int = 15          # pixel-design min finite ECOSTRESS LST obs (the elbow;
+                                 # NOT the BG pipeline's MIN_OBS=20)
+R_PAIR_M: float = 350.0          # PRIMARY local-pairing radius (Euclidean, 70 m grid =
+                                 # 5 cells); references within R of a tree px are its
+                                 # local controls (same micro-climate context)
+R_PAIR_SWEEP_M: tuple = (210.0, 350.0, 500.0)   # radius sensitivity sweep (3 / 5 / ~7 cells)
+CONNECTIVITY: str = "queen"      # PRIMARY tree-cluster adjacency (8-connectivity); 'rook'
+                                 # (4-connectivity) reported as a sensitivity
+N_BOOT_PIXEL: int = 2000         # CLUSTER-resampling spatial block bootstrap resamples
+GRID_TILE_M: float = 2000.0      # de-concentration ROBUSTNESS sensitivity tile size (splits
+                                 # the dominant BG into ~8 tiles); NOT the primary unit
+
+
 # --------------------------------------------------------------------------- #
 # Credential references (read from the standard locations each library uses).
 # These are pointers only - populate them yourself via the normal login flow.
