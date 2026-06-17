@@ -456,31 +456,41 @@ utilities. Importable as a package alongside `config.py`.
   equal-weight combination would be dominated by whichever variable has the larger numeric
   range. This module reads **only** `vpd_z` and `ndmi_z` from the Section 11 store (never the
   raw VPD/NDMI in the Section 9 cube); `_assert_inputs_are_zscores` **fails the build** unless
-  `ndmi_z` is mean ≈ 0 / std ≈ 1 (a raw NDMI field is mean ≈ −0.07 / std ≈ 0.09) and `vpd_z`
-  straddles 0 (raw VPD in kPa is ≥ 0); and the unit tests prove the supply stress built from
-  the z-score carries a balanced ~half of the CSI while a raw-NDMI supply is swamped by demand.
+  `ndmi_z` has **std ≈ 1** and spans a **z-like range not bounded in [−1, 1]** (a raw NDMI field
+  is bounded in [−1, 1] with mean ≈ −0.07 / std ≈ 0.09) and `vpd_z` straddles 0 (raw VPD in kPa
+  is ≥ 0). **The guard no longer requires `ndmi_z` mean ≈ 0:** `ndmi_z` is now a **temporal
+  day-of-year leave-one-year-out anomaly**, and a single analysis year may legitimately be
+  offset from its multi-year normal (here the record-wide mean ≈ **+0.31** — that year ran
+  slightly wetter), so |mean| ≈ 0 is no longer a valid expectation; std ≈ 1 plus the unbounded
+  range still firmly rejects raw NDMI. The unit tests prove the supply stress built from the
+  z-score carries a balanced ~half of the CSI while a raw-NDMI supply is swamped by demand.
 
-  **Demand is TIME-VARYING; SUPPLY is STATIC IN TIME (carried forward from Section 11).**
-  `vpd_z` varies per overpass (true temporal climatology), so the demand stress varies in
-  time. `ndmi_z` is a **spatial** standardization of the single 2023 NDMI composite (Section 11
-  decision B) — **constant across the 66 overpasses** — so the supply stress is **constant in
-  time** (asserted on reload: `supply_stress` is identical across overpasses). **Consequence
-  (stated plainly):** because the supply term is the same for every overpass, the **temporal
-  ranking of the spatial-mean CSI equals the ranking of the VPD demand** (verified in-code: the
-  CSI and demand orderings are identical) — i.e. *the highest-CSI dates are the highest
-  VPD-demand dates*.
+  **Demand AND supply are BOTH TIME-VARYING (carried forward from Section 11).** `vpd_z` varies
+  per overpass (true temporal climatology), so the demand stress varies in time. `ndmi_z` is
+  **now also a temporal** day-of-year leave-one-year-out anomaly (Section 11, updated — it
+  replaces the old single-composite spatial standardization), so it **varies across the 66
+  overpasses** and the supply stress is **no longer constant in time** (asserted on reload: the
+  std of the per-overpass spatial-mean `supply_stress` is **> 0**, vs exactly 0 before).
+  **Consequence (stated plainly):** the **CSI now varies in both space and time from BOTH the
+  demand and supply terms**, so the temporal ranking of the spatial-mean CSI is **no longer
+  guaranteed to equal** the VPD-demand ranking (the two orderings are compared and the result is
+  reported in-code, not assumed).
 
-  **Confirming the compound extremes (step 65 deliverable).** CSI min/mean/max = **0.000 /
-  0.421 / 5.453** (≥ 0 everywhere; **98.96 %** of pixel-overpass cells finite). Because VPD-z is
-  standardized **per hour-of-day** (Section 11), a calm low-variance night can post a high z
-  without being a heat extreme, so a brittle top-1 is unreliable; the **robust statistic is the
-  heatwave-window ENRICHMENT** (reused verbatim from Section 11 — single source of truth). The
-  known 2023 peak-heat window (≥110 °F streak ~Jun 30 – Jul 30, Phoenix's hottest month on
-  record) is **23 % of all overpasses but 64 % of the top-11 highest-CSI overpasses → 2.80×
-  enriched** (identical for CSI and demand, as expected from the static supply). 7 of the
-  top-10 highest-CSI overpasses fall in July; the strict #1 is 2023-09-10 (a high-VPD-z calm
-  pre-dawn overpass — exactly the per-hour-standardization subtlety, which is why enrichment,
-  not top-1, is reported), and the #2 is **2023-07-20**, a core heatwave date.
+  **Confirming the compound extremes (step 65 deliverable).** CSI min/mean/max = **0.000 / 0.334
+  / 22.486** (re-run with time-varying supply; the old static-supply mean was 0.421 — the mean
+  drops because the supply term is now near-normal on most overpasses instead of carrying the
+  static spatial-anomaly floor) (≥ 0 everywhere; **99.05 %** of pixel-overpass cells finite).
+  Because VPD-z is standardized **per hour-of-day** (Section 11), a calm low-variance night can
+  post a high z without being a heat extreme, so a brittle top-1 is unreliable; the **robust
+  statistic is the heatwave-window ENRICHMENT** (reused verbatim from Section 11 — single source
+  of truth). The known 2023 peak-heat window (≥110 °F streak ~Jun 30 – Jul 30, Phoenix's hottest
+  month on record) is **23 % of all overpasses but 36 % of the top-11 highest-CSI overpasses →
+  1.60× enriched** (the demand-only ranking still shows **64 % → 2.80×**; the supply now pulls
+  some non-July wet/dry-anomaly dates into the CSI top ranks, so the CSI enrichment is lower than
+  demand-alone — exactly the effect of the supply axis no longer being frozen). With the supply
+  now temporal the top-CSI dates shift away from the pure VPD-demand order: the top-3 are
+  **2023-09-10, 2023-08-30, 2023-07-20** (2023-07-20 is a core heatwave date; the CSI and demand
+  orderings now **differ**, reported in-code).
 
   **Sensitivity HOOKS (step 66) — present but NOT run.** `compute_csi(demand, supply,
   w_demand, w_supply)` is a **parameterised** function so the unequal-weight test is a trivial
@@ -491,7 +501,7 @@ utilities. Importable as a package alongside `config.py`.
   **Deliverables (`data/processed/`, git-ignored).** `section12_csi_70m.zarr` (dims
   `overpass = 66 × y = 1155 × x = 1339`; vars `csi`, `demand_stress`, `supply_stress`; aligned
   to `reference_grid.tif`, asserted on reload — CRS/shape/transform, 66 overpasses, all vars
-  float, **CSI ≥ 0 everywhere**, and `supply_stress` constant in time) and
+  float, **CSI ≥ 0 everywhere**, and `supply_stress` **varies in time**) and
   `section12_csi_overpass_summary.parquet` (66-row per-overpass spatial-mean csi/demand/supply
   + season part + in-heatwave flag, sorted by CSI). Figures:
   `figures/section12_csi_distribution.png` (the CSI distribution with the demand/supply

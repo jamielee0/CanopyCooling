@@ -135,7 +135,7 @@ Current contents (regenerate from `src/`):
     (asserted on write **and** on reload).
   - **vars** `(overpass, y, x)`, all dimensionless: `csi` (the baseline equal-weight CSI),
     `demand_stress` (`max(vpd_z, 0)`, time-varying), `supply_stress` (`max(-ndmi_z, 0)`,
-    **constant in time**).
+    **now time-varying** — `ndmi_z` is now a temporal anomaly).
   - **coords** `overpass`, `overpass_key`, `time`, `era5_hour` (the overpass axis is reused
     verbatim from the Section 11 store / Section 9 cube), plus `y`/`x` and a CF `spatial_ref`.
   - **Definitions (from the Section 11 z-scores — never raw values).** `demand_stress` = the
@@ -145,20 +145,33 @@ Current contents (regenerate from `src/`):
     *negative* z — becomes a positive contribution). **`csi = WEIGHT_DEMAND·demand_stress +
     WEIGHT_SUPPLY·supply_stress`** with **baseline equal weights 0.5/0.5** (`config.WEIGHT_DEMAND`
     / `config.WEIGHT_SUPPLY`; step 64). **CSI ≥ 0 everywhere** (non-negative parts, non-negative
-    weights). The build **refuses to run unless the inputs are z-scores** (`ndmi_z` mean ≈ 0 /
-    std ≈ 1, `vpd_z` straddles 0) — the protocol's common pitfall (raw NDMI would dominate the
-    equal-weight sum) is guarded in code, not just in prose.
-  - **`supply_stress` is CONSTANT IN TIME** because `ndmi_z` is a single-composite **spatial**
-    standardization (Section 11 decision B), so it is identical for every overpass (asserted on
-    reload). **Consequence:** the temporal ranking of the spatial-mean CSI **equals** the
-    ranking of the VPD demand — *the highest-CSI dates are the highest VPD-demand dates*.
-  - **QC (step 65).** CSI min/mean/max = **0.000 / 0.421 / 5.453**; **CSI ≥ 0 everywhere**;
-    **98.96 %** of pixel-overpass cells finite. The highest-CSI dates coincide with the
-    summer-2023 compound extremes via the **robust heatwave-window enrichment** (VPD-z is
-    standardized per hour-of-day, so a brittle top-1 is unreliable): the 2023-06-30…07-30
-    peak-heat window is **23 % of overpasses but 64 % of the top-11 highest-CSI → 2.80×
-    enriched** (identical for CSI and demand; 7 of the top-10 fall in July; #2 overall is
-    2023-07-20). Compressed (Blosc/zstd), one overpass per chunk.
+    weights). The build **refuses to run unless the inputs are z-scores** — `ndmi_z` has
+    **std ≈ 1** and spans a **z-like range not bounded in [−1, 1]** (it now reaches ±many σ),
+    and `vpd_z` straddles 0. The guard **no longer requires `ndmi_z` mean ≈ 0**: `ndmi_z` is now
+    a **temporal day-of-year leave-one-year-out anomaly**, so a single analysis year can be
+    offset from its multi-year normal (here the record-wide mean is **≈ +0.31**) — std ≈ 1 plus
+    the unbounded range still firmly rejects RAW NDMI (bounded in [−1, 1], std ≈ 0.09). The
+    protocol's common pitfall (raw NDMI would dominate the equal-weight sum) is guarded in code,
+    not just in prose.
+  - **`supply_stress` now VARIES IN TIME** (and space) because `ndmi_z` is now a **temporal**
+    day-of-year leave-one-year-out anomaly (Section 11, updated), not the old single-composite
+    spatial standardization. The std of the per-overpass spatial-mean supply is **> 0** (asserted
+    on reload; was exactly 0 under the old static field). **Consequence:** the **CSI now varies
+    in both space and time from BOTH the demand and supply terms**, so the temporal ranking of
+    the spatial-mean CSI is **no longer identical** to the VPD-demand ranking (whether they still
+    coincide is reported, not assumed).
+  - **QC (step 65).** CSI min/mean/max = **0.000 / 0.334 / 22.486** (re-run with time-varying
+    supply; old static-supply mean was 0.421 — the mean drops because the supply term is now
+    near-normal on most overpasses rather than carrying the static spatial-anomaly floor);
+    **CSI ≥ 0 everywhere**; **99.05 %** of pixel-overpass cells finite. The highest-CSI dates
+    still coincide with the summer-2023 compound extremes via the **robust heatwave-window
+    enrichment** (VPD-z is standardized per hour-of-day, so a brittle top-1 is unreliable): the
+    2023-06-30…07-30 peak-heat window is **23 % of overpasses but 36 % of the top-11 highest-CSI
+    → 1.60× enriched** (down from the static-supply 2.80×, which the demand-only ranking still
+    shows — the supply now pulls some non-July wet/dry-anomaly dates up). The top-3 highest-CSI
+    overpasses are **2023-09-10, 2023-08-30, 2023-07-20** (vs the old VPD-demand order). The CSI
+    and VPD-demand rankings now **differ** (reported in-code). Compressed (Blosc/zstd), one
+    overpass per chunk.
   - **Sensitivity hooks (step 66) — not run here.** The CSI computation is a parameterised
     `compute_csi(demand, supply, w_demand, w_supply)` (unequal-weight test = a trivial re-call)
     and `copula_weights()` is a `NotImplementedError` placeholder for the copula-derived weights.

@@ -38,30 +38,34 @@ and the unit tests prove the supply stress is built from the z-score, not raw ND
 KEY DESIGN DECISIONS (documented prominently; see also data/processed/README.md
 and src/README.md Section 12)
 ================================================================================
-(A) DEMAND is TIME-VARYING; SUPPLY is STATIC IN TIME.
+(A) DEMAND and SUPPLY are BOTH TIME-VARYING (and space-varying).
     --------------------------------------------------------------------------
     `vpd_z` from Section 11 VARIES per (overpass, pixel) -- a true temporal
     day-of-year-at-overpass-hour leave-one-year-out climatology -- so the demand
-    stress max(vpd_z, 0) varies in time. `ndmi_z`, however, is a SPATIAL
-    standardized anomaly built from the SINGLE 2023 NDMI composite (Section 11
-    decision B): there is no NDMI time series, so a temporal climatology is
-    impossible and `ndmi_z` is CONSTANT across the 66 overpasses (it varies by
-    pixel, not by overpass). Hence the supply stress max(-ndmi_z, 0) is ALSO
-    constant across overpasses. This is carried forward honestly from Section 11.
+    stress max(vpd_z, 0) varies in time. `ndmi_z` is NOW ALSO a TEMPORAL day-of-year
+    leave-one-year-out anomaly (Section 11, updated): (observed - clim_mean)/clim_std
+    per overpass against the 2018-2024 NDMI climatology, so it VARIES across the 66
+    overpasses (and by pixel). Hence the supply stress max(-ndmi_z, 0) is NO LONGER
+    constant in time -- it varies per (overpass, pixel) too. [This replaces the OLD
+    behaviour, where `ndmi_z` was a SPATIAL standardization of a single composite and
+    the supply term was identical for every overpass.] Both halves of the CSI now
+    move in time, so the CSI varies in BOTH space and time from BOTH stressors.
+    Note: a temporal LOYO anomaly of a single analysis year need not have mean 0 (the
+    record-wide `ndmi_z` mean is ~+0.31 -- that year ran slightly wetter than its
+    multi-year normal); only the climatology is centred, not any one year.
 
 (B) CONSEQUENCE for the temporal ranking (stated plainly):
     --------------------------------------------------------------------------
-    Because the supply term is the SAME for every overpass, the TEMPORAL ordering
-    of the SPATIAL-MEAN CSI across overpasses is driven ENTIRELY by the demand
-    term: rank(spatial-mean CSI) == rank(spatial-mean demand) == rank of the VPD
-    z+ demand. So "the highest-CSI dates == the highest VPD-demand dates". The
-    deliverable confirms those highest-CSI dates coincide with the known compound
-    extremes of summer 2023 (July 2023 was Phoenix's hottest month on record; a
-    ~31-day >=110 F streak from ~2023-06-30 to ~2023-07-30). Because VPD-z is
-    standardized PER HOUR-of-day (Section 11), a calm low-variance night can post a
+    Because the supply term now ALSO varies per overpass, the TEMPORAL ordering of
+    the SPATIAL-MEAN CSI is driven by BOTH the demand and the supply terms -- it is
+    no longer identical to the VPD-demand ranking (it was, under the old static
+    supply). The deliverable confirms the highest-CSI dates against the known
+    compound extremes of summer 2023 (July 2023 was Phoenix's hottest month on
+    record; a ~31-day >=110 F streak from ~2023-06-30 to ~2023-07-30). Because VPD-z
+    is standardized PER HOUR-of-day (Section 11), a calm low-variance night can post a
     high z without being a heat extreme, so the ROBUST statistic is the heatwave-
     window ENRICHMENT among the top ranks (reused from Section 11), NOT a brittle
-    top-1.
+    top-1. The CSI and demand rankings are reported separately (they may now differ).
 
 (C) CSI >= 0 EVERYWHERE (by construction).
     --------------------------------------------------------------------------
@@ -84,7 +88,7 @@ Deliverables (checkpoint, Section 12; data/processed/, git-ignored)
   the 70 m grid, dims (overpass=66, y=1155, x=1339):
     csi            -- baseline equal-weight CSI = 0.5*demand + 0.5*supply (>= 0)
     demand_stress  -- max(vpd_z, 0)  (time-varying)
-    supply_stress  -- max(-ndmi_z, 0) (constant in time -- decision A)
+    supply_stress  -- max(-ndmi_z, 0) (time-varying -- ndmi_z is now temporal, decision A)
   coords overpass/overpass_key/time/era5_hour/y/x and a CF spatial_ref (reopen with
   decode_coords="all"). Aligned exactly to reference_grid.tif.
 * section12_csi_overpass_summary.parquet -- a small 66-row per-overpass table
@@ -144,7 +148,7 @@ ZSCORE_ZARR = "section11_zscores_70m.zarr"   # Section 11 deliverable -> the z-s
 # The z-score variables we consume. DEMAND is the positive part of vpd_z; SUPPLY is
 # the positive part of -ndmi_z. We NEVER read raw VPD/NDMI (the protocol pitfall).
 DEMAND_Z_VAR = "vpd_z"        # VPD z-score (Section 11) -> demand driver, time-varying
-SUPPLY_Z_VAR = "ndmi_z"       # water-supply z-score (Section 11) -> supply, static in time
+SUPPLY_Z_VAR = "ndmi_z"       # water-supply z-score (Section 11) -> supply, now time-varying
 
 # Deliverables (data/processed/).
 CSI_ZARR = "section12_csi_70m.zarr"
@@ -279,27 +283,42 @@ def load_zscores(processed: Path) -> "xr.Dataset":
 def _assert_inputs_are_zscores(zds: "xr.Dataset") -> None:
     """Assert the CSI inputs are the Section-11 Z-SCORES, not raw VPD/NDMI (the pitfall).
 
-    A z-score field has mean ~0 and std ~1 over its valid pixels and (for NDMI) ranges
-    well into +/- several sigma; raw VPD (kPa, ~0..7, all positive) or raw NDMI
-    (~-1..1, mean ~ -0.07) would NOT. We check, in-code:
-      * the variables carry the z-score names (DEMAND_Z_VAR / SUPPLY_Z_VAR) and a
-        dimensionless 'units' attr where present;
-      * `ndmi_z` has whole-field mean ~0 and std ~1 (the spatial standardization is
-        0/1 by construction -- a raw NDMI field would have mean ~ -0.07 and std ~0.09,
-        which this would catch);
+    A z-score field has std ~1 over its valid pixels and ranges well into +/- several
+    sigma; raw VPD (kPa, ~0..7, all positive) or raw NDMI (~-1..1, mean ~ -0.07,
+    bounded) would NOT. We check, in-code, that:
+      * the variables carry the z-score names (DEMAND_Z_VAR / SUPPLY_Z_VAR);
+      * `ndmi_z` has whole-field std ~1 AND spans a z-like range that is NOT bounded in
+        [-1, 1] (it now reaches +/- many sigma). NOTE: `ndmi_z` is now a TEMPORAL
+        day-of-year leave-one-year-out anomaly (observed-clim_mean)/clim_std (Section 11),
+        so its WHOLE-RECORD mean need NOT be 0 -- a single analysis year can run wetter or
+        drier than its multi-year normal (here ~+0.31 sigma). We therefore do NOT require
+        |mean| ~ 0 (the old SPATIAL standardization forced mean exactly 0; the new
+        temporal anomaly does not). std ~1 + an unbounded z-like range still firmly
+        rejects RAW NDMI (which is bounded in [-1, 1] with mean ~ -0.07 and std ~0.09 --
+        std nowhere near 1 and range never beyond +/-1).
       * `vpd_z` takes BOTH signs (raw VPD in kPa is strictly >= 0, so a min < 0 proves
-        it is the anomaly z-score, not raw VPD).
+        it is the anomaly z-score, not raw VPD). [VPD check unchanged.]
     Raises AssertionError if the inputs look like raw values. This is the programmatic
     guard behind the README/header claim that the CSI uses z-scores, not raw inputs.
     """
     nd = zds[SUPPLY_Z_VAR].values
     nd_mean = float(np.nanmean(nd)); nd_std = float(np.nanstd(nd))
-    if not (abs(nd_mean) < 0.05 and abs(nd_std - 1.0) < 0.05):
+    nd_min = float(np.nanmin(nd)); nd_max = float(np.nanmax(nd))
+    # A z-score has std ~1 (tolerant band -- a LOYO temporal anomaly of one year is not
+    # exactly unit-variance). We deliberately do NOT check the mean: a temporal anomaly
+    # of a single year is legitimately offset from 0 (see docstring). RAW NDMI is bounded
+    # in [-1, 1] (std ~0.09), so a z-like span beyond +/-1 cannot be raw NDMI.
+    if not (0.7 < nd_std < 1.3):
         raise AssertionError(
-            f"{SUPPLY_Z_VAR} does not look like a z-score (mean={nd_mean:+.4f}, "
-            f"std={nd_std:.4f}; expected ~0 / ~1). Refusing to build the supply stress "
-            "from a non-z-score input (protocol pitfall: raw NDMI would dominate the "
-            "equal-weight CSI).")
+            f"{SUPPLY_Z_VAR} does not look like a z-score (std={nd_std:.4f}; expected "
+            f"~1, tol 0.7-1.3; mean={nd_mean:+.4f}). Refusing to build the supply stress "
+            "from a non-z-score input (protocol pitfall: raw NDMI -- std ~0.09 -- would "
+            "dominate the equal-weight CSI).")
+    if not (nd_min < -1.0 and nd_max > 1.0):
+        raise AssertionError(
+            f"{SUPPLY_Z_VAR} does not span a z-like range (min={nd_min:+.4f}, "
+            f"max={nd_max:+.4f}); a z-score reaches +/- several sigma, but RAW NDMI is "
+            "bounded in [-1, 1]. Refusing to build the supply stress from raw NDMI.")
     vd = zds[DEMAND_Z_VAR].values
     vd_min = float(np.nanmin(vd)); vd_max = float(np.nanmax(vd))
     if not (vd_min < 0.0 < vd_max):
@@ -308,9 +327,10 @@ def _assert_inputs_are_zscores(zds: "xr.Dataset") -> None:
             f"max={vd_max:+.4f}; a z-score straddles 0, raw VPD in kPa is >= 0). "
             "Refusing to build the demand stress from raw VPD.")
     log.info("INPUT CHECK: CSI inputs are Section-11 Z-SCORES, not raw values "
-             "-> %s mean=%+.4f std=%.4f (~0/~1); %s straddles 0 (min=%+.4f max=%+.4f). "
-             "Raw VPD/NDMI are NOT used (protocol pitfall avoided).",
-             SUPPLY_Z_VAR, nd_mean, nd_std, DEMAND_Z_VAR, vd_min, vd_max)
+             "-> %s std=%.4f (~1) range [%+.2f, %+.2f] (z-like, NOT bounded in [-1,1]); "
+             "mean=%+.4f (temporal LOYO anomaly: a single year need NOT have mean 0); "
+             "%s straddles 0 (min=%+.4f max=%+.4f). Raw VPD/NDMI are NOT used.",
+             SUPPLY_Z_VAR, nd_std, nd_min, nd_max, nd_mean, DEMAND_Z_VAR, vd_min, vd_max)
 
 
 def _blosc():
@@ -322,11 +342,11 @@ def build_csi_dataset(processed: Path, reference: "xr.DataArray"
                       ) -> tuple["xr.Dataset", dict]:
     """Build the (overpass, y, x) CSI + component cube from the Section 11 z-scores.
 
-    demand = max(vpd_z, 0) (time-varying); supply = max(-ndmi_z, 0) (constant in time
-    because ndmi_z is constant in time -- decision A); CSI = WEIGHT_DEMAND*demand +
-    WEIGHT_SUPPLY*supply (baseline 0.5/0.5, decision/step 64). Returns (dataset, meta)
-    where meta carries the weights, the static-supply flag and the CSI stats for the
-    QC note / report.
+    demand = max(vpd_z, 0) (time-varying); supply = max(-ndmi_z, 0) (NOW time-varying
+    too, because ndmi_z is now a temporal anomaly -- decision A); CSI =
+    WEIGHT_DEMAND*demand + WEIGHT_SUPPLY*supply (baseline 0.5/0.5, decision/step 64).
+    Returns (dataset, meta) where meta carries the weights, the supply-varies-in-time
+    flag and the CSI stats for the QC note / report.
     """
     zds = load_zscores(processed)
     _assert_inputs_are_zscores(zds)
@@ -335,25 +355,30 @@ def build_csi_dataset(processed: Path, reference: "xr.DataArray"
     log.info("Building CSI from Section 11 z-scores: %d overpasses, grid (y=%d, x=%d)",
              n, zds.sizes["y"], zds.sizes["x"])
     log.info("  DEMAND = max(%s, 0)  [time-varying];  SUPPLY = max(-%s, 0)  "
-             "[constant in time -- %s is a SPATIAL standardization, Section 11 decision B]",
+             "[NOW time-varying -- %s is a TEMPORAL day-of-year LOYO anomaly, Section 11]",
              DEMAND_Z_VAR, SUPPLY_Z_VAR, SUPPLY_Z_VAR)
     log.info("  Baseline EQUAL weights: WEIGHT_DEMAND=%.3f  WEIGHT_SUPPLY=%.3f (step 64)",
              config.WEIGHT_DEMAND, config.WEIGHT_SUPPLY)
 
     vpd_z = zds[DEMAND_Z_VAR].values.astype("float64")        # (overpass, y, x), time-varying
-    ndmi_z = zds[SUPPLY_Z_VAR].values.astype("float64")       # (overpass, y, x), constant in time
+    ndmi_z = zds[SUPPLY_Z_VAR].values.astype("float64")       # (overpass, y, x), NOW time-varying
 
     demand = demand_stress(vpd_z).astype("float32")           # max(vpd_z, 0)
     supply = supply_stress(ndmi_z).astype("float32")          # max(-ndmi_z, 0)
     csi = compute_csi(demand, supply,
                       config.WEIGHT_DEMAND, config.WEIGHT_SUPPLY).astype("float32")
 
-    # Confirm the supply term is genuinely constant across overpasses (it must be,
-    # because ndmi_z is) -- a cheap invariant that documents decision A in the data.
-    s0 = supply[0]; sL = supply[-1]
-    both = np.isfinite(s0) & np.isfinite(sL)
-    supply_static = bool(np.allclose(s0[both], sL[both], atol=1e-6)) if both.any() else True
-    log.info("  supply_stress constant across overpasses: %s (decision A)", supply_static)
+    # Confirm the supply term now VARIES across overpasses (it must, because ndmi_z is
+    # now a temporal anomaly) -- a cheap invariant that documents decision A in the
+    # data. We measure the std, across the 66 overpasses, of the per-overpass
+    # spatial-mean supply: > 0 proves the supply axis is no longer frozen (contrast the
+    # OLD static supply, where this was exactly 0).
+    sup_op_mean = np.nanmean(supply.reshape(n, -1), axis=1)   # spatial-mean per overpass
+    supply_varies_std = float(np.nanstd(sup_op_mean))
+    supply_time_varying = supply_varies_std > 1e-6
+    log.info("  supply_stress VARIES across overpasses: %s "
+             "(std of per-overpass spatial-mean supply = %.4f; OLD static supply = 0) "
+             "-- decision A", supply_time_varying, supply_varies_std)
 
     data_vars = {
         "csi": (("overpass", "y", "x"), csi),
@@ -374,7 +399,7 @@ def build_csi_dataset(processed: Path, reference: "xr.DataArray"
     for v in ds.data_vars:
         if {"y", "x"} <= set(ds[v].dims):
             ds[v].attrs["grid_mapping"] = "spatial_ref"
-    _annotate(ds, supply_static)
+    _annotate(ds, supply_time_varying, supply_varies_std)
     zds.close()
 
     finite = np.isfinite(csi)
@@ -384,7 +409,8 @@ def build_csi_dataset(processed: Path, reference: "xr.DataArray"
         "n_overpass": n,
         "w_demand": float(config.WEIGHT_DEMAND),
         "w_supply": float(config.WEIGHT_SUPPLY),
-        "supply_static": supply_static,
+        "supply_time_varying": supply_time_varying,
+        "supply_varies_std": supply_varies_std,
         "csi_min": float(np.nanmin(csi)), "csi_mean": float(np.nanmean(csi)),
         "csi_max": float(np.nanmax(csi)),
         "n_finite": n_finite, "n_total": n_total,
@@ -394,21 +420,24 @@ def build_csi_dataset(processed: Path, reference: "xr.DataArray"
     return ds, meta
 
 
-def _annotate(ds: "xr.Dataset", supply_static: bool) -> None:
+def _annotate(ds: "xr.Dataset", supply_time_varying: bool,
+              supply_varies_std: float) -> None:
     """Attach units / methodology provenance to the CSI variables + dataset."""
     notes = {
         "csi": "Compound Stress Index (baseline, equal weights): "
                "CSI = WEIGHT_DEMAND*max(vpd_z,0) + WEIGHT_SUPPLY*max(-ndmi_z,0) "
                "(steps 62-64). >= 0 everywhere; near 0 = near normal, large = a "
-               "compound heat-drought extreme. Built from Section 11 z-scores (NOT "
-               "raw VPD/NDMI -- the protocol's common pitfall).",
+               "compound heat-drought extreme. Varies in BOTH space and time from BOTH "
+               "the demand and supply terms. Built from Section 11 z-scores (NOT raw "
+               "VPD/NDMI -- the protocol's common pitfall).",
         "demand_stress": "Demand stress = positive part of the VPD z-score, "
                          "max(vpd_z, 0) (step 62). Time-varying. Only above-normal "
                          "VPD is stressful.",
         "supply_stress": "Supply stress = positive part of the NEGATED water-supply "
                          "z-score, max(-ndmi_z, 0) (step 63). Low water -> positive "
-                         "stress. CONSTANT IN TIME (ndmi_z is a single-composite "
-                         "spatial standardization; Section 11 decision B).",
+                         "stress. TIME-VARYING (and space-varying): ndmi_z is now a "
+                         "TEMPORAL day-of-year leave-one-year-out anomaly (Section 11), "
+                         "so the supply axis is no longer frozen in time.",
     }
     for v, note in notes.items():
         if v in ds:
@@ -423,12 +452,15 @@ def _annotate(ds: "xr.Dataset", supply_static: bool) -> None:
                           "(step 63); CSI=WEIGHT_DEMAND*demand+WEIGHT_SUPPLY*supply "
                           "(step 64, baseline equal weights 0.5/0.5). Inputs are the "
                           "Section 11 z-scores, never raw VPD/NDMI.")
-    ds.attrs["supply_stress_constant_in_time"] = str(supply_static)
-    ds.attrs["note_supply_static"] = (
-        "supply_stress is CONSTANT across overpasses because ndmi_z is a SPATIAL "
-        "standardization of the single 2023 NDMI composite (Section 11 decision B). "
-        "Consequence: the temporal ranking of spatial-mean CSI == the ranking of the "
-        "VPD demand, so the highest-CSI dates are the highest VPD-demand dates.")
+    ds.attrs["supply_stress_time_varying"] = str(supply_time_varying)
+    ds.attrs["supply_stress_overpass_mean_std"] = float(supply_varies_std)
+    ds.attrs["note_supply_time_varying"] = (
+        "supply_stress now VARIES across overpasses (std of the per-overpass "
+        f"spatial-mean supply = {supply_varies_std:.4f}; was exactly 0 under the OLD "
+        "static spatial standardization) because ndmi_z is now a TEMPORAL day-of-year "
+        "leave-one-year-out anomaly (Section 11). Consequence: the CSI varies in both "
+        "space and time from BOTH the demand and supply terms, so the temporal ranking "
+        "of spatial-mean CSI is no longer identical to the VPD-demand ranking.")
     ds.attrs["sensitivity_hooks"] = (
         "compute_csi(demand, supply, w_demand, w_supply) is parameterised for the "
         "unequal-weight test; copula_weights() is a NotImplementedError stub for the "
@@ -480,7 +512,7 @@ def record_csi_stats(ds: "xr.Dataset") -> dict:
     log.info("  CSI >= 0 EVERYWHERE (finite cells): %s  (built from positive parts)", ge0)
     log.info("  finite cells: %d / %d  (fraction finite = %.4f)", n_finite, n_total, frac)
     log.info("  demand_stress  min=%.4f  max=%.4f  [max(vpd_z,0), time-varying]", dmin, dmax)
-    log.info("  supply_stress  min=%.4f  max=%.4f  [max(-ndmi_z,0), constant in time]",
+    log.info("  supply_stress  min=%.4f  max=%.4f  [max(-ndmi_z,0), now time-varying]",
              smin, smax)
     return {"csi_min": cmin, "csi_mean": cmean, "csi_max": cmax, "csi_ge_zero": ge0,
             "n_finite": n_finite, "n_total": n_total, "frac_finite": frac,
@@ -492,12 +524,13 @@ def extreme_csi_dates(ds: "xr.Dataset", top_n: int = 10) -> tuple[pd.DataFrame, 
 
     Ranks the 66 overpasses by spatial-mean CSI and confirms the highest-CSI dates
     coincide with the known summer-2023 compound extremes (July 2023 = Phoenix's
-    hottest month on record). Because the SUPPLY term is constant in time (decision
-    A), the CSI ranking == the VPD-demand ranking; this is verified in-code (the CSI
-    and demand rankings are identical), and the ROBUST heatwave ENRICHMENT statistic
-    (Section 11) is reported for BOTH the CSI and the demand, since the per-hour VPD
-    standardization makes a brittle top-1 unreliable. Returns (ranked DataFrame,
-    csi-enrichment dict, demand-enrichment dict) and PRINTS the top-N + enrichment.
+    hottest month on record). The SUPPLY term now VARIES in time (decision A), so the
+    CSI ranking is NO LONGER guaranteed to equal the VPD-demand ranking (it was, under
+    the old static supply); whether the two orderings still match is REPORTED, not
+    assumed. The ROBUST heatwave ENRICHMENT statistic (Section 11) is reported for BOTH
+    the CSI and the demand, since the per-hour VPD standardization makes a brittle
+    top-1 unreliable. Returns (ranked DataFrame, csi-enrichment dict, demand-enrichment
+    dict) and PRINTS the top-N + enrichment.
     """
     times = pd.to_datetime(ds["time"].values)
     keys = [str(k) for k in ds["overpass_key"].values]
@@ -511,7 +544,9 @@ def extreme_csi_dates(ds: "xr.Dataset", top_n: int = 10) -> tuple[pd.DataFrame, 
     df["in_heatwave_2023"] = df["time"].apply(in_heatwave)
     df["rank"] = np.arange(1, len(df) + 1)
 
-    # Verify the CSI ranking equals the demand ranking (decision B consequence).
+    # Report whether the CSI ranking still equals the demand ranking. Under the OLD
+    # static supply these were identical by construction; with the supply now time-
+    # varying they may diverge -- so this is an OBSERVATION, not an invariant.
     by_csi = df["overpass_key"].tolist()
     by_dem = (pd.DataFrame({"k": keys, "d": dem_mean})
               .sort_values("d", ascending=False)["k"].tolist())
@@ -530,7 +565,7 @@ def extreme_csi_dates(ds: "xr.Dataset", top_n: int = 10) -> tuple[pd.DataFrame, 
                  pd.Timestamp(r["time"]), r["csi_mean"], r["demand_mean"], r["supply_mean"],
                  "<-- in 2023 heatwave window" if r["in_heatwave_2023"] else "")
     log.info("  CSI temporal ranking == VPD-demand ranking: %s "
-             "(supply is constant in time -> decision A/B consequence)", rank_match)
+             "(supply now varies in time -> the two orderings need NOT match)", rank_match)
     log.info("  HEATWAVE-WINDOW ENRICHMENT (robust to per-hour VPD standardization):")
     log.info("    CSI:    window is %.0f%% of all overpasses but %.0f%% of the top-%d "
              "-> %.2fx enriched", 100 * enr_csi["base_frac"], 100 * enr_csi["top_frac"],
@@ -583,17 +618,17 @@ def make_distribution_figure(ds: "xr.Dataset", extreme_df: pd.DataFrame,
     # (L) CSI distribution + components.
     csi = ds["csi"].values
     csi_flat = csi[np.isfinite(csi)]
-    # demand/supply: one representative overpass for supply (constant in time), all
-    # overpasses for demand (so the demand histogram reflects the temporal spread).
+    # demand/supply: ALL overpasses for both (supply now varies in time, so its
+    # histogram reflects the temporal+spatial spread, like demand's).
     dem = ds["demand_stress"].values
     dem_flat = dem[np.isfinite(dem)]
-    sup0 = ds["supply_stress"].isel(overpass=0).values
-    sup_flat = sup0[np.isfinite(sup0)]
+    sup = ds["supply_stress"].values
+    sup_flat = sup[np.isfinite(sup)]
     cmean = float(np.mean(csi_flat)); cmax = float(np.max(csi_flat))
     axL.hist(csi_flat, bins=90, color="#6a51a3", alpha=0.85, label="CSI (all pixel-overpasses)")
     axL.hist(dem_flat, bins=90, color="#d7301f", alpha=0.40, label="demand = max(vpd_z,0)")
     axL.hist(sup_flat, bins=90, color="#238b45", alpha=0.40,
-             label="supply = max(-ndmi_z,0)  (constant in time)")
+             label="supply = max(-ndmi_z,0)  (time-varying)")
     axL.axvline(0, color="k", lw=0.8, ls=":")
     axL.set_yscale("log")
     axL.set_xlabel("stress value (dimensionless; z-score units)")
@@ -698,14 +733,18 @@ def verify_grid(store: Path, reference: "xr.DataArray") -> "xr.Dataset":
     csi = ds["csi"].values
     finite = np.isfinite(csi)
     assert bool(np.all(csi[finite] >= 0.0)), "CSI must be >= 0 everywhere (positive parts)"
-    # supply_stress is constant across overpasses (decision A: ndmi_z is constant).
-    s0 = ds["supply_stress"].isel(overpass=0).values
-    sL = ds["supply_stress"].isel(overpass=ds.sizes["overpass"] - 1).values
-    both = np.isfinite(s0) & np.isfinite(sL)
-    assert np.allclose(s0[both], sL[both], atol=1e-6), \
-        "supply_stress must be constant across overpasses (ndmi_z is constant in time)"
+    # supply_stress now VARIES across overpasses (decision A: ndmi_z is now a temporal
+    # anomaly). Assert the per-overpass spatial-mean supply is not flat -- the opposite
+    # of the OLD static-supply invariant.
+    sup_op_mean = ds["supply_stress"].mean(dim=("y", "x"), skipna=True).values
+    supply_varies_std = float(np.nanstd(sup_op_mean))
+    assert supply_varies_std > 1e-6, (
+        "supply_stress must VARY across overpasses now that ndmi_z is a temporal "
+        f"anomaly (std of per-overpass spatial-mean supply = {supply_varies_std:.6f}, "
+        "expected > 0; a flat supply would mean the temporal NDMI z did not propagate)")
     log.info("  ASSERTIONS PASSED: geometry == reference_grid.tif; 66 overpasses; "
-             "csi/demand/supply present & float; CSI >= 0 everywhere; supply constant in time.")
+             "csi/demand/supply present & float; CSI >= 0 everywhere; supply VARIES in "
+             "time (per-overpass spatial-mean supply std = %.4f).", supply_varies_std)
     return ds
 
 
