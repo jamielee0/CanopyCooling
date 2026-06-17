@@ -17,7 +17,29 @@ Current contents (regenerate from `src/`):
   LST/ET/ESI cubes, with `in_lst/in_et/in_esi` membership and
   `et_paired_to_lst`/`esi_paired_to_lst` pairing flags keyed to the LST overpasses.
 - `s2_{ndvi,ndmi}_warmseason_median_2023_70m.tif` — Section 4 warm-season median
-  vegetation/moisture indices on the 70 m grid.
+  vegetation/moisture indices on the 70 m grid. **Note:** the single static
+  `s2_ndmi_warmseason_median_2023_70m.tif` is **superseded by the Section 4b
+  time-resolved NDMI cube below** as the input to Section 11's NDMI water-supply
+  z-score (it is retained for the Section 4 NDVI overlay and as the old-vs-new
+  agreement baseline).
+- `s2_ndmi_timeseries_70m.zarr` — **Section 4b time-resolved Sentinel-2 NDMI** on the
+  70 m grid, dims `(overpass=66, y=1155, x=1339)`, vars `observed` / `clim_mean` /
+  `clim_std` (NDMI, dimensionless), indexed by the **same 66 `overpass_key`s in the
+  same order** as `../processed/analysis_cube_70m.zarr` (coords `overpass_key` / `time`
+  / `doy`; CF `spatial_ref`, reopen with `decode_coords="all"`). `observed` = a
+  cloud-masked S2 NDMI **median composite within ±15 d of each overpass date** (2023),
+  so it **varies overpass-to-overpass** (vs the static composite above); `clim_mean` /
+  `clim_std` = the **day-of-year climatology** mean/std of cloud-masked S2 NDMI over
+  **2018–2024 EXCLUDING the overpass year** (leave-one-year-out → 2018–2022 + 2024),
+  within ±15 d of the day-of-year. Built server-side in Earth Engine from
+  `COPERNICUS/S2_SR_HARMONIZED` (SCL-masked, `(B8−B11)/(B8+B11)`, B11 native 20 m →
+  70 m bilinear), downloaded per-overpass with the climatology **deduped by unique
+  day-of-year** (52 unique windows for 66 overpasses). **This unfreezes the CSI
+  water-supply axis**: it supersedes the single static composite as Section 11's NDMI
+  z-score input, letting Section 11 compute a proper *temporal* NDMI z-score
+  `(observed − clim_mean)/clim_std` (varying in time AND space). Regenerate with
+  `python src/section4b_ndmi_timeseries.py`; raw per-overpass GeoTIFFs live in
+  `../raw/sentinel2_ndmi_ts/` and are recorded in `../manifest.csv`.
 - `nlcd_impervious_2021_70m.tif` — Section 5 NLCD impervious surface, **percent
   (0–100)**, float32, **area-weighted** mean of the 30 m cells per 70 m cell.
 - `usfs_tcc_canopy_2025_70m.tif` — Section 5 USFS tree-canopy cover, **percent

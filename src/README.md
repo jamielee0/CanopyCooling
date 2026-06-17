@@ -53,6 +53,39 @@ utilities. Importable as a package alongside `config.py`.
   straight to disk with `geemap.download_ee_image` (no Drive round-trip), then
   resample onto the 70 m grid. `test_section4_sentinel2_indices.py` covers its
   pure logic.
+- `section4b_ndmi_timeseries.py` — **Section 4b: time-resolved Sentinel-2 NDMI**
+  (per-overpass observed + a 2018–2024 leave-one-year-out day-of-year climatology).
+  **Why it exists — the CSI supply-axis fix.** Section 4 produced only ONE NDMI
+  image (a 2023 warm-season median), so Section 11's water-supply z-score could only
+  be a *spatial* standardization that is **constant across all 66 overpasses** —
+  freezing the supply half of the Compound Stress Index, which left the CSI ≈ a pure
+  temporal VPD-demand axis (the deepest reason the pilot found "no robust threshold",
+  Section 14). This section gives NDMI a **real time dimension**, exactly like Section
+  11 already treats VPD/soil moisture: for each of the same 66 ECOSTRESS overpasses it
+  builds, on the 70 m grid, (a) `observed` — a cloud-masked S2 NDMI **median composite
+  within ±`CLIMATOLOGY_WINDOW_DAYS` (15) days of the overpass date** in 2023 (so it
+  varies overpass-to-overpass, greener around the monsoon), and (b) `clim_mean` /
+  `clim_std` — the **day-of-year climatology**: mean/std of cloud-masked S2 NDMI over
+  years **2018–2024 EXCLUDING the overpass's own year** (leave-one-year-out → 2018–2022
+  + 2024), within ±15 d of that day-of-year. Same `COPERNICUS/S2_SR_HARMONIZED` source,
+  same SCL cloud/shadow/snow mask (drop {3,8,9,10,11}), same `(B8−B11)/(B8+B11)` NDMI,
+  same `geemap.download_ee_image` resilient tiled-download (smaller-tile retry → Export
+  fallback) as Section 4. Reductions are computed **server-side in Earth Engine**
+  (`median()` for observed; `mean()`+`stdDev()` over the multi-year union for the
+  climatology) and the reduced 70 m images downloaded per-overpass. EE compute is cut
+  by **deduping the climatology by unique day-of-year** (66 overpasses → 52 unique
+  day-of-year windows; identical climatology computed once, mapped back to every
+  overpass sharing that day-of-year). Output: `../data/interim/s2_ndmi_timeseries_70m.zarr`
+  (dims overpass=66 × y=1155 × x=1339, vars `observed`/`clim_mean`/`clim_std`, coords
+  `overpass_key`/`time`/`doy`, CF `spatial_ref`; same 66 keys in the same order as the
+  Section 9 cube). **This SUPERSEDES the single static composite
+  `s2_ndmi_warmseason_median_2023_70m.tif` as the input to Section 11's NDMI z-score**,
+  unfreezing the CSI supply axis (Section 11 can now compute a proper TEMPORAL NDMI
+  z-score `(observed − clim_mean)/clim_std`). `test_section4b_ndmi_timeseries.py` covers
+  its pure logic (±15-day window selection, LOYO year exclusion, NDMI formula, day-of-year
+  dedup mapping). Run: `python src/section4b_ndmi_timeseries.py` (`--overpass N` to test
+  one overpass, `--coarse-scale 210` for a smoke test, `--skip-download` to reuse
+  `data/raw/sentinel2_ndmi_ts/`, `--verify-only` to re-open + QC the saved store).
 - `section5_landcover.py` — Section 5: acquire the impervious-surface %, tree-canopy
   % and NLCD land-cover **class** layers and put all three on the 70 m grid, with
   **no manual download**. `test_section5_landcover.py` covers its pure logic.
