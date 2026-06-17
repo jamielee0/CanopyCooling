@@ -9,8 +9,12 @@ logic is exercised on tiny SYNTHETIC arrays (NO network, NO full .nc):
     LEAVE-ONE-YEAR-OUT (steps 58-60) -- incl. the one-sided early/late-season window
   * the anomaly = observed - normal and z = anomaly / std formulas (steps 2-3), and
     the degenerate-std (zero / non-finite) -> NaN guard
-  * the NDMI SPATIAL standardization z = (x - mu)/sigma (decision B): mean ~0 / std
-    ~1 over the reference population, NaN preserved, constant-field -> NaN
+  * the NDMI TEMPORAL day-of-year-at-overpass z = (observed - clim_mean)/clim_std
+    (the CURRENT decision B): the same per-overpass anomaly/z formula + std-guard as
+    VPD/SM, and the PROOF it VARIES across overpasses (no longer static)
+  * the spatial-standardization utility z = (x - mu)/sigma (the ORIGINAL decision B,
+    retained + tested): mean ~0 / std ~1 over the reference population, NaN preserved,
+    constant-field -> NaN
   * the half-month SEASON-PART binning used for the seasonal-cycle flatness check
   * the 2023-heatwave-window membership test (the extreme-date QC expectation)
 
@@ -194,12 +198,53 @@ def test_spatial_standardize_constant_field() -> None:
 
 
 def test_spatial_standardize_refmask() -> None:
-    print("\n[NDMI spatial standardization with an explicit reference mask]")
+    print("\n[spatial standardization with an explicit reference mask (retained utility)]")
     field = np.array([[0.0, 1.0], [2.0, 100.0]])  # 100 is an outlier we exclude via mask
     ref = np.array([[True, True], [True, False]])
     z, mu, sigma = sec11.spatial_standardize(field, ref_mask=ref)
     check(abs(mu - 1.0) < 1e-12, "mu computed only over the reference-mask pixels (0,1,2 -> 1.0)")
     check(np.isfinite(z[1, 1]), "an out-of-population pixel still gets a z (using pop mu/sigma)")
+
+
+# --------------------------------------------------------------------------- #
+# 3b. NDMI TEMPORAL day-of-year-at-overpass anomaly (the NEW decision B).
+#     z[overpass, y, x] = (observed - clim_mean)/clim_std, per overpass per pixel,
+#     mirroring VPD/SM. Replaces the old static spatial standardization, so the key
+#     properties are: (i) it uses the same anomaly/z formula and the same
+#     degenerate-std -> NaN guard, and (ii) it VARIES across overpasses.
+# --------------------------------------------------------------------------- #
+def test_ndmi_temporal_zscore_varies_in_time() -> None:
+    print("\n[NDMI temporal z = (observed - clim_mean)/clim_std, per overpass (decision B)]")
+    # tiny synthetic time-resolved NDMI store: 3 overpasses x 2 x 2.
+    # observed differs across overpasses (so the z must, too); a fixed clim mean/std.
+    observed = np.array([
+        [[0.20, 0.10], [0.00, -0.10]],     # overpass 0
+        [[0.10, 0.05], [0.00, -0.05]],     # overpass 1 (drier-ish)
+        [[0.30, 0.20], [0.10, 0.00]],      # overpass 2 (wetter)
+    ], dtype="float64")
+    clim_mean = np.full((3, 2, 2), 0.10)
+    clim_std = np.full((3, 2, 2), 0.05)
+    z = sec11.zscore(observed, clim_mean, clim_std)        # the exact production call
+    # spot value: (0.20 - 0.10)/0.05 = 2.0
+    check(np.isclose(z[0, 0, 0], 2.0), "z = (observed - clim_mean)/clim_std elementwise (=2.0)")
+    # PROOF it varies in time: per-overpass spatial-mean z differs across overpasses.
+    per_op = np.nanmean(z.reshape(z.shape[0], -1), axis=1)
+    check(float(np.nanstd(per_op)) > 1e-6,
+          f"per-overpass spatial-mean z VARIES across overpasses (std={np.nanstd(per_op):.4f} > 0)")
+    check(not np.allclose(z[0], z[1]),
+          "two different overpasses give different z fields (NOT broadcast/static)")
+
+
+def test_ndmi_temporal_zscore_degenerate_std() -> None:
+    print("\n[NDMI temporal z: clim_std==0 / non-finite -> NaN (same guard as VPD/SM)]")
+    observed = np.array([[[0.2, 0.2], [0.2, 0.2]]], dtype="float64")
+    clim_mean = np.array([[[0.1, 0.1], [0.1, 0.1]]], dtype="float64")
+    clim_std = np.array([[[0.05, 0.0], [np.nan, 0.05]]], dtype="float64")
+    z = sec11.zscore(observed, clim_mean, clim_std)
+    check(np.isclose(z[0, 0, 0], 2.0), "a healthy clim_std divides normally")
+    check(np.isnan(z[0, 0, 1]), "clim_std == 0 -> z is NaN (degenerate climatology)")
+    check(np.isnan(z[0, 1, 0]), "clim_std non-finite -> z is NaN")
+    check(not np.isinf(z).any(), "no +/-inf is ever produced for NDMI either")
 
 
 # --------------------------------------------------------------------------- #
@@ -269,8 +314,9 @@ def test_module_constants() -> None:
     import config
     check(config.CLIMATOLOGY_WINDOW_DAYS == 15, "config.CLIMATOLOGY_WINDOW_DAYS == 15 (decision C)")
     check(sec11.TEMPORAL_VARS == ("vpd", "sm"),
-          "VPD + soil moisture get the temporal at-hour climatology")
-    check(sec11.SPATIAL_VAR == "ndmi", "NDMI is the spatial-standardization (water-supply) var")
+          "VPD + soil moisture get the temporal at-hour (ERA5) climatology")
+    check(sec11.TEMPORAL_GRID_VAR == "ndmi",
+          "NDMI is the temporal day-of-year-at-overpass (Section 4b) water-supply var")
     check(len(sec11.SEASON_PARTS) == 8, "8 half-month season parts (Jun a .. Sep b)")
 
 
@@ -287,6 +333,8 @@ def main() -> int:
         test_spatial_standardize,
         test_spatial_standardize_constant_field,
         test_spatial_standardize_refmask,
+        test_ndmi_temporal_zscore_varies_in_time,
+        test_ndmi_temporal_zscore_degenerate_std,
         test_season_part_labels,
         test_heatwave_window,
         test_heatwave_enrichment,

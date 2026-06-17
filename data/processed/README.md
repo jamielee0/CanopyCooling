@@ -86,29 +86,37 @@ Current contents (regenerate from `src/`):
   - **z-score vars** `(overpass, y, x)`, all dimensionless: `vpd_z`, `sm_z` (the soil-
     moisture **check**), `ndmi_z` (the **water-supply** z). **Saved climatology** (kept to
     interpret results later — step 4 deliverable): `vpd_clim_mean`/`vpd_clim_std` (kPa),
-    `sm_clim_mean`/`sm_clim_std` (m³ m⁻³).
+    `sm_clim_mean`/`sm_clim_std` (m³ m⁻³), and `ndmi_clim_mean`/`ndmi_clim_std`
+    (dimensionless; the day-of-year LOYO NDMI climatology carried over from Section 4b).
   - **coords** `overpass`, `overpass_key`, `time`, `era5_hour` (the overpass axis is reused
     verbatim from the Section 9 cube), plus `y`/`x` and a CF `spatial_ref`.
-  - **Two methods, by what data exist (documented in the module header + the QC note).**
-    **`vpd_z` / `sm_z` — rigorous temporal climatology:** for each overpass (day-of-year
+  - **All three are a temporal day-of-year leave-one-year-out anomaly (documented in the
+    module header + the QC note).** **`vpd_z` / `sm_z`:** for each overpass (day-of-year
     *D*, matched ERA5 hour *H*, year *Y* = 2023) the **normal** = mean of ERA5-Land values
     at hour == *H* over all days with |doy − D| ≤ `CLIMATOLOGY_WINDOW_DAYS` (**15**) across
     2018–2024 **excluding year Y** (leave-one-year-out); **std** over the same set;
     `z = (observed − normal)/std`. Computed in **native ERA5 8×10 hourly space, then
     bilinear-regridded to 70 m**. The ±15-day window is **clipped** to the warm season
-    (one-sided at the June/September edges — expected). **`ndmi_z` — spatial
-    standardization (a documented, data-forced deviation):** Section 4 produced **only one**
-    2023 NDMI composite, so a temporal day-of-year climatology is **impossible**; instead
-    `z_NDMI = (NDMI − μ)/σ` over **all valid 70 m NDMI pixels** (μ ≈ −0.0677, σ ≈ 0.0850,
-    n = **1 544 052** px), **broadcast across all 66 overpasses** (it varies by pixel, not
-    by overpass — **constant in time**). Consequence: the water-supply stress feeding
-    Section 12 is a spatial field constant in time; the CSI's *temporal* variation comes
-    from VPD. (Asserted on reload: `ndmi_z` is identical across overpasses.)
+    (one-sided at the June/September edges — expected). **`ndmi_z` — TEMPORAL day-of-year-
+    at-overpass anomaly (the supply-axis fix):** Section 4b now supplies a time-resolved
+    NDMI store (`data/interim/s2_ndmi_timeseries_70m.zarr`, same 66 overpass keys) with a
+    per-overpass `observed` NDMI plus its 2018–2024 day-of-year (±15 d) LOYO climatology
+    `clim_mean`/`clim_std`, so `ndmi_z = (observed − clim_mean)/clim_std` is the **same
+    temporal anomaly formula** as VPD/SM, computed **per overpass per pixel directly on the
+    70 m grid** (no regrid). This **replaces** the former static spatial standardization of
+    a single 2023 composite. Consequence: `ndmi_z` now **varies in time and space**, so the
+    CSI **supply axis is no longer frozen** — the CSI's temporal variation now comes from
+    both the VPD (demand) and NDMI (supply) sides. (Asserted on reload: `ndmi_z` **varies**
+    across overpasses — per-overpass spatial-mean std > 0.)
   - **QC (step 4; full account in `docs/section11_anomaly_qc_note.md`).** Whole-record
     mean/std: `vpd_z` **+0.12 / 0.95** (on target), `sm_z` **−0.09 / 0.45** (mean ≈ 0; std
     < 1 is a **real single-pilot-year** property — 2023 overpass-hour soil moisture varied
     less than the 2018–2024 spread; identical native & regridded, so not a pipeline bug;
-    SM is the protocol's *check*), `ndmi_z` **0.00 / 1.00** (by construction). The seasonal
+    SM is the protocol's *check*), `ndmi_z` **+0.31 / 0.93** (near 0/1; standardized
+    against an *independent* day-of-year LOYO climatology, like VPD/SM) with a
+    per-overpass spatial-mean std **across** overpasses of **0.44 (> 0)** — the proof it
+    now varies in time (the old static field was identical across all 66 overpasses). The
+    seasonal
     cycle is **demonstrably removed as a function of day-of-year**: the day-of-year VPD
     normal tracks the within-season march (3.74 → 2.83 kPa, Jun → Sep) while a whole-season
     normal is flat (3.32 kPa) — so the residual June-low/July-high z pattern is **real 2023

@@ -357,16 +357,18 @@ utilities. Importable as a package alongside `config.py`.
   variables — standardized z-scores for VPD, NDMI (water supply) and soil moisture**
   (steps 58–61). Reads only `data/interim/era5land_vpd_sm_hourly_2018_2024.nc`, the
   Section 9 `data/processed/analysis_cube_70m.zarr` (for the 66-overpass axis + matched
-  ERA5 hour) and the Section 4 NDMI composite (no network). Produces
+  ERA5 hour) and Section 4b's time-resolved NDMI store
+  `data/interim/s2_ndmi_timeseries_70m.zarr` (no network). Produces
   `../data/processed/section11_zscores_70m.zarr`. `test_section11_anomalies.py` covers its
   pure logic. Run: `python src/section11_anomalies.py` (`--no-figures` to skip the QC
   figures, `--verify-only` to re-open the saved store and re-run verify + QC). `config.py`
   gains `CLIMATOLOGY_WINDOW_DAYS = 15`.
 
-  **Two methods, forced by what data exist (documented prominently in the header + the QC
-  note + `data/processed/README.md`).** Each stress variable entering the Compound Stress
-  Index is converted to a standardized anomaly, but the *method* differs by data
-  availability:
+  **All three variables now get a temporal day-of-year leave-one-year-out anomaly
+  (documented prominently in the header + the QC note + `data/processed/README.md`).** Each
+  stress variable entering the Compound Stress Index is converted to a standardized
+  anomaly; VPD/SM use the ERA5-Land hourly record and NDMI now uses Section 4b's
+  per-overpass series + climatology:
 
   **VPD & soil moisture — rigorous temporal day-of-year-AT-OVERPASS-HOUR LOYO
   climatology.** The 2018–2024 *hourly* record exists only for ERA5-Land VPD + soil
@@ -383,21 +385,21 @@ utilities. Importable as a package alongside `config.py`.
   window** (13 of 66; expected, documented). The observed value (the z numerator) is
   recomputed from the `.nc` at the matched hour, not reused from the cube.
 
-  **NDMI — a SPATIAL standardized anomaly (a documented, data-forced deviation, analogous
-  to Section 10's canopy operating-point decision).** Section 4 produced **only one**
-  warm-season median NDMI composite (2023) — there is **no** multi-year or multi-date NDMI
-  series — so a 2018–2024 day-of-year climatology **cannot** be built. The water-supply
-  z-score is therefore a **spatial** standardized anomaly `z_NDMI(pixel) = (NDMI − μ)/σ`,
-  with **μ and σ over all valid 70 m NDMI pixels** in the study domain (the documented
-  reference population: **1 544 052** px; μ ≈ −0.0677, σ ≈ 0.0850). This z **varies by
-  pixel, not by overpass**, and is **broadcast to all 66 overpasses** to give the
-  per-pixel-per-overpass shape the protocol asks for. **Consequence (stated plainly):**
-  unlike VPD/SM (true multi-year hourly → rigorous temporal LOYO climatology), NDMI has a
-  single 2023 composite, so a temporal deseasonalization is impossible; a spatial
-  standardization is used as the water-supply z that feeds Section 12's supply stress — so
-  the **water-supply stress is a spatial field constant in time**, and the CSI's *temporal*
-  variation comes from VPD. **Soil-moisture z is the protocol's temporal *check*** on the
-  water-supply story and is kept.
+  **NDMI — a TEMPORAL day-of-year-AT-OVERPASS anomaly (the supply-axis fix; replaces the
+  former static spatial standardization).** Section 4b now produces a **time-resolved**
+  NDMI store on the 70 m grid (`data/interim/s2_ndmi_timeseries_70m.zarr`, indexed by the
+  same 66 overpass keys): a per-overpass cloud-masked `observed` NDMI (±15 d around each
+  2023 overpass date) plus the 2018–2024 day-of-year (±15 d) **leave-one-year-out**
+  climatology `clim_mean`/`clim_std`. The water-supply z-score is therefore the **same
+  temporal anomaly formula** as VPD/SM — `z_NDMI(overpass, pixel) = (observed −
+  clim_mean)/clim_std` — computed **per overpass per pixel directly on the 70 m grid** (no
+  regrid; the same `clim_std == 0`/non-finite → NaN guard). This **replaces** the former
+  *static spatial standardization* of a single 2023 composite (the historical decision,
+  kept only as context). **Consequence (stated plainly):** `ndmi_z` now **varies in time
+  and space**, so the **CSI supply axis is no longer frozen** — Section 12's supply stress
+  can now respond to the actual per-overpass canopy water content, and the CSI's *temporal*
+  variation now comes from **both** the VPD (demand) and NDMI (supply) sides. **Soil-moisture
+  z remains the protocol's independent temporal *check*** on the water-supply story.
 
   **QC (step 4 — the heart of the section; full account in
   `docs/section11_anomaly_qc_note.md`).** Whole-record mean/std: **`vpd_z` +0.12 / 0.95**
@@ -405,7 +407,10 @@ utilities. Importable as a package alongside `config.py`.
   single-pilot-year property (2023 overpass-hour soil moisture deviated *less* than the
   full 2018–2024 spread; **identical native & regridded**, so not a pipeline bug; SM is a
   slow root-zone state and the protocol's *check*, not a primary driver). **`ndmi_z`
-  0.00 / 1.00** by construction. **Seasonal cycle removed as a function of day-of-year**
+  +0.31 / 0.93** (near 0/1, standardized against an *independent* day-of-year LOYO
+  climatology like VPD/SM) with a per-overpass spatial-mean std **across** overpasses of
+  **0.44 (> 0)** — the proof it now varies in time; the old static field was identical
+  across all 66 overpasses. **Seasonal cycle removed as a function of day-of-year**
   (the protocol pitfall guard): the run proves it directly on the **dense** ERA5 record —
   the day-of-year VPD normal **tracks the within-season march** (3.74 → 2.83 kPa, Jun →
   Sep) while a single whole-season normal is **flat** (3.32 kPa), so the residual
@@ -421,13 +426,14 @@ utilities. Importable as a package alongside `config.py`.
 
   **Deliverables (`data/processed/`, git-ignored).** `section11_zscores_70m.zarr` (dims
   `overpass=66 × y × x`; vars `vpd_z`, `sm_z`, `ndmi_z` + the **saved climatology**
-  `vpd_clim_mean`/`vpd_clim_std`/`sm_clim_mean`/`sm_clim_std`; aligned to
-  `reference_grid.tif`, asserted on reload) and `section11_zscores_overpass_summary.parquet`
-  (66-row per-overpass regional-mean z + clim + season part). Figures: the z-distribution
-  histograms, the seasonal-cycle check (two panels) and the extreme-date VPD-z map. The QC
-  results note is `docs/section11_anomaly_qc_note.md`. The run re-opens the saved store and
-  **asserts geometry == `reference_grid.tif`** (CRS/shape/transform), 66 overpasses, all z +
-  climatology vars present and float, and that `ndmi_z` is constant across overpasses.
+  `vpd_clim_mean`/`vpd_clim_std`/`sm_clim_mean`/`sm_clim_std`/`ndmi_clim_mean`/`ndmi_clim_std`;
+  aligned to `reference_grid.tif`, asserted on reload) and
+  `section11_zscores_overpass_summary.parquet` (66-row per-overpass regional-mean z + clim +
+  season part). Figures: the z-distribution histograms, the seasonal-cycle check (two panels)
+  and the extreme-date VPD-z map. The QC results note is `docs/section11_anomaly_qc_note.md`.
+  The run re-opens the saved store and **asserts geometry == `reference_grid.tif`**
+  (CRS/shape/transform), 66 overpasses, all z + climatology vars present and float, and that
+  `ndmi_z` **varies** across overpasses (per-overpass spatial-mean std > 0).
 - `section12_compound_stress.py` — Section 12: **combine the standardized demand and supply
   anomalies into the Compound Stress Index (CSI)** (steps 62–66). Reads **only** the Section 11
   `data/processed/section11_zscores_70m.zarr` z-scores (no network). Produces
