@@ -13,6 +13,10 @@ logic is exercised on tiny SYNTHETIC arrays (NO network, NO full Zarr):
     weights (the step-66 unequal-weight sensitivity HOOK)                   (step 64)
   * CSI >= 0 everywhere (it is built from non-negative parts with non-negative
     weights), and NaN is preserved (missing pixels stay missing)            (step 65)
+  * SUPPLY now VARIES across overpasses (ndmi_z is now a TEMPORAL day-of-year anomaly,
+    not the old static spatial standardization): a per-overpass-varying ndmi_z yields a
+    per-overpass-varying supply stress (and CSI), whereas an identical-every-overpass
+    ndmi_z would give a flat supply -- so the supply axis is no longer frozen in time
   * the protocol PITFALL guard: the supply stress is built from the NDMI *z-score*,
     NOT raw NDMI -- proven by showing raw NDMI (mean ~ -0.07) and its z-score give
     DIFFERENT supply stresses, and that compute_csi on raw NDMI would be dominated
@@ -159,6 +163,37 @@ def test_csi_nonnegative_and_nan_preserved() -> None:
 
 
 # --------------------------------------------------------------------------- #
+# 3b. SUPPLY now VARIES in time (ndmi_z is a TEMPORAL anomaly, not a static field).
+# --------------------------------------------------------------------------- #
+def test_supply_varies_across_overpasses_when_ndmi_z_is_temporal() -> None:
+    print("\n[supply stress VARIES across overpasses when ndmi_z is temporal (decision A)]")
+    rng = np.random.default_rng(7)
+    n_op, n_px = 8, 500
+    # A TEMPORAL ndmi_z: a different z-field per overpass (what Section 11 now produces).
+    ndmi_z_temporal = rng.normal(0.0, 1.0, size=(n_op, n_px))
+    supply = sec12.supply_stress(ndmi_z_temporal)            # (overpass, px)
+    per_op_mean = np.nanmean(supply, axis=1)                 # spatial-mean supply per overpass
+    varies_std = float(np.nanstd(per_op_mean))
+    check(supply.shape == (n_op, n_px), "supply stress keeps the (overpass, pixel) shape")
+    check(varies_std > 1e-6,
+          "a per-overpass-varying ndmi_z yields a supply that VARIES across overpasses "
+          f"(std of per-overpass spatial-mean supply = {varies_std:.4f} > 0)")
+    # Contrast: an IDENTICAL-every-overpass ndmi_z (the OLD static field) -> flat supply.
+    ndmi_z_static = np.broadcast_to(rng.normal(0, 1, size=n_px), (n_op, n_px))
+    supply_static = sec12.supply_stress(ndmi_z_static)
+    static_std = float(np.nanstd(np.nanmean(supply_static, axis=1)))
+    check(static_std < 1e-12,
+          "the OLD static (identical-every-overpass) ndmi_z would give a FLAT supply "
+          f"(std = {static_std:.2e} ~ 0) -- the contrast that the temporal fix removes")
+    # And the CSI then varies in time from the supply side even with zero demand.
+    demand_zero = np.zeros_like(supply)
+    csi = sec12.compute_csi(demand_zero, supply, 0.5, 0.5)
+    check(float(np.nanstd(np.nanmean(csi, axis=1))) > 1e-6,
+          "with a temporal supply the CSI varies across overpasses from the SUPPLY side "
+          "alone (demand=0) -> CSI temporal signal is no longer VPD-only")
+
+
+# --------------------------------------------------------------------------- #
 # 4. PITFALL guard: supply built from the z-score, NOT raw NDMI (step 63 + pitfall).
 # --------------------------------------------------------------------------- #
 def test_supply_uses_zscore_not_raw_ndmi() -> None:
@@ -268,6 +303,7 @@ def main() -> int:
         test_compute_csi_equal_weights,
         test_compute_csi_parameterised_weights,
         test_csi_nonnegative_and_nan_preserved,
+        test_supply_varies_across_overpasses_when_ndmi_z_is_temporal,
         test_supply_uses_zscore_not_raw_ndmi,
         test_copula_weights_is_unrun_stub,
         test_heatwave_helpers_delegate_to_section11,
