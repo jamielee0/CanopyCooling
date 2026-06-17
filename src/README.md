@@ -627,22 +627,28 @@ utilities. Importable as a package alongside `config.py`.
   trivially "contains" the change-point.) `analyze_sample` runs the whole pipeline on one
   (CSI, cooling-advantage[, ET]) sample and returns a `ThresholdVerdict`.
 
-  **Phoenix pilot result — NO ROBUST THRESHOLD DETECTED** (`docs/section14_results_note.md`). Run on
-  three samples — the **full** 9-BG sample (`n_tree_valid ≥ 1`, n = 264), a **modest** filter
-  (`≥ 3`, n = 107), and the **robust** subset (`≥ 10`, n = 31, which collapses to the single
-  well-sampled BG `040139412001` — the thin-sample sensitivity made explicit) — the verdict is the
-  **same in all three**: the cooling-advantage vs CSI relationship is **flat** (|Pearson r| < 0.1,
-  p > 0.3 everywhere; linear R² ≈ 0.001–0.009), the segmented kink is **not preferred** over a
-  straight line (ΔAIC = +1.4 / +1.5 / +2.1, all > 0), the breakpoint is **not identified** (bootstrap
-  CI spans **62 % / 88 % / 97 %** of the CSI range; the full-sample bootstrap distribution is
-  multimodal), the two methods do **not** agree on a well-identified break, and **ET shows no
-  decline** beyond the candidate breakpoint (no mechanistic signature). This is the **expected**
-  outcome for the pilot, driven by (a) the **thin paired sample** (9 BGs, one dominant, median
-  `n_good_obs` = 2; the most extreme cooling advantages rest on a single tree pixel — not clipped,
-  but down-weighted by the min-count filter and reported via sensitivity) and (b) a **CSI axis that
-  is ≈ a VPD-demand axis** (the NDMI supply z is static in time, so the between-BG CSI spread is ~10×
-  smaller than the within-BG temporal spread). A defensible threshold needs the denser, multi-city
-  sample of the **cross-city phase** that this section gates into. Figures (`figures/section14_*.png`):
+  **Phoenix pilot result — NO ROBUST THRESHOLD DETECTED** (`docs/section14_results_note.md`).
+  **Re-run on branch `temporal-ndmi-supply` after the CSI supply axis was unfrozen** (NDMI z is now a
+  temporal day-of-year LOYO anomaly — §4b/§11/§12 — so `mean_csi_tree` varies per overpass *and*
+  across neighborhoods; `cooling_advantage` from LST is unchanged). Run on three samples — the
+  **full** 9-BG sample (`n_tree_valid ≥ 1`, n = 264), a **modest** filter (`≥ 3`, n = 107), and the
+  **robust** subset (`≥ 10`, n = 31, which collapses to the single well-sampled BG `040139412001` —
+  the thin-sample sensitivity made explicit) — the verdict is the **same in all three, and unchanged
+  from the original static-NDMI run (the null persists)**: the cooling-advantage vs CSI relationship
+  is **flat** (full Pearson r ≈ **+0.02**, p ≈ 0.71; linear R² ≈ 0.0005–0.005), the segmented kink is
+  **not preferred** over a straight line (ΔAIC = **+2.93 / +0.52 / +0.85**, all > 0), the breakpoint
+  is **not identified** (bootstrap CI spans **61 % / 75 % / 99 %** of the CSI range), the two methods
+  do **not** agree on a *well-identified* break, and **ET shows no consistent decline** beyond the
+  candidate breakpoint (direction flips between samples — no mechanistic signature). **The one thing
+  that genuinely changed is the CSI axis itself:** unfreezing the NDMI supply z **roughly tripled the
+  between-neighborhood (spatial) CSI spread (0.027 → 0.081)** and cut the within/between ratio from
+  ~10× to ~4×, so the CSI is **no longer ≈ a pure VPD-demand axis** — the deepest reason the original
+  pilot blamed is now fixed. **And yet the threshold result is unchanged**, which **isolates the
+  (unchanged) thin paired sample** (9 BGs, one dominant, median `n_good_obs` = 2; extreme cooling
+  advantages rest on a single tree pixel — not clipped, reported via min-count sensitivity) as the
+  remaining cause. A defensible threshold needs the denser, multi-city sample of the **cross-city
+  phase** that this section gates into. An explicit **old-vs-new comparison table** is in the
+  notebook's conclusion and `docs/section14_results_note.md`. Figures (`figures/section14_*.png`):
   the scatter, the binned mean ± SEM, the ET/ESI overlay, the distribution/QC panel, and the
   segmented-fit + bootstrap-CI-histogram. **The executed notebook is the deliverable** (committed with
   outputs; it is code/output, not data).
