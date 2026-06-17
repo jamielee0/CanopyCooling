@@ -206,9 +206,18 @@ Current contents (regenerate from `src/`):
     near-zero/negative tail (small pre-dawn overpasses; the +23 K max is a one-tree-pixel BG).
   - **mechanism/stressor (step 68)** are means over the BG's **tree-dominated pixels**.
     `mean_et_tree`/`mean_esi_tree` are **NaN on the 21 overpasses without ET/ESI** (~22.7 % of
-    rows; Section 3 caveat). `aridity` = **BG-mean PDSI** that overpass (**negative = drier**; NaN
-    on the 3 earliest overpasses with no containing pentad). `mean_impervious`/`mean_canopy` are
-    **neighborhood-level** means over all valid BG pixels (context modifiers, not tree-pixel means).
+    rows; Section 3 caveat). The stressor columns `mean_csi_tree` / `mean_water_supply_z_tree` now
+    **vary per overpass** (Section 11/12 redo: `ndmi_z` is a temporal day-of-year LOYO anomaly, so
+    `supply_stress` and CSI are time-varying — **supply is no longer static in time**); e.g. within
+    the dominant BG `040139412001` `mean_csi_tree` spans **0.020–0.928** across its 34 overpasses
+    (≈constant before). *Outlier note (checked):* the **domain-wide** `ndmi_z`/CSI have extreme
+    outliers (up to ±50 / CSI ≈ 22) at the ~53 k stable bare/paved pixels (tiny NDMI clim-std), but
+    the **195 tree pixels are well-behaved** (`ndmi_z` within ±3.6); because this table averages
+    CSI/supply over **tree pixels only**, the tree-pixel stressor means stay sane over all 264 rows
+    (`mean_csi_tree` ≤ 1.50, `mean_water_supply_z_tree` ∈ [−2.76, +1.07]; none |z| > 10). `aridity`
+    = **BG-mean PDSI** that overpass (**negative = drier**; NaN on the 3 earliest overpasses with no
+    containing pentad). `mean_impervious`/`mean_canopy` are **neighborhood-level** means over all
+    valid BG pixels (context modifiers, not tree-pixel means).
   - **`irrigation_proxy` (step 70) — documented heuristic, static per BG.**
     `irrigation_proxy = mean( norm(turf_fraction), norm(income), norm(1 − impervious_fraction) )`,
     `norm(c) = (c − min c)/(max c − min c)` **across the 9 paired neighborhoods** (equal 1/3
