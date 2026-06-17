@@ -4,11 +4,11 @@ Standardized-anomaly (z-score) fields for the Compound-Stress-Index stress varia
 
 Deliverable: `data/processed/section11_zscores_70m.zarr` (reopen with `xr.open_zarr(..., decode_coords="all")`).
 
-## Method (two regimes, by what data exist)
+## Method (all three variables: a temporal day-of-year LOYO anomaly)
 
 **VPD & soil moisture — rigorous temporal climatology.** The 2018–2024 *hourly* record exists only for ERA5-Land VPD + soil moisture. For each overpass (day-of-year *D*, matched ERA5 hour *H*, year *Y* = 2023) the climatological **normal** at each native pixel is the mean of values at hour-of-day == *H* over all days with |doy − D| ≤ 15, across 2018–2024 **excluding year Y** (leave-one-year-out); the **std** is over the same set. anomaly = observed − normal; **z = anomaly / std**. Computed in native ERA5 8×10 hourly space, then **bilinear-regridded to 70 m** (observed and climatology stay in the same space). The ±15-day window is **clipped** to the available warm-season data (no day-of-year wraparound — it is within-season), so the earliest-June / latest-September overpasses get a one-sided window (expected, documented).
 
-**NDMI — spatial standardization (a documented, data-forced deviation).** Section 4 produced **only one** warm-season median NDMI composite (2023); there is no multi-year or multi-date NDMI series, so a 2018–2024 day-of-year climatology **cannot** be built. The water-supply z-score is therefore a **spatial standardized anomaly** `z_NDMI(pixel) = (NDMI − μ)/σ`, with **μ and σ over all valid (finite) NDMI pixels in the study domain** (the reference population: **1,544,052 pixels**; μ = -0.06768, σ = 0.08498). This z **varies by pixel, not by overpass**, and is broadcast to all 66 overpasses to give the per-pixel-per-overpass shape the protocol asks for. **Consequence:** the water-supply stress that feeds Section 12 is a **spatial field, constant in time**; the CSI's *temporal* variation will come from VPD. Soil-moisture z is the protocol's temporal *check* on the water-supply story and is kept.
+**NDMI — temporal day-of-year-at-overpass anomaly (Section 4b).** Section 4b now produces a **time-resolved** NDMI product on the 70 m grid (`data/interim/s2_ndmi_timeseries_70m.zarr`), indexed by the same 66 overpass keys: a per-overpass cloud-masked `observed` NDMI (±15 d around each 2023 overpass date) plus the 2018–2024 day-of-year (±15 d) **leave-one-year-out** climatology `clim_mean`/`clim_std`. The water-supply z-score is therefore the **same temporal anomaly formula** as VPD/SM — `z_NDMI(overpass, pixel) = (observed − clim_mean) / clim_std` — computed **per overpass per pixel directly on the 70 m grid** (no regrid; the same `clim_std == 0`/non-finite → NaN guard). This **replaces** the previous *static spatial standardization* of a single 2023 composite. **Consequence:** `ndmi_z` now **varies in time and space**, so the CSI **supply axis is no longer frozen** — Section 12's supply stress can now respond to the actual per-overpass canopy water content, not just a fixed spatial pattern. Whole-record `ndmi_z` mean = +0.3143, std = 0.9299 (n_finite = 102,071,970); the per-overpass spatial-mean `ndmi_z` has a std **across** overpasses of **0.43764 (> 0)** — the proof it now varies in time (the old static field was identical across all 66 overpasses → 0). Soil-moisture z remains the protocol's independent temporal *check* on the water-supply story.
 
 ## QC step 4(a) — whole-record mean / std (target ≈ 0 / ≈ 1)
 
@@ -16,24 +16,24 @@ Deliverable: `data/processed/section11_zscores_70m.zarr` (reopen with `xr.open_z
 |---|---|---|---|---|
 | `vpd_z` | +0.1208 | 0.9451 | 101,100,054 | temporal day-of-year-at-hour LOYO |
 | `sm_z` | -0.0850 | 0.4503 | 101,100,054 | temporal day-of-year-at-hour LOYO |
-| `ndmi_z` | -0.0000 | 1.0000 | 101,907,432 | spatial standardization (constant in time) |
+| `ndmi_z` | +0.3143 | 0.9299 | 102,071,970 | temporal day-of-year-at-overpass anomaly |
 
-VPD-z and SM-z are standardized against an *independent* leave-one-year-out climatology (one 2023 observation per overpass vs the 2018–2024 normal/std), so their mean/std are *near* — not exactly — 0/1; NDMI-z is 0/1 by construction over its reference population. **`vpd_z` is on target** (mean +0.1208, std 0.95). **`sm_z` has mean ≈ 0 but std ≈ 0.45 (< 1)**: this is a *real* single-pilot-year property, not a climatology bug — the 2023 overpass-hour soil moisture deviated *less* than the full 2018–2024 climatological spread (soil moisture is a slowly-varying root-zone state, and these 66 overpasses sample only one year of it). The value is **identical in native ERA5 space and after regridding** (0.46 vs 0.45), confirming it is the data, not the pipeline. Soil moisture is the protocol's water-supply *check*, not a primary CSI driver, so a sub-unit std here is acceptable and documented.
+All three are standardized against an *independent* leave-one-year-out climatology (one 2023 observation per overpass vs the 2018–2024 normal/std), so their mean/std are *near* — not exactly — 0/1. **`ndmi_z`** now has mean +0.3143, std 0.93 and — critically — a per-overpass spatial-mean std *across* overpasses of **0.43764 (> 0)**, i.e. it varies in time (the old static spatial standardization was identical across all 66 overpasses). **`vpd_z` is on target** (mean +0.1208, std 0.95). **`sm_z` has mean ≈ 0 but std ≈ 0.45 (< 1)**: this is a *real* single-pilot-year property, not a climatology bug — the 2023 overpass-hour soil moisture deviated *less* than the full 2018–2024 climatological spread (soil moisture is a slowly-varying root-zone state, and these 66 overpasses sample only one year of it). The value is **identical in native ERA5 space and after regridding** (0.46 vs 0.45), confirming it is the data, not the pipeline. Soil moisture is the protocol's water-supply *check*, not a primary CSI driver, so a sub-unit std here is acceptable and documented.
 
 ## QC step 4(b) — seasonal cycle removed? (mean z per season part)
 
-Mean z per half-month over the 66 overpasses (NDMI-z is flat by construction — constant in time):
+Mean z per half-month over the 66 overpasses (NDMI-z now varies in time too, from its own day-of-year LOYO climatology):
 
 | season part | n | vpd_z mean | sm_z mean | ndmi_z mean |
 |---|---|---|---|---|
-| Jun a | 8 | -1.558 | +0.485 | +0.000 |
-| Jun b | 14 | +0.027 | +0.239 | +0.000 |
-| Jul a | 8 | +0.810 | -0.186 | +0.000 |
-| Jul b | 6 | +1.012 | -0.388 | +0.000 |
-| Aug a | 9 | +0.408 | -0.478 | +0.000 |
-| Aug b | 10 | +0.310 | -0.351 | +0.000 |
-| Sep a | 6 | -0.040 | -0.011 | +0.000 |
-| Sep b | 5 | +0.195 | -0.227 | +0.000 |
+| Jun a | 8 | -1.558 | +0.485 | +0.701 |
+| Jun b | 14 | +0.027 | +0.239 | +0.770 |
+| Jul a | 8 | +0.810 | -0.186 | +0.736 |
+| Jul b | 6 | +1.012 | -0.388 | +0.418 |
+| Aug a | 9 | +0.408 | -0.478 | -0.105 |
+| Aug b | 10 | +0.310 | -0.351 | -0.304 |
+| Sep a | 6 | -0.040 | -0.011 | -0.107 |
+| Sep b | 5 | +0.195 | -0.227 | +0.115 |
 
 VPD-z season-part spread (max − min) over the 66 overpasses = **2.570**; SM-z spread = 0.964. **There is a residual June-low / July-high pattern, and it is REAL 2023 weather — not a leftover seasonal cycle.** That distinction is the crux of this QC, so it is proven directly below.
 
