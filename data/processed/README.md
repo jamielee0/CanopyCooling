@@ -241,3 +241,55 @@ Current contents (regenerate from `src/`):
     overpass); `cooling_advantage == mean_lst_reference − mean_lst_tree`; `n_good_obs ==
     min(n_tree_valid, n_ref_valid)`; every row ≥ 1 finite tree & reference pixel. QA figure
     `figures/section13_cooling_advantage_distribution.png`.
+
+### Section 16 (reason-#2 fix) — pixel-level local pairing + clustering-aware threshold
+
+**NEW deliverables, fully NON-DESTRUCTIVE.** These ADD to (never replace) the BG-level
+`master_table.parquet` above; they are built by `src/section16_pixel_pairing.py` +
+`src/section16_threshold_pixel.py` at a **separate, relaxed operating point** (config block
+`CANOPY_THR_PIXEL = 30`, `MIN_OBS_PIXEL = 15`; all other Section 10 gates unchanged) to enlarge and
+strengthen the thin Phoenix paired sample without fabricating signal. The Section 10 BG-pipeline
+constants (`CANOPY_THR = 40` / `MIN_OBS = 20` / `CANOPY_THR_PREREGISTERED = 70`) are untouched.
+
+- `section16_pixel_class_pixel_70m.tif` — uint8 relaxed CANDIDATE class raster aligned to
+  `reference_grid.tif` (codebook **0 = other, 1 = tree-candidate, 2 = reference-candidate**), at
+  canopy > 30 % / obs ≥ 15. **670 tree-candidate pixels** (vs 195 in the BG-paired
+  `section10_pixel_class_70m.tif`), 418 373 reference candidates. *Candidate* masks (un-demoted),
+  re-derived from the cube — NOT the BG-paired subset.
+- `section16_pixel_clusters.parquet` — one row per tree-candidate pixel:
+  `tree_row, tree_col, x, y, cluster_id, GEOID, obs_count`. `cluster_id` = the **queen (8-conn)**
+  connected-component label of the tree class (the independent spatial unit). **133 queen clusters /
+  178 rook clusters** from 670 tree px; largest queen cluster **176 px (26.3 %)**; **dominant BG
+  `040139412001` holds 71.2 %** of tree px (down from 87.7 % at canopy40); **Kish N_eff = 12.1
+  (queen) / 16.6 (rook) clusters, but 1.9 by BG** (the honest independence ceiling — 44 clusters
+  share the dominant BG's reference baseline + coarse ~9 km met).
+- `master_table_pixel.parquet` — the **pixel-overpass** paired table (the finest granularity;
+  **NOT the inference df**). One row per (tree px, overpass) with finite tree LST and ≥ 1 reachable
+  reference within R, **stacked over the radius sweep** (`R_m` ∈ {210, 350, 500}; **18 713 rows**).
+  Columns: `tree_row, tree_col, cluster_id, GEOID, overpass_index, overpass_key, overpass_timestamp,
+  lst_tree, ref_mean, n_ref_in_R, n_ref_finite, cooling_advantage_px, mean_csi_tree, vpd_z, ndmi_z,
+  mean_et_tree, mean_esi_tree, pdsi, R_m`. **`cooling_advantage_px = mean(finite LST of reference px
+  within R metres of the tree px) − LST_tree`**, differenced at the **same overpass** (cancels
+  weather/time-of-day exactly); references found by a KDTree on reference-px (row, col) coords,
+  radius = R / 70 m cells. ET/ESI NaN on the non-ET overpasses (pairwise-dropped, never imputed).
+- `master_table_cluster.parquet` — the **PRIMARY modeling input**: the pixel-overpass rows collapsed
+  to **cluster-overpass** rows (stacked over the radius sweep; **4 178 rows**; **R = 350 m primary →
+  1 344 rows over 56 clusters / 13 BGs, median 24 overpasses/cluster**). Columns: `cluster_id, GEOID,
+  overpass_index, overpass_key, overpass_timestamp, cooling_advantage (count-weighted by
+  n_ref_finite), mean_csi_tree, vpd_z, ndmi_z, mean_et_tree, mean_esi_tree, pdsi, n_tree_px_valid,
+  n_ref_in_R, R_m`. CSI range 0–1.62 (R=350); cooling advantage median **+1.52 K**;
+  **between-cluster CSI variance share ≈ 34 %** (real spatial signal on the x-axis). The cluster is
+  the random-effect + resampling unit; the pixel-overpass count is reported but **never** the df.
+- `section16_threshold_results.json` — the machine-readable clustering-aware results: per-radius
+  cluster-level segmented fit + verdict, the cluster-resampling bootstrap CI, the MixedLM
+  (random intercept, cluster nested in BG), cluster-robust SEs, the within-pixel temporal FE slope,
+  the leave-dominant-BG-out refit, and the rook / 2 km-grid robustness passes, with nominal-N /
+  cluster-N / BG-N / Kish-N_eff on every estimate. **Result: NO ROBUST THRESHOLD, in every cell** —
+  breakpoint bootstrap CIs span 63–92 % of the CSI range (not identified), methods do not agree on a
+  well-identified break, ET shows no consistent decline, cluster-robust SE deflates the otherwise
+  spuriously-significant pooled slope (naive p ≈ 0.009 → robust p ≈ 0.12), the MixedLM slope is flat
+  (≈ +0.03, p ≈ 0.88), and the within-pixel temporal slope is the **wrong sign** (≈ +0.16). The null
+  does **not** flip under leave-dominant-out. The enlarged, properly-clustered design **tightens** the
+  Section 14 null — it does not overturn it; the binding limit remains the thin, clustered sample,
+  which gates to the cross-city phase. The deliverable narrative + figures are in
+  `notebooks/16_pixel_threshold.ipynb` (figures `figures/section16_*.png`).

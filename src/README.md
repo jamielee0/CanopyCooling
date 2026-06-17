@@ -652,3 +652,64 @@ utilities. Importable as a package alongside `config.py`.
   the scatter, the binned mean ± SEM, the ET/ESI overlay, the distribution/QC panel, and the
   segmented-fit + bootstrap-CI-histogram. **The executed notebook is the deliverable** (committed with
   outputs; it is code/output, not data).
+
+- `section16_pixel_pairing.py` — **Section 16 (reason-#2 fix): pixel-level local pairing +
+  spatial-cluster re-aggregation** — the data half of the enlarged Phoenix paired sample.
+  **NON-DESTRUCTIVE**: reads only the analysis cube / CSI / z-score stores + the BG polygons and
+  writes **only NEW files**; it never touches `master_table.parquet` or
+  `section10_pixel_class_70m.tif`, and uses a **separate config block** (`CANOPY_THR_PIXEL = 30`,
+  `MIN_OBS_PIXEL = 15`, `R_PAIR_M = 350`, sweep {210, 350, 500}, `CONNECTIVITY = queen`,
+  `N_BOOT_PIXEL = 2000`, `GRID_TILE_M = 2000`) — the BG-pipeline constants
+  (`CANOPY_THR = 40` / `MIN_OBS = 20` / `CANOPY_THR_PREREGISTERED = 70`) are **untouched**. It
+  **re-derives** candidate tree + reference masks at the **relaxed** operating point (reusing
+  `section10_classify_pixels`' mask functions exactly; *all other gates* — NDVI > 0.5,
+  impervious < 20 %, not-water, the reference rule, the tall-building buffer — **unchanged**) →
+  **670 tree-candidate pixels** (vs 195 at canopy40), dominant-BG share **87.7 % → 71.2 %**; labels
+  **queen (8-conn) / rook (4-conn)** connected components as the **spatial clusters** (133 queen /
+  178 rook); for each tree px and overpass computes
+  `cooling_advantage_px = mean(LST of reference px within R) − LST_tree` (same-overpass differencing,
+  KDTree neighbour lookup); attaches that pixel's CSI / vpd_z / ndmi_z / ET / ESI / PDSI + cluster_id
+  + BG GEOID; then **re-aggregates to a cluster-overpass table** (count-weighted) — the **PRIMARY
+  modeling input**. Deliverables (`data/processed/`, git-ignored): `master_table_pixel.parquet`
+  (18 713 rows over the 3 radii), `master_table_cluster.parquet` (4 178 rows; **R=350: 1 344
+  cluster-overpass rows over 56 clusters / 13 BGs**), `section16_pixel_clusters.parquet`,
+  `section16_pixel_class_pixel_70m.tif`. `test_section16_pixel_pairing.py` exercises the pure logic
+  (adjacency, connected-component labelling, KDTree radius pairing, the cooling-advantage difference,
+  count-weighted collapse, Kish N_eff) on synthetic arrays — **run directly** (`conda run -n canopy
+  python src/test_section16_pixel_pairing.py`; pytest not installed).
+
+- `section16_threshold_pixel.py` — **Section 16: clustering-aware threshold analysis** — the
+  inference half. Reads **only** the new parquets + the saved results JSON and **reuses the Section
+  14 honesty gate verbatim** (`section14_threshold`'s segmented / ruptures / `methods_agree` /
+  `et_declines_beyond` / `threshold_verdict`), adding the clustering-aware layer the thin BG sample
+  could not support: **(PRIMARY)** a segmented fit on the **cluster-overpass** cooling advantage vs
+  `mean_csi_tree` with a **MixedLM random intercept** (cluster nested in BG; falls back to a cluster
+  random intercept when the 44-clusters-in-one-BG nesting is singular — documented), **cluster-robust
+  (sandwich) SEs**, and a **CLUSTER-RESAMPLING spatial block bootstrap** for the breakpoint CI
+  (resamples the ~56 clusters, **never** the pixels — this prices the spatial autocorrelation back
+  out and returns the effective N to the honest cluster count); **(SECONDARY)** a **within-pixel
+  fixed-effect** temporal slope + temporal-block bootstrap (the sign/shape-prior test); **(FALSIFICATION)**
+  the **mandatory leave-the-dominant-BG-out** refit (drop `040139412001`) + the Kish-N_eff /
+  inverse-Simpson report; **(ROBUSTNESS)** the R-sweep {210, 350, 500}, **rook** clusters, and a **2 km
+  grid-tile** pass (+ offset lattice). The **pseudo-replication guard**: every estimate carries
+  nominal rows / cluster N / BG N / Kish N_eff side by side; the pixel-overpass count is **never** the
+  df. Writes `data/processed/section16_threshold_results.json` and prints the sensitivity table.
+  **Phoenix result — NO ROBUST THRESHOLD, in every cell** (3 radii × {queen, rook, 2 km grid ±
+  offset, leave-dominant-out}): the cluster-resampling breakpoint CI **spans 63 %–92 %** of the CSI
+  range (not identified), the segmented kink is not preferred over a straight line, the methods do
+  **not** agree on a well-identified break, ET shows no consistent decline, the **cluster-robust SE
+  deflates the spuriously-significant pooled slope** (naive p ≈ 0.009 → cluster-robust p ≈ 0.12; SE
+  inflation ≈ 1.7×), the MixedLM cooling-vs-CSI slope is **flat** (≈ +0.03, p ≈ 0.88), and the
+  **within-pixel temporal slope is the WRONG sign** for a threshold (≈ +0.16, p ≈ 0.45 — cooling does
+  not decline with stress). The null **does not flip under leave-dominant-out**. Honest reconciliation:
+  the enlarged, properly-clustered design **tightens** the Section 14 null rather than overturning it
+  — Phoenix's sparse desert canopy (96 % irrigated ag/riparian, one dominant BG) physically lacks
+  enough independent high-canopy *locations*, and no statistical method creates spatial replication the
+  landscape lacks. This **gates to the multi-city extension**, exactly as Section 14 concluded.
+
+- `section16_build_notebook.py` — **builds `notebooks/16_pixel_threshold.ipynb` from saved code** (the
+  standing reproducibility rule). The notebook reads only the new parquets + results JSON and the
+  reusable modules, and produces the figures (`figures/section16_*.png`: the cluster-overpass scatter,
+  the binned mean ± SEM + ET overlay, the segmented-fit + cluster-bootstrap-CI histogram, the
+  leave-dominant-out panel) + the sensitivity table + the honest reconciliation, carrying every caveat
+  verbatim. Build + execute: `conda run -n canopy python src/section16_build_notebook.py --execute`.
