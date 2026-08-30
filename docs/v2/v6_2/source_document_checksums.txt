@@ -1,0 +1,6 @@
+# SHA-256  source path
+fa8adcdcbf842d6ea68f2820fe947fcb7af3a50d1372fa1fd21d0b0f7c1939cd  /Users/jmlee/Downloads/Urban_Tree_Cooling_Deliverables_Schedule.docx
+8a70e246eaaacf16671a9341c5b2b4710cd711356b283b91bea8f9da32d71dad  /Users/jmlee/Downloads/Urban_Tree_Cooling_Research_Proposal_v6_2.docx
+00551ca93f990161a3235cea2cb3b1297b4f0026ffc56e0c9aed5c878109c090  /Users/jmlee/Downloads/Urban_Tree_Cooling_Working_Guide_v6_2.docx
+e6038828043d2b975e1afdcc5ee0acb4d37573ddb9ab952b87cfd8b0b1c6e337  /Users/jmlee/.codex/attachments/0178da6c-3375-49bf-9b17-e0367c4beedc/pasted-text.txt
+260bbb48147a352234d85d3e1dca174d3f6b45ef51cd5d32a72c3f74067f3763  docs/v2/v6_2/sources/TCC_v2025-6_Methods.pdf

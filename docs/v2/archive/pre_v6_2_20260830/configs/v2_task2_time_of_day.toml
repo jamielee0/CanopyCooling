@@ -1,0 +1,278 @@
+[task2]
+# The detailed D0057 payload below is retained only as the prepared historical
+# contract described in the decision log. The top-level activation and holdout
+# fields are authoritative: D0058 stopped the branch before activation.
+schema_version = 1
+decision_id = "D0057"
+analysis_profile = "D0056_time_of_day_only"
+activation_status = "BLOCKED_D0058_STEP3_STOP"
+canonical_task1_gate = "data/processed/v2/task1/TASK1_GATE_TIME_OF_DAY_ONLY.json"
+accepted_task1_gate = "PASS_TIME_OF_DAY_ONLY"
+accepted_profile_gate = "PASS_D0056_TIME_OF_DAY_ONLY_TASK1"
+accepted_scientific_gate_scope = "time_of_day_only_archive_available_D0047"
+result_bearing_actions_enabled = false
+development_start_year = 2018
+development_end_year = 2025
+development_cities = ["atlanta", "los_angeles", "miami", "phoenix"]
+holdout_status = "UNSELECTED"
+holdout_city = ""
+heldout_thermal_status = "UNOPENED"
+season_2026_status = "UNOPENED"
+primary_table_grain = "one row per city x matched_set_id x pass_timestamp_utc"
+
+[scope]
+status = "PREPARED_NEVER_ACTIVATED_D0057_BLOCKED_BY_D0058"
+primary_objective = "time_of_day_dependence"
+primary_endpoint = "16-18 minus 10-12 local-solar-time cooling contrast"
+hydroclimate_role = "prespecified_adjustment_and_descriptive_common_support_only"
+prohibited_claims = [
+  "demand_by_antecedent_dryness_interaction",
+  "demand_by_antecedent_dryness_by_time_interaction",
+  "hydroclimatic_transition_threshold",
+]
+preserved_interaction_stop_gate = "data/processed/v2/task1/step2_definitive_l1b_geo_D0047_archive_available/step2_gate_record.json"
+
+[decisions]
+cross_city_scope_status = "FROZEN"
+cross_city_scope_choice = "five_city_time_of_day_only_hydroclimate_descriptive_common_support"
+holdout_eligibility_rule_status = "FROZEN"
+holdout_selection_status = "FROZEN"
+collection_chain_status = "FROZEN"
+time_strata_status = "FROZEN"
+scene_pixel_qa_status = "FROZEN"
+supporting_product_chain_status = "FROZEN_TO_PUBLIC_CMR_CENSUS_GATE"
+meteorology_status = "FROZEN"
+optical_landcover_status = "FROZEN"
+classification_matching_status = "FROZEN"
+analysis_schema_status = "FROZEN"
+storage_status = "FROZEN"
+
+[holdout]
+proposal_status = "D0057_PREPARED_NEVER_ACTIVATED"
+evidence_table = "data/processed/v2/task1/step2_definitive_l1b_geo_D0047_archive_available/tables/T2.1_usable_pass_counts.csv"
+ranking_output = "data/processed/v2/task2_time_of_day_D0057/prethermal/holdout_quality_ranking.csv"
+calibration_city = "phoenix"
+candidate_cities = ["atlanta", "los_angeles", "miami", "minneapolis_st_paul"]
+required_positive_years = 8
+required_positive_strata = 4
+minimum_physical_passes_per_stratum = 5
+minimum_expected_pass_equivalents_per_stratum = 3.0
+ranking_order = [
+  "eligible_desc",
+  "positive_city_year_strata_desc",
+  "minimum_stratum_expected_pass_equivalents_desc",
+  "total_expected_pass_equivalents_desc",
+  "total_physical_passes_desc",
+  "city_asc",
+]
+selected_city = "minneapolis_st_paul"
+selection_basis = "quality_only_nonthermal_step2_counts"
+
+[collection]
+status = "FROZEN"
+primary_collection_version = "002"
+primary_lste_short_name = "ECO_L2T_LSTE"
+primary_lste_concept_id = "C2076090826-LPCLOUD"
+primary_lste_layers = ["LST", "LST_err", "EmisWB", "height", "view_zenith", "QC", "cloud", "water"]
+primary_format = "native_70m_mgrs_cog_windows"
+official_tiled_guide = "https://lpdaac.usgs.gov/documents/1566/ECOL2-4_Grid_Tile_User_Guide_V2.pdf"
+collection_003_role = "step13_l2_only_sensitivity_after_primary_freeze"
+collection_003_may_enter_primary_chain = false
+mix_primary_collection_versions = false
+temperature_resampling = false
+
+[time_strata]
+status = "FROZEN"
+coordinate = "local_solar_time_hours"
+daytime_lower_inclusive = 10.0
+daytime_upper_exclusive = 18.0
+edges_hours = [10.0, 12.0, 14.0, 16.0, 18.0]
+labels = ["10-12", "12-14", "14-16", "16-18"]
+primary_early_stratum = "10-12"
+primary_late_stratum = "16-18"
+post_thermal_merging_allowed = false
+minimum_physical_passes_per_city_stratum = 5
+minimum_expected_pass_equivalents_per_city_stratum = 3.0
+unsupported_city_strata = "mask_from_city_specific_and_pooled_endpoint_inference"
+continuous_time_support = "observed_range_only_with_no_extrapolation"
+
+[scene_pixel_qa]
+status = "FROZEN"
+geolocation_classes_allowed = ["best", "good"]
+obstruction_flag_allowed = false
+minimum_domain_geometry_coverage = 0.95
+maximum_scene_p95_absolute_view_zenith_deg = 20.0
+maximum_pixel_absolute_view_zenith_deg = 20.0
+qc_mandatory_bits_1_0_allowed = [0]
+qc_data_quality_bits_3_2_allowed = [0]
+qc_lst_accuracy_bits_15_14_allowed = [2, 3]
+cloud_allowed = 0
+water_allowed = 0
+minimum_lst_k = 240.0
+maximum_lst_k = 380.0
+minimum_emissivity = 0.70
+maximum_emissivity = 1.0
+maximum_lst_error_k = 2.0
+minimum_final_valid_tree_pixels_per_set = 3
+minimum_final_valid_reference_pixels_per_set = 3
+missing_or_invalid_is_excluded_not_imputed = true
+
+[supporting_products]
+status = "FROZEN_TO_PUBLIC_CMR_CENSUS_GATE"
+stars = "ECO_L2T_STARS.002:NDVI,NDVI-UQ,albedo,albedo-UQ"
+surface_energy_balance = "ECO_L3T_SEB.002:Rg,Rn,cloud,water"
+et_ensemble = "ECO_L3T_JET.002:PTJPLSMinst,STICinst,MOD16inst,BESSinst,ETinstUncertainty,PTJPLSMcanopy,PTJPLSMinterception,PTJPLSMsoil,cloud,water"
+evaporative_stress = "ECO_L4T_ESI.002:ESI,PET,cloud,water"
+second_et_family = "ECO_L3T_ET_ALEXI.002:ETdaily,ETdailyUncertainty"
+second_et_family_role = "optional_step5_availability_gate_never_core"
+etdaily_primary = false
+etdaily_reason = "official_tiled_guide_table_10_unit_text_requires_asset_metadata_audit"
+same_orbit_scene_tile_match_required = true
+
+[public_cmr_census]
+status = "REQUIRED_BEFORE_TASK2A_FREEZE"
+source = "NASA_CMR_PUBLIC_METADATA_ONLY"
+endpoint = "https://cmr.earthdata.nasa.gov/search"
+pattern_batch_size = 50
+minimum_core_match_fraction = 0.95
+core_missing_share_definition = "large_share_is_more_than_5_percent_of_eligible_development_pass_tile_associations"
+match_census_output = "data/processed/v2/task2_time_of_day_D0057/prethermal/public_cmr_product_match_census.csv"
+match_summary_output = "data/processed/v2/task2_time_of_day_D0057/prethermal/public_cmr_product_match_summary.csv"
+collection_inventory_output = "data/processed/v2/task2_time_of_day_D0057/prethermal/public_cmr_collection_inventory.json"
+census_record_output = "data/processed/v2/task2_time_of_day_D0057/prethermal/public_cmr_census_record.json"
+import_staging_json = "data/raw/v2/ecostress/cmr_public_metadata_D0057/official_cmr_response_bundle.json"
+import_staging_csv = "data/raw/v2/ecostress/cmr_public_metadata_D0057/official_cmr_response_bundle.csv"
+credentials_used = false
+follow_data_object_urls = false
+open_thermal_or_science_values = false
+
+[[public_cmr_census.products]]
+family = "LSTE"
+short_name = "ECO_L2T_LSTE"
+version = "002"
+concept_id = "C2076090826-LPCLOUD"
+core = true
+
+[[public_cmr_census.products]]
+family = "STARS"
+short_name = "ECO_L2T_STARS"
+version = "002"
+concept_id = "C2090073749-LPCLOUD"
+core = true
+
+[[public_cmr_census.products]]
+family = "SEB"
+short_name = "ECO_L3T_SEB"
+version = "002"
+concept_id = "C2074852168-LPCLOUD"
+core = true
+
+[[public_cmr_census.products]]
+family = "JET"
+short_name = "ECO_L3T_JET"
+version = "002"
+concept_id = "C2076106409-LPCLOUD"
+core = true
+
+[[public_cmr_census.products]]
+family = "ESI"
+short_name = "ECO_L4T_ESI"
+version = "002"
+concept_id = "C2076104650-LPCLOUD"
+core = true
+
+[[public_cmr_census.products]]
+family = "ET_ALEXI"
+short_name = "ECO_L3T_ET_ALEXI"
+version = "002"
+concept_id = "C2076105456-LPCLOUD"
+core = false
+
+[meteorology]
+status = "FROZEN"
+primary = "HRRR exact acquisition f00 D0053 sfc with four named prs container fallbacks"
+interpolation = "linear_between_bracketing_exact_analysis_hours"
+sensitivity = "ERA5-Land nearest and linearly interpolated acquisition time"
+station_sources = "NOAA Integrated Surface Database stations selected by pre-outcome distance_and_completeness"
+station_max_distance_km = 50.0
+station_minimum_hourly_completeness = 0.80
+vpd_formula = "svp(Tair_C)-svp(Tdew_C), kPa, clipped only at zero for roundoff"
+
+[optical_landcover]
+status = "FROZEN"
+hls_products = ["HLSL30.002", "HLSS30.002"]
+prepass_window_start_days = -10
+prepass_window_end_days = -1
+prepass_max_acquisitions_per_pass_tile = 6
+seasonal_composite_rule = "same_year_June_1_through_day_before_pass_only"
+future_imagery_allowed = false
+fraction_aggregation = "exact_area_weighted_mean"
+categorical_aggregation = "maximum_overlap_class_with_lowest_code_tiebreak"
+focal_buffer_radius_m = 300.0
+landcover_source = "USGS Annual NLCD Collection 1.1 exact year or nearest prior release"
+impervious_source = "USGS Annual NLCD Collection 1.1 fractional impervious exact year or nearest prior release"
+canopy_source = "USFS Tree Canopy Cover Product Version 2025-6 exact year or nearest prior release"
+maximum_canopy_carry_forward_years = 2
+canopy_change_exclusion_absolute_percentage_points = 15.0
+building_source = "Microsoft US Building Footprints 2022 snapshot"
+elevation_source = "USGS 3DEP 1/3 arc-second DEM"
+distance_to_water_source = "year-assigned NLCD class 11"
+
+[classification_matching]
+status = "FROZEN"
+canopy_candidate_percentiles = [60.0, 75.0, 90.0]
+primary_canopy_percentile = 75.0
+reference_max_canopy_percentile = 25.0
+candidate_reference_radius_m = 500.0
+reference_ratio = 3
+replacement = false
+propensity_caliper_sd = 0.20
+balance_target_absolute_smd = 0.10
+matching_covariates = ["impervious_fraction", "season_to_date_ndvi", "elevation_m", "distance_to_water_m", "building_fraction_300m", "landcover_class"]
+exact_match_fields = ["city", "year", "pass_timestamp_utc", "time_stratum", "landcover_class"]
+validation_seed = 20260806
+validation_sample_per_city_landuse_stratum = 50
+minimum_precision = 0.80
+minimum_recall = 0.80
+thresholds_may_change_after_thermal_open = false
+
+[analysis_schema]
+status = "FROZEN"
+keys = ["city", "matched_set_id", "pass_timestamp_utc"]
+primary_outcome = "cooling_contrast_k=reference_lst_k-tree_lst_k"
+secondary_outcome = "tree_thermal_excess_k=tree_lst_k-hrrr_air_temperature_k"
+positive_sign_meaning = "tree_pixel_is_cooler_than_matched_reference"
+required_core_fields = [
+  "city", "matched_set_id", "pass_timestamp_utc", "local_solar_time_hours", "time_stratum",
+  "tree_lst_k", "reference_lst_k", "cooling_contrast_k", "tree_thermal_excess_k",
+  "solar_zenith_deg", "solar_azimuth_deg", "view_zenith_deg", "hrrr_vpd_kpa",
+  "antecedent_water_balance_30_mm", "antecedent_dryness_percentile", "canopy_fraction",
+  "impervious_fraction", "albedo", "incoming_shortwave_w_m2", "net_radiation_w_m2",
+  "n_tree_valid", "n_reference_valid", "source_collection_version", "support_status",
+]
+duplicate_keys_allowed = false
+
+[storage]
+status = "FROZEN"
+inventory_output = "data/processed/v2/task2_time_of_day_D0057/prethermal/storage_projection.csv"
+strategy = "native_grid_windowed_staging"
+batch_unit = "one development-city x year x product family; HLS streams one pass at a time"
+projected_peak_bytes = 10737418240
+headroom_multiplier = 2.0
+minimum_reserve_bytes = 5368709120
+recheck_before_each_batch = true
+external_storage_root = ""
+delete_existing_data = false
+persist_signed_urls = false
+preserve_native_temperature_grid = true
+
+[evidence]
+output_root = "data/processed/v2/task2_time_of_day_D0057/prethermal"
+scene_catalogue = "data/processed/v2/task1/step2_definitive_l1b_geo_D0047_archive_available/tables/step2_scene_catalogue.csv"
+pass_counts = "data/processed/v2/task1/step2_definitive_l1b_geo_D0047_archive_available/tables/T2.1_usable_pass_counts.csv"
+interaction_stop_gate = "data/processed/v2/task1/step2_definitive_l1b_geo_D0047_archive_available/step2_gate_record.json"
+time_of_day_step3_gate = "data/processed/v2/task1/step3_time_of_day_only_D0056/step3_time_of_day_gate.json"
+freeze_record = "data/processed/v2/task2_time_of_day_D0057/prethermal/task2a_freeze_record.json"
+thermal_layers_opened = 0
+holdout_thermal_opened = false
+record_2026_opened = false

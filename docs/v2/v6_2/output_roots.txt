@@ -1,0 +1,7 @@
+# v6.2 separated output roots frozen 2026-08-30
+# class | relative path | allowed content
+scientific | outputs/v6_2/scientific | Gate A/B/full-analysis scientific artifacts that pass provenance checks
+sealed_coefficients | outputs/v6_2/sealed_coefficients | v6.2 point estimates; write-only until the recorded unseal decision
+retired | outputs/v6_2/retired | copied historical design outputs only; never scientific evidence
+synthetic | tests/fixtures/synthetic_demo | tests/demos only; SYNTHETIC_DATA naming and visible labels required
+
