@@ -30,6 +30,6 @@ No new v6.2 coefficient was opened while this package was prepared.
 Gate A and new full-archive thermal processing remain unauthorised pending supervisor
 acceptance of the complete D0–D1d package.
 
-The files are currently an uncommitted review package. Repository policy requires an
-explicit instruction before committing; therefore the schedule's fresh-clone test remains
-pending that reviewed commit.
+The D0 control-boundary package was committed as `01010a25b2a6dc2e32854343d3fc2ab166c5e501`
+(`Freeze v6.2 D0 control boundary`). Subsequent foundation-audit work remains subject to
+the repository rule requiring explicit user instruction before it is committed.
