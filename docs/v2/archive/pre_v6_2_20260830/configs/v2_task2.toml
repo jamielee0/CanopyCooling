@@ -1,0 +1,58 @@
+[task2]
+schema_version = 1
+activation_status = "BLOCKED_UNTIL_TASK1_PASS"
+canonical_task1_gate = "data/processed/v2/task1/TASK1_GATE.json"
+current_task1_stop_gate = "data/processed/v2/task1/step2_remediation/task1_remediation_gate.json"
+result_bearing_actions_enabled = false
+development_start_year = 2018
+development_end_year = 2025
+season_2026_status = "UNOPENED"
+holdout_status = "UNSELECTED"
+holdout_city = ""
+heldout_thermal_status = "UNOPENED"
+primary_table_grain = "one row per city x matched_set_id x pass_timestamp_utc"
+
+[decisions]
+# Every row must be FROZEN before the preflight can authorize a result-bearing
+# Task 2 implementation. Empty choices are intentional fail-closed sentinels.
+cross_city_scope_status = "USER_DECISION_REQUIRED"
+cross_city_scope_choice = ""
+holdout_eligibility_rule_status = "PENDING_EVIDENCE"
+holdout_eligibility_rule = ""
+holdout_selection_status = "PENDING_EVIDENCE"
+collection_chain_status = "PENDING_EVIDENCE"
+collection_chain_decision_id = ""
+time_strata_status = "PENDING_EVIDENCE"
+scene_pixel_qa_status = "PENDING_EVIDENCE"
+supporting_product_chain_status = "PENDING_EVIDENCE"
+optical_landcover_status = "PENDING_EVIDENCE"
+classification_matching_status = "PENDING_EVIDENCE"
+analysis_schema_status = "PENDING_EVIDENCE"
+
+[storage]
+status = "PENDING_EVIDENCE"
+strategy = "native_grid_windowed_staging"
+batch_unit = "one development-city x year x product family"
+projected_peak_bytes = 0
+headroom_multiplier = 2.0
+minimum_reserve_bytes = 5368709120
+external_storage_root = ""
+delete_existing_data = false
+persist_signed_urls = false
+preserve_native_temperature_grid = true
+
+[stage_contract]
+stage_2a = "governance, collection inventory, storage projection, and holdout freeze; no LST"
+stage_2b = "Guide Step 4 native-grid temperature archive for development cities"
+stage_2c = "Guide Step 5 supporting ECOSTRESS products"
+stage_2d = "Guide Step 6 acquisition-time meteorology and stations"
+stage_2e = "Guide Step 7 optical, land-cover, and urban-form inputs"
+stage_2f = "Guide Step 8 outcome-blind classification/matching, then locked thermal diagnostics"
+stage_2g = "Guide Step 9 one-row-per-matched-set-per-pass table and deterministic rebuild"
+
+[safety]
+open_2026 = false
+mix_primary_collection_versions = false
+resample_temperature = false
+use_future_optical_imagery = false
+use_thermal_outcome_to_tune_thresholds = false
