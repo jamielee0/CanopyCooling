@@ -55,10 +55,10 @@ dirty worktree, so the file-level checksum inventory is the reproducible supplem
 (2) the annual Science-band and precipitation inventories are not complete locally and
 are explicit Gate A acquisition items. The methods report itself is present and hashed;
 the missing items are the city/year Science-band rasters and local precipitation assets.
-The D0 files are intentionally uncommitted because repository policy requires explicit
-user permission before a commit. A fresh clone will reproduce the structure only after
-these reviewed files are committed. These facts do not authorise Gate A or thermal
-processing.
+The D0 files were committed as `01010a25b2a6dc2e32854343d3fc2ab166c5e501`
+after explicit user authorization. A fresh clone at that commit reproduces the D0
+structure. Later foundation-audit changes remain subject to the same explicit-commit
+rule. These facts do not authorise Gate A or thermal processing.
 
-**Current decision:** D0 control boundary prepared; Gate A remains unauthorised until the
+**Current decision:** D0 control boundary committed; Gate A remains unauthorised until the
 full D0–D1d package is reviewed and accepted.
