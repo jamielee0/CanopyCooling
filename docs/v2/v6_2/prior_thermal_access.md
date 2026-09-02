@@ -17,6 +17,7 @@ decision.
 | 2026-06-17 | Phoenix | Re-run of the compound-threshold analysis after time-varying NDMI supply was introduced | Revised compound-stress threshold design | The exposure, outcome, timing rule, background construction, and estimator all differ from v6.2; the old coefficient is neither reused nor a selection criterion. |
 | 2026-06-17 | Phoenix | Pixel-level local-pairing and clustering-aware threshold explorations, including response-surface and effective-sample diagnostics | Enlarged paired-pixel threshold design | v6.2 prohibits the paired-pixel response and treats block-passes—not paired pixels—as Stage 2 observations. |
 | 2026-07-17 | Phoenix | Uncommitted exploratory pixel-level mixed-effects coefficients and VPD × soil-moisture response-surface outputs | Mundlak/crossed-random-effects extension of the retired paired outcome | These are retained only as disclosed design history. v6.2 uses pass-specific block interactions in Stage 1 and two-way fixed effects on separately built optical components in Stage 2. |
+| 2026-09-02 | Phoenix | Five frozen Collection-2 native-grid passes were opened for D1d after D011; processing stopped at the nonthermal 0.20 canopy-span precondition | v6.2 free-check precision census using explicitly nonfinal context proxies | No block-pass passed the span floor, so no new v6.2 coefficient was calculated or viewed. The canonical sealed CSV contains a header and zero rows; only its checksum was exposed. |
 
 ## Evidence locations
 
@@ -33,3 +34,7 @@ later found that is not covered by these analysis families, add a new row before
 Reviewing file names, provenance, hashes, and historical documentation for this freeze
 did not compute, display, or open a new v6.2 scientific coefficient.
 
+The D015–D016 official Science TCC screen opened only annual Science TCC cover and
+nonthermal native QA/cloud/water/height layers. It did not open LST or HLS reflectance
+values and did not calculate or view a coefficient. Acquisition and per-file hashing
+likewise accessed no thermal or reflectance values.
