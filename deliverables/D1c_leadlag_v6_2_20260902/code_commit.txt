@@ -3,3 +3,4 @@ worktree_dirty_at_run=true
 analysis_command=python src/run_v6_2_d1c_leadlag.py --analysis-only --node <bundled-node> --node-modules <bundled-node_modules>
 memo_command=python src/build_v6_2_d1c_memo.py <table> <manifest> <memo.pdf>
 finalize_command=python src/run_v6_2_d1c_leadlag.py --finalize
+subsequent_scoped_commit=1bb071468d2215e78221031f5a8194907ee0e4de

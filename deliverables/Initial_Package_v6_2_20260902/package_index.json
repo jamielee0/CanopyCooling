@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "items": [
+    {
+      "item": "One-page decision summary",
+      "status": "COMPLETE",
+      "path": "deliverables/Initial_Package_v6_2_20260902/one_page_summary.pdf",
+      "purpose": "Supervisor-facing status and Gate A recommendation"
+    },
+    {
+      "item": "Consolidated inventory workbook",
+      "status": "COMPLETE",
+      "path": "deliverables/Initial_Package_v6_2_20260902/asset_inventory_and_package_index.xlsx",
+      "purpose": "Per-file hashes, asset gaps, and package index"
+    },
+    {
+      "item": "Controlling protocol",
+      "status": "CURRENT",
+      "path": "docs/v2/v6_2/protocol_v6_2.yml",
+      "purpose": "Frozen v6.2 rules and current branch statuses"
+    },
+    {
+      "item": "Decision log",
+      "status": "CURRENT",
+      "path": "docs/v2/v6_2/decision_log_v6_2.md",
+      "purpose": "Prospective decisions and results"
+    },
+    {
+      "item": "Conformance memo",
+      "status": "CURRENT",
+      "path": "docs/v2/v6_2/conformance_memo.md",
+      "purpose": "Retained, revised, rebuilt, archived, and retired components"
+    },
+    {
+      "item": "Prior thermal-access record",
+      "status": "CURRENT",
+      "path": "docs/v2/v6_2/prior_thermal_access.md",
+      "purpose": "Thermal access boundary"
+    },
+    {
+      "item": "Foundation audit",
+      "status": "PASS",
+      "path": "docs/v2/v6_2/foundation_audit",
+      "purpose": "Independent catalogue and historical reconciliation"
+    },
+    {
+      "item": "D1a strict demand\u2013geometry",
+      "status": "FAIL / BINDING",
+      "path": "deliverables/D1a_demand_geometry_v6_2_20260830",
+      "purpose": "Full-nuisance VPD diagnostic"
+    },
+    {
+      "item": "D1a parsimonious sensitivity",
+      "status": "MIXED / NONBINDING",
+      "path": "deliverables/D1a_parsimonious_sensitivity_v6_2_20260830",
+      "purpose": "Realistic VPD sensitivity"
+    },
+    {
+      "item": "D1a geometry reassessment",
+      "status": "FAIL / SUPPORTING",
+      "path": "deliverables/D1a_geometry_recovery_reassessment_v6_2_20260901",
+      "purpose": "Recovered-geometry reassessment"
+    },
+    {
+      "item": "D1b connectivity",
+      "status": "PASS FOR PLANNING",
+      "path": "deliverables/D1b_connectivity_v6_2_20260830",
+      "purpose": "Eight required connectivity combinations"
+    },
+    {
+      "item": "D1c lead\u2013lag",
+      "status": "EXPLORATORY / DEMOTED",
+      "path": "deliverables/D1c_leadlag_v6_2_20260902",
+      "purpose": "Inherited centred-HLS feasibility count"
+    },
+    {
+      "item": "D1c HLS inventory",
+      "status": "COMPLETE",
+      "path": "deliverables/D1c_hls_inventory_v6_2_20260902",
+      "purpose": "Fmask catalogue and selection evidence"
+    },
+    {
+      "item": "D1d preliminary proxy screen",
+      "status": "SUPERSEDED DIAGNOSTIC",
+      "path": "deliverables/D1d_stage1_precision_v6_2_20260902",
+      "purpose": "NLCD proxy stop; not controlling"
+    },
+    {
+      "item": "D1d official TCC screen",
+      "status": "STOP / CONTROLLING",
+      "path": "deliverables/D1d_tcc_span_screen_v6_2_20260902",
+      "purpose": "Official canopy-span eligibility result"
+    },
+    {
+      "item": "Acquisition write-up",
+      "status": "COMPLETE",
+      "path": "docs/v2/v6_2/data_acquisition_20260902.md",
+      "purpose": "HLS, TCC, and 3DEP acquisition record"
+    }
+  ]
+}
