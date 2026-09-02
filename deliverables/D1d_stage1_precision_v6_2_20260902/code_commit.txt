@@ -13,4 +13,6 @@ PYTHONPATH=src MPLCONFIGDIR=tmp/mpl-d1d /Users/jmlee/miniforge3/envs/urbanv2/bin
 Exact memo command:
 PYTHONPATH=src /Users/jmlee/miniforge3/envs/urbanv2/bin/python src/build_v6_2_d1d_memo.py deliverables/D1d_stage1_precision_v6_2_20260902/analysis_manifest.json deliverables/D1d_stage1_precision_v6_2_20260902/tables/d1d_stage1_se.csv deliverables/D1d_stage1_precision_v6_2_20260902/tables/d1d_n_required.csv deliverables/D1d_stage1_precision_v6_2_20260902/memo.pdf
 
-No commit was created because the user did not request one.
+At the time of the analysis run, no commit had been requested or created.
+
+Subsequent scoped commit: 1bb071468d2215e78221031f5a8194907ee0e4de
