@@ -1,0 +1,10 @@
+{
+  "columns": 15,
+  "key_range_inspected": true,
+  "legacy_audit_rows": 2,
+  "required_hls_rows": 56,
+  "round_trip_verified": true,
+  "rows": 58,
+  "unique_required_keys": 56,
+  "visual_preview_rendered": true
+}

@@ -1,0 +1,35 @@
+{
+  "all_download_plan_urls_present": true,
+  "candidate_pass_window_rows": 55,
+  "cities": [
+    "phoenix",
+    "los_angeles"
+  ],
+  "cmr_queries": 28,
+  "domain_intersecting_granules": 1822,
+  "download_plan_granules": 149,
+  "input_sha256": {
+    "data/raw/v2/domains/census_urban_areas.geojson": "dc26873e1c646b12447e75bb882d54df7e5ca138737fa123bf9bbfb9dbbf5621",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN/angle_threshold_pass_detail_existing_five.csv": "dfacb2ddf428cd9c18963db2d79b2f53cc522dd031b714ac0976cfeb361cb7b8"
+  },
+  "interpretation": "Catalogue pairs establish timing potential only. Fmask/QA must be opened before any pair is called usable, and final antecedent/future exposures require separate raw-HLS builds.",
+  "new_v6_2_coefficients_viewed": false,
+  "optical_asset_access": false,
+  "outcome_access": false,
+  "pair_rows": 110,
+  "pair_rows_with_catalogue_match": 104,
+  "sensors": [
+    "HLSL30.002",
+    "HLSS30.002"
+  ],
+  "status": "CATALOGUE_TIMING_INVENTORY_COMPLETE_REQUIRES_FMASK_QA",
+  "years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ]
+}
