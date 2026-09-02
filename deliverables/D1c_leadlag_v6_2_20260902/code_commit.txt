@@ -1,0 +1,5 @@
+git_commit=fc31e966fb84106a9872b1889a8e060ee66ef4b8
+worktree_dirty_at_run=true
+analysis_command=python src/run_v6_2_d1c_leadlag.py --analysis-only --node <bundled-node> --node-modules <bundled-node_modules>
+memo_command=python src/build_v6_2_d1c_memo.py <table> <manifest> <memo.pdf>
+finalize_command=python src/run_v6_2_d1c_leadlag.py --finalize

@@ -1,0 +1,5 @@
+base_commit=fc31e966fb84106a9872b1889a8e060ee66ef4b8
+analysis_code_status=UNCOMMITTED_PENDING_REVIEW
+exact_command=XDG_CACHE_HOME=/private/tmp/d1a_cache MPLCONFIGDIR=/private/tmp/d1a_mpl PYTHONPATH=src /Users/jmlee/miniforge3/envs/urbanv2/bin/python src/run_v6_2_d1a_demand_geometry.py
+outcome_access=NONE
+new_v6_2_coefficients_viewed=false

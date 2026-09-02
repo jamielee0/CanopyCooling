@@ -1,0 +1,189 @@
+{
+  "annual_nlcd": {
+    "image_service": "https://di-nlcd.img.arcgis.com/arcgis/rest/services/USA_NLCD_Annual_LandCover/ImageServer",
+    "nominal_resolution_m": 30,
+    "official_access_page": "https://www.usgs.gov/centers/eros/how-can-i-access-and-download-annual-nlcd-data",
+    "product": "USGS Annual NLCD Collection 1.1 Land Cover 2024",
+    "resampling": "nearest_neighbor",
+    "sha256_by_city": {
+      "los_angeles": "9660a7f9d4ed67a61ceb66ed3e9741dbaac3c012c61528167017f14d956ea73d",
+      "phoenix": "1afd90c8490d0dd49335d6556cfbdb69aa05ce9754602f1fa71e6863b960ee30"
+    }
+  },
+  "census_geometry_topology": {
+    "rule": "shapely_make_valid_if_needed_before_projection_and_rasterization",
+    "source_validity_by_city": {
+      "los_angeles": false,
+      "phoenix": false
+    }
+  },
+  "checks": {
+    "all_combination_keys_unique": true,
+    "all_selected_passes_have_quality_assets": true,
+    "annual_nlcd_hashes_match": true,
+    "exactly_eight_summary_rows": true,
+    "gate_A_authorized": false,
+    "no_thermal_or_new_coefficient_opened": true
+  },
+  "coverage_notes": {
+    "collection3": "Recorded CMR evidence is partial and lacks complete block-level cloud/geometry assets; no new v6.2 sample was selected.",
+    "los_angeles_sensitivity": "Observed June 1-July 10 lower bound because the inherited five-city archive was censused June-September.",
+    "phoenix_provisional_primary": "Observed June 1-July 10 lower bound; no quality-and-weather-complete inherited pass exists for May 15-31."
+  },
+  "decision_id": "V6.2-D006",
+  "input_sha256": {
+    "data/raw/v2/context/annual_nlcd_c1_1_2024/los_angeles_annual_nlcd_c1_1_2024_land_cover.tif": "9660a7f9d4ed67a61ceb66ed3e9741dbaac3c012c61528167017f14d956ea73d",
+    "data/raw/v2/context/annual_nlcd_c1_1_2024/phoenix_annual_nlcd_c1_1_2024_land_cover.tif": "1afd90c8490d0dd49335d6556cfbdb69aa05ce9754602f1fa71e6863b960ee30",
+    "data/raw/v2/domains/census_urban_areas.geojson": "dc26873e1c646b12447e75bb882d54df7e5ca138737fa123bf9bbfb9dbbf5621",
+    "data/raw/v2/ecostress/enrichment_manifest_cloud_l1b_geo_D0047.csv": "6ae4d73a0c3c19e8ff59c46ddaa17de3c6125286b3da5571d8a2e723ae663edd",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN/angle_threshold_pass_detail_existing_five.csv": "dfacb2ddf428cd9c18963db2d79b2f53cc522dd031b714ac0976cfeb361cb7b8",
+    "docs/v2/v6_2/protocol_v6_2.yml": "7f3021313adb2d79c7e9ba4e3c7b07e1b35bc776b126b54e8d4b68f158952cc3"
+  },
+  "interpretation": {
+    "edge_role": "optimistic necessary-condition screen pending tree/background/canopy-span checks",
+    "evidence_role": "historical_collection2_nonthermal_feasibility_proxy_not_v6_2_study_sample",
+    "gate_A_authorization_effect": "none",
+    "view_25_role": "incidence sensitivity; not fully geometry-admissible until view azimuth is resolved"
+  },
+  "ruling": "HISTORICAL_PROXY_SUPPORTS_CONNECTIVITY_AT_15_DEGREES",
+  "single_preauthorized_25_degree_widening_used_for_ruling": false,
+  "status": "READY_FOR_D1B_REVIEW",
+  "summary_rows": [
+    {
+      "block_passes": 14087,
+      "blocks_below_floor": 2870,
+      "city": "Phoenix",
+      "combination_pass": false,
+      "dominant_land_use_class": "Developed, Medium Intensity",
+      "eligible_blocks": 2870,
+      "eligible_passes": 5,
+      "largest_connected_component_share": 1.0,
+      "largest_share_one_land_use_class": 0.602328,
+      "median_passes_per_block": 5.0,
+      "p10_passes_per_block": 5.0,
+      "season_window": "provisional_primary",
+      "sectors_represented": "NE;NW;SE;SW",
+      "spatial_sectors": 4,
+      "view_zenith_set_deg": 15
+    },
+    {
+      "block_passes": 35062,
+      "blocks_below_floor": 0,
+      "city": "Phoenix",
+      "combination_pass": true,
+      "dominant_land_use_class": "Developed, Medium Intensity",
+      "eligible_blocks": 2870,
+      "eligible_passes": 13,
+      "largest_connected_component_share": 1.0,
+      "largest_share_one_land_use_class": 0.601249,
+      "median_passes_per_block": 12.0,
+      "p10_passes_per_block": 11.0,
+      "season_window": "provisional_primary",
+      "sectors_represented": "NE;NW;SE;SW",
+      "spatial_sectors": 4,
+      "view_zenith_set_deg": 25
+    },
+    {
+      "block_passes": 39887,
+      "blocks_below_floor": 0,
+      "city": "Phoenix",
+      "combination_pass": true,
+      "dominant_land_use_class": "Developed, Medium Intensity",
+      "eligible_blocks": 2870,
+      "eligible_passes": 15,
+      "largest_connected_component_share": 1.0,
+      "largest_share_one_land_use_class": 0.602753,
+      "median_passes_per_block": 14.0,
+      "p10_passes_per_block": 14.0,
+      "season_window": "sensitivity",
+      "sectors_represented": "NE;NW;SE;SW",
+      "spatial_sectors": 4,
+      "view_zenith_set_deg": 15
+    },
+    {
+      "block_passes": 101500,
+      "blocks_below_floor": 0,
+      "city": "Phoenix",
+      "combination_pass": true,
+      "dominant_land_use_class": "Developed, Medium Intensity",
+      "eligible_blocks": 2870,
+      "eligible_passes": 38,
+      "largest_connected_component_share": 1.0,
+      "largest_share_one_land_use_class": 0.602552,
+      "median_passes_per_block": 35.0,
+      "p10_passes_per_block": 34.0,
+      "season_window": "sensitivity",
+      "sectors_represented": "NE;NW;SE;SW",
+      "spatial_sectors": 4,
+      "view_zenith_set_deg": 25
+    },
+    {
+      "block_passes": 95544,
+      "blocks_below_floor": 0,
+      "city": "Los Angeles",
+      "combination_pass": true,
+      "dominant_land_use_class": "Developed, Medium Intensity",
+      "eligible_blocks": 4286,
+      "eligible_passes": 25,
+      "largest_connected_component_share": 1.0,
+      "largest_share_one_land_use_class": 0.647356,
+      "median_passes_per_block": 22.0,
+      "p10_passes_per_block": 21.0,
+      "season_window": "provisional_primary",
+      "sectors_represented": "NE;NW;SE;SW",
+      "spatial_sectors": 4,
+      "view_zenith_set_deg": 15
+    },
+    {
+      "block_passes": 170528,
+      "blocks_below_floor": 0,
+      "city": "Los Angeles",
+      "combination_pass": true,
+      "dominant_land_use_class": "Developed, Medium Intensity",
+      "eligible_blocks": 4286,
+      "eligible_passes": 43,
+      "largest_connected_component_share": 1.0,
+      "largest_share_one_land_use_class": 0.648386,
+      "median_passes_per_block": 40.0,
+      "p10_passes_per_block": 38.0,
+      "season_window": "provisional_primary",
+      "sectors_represented": "NE;NW;SE;SW",
+      "spatial_sectors": 4,
+      "view_zenith_set_deg": 25
+    },
+    {
+      "block_passes": 24121,
+      "blocks_below_floor": 4286,
+      "city": "Los Angeles",
+      "combination_pass": false,
+      "dominant_land_use_class": "Developed, Medium Intensity",
+      "eligible_blocks": 4286,
+      "eligible_passes": 8,
+      "largest_connected_component_share": 1.0,
+      "largest_share_one_land_use_class": 0.644791,
+      "median_passes_per_block": 6.0,
+      "p10_passes_per_block": 5.0,
+      "season_window": "sensitivity",
+      "sectors_represented": "NE;NW;SE;SW",
+      "spatial_sectors": 4,
+      "view_zenith_set_deg": 15
+    },
+    {
+      "block_passes": 52037,
+      "blocks_below_floor": 0,
+      "city": "Los Angeles",
+      "combination_pass": true,
+      "dominant_land_use_class": "Developed, Medium Intensity",
+      "eligible_blocks": 4286,
+      "eligible_passes": 15,
+      "largest_connected_component_share": 1.0,
+      "largest_share_one_land_use_class": 0.648327,
+      "median_passes_per_block": 12.0,
+      "p10_passes_per_block": 11.0,
+      "season_window": "sensitivity",
+      "sectors_represented": "NE;NW;SE;SW",
+      "spatial_sectors": 4,
+      "view_zenith_set_deg": 25
+    }
+  ]
+}

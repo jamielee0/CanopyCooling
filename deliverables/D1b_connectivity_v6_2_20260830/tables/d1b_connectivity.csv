@@ -1,0 +1,9 @@
+city,season_window,view_zenith_set_deg,eligible_blocks,eligible_passes,block_passes,median_passes_per_block,p10_passes_per_block,blocks_below_floor,largest_connected_component_share,spatial_sectors,sectors_represented,dominant_land_use_class,largest_share_one_land_use_class,combination_pass
+Phoenix,provisional_primary,15,2870,5,14087,5,5,2870,1,4,NE;NW;SE;SW,"Developed, Medium Intensity",0.602328,false
+Phoenix,provisional_primary,25,2870,13,35062,12,11,0,1,4,NE;NW;SE;SW,"Developed, Medium Intensity",0.601249,true
+Phoenix,sensitivity,15,2870,15,39887,14,14,0,1,4,NE;NW;SE;SW,"Developed, Medium Intensity",0.602753,true
+Phoenix,sensitivity,25,2870,38,101500,35,34,0,1,4,NE;NW;SE;SW,"Developed, Medium Intensity",0.602552,true
+Los Angeles,provisional_primary,15,4286,25,95544,22,21,0,1,4,NE;NW;SE;SW,"Developed, Medium Intensity",0.647356,true
+Los Angeles,provisional_primary,25,4286,43,170528,40,38,0,1,4,NE;NW;SE;SW,"Developed, Medium Intensity",0.648386,true
+Los Angeles,sensitivity,15,4286,8,24121,6,5,4286,1,4,NE;NW;SE;SW,"Developed, Medium Intensity",0.644791,false
+Los Angeles,sensitivity,25,4286,15,52037,12,11,0,1,4,NE;NW;SE;SW,"Developed, Medium Intensity",0.648327,true
