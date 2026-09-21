@@ -1,0 +1,7 @@
+DATA_KIND,design,scenario,true_time_effect_K_per_10pp,deterministic_artificial_window_contrast,simulation_mean,simulation_SD,replicates,assumed_independent_pass_noise_SD
+SYNTHETIC_DATA,original_11_endpoint_windows,season_and_year_only,0,0.13333333333333336,0.13318050775773668,0.024506259512316265,10000,0.03
+SYNTHETIC_DATA,original_11_endpoint_windows,additional_uncontrolled_day_of_month_trend,0,0.11333333333333334,0.11318050775773665,0.024506259512316265,10000,0.03
+SYNTHETIC_DATA,balanced_2023_endpoints,season_and_year_only,0,0.0,-0.0005416107982426561,0.02815131545631569,10000,0.03
+SYNTHETIC_DATA,balanced_2023_endpoints,additional_uncontrolled_day_of_month_trend,0,-0.04625000000000001,-0.046791610798242664,0.02815131545631569,10000,0.03
+SYNTHETIC_DATA,balanced_12_endpoints,season_and_year_only,0,0.0,-0.00021719348202790928,0.017905236344923674,10000,0.03
+SYNTHETIC_DATA,balanced_12_endpoints,additional_uncontrolled_day_of_month_trend,0,-0.029000000000000026,-0.02921719348202793,0.01790523634492367,10000,0.03

@@ -1,0 +1,23 @@
+{
+  "verified_utc": "2026-09-21T22:07:19.688701+00:00",
+  "status": "PASS",
+  "network_free_tests": {
+    "paired_estimator_native_and_scale": 21,
+    "time_resampling": 3,
+    "sampling_design": 8,
+    "total": 32,
+    "all_passed": true
+  },
+  "published_source_hashes_verified": 85,
+  "local_markdown_links_checked": 38,
+  "json_documents_parsed": 22,
+  "yaml_documents_parsed": 1,
+  "main_pilot_passes": 16,
+  "main_pilot_year": 2023,
+  "credential_pattern_matches": 0,
+  "symlinks": 0,
+  "maximum_file_bytes": 404497,
+  "raw_data_and_empirical_point_estimates_included": false,
+  "visual_review": "Precision figure inspected; labeled as standard errors rather than cooling gradients.",
+  "limitations": "Checks validate publication integrity and synthetic software tests, not final temporal inference, scale agreement or scientific approval."
+}

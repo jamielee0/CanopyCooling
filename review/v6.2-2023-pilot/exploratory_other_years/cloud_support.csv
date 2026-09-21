@@ -1,0 +1,8 @@
+year_month,passes,common_clear_points_all_passes,min_pass_clear_points,sampled_blocks,batch_priority
+2019-08,2,300,300,300,first_rebalance_batch
+2021-08,3,0,0,300,cloud_support_review_queue
+2022-08,2,3,3,300,cloud_support_review_queue
+2023-06,2,275,278,300,first_rebalance_batch
+2023-08,3,214,214,300,first_rebalance_batch
+2024-06,2,300,300,300,first_rebalance_batch
+2025-08,3,240,266,300,first_rebalance_batch

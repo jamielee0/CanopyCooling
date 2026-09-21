@@ -1,0 +1,14 @@
+{
+  "label": "SYNTHETIC_DATA",
+  "scenario_combinations": 280,
+  "empirical_coefficients_released": false,
+  "design_manifest": "outputs/v6_2/scientific/scale_diagnostics_20260919/scale_simulation_design.json",
+  "figure_renderer": "src/render_v6_2_mixing_figure.py",
+  "figure_renderer_sha256": "67668a23dfdd3156403a3f0a693e8a902ae3dbb537c9a81ec48770a32c304d10",
+  "files": {
+    "SYNTHETIC_DATA_mixing_summary.csv": "a5ec6b163ee7db2bd4659d76bb642237ffa658d61ffbfd118e46e6792105c931",
+    "SYNTHETIC_DATA_time_comparison.csv": "bbc6ca25e2ff184c5bbf7b0fd677da8d0053bc63d2739cec6fe59e1e80db2d67",
+    "SYNTHETIC_DATA_mixing_pass_results.csv": "f85223d64d241449a8e4ecbfc4ec155cb667f03f045830bfabfa38f103be99a4",
+    "SYNTHETIC_DATA_transformation_artifact.png": "189360e522ae00031e3d3a9df5dc6a114a3f5e8ac5f26a9af5a49d97f393cdff"
+  }
+}

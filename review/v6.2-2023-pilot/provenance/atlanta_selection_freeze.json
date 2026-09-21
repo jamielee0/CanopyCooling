@@ -1,0 +1,167 @@
+{
+  "created_utc": "2026-09-19T22:01:34.410962+00:00",
+  "selected_city": "atlanta",
+  "canopy_variance_screen": {
+    "phoenix": 0.0015892169168808018,
+    "atlanta": 0.08301052427765773,
+    "charlotte": 0.07189409190693989
+  },
+  "rule": "largest_sampled_stable_canopy_within_block_variance_among_Atlanta_Charlotte_then_verified_afternoon_acquisitions; first_five_chronological_2023_Jun_Sep_in_inherited_nonthermal_inventory_with_L1B_p95_at_most_25_and_domain_geometry_coverage_at_least_0_95",
+  "catalogue_complete_audit": [
+    {
+      "city": "phoenix",
+      "version": "002",
+      "query": "all_mission_dates_before_explicit_2019_2025_filter",
+      "pages": 5,
+      "bbox_CMR_hits": 8029,
+      "bbox_rows_received": 8029,
+      "exact_intersection_rows": 8029,
+      "unique_granules": 8029,
+      "study_granules": 7333,
+      "study_unique_orbits": 1547,
+      "first_acquisition": "2018-07-29T08:17:08.955Z",
+      "last_acquisition": "2026-09-17T22:58:19.758Z",
+      "retrieved_utc": "2026-09-19T21:55:23.129226+00:00"
+    },
+    {
+      "city": "phoenix",
+      "version": "003",
+      "query": "all_mission_dates_before_explicit_2019_2025_filter",
+      "pages": 1,
+      "bbox_CMR_hits": 1243,
+      "bbox_rows_received": 1243,
+      "exact_intersection_rows": 1243,
+      "unique_granules": 1243,
+      "study_granules": 183,
+      "study_unique_orbits": 41,
+      "first_acquisition": "2025-10-07T00:08:15.039Z",
+      "last_acquisition": "2026-09-17T22:58:19.758Z",
+      "retrieved_utc": "2026-09-19T21:55:16.181723+00:00"
+    },
+    {
+      "city": "atlanta",
+      "version": "002",
+      "query": "all_mission_dates_before_explicit_2019_2025_filter",
+      "pages": 8,
+      "bbox_CMR_hits": 15185,
+      "bbox_rows_received": 15185,
+      "exact_intersection_rows": 13614,
+      "unique_granules": 13614,
+      "study_granules": 12291,
+      "study_unique_orbits": 1601,
+      "first_acquisition": "2018-07-28T22:36:56.465Z",
+      "last_acquisition": "2026-09-18T20:37:56.456Z",
+      "retrieved_utc": "2026-09-19T21:55:36.813018+00:00"
+    },
+    {
+      "city": "atlanta",
+      "version": "003",
+      "query": "all_mission_dates_before_explicit_2019_2025_filter",
+      "pages": 2,
+      "bbox_CMR_hits": 2890,
+      "bbox_rows_received": 2890,
+      "exact_intersection_rows": 2604,
+      "unique_granules": 2604,
+      "study_granules": 291,
+      "study_unique_orbits": 46,
+      "first_acquisition": "2019-08-23T18:46:10.797Z",
+      "last_acquisition": "2026-09-18T20:37:56.456Z",
+      "retrieved_utc": "2026-09-19T21:55:33.211609+00:00"
+    },
+    {
+      "city": "charlotte",
+      "version": "002",
+      "query": "all_mission_dates_before_explicit_2019_2025_filter",
+      "pages": 4,
+      "bbox_CMR_hits": 7183,
+      "bbox_rows_received": 7183,
+      "exact_intersection_rows": 7183,
+      "unique_granules": 7183,
+      "study_granules": 6416,
+      "study_unique_orbits": 1432,
+      "first_acquisition": "2018-07-28T22:37:48.435Z",
+      "last_acquisition": "2026-09-18T20:38:48.426Z",
+      "retrieved_utc": "2026-09-19T21:55:43.263252+00:00"
+    },
+    {
+      "city": "charlotte",
+      "version": "003",
+      "query": "all_mission_dates_before_explicit_2019_2025_filter",
+      "pages": 1,
+      "bbox_CMR_hits": 1427,
+      "bbox_rows_received": 1427,
+      "exact_intersection_rows": 1427,
+      "unique_granules": 1427,
+      "study_granules": 166,
+      "study_unique_orbits": 43,
+      "first_acquisition": "2019-08-23T18:46:10.797Z",
+      "last_acquisition": "2026-09-18T20:38:48.426Z",
+      "retrieved_utc": "2026-09-19T21:55:40.230834+00:00"
+    }
+  ],
+  "sample_frame_limitation": "first_five_from_existing_verified_L1B_geometry_inventory_not_claimed_exhaustive_near_nadir_inventory",
+  "collection": "002",
+  "orbits": [
+    27835,
+    27896,
+    27916,
+    28145,
+    28598
+  ],
+  "passes": [
+    {
+      "orbit": 27835,
+      "acquisition_utc": "2023-06-03T17:17:40.910000+00:00",
+      "l1b_view_zenith_abs_p95_deg": 9.8433685303,
+      "l1b_geometry_coverage_fraction": 1.0,
+      "local_solar_time_hours": 11.7090616816,
+      "clear_domain_fraction": 0.9388301734,
+      "view_azimuth_complete": false,
+      "relative_azimuth_complete": false
+    },
+    {
+      "orbit": 27896,
+      "acquisition_utc": "2023-06-07T15:39:07.020000+00:00",
+      "l1b_view_zenith_abs_p95_deg": 19.7119617462,
+      "l1b_geometry_coverage_fraction": 1.0,
+      "local_solar_time_hours": 10.055194399,
+      "clear_domain_fraction": 0.9882754671,
+      "view_azimuth_complete": false,
+      "relative_azimuth_complete": false
+    },
+    {
+      "orbit": 27916,
+      "acquisition_utc": "2023-06-08T22:58:37.519000+00:00",
+      "l1b_view_zenith_abs_p95_deg": 10.7264442444,
+      "l1b_geometry_coverage_fraction": 1.0,
+      "local_solar_time_hours": 17.3761254026,
+      "clear_domain_fraction": 0.9351863675,
+      "view_azimuth_complete": false,
+      "relative_azimuth_complete": false
+    },
+    {
+      "orbit": 28145,
+      "acquisition_utc": "2023-06-23T17:12:53.787000+00:00",
+      "l1b_view_zenith_abs_p95_deg": 20.5109672546,
+      "l1b_geometry_coverage_fraction": 1.0,
+      "local_solar_time_hours": 11.5620587514,
+      "clear_domain_fraction": null,
+      "view_azimuth_complete": false,
+      "relative_azimuth_complete": false
+    },
+    {
+      "orbit": 28598,
+      "acquisition_utc": "2023-07-22T21:46:19.714000+00:00",
+      "l1b_view_zenith_abs_p95_deg": 13.4847726822,
+      "l1b_geometry_coverage_fraction": 1.0,
+      "local_solar_time_hours": 16.0422682992,
+      "clear_domain_fraction": 0.4708499174,
+      "view_azimuth_complete": false,
+      "relative_azimuth_complete": false
+    }
+  ],
+  "thermal_values_seen_before_selection": false,
+  "geometry_exception": "25deg_precision_set_matches_inherited_Phoenix_design_missing_azimuth_prevents_claim_of_complete_secondary_geometry_model",
+  "season": "2023-06-01_through_2023-09-30",
+  "selection_basis": "canopy_and_acquisition_metadata_only_no_precision_or_effect_selection"
+}

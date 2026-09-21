@@ -1,0 +1,29 @@
+{
+  "inherited_design_evidence": "Advisor reports approximately 0.95 VPD-temperature correlation in arid cities and approximately 0.3 kPa LA common support; these are historical design diagnostics, not recomputed or relabeled as this pilot result.",
+  "source": "data/raw/v2/weather/hrrr_exact_acquisition_l1b_geo_D0047_archive_available/hrrr_hourly_domain_summary.csv",
+  "source_product": "existing HRRR hourly domain means; interpolation as documented, not independent meteorological observations",
+  "current_sample": [
+    {
+      "city": "atlanta",
+      "selected_passes": 5,
+      "complete_existing_HRRR_pairs": 4,
+      "sample_r_VPD_air_temperature": 0.22319045462470716,
+      "vpd_range_kPa": [
+        1.6508551203058486,
+        2.72062091675767
+      ],
+      "interpretation": "descriptive subset; small incomplete sample, not causal VPD evidence or a common-support diagnostic"
+    },
+    {
+      "city": "phoenix",
+      "selected_passes": 11,
+      "complete_existing_HRRR_pairs": 6,
+      "sample_r_VPD_air_temperature": 0.988155790536146,
+      "vpd_range_kPa": [
+        3.9000548135769275,
+        6.849800524699162
+      ],
+      "interpretation": "descriptive subset; small incomplete sample, not causal VPD evidence or a common-support diagnostic"
+    }
+  ]
+}

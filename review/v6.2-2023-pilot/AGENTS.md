@@ -1,0 +1,3 @@
+# Review snapshot rules
+
+The current main pilot is 2023 only: eleven Phoenix and five Atlanta passes. Other-year results are separate exploratory evidence with no main-pilot weight. This directory is a review snapshot, not permission to acquire data, rerun sealed models, change thresholds, release empirical point estimates or broaden study years. Preserve published evidence. No credentials, raw outcome cells or sealed model arrays belong here. Use the network-free tests in `03_Reproducibility.md`; obtain explicit scope for any new empirical execution. `protocol/protocol_v6_2.yml` retains historical sections, with `current_pilot_scope_20260921` controlling.
