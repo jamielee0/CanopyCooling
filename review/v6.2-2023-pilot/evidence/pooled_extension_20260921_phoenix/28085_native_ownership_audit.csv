@@ -1,0 +1,5 @@
+city,tile,scenes,raw_scene_valid_cells_in_domain,native_centers_in_domain,overlap_or_seam_cells_excluded,unique_QA_valid_before_context,paired_complete_primary,native_area_m2,ownership
+phoenix,12SUB,2,46179,47917,25203,22217,21607,4900,whole_footprint_inside_canonical_core_and_UTM_band
+phoenix,12SUC,2,267667,270608,100796,167381,162992,4900,whole_footprint_inside_canonical_core_and_UTM_band
+phoenix,12SVB,1,194208,210528,808,193452,177770,4900,whole_footprint_inside_canonical_core_and_UTM_band
+phoenix,12SVC,1,271095,282044,97163,178689,172417,4900,whole_footprint_inside_canonical_core_and_UTM_band

@@ -1,0 +1,24 @@
+{
+  "phoenix": {
+    "historical_rows": 2600,
+    "historical_months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "historic_ids_absent_from_current_catalogue": 0,
+    "current_same_months_2018_2025_rows": 2600
+  },
+  "atlanta": {
+    "historical_rows": 4367,
+    "historical_months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "historic_ids_absent_from_current_catalogue": 0,
+    "current_same_months_2018_2025_rows": 4367
+  }
+}

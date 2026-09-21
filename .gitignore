@@ -1,0 +1,17 @@
+# Never publish local data, credentials or generated caches
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+.env.*
+.netrc
+*.pem
+*.key
+credentials*
+data/
+outputs/
+*.tif
+*.tiff
+*.parquet
+*.npz
+*.npy
