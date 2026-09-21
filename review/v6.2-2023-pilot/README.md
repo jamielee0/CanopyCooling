@@ -1,4 +1,4 @@
-# v6.2: 2023 pilot review for Reza
+# v6.2: 2023 pilot review for Prof. Alizadeh
 
 **Current main pilot: 11 Phoenix + 5 Atlanta passes, all ECOSTRESS acquisitions from 2023.** Seven processed Phoenix passes from other years are a separate exploratory extension, excluded from the main pilot. Protocol version remains 6.2.
 
