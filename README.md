@@ -1,6 +1,6 @@
 # Urban Tree Canopy Cooling
 
-## v6.2 pilot review for Reza — 21 September 2026
+## v6.2 pilot review for Prof. Alizadeh — 21 September 2026
 
 **[Start here: the complete review package](review/v6.2-2023-pilot/README.md)**
 

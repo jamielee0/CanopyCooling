@@ -1,6 +1,6 @@
 {
   "created_utc": "2026-09-21T22:00:07.329651+00:00",
-  "purpose": "Reza 2023 v6.2 precision/method review",
+  "purpose": "Prof. Alizadeh 2023 v6.2 precision/method review",
   "main_pilot_year": 2023,
   "empirical_point_estimates_included": false,
   "copied_sources": [
@@ -582,15 +582,15 @@
       "source_path": "docs/v2/v6_2/pilot_plan_v6_2.md",
       "published_path": "protocol/pilot_plan_v6_2.md",
       "source_sha256": "51a774c743a387536cc6eff81cd1ed0e6039db9611ad4c04de1901ebfca2a15c",
-      "published_sha256": "b1057b7a672403a9ce1d20f8a915287097e7ca1f5c6e3d012f95f9e7ccf006d3",
-      "transformation": "review context banner and portable evidence links"
+      "published_sha256": "2b5abf9264990b2408ce0ea436d832fb5061240bcc621ab0ef52030a07a20899",
+      "transformation": "review context banner and portable evidence links; reviewer addressed as Prof. Alizadeh"
     },
     {
       "source_path": "docs/v2/v6_2/implementation_plan_v6_2.md",
       "published_path": "protocol/implementation_plan_v6_2.md",
       "source_sha256": "9c41775bbdfbb4567e751e5fd436df98085f646b63cd0aecac6195cac4bb7672",
-      "published_sha256": "294169de9473f30f1fe3e3d660b11798c672a0306e1152ab7352b3fe8125df1d",
-      "transformation": "review context banner and portable evidence links"
+      "published_sha256": "e31b38381e2e5e6a02621e8586efc12cfa0cb127f2bd9af4740e390bfde1d544",
+      "transformation": "review context banner and portable evidence links; reviewer addressed as Prof. Alizadeh"
     },
     {
       "source_path": "docs/v2/v6_2/phoenix_2023_sample_scope.md",
