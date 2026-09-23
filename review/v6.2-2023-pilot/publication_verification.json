@@ -1,15 +1,15 @@
 {
-  "verified_utc": "2026-09-21T22:07:19.688701+00:00",
+  "verified_utc": "2026-09-23T20:40:51.089565+00:00",
   "status": "PASS",
   "network_free_tests": {
     "paired_estimator_native_and_scale": 21,
-    "time_resampling": 3,
+    "time_resampling_and_native_support": 6,
     "sampling_design": 8,
-    "total": 32,
+    "total": 35,
     "all_passed": true
   },
-  "published_source_hashes_verified": 85,
-  "local_markdown_links_checked": 38,
+  "published_source_hashes_verified": 107,
+  "local_markdown_links_checked": 46,
   "json_documents_parsed": 22,
   "yaml_documents_parsed": 1,
   "main_pilot_passes": 16,
@@ -19,5 +19,16 @@
   "maximum_file_bytes": 404497,
   "raw_data_and_empirical_point_estimates_included": false,
   "visual_review": "Precision figure inspected; labeled as standard errors rather than cooling gradients.",
-  "limitations": "Checks validate publication integrity and synthetic software tests, not final temporal inference, scale agreement or scientific approval."
+  "limitations": "Checks validate publication integrity and synthetic software tests, not final temporal inference, scale agreement or scientific approval.",
+  "robustness_execution": {
+    "paired_fits": 65,
+    "estimable_bootstrap_draws": 65000,
+    "requested_bootstrap_draws": 65000,
+    "shared_native_cells": 196090,
+    "original_inputs_rebuilt_exactly": 6,
+    "native_coordinates_verified_across_passes": 11,
+    "matched_support_comparisons_sealed": 24,
+    "coefficient_review": "PENDING_AUTHORIZED_REVIEW",
+    "final_stability_ruling": false
+  }
 }

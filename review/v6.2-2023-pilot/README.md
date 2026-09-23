@@ -22,6 +22,10 @@ The new paired estimator uses one canopy slope per city/pass and block-specific 
 
 SE units are K per +10 percentage points canopy. These are precision diagnostics, not cooling magnitudes, retrieval accuracy or confirmation of a time effect.
 
+## Completed robustness checks — 23 September
+
+The six added Phoenix passes now have four-direction 70 m registration checks and fixed-support alignment comparisons. All eleven Phoenix passes were also refitted on their 196,090 shared cells. All 65 paired fits and 65,000 bootstrap draws were estimable. Effect changes remain sealed; numerical completion is not a final stability ruling. [Results and limitations](checks/phoenix_robustness_20260923/README.md).
+
 ## Sampling is still the main limitation
 
 ![Time/season coverage](figures/pilot2023_time_season_coverage.png)

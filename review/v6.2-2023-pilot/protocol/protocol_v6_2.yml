@@ -715,7 +715,6 @@ claims:
   novelty: verify_against_literature_do_not_treat_meeting_encouragement_as_established_novelty
 next_actions_not_executed:
 - validate_nonlinear_canopy_common_support_and_year_matched_context_sensitivities
-- complete_new_pass_registration_and_composition_checks
 - complete_LA_context_and_paired_Stage1_batch
 - extend_candidate_city_screen_across_2019_2025_and_morning_geometry_support
 - validate_variance_aware_Stage2_inference_after_scatterplot_review
@@ -860,3 +859,22 @@ current_pilot_scope_20260921:
   claim_limit: No supported fully balanced June-September2023 pattern; no July/September morning opportunity in
     defined window
   report: docs/v2/v6_2/phoenix_2023_sample_scope.md
+
+robustness_completion_20260923:
+  run_id: phoenix_robustness_20260923
+  status: COMPUTATIONS_COMPLETE_COEFFICIENT_COMPARISON_REVIEW_PENDING
+  registration_passes: 6
+  directional_registration_fits: 24
+  fixed_support_alignment_fits: 30
+  all11_common_cell_fits: 11
+  common_native_cells: 196090
+  paired_fits_estimable: 65
+  bootstrap_estimable: 65000
+  bootstrap_requested: 65000
+  baseline_rebuilds: six_exact_matches
+  effects_and_baseline_differences: SEALED
+  new_time_model: false
+  new_sample_selection: false
+  public_report: deliverables/Phoenix_Robustness_v6_2_20260923/README.md
+  historical_pending_statements: superseded_for_registration_and_common_cell_computation_only
+  no_new_stability_threshold: true

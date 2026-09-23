@@ -1,0 +1,12 @@
+{
+  "completed_utc": "2026-09-23T20:36:15.894424+00:00",
+  "requested_paired_fits": 65,
+  "completed_paired_fits": 65,
+  "nonestimable_variants": 0,
+  "all_variants_accounted_for": true,
+  "registration_passes": 6,
+  "common_cell_passes": 11,
+  "empirical_coefficients_and_comparisons": "SEALED",
+  "time_model": "NOT_RUN",
+  "scientific_ruling": "Numerical/support checks completed; effect-size robustness requires authorized review, no new cutoff or scale ruling."
+}

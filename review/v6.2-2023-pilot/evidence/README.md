@@ -1,6 +1,6 @@
 # Precision and support evidence
 
-`pooled_pilot_20260919_phoenix/` and `pooled_pilot_20260919_atlanta/` contain the original five passes each, including registration/common-cell and spatial stress checks. `pooled_extension_20260921_phoenix/` contains six additional 2023 Phoenix passes and 1/2/4/8 km precision results; their full registration/common-cell refits remain pending.
+`pooled_pilot_20260919_phoenix/` and `pooled_pilot_20260919_atlanta/` contain the original five passes each, including registration/common-cell and spatial stress checks. `pooled_extension_20260921_phoenix/` contains six additional 2023 Phoenix passes and 1/2/4/8 km precision results; the formerly pending registration/common-cell computations were completed in the [23 September robustness run](../checks/phoenix_robustness_20260923/README.md). The original completion.json remains a historical record.
 
 The primary summary is [the sixteen-pass table](../tables/pilot2023_precision_and_passes.csv). Standard errors and bootstrap widths are published, not empirical effect estimates or empirical interval endpoints.
 

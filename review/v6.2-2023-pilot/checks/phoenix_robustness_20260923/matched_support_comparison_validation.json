@@ -1,0 +1,174 @@
+{
+  "comparison_count": 24,
+  "publication": "validation counts only; effect differences and endpoints sealed",
+  "checks": [
+    {
+      "orbit": 28085,
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "matched_cells": 500032,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 28085,
+      "variant": "registration_fixed_support_dx1_dy0",
+      "matched_cells": 500032,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 28085,
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "matched_cells": 500032,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 28085,
+      "variant": "registration_fixed_support_dx0_dy1",
+      "matched_cells": 500032,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 28192,
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "matched_cells": 514983,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 28192,
+      "variant": "registration_fixed_support_dx1_dy0",
+      "matched_cells": 514983,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 28192,
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "matched_cells": 514983,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 28192,
+      "variant": "registration_fixed_support_dx0_dy1",
+      "matched_cells": 514983,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 28970,
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "matched_cells": 417544,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 28970,
+      "variant": "registration_fixed_support_dx1_dy0",
+      "matched_cells": 417544,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 28970,
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "matched_cells": 417544,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 28970,
+      "variant": "registration_fixed_support_dx0_dy1",
+      "matched_cells": 417544,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29092,
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "matched_cells": 518134,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29092,
+      "variant": "registration_fixed_support_dx1_dy0",
+      "matched_cells": 518134,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29092,
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "matched_cells": 518134,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29092,
+      "variant": "registration_fixed_support_dx0_dy1",
+      "matched_cells": 518134,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29545,
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "matched_cells": 321451,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29545,
+      "variant": "registration_fixed_support_dx1_dy0",
+      "matched_cells": 321451,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29545,
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "matched_cells": 321451,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29545,
+      "variant": "registration_fixed_support_dx0_dy1",
+      "matched_cells": 321451,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29606,
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "matched_cells": 520767,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29606,
+      "variant": "registration_fixed_support_dx1_dy0",
+      "matched_cells": 520767,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29606,
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "matched_cells": 520767,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    },
+    {
+      "orbit": 29606,
+      "variant": "registration_fixed_support_dx0_dy1",
+      "matched_cells": 520767,
+      "paired_estimable_draws": 1000,
+      "block_labels_and_seeds_match": true
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 # Current v6.2 pilot: 2023 only
 
+## Update — 23 September 2026
+
+The previously pending registration and common-cell computations are complete for the 2023 Phoenix expansion: 24 directional shift fits for the six additions, 30 fixed-support alignment fits, and 11 shared-footprint fits across all current Phoenix passes. All 65 paired fits were estimable. The common footprint has 196,090 cells. Coefficients and baseline differences remain sealed, so numerical completion is not a final claim of effect stability. See `deliverables/Phoenix_Robustness_v6_2_20260923/README.md`. Earlier pending-status statements below are historical. Temporal uncertainty, scale tolerance, geometry/context sensitivities and study expansion remain unresolved.
+
 **Main pilot: eleven Phoenix passes and five Atlanta passes, all from 2023.**
 
 The assistant broadened the Phoenix sampling audit and processing to 2019, 2024 and 2025 when seeking more matched months. The user clarified that the pilot was understood to be 2023. The broader processing is preserved as a separate exploratory extension; it does not redefine the main pilot or fix the missing July/September 2023 morning observations.
