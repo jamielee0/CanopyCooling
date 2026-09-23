@@ -1,6 +1,10 @@
-> Review snapshot: the opening 2023-only scope controls historical sections. See [current progress and limitations](../01_Progress_and_decisions.md) for the provisional temporal bootstrap and outstanding checks. Original workspace paths below are provenance, not commands to run from this export.
+> Review snapshot: the opening updates control historical sections. See [current progress and limitations](../01_Progress_and_decisions.md). Original workspace paths below are provenance, not commands to run from this export.
 
 # Urban tree canopy cooling pilot plan v6.2
+
+## Update — 23 September 2026
+
+The previously pending registration and common-cell computations are complete for the 2023 Phoenix expansion: 24 directional shift fits for the six additions, 30 fixed-support alignment fits, and 11 shared-footprint fits across all current Phoenix passes. All 65 paired fits were estimable. The common footprint has 196,090 cells. Coefficients and baseline differences remain sealed, so numerical completion is not a final claim of effect stability. See `deliverables/Phoenix_Robustness_v6_2_20260923/README.md`. Earlier pending-status statements below are historical. Temporal uncertainty, scale tolerance, geometry/context sensitivities and study expansion remain unresolved.
 
 ## Current pilot scope — 2023 only
 

@@ -7,9 +7,9 @@
     {
       "source_path": "docs/v2/v6_2/protocol_v6_2.yml",
       "published_path": "protocol/protocol_v6_2.yml",
-      "source_sha256": "b3421a8607d07948a70c89ce2a4916f1f081f51653da75c1791d88191fce5e31",
-      "transformation": "local path prefixes made portable; historical sections retained with current_pilot_scope_20260921 controlling",
-      "published_sha256": "b3421a8607d07948a70c89ce2a4916f1f081f51653da75c1791d88191fce5e31"
+      "source_sha256": "ea22d94a7f96e2a700b6200ce6c0785b96daba92e02c8d66bcaa7a4ab2ee3bbe",
+      "published_sha256": "ea22d94a7f96e2a700b6200ce6c0785b96daba92e02c8d66bcaa7a4ab2ee3bbe",
+      "transformation": "portable paths and review links; reviewer addressed as Prof. Alizadeh"
     },
     {
       "source_path": "outputs/v6_2/scientific/pooled_pilot_20260919_phoenix/precision.csv",
@@ -581,23 +581,179 @@
     {
       "source_path": "docs/v2/v6_2/pilot_plan_v6_2.md",
       "published_path": "protocol/pilot_plan_v6_2.md",
-      "source_sha256": "51a774c743a387536cc6eff81cd1ed0e6039db9611ad4c04de1901ebfca2a15c",
-      "published_sha256": "2b5abf9264990b2408ce0ea436d832fb5061240bcc621ab0ef52030a07a20899",
-      "transformation": "review context banner and portable evidence links; reviewer addressed as Prof. Alizadeh"
+      "source_sha256": "2ceb822e7c50d9a148977c8e3365c5d7cb83254f8a3fd099136fcffcb23e3179",
+      "published_sha256": "32d388785b3d176742f9278a545cd6848b4459f9938b3a75870278c99a61cacd",
+      "transformation": "portable paths and review links; reviewer addressed as Prof. Alizadeh"
     },
     {
       "source_path": "docs/v2/v6_2/implementation_plan_v6_2.md",
       "published_path": "protocol/implementation_plan_v6_2.md",
-      "source_sha256": "9c41775bbdfbb4567e751e5fd436df98085f646b63cd0aecac6195cac4bb7672",
-      "published_sha256": "e31b38381e2e5e6a02621e8586efc12cfa0cb127f2bd9af4740e390bfde1d544",
-      "transformation": "review context banner and portable evidence links; reviewer addressed as Prof. Alizadeh"
+      "source_sha256": "d22406347f26e8e47fee1f98f2b46bb80bb91e5f0e57fab3c260b0a8a6a81e08",
+      "published_sha256": "bc34cf83b558c01a70f56190acaa0be3347bb33fa395101fae6cd2cb4bcde03b",
+      "transformation": "portable paths and review links; reviewer addressed as Prof. Alizadeh"
     },
     {
       "source_path": "docs/v2/v6_2/phoenix_2023_sample_scope.md",
       "published_path": "protocol/phoenix_2023_sample_scope.md",
-      "source_sha256": "6e71cdae0c1192b0c2b415750574bfccc596d60ce8bc89fc493651dddfc30ce7",
-      "published_sha256": "ffbdc63ecb705b157daccabfb288f3bf989bee2ac4da2e57b1c9d95a4d2cab8f",
-      "transformation": "review context banner and portable evidence links"
+      "source_sha256": "9749e6a2f339403eb2b912f8ff42b9367c08e2283d80fa71019573b00283da03",
+      "published_sha256": "9a0bfbbaf003e1ce59c5ecc791900aaf0d1861420f917a1eae39136ebe296a5e",
+      "transformation": "current robustness completion notice and portable evidence links"
+    },
+    {
+      "source_path": "deliverables/Phoenix_Robustness_v6_2_20260923/nonestimable_variants.json",
+      "published_path": "checks/phoenix_robustness_20260923/nonestimable_variants.json",
+      "source_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "published_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "transformation": "none"
+    },
+    {
+      "source_path": "deliverables/Phoenix_Robustness_v6_2_20260923/native_identity_validation.json",
+      "published_path": "checks/phoenix_robustness_20260923/native_identity_validation.json",
+      "source_sha256": "db118c46295a5a49f6d5317ce42399ea6a31b3619fdbbf5f859e405f01170494",
+      "published_sha256": "db118c46295a5a49f6d5317ce42399ea6a31b3619fdbbf5f859e405f01170494",
+      "transformation": "none"
+    },
+    {
+      "source_path": "deliverables/Phoenix_Robustness_v6_2_20260923/common_cell_precision_and_retention.csv",
+      "published_path": "checks/phoenix_robustness_20260923/common_cell_precision_and_retention.csv",
+      "source_sha256": "b688a94e8d77cdf35b4b17f65ccec5570f6b30eabbe33d3a991cee21003d159e",
+      "published_sha256": "b688a94e8d77cdf35b4b17f65ccec5570f6b30eabbe33d3a991cee21003d159e",
+      "transformation": "none"
+    },
+    {
+      "source_path": "deliverables/Phoenix_Robustness_v6_2_20260923/registration_support.csv",
+      "published_path": "checks/phoenix_robustness_20260923/registration_support.csv",
+      "source_sha256": "7792ac0cc4d265e515aa6d6b6e490fa0d5e7142ffa8cf2d180fb39eeef9fa113",
+      "published_sha256": "7792ac0cc4d265e515aa6d6b6e490fa0d5e7142ffa8cf2d180fb39eeef9fa113",
+      "transformation": "none"
+    },
+    {
+      "source_path": "deliverables/Phoenix_Robustness_v6_2_20260923/precision.csv",
+      "published_path": "checks/phoenix_robustness_20260923/precision.csv",
+      "source_sha256": "320ec527d16d5201d62c5f087cd751c80f695687a98e814bdfed31081067c676",
+      "published_sha256": "320ec527d16d5201d62c5f087cd751c80f695687a98e814bdfed31081067c676",
+      "transformation": "none"
+    },
+    {
+      "source_path": "deliverables/Phoenix_Robustness_v6_2_20260923/common_cell_retention.csv",
+      "published_path": "checks/phoenix_robustness_20260923/common_cell_retention.csv",
+      "source_sha256": "7dce29bf1c074c0a3e7e9f1265263d3a92a104c42533cf43ccd55ddb3df9f56c",
+      "published_sha256": "7dce29bf1c074c0a3e7e9f1265263d3a92a104c42533cf43ccd55ddb3df9f56c",
+      "transformation": "none"
+    },
+    {
+      "source_path": "deliverables/Phoenix_Robustness_v6_2_20260923/README.md",
+      "published_path": "checks/phoenix_robustness_20260923/README.md",
+      "source_sha256": "d941b3b8cfb327f5499f62d3107f40acdb19e26ad4fce8526f721de9c27e57cb",
+      "published_sha256": "d941b3b8cfb327f5499f62d3107f40acdb19e26ad4fce8526f721de9c27e57cb",
+      "transformation": "none"
+    },
+    {
+      "source_path": "deliverables/Phoenix_Robustness_v6_2_20260923/SHA256SUMS",
+      "published_path": "checks/phoenix_robustness_20260923/SHA256SUMS",
+      "source_sha256": "36e00d1397faae4ca88a0a5b8ca046f6f5d319a18d6e37983b931b11ffc9fbf6",
+      "published_sha256": "36e00d1397faae4ca88a0a5b8ca046f6f5d319a18d6e37983b931b11ffc9fbf6",
+      "transformation": "none"
+    },
+    {
+      "source_path": "deliverables/Phoenix_Robustness_v6_2_20260923/matched_support_comparison_validation.json",
+      "published_path": "checks/phoenix_robustness_20260923/matched_support_comparison_validation.json",
+      "source_sha256": "51032be272be8aad39683bd2936e7b5128143ef8e73a5b7975597be2efe6d825",
+      "published_sha256": "51032be272be8aad39683bd2936e7b5128143ef8e73a5b7975597be2efe6d825",
+      "transformation": "none"
+    },
+    {
+      "source_path": "deliverables/Phoenix_Robustness_v6_2_20260923/completion.json",
+      "published_path": "checks/phoenix_robustness_20260923/completion.json",
+      "source_sha256": "813532ab99e25ad60d498a90049e26d258711be71a0c2dc11ed63cb8da2e8b6a",
+      "published_sha256": "813532ab99e25ad60d498a90049e26d258711be71a0c2dc11ed63cb8da2e8b6a",
+      "transformation": "none"
+    },
+    {
+      "source_path": "deliverables/Phoenix_Robustness_v6_2_20260923/common_cell_support.json",
+      "published_path": "checks/phoenix_robustness_20260923/common_cell_support.json",
+      "source_sha256": "78240b4f5fc67095b19b52f46533fcd7b5752c5c128613434aa620012446e886",
+      "published_sha256": "78240b4f5fc67095b19b52f46533fcd7b5752c5c128613434aa620012446e886",
+      "transformation": "none"
+    },
+    {
+      "source_path": "outputs/v6_2/scientific/phoenix_robustness_20260923/28192_baseline_rebuild_validation.json",
+      "published_path": "checks/phoenix_robustness_20260923/28192_baseline_rebuild_validation.json",
+      "source_sha256": "770b2105a3102bdd7e7721d25cbe0330527f259ba8d3246c190e35b5d29bb361",
+      "published_sha256": "770b2105a3102bdd7e7721d25cbe0330527f259ba8d3246c190e35b5d29bb361",
+      "transformation": "none"
+    },
+    {
+      "source_path": "outputs/v6_2/scientific/phoenix_robustness_20260923/29606_baseline_rebuild_validation.json",
+      "published_path": "checks/phoenix_robustness_20260923/29606_baseline_rebuild_validation.json",
+      "source_sha256": "2d8738fcb5f78eef0ce72c4d78d31f1846a73c919afd5dee921f641eac041247",
+      "published_sha256": "2d8738fcb5f78eef0ce72c4d78d31f1846a73c919afd5dee921f641eac041247",
+      "transformation": "none"
+    },
+    {
+      "source_path": "outputs/v6_2/scientific/phoenix_robustness_20260923/29545_baseline_rebuild_validation.json",
+      "published_path": "checks/phoenix_robustness_20260923/29545_baseline_rebuild_validation.json",
+      "source_sha256": "d3ef62055889ee7cfa67d6b253c0c7142a8c179337c53bbc17215ead2f48b176",
+      "published_sha256": "d3ef62055889ee7cfa67d6b253c0c7142a8c179337c53bbc17215ead2f48b176",
+      "transformation": "none"
+    },
+    {
+      "source_path": "outputs/v6_2/scientific/phoenix_robustness_20260923/28970_baseline_rebuild_validation.json",
+      "published_path": "checks/phoenix_robustness_20260923/28970_baseline_rebuild_validation.json",
+      "source_sha256": "01735874ee9e8f1d489388e5ce25905c612da7daee5960414c30f06810de0b05",
+      "published_sha256": "01735874ee9e8f1d489388e5ce25905c612da7daee5960414c30f06810de0b05",
+      "transformation": "none"
+    },
+    {
+      "source_path": "outputs/v6_2/scientific/phoenix_robustness_20260923/28085_baseline_rebuild_validation.json",
+      "published_path": "checks/phoenix_robustness_20260923/28085_baseline_rebuild_validation.json",
+      "source_sha256": "80d08f4f1d76736b2324fd35f98683c8523e4cdd2991e235fa246a0be00ad5c4",
+      "published_sha256": "80d08f4f1d76736b2324fd35f98683c8523e4cdd2991e235fa246a0be00ad5c4",
+      "transformation": "none"
+    },
+    {
+      "source_path": "outputs/v6_2/scientific/phoenix_robustness_20260923/29092_baseline_rebuild_validation.json",
+      "published_path": "checks/phoenix_robustness_20260923/29092_baseline_rebuild_validation.json",
+      "source_sha256": "fe64bc6d5dcd5837d8d26d7a68e773f64859e75a425713c1a0e5cfe0ff6a444a",
+      "published_sha256": "fe64bc6d5dcd5837d8d26d7a68e773f64859e75a425713c1a0e5cfe0ff6a444a",
+      "transformation": "none"
+    },
+    {
+      "source_path": "outputs/v6_2/scientific/phoenix_robustness_20260923/execution_freeze.json",
+      "published_path": "checks/phoenix_robustness_20260923/execution_freeze.json",
+      "source_sha256": "40193689b4d0c646da2f35d6c48a208e4b36d45517404acbe1df5cc2a1c4e07c",
+      "published_sha256": "3d9a24f5294d096c9b0df31dce5553e6bab91dbdfcfada7acf4a401484038123",
+      "transformation": "portable paths and review links; reviewer addressed as Prof. Alizadeh"
+    },
+    {
+      "source_path": "outputs/v6_2/scientific/phoenix_robustness_20260923/matched_support_comparison_freeze.json",
+      "published_path": "checks/phoenix_robustness_20260923/matched_support_comparison_freeze.json",
+      "source_sha256": "f50fca4e7ecd2a71397f29aca5dce15d3fd0a6000dffcf59106b494a8085d49c",
+      "published_sha256": "f50fca4e7ecd2a71397f29aca5dce15d3fd0a6000dffcf59106b494a8085d49c",
+      "transformation": "portable paths and review links; reviewer addressed as Prof. Alizadeh"
+    },
+    {
+      "source_path": "src/v6_2_advance/run_robustness_completion.py",
+      "published_path": "src/v6_2_advance/run_robustness_completion.py",
+      "source_sha256": "85f432ae72d4f3c31db9c64dee693b873f20e8bbe16f93259bd02aecbc680bbc",
+      "published_sha256": "85f432ae72d4f3c31db9c64dee693b873f20e8bbe16f93259bd02aecbc680bbc",
+      "transformation": "none"
+    },
+    {
+      "source_path": "src/v6_2_advance/finish_robustness_comparisons.py",
+      "published_path": "src/v6_2_advance/finish_robustness_comparisons.py",
+      "source_sha256": "eac0abe60e40ba6632b0979ab008e024346daf132e98c4252ea20aa1f5a72eaa",
+      "published_sha256": "eac0abe60e40ba6632b0979ab008e024346daf132e98c4252ea20aa1f5a72eaa",
+      "transformation": "none"
+    },
+    {
+      "source_path": "tests/v6_2_advance/test_robustness_support.py",
+      "published_path": "tests/v6_2_advance/test_robustness_support.py",
+      "source_sha256": "f127e46f9b287a9eb73b03b4db1fa3f92ef47d2837579a86e80b16be3fd3399e",
+      "published_sha256": "f127e46f9b287a9eb73b03b4db1fa3f92ef47d2837579a86e80b16be3fd3399e",
+      "transformation": "none"
     }
-  ]
+  ],
+  "updated_utc": "2026-09-23T20:39:32.356424+00:00",
+  "latest_update": "Completed Phoenix 2023 registration/common-cell computations; public precision/support only."
 }

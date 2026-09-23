@@ -10,7 +10,7 @@ python -m unittest discover -s tests/v6_2_advance -q
 python src/v6_2_rebalance/test_sampling_design.py
 ```
 
-These cover 21 paired estimator/native-grid/scale tests, 3 temporal-resampling tests and 8 sampling-design tests. They use synthetic fixtures and do not require credentials or access to sealed coefficients. Passing them is software/scientific-logic verification, not proof of valid empirical time inference.
+These cover 21 paired estimator/native-grid/scale tests, 6 temporal-resampling/native-cell support tests and 8 sampling-design tests. They use synthetic fixtures and do not require credentials or access to sealed coefficients. Passing them is software/scientific-logic verification, not proof of valid empirical time inference.
 
 ## Empirical reruns
 
@@ -25,3 +25,7 @@ The portable execution manifests replace machine-specific root paths with `${PRO
 `provenance/publication_sources.json` records source paths, original hashes and copy transformations. `SHA256SUMS` checks the published files. `provenance/local_execution_records/` preserves historical inventories of the larger local workspace, including intentionally unpublished raw/sealed files; those inventories are provenance, not manifests of this GitHub directory. Git commit history supplies the publication revision.
 
 This review intentionally excludes raw LST/emissivity rasters, native outcome tables, sealed model arrays/time contrasts, credentials, local filesystem symlinks, personal correspondence, old Word snapshots and third-party article PDFs. Empirical point estimates previously viewed in conversation are not republished in this precision-review packet. All cited papers are linked to their primary sources.
+
+## Robustness completion — 23 September
+
+`src/v6_2_advance/run_robustness_completion.py` reuses the unchanged estimator and native builder for the six-addition alignment checks and eleven-pass common-cell fits. `finish_robustness_comparisons.py` records shifted-minus-unshifted differences on identical within-pass support using matched bootstrap draws. It reads trusted, locally generated NumPy arrays containing string labels. All coefficients, differences and interval endpoints remain sealed and are not included here. The corresponding public [execution/validation records](checks/phoenix_robustness_20260923/README.md) document 65 paired fits and input reconstruction. Running either empirical script requires the private data/output tree; the network-free tests above do not.
