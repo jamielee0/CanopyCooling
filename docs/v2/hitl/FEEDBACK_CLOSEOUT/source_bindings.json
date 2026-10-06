@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/Urban_Tree_Cooling_Feedback_Response.docx": "ce3fbe6c1694a6eb2484009611775c66caf1df7475ae867e6f62598e2edd6414",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/feedback_compliance_matrix.csv": "31a8a30890045933d69991c789b8bd638bd826ac588cc55c9fce6d30f669931b",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/g4_checks.json": "02151f7004428fba60c3a890fc59cc2d1e5b991e55bfbd5e50bb530f7ce314b0",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/g4_high_demand_city_audit.csv": "e633e1352a00ebb2daaae4630a94e1f7cb09f4420ac601811b13d7bba3186649",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/g4_review.md": "c44a100a1e7cf102f052e9cb6214b815bd1cdb374efbd4801f8199a4e845ee5a",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/g5_checks.json": "fe4e0fb31da3bb17fb61e2cda191ebb871556de33ee497aceecbb9d6de4244bd",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/g5_review.md": "3d5513e7e5a856f67617b0906e7d5f52999573cc56fd80f0e945e80d85003d3a",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/g5_time_matching_audit.csv": "ef4be1a6464f6b28fff1b861213a2bcaa51e973d80c4e5edc904d8712c38fb5f",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/g6_independent_verification.json": "d0ae5577cd00550ab0a4672e9900d52b3868bac919f0e43ed4dba69bbfeb664d",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/g7_review.md": "0047c7e192f88ef5d3910c4a9fa1eefb171017c78703fe35d9f244003ff9530d",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/g7_simulation_contract.json": "fd78fec16e73ab616a2615e0ef3b0b9affa6e1578bd586655c480edeaba03fd4",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/g7_simulation_preflight.csv": "4f98f9bfb1deae4a18cf59ba4080dbce0e863f30f84df78d511b651fe1cb0627",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/g8_decision.json": "2fd20ff00db306f6fd6bc612a5914639c1d624fad517615552df6608fd74d270",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/regression_verification.json": "f471e94c4a9bcc9f0c2ebb32949ad3b33cce322edd4a140ee0cf6b29775470d7",
+    "docs/v2/hitl/FEEDBACK_CLOSEOUT/review.md": "17cef1ec84f67c31cf60a4826ae93d80eba2bd87be9a4a9ce76d0edb48639ca6"
+  },
+  "decision_id": "D0083",
+  "feedback_doc_sha256": "4d369a5337a20b2969d4c1ccabb528c56fae9eb19061c72513d301658dc79333",
+  "generated_utc": "2026-08-16T13:45:42.217049+00:00",
+  "record_2026_opened": false,
+  "sources": {
+    "/Users/jmlee/Downloads/Urban_Tree_Cooling_feedbackdocx (1).docx": "4d369a5337a20b2969d4c1ccabb528c56fae9eb19061c72513d301658dc79333",
+    "data/processed/v2/task1/step3_time_of_day_only_D0056/simulation_settings.json": "81dec599aeffdf2b996187dedd88d29a96842aa240cf7f5042279688f4ff10a2",
+    "data/processed/v2/task1/step3_time_of_day_only_D0056/step3_time_of_day_gate.json": "098e1a403a89de265b44d3e679d659731d84ea775ee124d046cb0c67fd6101dd",
+    "data/raw/v2/hitl/g3_sampling_design/candidate_domains_7.geojson": "cce0d32127e48c0baec38d22ede3d817e45ef3a7d11378907284b6d08021e32a",
+    "docs/v2/D0083_USER_AUTHORIZED_NONTHERMAL_FEEDBACK_CLOSEOUT.md": "2b0c2dc869d9502be608bb070282ffbf942b2702cc5f63bb2fde8da0d2953834",
+    "docs/v2/hitl/G0_FREEZE_AND_AMENDMENT/feedback_traceability.csv": "5603cb708484d072a260a5afb507f8803af5d67c05973b73b40c4566ab16a767",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/attrition_summary.csv": "fd71aca2017ebc4e92abcb90afd6eb69f32f2b8203aee7bf7edb9c2d43b63f6e",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/deduplication_summary.csv": "5f89592e60769229857b5ba4103b78b5817030df52ec22107fe4e530149c7211",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/hrrr_pass_hour_crosswalk.csv": "77150df933f62b4286903352aff0f4dfde1c96c30a0b843ba12df7a78efa43fe",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/observation_ledger.csv": "6b6931cd06b18a5bfa66ee01e78df2c6d2aad1db1b4eecd7d4ba86ae3ecfbc79",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/pass_quality_219.csv": "fdde116139bd766da806664e7ce80e51c25b0b7015bfee7df84c329182f4c2f1",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/pass_hydroclimate_219.csv": "62e52e293d70155fa7209ee5bba5d38afc4a41713b0d477442be0af482ad90da",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/phoenix_june_sign_check.csv": "94c5eca8527aa51e1646f70d34c8fbecddb36de654d7b6b741b86b29603dae93",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/window_exclusion_audit.csv": "718badea8fd6567bdce42929269e38bfc55a0bbe7701dd8dff0aa2c79a4006c1",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_SECOND_REVISION/cleanroom_verification.json": "ac6995f09a9ed5ce0e5a099843bf72c00517f3d3db8e36916a77a33e17821826",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_SECOND_REVISION/selection.json": "e9572ece54bff4b6f4f873b6de3b4e41b401c9702864124ce4fb4c86a645cf2b",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_SECOND_REVISION/threshold_pass_detail.csv": "ba4d8471329ee9f945b6770dbd7c64587cc335f2270823e66b26a5c6a23da6fa"
+  },
+  "temperature_or_lst_opened": false
+}

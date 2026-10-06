@@ -1,0 +1,6 @@
+threshold_deg,raw_physical_passes,role,geometry_rule,azimuth_complete,quality_and_exact_weather_complete_for_all_additions,selection_status
+10,40,confirmatory_candidate,"coverage >= 0.95 and pass p95(abs(view zenith)) <= threshold",false,true,not_selected_missing_azimuth_and_design_checks
+15,127,confirmatory_candidate,"coverage >= 0.95 and pass p95(abs(view zenith)) <= threshold",false,true,not_selected_missing_azimuth_and_design_checks
+20,219,inherited_applied_comparator,"coverage >= 0.95 and pass p95(abs(view zenith)) <= threshold",false,true,applied_historical_rule_not_final_prospective_selection
+25,326,confirmatory_candidate,"coverage >= 0.95 and pass p95(abs(view zenith)) <= threshold",false,false,not_selected_incomplete_addition_evidence
+30,413,exploratory_only,"coverage >= 0.95 and pass p95(abs(view zenith)) <= threshold",false,false,not_eligible_for_confirmatory_selection

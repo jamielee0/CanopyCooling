@@ -1,0 +1,48 @@
+{
+  "authorized_by": "D0062",
+  "gate": "G2",
+  "inputs": {
+    "data/processed/v2/step1_condition_axes.csv": {
+      "role": "canonical Step-1 balance series for independent comparison",
+      "sha256": "761588b8072850d9e251785631379fad365795a051a9a5c30df34c1e9f8ce923"
+    },
+    "data/raw/v2/weather/city_daily_2018_2025_valid_geometry.csv": {
+      "role": "checksum-bound corrected daily nonthermal weather",
+      "sha256": "6534f658f92285600dc8236377299c2cd6b9ba7e04ddd1521b86be4e12382e64"
+    },
+    "data/raw/v2/weather/city_daily_2018_2025_valid_geometry.csv.provenance.json": {
+      "role": "daily-weather retrieval and product provenance",
+      "sha256": "12052f2053ca09751cd8dc39feb8e72be8eb49010d8791a7a98ef09eb266bc97"
+    },
+    "docs/v2/D0062_G1_APPROVAL_AND_G2_AUTHORIZATION.md": {
+      "role": "user approval and Gate-2 authorization",
+      "sha256": "008fca8bb8ced697f9bf3fc8ba22fa0eeedfdec9b16199ec011dfec0e2df9f36"
+    },
+    "docs/v2/D0063_G2_PRE_RESULT_HYDROCLIMATE_RULES.md": {
+      "role": "prospectively frozen Gate-2 definitions",
+      "sha256": "6a029e0926ed90dc92d59b17fc91eb6cbc160506e78ccad28459f684cb2004f8"
+    },
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/checks.json": {
+      "role": "approved Gate-1 checks and sealed state",
+      "sha256": "6f43807152d0e626dc49a689899307f135f4acf4a82536787a1c28021812f024"
+    },
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/observation_ledger.csv": {
+      "role": "approved Gate-1 physical observation ledger and local-solar dates",
+      "sha256": "6b6931cd06b18a5bfa66ee01e78df2c6d2aad1db1b4eecd7d4ba86ae3ecfbc79"
+    },
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/pass_quality_219.csv": {
+      "role": "approved Gate-1 219-pass quality census",
+      "sha256": "fdde116139bd766da806664e7ce80e51c25b0b7015bfee7df84c329182f4c2f1"
+    },
+    "src/run_v2_hitl_gate2.py": {
+      "role": "Gate-2 reproducible runner",
+      "sha256": "9310524894cf1ef5b6fad6c546294488a00d0cca9d4c87f9cf7e8a6a7fc3253e"
+    },
+    "src/urban_cooling_v2/hitl_gate2_hydroclimate.py": {
+      "role": "Gate-2 implementation",
+      "sha256": "5e878d1a65e18bc5ee64f773e261c6bb6edc6310dd9123e16bfde86f531c634d"
+    }
+  },
+  "pre_result_rule": "D0063",
+  "schema_version": 1
+}

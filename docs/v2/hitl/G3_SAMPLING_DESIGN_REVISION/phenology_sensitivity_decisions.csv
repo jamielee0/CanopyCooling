@@ -1,0 +1,11 @@
+city,window_id,canopy_masked_qa_0_1_sensitivity,whole_domain_qa_0_1_primary,whole_domain_qa_0_sensitivity,primary_phenology_pass,qa0_sensitivity_pass,canopy_sensitivity_pass,phenology_sensitivity_complete,phenology_auto_eligible,phenology_status
+atlanta,jun_sep,True,True,False,True,False,True,True,False,PHENOLOGY_SENSITIVE_QA0_REVERSAL
+denver_aurora,jun_sep,True,True,True,True,True,True,True,True,STABLE_ALL_ANALYSES
+los_angeles,california_october,False,False,False,False,False,False,True,False,PRIMARY_SCREEN_FAIL
+los_angeles,jun_sep,False,False,False,False,False,False,True,False,PRIMARY_SCREEN_FAIL
+miami,jun_sep,False,False,False,False,False,False,True,False,PRIMARY_SCREEN_FAIL
+minneapolis_st_paul,jun_sep,True,True,True,True,True,True,True,True,STABLE_ALL_ANALYSES
+phoenix,jun_sep,True,False,False,False,False,True,True,False,PRIMARY_SCREEN_FAIL
+phoenix,phoenix_apr_may,True,True,False,True,False,True,True,False,PHENOLOGY_SENSITIVE_QA0_REVERSAL
+sacramento,california_october,False,False,False,False,False,False,True,False,PRIMARY_SCREEN_FAIL
+sacramento,jun_sep,False,False,False,False,False,False,True,False,PRIMARY_SCREEN_FAIL

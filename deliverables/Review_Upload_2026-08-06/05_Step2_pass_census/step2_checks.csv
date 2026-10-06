@@ -1,0 +1,7 @@
+check,pass,detail
+local solar time is computed correctly,True,3/3 cases within 5 minutes of local solar noon
+time-of-day coverage is plausible,True,"strata/city={'atlanta': 4, 'los_angeles': 4, 'miami': 4, 'minneapolis_st_paul': 4, 'phoenix': 4}; LST span/city={'atlanta': 7.93, 'los_angeles': 7.92, 'miami': 7.18, 'minneapolis_st_paul': 7.9, 'phoenix': 7.59}"
+candidate cloud census is complete,True,resolved=219; finite=219; complete=219; rule=candidate-specific D0035 exhaustive cloud independent of view
+band-mode split is correctly assigned,True,"pre-15-May-2019 invalid=0; forced-three-band invalid=0; transition rows=0, unknown=0, invalid=0, modes=[], sample=not sampled; five-band-only rows=394, unknown=0, invalid=0, modes=['full']"
+counts are internally consistent,True,detail sum=219; usable rows=219; grand total=219
+duplicate granules removed,True,duplicate city/acquisition rows=0

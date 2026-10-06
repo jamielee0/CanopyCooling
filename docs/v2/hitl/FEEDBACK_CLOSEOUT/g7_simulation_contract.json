@@ -1,0 +1,40 @@
+{
+  "all_three_profiles_identifiable": false,
+  "decision_id": "D0083",
+  "frozen_parameters": {
+    "alpha": 0.05,
+    "effect_sizes_k": [
+      0.75,
+      1.5,
+      2.25
+    ],
+    "matched_set_sd_k": 0.5,
+    "pass_sd_k": 0.8,
+    "planned_coverage_replicates": 500,
+    "planned_null_replicates": 2000,
+    "planned_power_replicates_per_effect": 1000,
+    "planned_whole_pass_bootstrap_draws": 500,
+    "primary_effect_size_k": 1.5,
+    "row_sd_k": 1.5,
+    "seed": 20260816,
+    "target_power": 0.8
+  },
+  "gate": "G7_SIMULATION_CLOSEOUT_PREFLIGHT",
+  "historical_d0056_time_simulation": {
+    "cannot_substitute_for_feedback_compliant_matched_profile": true,
+    "power_at_primary_effect": 0.11,
+    "primary_effect_size_k": 1.5,
+    "replicates": 200,
+    "residual_components_k": {
+      "matched_set_sd": 0.5,
+      "pass_sd": 0.8,
+      "row_sd": 1.5
+    },
+    "scope": "time_of_day_only_archive_available_D0047",
+    "status": "STOP_TIME_OF_DAY_ONLY_STEP3"
+  },
+  "monte_carlo_run": false,
+  "record_2026_opened": false,
+  "temperature_or_lst_opened": false,
+  "why_no_monte_carlo": "The feedback-compliant empirical structures fail before simulation: tree/reference yield is unavailable, fewer than four cities pass focused overlap, and the complete design has zero empirical AM matches. Power or MDE would be fabricated under these inputs."
+}

@@ -78,7 +78,8 @@ def write_package_index(repo: Path, package: Path, allow_pending_outputs: bool =
         ("D1a parsimonious sensitivity", "MIXED / NONBINDING", repo / "deliverables/D1a_parsimonious_sensitivity_v6_2_20260830", "Realistic VPD sensitivity"),
         ("D1a geometry reassessment", "FAIL / SUPPORTING", repo / "deliverables/D1a_geometry_recovery_reassessment_v6_2_20260901", "Recovered-geometry reassessment"),
         ("D1b connectivity", "PASS FOR PLANNING", repo / "deliverables/D1b_connectivity_v6_2_20260830", "Eight required connectivity combinations"),
-        ("D1c lead–lag", "EXPLORATORY / DEMOTED", repo / "deliverables/D1c_leadlag_v6_2_20260902", "Inherited centred-HLS feasibility count"),
+        ("D1c lead-lag reassessment", "EXPLORATORY / DEMOTED", repo / "deliverables/D1c_fmask_reassessment_v6_2_20260902", "Controlling HLS-Fmask quality-screened timing result"),
+        ("D1c inherited centered-product check", "SUPERSEDED DIAGNOSTIC", repo / "deliverables/D1c_leadlag_v6_2_20260902", "Original count-only missing-provenance result"),
         ("D1c HLS inventory", "COMPLETE", repo / "deliverables/D1c_hls_inventory_v6_2_20260902", "Fmask catalogue and selection evidence"),
         ("D1d preliminary proxy screen", "SUPERSEDED DIAGNOSTIC", repo / "deliverables/D1d_stage1_precision_v6_2_20260902", "NLCD proxy stop; not controlling"),
         ("D1d official TCC screen", "STOP / CONTROLLING", repo / "deliverables/D1d_tcc_span_screen_v6_2_20260902", "Official canopy-span eligibility result"),
@@ -120,6 +121,12 @@ The VPD branch is **inactive on hold**, not dropped. The binding full-nuisance c
 fails both cities; the nonbinding parsimonious sensitivity passes Phoenix while Los
 Angeles misses only the common-support-width floor (0.300 versus 0.500 kPa). A
 supervisor keep/drop/amend ruling is still required before the branch can activate.
+
+The lead-lag timing provenance is now repaired with exact HLS V2 dates and IDs.
+Fmask screening verifies 41 of 110 pass-window-sensor pairs, but neither city has a
+season window meeting every frozen 70% year-sensor stratum rule. The diagnostic
+therefore remains exploratory because confirmatory support fails, not because timing
+is unobservable.
 
 ## Data boundary
 

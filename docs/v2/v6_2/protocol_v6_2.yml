@@ -1,3 +1,7 @@
+# HISTORICAL SNAPSHOT: superseded for new v6.2 work on 2026-09-19.
+# Current specification: /Users/jmlee/Documents/Documents - Jamie’s Mac mini/TreeProject2/docs/v2/v6_2/protocol_v6_2.yml
+# The prior record below is preserved for historical reproduction, not active instructions.
+
 study: stable_canopy_swir_condition_v6_2
 protocol_version: "6.2"
 frozen_on: "2026-08-30T17:58:40+09:00"
@@ -437,6 +441,38 @@ free_checks:
       interpretation: official_required_canopy_product_confirms_zero_eligibility_under_frozen_span_floor
       gate_A_authorized: false
       supervisor_review: PENDING
+    post_support_sensitivity:
+      decision_id: V6.2-D021
+      recorded_on: "2026-09-03T01:44:48+09:00"
+      status: NONBINDING_POST_SUPPORT_USER_REQUESTED_SENSITIVITY
+      reason_nonbinding: canopy_span_floor_changed_after_D016_result_was_known
+      requested_minimum_canopy_span_p10_p90: 0.10
+      controlling_minimum_canopy_span_p10_p90_retained: 0.20
+      result:
+        candidate_block_passes: 13509
+        eligible_block_passes: 1368
+        eligible_share: 0.1012658228
+        unique_eligible_phoenix_blocks: 331
+        median_eligible_passes_per_eligible_block: 4
+        selected_passes_total: 5
+        by_pass_eligible_block_passes:
+          phoenix_27963: 220
+          phoenix_28024: 282
+          phoenix_28706: 311
+          phoenix_28828: 311
+          phoenix_28909: 244
+        sensitivity_ruling: WOULD_CLEAR_NONTHERMAL_ZERO_ELIGIBILITY_STOP
+      permitted_interpretation: supervisor_approved_prospective_amendment_would_allow_consideration_of_same_five_pass_sealed_stage1_pilot
+      prohibited_interpretations:
+        - gate_A_is_authorized
+        - final_thermal_slopes_are_estimable
+        - stage1_precision_or_power_passes
+        - los_angeles_support_is_established
+      thermal_values_opened: false
+      conditional_five_pass_thermal_rerun_executed: false
+      gate_A_authorized: false
+      evidence_package: deliverables/D1d_10pct_canopy_span_sensitivity_v6_2_20260903
+      supervisor_review: PENDING
   connectivity:
     decision_id: V6.2-D006
     frozen_on: "2026-08-30T23:23:36+09:00"
@@ -558,8 +594,41 @@ free_checks:
       - matched_pre_post_share_is_at_least_0_70_in_each_city_under_at_least_one_frozen_season_window
       - no_single_optical_acquisition_is_shared_by_more_than_0_25_of_candidate_thermal_passes_in_its_city_window_sensor_stratum
     fail_closed_rule: missing_source_dates_or_acquisition_identifiers_demotes_temporal_specificity_to_exploratory
+    fmask_reassessment:
+      decision_id: V6.2-D018
+      frozen_on: "2026-09-02T23:40:41+09:00"
+      status: FROZEN_BEFORE_HLS_FMASK_VALUE_ACCESS
+      purpose: replace_catalogue_timing_potential_with_quality_screened_pair_feasibility
+      inputs:
+        acquisition_ledger: deliverables/D1c_hls_inventory_v6_2_20260902/data/hls_acquisitions.json
+        candidate_pass_pairs: deliverables/D1c_hls_inventory_v6_2_20260902/data/hls_pair_rows.json
+        fmask_manifest: data/raw/v2/hls_v2/download_manifest_fmask.json
+        urban_domain: data/raw/v2/domains/census_urban_areas.geojson
+      block_grid:
+        size_m: 1000
+        city_crs: {phoenix: EPSG:32612, los_angeles: EPSG:32611}
+        inclusion_rule: block_centroid_inside_2020_Census_urban_area
+      clear_hls_cell_rule:
+        source_nodata_excluded: true
+        fmask_bits_required_zero: [1, 2, 3, 4, 5]
+        maximum_aerosol_level_bits_6_7: 2
+      usable_acquisition_block_rule:
+        minimum_clear_hls_30m_cells: 60
+        interpretation: optimistic_necessary_condition_for_later_30_tree_plus_30_background_support
+      feasible_thermal_pass_pair_rule:
+        timing_rule: inherit_V6.2-D009_without_relaxation
+        minimum_shared_usable_blocks_between_pre_and_post: 30
+        pair_tie_breaker: minimum_absolute_lag_difference_then_minimum_total_lag_then_stable_acquisition_id
+      confirmatory_ruling_rule: inherit_V6.2-D009_without_relaxation
+      prohibited_inputs: [HLS_reflectance, optical_indices, ECOSTRESS_LST, new_v6_2_coefficients]
+      fail_closed_checks:
+        - all_149_fmask_files_match_the_frozen_manifest_hashes
+        - every_selected_acquisition_has_exact_source_time_and_identifier
+        - all_56_required_strata_are_reported
+        - every_feasible_pair_meets_timing_and_shared_block_rules
+        - computational_failure_exits_nonzero
     gate_A_authorization_effect: none
-    result:
+    initial_centered_product_result:
       decision_id: V6.2-D010
       recorded_on: "2026-09-02T00:37:06+09:00"
       status: READY_FOR_D1C_REVIEW
@@ -591,6 +660,78 @@ free_checks:
       thermal_or_lst_values_opened: false
       new_v6_2_coefficients_viewed: false
       evidence_package: deliverables/D1c_leadlag_v6_2_20260902
+      gate_A_authorized: false
+      supervisor_review: PENDING
+    result:
+      decision_id: V6.2-D019
+      recorded_on: "2026-09-02T23:51:39+09:00"
+      status: READY_FOR_D1C_FMASK_REASSESSMENT_REVIEW
+      supersedes_decision: V6.2-D010
+      ruling: DEMOTE_TO_EXPLORATORY_CONFIRMATORY_SUPPORT_RULE_FAILED
+      temporal_specificity_status: exploratory
+      timing_provenance_status: REPAIRED_AND_VERIFIED
+      fmask_files_verified: 149
+      fmask_total_bytes: 161907529
+      acquisitions_with_at_least_30_usable_blocks: 77
+      candidate_pass_window_sensor_rows: 110
+      quality_screened_pairs: 41
+      quality_screened_pair_share: 0.3727272727
+      unique_selected_acquisition_ids: 57
+      failure_accounting:
+        timing_pair_found_but_shared_30_block_floor_not_met: 63
+        no_timing_valid_pair_in_downloaded_plan: 6
+      by_city:
+        phoenix:
+          quality_screened_pairs: 20
+          candidate_rows: 44
+          pooled_share: 0.4545454545
+          windows_meeting_every_nonzero_stratum_share_and_reuse_rule: 0
+          acquisition_reuse_rule_failed_strata: 0
+        los_angeles:
+          quality_screened_pairs: 21
+          candidate_rows: 66
+          pooled_share: 0.3181818182
+          windows_meeting_every_nonzero_stratum_share_and_reuse_rule: 0
+          acquisition_reuse_rule_failed_strata: 3
+      lag_summary_days:
+        pre_median: 8.157475
+        pre_p90: 13.010396
+        post_median: 8.708702
+        post_p90: 13.830848
+      download_plan_limitation: failed_rows_are_conservative_with_respect_to_un_downloaded_alternative_HLS_pairs
+      final_exposure_or_placebo_from_fmask: prohibited
+      raw_hls_reflectance_rebuild_still_required: true
+      optical_index_values_opened: false
+      thermal_or_lst_values_opened: false
+      new_v6_2_coefficients_viewed: false
+      evidence_package: deliverables/D1c_fmask_reassessment_v6_2_20260902
+      gate_A_authorized: false
+      supervisor_review: PENDING
+    post_support_sensitivity:
+      decision_id: V6.2-D020
+      recorded_on: "2026-09-03T01:27:30+09:00"
+      status: NONBINDING_POST_SUPPORT_USER_REQUESTED_SENSITIVITY
+      reason_nonbinding: minimum_share_changed_after_D019_support_result_was_known
+      requested_minimum_matched_pair_share: 0.20
+      controlling_minimum_matched_pair_share_retained: 0.70
+      unchanged_rules:
+        - one_city_window_must_pass_every_nonzero_year_sensor_stratum
+        - no_single_optical_acquisition_shared_by_more_than_0_25_of_candidate_passes_per_stratum
+        - D018_timing_Fmask_and_shared_30_block_requirements
+      result:
+        ruling: DEMOTE_TO_EXPLORATORY_CONFIRMATORY_SUPPORT_RULE_FAILED
+        controlling_D019_ruling_changed: false
+        phoenix:
+          windows_meeting_every_nonzero_stratum_share_and_reuse_rule: 0
+          provisional_primary: {nonzero_strata: 6, share_failures: 3, reuse_failures: 0}
+          sensitivity: {nonzero_strata: 14, share_failures: 6, reuse_failures: 0}
+        los_angeles:
+          windows_meeting_every_nonzero_stratum_share_and_reuse_rule: 0
+          provisional_primary: {nonzero_strata: 14, share_failures: 7, reuse_failures: 2}
+          sensitivity: {nonzero_strata: 8, share_failures: 4, reuse_failures: 1}
+        reason: every_city_window_retains_zero_share_strata_and_los_angeles_also_retains_reuse_failures
+      scope_note: D1c_lead_lag_is_separate_from_D1b_block_pass_connectivity
+      evidence_package: deliverables/D1c_20pct_sensitivity_v6_2_20260903
       gate_A_authorized: false
       supervisor_review: PENDING
 

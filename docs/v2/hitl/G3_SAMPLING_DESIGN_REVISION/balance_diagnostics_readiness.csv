@@ -1,0 +1,5 @@
+threshold_deg,candidate_primary_unique_cities_after_phenology,four_city_minimum_pass,maximum_city_share,city_share_cap_pass,normalized_shannon_entropy,histogram_diagnostics_complete,am_pm_support_diagnostics_complete,wet_dry_support_diagnostics_complete,weather_overlap_diagnostics_complete,archive_bounds_invariant,diagnostic_status
+10,2,False,,False,,False,False,False,False,True,NOT_COMPUTABLE_UPSTREAM_FOUR_CITY_PHENOLOGY_FAILURE
+15,2,False,,False,,False,False,False,False,True,NOT_COMPUTABLE_UPSTREAM_FOUR_CITY_PHENOLOGY_FAILURE
+20,2,False,,False,,False,False,False,False,True,NOT_COMPUTABLE_UPSTREAM_FOUR_CITY_PHENOLOGY_FAILURE
+25,2,False,,False,,False,False,False,False,True,NOT_COMPUTABLE_UPSTREAM_FOUR_CITY_PHENOLOGY_FAILURE

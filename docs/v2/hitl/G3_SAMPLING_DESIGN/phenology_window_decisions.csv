@@ -1,0 +1,11 @@
+city,window_id,months,months_complete,all_months_stable_leaf_on,minimum_years_available,minimum_median_fraction_of_peak,minimum_q1_fraction_of_peak,jun_sep_retained_as_sensitivity
+phoenix,jun_sep,"6,7,8,9",True,False,8,0.8894528146454114,0.8697082899600546,True
+los_angeles,jun_sep,"6,7,8,9",True,False,8,0.858153887266813,0.8440047523011677,True
+atlanta,jun_sep,"6,7,8,9",True,True,8,0.9374005600782844,0.9321521883633334,True
+minneapolis_st_paul,jun_sep,"6,7,8,9",True,True,8,0.9092117921213224,0.8821224711447105,True
+miami,jun_sep,"6,7,8,9",False,False,1,0.9407433837349997,0.9407433837349997,True
+denver_aurora,jun_sep,"6,7,8,9",True,True,8,0.9322401470170273,0.9095531946329581,True
+sacramento,jun_sep,"6,7,8,9",True,False,8,0.7585765585715427,0.7442115832496214,True
+phoenix,phoenix_apr_may,"4,5",True,True,8,0.9010270924900513,0.8573585524019864,False
+los_angeles,california_october,10,True,False,8,0.8537487565393276,0.8438165950299429,False
+sacramento,california_october,10,True,False,8,0.7832162442826911,0.7552933764054542,False

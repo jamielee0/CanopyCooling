@@ -1,0 +1,111 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check_id": "G6-C01",
+      "evidence": "4d369a5337a20b2969d4c1ccabb528c56fae9eb19061c72513d301658dc79333",
+      "name": "feedback_document_hash",
+      "passed": true
+    },
+    {
+      "check_id": "G6-C02",
+      "evidence": {
+        "early_late_stratum_eligible_10_12_or_16_18_prior_to_matching": 102,
+        "geometry_pass_p95_le_20_and_coverage_ge_0_95": 219,
+        "physical_city_orbit_observations": 2968
+      },
+      "name": "core_attrition_counts",
+      "passed": true
+    },
+    {
+      "check_id": "G6-C03",
+      "evidence": {
+        "ledger_rows": 2968,
+        "unique_observations": 2968
+      },
+      "name": "physical_observation_identity_and_deduplication",
+      "passed": true
+    },
+    {
+      "check_id": "G6-C04",
+      "evidence": {
+        "links": 438,
+        "passes": 219,
+        "unique_assets": 413
+      },
+      "name": "weather_438_links_413_assets_219_passes",
+      "passed": true
+    },
+    {
+      "check_id": "G6-C05",
+      "evidence": {
+        "dewpoint_k": 293.15,
+        "temperature_k": 303.15,
+        "vpd_kpa": 1.9047837878315672
+      },
+      "name": "vpd_known_answer_kelvin_to_kpa",
+      "passed": true
+    },
+    {
+      "check_id": "G6-C06",
+      "evidence": {
+        "expected_apparent_zenith_deg": 50.11162,
+        "expected_azimuth_deg": 194.34024,
+        "observed_apparent_zenith_deg": 50.11162202403697,
+        "observed_azimuth_deg": 194.34024051024002,
+        "source": "https://www.nrel.gov/docs/fy08osti/34302.pdf"
+      },
+      "name": "nrel_spa_published_position",
+      "passed": true
+    },
+    {
+      "check_id": "G6-C07",
+      "evidence": {
+        "audit_violations": 0,
+        "known_answer_focal_date": "2020-07-15",
+        "known_answer_window_end": "2020-07-14",
+        "pass_rows": 219
+      },
+      "name": "prior_day_windows_exclude_observation_day",
+      "passed": true
+    },
+    {
+      "check_id": "G6-C08",
+      "evidence": {
+        "empirical_passes": 219,
+        "known_answer": {
+          "clear": 1,
+          "cloud": 1,
+          "fill_or_missing": 2
+        }
+      },
+      "name": "cloud_mask_fill_semantics_and_empirical_partitions",
+      "passed": true
+    },
+    {
+      "check_id": "G6-C09",
+      "evidence": {
+        "definition": "precipitation_mm_minus_reference_evapotranspiration_mm",
+        "maximum_june_median_mm": -227.156912564452,
+        "phoenix_years": 8,
+        "unit": "mm"
+      },
+      "name": "precipitation_et0_balance_units_and_sign",
+      "passed": true
+    },
+    {
+      "check_id": "G6-C10",
+      "evidence": {
+        "new_unavailable_count": 12,
+        "verified_geometry_rows": 734
+      },
+      "name": "g3_geometry_weather_support_cleanroom",
+      "passed": true
+    }
+  ],
+  "gate": "G6_INDEPENDENT_CLOSEOUT_VERIFICATION",
+  "holdout_opened": false,
+  "record_2026_opened": false,
+  "script_imports_existing_v2_modules": false,
+  "temperature_or_lst_opened": false
+}

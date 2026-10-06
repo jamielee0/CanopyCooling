@@ -17,6 +17,12 @@ fails both cities; the nonbinding parsimonious sensitivity passes Phoenix while 
 Angeles misses only the common-support-width floor (0.300 versus 0.500 kPa). A
 supervisor keep/drop/amend ruling is still required before the branch can activate.
 
+The lead-lag timing provenance is now repaired with exact HLS V2 dates and IDs.
+Fmask screening verifies 41 of 110 pass-window-sensor pairs, but neither city has a
+season window meeting every frozen 70% year-sensor stratum rule. The diagnostic
+therefore remains exploratory because confirmatory support fails, not because timing
+is unobservable.
+
 ## Data boundary
 
 The verified inventory contains 149 HLS Fmask files, 14 Science TCC files, and two

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "gate": "G0",
+  "gate_name": "freeze_and_outcome_blind_amendment",
+  "prepared_at": "2026-08-12T23:53:59+09:00",
+  "gate_status": "APPROVED",
+  "technical_checks_pass": true,
+  "approval_received": true,
+  "approval_at": "2026-08-13T00:08:56+09:00",
+  "approval_record": "D0059",
+  "next_gate_authorized": true,
+  "next_gate": "G1",
+  "source_feedback": {
+    "path": "/Users/jmlee/Downloads/Urban_Tree_Cooling_feedbackdocx.docx",
+    "sha256": "4d369a5337a20b2969d4c1ccabb528c56fae9eb19061c72513d301658dc79333",
+    "pages_reviewed": [1, 2, 3],
+    "comments_found": 0,
+    "traceability_items": 37
+  },
+  "sealed_state": {
+    "task1_interaction_status": "STOP",
+    "task1_time_of_day_status": "STOP_TIME_OF_DAY_ONLY_STEP3",
+    "task2_result_bearing_actions_enabled": false,
+    "holdout_status": "UNSELECTED",
+    "heldout_thermal_status": "UNOPENED",
+    "record_2026_status": "UNOPENED",
+    "thermal_or_lst_rasters_opened_during_gate0": 0
+  },
+  "evidence_hashes": {
+    "docs/v2/DECISION_LOG.md": "b819b2f35d0f889c5decc3608339ad77027db37db7c9908d2098fa2f6492e64a",
+    "docs/v2/D0058_TIME_OF_DAY_STEP3_STOP.md": "57ea3ae1c1e6f4a01a1b9b4519435ca46ca08081ff4d5527a1f7078942d507d2",
+    "data/processed/v2/task1/step2_definitive_l1b_geo_D0047_archive_available/step2_gate_record.json": "03ab2b9bd4da11400222b354197e3ff3f5f2be4c45170ffc1f2f4f27e0698c40",
+    "data/processed/v2/task1/step3_time_of_day_only_D0056/step3_time_of_day_gate.json": "098e1a403a89de265b44d3e679d659731d84ea775ee124d046cb0c67fd6101dd",
+    "configs/v2_task2.toml": "735801bd16dfb9cd3593a7ee913bf3bc0cf71c1d4a15553f6fcecaa6eee058ea",
+    "configs/v2_task2_time_of_day.toml_after_gate0_safety_correction": "785b38ff10da76bb8cd1d2f264b71936e25672474baac99215785cc0a4665478"
+  },
+  "checks": [
+    {
+      "check_id": "G0-C01",
+      "name": "preserved_r0015_stop",
+      "status": "PASS",
+      "evidence": "R0015 step2 gate status=STOP; lst_opened=false; thermal_opened=false; holdout_status=UNSELECTED; record_2026_opened=false."
+    },
+    {
+      "check_id": "G0-C02",
+      "name": "preserved_r0016_stop",
+      "status": "PASS",
+      "evidence": "R0016 status=STOP_TIME_OF_DAY_ONLY_STEP3 with three recorded failed checks; lst_opened=false; thermal_opened=false; holdout_status=UNSELECTED; record_2026_opened=false."
+    },
+    {
+      "check_id": "G0-C03",
+      "name": "no_branch_specific_task1_pass",
+      "status": "PASS",
+      "evidence": "data/processed/v2/task1/TASK1_GATE_TIME_OF_DAY_ONLY.json does not exist."
+    },
+    {
+      "check_id": "G0-C04",
+      "name": "task2_configs_fail_closed",
+      "status": "PASS",
+      "evidence": "Generic Task 2 and time-of-day Task 2 both set result_bearing_actions_enabled=false; time-of-day activation_status=BLOCKED_D0058_STEP3_STOP."
+    },
+    {
+      "check_id": "G0-C05",
+      "name": "holdout_unselected_and_2026_unopened",
+      "status": "PASS",
+      "evidence": "Controlling R0015/R0016 gate records and active Task-2 configs record holdout UNSELECTED and 2026 UNOPENED."
+    },
+    {
+      "check_id": "G0-C06",
+      "name": "repository_filename_audit_found_no_empirical_temperature_layer",
+      "status": "PASS_WITH_SCOPE_NOTE",
+      "evidence": "No v2 raw/interim/processed filename matched an LST, LST_err, temperature, or thermal value-layer token; existing LSTE-named JSON/view/cloud files are metadata or quality assets. No raster was opened to perform this check."
+    },
+    {
+      "check_id": "G0-C07",
+      "name": "repository_filename_audit_found_no_2026_observation",
+      "status": "PASS_WITH_SCOPE_NOTE",
+      "evidence": "No dated 2026 v2 data artifact was found by filename inventory. This is a workspace audit, not a forensic claim about external systems."
+    },
+    {
+      "check_id": "G0-C08",
+      "name": "synthetic_outputs_quarantined",
+      "status": "PASS",
+      "evidence": "Existing synthetic packages are below data/processed/v2/illustrative_only and figures/v2/illustrative_only; their canonical_gate_status.json files mark scientific_gate_eligible=false, task2_activated=false, thermal_opened=false, and holdout_status=UNSELECTED."
+    },
+    {
+      "check_id": "G0-C09",
+      "name": "amendment_is_proposed_not_active",
+      "status": "PASS",
+      "evidence": "Amendment status is PROPOSED_AWAITING_USER_APPROVAL; the append-only decision log has not been modified and G1 is not authorized."
+    },
+    {
+      "check_id": "G0-C10",
+      "name": "all_feedback_points_assigned",
+      "status": "PASS",
+      "evidence": "feedback_traceability.csv maps 37 substantive feedback points from pages 1-3 to Gates G0-G8 and a planned evidence artifact."
+    }
+  ],
+  "user_action_required": "NONE_G0_APPROVED_G1_AUTHORIZED"
+}

@@ -68,10 +68,16 @@
       "purpose": "Eight required connectivity combinations"
     },
     {
-      "item": "D1c lead\u2013lag",
+      "item": "D1c lead-lag reassessment",
       "status": "EXPLORATORY / DEMOTED",
+      "path": "deliverables/D1c_fmask_reassessment_v6_2_20260902",
+      "purpose": "Controlling HLS-Fmask quality-screened timing result"
+    },
+    {
+      "item": "D1c inherited centered-product check",
+      "status": "SUPERSEDED DIAGNOSTIC",
       "path": "deliverables/D1c_leadlag_v6_2_20260902",
-      "purpose": "Inherited centred-HLS feasibility count"
+      "purpose": "Original count-only missing-provenance result"
     },
     {
       "item": "D1c HLS inventory",

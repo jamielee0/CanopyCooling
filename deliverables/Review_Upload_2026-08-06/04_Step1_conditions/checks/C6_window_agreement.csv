@@ -1,0 +1,6 @@
+city,subset,corner_count_30d,valid_days_30d,corner_share_30d,corner_count_60d,valid_days_60d,corner_share_60d,qualitative_same
+atlanta,clear_sky,13,133,0.09774436090225563,15,133,0.11278195488721804,False
+los_angeles,clear_sky,82,659,0.1244309559939302,85,659,0.12898330804248861,True
+miami,clear_sky,4,68,0.058823529411764705,14,68,0.20588235294117646,False
+minneapolis_st_paul,clear_sky,36,263,0.13688212927756654,19,263,0.07224334600760456,False
+phoenix,clear_sky,43,697,0.06169296987087518,57,697,0.08177905308464849,True

@@ -11,13 +11,12 @@ from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
-from reportlab.platypus import KeepTogether, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 
 NAVY = colors.HexColor("#17324D")
 TEAL = colors.HexColor("#0E7490")
 PALE_BLUE = colors.HexColor("#EAF4F8")
-PALE_GREEN = colors.HexColor("#E8F5E9")
 PALE_AMBER = colors.HexColor("#FFF4D6")
 PALE_RED = colors.HexColor("#FDECEC")
 SLATE = colors.HexColor("#334155")
@@ -28,70 +27,62 @@ def build(output: Path) -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     styles = getSampleStyleSheet()
     title = ParagraphStyle(
-        "Title",
+        "TitleV62",
         parent=styles["Title"],
         fontName="Helvetica-Bold",
-        fontSize=19,
-        leading=22,
+        fontSize=18.5,
+        leading=21,
         textColor=NAVY,
         alignment=TA_LEFT,
-        spaceAfter=4,
+        spaceAfter=3,
     )
     deck = ParagraphStyle(
-        "Deck",
+        "DeckV62",
         parent=styles["BodyText"],
-        fontSize=8.4,
-        leading=10.2,
+        fontSize=7.6,
+        leading=9.2,
         textColor=SLATE,
-        spaceAfter=6,
+        spaceAfter=5,
     )
-    callout = ParagraphStyle(
-        "Callout",
+    decision = ParagraphStyle(
+        "DecisionV62",
         parent=styles["BodyText"],
         fontName="Helvetica-Bold",
-        fontSize=10.5,
-        leading=13,
+        fontSize=9.2,
+        leading=11.3,
         textColor=colors.HexColor("#7F1D1D"),
         spaceAfter=0,
     )
     section = ParagraphStyle(
-        "Section",
+        "SectionV62",
         parent=styles["Heading2"],
         fontName="Helvetica-Bold",
-        fontSize=10.5,
-        leading=12,
+        fontSize=10.1,
+        leading=11.7,
         textColor=NAVY,
-        spaceBefore=5,
-        spaceAfter=3,
+        backColor=PALE_BLUE,
+        borderColor=LINE,
+        borderWidth=0.45,
+        borderPadding=(3, 4, 3, 4),
+        spaceBefore=3,
+        spaceAfter=4,
     )
     body = ParagraphStyle(
-        "Body",
+        "BodyV62",
         parent=styles["BodyText"],
         fontName="Helvetica",
-        fontSize=7.7,
-        leading=9.45,
+        fontSize=7.15,
+        leading=8.75,
         textColor=colors.black,
-        spaceAfter=2,
+        spaceAfter=3,
     )
     small = ParagraphStyle(
-        "Small",
+        "SmallV62",
         parent=body,
-        fontSize=6.8,
-        leading=8.1,
+        fontSize=6.35,
+        leading=7.6,
         textColor=SLATE,
-    )
-    cell = ParagraphStyle(
-        "Cell",
-        parent=body,
-        fontSize=7.1,
-        leading=8.5,
         spaceAfter=0,
-    )
-    cell_bold = ParagraphStyle(
-        "CellBold",
-        parent=cell,
-        fontName="Helvetica-Bold",
-        textColor=NAVY,
     )
 
     doc = SimpleDocTemplate(
@@ -99,79 +90,128 @@ def build(output: Path) -> None:
         pagesize=letter,
         leftMargin=0.42 * inch,
         rightMargin=0.42 * inch,
-        topMargin=0.34 * inch,
-        bottomMargin=0.32 * inch,
+        topMargin=0.32 * inch,
+        bottomMargin=0.30 * inch,
         title="Urban Tree Cooling v6.2 Pre-Gate A Decision Summary",
         author="Urban Tree Cooling Project",
+        subject="Expanded six-part pre-Gate A status and decision page",
     )
 
     story = [
-        Paragraph("Urban Tree Cooling v6.2 — Pre-Gate A Decision Summary", title),
+        Paragraph("Urban Tree Cooling v6.2 - Pre-Gate A Decision Summary", title),
         Paragraph(
-            "Prepared 2 September 2026 · Outcome-blind free checks and nonthermal acquisition closeout · No new coefficient viewed",
+            "Updated 3 September 2026 | Outcome-blind free checks and nonthermal acquisition closeout | No new v6.2 coefficient viewed",
             deck,
         ),
     ]
 
-    gate_box = Table(
-        [[Paragraph("CURRENT RECOMMENDATION", cell_bold), Paragraph(
-            "DO NOT BEGIN GATE A UNDER THE CURRENT FROZEN DESIGN. The required canopy contrast was absent in all five tested passes; supervisor review is needed to stop, reframe, or prospectively amend the design.",
-            callout,
+    decision_box = Table(
+        [[Paragraph(
+            "DECISION POSTURE: Do not begin Gate A under the current frozen design. Keep the optional atmospheric-demand branch inactive and on hold pending a supervisor ruling.",
+            decision,
         )]],
-        colWidths=[1.38 * inch, 5.86 * inch],
+        colWidths=[7.24 * inch],
         hAlign="LEFT",
     )
-    gate_box.setStyle(TableStyle([
+    decision_box.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, -1), PALE_RED),
-        ("BOX", (0, 0), (-1, -1), 1.1, colors.HexColor("#B91C1C")),
-        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("BOX", (0, 0), (-1, -1), 0.9, colors.HexColor("#B91C1C")),
         ("LEFTPADDING", (0, 0), (-1, -1), 7),
         ("RIGHTPADDING", (0, 0), (-1, -1), 7),
-        ("TOPPADDING", (0, 0), (-1, -1), 6),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
+        ("TOPPADDING", (0, 0), (-1, -1), 5),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
     ]))
-    story += [gate_box, Spacer(1, 5)]
-
-    status_data = [
-        [Paragraph("Workstream", cell_bold), Paragraph("Current status", cell_bold), Paragraph("Evidence and implication", cell_bold)],
-        [Paragraph("Foundation / catalogue", cell_bold), Paragraph("PASS", cell), Paragraph("Independent audit passes 31/31 required checks; 69 packet checksums and 12 input hashes match; offline reproduction passes.", cell)],
-        [Paragraph("Connectivity", cell_bold), Paragraph("PASS FOR PLANNING", cell), Paragraph("All eight city × season × view-set combinations reported. The 15° inherited historical incidence proxy supports planning, but it is not the v6.2 sample and does not authorize Gate A.", cell)],
-        [Paragraph("Lead–lag", cell_bold), Paragraph("EXPLORATORY / DEMOTED", cell), Paragraph("Feasibility count used only the inherited centred HLS product. It lacks the provenance needed to serve as the final exposure and must be rebuilt if retained.", cell)],
-        [Paragraph("VPD branch", cell_bold), Paragraph("INACTIVE HOLD", cell), Paragraph("Strict D003 fails both cities. Nonbinding D005 passes Phoenix; Los Angeles fails only common-support width (0.300 versus frozen 0.500 kPa). No final keep/drop ruling is claimed; supervisor direction is required before activation.", cell)],
-        [Paragraph("Stage 1", cell_bold), Paragraph("STOP", cell), Paragraph("Official Science TCC screen: 0/13,509 candidate block-passes meet p10–p90 canopy span ≥0.20; median 0.06600, maximum 0.18410. The optimistic nonthermal mask cannot hide an eligible thermal-complete block-pass, so no thermal rerun occurred.", cell)],
-    ]
-    status = Table(status_data, colWidths=[1.35 * inch, 1.22 * inch, 4.67 * inch], repeatRows=1)
-    status.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, 0), TEAL),
-        ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
-        ("BACKGROUND", (1, 1), (1, 2), PALE_GREEN),
-        ("BACKGROUND", (1, 3), (1, 4), PALE_AMBER),
-        ("BACKGROUND", (1, 5), (1, 5), PALE_RED),
-        ("GRID", (0, 0), (-1, -1), 0.45, LINE),
-        ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("LEFTPADDING", (0, 0), (-1, -1), 4),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 4),
-        ("TOPPADDING", (0, 0), (-1, -1), 3),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
-    ]))
-    story += [status]
+    story.extend([decision_box, Spacer(1, 3)])
 
     left = [
-        Paragraph("Verified inputs", section),
-        Paragraph("<b>165 files · 800,091,676 bytes.</b> HLS Fmask: 149 files / 161,907,529 bytes. Science TCC: 14 files / 211,808,618 bytes. 3DEP: 2 files / 426,375,529 bytes. Every file has a local SHA-256; all 16 Drive outputs also match Google MD5 metadata.", body),
-        Paragraph("The Science TCC files cover Phoenix and Los Angeles for 2019–2025 and contain canopy cover and standard error. The 3DEP Earth Engine snapshot ends 4 May 2022.", body),
-        Paragraph("Remaining data", section),
-        Paragraph("HLS reflectance is deferred to Gate A. ECOSTRESS Collection 3 remains catalogue-only/incomplete. Precipitation is not acquired. HRRR/weather, L1B geometry, land-use and other context are partial or inherited and must be frozen for the final sample if Gate A is later authorized.", body),
+        Paragraph("What passed", section),
+        Paragraph(
+            "<b>Foundation and catalogue.</b> The independent Collection 3 audit passed all 31 required checks. Offline reproduction succeeded; all 69 evidence-packet checksums and 12 input hashes matched. Historical counts remain provenance only, not the new study sample.",
+            body,
+        ),
+        Paragraph(
+            "<b>Connectivity for planning.</b> All eight Phoenix/Los Angeles combinations of two season windows and 15/25 degree view sets were reported, including block-pass coverage, component share, sectors and land-use dominance. This supports planning, subject to the historical-proxy limitations below.",
+            body,
+        ),
+        Paragraph(
+            "<b>Data verification.</b> The inventory contains 149 HLS Fmask, 14 official Science TCC and two 3DEP files: 165 files and 800,091,676 bytes. Every file has a local SHA-256; the 16 Drive TCC/3DEP files also match Google MD5 metadata.",
+            body,
+        ),
+        Paragraph(
+            "<b>Checks executed correctly.</b> The official TCC screen and Fmask lead-lag reassessment completed without opening HLS reflectance, ECOSTRESS LST or new coefficients. Exact HLS dates and acquisition IDs are now verified, and 41 distinct cloud-screened pre/post pairs were found.",
+            body,
+        ),
+        Paragraph("What remains unresolved", section),
+        Paragraph(
+            "<b>Design choice.</b> The supervisor must choose whether to stop, reframe the estimand, or approve a prospective design amendment after the canopy-span failure. The observed result cannot be used to relax the threshold retroactively.",
+            body,
+        ),
+        Paragraph(
+            "<b>Deferred inputs.</b> Full HLS reflectance, ECOSTRESS Collection 3 thermal products and precipitation are not yet acquired for the final analysis. HRRR/weather, L1B geometry, land use and other context are partial or inherited and must be frozen against the final sample if work restarts.",
+            body,
+        ),
+        Paragraph(
+            "<b>Supervisor confirmations.</b> A keep/drop/amend ruling is still needed for atmospheric demand, and the single email reference to v6.1 should be confirmed as a typo; v6.2 remains controlling because the guide, proposal, schedule and branch conventions all specify v6.2.",
+            body,
+        ),
+        Paragraph("Whether the optional atmospheric-demand branch should remain", section),
+        Paragraph(
+            "<b>Recommendation: retain only as an inactive, documented option.</b> It should not enter a confirmatory model now. The binding full-nuisance test fails both cities. A less restrictive sensitivity passes Phoenix, while Los Angeles misses the common-support-width floor (0.300 versus 0.500 kPa). This mixed evidence supports supervisor review, not activation.",
+            body,
+        ),
+        Paragraph(
+            "If the supervisor wants to retain the scientific question, the revised nuisance design and keep/drop rule must be approved and frozen prospectively before any new coefficient is viewed. Otherwise, follow the binding rule and drop both VPD interactions together.",
+            body,
+        ),
     ]
+
     right = [
-        Paragraph("What must happen next", section),
-        Paragraph("1. Supervisor chooses <b>stop, reframe, or prospective amendment</b> for the canopy-span failure. Threshold relaxation after seeing this result is prohibited.", body),
-        Paragraph("2. Supervisor gives a definite VPD keep/drop/amend ruling. Until then the branch stays inactive and no VPD interaction may enter a model.", body),
-        Paragraph("3. If a revised design is authorized, freeze the revision before opening any new coefficient or acquiring Gate A-only exposure data.", body),
-        Paragraph("Governance / deviations", section),
-        Paragraph("The earlier Stage 1 run used NLCD only as a prohibited-proxy diagnostic; the official TCC screen now supplies the controlling result. Lead–lag remains exploratory. Connectivity remains a Collection 2 historical proxy. The user directed VPD to remain on hold, so the professor’s requested final keep/drop ruling is unresolved. No thermal or HLS reflectance values were opened for acquisition or the TCC screen.", body),
+        Paragraph("What failed", section),
+        Paragraph(
+            "<b>Stage 1 canopy support - controlling failure.</b> Across the five preselected passes, zero of 13,509 candidate block-passes met the frozen Science TCC p10-p90 canopy-span floor of 0.20. The median span was 0.06600 and the maximum was 0.18410. Because this was an optimistic nonthermal screen, adding thermal-complete masking cannot create an eligible block-pass; the conditional thermal Stage 1 rerun was therefore not performed.",
+            body,
+        ),
+        Paragraph(
+            "<b>Lead-lag confirmatory support.</b> Fmask screening verified 41 of 110 candidate pass-window-sensor pairs (37.3%): Phoenix 20/44 and Los Angeles 21/66. Sixty-three candidates had timing-valid images but fewer than 30 shared cloud-free blocks, and six lacked a timing-valid pair in the downloaded plan. Neither city had a season window reaching the frozen 70% requirement in every applicable year-sensor stratum; Los Angeles also failed acquisition reuse in three strata. Lead-lag remains exploratory.",
+            body,
+        ),
+        Paragraph(
+            "<b>Atmospheric-demand binding test.</b> The predeclared strict VPD support rule fails both cities after the full temperature, vapour-pressure, time, season and viewing-geometry adjustment. The later parsimonious analysis is explicitly nonbinding and does not reverse that result.",
+            body,
+        ),
+        Paragraph("Whether Gate A should begin", section),
+        Paragraph(
+            "<b>No - not under the current frozen design.</b> Foundation and connectivity readiness do not overcome the absence of an estimable canopy contrast. With zero eligible block-passes under the required official canopy product, the planned within-block canopy-LST slope cannot enter the requested Stage 1 precision census.",
+            body,
+        ),
+        Paragraph(
+            "Gate A can be reconsidered only after supervisor review produces either a defensible reframing or a prospectively frozen amendment. That decision must be logged before acquiring or opening Gate A-only reflectance and thermal outcome data, and the amended design must rerun the affected free checks.",
+            body,
+        ),
+        Paragraph("Any deviations from the Working Guide", section),
+        Paragraph(
+            "<b>Version discrepancy.</b> One email reference says v6.1; all controlling attachments and repository conventions say v6.2, which is being used pending correction.",
+            body,
+        ),
+        Paragraph(
+            "<b>Historical proxies.</b> Connectivity uses inherited Collection 2 incidence rather than a selected Collection 3 v6.2 sample. The first Stage 1 diagnostic used modified NLCD canopy, Collection 2 thermal data, LSTE height and other inherited context proxies; it is superseded and is not the controlling scientific result.",
+            body,
+        ),
+        Paragraph(
+            "<b>Lead-lag scope.</b> The reassessment uses Fmask from 149 catalogue-selected acquisitions for feasibility only. It does not construct the Working Guide's final one-sided antecedent exposure or future placebo from raw HLS reflectance, and un-downloaded alternative HLS acquisitions could improve failed rows.",
+            body,
+        ),
+        Paragraph(
+            "<b>Pending rather than final VPD ruling.</b> The Working Guide requests a definite keep/drop decision. At the user's direction, the branch is currently held inactive pending supervisor review; this is explicitly disclosed and no interaction may be fitted meanwhile.",
+            body,
+        ),
+        Paragraph(
+            "No frozen scientific threshold was silently relaxed. Prior-protocol and synthetic outputs remain archived or isolated, and no new thermal value, reflectance value or coefficient was opened for these free checks.",
+            body,
+        ),
     ]
-    columns = Table([[left, right]], colWidths=[3.60 * inch, 3.64 * inch], hAlign="LEFT")
+
+    columns = Table([[left, right]], colWidths=[3.59 * inch, 3.65 * inch], hAlign="LEFT")
     columns.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (0, 0), 0),
@@ -180,24 +220,24 @@ def build(output: Path) -> None:
         ("RIGHTPADDING", (1, 0), (1, 0), 0),
         ("LINEBEFORE", (1, 0), (1, 0), 0.6, LINE),
     ]))
-    story += [columns, Spacer(1, 3)]
+    story.extend([columns, Spacer(1, 3)])
 
     footer = Table(
         [[Paragraph(
-            "Decision basis: protocol v6.2, decisions V6.2-D003/D005/D006–D016, independent foundation audit, D1a–D1d packages, and the verified raw-asset inventory. This page is a decision aid, not supervisor approval.",
+            "Decision basis: protocol v6.2; decisions V6.2-D003/D005/D006-D019; independent foundation audit; D1a-D1d evidence packages; and the verified raw-asset inventory. This is a decision aid, not supervisor approval.",
             small,
         )]],
         colWidths=[7.24 * inch],
     )
     footer.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, -1), PALE_BLUE),
+        ("BACKGROUND", (0, 0), (-1, -1), PALE_AMBER),
         ("BOX", (0, 0), (-1, -1), 0.45, LINE),
         ("LEFTPADDING", (0, 0), (-1, -1), 5),
         ("RIGHTPADDING", (0, 0), (-1, -1), 5),
-        ("TOPPADDING", (0, 0), (-1, -1), 4),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+        ("TOPPADDING", (0, 0), (-1, -1), 3),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
     ]))
-    story.append(KeepTogether(footer))
+    story.append(footer)
     doc.build(story)
 
 

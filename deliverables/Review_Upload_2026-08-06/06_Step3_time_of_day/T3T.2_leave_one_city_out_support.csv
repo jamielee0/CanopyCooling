@@ -1,0 +1,5 @@
+excluded_city,physical_passes,expected_pass_equivalents,planning_n,effect_size_k,n_replicates,mean_estimate_k,power_at_primary_effect,power_mc_ci_low,power_mc_ci_high,target_power,statistically_supportable,scientific_gate_eligible
+atlanta,79,57.42421755160162,57,1.5,200,1.1983301498476182,0.1,0.06567044866909588,0.1494058124327174,0.8,False,True
+los_angeles,79,54.05826500543519,54,1.5,200,1.3461494244226133,0.145,0.10289350642004402,0.20048667530781522,0.8,False,True
+miami,94,66.36341549393057,66,1.5,200,1.8736827908962568,0.14,0.09866982633455634,0.1948988086570756,0.8,False,True
+minneapolis_st_paul,74,56.51165197128533,56,1.5,200,1.7100466324286023,0.1,0.06567044866909588,0.1494058124327174,0.8,False,True

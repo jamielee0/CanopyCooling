@@ -1,44 +1,73 @@
-# Canopy protocol
+# Current v6.2 location
 
-Project scaffolding for Section 0 of the protocol.
+For new v6.2 work, use the [updated protocol](</Users/jmlee/Documents/Documents - Jamie’s Mac mini/TreeProject2/docs/v2/v6_2/protocol_v6_2.yml>) and [pilot plan](</Users/jmlee/Documents/Documents - Jamie’s Mac mini/TreeProject2/docs/v2/v6_2/pilot_plan_v6_2.md>). The September meeting and follow-up replace the old block-pass estimator and gates. This repository retains prior code, evidence and data; the earlier text below is historical for v6.2. Full-city scaling is paused pending pilot review.
+
+---
+
+# Urban Canopy Thermal Thresholds — Phoenix pilot
+
+**Question.** Do urban trees show a *cooling-advantage threshold* — a level of compound
+heat–drought stress beyond which their daytime cooling benefit collapses? This repo is the
+**Phoenix pilot** that builds the full data pipeline and produces the first threshold estimate,
+as a clean, reproducible base before scaling to multiple cities.
+
+**Answer (pilot).** **No robust threshold detected** — and that is a *valid, honest* outcome,
+not a failure. Phoenix supplies fewer than 10 independent paired block groups (9 total, one
+dominant), so the threshold analysis is explicitly pilot-only. The primary two-dimensional
+demand-by-supply surface and the secondary CSI analysis do not support a defensible threshold;
+night and pooled-overpass results are sensitivity checks, not headline estimates. Full reasoning:
+[`docs/section14_results_note.md`](docs/section14_results_note.md).
+
+---
+
+## How to review this repo (start here)
+1. **[`docs/DESIGN_DECISIONS.md`](docs/DESIGN_DECISIONS.md)** — the *why* behind every
+   methodological choice, in one place (the single authoritative rationale).
+2. **[`docs/pipeline.md`](docs/pipeline.md)** — the step dependency DAG (0→16), each step's
+   command and outputs, and how to re-run.
+3. **[`src/`](src/README.md)** — the code: one module per pipeline section, each with a short
+   header pointing back to the design doc. See [`src/README.md`](src/README.md) for the file index.
+4. **Results notes** — [`docs/section11_anomaly_qc_note.md`](docs/section11_anomaly_qc_note.md)
+   (anomaly QC) and [`docs/section14_results_note.md`](docs/section14_results_note.md) (the result).
+5. **Tests** — each `src/test_section*.py` proves the risky numerics of its section on tiny
+   synthetic arrays (no data, no network). Run one with
+   `conda run -n canopy python src/test_section12_compound_stress.py`.
+
+## Method in one paragraph
+Every input layer is harmonized onto a **fixed 70 m grid** (EPSG:32612) and time-matched to the
+**66 ECOSTRESS LST overpasses** of summer 2023 (Section 9). Pixels are classified into
+**tree-dominated** and **non-tree built reference** sets, paired within block groups (Section 10).
+Atmospheric demand is the VPD anomaly (`vpd_z`); the primary water-supply measure is the
+ERA5-Land root-zone soil-moisture anomaly (`sm_z`); time-varying NDMI (`ndmi_z`) is retained as a
+vegetation-condition check. The primary RQ1 detector is the Section 15 **two-dimensional
+`vpd_z` × `sm_z` response surface**. CSI combines VPD and soil moisture as a secondary scalar
+check. The headline sample is daytime only and requires the persisted `sample_label = "primary"`
+(`n_tree_valid >= 3`); night and pooled-overpass fits are sensitivities. The pixel model uses
+within-block-group terms that contain both spatial and temporal variation, with block-group
+cluster inference. With fewer than 10 independent block groups, the project makes **no robust
+threshold claim**.
 
 ## Layout
-- `config.py` — canonical project paths + references to credential locations (no secrets).
-- `environment.yml` — conda environment `canopy` (Python 3.11). See header notes on version pins.
-- `data/` — `raw/`, `interim/`, `processed/` (all git-ignored) plus `manifest.csv` (tracked).
-- `src/` — analysis & utility code, including `check_auth.py`.
-- `notebooks/` — exploratory Jupyter notebooks.
-- `figures/` — generated figures (git-ignored).
-- `docs/` — written documentation and protocol notes.
+| Path | Contents |
+|---|---|
+| `config.py` | Project paths, the frozen Section-1 geometry, and the named §10–12 thresholds (no secrets). |
+| `src/` | One module per pipeline section + the `run_all.py` driver, utilities, and tests. |
+| `docs/` | Design rationale, the pipeline guide, and the result notes. |
+| `notebooks/` | `14_exploratory_threshold.ipynb` — the executed Section-14 deliverable. |
+| `data/` | `raw/`, `interim/`, `processed/` (all git-ignored) + the tracked `manifest.csv`. |
+| `figures/` | Generated QC/result figures (git-ignored). |
+| `environment.yml` | The conda environment `canopy` (Python 3.11). |
 
-## Getting started
-1. `conda env create -f environment.yml && conda activate canopy`
-2. Complete each service login yourself (Earthdata, Earth Engine, CDS, Census).
-3. `python src/check_auth.py` — confirm all four services read **PASS** before continuing.
-
-## Pipeline progress
-- **Section 1** — fixed domain/CRS/grid/time windows in `config.py` + `reference_grid.tif`.
-- **Section 2** — `src/section2_ecostress_lst.py`: ECOSTRESS LST acquisition + QC → `data/interim/ecostress_lst_cube`.
-- **Section 3** — `src/section3_ecostress_et_esi.py`: ECOSTRESS evapotranspiration (PT-JPL) and evaporative-stress (ESI) acquisition + QC → `data/interim/ecostress_et_cube`, `ecostress_esi_cube`, and the LST overpass link table `data/interim/overpass_links.parquet`.
-
-  > **ET / ESI are supporting evidence only.** This evapotranspiration product is
-  > built for *natural vegetation* and is **unreliable over built-up areas**. It is
-  > a mechanism check, never a primary measurement, and its later use is
-  > **restricted to high-tree-fraction pixels (Section 10)**. Product identity was
-  > confirmed on Earthdata Search: the protocol's example name `ECO_L3T_ET_PT-JPL`
-  > does not exist in Collection 2 — PT-JPL ET is the `PTJPLSMinst` layer of
-  > `ECO_L3T_JET` v002, and ESI is `ECO_L4T_ESI` v002.
-- **Section 4** — `src/section4_sentinel2_indices.py`: Sentinel-2
-  (`COPERNICUS/S2_SR_HARMONIZED`) warm-season **NDVI** and **NDMI** median
-  composites, pulled straight to local disk with `geemap.download_ee_image`
-  (geedim under the hood — tiles + stitches, **no manual Drive step**) →
-  `data/raw/sentinel2/`, then reprojected/resampled (bilinear) onto the 70 m grid
-  → `data/interim/s2_{ndvi,ndmi}_warmseason_median_2023_70m.tif`. A visual-check
-  overlay (`figures/sentinel2_ndvi_highveg_overlay.png`) confirms high-NDVI pixels
-  fall on known Phoenix parks / tree-lined areas.
-
-  > **NDMI is a 20 m product, not 10 m.** The SWIR band (B11) is native 20 m,
-  > coarser than the 10 m red/NIR bands, so NDMI is downloaded at 20 m and is
-  > never presented as a true 10 m layer. NDVI (B4, B8) is a genuine 10 m product.
-  > Both are resampled *consistently* (bilinear) onto the common 70 m grid.
-  > Requires `geedim` (added to `environment.yml`) and an Earth Engine login.
+## Setup & run
+```bash
+conda env create -f environment.yml && conda activate canopy
+python src/check_auth.py          # confirm Earthdata / Earth Engine / CDS / Census logins
+python src/run_all.py --dry-run   # print the ordered 17-step plan (runs nothing)
+```
+The download steps (2–8) need configured credentials and pull hours/GB of raw data. The
+**processing half (9–16) is network-free** and re-runs from saved interim:
+```bash
+python src/run_all.py --from 9 --skip-download
+```
+See [`docs/pipeline.md`](docs/pipeline.md) for the full driver usage, the manual touch-points, and
+the deliverable audit (`run_all.py --check-deliverables`).

@@ -1,0 +1,49 @@
+city,season_window,view_zenith_set_deg,se_summary,observed_stage1_se_K_per_10pp,reliability,criterion,attenuated_target_K_per_10pp,required_connected_block_passes,available_connected_block_passes_D1b,status
+Phoenix,provisional_primary,15,not_estimable,,0.3,detection,0.054772,,14087,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,provisional_primary,15,not_estimable,,0.3,equivalence,0.027386,,14087,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,provisional_primary,15,not_estimable,,0.5,detection,0.070711,,14087,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,provisional_primary,15,not_estimable,,0.5,equivalence,0.035355,,14087,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,provisional_primary,15,not_estimable,,0.7,detection,0.083666,,14087,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,provisional_primary,15,not_estimable,,0.7,equivalence,0.041833,,14087,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,provisional_primary,25,not_estimable,,0.3,detection,0.054772,,35062,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,provisional_primary,25,not_estimable,,0.3,equivalence,0.027386,,35062,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,provisional_primary,25,not_estimable,,0.5,detection,0.070711,,35062,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,provisional_primary,25,not_estimable,,0.5,equivalence,0.035355,,35062,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,provisional_primary,25,not_estimable,,0.7,detection,0.083666,,35062,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,provisional_primary,25,not_estimable,,0.7,equivalence,0.041833,,35062,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,15,not_estimable,,0.3,detection,0.054772,,39887,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,15,not_estimable,,0.3,equivalence,0.027386,,39887,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,15,not_estimable,,0.5,detection,0.070711,,39887,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,15,not_estimable,,0.5,equivalence,0.035355,,39887,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,15,not_estimable,,0.7,detection,0.083666,,39887,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,15,not_estimable,,0.7,equivalence,0.041833,,39887,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,25,not_estimable,,0.3,detection,0.054772,,101500,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,25,not_estimable,,0.3,equivalence,0.027386,,101500,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,25,not_estimable,,0.5,detection,0.070711,,101500,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,25,not_estimable,,0.5,equivalence,0.035355,,101500,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,25,not_estimable,,0.7,detection,0.083666,,101500,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Phoenix,sensitivity,25,not_estimable,,0.7,equivalence,0.041833,,101500,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,15,not_estimable,,0.3,detection,0.054772,,95544,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,15,not_estimable,,0.3,equivalence,0.027386,,95544,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,15,not_estimable,,0.5,detection,0.070711,,95544,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,15,not_estimable,,0.5,equivalence,0.035355,,95544,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,15,not_estimable,,0.7,detection,0.083666,,95544,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,15,not_estimable,,0.7,equivalence,0.041833,,95544,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,25,not_estimable,,0.3,detection,0.054772,,170528,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,25,not_estimable,,0.3,equivalence,0.027386,,170528,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,25,not_estimable,,0.5,detection,0.070711,,170528,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,25,not_estimable,,0.5,equivalence,0.035355,,170528,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,25,not_estimable,,0.7,detection,0.083666,,170528,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,provisional_primary,25,not_estimable,,0.7,equivalence,0.041833,,170528,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,15,not_estimable,,0.3,detection,0.054772,,24121,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,15,not_estimable,,0.3,equivalence,0.027386,,24121,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,15,not_estimable,,0.5,detection,0.070711,,24121,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,15,not_estimable,,0.5,equivalence,0.035355,,24121,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,15,not_estimable,,0.7,detection,0.083666,,24121,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,15,not_estimable,,0.7,equivalence,0.041833,,24121,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,25,not_estimable,,0.3,detection,0.054772,,52037,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,25,not_estimable,,0.3,equivalence,0.027386,,52037,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,25,not_estimable,,0.5,detection,0.070711,,52037,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,25,not_estimable,,0.5,equivalence,0.035355,,52037,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,25,not_estimable,,0.7,detection,0.083666,,52037,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN
+Los Angeles,sensitivity,25,not_estimable,,0.7,equivalence,0.041833,,52037,NOT_ESTIMABLE_NO_BLOCK_PASS_MEETS_FROZEN_CANOPY_SPAN

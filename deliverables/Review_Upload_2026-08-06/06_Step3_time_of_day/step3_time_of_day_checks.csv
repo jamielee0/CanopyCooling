@@ -1,0 +1,12 @@
+check_id,category,criterion,observed_value,n_monte_carlo,mc_ci_low,mc_ci_high,passed,required_for_gate,detail
+certified_nonthermal_inputs,eligibility,checksum-bound D0047 nonthermal inputs,1.0,,,,True,True,
+interaction_stop_preserved,scope,R0015 interaction STOP remains binding,1.0,,,,True,True,STOP_REPORTED_R0015
+primary_city_strata_observed,support,both primary strata have positive support in every city,1.0,,,,True,True,
+full_panel_primary_effect_power,power,power >= 0.800 at full-panel primary n=72,0.11,200.0,0.07377244460125303,0.1609269099730149,False,True,effect_size_k=1.5
+all_permitted_non_phoenix_holdouts_power,power,primary effect reaches target power after every permitted holdout exclusion,0.0,800.0,,,False,True,"powers={""atlanta"": 0.1, ""los_angeles"": 0.145, ""miami"": 0.14, ""minneapolis_st_paul"": 0.1}"
+large_n_bias_0p75k,coefficient_recovery,absolute mean bias <= 0.200 K,0.04231741895733476,200.0,,,True,True,large_n=800
+large_n_bias_1p5k,coefficient_recovery,absolute mean bias <= 0.200 K,0.08727631369253408,200.0,,,True,True,large_n=800
+large_n_bias_2p25k,coefficient_recovery,absolute mean bias <= 0.200 K,0.024683316722394544,200.0,,,True,True,large_n=800
+pooled_time_of_day_null_rate,false_positive_control,rate <= 0.100 and Wilson interval contains alpha=0.050,0.09,2000.0,0.07823115160665478,0.10334082716397261,False,True,
+planning_count_block_coverage,coverage,pass-block coverage >= 0.900 and interval contains 0.950,0.9833333333333333,60.0,0.9114487027240993,0.9970518402052136,True,True,
+planning_count_naive_coverage_gap,coverage,pass-block minus naive-row coverage >= 0.100,0.46666666666666656,60.0,,,True,True,block=0.983333; naive=0.516667

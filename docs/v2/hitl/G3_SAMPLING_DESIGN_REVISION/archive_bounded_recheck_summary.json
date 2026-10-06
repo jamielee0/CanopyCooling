@@ -1,0 +1,37 @@
+{
+  "artifact_hashes": {
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/archive_pass_bounded_recheck_and_bounds.csv": "f39e3673f901941bf89d27a5ff85fab7120db751f2cdcc948754c4e22ffee6db",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/archive_scene_bounded_recheck.csv": "54fba9c8e9d6f2c53f138f352e74615a9fa7f2a4ce4f144ab244edb34acae044"
+  },
+  "available_object_control": {
+    "passed": true,
+    "status": "REUSED_PASSING_CONTROL_FROM_ONE_TIME_SCENE_RECHECK",
+    "target_queries_repeated": false
+  },
+  "collection": "ECO_L1B_GEO.002",
+  "collection_concept_id": "C2076087338-LPCLOUD",
+  "decision_ids": [
+    "D0067",
+    "D0068"
+  ],
+  "finite_budget_observed": true,
+  "generated_utc": "2026-08-13T10:43:55.509520+00:00",
+  "pass_classification_counts": {
+    "RESOLVED_UNAVAILABLE": 31
+  },
+  "pass_count": 31,
+  "record_2026_queried": false,
+  "scene_classification_counts": {
+    "RESOLVED_UNAVAILABLE": 41
+  },
+  "scene_count": 41,
+  "source_correction": "D0068: no official ECO_L1B_GEO.003 collection",
+  "source_hashes": {
+    "data/processed/v2/task1/step2_l1b_identity_audit_D0038/scene_identity_resolution.csv": "d023e9d9cadd5714235500b7dcc821cf23aac1571b49342f89dd51d2c3b2c757",
+    "data/raw/v2/ecostress/l1b_geo_geometry_D0047_archive_available/l1b_geo_scene_manifest.csv": "a7f8a46bdf9530b9894127a3d95a41625fdae9fd9ba9fea5e1cc1dd87f2a8bba",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/archive_missing_31_audit.csv": "9eb8fa6a33e030594562e46abee6c69d4fc0617aae4f0fc532796dc33e4b9279"
+  },
+  "temperature_or_lst_opened": false,
+  "unresolved_error_count": 0,
+  "version_003_l1b_query_performed": false
+}

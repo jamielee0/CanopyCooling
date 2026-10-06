@@ -1,0 +1,597 @@
+{
+  "all_passed": true,
+  "counts": {
+    "legacy": {
+      "discovered": 17,
+      "failed": 0,
+      "passed": 17
+    },
+    "v2": {
+      "discovered": 41,
+      "failed": 0,
+      "passed": 41
+    }
+  },
+  "programs": [
+    {
+      "duration_seconds": 0.261,
+      "passed": true,
+      "program": "src/test_v2_config_domains.py",
+      "program_sha256": "a145afee4bfa58fa0ed5f25fdcfb2b1c93e951bc2ca57181dd6d395e06fb4b80",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 11.596,
+      "passed": true,
+      "program": "src/test_v2_d0047_downstream.py",
+      "program_sha256": "a59f72d494297d541d0cb47aafd3170cd64dd4315a6e63c6fff24592228f187c",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 4.762,
+      "passed": true,
+      "program": "src/test_v2_d0047_task1_gate.py",
+      "program_sha256": "65d43390488e4acbd85bb0932a4d668b86a31acd309df7d7a5a924a2d9465ae9",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.712,
+      "passed": true,
+      "program": "src/test_v2_hitl_gate1_reconciliation.py",
+      "program_sha256": "eb909e1b8aa2a64964edcd50e37170c1fafe270aec0e456d8197b59b010523ae",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "Gate-1 reconciliation tests passed (4 tests).",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.628,
+      "passed": true,
+      "program": "src/test_v2_hitl_gate2_hydroclimate.py",
+      "program_sha256": "e33b6a7e9e01a27db61f8839aaf5325120e56538cfc9828eb87b84eb90fd9272",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "Gate-2 hydroclimate tests passed (4 tests).",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 1.033,
+      "passed": true,
+      "program": "src/test_v2_hitl_gate3_geometry_reconstruction.py",
+      "program_sha256": "342445af658adee7c3343a14f717d1cc49cbe67fa7f5481ea643af7d6fe7bba5",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "PASS test_v2_hitl_gate3_geometry_reconstruction",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.679,
+      "passed": true,
+      "program": "src/test_v2_hitl_gate3_sampling.py",
+      "program_sha256": "bf9f559baf2db35a1c37064bd7bfed959f7cf352e7e4d672f151ba352d789bf2",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "PASS test_v2_hitl_gate3_sampling",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 2.183,
+      "passed": true,
+      "program": "src/test_v2_hitl_gate3_second_augmentation.py",
+      "program_sha256": "2311844c46bff07f8956cdd8ece1cf944828242d5ced4f11dc4150cf95137e78",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "PASS test_v2_hitl_gate3_second_augmentation (21 tests)",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.625,
+      "passed": true,
+      "program": "src/test_v2_hitl_gate3_second_revision.py",
+      "program_sha256": "af34e60e027f18c2c74886588e4d13cf16afac298403e1a4195d85d752c75b64",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "PASS test_v2_hitl_gate3_second_revision_packet",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.599,
+      "passed": true,
+      "program": "src/test_v2_hitl_gate3_second_revision_packet.py",
+      "program_sha256": "ab8f7a41a064816ed75c8f994a201c0d6aacbd2c27b3f08a6fe5286b51cc004d",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "PASS test_v2_hitl_gate3_second_revision_packet",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.141,
+      "passed": true,
+      "program": "src/test_v2_illustrative_step14_documents.py",
+      "program_sha256": "3dc715b6e86d28a53ac38ba645359a572af6bd829ae594c5b378e398ed4e3852",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 3.392,
+      "passed": true,
+      "program": "src/test_v2_illustrative_step14_figures.py",
+      "program_sha256": "7009c0fef848f9b04acbbbb56fdb0e7061dc13348b7c3b365380a4283c1a9653",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 3.369,
+      "passed": true,
+      "program": "src/test_v2_illustrative_steps02_08.py",
+      "program_sha256": "4a8f29bf89578fe5739af736a15be3207c96726b8142ace7d8df27793d4941f8",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 1.566,
+      "passed": true,
+      "program": "src/test_v2_illustrative_steps02_13.py",
+      "program_sha256": "6b79abfad132d08aa5118c167e35113cb6aa1e06bddfacb9ec11867618b91293",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 3.109,
+      "passed": true,
+      "program": "src/test_v2_illustrative_steps02_14.py",
+      "program_sha256": "6eb987a89c5fb0caa9f49b86c3d0b32bbb354d11f03d5de2227af88e9de85226",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 3.943,
+      "passed": true,
+      "program": "src/test_v2_illustrative_steps09_13.py",
+      "program_sha256": "1817e78240d4ded7a1c20ec52a2219d731afdd8928ce0817f4dc3392463b89ea",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 1.978,
+      "passed": true,
+      "program": "src/test_v2_step01_conditions.py",
+      "program_sha256": "14e8793df0dcde647c0f2ed61723c17ff754f05ce04162cbe5883e9873f61f7d",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.35,
+      "passed": true,
+      "program": "src/test_v2_step01_fetch.py",
+      "program_sha256": "b0f9b55fcd7c9f8d1ce921c4f29233dca8d67e27d5d12450543a8bb44387cc8a",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 1.083,
+      "passed": true,
+      "program": "src/test_v2_step02_archive_available.py",
+      "program_sha256": "d770f2be45c6791c27e634429cf563385ebe4495d1f2f2ee2ee4f633ef86f426",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 1.534,
+      "passed": true,
+      "program": "src/test_v2_step02_archive_available_runner.py",
+      "program_sha256": "debe14476b18ed18b5127ddb70f4486ed55201241f6210b0f38eaf738f63d075",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 2.611,
+      "passed": true,
+      "program": "src/test_v2_step02_catalog.py",
+      "program_sha256": "03bc332899dd4379360c1f9059e726b35acfa4ce69cf0628debdd65acbb11034",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "All 7 Step-2 tests passed",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.295,
+      "passed": true,
+      "program": "src/test_v2_step02_cloud.py",
+      "program_sha256": "592392bd39cae4bbd09283f09a9082bb241b457c11281ba339352b6f499c0983",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.424,
+      "passed": true,
+      "program": "src/test_v2_step02_cloud_exhaustive.py",
+      "program_sha256": "4b1aa3f1e52ba2dfadb20b815a40b76a518b105f721a25d114a7f32a47e4b246",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.85,
+      "passed": true,
+      "program": "src/test_v2_step02_d0048_no_overlap.py",
+      "program_sha256": "eb31e7cac0fb6cdf2c19a4f2647fbf1fd5d0bc002dc4bae3c678e1320e520bc7",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 1.526,
+      "passed": true,
+      "program": "src/test_v2_step02_definitive.py",
+      "program_sha256": "ff2a35c68b91564cb6930e2d01241dacc1d6fd8e598255cb6ed331715b507eab",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.343,
+      "passed": true,
+      "program": "src/test_v2_step02_enrich.py",
+      "program_sha256": "f6852432d3cf9480c5248749ac7bf24ac3f9ae5b5c3ed15c169c294254892343",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "All 7 enrichment tests passed",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.311,
+      "passed": true,
+      "program": "src/test_v2_step02_enrich_fetch.py",
+      "program_sha256": "1bfa25ba0565dab50fb35eff3fc201365969b01752f76f7005ebfdd487826186",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "All 7 enrichment-fetch tests passed",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.361,
+      "passed": true,
+      "program": "src/test_v2_step02_fetch.py",
+      "program_sha256": "97d3294c06c13b75275db38a75688e8b5b9f10398938d3f1734d1ced9abf5c40",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.882,
+      "passed": true,
+      "program": "src/test_v2_step02_hrrr_fetch.py",
+      "program_sha256": "715168032c633131c07d1188004880473b5b2060d8ae992051babc5fb1e50d34",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "All 14 HRRR-fetch tests passed",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.742,
+      "passed": true,
+      "program": "src/test_v2_step02_l1b_download_probe.py",
+      "program_sha256": "67a53dc41276fa344432b05bb5ee3573f5016c97e64b5ad30d7caa82a5690dc9",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "{\"passed\": 6, \"failed\": 0}",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.735,
+      "passed": true,
+      "program": "src/test_v2_step02_l1b_geometry.py",
+      "program_sha256": "bd9112380653f9e9c040c07bb4ed37c9258e36c8282c4859274f2499c3f7b303",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "7 D0035 L1B geometry tests passed",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.692,
+      "passed": true,
+      "program": "src/test_v2_step02_l1b_identity_audit.py",
+      "program_sha256": "f535cf5508133830e9f4fe10fb827de061937348253b67b3d16ac925b2f743a4",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "{\"passed\": 7, \"failed\": 0}",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.81,
+      "passed": true,
+      "program": "src/test_v2_step02_l1b_runner_v4.py",
+      "program_sha256": "c01871f41d004d91aea75124483fd4fbb2f7911f49b487497ce072441ff63359",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "D0035 fail-closed unresolved batch: 1 (test-city:00001:FileNotFoundError: D0035 metadata asset missing for GEO_TEST)",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.332,
+      "passed": true,
+      "program": "src/test_v2_step02_live_manifest.py",
+      "program_sha256": "627008ee9a7162ee3933a181737c3586e71ff732445c0bc501db591b1c708efc",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "PASS test_cached_query_runs_once_and_rejects_changed_query",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.359,
+      "passed": true,
+      "program": "src/test_v2_step02_raster.py",
+      "program_sha256": "9edef30423de3f7c9bd6256549f183cce26b5ae4209772e185f3525285af01ab",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "v2 Step 2 raster tests passed",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 1.19,
+      "passed": true,
+      "program": "src/test_v2_step03_definitive.py",
+      "program_sha256": "5bf670cb55f68e132bf87f2673a54cfe4c624d6288e752dba739b99e87cd0986",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 4.871,
+      "passed": true,
+      "program": "src/test_v2_step03_power.py",
+      "program_sha256": "bbf17651047636373cf5704d3d7d29bc3d865b2315fc52e181b3916b5d52d727",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 1.976,
+      "passed": true,
+      "program": "src/test_v2_step03_time_of_day_power.py",
+      "program_sha256": "794a287b2f680f608e028d83b806bde296fb8c91861427f18547ae5f0c92ce61",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.114,
+      "passed": true,
+      "program": "src/test_v2_task1_time_of_day_gate.py",
+      "program_sha256": "dd772ac33aca2b66f30c663486270eb9ccbe622ff333f3baff56df85d234dc24",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.11,
+      "passed": true,
+      "program": "src/test_v2_task2_guardrails.py",
+      "program_sha256": "52ce7ab7087294aac0051bf7bfc7e58c906400ba27b25bd448cf909102006209",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.436,
+      "passed": true,
+      "program": "src/test_v2_task2_time_of_day_guardrails.py",
+      "program_sha256": "5e49f0361333aeccd44f6d7b6f6bb1105c3b2311a8dc76469faffd767c675407",
+      "returncode": 0,
+      "stderr_last_line": "OK",
+      "stdout_last_line": "",
+      "suite": "v2"
+    },
+    {
+      "duration_seconds": 0.039,
+      "passed": true,
+      "program": "src/test_run_all.py",
+      "program_sha256": "684366c4907074f7fabf4bbeb73940f4a105417c9e167ea186384a45cec7cd73",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "run_all.py tests: 133 checks passed, 0 failed",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.358,
+      "passed": true,
+      "program": "src/test_section10_classify_pixels.py",
+      "program_sha256": "fd15e0b860df78b4194d2d7fb7bdfb73da9c9ec8cd2388f2453fd80555b6fe21",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.411,
+      "passed": true,
+      "program": "src/test_section11_anomalies.py",
+      "program_sha256": "2402c52ffca311c94934ae782d326fd94ce6c5afcb757f29507c1d8f3892343b",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 1.08,
+      "passed": true,
+      "program": "src/test_section12_compound_stress.py",
+      "program_sha256": "9b13d62ac24d75a1f26b14219f1f280f58be6a465f3d794de1aa9c774a9eea77",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.34,
+      "passed": true,
+      "program": "src/test_section13_master_table.py",
+      "program_sha256": "638bd37274d0b2841cd3d5c0d4b5a2248deefe3865cfc29cec6272c4381c80d9",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 32.146,
+      "passed": true,
+      "program": "src/test_section14_threshold.py",
+      "program_sha256": "24f5992d58a1cbe4ce121cd0b7375b4506fbe341e9c1e9c654f9904a3b0a5578",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 2.594,
+      "passed": true,
+      "program": "src/test_section14b_mixed_effects.py",
+      "program_sha256": "70c878ea473d7ccdf7c47ab560a01a269a0382b421d075e548a7f01c5c03e4d0",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.289,
+      "passed": true,
+      "program": "src/test_section15_response_surface.py",
+      "program_sha256": "e127566d1b4be3d0a658d844cc895dfe491233d2be59fad53a9d447852203f2a",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.303,
+      "passed": true,
+      "program": "src/test_section2_ecostress_lst.py",
+      "program_sha256": "f2c2770de91d2af0d97e52165f23dac5eb6e3d2cd20516f00858947e8ece2fc9",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.297,
+      "passed": true,
+      "program": "src/test_section3_ecostress_et_esi.py",
+      "program_sha256": "662065b615178d2b180176248e94590b8a76b3d5e1af7dc308a07308fbbe1e18",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.309,
+      "passed": true,
+      "program": "src/test_section4_sentinel2_indices.py",
+      "program_sha256": "45919ca357f8cebca9ed9d7d2961ddcf57673a6d1314197ad20fb72a59082596",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.314,
+      "passed": true,
+      "program": "src/test_section4b_ndmi_timeseries.py",
+      "program_sha256": "4a060154a9b2868646ddeface9be1963bf051a661ece0c51414dde4be6a937f1",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.319,
+      "passed": true,
+      "program": "src/test_section5_landcover.py",
+      "program_sha256": "6004d66a5437d832a0326e6160a8ed0c97e416a871d5ad9836c99a93e89ef58d",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.301,
+      "passed": true,
+      "program": "src/test_section6_era5land_vpd_sm.py",
+      "program_sha256": "a8c5bb47ad010927f9ef0421908307412d9010078652d4fe1311be6377d25be4",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.309,
+      "passed": true,
+      "program": "src/test_section7_precip_drought.py",
+      "program_sha256": "77b2201d49468d08dd7d0fc7d90de5d2a2c1b297caaab702b3c71eedbfed0565",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.317,
+      "passed": true,
+      "program": "src/test_section8_neighborhood_tree.py",
+      "program_sha256": "c84f3ef3f6c6c918816e4bd75eeb0a597e28c08949cb80deb5aa3c8076ef5ffc",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    },
+    {
+      "duration_seconds": 0.293,
+      "passed": true,
+      "program": "src/test_section9_harmonize.py",
+      "program_sha256": "3df22060eeeb6885f362c905a724b8133b4a5bba6eeefa3d09e50ade305fffed",
+      "returncode": 0,
+      "stderr_last_line": "",
+      "stdout_last_line": "ALL CHECKS PASSED",
+      "suite": "legacy"
+    }
+  ]
+}

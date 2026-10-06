@@ -1,0 +1,68 @@
+{
+  "decision_id": "V6.2-D021",
+  "status": "NONBINDING_POST_SUPPORT_SENSITIVITY_COMPLETE",
+  "controlling_decision_preserved": "V6.2-D016",
+  "controlling_canopy_span_floor": 0.2,
+  "sensitivity_canopy_span_floor": 0.1,
+  "canopy_span_interpretation": "p90_minus_p10_canopy_fraction_within_block_pass",
+  "result": {
+    "candidate_block_passes": 13509,
+    "eligible_block_passes": 1368,
+    "eligible_share": 0.10126582278481013,
+    "unique_eligible_blocks": 331,
+    "eligible_passes_per_eligible_block_median": 4.0,
+    "eligible_passes_per_block_distribution": {
+      "1": 19,
+      "2": 3,
+      "3": 51,
+      "4": 100,
+      "5": 158
+    },
+    "by_pass": {
+      "phoenix:27963": {
+        "candidate_block_passes": 2828,
+        "eligible_block_passes": 220,
+        "eligible_share": 0.07779349363507779
+      },
+      "phoenix:28024": {
+        "candidate_block_passes": 2684,
+        "eligible_block_passes": 282,
+        "eligible_share": 0.10506706408345752
+      },
+      "phoenix:28706": {
+        "candidate_block_passes": 2876,
+        "eligible_block_passes": 311,
+        "eligible_share": 0.10813630041724617
+      },
+      "phoenix:28828": {
+        "candidate_block_passes": 2876,
+        "eligible_block_passes": 311,
+        "eligible_share": 0.10813630041724617
+      },
+      "phoenix:28909": {
+        "candidate_block_passes": 2245,
+        "eligible_block_passes": 244,
+        "eligible_share": 0.1086859688195991
+      }
+    }
+  },
+  "sensitivity_ruling": "WOULD_CLEAR_NONTHERMAL_ZERO_ELIGIBILITY_STOP",
+  "authorized_action": "NONE_PENDING_SUPERVISOR_APPROVAL",
+  "interpretation": "A prospectively approved 0.10 rule would permit consideration of the same five-pass sealed Stage-1 pilot because the nonthermal screen is no longer empty. It does not establish final thermal estimability, precision, power, Los Angeles support, or Gate-A eligibility.",
+  "checks": {
+    "source_candidate_rows_reconcile": true,
+    "source_controlling_0_20_eligibility_zero": true,
+    "sensitivity_threshold_exactly_0_10": true,
+    "controlling_D016_not_replaced": true,
+    "thermal_or_lst_values_opened": false,
+    "new_v6_2_coefficients_viewed": false,
+    "conditional_stage1_rerun_executed": false,
+    "gate_A_authorized": false
+  },
+  "input_sha256": {
+    "deliverables/D1d_tcc_span_screen_v6_2_20260902/analysis_manifest.json": "0e8136e1be02a34fad2e8caf65fa95418bd4be592ebe1fc29b915d9886719da6"
+  },
+  "implementation_sha256": {
+    "src/run_v6_2_d1d_10pct_canopy_span_sensitivity.py": "78222634d3fb9c3a143fa1dc18cb2244e39912dcdff95053bcc79851f57bf207"
+  }
+}

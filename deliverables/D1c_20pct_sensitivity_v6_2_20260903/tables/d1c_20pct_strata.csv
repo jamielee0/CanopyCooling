@@ -1,0 +1,57 @@
+city,year,season_window,sensor,candidate_passes,quality_screened_pairs,feasible_share,minimum_share_sensitivity,share_rule,maximum_acquisition_reuse,reuse_limit,reuse_rule,stratum_rule
+Phoenix,2019,provisional_primary,HLSL30.002,2,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Phoenix,2019,provisional_primary,HLSS30.002,2,2,1.0,0.2,PASS,1,1,PASS,PASS
+Phoenix,2019,sensitivity,HLSL30.002,5,1,0.2,0.2,PASS,1,1,PASS,PASS
+Phoenix,2019,sensitivity,HLSS30.002,5,5,1.0,0.2,PASS,1,1,PASS,PASS
+Phoenix,2020,provisional_primary,HLSL30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Phoenix,2020,provisional_primary,HLSS30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Phoenix,2020,sensitivity,HLSL30.002,1,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Phoenix,2020,sensitivity,HLSS30.002,1,1,1.0,0.2,PASS,1,1,PASS,PASS
+Phoenix,2021,provisional_primary,HLSL30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Phoenix,2021,provisional_primary,HLSS30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Phoenix,2021,sensitivity,HLSL30.002,3,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Phoenix,2021,sensitivity,HLSS30.002,3,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Phoenix,2022,provisional_primary,HLSL30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Phoenix,2022,provisional_primary,HLSS30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Phoenix,2022,sensitivity,HLSL30.002,2,1,0.5,0.2,PASS,1,1,PASS,PASS
+Phoenix,2022,sensitivity,HLSS30.002,2,1,0.5,0.2,PASS,1,1,PASS,PASS
+Phoenix,2023,provisional_primary,HLSL30.002,2,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Phoenix,2023,provisional_primary,HLSS30.002,2,2,1.0,0.2,PASS,1,1,PASS,PASS
+Phoenix,2023,sensitivity,HLSL30.002,3,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Phoenix,2023,sensitivity,HLSS30.002,3,3,1.0,0.2,PASS,1,1,PASS,PASS
+Phoenix,2024,provisional_primary,HLSL30.002,1,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Phoenix,2024,provisional_primary,HLSS30.002,1,1,1.0,0.2,PASS,1,1,PASS,PASS
+Phoenix,2024,sensitivity,HLSL30.002,1,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Phoenix,2024,sensitivity,HLSS30.002,1,1,1.0,0.2,PASS,1,1,PASS,PASS
+Phoenix,2025,provisional_primary,HLSL30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Phoenix,2025,provisional_primary,HLSS30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Phoenix,2025,sensitivity,HLSL30.002,2,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Phoenix,2025,sensitivity,HLSS30.002,2,2,1.0,0.2,PASS,1,1,PASS,PASS
+Los Angeles,2019,provisional_primary,HLSL30.002,4,1,0.25,0.2,PASS,1,1,PASS,PASS
+Los Angeles,2019,provisional_primary,HLSS30.002,4,3,0.75,0.2,PASS,1,1,PASS,PASS
+Los Angeles,2019,sensitivity,HLSL30.002,2,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Los Angeles,2019,sensitivity,HLSS30.002,2,2,1.0,0.2,PASS,1,1,PASS,PASS
+Los Angeles,2020,provisional_primary,HLSL30.002,3,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Los Angeles,2020,provisional_primary,HLSS30.002,3,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Los Angeles,2020,sensitivity,HLSL30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Los Angeles,2020,sensitivity,HLSS30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Los Angeles,2021,provisional_primary,HLSL30.002,5,2,0.4,0.2,PASS,1,1,PASS,PASS
+Los Angeles,2021,provisional_primary,HLSS30.002,5,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Los Angeles,2021,sensitivity,HLSL30.002,2,1,0.5,0.2,PASS,1,1,PASS,PASS
+Los Angeles,2021,sensitivity,HLSS30.002,2,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Los Angeles,2022,provisional_primary,HLSL30.002,2,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Los Angeles,2022,provisional_primary,HLSS30.002,2,1,0.5,0.2,PASS,1,1,PASS,PASS
+Los Angeles,2022,sensitivity,HLSL30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Los Angeles,2022,sensitivity,HLSS30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Los Angeles,2023,provisional_primary,HLSL30.002,5,3,0.6,0.2,PASS,2,1,FAIL,FAIL
+Los Angeles,2023,provisional_primary,HLSS30.002,5,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Los Angeles,2023,sensitivity,HLSL30.002,2,1,0.5,0.2,PASS,1,1,PASS,PASS
+Los Angeles,2023,sensitivity,HLSS30.002,2,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Los Angeles,2024,provisional_primary,HLSL30.002,1,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Los Angeles,2024,provisional_primary,HLSS30.002,1,0,0.0,0.2,FAIL,0,1,PASS,FAIL
+Los Angeles,2024,sensitivity,HLSL30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Los Angeles,2024,sensitivity,HLSS30.002,0,0,,0.2,NOT_APPLICABLE,0,,NOT_APPLICABLE,NOT_APPLICABLE
+Los Angeles,2025,provisional_primary,HLSL30.002,5,4,0.8,0.2,PASS,2,1,FAIL,FAIL
+Los Angeles,2025,provisional_primary,HLSS30.002,5,1,0.2,0.2,PASS,1,1,PASS,PASS
+Los Angeles,2025,sensitivity,HLSL30.002,2,2,1.0,0.2,PASS,2,1,FAIL,FAIL
+Los Angeles,2025,sensitivity,HLSS30.002,2,0,0.0,0.2,FAIL,0,1,PASS,FAIL

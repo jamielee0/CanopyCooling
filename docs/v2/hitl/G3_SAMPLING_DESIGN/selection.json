@@ -1,0 +1,50 @@
+{
+  "g3a_authorized": false,
+  "gate4_authorized": false,
+  "gate_status": "REVISE_REQUIRED",
+  "primary_city_set": "UNSELECTED",
+  "primary_season_windows": "UNSELECTED",
+  "primary_view_zenith_threshold_deg": null,
+  "reason": "No candidate threshold has complete Denver/Sacramento/shoulder geometry, complete pass-level view and relative azimuth, and fully resolved observation accounting.",
+  "record_2026_queried": false,
+  "sampling_design_selected": false,
+  "temperature_or_lst_opened": false,
+  "threshold_status": {
+    "10": {
+      "all_audited_city_windows_eligible": false,
+      "audited_city_windows": 5,
+      "azimuth_complete": false,
+      "denver_geometry_available": false,
+      "eligible_city_windows": 0,
+      "sacramento_geometry_available": false,
+      "shoulder_geometry_available": false
+    },
+    "15": {
+      "all_audited_city_windows_eligible": false,
+      "audited_city_windows": 5,
+      "azimuth_complete": false,
+      "denver_geometry_available": false,
+      "eligible_city_windows": 0,
+      "sacramento_geometry_available": false,
+      "shoulder_geometry_available": false
+    },
+    "20": {
+      "all_audited_city_windows_eligible": false,
+      "audited_city_windows": 5,
+      "azimuth_complete": false,
+      "denver_geometry_available": false,
+      "eligible_city_windows": 0,
+      "sacramento_geometry_available": false,
+      "shoulder_geometry_available": false
+    },
+    "25": {
+      "all_audited_city_windows_eligible": false,
+      "audited_city_windows": 5,
+      "azimuth_complete": false,
+      "denver_geometry_available": false,
+      "eligible_city_windows": 0,
+      "sacramento_geometry_available": false,
+      "shoulder_geometry_available": false
+    }
+  }
+}
