@@ -1,0 +1,59 @@
+{
+  "authorized_by": "D0059",
+  "gate": "G1",
+  "inputs": {
+    "data/processed/v2/step1_condition_axes.csv": {
+      "role": "daily condition axes used for the missing-31 proxy",
+      "sha256": "761588b8072850d9e251785631379fad365795a051a9a5c30df34c1e9f8ce923"
+    },
+    "data/processed/v2/task1/step2_definitive_l1b_geo_D0047_archive_available/tables/step2_scene_catalogue.csv": {
+      "role": "canonical 2,968-observation nonthermal catalogue",
+      "sha256": "92419180a079e8d0482ccbe5f1a4b95d776c51033e534a2918cb3977e53af8f7"
+    },
+    "data/raw/v2/ecostress/catalogue_tiles_2018_2025.csv": {
+      "role": "raw tiled-granule metadata census",
+      "sha256": "eb9260c0a7e5ebfdc4c255eada77b1ae2c59f9433c9fef2f02d8f55ceb949bc5"
+    },
+    "data/raw/v2/weather/hrrr_exact_acquisition_l1b_geo_D0047_archive_available/hrrr_hourly_domain_summary.csv": {
+      "role": "completed city-hour weather summaries",
+      "sha256": "b36f4d16d83055922b8e8a4d80c8bb75df3237417a4f03d018a64c633c39f0d1"
+    },
+    "data/raw/v2/weather/hrrr_exact_acquisition_l1b_geo_D0047_archive_available_manifest.csv": {
+      "role": "unique HRRR hourly-asset request manifest",
+      "sha256": "9773ea5c23e0276772d68370a4d54dd6caa6dd84fea4f280b9b9eeb179c2f52d"
+    },
+    "docs/v2/D0060_G1_2026_METADATA_QUERY_DEVIATION.md": {
+      "role": "first 2026 metadata-query protocol-deviation record",
+      "sha256": "511363153539829815b887382dca72751e7a6c5c2f05c54ec67406ca2949a68f"
+    },
+    "docs/v2/D0061_G1_UNBOUNDED_CMR_PATTERN_DEVIATION.md": {
+      "role": "second unbounded-query protocol-deviation record",
+      "sha256": "a50b260f8da01c116451786e350e838c6b3b1c25e416c8d4220d79a6f0efed3d"
+    },
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/cmr_collection3_historical_summer_2020.json": {
+      "role": "raw date-bounded CMR response body for summer 2020",
+      "sha256": "af75e0d86b206f331c8491f1c22dcd4a0d8401bc5e5a7de75b4c214ef1e29ae7"
+    },
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/cmr_collection3_historical_summer_2024.json": {
+      "role": "raw date-bounded CMR response body for summer 2024",
+      "sha256": "20d8ba9fd40b8a969ffa61fab5c718e8882abb2e6c726410fde87f4955f794b6"
+    },
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/collection3_cmr_audit.json": {
+      "role": "revised metadata-only Collection 3 audit",
+      "sha256": "75bfbdba73848b38d4b4131014537b44a6ce49fad9043810bdf4a9c1e8ac94b9"
+    },
+    "src/run_v2_hitl_gate1.py": {
+      "role": "Gate-1 reproducible runner",
+      "sha256": "f7a545d4f161eb0ff971302e0cde07ffda209bcadc8dffcea3951d30a3794671"
+    },
+    "src/urban_cooling_v2/hitl_gate1_reconciliation.py": {
+      "role": "Gate-1 reconciliation implementation",
+      "sha256": "c91c5c3f169ad29ce4427d985d55cd154a9dffacab1555314a1872e5e161a967"
+    }
+  },
+  "revision_decision_ids": [
+    "D0060",
+    "D0061"
+  ],
+  "schema_version": 2
+}

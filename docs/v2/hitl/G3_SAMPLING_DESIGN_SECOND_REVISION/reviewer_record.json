@@ -1,0 +1,10 @@
+{
+  "blocking_findings": [],
+  "cleanroom_verification": "PENDING",
+  "gate": "G3_SAMPLING_DESIGN_SECOND_REVISION",
+  "packet_checks_sha256": "64626fea5885676b1e2f801252520ca2e3f279148aa137653a9b0ecbd26ce67d",
+  "packet_review_sha256": "e323a7eddc17811000be8c9b3968940c79036b40d74ba25559c1cedab7b1af2b",
+  "reviewed_utc": null,
+  "reviewer": null,
+  "status": "PENDING_INDEPENDENT_AGENT_REVIEW"
+}

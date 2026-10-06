@@ -1,0 +1,7 @@
+city,raw_domain_intersecting_tiled_products,selected_latest_revision_tiled_products,superseded_tiled_products_removed,physical_city_orbit_observations,unit_rule
+ALL_CITIES,13577,13575,2,2968,"latest revision per scene/tile, then group all adjacent scenes and tiles sharing city and orbit into one physical observation"
+atlanta,4367,4367,0,588,"latest revision per scene/tile, then group all adjacent scenes and tiles sharing city and orbit into one physical observation"
+los_angeles,2113,2113,0,601,"latest revision per scene/tile, then group all adjacent scenes and tiles sharing city and orbit into one physical observation"
+miami,763,763,0,333,"latest revision per scene/tile, then group all adjacent scenes and tiles sharing city and orbit into one physical observation"
+minneapolis_st_paul,3734,3732,2,869,"latest revision per scene/tile, then group all adjacent scenes and tiles sharing city and orbit into one physical observation"
+phoenix,2600,2600,0,577,"latest revision per scene/tile, then group all adjacent scenes and tiles sharing city and orbit into one physical observation"

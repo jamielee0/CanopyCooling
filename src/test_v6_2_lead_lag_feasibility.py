@@ -88,6 +88,52 @@ class LeadLagFeasibilityTests(unittest.TestCase):
             "DEMOTE_TO_EXPLORATORY_MISSING_SOURCE_TIMING_PROVENANCE",
         )
 
+    def test_share_threshold_can_be_varied_for_labeled_sensitivity(self):
+        rows = required_grid_rows({})
+        for city in ("Phoenix", "Los Angeles"):
+            row = next(
+                item
+                for item in rows
+                if item["city"] == city
+                and item["year"] == 2019
+                and item["season_window"] == "provisional_primary"
+                and item["sensor"] == "HLSL30.002"
+            )
+            row.update(
+                {
+                    "candidate_passes": 5,
+                    "passes_with_feasible_matched_pre_post": 1,
+                    "feasible_share": 0.20,
+                    "max_thermal_passes_sharing_one_acquisition": 1,
+                }
+            )
+        self.assertEqual(
+            confirmatory_ruling(
+                rows,
+                source_dates_available=True,
+                acquisition_identifiers_available=True,
+            ),
+            "DEMOTE_TO_EXPLORATORY_CONFIRMATORY_SUPPORT_RULE_FAILED",
+        )
+        self.assertEqual(
+            confirmatory_ruling(
+                rows,
+                source_dates_available=True,
+                acquisition_identifiers_available=True,
+                minimum_confirmatory_share=0.20,
+            ),
+            "KEEP_CONFIRMATORY",
+        )
+
+    def test_share_threshold_must_be_a_probability(self):
+        with self.assertRaises(ValueError):
+            confirmatory_ruling(
+                required_grid_rows({}),
+                source_dates_available=True,
+                acquisition_identifiers_available=True,
+                minimum_confirmatory_share=1.01,
+            )
+
     def test_runner_has_no_optical_value_or_lst_array_access(self):
         source = Path(__file__).with_name("run_v6_2_d1c_leadlag.py").read_text(encoding="utf-8")
         self.assertNotIn('ds["observed"]', source)

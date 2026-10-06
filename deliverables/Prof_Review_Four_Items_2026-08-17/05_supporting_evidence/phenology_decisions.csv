@@ -1,0 +1,11 @@
+city,window_id,canopy_masked_qa_0_1_sensitivity,whole_domain_qa_0_1_primary,whole_domain_qa_0_sensitivity,canopy_masked_qa_0_1_sensitivity_coverage_complete,whole_domain_qa_0_1_primary_coverage_complete,whole_domain_qa_0_sensitivity_coverage_complete,primary_phenology_pass,qa0_sensitivity_pass,canopy_sensitivity_pass,primary_phenology_coverage_complete,qa0_sensitivity_coverage_complete,canopy_sensitivity_coverage_complete,phenology_required_eligibility_complete,phenology_sensitivity_complete,phenology_auto_eligible,qa0_sensitivity_status,phenology_status
+atlanta,jun_sep,True,True,False,True,True,False,True,False,True,True,False,True,True,False,True,QA0_INCOMPLETE_YEAR_COVERAGE,PRIMARY_AND_CANOPY_CONFIRMED
+denver_aurora,jun_sep,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,QA0_CONFIRMS,PRIMARY_AND_CANOPY_CONFIRMED
+los_angeles,california_october,False,False,False,True,True,False,False,False,False,True,False,True,True,False,False,QA0_INCOMPLETE_YEAR_COVERAGE,PRIMARY_SCREEN_FAIL
+los_angeles,jun_sep,False,False,False,True,True,False,False,False,False,True,False,True,True,False,False,QA0_INCOMPLETE_YEAR_COVERAGE,PRIMARY_SCREEN_FAIL
+miami,jun_sep,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,QA0_INCOMPLETE_YEAR_COVERAGE,PRIMARY_SCREEN_INCOMPLETE
+minneapolis_st_paul,jun_sep,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,QA0_CONFIRMS,PRIMARY_AND_CANOPY_CONFIRMED
+phoenix,jun_sep,True,False,False,True,True,True,False,False,True,True,True,True,True,True,False,QA0_THRESHOLD_REVERSAL,PRIMARY_SCREEN_FAIL
+phoenix,phoenix_apr_may,True,True,False,True,True,True,True,False,True,True,True,True,True,True,True,QA0_THRESHOLD_REVERSAL,PRIMARY_AND_CANOPY_CONFIRMED
+sacramento,california_october,False,False,False,True,True,True,False,False,False,True,True,True,True,True,False,QA0_THRESHOLD_REVERSAL,PRIMARY_SCREEN_FAIL
+sacramento,jun_sep,False,False,False,True,True,True,False,False,False,True,True,True,True,True,False,QA0_THRESHOLD_REVERSAL,PRIMARY_SCREEN_FAIL

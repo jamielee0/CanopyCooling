@@ -1,93 +1,17 @@
 #!/usr/bin/env python3
-r"""End-to-end pipeline driver for the Urban Canopy Thermal Thresholds pilot.
+r"""run_all — end-to-end pipeline driver for the Phoenix urban-canopy thermal pilot.
 
-Reproduces every deliverable of the Phoenix pilot **from raw download to the
-first threshold estimate**, in the one dependency order the protocol requires
-before the project is scaled to four cities. This is the "make all" equivalent:
-the single saved entry point that re-runs the whole pipeline (or any contiguous
-slice of it) with no hand steps beyond the few documented manual touch-points.
-
-    "Verify the entire pipeline runs end to end from saved code with no manual
-     intervention ... A pipeline that can't be re-run cleanly for Phoenix won't
-     survive being extended to four cities."
-
-How it works
-------------
-A declarative STEP REGISTRY (`STEPS`, ids 0-14) lists every stage with: its
-name, the exact command it runs (a `config`-imported `conda run` invocation of
-the section module, or `jupyter nbconvert --execute` for the Section 14
-notebook), its key output files, whether it needs NETWORK/AUTH, and whether it
-carries a MANUAL prerequisite. The driver selects a subset (`--from/--to`,
-`--only`), prints the ordered plan, then executes each step via the SAME
-`conda run -n canopy python ...` mechanism the sections are run with, streaming
-output and stopping on the first non-zero exit.
-
-This module is import-safe (the registry and the selection/`build_command`
-logic have no side effects at import time) so `test_run_all.py` can exercise the
-pure logic without running anything.
-
-============================================================================
-DEPENDENCY DAG  (raw download -> threshold; -> = "must run before")
-============================================================================
-  0  check_auth ......... auth smoke test (Earthdata/EE/CDS/Census)
-        |   (gates every networked step; not a data dependency of 1)
-  1  reference_grid ..... data/processed/reference_grid.tif  (the anchor)
-        |__ 2  ECOSTRESS LST cube ............ (Earthdata)   ─┐
-        |__ 3  ECOSTRESS ET/ESI + links ...... (Earthdata)    │
-        |__ 4  Sentinel-2 NDVI/NDMI .......... (Earth Engine) │ all of 2-8
-        |__ 5  land cover (imperv/canopy/cls)  (Earth Engine) │ depend only
-        |__ 6  ERA5-Land VPD/SM (hourly) ..... (CDS; long Q)   │ on the grid
-        |__ 7  precip + drought + tmean ...... (PRISM + EE)    │ (1); they are
-        |__ 8  ACS/SVI/tree/footprints ....... (Census/ASU/PC) │ independent
-                                                              ─┘ of each other
-  9  harmonize -> analysis_cube_70m.zarr    (reads interim of 2-8; NO network)
-        |
- 10  classify pixels (paired design)        (reads 9 + 8)
-        |
- 11  anomalies / z-scores                   (reads 6 .nc + 9 + 4)
-        |
- 12  compound stress index (CSI)            (reads 11)
-        |
- 13  master table                           (reads 9,10,11,12,8)
-        |
- 14  exploratory threshold notebook         (reads 13)  -> figures + result note
-
-Sections 9-14 are the NETWORK-FREE, cleanly re-runnable PROCESSING half: they
-read only saved data/interim + data/processed and need no auth. Re-run that half
-from saved interim with:  run_all.py --from 9 --skip-download
-
-============================================================================
-MANUAL / NOT-FULLY-AUTOMATABLE TOUCH-POINTS  (the honest caveats)
-============================================================================
-  (M1) S0  Account logins are ONE-TIME INTERACTIVE and not scriptable:
-           `earthaccess`/`.netrc`, `earthengine authenticate` (+ a cloud
-           project id), `~/.cdsapirc`, and (recommended) CENSUS_API_KEY. Once
-           configured, every networked step runs unattended. check_auth.py only
-           VERIFIES they are present; it cannot create them.
-  (M2) S7  PRISM daily files are rate-limited (2x/IP/day). The downloader is
-           resumable and SELF-HEALS via the 800 m endpoint, but a hard rate-limit
-           wall may require waiting / a manual re-run of S7 the next day. It is
-           the one networked step whose success is not guaranteed in a single
-           unattended pass.
-  (M3) S8  The CDC/ATSDR SVI CSV is USER-PLACED in data/raw/svi/ (it is not
-           fetched from code). S8 reads whatever CSV is there; if none is present
-           the SVI part cannot run.
-
-Networked steps (2-8) also require the S0 credentials to be configured (Earth
-Engine + CDS + Census all need a logged-in account/key). Everything 9-14 needs
-no network at all.
-
-Usage
------
-    conda run -n canopy python src/run_all.py                # print plan + hint
-    conda run -n canopy python src/run_all.py --dry-run      # ordered plan only
-    conda run -n canopy python src/run_all.py --check-deliverables   # audit disk
-    conda run -n canopy python src/run_all.py --from 9 --skip-download   # re-run
-    conda run -n canopy python src/run_all.py --only 9,12    # run just those
-    conda run -n canopy python src/run_all.py --from 2 --to 8 -v   # the DL half
-
-(Run via the project's conda launcher:
- & "$env:USERPROFILE\anaconda3\Scripts\conda.exe" run -n canopy python src\run_all.py ...)
+Inputs : raw downloads + data/interim + data/processed (per-step; see STEPS registry)
+Outputs: every pilot deliverable, raw download -> first threshold estimate
+         (reference grid, cubes, zarr stores, master_table.parquet, Sec 14 figures)
+Key decisions (full rationale in docs/DESIGN_DECISIONS.md, Section run_all):
+  - Declarative STEP REGISTRY (ids 0-16) drives selection/plan/execution.
+  - Every step runs via `conda run -n canopy python ...` (never the env python directly).
+  - Steps 9-14 are the network-free, cleanly re-runnable processing half.
+  - Import-safe: registry + selection/build_command have no import-time side effects.
+  - Manual touch-points stay manual: S0 logins, S7 PRISM rate-limit, S8 SVI CSV.
+Run: python src/run_all.py [--from N] [--to N] [--only a,b] [--dry-run]
+                          [--check-deliverables] [--skip-download] [-v/--verbose]
 """
 
 from __future__ import annotations
@@ -110,27 +34,10 @@ import config  # noqa: E402
 log = logging.getLogger("run_all")
 
 
-# --------------------------------------------------------------------------- #
-# Step registry — the declarative, ordered list of the 15 pipeline stages.
-# --------------------------------------------------------------------------- #
+# --- Step registry --------------------------------------------------------- #
 @dataclass(frozen=True)
 class Step:
-    """One pipeline stage in dependency order.
-
-    Attributes
-    ----------
-    id            integer 0-14 (its position in the DAG)
-    name          short human label
-    module        section module run as ``python <module>`` (None for notebooks)
-    notebook      notebook path run via nbconvert (None for modules)
-    outputs       key deliverable paths (relative to the repo root) used by the
-                  --check-deliverables audit
-    network       True if the step needs network / configured auth to run
-    manual        a one-line note if the step has a manual prerequisite, else ""
-    skip_download_flag  the exact flag that makes the step reuse saved raw/interim
-                  instead of re-downloading (None if the step has no such flag)
-    extra_args    always-passed args (e.g. notebook nbconvert flags)
-    """
+    """One pipeline stage in dependency order (id 0-16, exactly one runner)."""
 
     id: int
     name: str
@@ -143,9 +50,8 @@ class Step:
     extra_args: tuple[str, ...] = field(default_factory=tuple)
 
 
-# Output paths are written relative to the repo root; resolved against
-# config.BASE_DIR in `deliverable_paths()`. The ECOSTRESS cubes are Zarr stores
-# saved WITHOUT a .zarr suffix (directories), matching the section modules.
+# Output paths are repo-root-relative, resolved against config.BASE_DIR in
+# deliverable_paths(). ECOSTRESS cubes are Zarr dirs saved without a .zarr suffix.
 STEPS: tuple[Step, ...] = (
     Step(
         id=0,
@@ -289,6 +195,7 @@ STEPS: tuple[Step, ...] = (
         outputs=(
             "data/processed/section12_csi_70m.zarr",
             "data/processed/section12_csi_overpass_summary.parquet",
+            "data/processed/section12_weight_sensitivity.parquet",
         ),
         network=False,
     ),
@@ -296,7 +203,10 @@ STEPS: tuple[Step, ...] = (
         id=13,
         name="master_table",
         module="src/section13_master_table.py",
-        outputs=("data/processed/master_table.parquet",),
+        outputs=(
+            "data/processed/master_table.parquet",
+            "data/processed/master_pixel_table.parquet",  # B3.1 pixel-level paired table
+        ),
         network=False,
     ),
     Step(
@@ -306,20 +216,43 @@ STEPS: tuple[Step, ...] = (
         outputs=(
             "notebooks/14_exploratory_threshold.ipynb",
             "docs/section14_results_note.md",
+            "data/processed/section14_csi_weight_sensitivity.csv",
             "figures/section14_scatter_ca_vs_csi.png",
             "figures/section14_segmented_and_bootstrap.png",
         ),
         network=False,
     ),
+    # B1b: the 2-D VPD_z x SM_z response surface — the primary RQ1 detector
+    # (BG-mean descriptive; reads master_table.parquet). Registered AFTER id=14 and
+    # BEFORE the id=16 mixed-effects step so ids stay contiguous 0..16.
+    Step(
+        id=15,
+        name="response_surface",
+        module="src/section15_response_surface.py",
+        outputs=(
+            "figures/section15_response_surface_vpdz_smz.png",
+            "figures/section15_response_surface_vpdz_smz_day.png",
+        ),
+        network=False,
+    ),
+    # B3.2/B3.3: pixel-level crossed-random-effects model + BG cluster bootstrap
+    # (reads master_pixel_table.parquet). Needs statsmodels; when absent the step writes
+    # a diagnostic note and exits non-zero so blocker verification cannot pass silently.
+    Step(
+        id=16,
+        name="mixed_effects",
+        module="src/section14b_mixed_effects.py",
+        outputs=("docs/section14b_mixed_effects_note.md",),
+        network=False,
+    ),
 )
 
-# ids 9..14 inclusive: the network-free, cleanly re-runnable processing half.
+# Every non-network step (1 and 9..16) is locally re-runnable; --from 9 selects the
+# network-free processing/analysis half used for saved-interim rebuilds.
 PROCESSING_HALF: tuple[int, ...] = tuple(s.id for s in STEPS if not s.network)
 
 
-# --------------------------------------------------------------------------- #
-# Pure logic — selection + command construction (no side effects; unit-tested).
-# --------------------------------------------------------------------------- #
+# --- Pure logic: selection + command construction (no side effects) -------- #
 def _steps_by_id() -> dict[int, Step]:
     return {s.id: s for s in STEPS}
 
@@ -332,8 +265,8 @@ def validate_registry(steps: Sequence[Step] = STEPS) -> None:
         has_module = s.module is not None
         has_nb = s.notebook is not None
         assert has_module ^ has_nb, f"step {s.id} must have exactly one of module/notebook"
-        # A step that downloads (network) should expose how to skip the download,
-        # EXCEPT step 0 (a pure smoke test with nothing to download).
+        # Step 0 is a pure smoke test with nothing to download; every other
+        # networked step must expose how to skip its download.
         if s.network and s.id != 0:
             assert s.skip_download_flag is not None, (
                 f"networked step {s.id} should declare a skip_download_flag"
@@ -351,10 +284,9 @@ def select_steps(
     only: Sequence[int] | None = None,
     steps: Sequence[Step] = STEPS,
 ) -> list[Step]:
-    """Resolve the CLI range/subset flags to an ordered, de-duplicated step list.
+    """Resolve CLI range/subset flags to an ordered, de-duplicated step list.
 
-    --only takes precedence over --from/--to. With no flags, returns every step.
-    Always returned sorted by id (dependency order).
+    --only overrides --from/--to; no flags returns all. Always sorted by id.
     """
     by_id = {s.id: s for s in steps}
     if only is not None:
@@ -372,12 +304,9 @@ def select_steps(
 
 
 def _conda_python() -> list[str]:
-    """The conda launcher prefix used to run a module in the `canopy` env.
+    """The `conda run -n canopy python` launcher prefix (never the env python directly).
 
-    Mirrors the project rule: never call the env python directly; always go
-    through `conda run -n canopy python`. The conda executable is discovered
-    from the standard Anaconda location under the user profile, overridable via
-    the CONDA_EXE environment variable.
+    conda.exe is discovered from the standard Anaconda location, overridable via CONDA_EXE.
     """
     conda_exe = os.environ.get("CONDA_EXE")
     if not conda_exe:
@@ -394,12 +323,8 @@ def build_command(
 ) -> list[str]:
     """Construct the full argv that runs one step in the `canopy` env.
 
-    - Section modules run as ``conda run ... python <repo>/<module> [flags]``.
-    - The Section 14 notebook runs via ``jupyter nbconvert --to notebook
-      --execute --inplace <notebook>`` (no flags are forwarded — it reads only
-      master_table.parquet and writes its own figures).
-    - ``--skip-download`` is forwarded ONLY to steps that declare a
-      skip_download_flag; ``-v`` is forwarded to section modules that accept it.
+    Modules run as `python <module> [flags]`; the Sec 14 notebook via nbconvert
+    --execute (no flags forwarded). --skip-download/-v forwarded only where supported.
     """
     if step.notebook is not None:
         nb = str((config.BASE_DIR / step.notebook).resolve())
@@ -431,9 +356,7 @@ def deliverable_paths(step: Step) -> list[Path]:
     return [(config.BASE_DIR / o).resolve() for o in step.outputs]
 
 
-# --------------------------------------------------------------------------- #
-# Presentation — plan / legend / deliverable audit.
-# --------------------------------------------------------------------------- #
+# --- Presentation: plan / legend / deliverable audit ----------------------- #
 def _runner_str(step: Step) -> str:
     if step.notebook is not None:
         return f"nbconvert --execute {step.notebook}"
@@ -471,11 +394,9 @@ def print_plan(selected: Sequence[Step], *, skip_download: bool) -> None:
 
 
 def check_deliverables(selected: Sequence[Step]) -> bool:
-    """Read-only audit: does each selected step's output exist on disk?
+    """Read-only audit of each selected step's outputs; True iff all present.
 
-    Prints a PASS / MISSING table. Returns True iff every declared output of
-    every selected step is present. Steps with no declared output (S0) are
-    reported as N/A and never fail the audit.
+    Prints a PASS/MISSING table; steps with no output (S0) report N/A and never fail.
     """
     print("=" * 78)
     print("DELIVERABLE AUDIT  (read-only)")
@@ -499,9 +420,7 @@ def check_deliverables(selected: Sequence[Step]) -> bool:
     return all_ok
 
 
-# --------------------------------------------------------------------------- #
-# Execution.
-# --------------------------------------------------------------------------- #
+# --- Execution ------------------------------------------------------------- #
 def run_step(
     step: Step,
     *,
@@ -518,8 +437,8 @@ def run_step(
         log.info("  NOTE: this step needs network / configured auth.")
     log.info("  $ %s", " ".join(cmd))
     t0 = time.time()
-    # Stream child stdout/stderr straight through to ours (no capture) so long
-    # downloads/processing show progress live; cwd = repo root.
+    # No capture: child stdout/stderr stream straight through so long downloads
+    # show live progress; cwd = repo root.
     proc = subprocess.run(cmd, cwd=str(config.BASE_DIR))
     dt = time.time() - t0
     if proc.returncode == 0:
@@ -560,9 +479,7 @@ def run_pipeline(
     return 0
 
 
-# --------------------------------------------------------------------------- #
-# CLI.
-# --------------------------------------------------------------------------- #
+# --- CLI ------------------------------------------------------------------- #
 def _build_arg_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="run_all.py",

@@ -1,70 +1,20 @@
 #!/usr/bin/env python3
-"""Section 5 - Acquire land-cover layers: imperviousness and tree canopy.
+"""Section 5 / land-cover — acquire NLCD impervious + land-cover class and USFS tree canopy on the 70 m grid.
 
-Implements steps 29-32 of the Data Acquisition & Analysis Protocol for the
-Phoenix pilot. Like Sections 2-4 the whole section runs from this single module
-so the result is reproducible end to end (protocol standing rule: "every figure
-and every number must be reproducible from the saved code").
-
-NO MANUAL DOWNLOAD. All three 30 m layers are pulled straight to local disk with
-``geemap.download_ee_image`` (geedim under the hood), which tiles the request
-under the Earth Engine size limit and stitches the tiles back into a single
-GeoTIFF. There is NO ``Export.image.toDrive`` round-trip on the happy path; the
-Drive export exists only as a last-resort fallback (see ``download_layer``).
-
-Pipeline (steps 29-32)
-----------------------
-29. Load, for the study bbox, the most-recent NLCD impervious-surface-percentage
-    layer, the NLCD land-cover CLASS layer (same NLCD image), and the most-recent
-    USFS Tree Canopy Cover percentage layer. The exact collection ids + years are
-    logged (and recorded in the manifest / filenames).
-30. Download all three DIRECTLY to data/raw/landcover/ in EPSG:32612 at the native
-    30 m scale with geemap.download_ee_image (geedim). Resampling on the EE side is
-    NEAREST for all three so the native 30 m values (categorical classes AND the
-    impervious / canopy percentages) are preserved unblended for the local
-    aggregation below. Each file is recorded in data/manifest.csv with a checksum.
-31. Resample impervious % and canopy % from 30 m to the 70 m reference grid by
-    AREA-WEIGHTED AVERAGING -- each 70 m cell receives the area-weighted mean of
-    the 30 m cells it covers. This averaged percentage is the "fraction" later
-    sections use (protocol step 31; Section 10 thresholds are stated in percent).
-32. Resample the land-cover CLASS layer to 70 m by NEAREST NEIGHBOUR (it is
-    categorical) and keep it for the Section 10 water exclusion. It is NEVER
-    bilinear/averaged -- that would invent meaningless fractional classes
-    (Section 9 common pitfall).
-
-Confirmed datasets (logged at run time; see also data/raw/README.md)
---------------------------------------------------------------------
-Impervious % + land-cover class:
-    USGS/NLCD_RELEASES/2021_REL/NLCD  image '2021'  -> year 2021
-    bands: 'impervious' (0-100 %), 'landcover' (NLCD class codes 11-95)
-    The most-recent OFFICIAL NLCD release in the Earth Engine catalog that
-    carries BOTH the impervious-surface-percentage layer and the land-cover
-    class layer in one CONUS asset. (The 2023 release folder holds only RCMAP +
-    TCC, not the conventional NLCD land-cover / impervious image.)
-Tree canopy %:
-    projects/gtac-data-publish/assets/TCC/Product_Version/2025-6  CONUS, year 2025
-    band: 'NLCD_Percent_Tree_Canopy_Cover' (0-100 %)
-    The current (non-deprecated) USFS Tree Canopy Cover collection; it supersedes
-    the deprecated USGS/NLCD_RELEASES/2023_REL/TCC/v2023-5. Most-recent CONUS year.
-
-UNITS. The protocol calls these layers the impervious "fraction" and canopy
-"fraction"; the source data and the Section-10 thresholds ("below 20 percent",
-"above 70 percent") are in PERCENT, so the saved layers keep the native percent
-units (0-100, float) and the GeoTIFF/manifest/READMEs say so explicitly.
-
-A NOTE ON nodata=0 (important). geedim tags the downloaded uint8 rasters with
-nodata=0. For the categorical land-cover layer 0 is genuinely "no class" (valid
-NLCD classes start at 11), so 0=nodata is correct. But for impervious / canopy,
-0 % is a VALID and very common value (most of the map). These two layers are
-therefore read WITHOUT masking and every 0-100 value is treated as valid; only
-sentinels > 100 (geedim ``unmask_value``) count as missing. Reading them masked
-would silently drop every 0 % cell and bias the average upward.
-
-Run (canopy env, Earth Engine authenticated):
-    python src/section5_landcover.py                 # full run (all three layers)
-    python src/section5_landcover.py --skip-download # reuse data/raw/landcover files
-    python src/section5_landcover.py --layers impervious,landcover_class
-    python src/section5_landcover.py --coarse-scale 300  # quick smoke test
+Inputs : Earth Engine NLCD (USGS/NLCD_RELEASES/2021_REL/NLCD) and USFS TCC
+         (projects/gtac-data-publish/assets/TCC/Product_Version/2025-6); the
+         Section-1 reference grid (config.REFERENCE_GRID_TIF).
+Outputs: native 30 m GeoTIFFs in data/raw/landcover/ (+ data/manifest.csv);
+         70 m layers in data/interim/; QA figure in data/figures/.
+Key decisions (full rationale in docs/DESIGN_DECISIONS.md, Section 5):
+  - No manual download: geemap.download_ee_image (geedim) tiles to disk; Drive export is fallback only.
+  - Impervious/canopy % regridded 30 m -> 70 m by area-weighted average; land-cover class by nearest (categorical).
+  - Layers kept in native percent units (0-100), matching Section-10 thresholds.
+  - Continuous %-layers read UNMASKED (real 0 % is valid); only values >100 (geedim sentinel) are missing.
+Run: python src/section5_landcover.py
+     python src/section5_landcover.py --skip-download
+     python src/section5_landcover.py --layers impervious,landcover_class
+     python src/section5_landcover.py --coarse-scale 300
 """
 
 from __future__ import annotations
@@ -79,9 +29,9 @@ from typing import Sequence
 
 import numpy as np
 
-# Heavy geospatial / EE libraries. The pure-numpy logic below (the area-weighted
-# regrid, the categorical-subset check, product config) does not touch ee/geemap,
-# so it stays unit-testable without the EE stack installed (see test_section5_*).
+# Heavy geospatial / EE libraries. The pure-numpy logic below (regrid, the
+# categorical-subset check, product config) does not touch ee/geemap, so it
+# stays unit-testable without the EE stack installed.
 import ee  # noqa: E402
 import geemap  # noqa: E402
 import rioxarray  # noqa: F401,E402  (registers the .rio accessor)
@@ -97,13 +47,11 @@ if str(_SRC_DIR) not in sys.path:
     sys.path.insert(0, str(_SRC_DIR))
 import config  # noqa: E402
 import section2_ecostress_lst as sec2  # noqa: E402  (reuse manifest/checksum helpers)
+import plot_style as ps  # noqa: E402  (shared figure color convention)
 
 log = logging.getLogger("section5")
 
-# --------------------------------------------------------------------------- #
-# Confirmed collection constants (the exact image + year are resolved and logged
-# at run time -- "use the most recent year available", protocol Section 5).
-# --------------------------------------------------------------------------- #
+# Confirmed collection constants; the exact image + year are resolved and logged at run time.
 NLCD_COLLECTION = "USGS/NLCD_RELEASES/2021_REL/NLCD"
 NLCD_IMPERVIOUS_BAND = "impervious"
 NLCD_LANDCOVER_BAND = "landcover"
@@ -114,44 +62,35 @@ TCC_CANOPY_BAND = "NLCD_Percent_Tree_Canopy_Cover"
 
 NATIVE_SCALE_M = 30                       # NLCD + TCC native pixel size (metres)
 PERCENT_VALID_MAX = 100                   # impervious / canopy valid range is 0-100
-PERCENT_UNMASK_SENTINEL = 255             # geedim fills masked %-pixels with this
+PERCENT_UNMASK_SENTINEL = 255            # geedim fills masked %-pixels with this
 LANDCOVER_NODATA = 0                      # 0 = "no NLCD class" (valid classes >= 11)
 
-# Buffer (m) added around the Section-1 grid bounds when defining the EE download
-# region, so the 30 m source fully covers the 70 m grid and the area-weighted
-# average at the grid EDGES is computed from complete source coverage.
+# Buffer (m) around the Section-1 grid bounds so the 30 m source fully covers the
+# 70 m grid and edge cells get complete-coverage area weighting.
 DOWNLOAD_BUFFER_M = 150.0
 
-# A 70 m cell is only written if at least this fraction of its area is covered by
-# valid finer cells (else it is left nodata). With the buffered download this is
-# ~1.0 everywhere inland; the guard only matters at a true data edge / mask hole.
+# A 70 m cell is written only if at least this fraction of its area is covered by
+# valid finer cells; otherwise nodata. Only matters at a true data edge / mask hole.
 COVERAGE_MIN = 0.5
 
-# Per-tile size ladder (MB) for the resilient download. On a compute/size failure
-# we retry with progressively smaller tiles before the Drive fallback (protocol
-# step 30 / user instruction). These static 30 m layers are light (one band over
-# the bbox is ~8 MB), so the default first rung rarely needs to step down.
+# Per-tile size ladder (MB) for the resilient download: on a failure, retry with
+# progressively smaller tiles before the Drive fallback.
 MAX_TILE_SIZES_MB = (32, 16, 8, 4, 2)
 
-# Cap concurrent Earth Engine tile requests (forwarded to geedim as max_requests)
-# to keep the backend steady and avoid HTTP 429 storms. geedim 2.0 retired the
-# old num_threads knob in favour of max_requests / max_cpus.
+# Cap concurrent EE tile requests (geedim max_requests) to avoid HTTP 429 storms.
 MAX_REQUESTS = 8
 
 RAW_SUBDIR = "landcover"                   # data/raw/landcover/
 DRIVE_FOLDER = "canopy_section5"           # only used by the fallback
 
 
-# =========================================================================== #
-# Product configuration  (pure data; no geo / EE deps)
-# --------------------------------------------------------------------------- #
+# --- Product configuration (pure data; no geo / EE deps) ------------------- #
 @dataclasses.dataclass(frozen=True)
 class LayerSpec:
     """Static description of one Section-5 layer (filenames, kind, units, dtype).
 
-    The concrete ee.Image, resolved year and collection id are attached later in
-    a LayerPlan (they need Earth Engine); everything here is pure data so it can
-    be unit-tested without ee/geemap.
+    Pure data so it is unit-testable without ee/geemap; the concrete ee.Image,
+    resolved year and collection id are attached later in a LayerPlan.
     """
 
     key: str                 # "impervious" / "canopy" / "landcover_class"
@@ -208,7 +147,7 @@ LANDCOVER_SPEC = LayerSpec(
 )
 SPECS = {s.key: s for s in (IMPERVIOUS_SPEC, CANOPY_SPEC, LANDCOVER_SPEC)}
 
-# NLCD land-cover class codes -> short labels (for the QA figure legend + docs).
+# NLCD land-cover class codes -> short labels (figure legend + docs).
 # Class 11 (open water) is what Section 10 uses to exclude water bodies.
 NLCD_CLASS_LABELS = {
     11: "Open water", 12: "Perennial ice/snow",
@@ -222,18 +161,14 @@ NLCD_CLASS_LABELS = {
 }
 
 
-# =========================================================================== #
-# Pure regrid logic  (numpy; unit-tested without the geo or EE stack)
-# --------------------------------------------------------------------------- #
+# --- Pure regrid logic (numpy; unit-tested without the geo or EE stack) ----- #
 def _interval_overlap(dst_lo: np.ndarray, dst_hi: np.ndarray,
                       src_lo: np.ndarray, src_hi: np.ndarray) -> np.ndarray:
     """1-D overlap-length matrix between dest cells and source cells.
 
-    Each cell is the closed interval [lo, hi] (in metres). Returns W with
-    W[i, j] = length of the overlap between dest cell i and source cell j (>= 0).
-    Order-independent: the lo/hi are true interval min/max, so it works for the
-    x axis (lo=left, hi=right) and the y axis (lo=bottom, hi=top) alike, in
-    whatever row/column storage order the rasters use.
+    Each cell is the closed interval [lo, hi] in metres; W[i, j] is the overlap
+    length between dest cell i and source cell j (>= 0). Order-independent, so it
+    serves both the x and y axes in whatever storage order the rasters use.
     """
     lo = np.maximum(dst_lo[:, None], src_lo[None, :])
     hi = np.minimum(dst_hi[:, None], src_hi[None, :])
@@ -244,9 +179,8 @@ def _cell_edges(transform6: Sequence[float], n: int, axis: str
                 ) -> tuple[np.ndarray, np.ndarray]:
     """Return (lo, hi) per-cell interval bounds (metres) for an axis-aligned grid.
 
-    transform6 is the rasterio Affine 6-tuple (a, b, c, d, e, f) with NO rotation
-    (b == d == 0). axis="x": lo=left, hi=right (uses a, c). axis="y": lo=bottom,
-    hi=top (uses e, f); e is negative for a north-up raster.
+    transform6 is the rasterio Affine 6-tuple (a, b, c, d, e, f) with no rotation
+    (b == d == 0). axis="x" uses a, c; axis="y" uses e, f (e is negative north-up).
     """
     a, b, c, d, e, f = transform6
     if b != 0.0 or d != 0.0:
@@ -263,19 +197,12 @@ def _cell_edges(transform6: Sequence[float], n: int, axis: str
 def area_weighted_regrid(src_vals: np.ndarray, src_transform: Sequence[float],
                          dst_transform: Sequence[float], dst_shape: tuple[int, int],
                          coverage_min: float = COVERAGE_MIN) -> np.ndarray:
-    """Exact AREA-WEIGHTED average of a finer raster onto a coarser grid.
+    """Exact area-weighted average of a finer raster onto a coarser grid.
 
-    Both grids must be axis-aligned (no rotation) and in the SAME CRS -- true for
-    Section 5 because the raw layers are downloaded already in EPSG:32612 and the
-    reference grid is EPSG:32612. Each destination (70 m) cell value is the mean
-    of the source (30 m) cells it covers, each source cell weighted by the AREA of
-    its intersection with the destination cell; ``NaN`` source cells are excluded
-    from both the weighted sum and its normaliser. A destination cell is returned
-    ``NaN`` when less than ``coverage_min`` of its area is covered by valid source.
-
-    Because the grids are rectilinear, the 2-D area weight factorises into the
-    outer product of 1-D x- and y-overlaps, so the whole resample is two small
-    matrix multiplications: num = Wy . (src) . Wx^T, den = Wy . (valid) . Wx^T.
+    Both grids must be axis-aligned and in the SAME CRS (true here: all in
+    EPSG:32612). NaN source cells are excluded; a dest cell is NaN when less than
+    coverage_min of its area has valid source. The 2-D area weight factorises into
+    1-D x/y overlaps, so the resample is two matrix multiplications.
     """
     src = np.asarray(src_vals, dtype="float64")
     nsr, nsc = src.shape
@@ -305,18 +232,14 @@ def area_weighted_regrid(src_vals: np.ndarray, src_transform: Sequence[float],
 def categorical_subset_ok(src_classes: np.ndarray, out_classes: np.ndarray) -> bool:
     """True if every resampled class already existed in the source (no invention).
 
-    Nearest-neighbour resampling of a categorical layer must only ever copy
-    existing class codes; a value that is not in the source means an averaging /
-    interpolation bug crept in (Section 9 common pitfall). nodata is ignored by
-    the caller before this check.
+    A value not present in the source means an averaging/interpolation bug crept
+    into a categorical layer. The caller drops nodata before this check.
     """
     return set(np.unique(out_classes).tolist()).issubset(
         set(np.unique(src_classes).tolist()))
 
 
-# =========================================================================== #
-# Earth Engine setup + image resolution  (step 29; needs ee)
-# --------------------------------------------------------------------------- #
+# --- Earth Engine setup + image resolution (step 29; needs ee) ------------- #
 def initialize_ee() -> str:
     """Initialise Earth Engine, returning the project id used (mirrors Section 4)."""
     sec2._load_project_dotenv()
@@ -335,9 +258,8 @@ def initialize_ee() -> str:
 def download_region() -> "ee.Geometry":
     """Section-1 grid bounds (EPSG:32612), buffered outward by DOWNLOAD_BUFFER_M.
 
-    Defined in metres in the project CRS so the 30 m source fully covers the 70 m
-    grid (edge-correct area weighting). This is the study bbox of config.py,
-    expressed precisely on the analysis grid rather than as a lon/lat rectangle.
+    Defined in metres on the analysis grid so the 30 m source fully covers the
+    70 m grid (edge-correct area weighting).
     """
     left, bottom, right, top = config.GRID_BOUNDS
     d = DOWNLOAD_BUFFER_M
@@ -379,8 +301,7 @@ def _resolve_year(image: "ee.Image", fallback_index: str) -> tuple[str, int]:
 def resolve_layer_plans(keys: Sequence[str]) -> list[LayerPlan]:
     """Resolve the most-recent NLCD + TCC images and bind each requested layer.
 
-    Logs the exact collection ids, image indices and years used (protocol step 29
-    / user instruction "Log the exact collection IDs and years used").
+    Logs the exact collection ids, image indices and years used (step 29).
     """
     plans: list[LayerPlan] = []
 
@@ -414,9 +335,7 @@ def resolve_layer_plans(keys: Sequence[str]) -> list[LayerPlan]:
     return plans
 
 
-# =========================================================================== #
-# Resilient download  (step 30) -- geemap.download_ee_image, geedim under the hood
-# --------------------------------------------------------------------------- #
+# --- Resilient download (step 30) — geemap.download_ee_image / geedim ------- #
 @dataclasses.dataclass
 class DownloadResult:
     """Outcome of acquiring one layer (local success or Drive fallback)."""
@@ -437,9 +356,8 @@ class DownloadResult:
 def _export_to_drive(plan: LayerPlan, region: "ee.Geometry") -> DownloadResult:
     """Last resort: start an Export.image.toDrive task and report it to the user.
 
-    Only reached if every tiled local download attempt failed. The categorical
-    land-cover layer is exported WITHOUT calling .resample(), so Earth Engine
-    reprojects it with its default NEAREST neighbour (never bilinear).
+    Reached only if every tiled local download failed. The categorical land-cover
+    layer is exported without .resample(), so EE reprojects it with nearest.
     """
     drive_name = plan.raw_filename[:-4]    # strip ".tif"
     task = ee.batch.Export.image.toDrive(
@@ -466,15 +384,11 @@ def _export_to_drive(plan: LayerPlan, region: "ee.Geometry") -> DownloadResult:
 def download_layer(plan: LayerPlan, region: "ee.Geometry", raw_dir: Path,
                    tile_sizes_mb: Sequence[float] = MAX_TILE_SIZES_MB,
                    scale_m: int | None = None) -> DownloadResult:
-    """Download one layer to data/raw/landcover/ in EPSG:32612 at the native 30 m.
+    """Download one layer to data/raw/landcover/ in EPSG:32612 at native 30 m.
 
-    Tiles + stitches via geemap.download_ee_image (geedim). Resampling is NEAREST
-    for every layer so the native 30 m values are preserved unblended; the
-    scientific 30 m -> 70 m resampling (area-weighted average vs nearest) is done
-    locally and exactly afterwards. Continuous layers use ``unmask_value=255`` so
-    any genuinely-masked pixel is a separable sentinel rather than masquerading as
-    a real 0 %. On a compute/size failure we retry with a smaller per-tile size;
-    only if every size fails do we fall back to Drive (step 30 / user instruction).
+    Resampling is NEAREST for every layer so native values are preserved; the
+    30 m -> 70 m science resampling happens locally afterwards. On a failure we
+    retry with a smaller per-tile size, then fall back to Drive.
     """
     raw_dir.mkdir(parents=True, exist_ok=True)
     out_path = raw_dir / plan.raw_filename
@@ -514,9 +428,7 @@ def download_layer(plan: LayerPlan, region: "ee.Geometry", raw_dir: Path,
     return _export_to_drive(plan, region)
 
 
-# =========================================================================== #
-# Manifest + resample to the 70 m grid  (steps 30-32)
-# --------------------------------------------------------------------------- #
+# --- Manifest + resample to the 70 m grid (steps 30-32) -------------------- #
 def record_in_manifest(result: DownloadResult, project: str) -> None:
     """Append the downloaded layer to data/manifest.csv with a SHA-256 sum."""
     if not result.is_local:
@@ -542,14 +454,11 @@ def _read_reference():
 
 
 def regrid_continuous(raw_path: Path, out_path: Path, reference, spec: LayerSpec) -> Path:
-    """Step 31: resample a 30 m %-layer to the 70 m grid by AREA-WEIGHTED averaging.
+    """Step 31: resample a 30 m %-layer to the 70 m grid by area-weighted averaging.
 
-    Reads the raw layer UNMASKED (so real 0 % cells count as valid), treats only
-    values > 100 (the geedim unmask sentinel) as missing, then area-weights onto
-    the reference grid with :func:`area_weighted_regrid`. The result is written as
-    float32 percent aligned exactly to reference_grid.tif. A GDAL ``average``
-    resample is computed alongside purely as a cross-check and the agreement is
-    logged.
+    Reads the raw layer UNMASKED (real 0 % counts as valid); only values > 100
+    (the geedim sentinel) are missing. A GDAL `average` resample is computed
+    alongside purely as a cross-check and the agreement is logged.
     """
     out_path.parent.mkdir(parents=True, exist_ok=True)
     raw = rioxarray.open_rasterio(raw_path, masked=False).squeeze("band", drop=True)
@@ -570,8 +479,8 @@ def regrid_continuous(raw_path: Path, out_path: Path, reference, spec: LayerSpec
         raise RuntimeError(f"{spec.key}: regrid shape {averaged.shape} != "
                            f"GRID_SHAPE {tuple(config.GRID_SHAPE)}")
 
-    # Cross-check against GDAL's own area-weighted 'average' resampling. The raw
-    # nodata=0 tag must be cleared first, else GDAL would drop every real 0 %.
+    # Cross-check against GDAL's own area-weighted 'average'. Clear the raw
+    # nodata=0 tag first, else GDAL would drop every real 0 %.
     try:
         xcheck_src = raw.where(valid).rio.write_nodata(np.nan, encoded=False)
         gdal_avg = xcheck_src.rio.reproject_match(reference, resampling=Resampling.average)
@@ -604,10 +513,8 @@ def regrid_continuous(raw_path: Path, out_path: Path, reference, spec: LayerSpec
 def regrid_categorical(raw_path: Path, out_path: Path, reference, spec: LayerSpec) -> Path:
     """Step 32: resample the 30 m land-cover CLASS layer to 70 m by NEAREST.
 
-    Categorical data is NEVER averaged/bilinear-interpolated -- that invents
-    fractional classes (Section 9 pitfall). Uses nearest-neighbour ``reproject_match``
-    so output classes are a subset of the input classes (asserted), and writes the
-    result as uint8 aligned exactly to reference_grid.tif.
+    Categorical data is never averaged/interpolated. Output classes must be a
+    subset of the input classes (asserted); result written as uint8 on the grid.
     """
     out_path.parent.mkdir(parents=True, exist_ok=True)
     raw = rioxarray.open_rasterio(raw_path, masked=False).squeeze("band", drop=True)
@@ -650,16 +557,12 @@ def resample_to_grid(result: DownloadResult, reference) -> Path:
     return regrid_continuous(result.path, out_path, reference, spec)
 
 
-# =========================================================================== #
-# Figure  (deliverable: the three 70 m layers, visually confirmed)
-# --------------------------------------------------------------------------- #
+# --- Figure (deliverable: the three 70 m layers, visually confirmed) ------- #
 def make_layers_figure(grid_paths: dict[str, Path], figures_dir: Path) -> Path | None:
     """Three-panel QA map: impervious %, canopy %, and the categorical class layer.
 
-    The deliverable confirmation figure for Section 5. Impervious / canopy use a
-    continuous ramp; the land-cover class uses a discrete colormap with an NLCD
-    legend so a reviewer can see water (class 11) and the developed / vegetated
-    classes land where expected.
+    The Section-5 confirmation deliverable. Continuous layers use a ramp; the
+    land-cover class uses a discrete colormap with the NLCD legend.
     """
     import matplotlib
     matplotlib.use("Agg")
@@ -682,7 +585,8 @@ def make_layers_figure(grid_paths: dict[str, Path], figures_dir: Path) -> Path |
         da = rioxarray.open_rasterio(grid_paths[key], masked=True).squeeze("band", drop=True)
         arr = da.values.astype("float64")
         if key in ("impervious", "canopy"):
-            cmap = "cividis" if key == "impervious" else "YlGn"
+            # impervious = neutral greys (white@0 -> dark paved); canopy = greens
+            cmap = ps.CMAP["impervious"] if key == "impervious" else "YlGn"
             im = ax.imshow(arr, extent=extent, origin="upper", cmap=cmap, vmin=0, vmax=100)
             fig.colorbar(im, ax=ax, label="percent (0-100)", shrink=0.82)
             med = float(np.nanmedian(arr))
@@ -712,9 +616,7 @@ def make_layers_figure(grid_paths: dict[str, Path], figures_dir: Path) -> Path |
     return out
 
 
-# =========================================================================== #
-# Orchestration / CLI
-# --------------------------------------------------------------------------- #
+# --- Orchestration / CLI --------------------------------------------------- #
 def process_layer(plan: LayerPlan, region, reference, project: str,
                   skip_download: bool, coarse_scale: int | None) -> DownloadResult:
     """Acquire one layer: download -> manifest -> 70 m grid."""
@@ -751,7 +653,7 @@ def run(layers: Sequence[str] = ("impervious", "canopy", "landcover_class"),
     plans: list[LayerPlan]
 
     if skip_download:
-        # Resolve the years from any already-downloaded raw file names so the
+        # Resolve years from already-downloaded raw file names so the
         # interim/manifest names match, without needing Earth Engine.
         plans = _plans_from_local(layers)
     else:

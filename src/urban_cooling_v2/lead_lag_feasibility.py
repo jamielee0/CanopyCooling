@@ -183,10 +183,13 @@ def confirmatory_ruling(
     *,
     source_dates_available: bool,
     acquisition_identifiers_available: bool,
+    minimum_confirmatory_share: float = MIN_CONFIRMATORY_SHARE,
 ) -> str:
     """Apply the fail-closed D009 confirmatory/exploratory ruling."""
 
     validate_required_grid(rows)
+    if not 0.0 <= float(minimum_confirmatory_share) <= 1.0:
+        raise ValueError("minimum_confirmatory_share must be between 0 and 1")
     if not source_dates_available or not acquisition_identifiers_available:
         return "DEMOTE_TO_EXPLORATORY_MISSING_SOURCE_TIMING_PROVENANCE"
 
@@ -204,7 +207,7 @@ def confirmatory_ruling(
                 continue
             shares_ok = all(
                 row["feasible_share"] is not None
-                and float(row["feasible_share"]) >= MIN_CONFIRMATORY_SHARE
+                and float(row["feasible_share"]) >= float(minimum_confirmatory_share)
                 for row in nonzero
             )
             reuse_ok = all(
@@ -232,6 +235,10 @@ def plot_timing_histogram(
     post_lags: Sequence[float],
     png_path: Path,
     svg_path: Path,
+    *,
+    footer_note: str = (
+        "Centered scene counts cannot reveal side-of-pass timing; no optical value or thermal outcome was opened."
+    ),
 ) -> None:
     """Plot the required timing histogram, including an explicit no-data state."""
 
@@ -284,7 +291,7 @@ def plot_timing_histogram(
     fig.text(
         0.07,
         0.015,
-        "Centered scene counts cannot reveal side-of-pass timing; no optical value or thermal outcome was opened.",
+        footer_note,
         fontsize=8,
         color="#58727D",
     )

@@ -1,0 +1,49 @@
+{
+  "all_declared_artifact_hashes": {
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/balance_diagnostics_readiness.csv": "c659808ba8872e75cbff67aeadf6cf53d19b0b6c5f68bfd659520b9481e17dec",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/phenology_composite_qa_and_canopy_coverage.csv": "d3b863bc16a1e47ef1c1867655baf89bb0723c568bc0ab2b544c1a9a6230618a",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/phenology_sensitivity_decisions.csv": "3a379dd792d8c1b12f92c5c204c96559df95f4fa5c8c1f82999476eec6e98b1d",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/phenology_sensitivity_monthly.csv": "625fe102b4ee5cf8eca457706e890e75d62e292c0e5e304ab2ea8d9f0953c245",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/phenology_sensitivity_windows_long.csv": "370c6c2a20f6d790d3e98b9ea452be1f15321564acd009291ae1235c040e23a5",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/review_revised.md": "9f1460ab817bb9ca8af133494f1d34c05468a615ff8e8134d434f5eeb36207ed",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/selection_revised.json": "74226cd6fe118dad1ec84add20a96d9268f849277aa0acde351f757c3b189335",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/threshold_city_window_eligibility_revised.csv": "ba4f0909a4cafde6be8cf22c89f25ab59405cedbdb23f43aaabf2a1201df6737"
+  },
+  "archive_finite_recheck_pass": true,
+  "archive_pass_count": 31,
+  "balance_diagnostics_implemented": true,
+  "balance_diagnostics_real_data_computable": false,
+  "canopy_usable_composites": 680,
+  "decision_ids": [
+    "D0065",
+    "D0066",
+    "D0067",
+    "D0068"
+  ],
+  "four_city_minimum_pass": false,
+  "full_legacy_test_programs_passed": 17,
+  "full_regression_suite_passed": true,
+  "full_v2_test_programs_passed": 37,
+  "g3a_authorized": false,
+  "gate4_authorized": false,
+  "gate_status": "REVISE_REQUIRED",
+  "generated_utc": "2026-08-13T10:48:23.414210+00:00",
+  "geometry_azimuth_cloud_exact_weather_augmentation_complete": false,
+  "holdout_opened": false,
+  "phenology_all_three_stable_unique_nonexploratory_cities": 2,
+  "phenology_row_count": 742,
+  "phenology_year_bounds_pass": true,
+  "primary_usable_composites": 662,
+  "qa0_usable_composites": 493,
+  "record_2026_queried": false,
+  "sampling_design_selected": false,
+  "selector_known_answer_tests": {
+    "command": "current Python; src/test_v2_hitl_gate3_sampling.py",
+    "passed": true,
+    "returncode": 0,
+    "stderr_present": false,
+    "stdout_last_line": "PASS test_v2_hitl_gate3_sampling"
+  },
+  "source_bindings_sha256": "aadb72f491debd7b4486f77c4d8c848d7517ceada75385895463b7ba39aa8828",
+  "temperature_or_lst_opened": false
+}

@@ -1,0 +1,18 @@
+{
+  "all_passed": true,
+  "environment": "/Users/jmlee/miniforge3/envs/urbanv2/bin/python",
+  "method": "run_full_regression_suite from src/run_v2_hitl_gate3_second_revision.py; each discovered test_*.py program executed in an isolated temporary cache environment",
+  "run_completed": "2026-08-16T22:45:19+09:00",
+  "suites": {
+    "legacy": {
+      "discovered": 17,
+      "failed": 0,
+      "passed": 17
+    },
+    "v2": {
+      "discovered": 42,
+      "failed": 0,
+      "passed": 42
+    }
+  }
+}

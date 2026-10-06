@@ -1,74 +1,26 @@
 #!/usr/bin/env python3
-"""Section 3 - Acquire ECOSTRESS evapotranspiration (PT-JPL) and evaporative stress.
+"""Section 3 / ECOSTRESS ET (PT-JPL) & ESI — acquire, screen, and cube supporting EO products.
 
-Implements steps 19-22 of the Data Acquisition & Analysis Protocol for the
-Phoenix pilot. Like Section 2 the whole section runs from this single module so
-the result is reproducible end to end (protocol standing rule: "every figure and
-every number must be reproducible from the saved code"). It REUSES the Section 2
-acquisition machinery wherever possible -- it imports section2_ecostress_lst and
-calls its Earthdata auth, manifest/checksum, clip, keep-mask, drop, cube-stats
-and figure helpers, so the two sections share one tested implementation.
-
-SCOPE / SUPPORTING-EVIDENCE CAVEAT (protocol Section 3 common pitfall)
----------------------------------------------------------------------
-This evapotranspiration product was designed for NATURAL VEGETATION and is
-UNRELIABLE OVER BUILT-UP AREAS. It is SUPPORTING evidence only -- a mechanism
-check that distinguishes genuine transpiration failure from a simple shading
-artifact -- NOT a primary measurement. Its later use is RESTRICTED to the
-high-tree-fraction pixels identified in Section 10. State this limitation openly
-anywhere these cubes are consumed.
-
-Product identity (confirmed on Earthdata Search / CMR, 2026-06-10)
------------------------------------------------------------------
-The protocol names "ECO_L3T_ET_PT-JPL" as an EXAMPLE and explicitly says to
-confirm the exact name. That short name is a Collection-1 name and DOES NOT EXIST
-in Collection 2 (v002), which is what covers the 2023 pilot window. In
-Collection 2 the PT-JPL evapotranspiration is delivered as a per-band layer of
-the tiled Joint-ET product:
-
-    ET  : short_name = ECO_L3T_JET   version = 002   provider = LPCLOUD
-          doi:10.5067/ECOSTRESS/ECO_L3T_JET.002  (NASA LP DAAC)
-          The JET tile bundles several algorithms' ET as separate layers
-          (BESSinst, MOD16inst, STICinst, ETdaily, PTJPLSM*). The PT-JPL
-          algorithm output is the PTJPLSM family; we take **PTJPLSMinst** -- the
-          PT-JPL(-SM) INSTANTANEOUS evapotranspiration (latent-heat flux, W m-2)
-          -- as the Section-3 ET measurement (chosen with the user, 2026-06-10).
-          Gate layers present: cloud, water. (No QC-bits or height layer.)
-
-    ESI : short_name = ECO_L4T_ESI   version = 002   provider = LPCLOUD
-          doi:10.5067/ECOSTRESS/ECO_L4T_ESI.002  (NASA LP DAAC)
-          Layers: ESI (evaporative stress index, dimensionless ET/PET),
-          PET (potential evapotranspiration, W m-2), cloud, water.
-
-Both collections share the ECOSTRESS tile geometry, orbit/scene numbering and
-overpass timestamps with the Section-2 ECO_L2T_LSTE granules, so an ET/ESI tile
-and an LST tile from the same overpass share the SAME overpass key
-(orbit_scene_timestamp) -- this is what step 22 / the overpass-link table relies
-on.
-
-Pipeline (steps 19-22)
-----------------------
-19. Authenticate to Earthdata (reused from Section 2) and search ECO_L3T_JET and
-    ECO_L4T_ESI over the SAME config bbox and pilot window as Section 2. Download
-    only the needed layers into data/raw/ecostress_et/ and data/raw/ecostress_esi/
-    and record every file in data/manifest.csv (same schema/helper as Section 2).
-20. Apply the SAME quality control as Section 2: drop cloud and water pixels and
-    non-finite (fill / low-quality) retrievals. These products carry no QC-bits
-    layer, so the "best quality" term degenerates to all-pass and the keep mask
-    is cloud==0 AND water==0 AND finite(value) -- evaluated by the very same
-    section2.build_keep_mask function (qc set to zeros = best).
-21. Reproject + resample each cleaned granule to the 70 m Section-1 reference
-    grid (bilinear -- ET/ESI/PET are continuous, per Section 9 step 48) and stack
-    tiles-per-overpass into time-indexed Zarr cubes in data/interim/.
-22. For each ET/ESI overpass that shares an overpass with a Section-2 LST
-    overpass, record the pairing in data/interim/overpass_links.parquet, keyed to
-    the LST overpasses.
-
-Run (canopy env, Earthdata auth configured):
-    python src/section3_ecostress_et_esi.py                  # full run
-    python src/section3_ecostress_et_esi.py --max-granules 6 # quick smoke test
-    python src/section3_ecostress_et_esi.py --skip-download  # reuse data/raw files
-    python src/section3_ecostress_et_esi.py --links-only     # rebuild link table only
+Inputs : Earthdata CMR (ECO_L3T_JET v002, ECO_L4T_ESI v002) over the Section-2
+         bbox/pilot window; data/raw/ecostress_{et,esi}/; the Section-1 70 m
+         reference grid (config.REFERENCE_GRID_TIF).
+Outputs: data/interim/ecostress_{et,esi}_cube (Zarr), per-product granule reports
+         (CSV), overpass_links.parquet, and QA figures in config.FIGURES_DIR.
+Key decisions (full rationale in docs/DESIGN_DECISIONS.md, Section 3):
+  - SUPPORTING evidence only — ET/ESI unreliable over built-up areas; restrict
+    later use to high-tree-fraction pixels (Section 10).
+  - PT-JPL ET = PTJPLSMinst layer of ECO_L3T_JET (Collection-1 name in protocol
+    does not exist in v002); ESI/PET from ECO_L4T_ESI.
+  - Pixel screening is exactly finite(value) AND cloud==0 AND water==0. No
+    retrieval-quality QA bit/flag is downloaded or applied.
+  - ETinstUncertainty is ensemble spread, not a retrieval-quality QA bit, and is
+    not downloaded or used here.
+  - Plausible ranges are advisory diagnostics only; values are never clipped.
+  - Reuses Section 2 machinery (auth, manifest, clip, mask application, stats,
+    and figures), while keeping this product-specific screening explicit.
+  - Bilinear resample to 70 m (continuous quantities); overpass keys match LST.
+Run: python src/section3_ecostress_et_esi.py [--max-granules N] [--skip-download]
+     [--links-only] [--products et,esi] [--min-valid-fraction F] [-v]
 """
 
 from __future__ import annotations
@@ -86,8 +38,7 @@ import numpy as np
 import pandas as pd
 
 # Heavy geospatial / EO-access libraries (same set Section 2 uses). The pure
-# logic below (filename parsing, product config, link-table assembly) does not
-# touch them, so it stays unit-testable without the geo stack installed.
+# logic below stays import-safe without the geo stack.
 import earthaccess  # noqa: E402
 import rioxarray  # noqa: F401,E402  (registers the .rio accessor)
 import xarray as xr  # noqa: E402
@@ -102,24 +53,32 @@ if str(_SRC_DIR) not in sys.path:
     sys.path.insert(0, str(_SRC_DIR))
 import config  # noqa: E402
 import section2_ecostress_lst as sec2  # noqa: E402  (reuse acquisition machinery)
+import plot_style as ps  # noqa: E402  (shared figure color convention)
 
 log = logging.getLogger("section3")
 
 PROVIDER = "LPCLOUD"
 PILOT_START, PILOT_END = config.PILOT_WINDOW
 
+ANALYSIS_ROLE = "corroboration-only"
+SCREENING_MASK = "isfinite(value) AND cloud == 0 AND water == 0"
+RETRIEVAL_QUALITY_QA_FILTER = (
+    "none; no retrieval-quality QA bit/flag band was downloaded or applied"
+)
+ADVISORY_RANGE_POLICY = (
+    "diagnostic flag only; values outside the range are retained and never clipped"
+)
+ETINST_UNCERTAINTY_DISCLOSURE = (
+    "unused; ETinstUncertainty is the standard deviation (ensemble spread) across "
+    "the L3 JET ET estimates, not a retrieval-quality QA bit"
+)
 
-# =========================================================================== #
-# Product configuration  (pure data; no geo deps)
-# --------------------------------------------------------------------------- #
+
+# --- Product configuration (pure data; no geo deps) ----------------------------
 @dataclasses.dataclass(frozen=True)
 class Product:
-    """One ECOSTRESS tiled product to acquire in Section 3.
-
-    measure_layers: the band(s) we keep as cube data variables, first = primary
-    (used for the drop / coverage decision). gate_layers: cloud/water masks. The
-    union (download_layers) is what we fetch into data/raw to keep it small.
-    """
+    """One ECOSTRESS tiled product to acquire. measure_layers[0] is primary
+    (drives the drop/coverage decision); download_layers = measures + gates."""
 
     key: str                       # short id used in paths/figures ("et"/"esi")
     short_name: str
@@ -132,7 +91,7 @@ class Product:
     var_names: dict                # layer-suffix -> cube variable name
     var_units: dict                # cube variable name -> units string
     var_long_names: dict           # cube variable name -> long_name
-    plausible: dict                # cube variable name -> (lo, hi) advisory range
+    plausible: dict                # primary variable -> (lo, hi), flag-only range
 
     @property
     def dataset_id(self) -> str:
@@ -165,10 +124,10 @@ ET_PRODUCT = Product(
     var_units={"et": "W m-2"},
     var_long_names={
         "et": "ECOSTRESS PT-JPL(-SM) instantaneous evapotranspiration "
-              "(quality-controlled; ECO_L3T_JET PTJPLSMinst)"
+              "(screened: isfinite(value) AND cloud == 0 AND water == 0; "
+              "ECO_L3T_JET PTJPLSMinst; corroboration only)"
     },
-    # Instantaneous latent-heat flux; advisory window only (negatives can occur
-    # as retrieval noise and are flagged, not dropped).
+    # Advisory window only; negatives are retrieval noise, flagged not dropped.
     plausible={"et": (0.0, 900.0)},
 )
 
@@ -185,12 +144,14 @@ ESI_PRODUCT = Product(
     var_names={"ESI": "esi", "PET": "pet"},
     var_units={"esi": "1", "pet": "W m-2"},
     var_long_names={
-        "esi": "ECOSTRESS evaporative stress index (quality-controlled; "
-               "ECO_L4T_ESI, dimensionless ET/PET)",
-        "pet": "ECOSTRESS potential evapotranspiration (quality-controlled; "
-               "ECO_L4T_ESI PET)",
+        "esi": "ECOSTRESS evaporative stress index (screened: isfinite(value) "
+               "AND cloud == 0 AND water == 0; ECO_L4T_ESI, dimensionless "
+               "ET/PET; corroboration only)",
+        "pet": "ECOSTRESS potential evapotranspiration (screened: "
+               "isfinite(value) AND cloud == 0 AND water == 0; ECO_L4T_ESI "
+               "PET; corroboration only)",
     },
-    plausible={"esi": (0.0, 1.5), "pet": (0.0, 1200.0)},
+    plausible={"esi": (0.0, 1.0)},
 )
 
 PRODUCTS = {ET_PRODUCT.key: ET_PRODUCT, ESI_PRODUCT.key: ESI_PRODUCT}
@@ -198,15 +159,67 @@ PRODUCTS = {ET_PRODUCT.key: ET_PRODUCT, ESI_PRODUCT.key: ESI_PRODUCT}
 DEFAULT_MIN_VALID_FRACTION = sec2.DEFAULT_MIN_VALID_FRACTION
 
 
-# =========================================================================== #
-# Filename parsing  (pure; generalises Section 2's LSTE-only parser)
-# --------------------------------------------------------------------------- #
+def supporting_keep_mask(
+    values: np.ndarray, cloud: np.ndarray, water: np.ndarray
+) -> np.ndarray:
+    """Return the exact Section-3 screening mask; no retrieval QA is implied."""
+    finite = np.isfinite(np.asarray(values, dtype="float64"))
+    clear = np.asarray(cloud) == 0
+    land = np.asarray(water) == 0
+    return finite & clear & land
+
+
+def variable_disclosure_attrs(product: Product, variable: str) -> dict:
+    """Metadata that makes screening, role, and range handling auditable."""
+    attrs = {
+        "analysis_role": ANALYSIS_ROLE,
+        "screening_mask": SCREENING_MASK,
+        "cloud_mask_keep_condition": "cloud == 0 (clear)",
+        "water_mask_keep_condition": "water == 0 (land/non-water)",
+        "finite_value_keep_condition": "isfinite(value)",
+        "retrieval_quality_qa_filter_applied": False,
+        "retrieval_quality_qa_filter": RETRIEVAL_QUALITY_QA_FILTER,
+        "advisory_range_policy": ADVISORY_RANGE_POLICY,
+        "etinst_uncertainty_used": False,
+        "etinst_uncertainty_disclosure": ETINST_UNCERTAINTY_DISCLOSURE,
+    }
+    advisory = product.plausible.get(variable)
+    attrs["advisory_range_defined"] = advisory is not None
+    if advisory is None:
+        attrs["advisory_range"] = "none configured"
+    else:
+        attrs["advisory_range_min"] = float(advisory[0])
+        attrs["advisory_range_max"] = float(advisory[1])
+        attrs["advisory_range_units"] = product.var_units[variable]
+    return attrs
+
+
+def dataset_disclosure_attrs(product: Product) -> dict:
+    """Dataset-level copy of the Section-3 screening and interpretation contract."""
+    lo, hi = product.plausible[product.primary_var]
+    return {
+        "analysis_role": ANALYSIS_ROLE,
+        "screening_mask": SCREENING_MASK,
+        "cloud_mask_keep_condition": "cloud == 0 (clear)",
+        "water_mask_keep_condition": "water == 0 (land/non-water)",
+        "finite_value_keep_condition": "isfinite(value)",
+        "retrieval_quality_qa_filter_applied": False,
+        "retrieval_quality_qa_filter": RETRIEVAL_QUALITY_QA_FILTER,
+        "primary_variable_advisory_range": (
+            f"{product.primary_var}: {lo:g} to {hi:g} {product.var_units[product.primary_var]}"
+        ),
+        "advisory_range_policy": ADVISORY_RANGE_POLICY,
+        "etinst_uncertainty_used": False,
+        "etinst_uncertainty_disclosure": ETINST_UNCERTAINTY_DISCLOSURE,
+        "qc_documentation": "docs/section3_et_esi_qc_note.md",
+    }
+
+
+# --- Filename parsing (pure; generalises Section 2's LSTE-only parser) ---------
 # ECOv002_L3T_JET_27821_006_12SUB_20230602T193750_0712_01_PTJPLSMinst.tif
-# ECOv002_L4T_ESI_27821_006_12SUB_20230602T193750_0712_01_ESI.tif
 #   sensor _level _param _orbit _scene _tile _YYYYMMDDTHHMMSS _build _iter _LAYER
-# (Section 2's regex hard-codes L2T/LSTE and forbids digits in the layer name;
-#  JET layer names such as "PTJPLSMinst"/"MOD16inst" are alphanumeric, so we use
-#  a generalised pattern here and reuse Section 2's GranuleFile dataclass.)
+# JET layer names are alphanumeric (e.g. PTJPLSMinst), so this pattern allows
+# digits in the layer where Section 2's LSTE-only regex forbade them.
 _GRANULE_RE = re.compile(
     r"^(?P<sensor>ECOv\d{3})_(?P<level>L\d[TG])_(?P<param>[A-Za-z0-9-]+?)_"
     r"(?P<orbit>\d+)_(?P<scene>\d+)_(?P<tile>[0-9A-Z]+)_"
@@ -215,11 +228,8 @@ _GRANULE_RE = re.compile(
 
 
 def parse_granule_filename(filename: str) -> "sec2.GranuleFile":
-    """Parse an ECOSTRESS tiled COG filename into Section 2's GranuleFile.
-
-    overpass_key (orbit_scene_timestamp) is therefore identical in form to the
-    Section-2 keys, so ET/ESI tiles pair to LST tiles from the same overpass.
-    """
+    """Parse an ECOSTRESS tiled COG filename into Section 2's GranuleFile, giving
+    overpass_key (orbit_scene_timestamp) identical in form to the Section-2 keys."""
     name = Path(filename).name
     m = _GRANULE_RE.match(name)
     if not m:
@@ -242,11 +252,7 @@ def parse_granule_filename(filename: str) -> "sec2.GranuleFile":
 
 
 def sibling_layer_path(primary_path: Path, layer: str) -> Path:
-    """Given a ..._<LAYER>.tif path, return the sibling path for another layer.
-
-    Generalises Section 2's layer_path_for (which is hard-coded to _LST.tif) by
-    stripping whatever trailing _<token>.tif this granule uses.
-    """
+    """Given a ..._<LAYER>.tif path, return the sibling path for another layer."""
     return primary_path.with_name(
         re.sub(r"_[A-Za-z0-9]+\.tif$", f"_{layer}.tif", primary_path.name)
     )
@@ -257,9 +263,7 @@ def discover_local_primary_files(raw_dir: Path, primary_layer: str) -> list[Path
     return sorted(raw_dir.glob(f"ECOv*_*_{primary_layer}.tif"))
 
 
-# =========================================================================== #
-# Earthdata search + download  (step 19) -- reuses Section 2 helpers
-# --------------------------------------------------------------------------- #
+# --- Earthdata search + download (step 19; reuses Section 2 helpers) -----------
 def search_product(product: Product, max_granules: int | None = None):
     """Search one product over the SAME bbox / pilot window as Section 2."""
     bbox = sec2.bbox_for_earthaccess()
@@ -294,10 +298,8 @@ def needed_layer_links(results, product: Product) -> list[str]:
 
 
 def download_product(results, product: Product, raw_dir: Path) -> list[Path]:
-    """Download needed COGs into data/raw/<subdir>/ and record them in the manifest.
-
-    Manifest rows use Section 2's exact schema and de-duplicating appender.
-    """
+    """Download needed COGs into data/raw/<subdir>/ and record them in the manifest
+    (Section 2's exact schema and de-duplicating appender)."""
     raw_dir.mkdir(parents=True, exist_ok=True)
     urls = needed_layer_links(results, product)
     log.info("Downloading %d COG(s) into %s", len(urls), raw_dir)
@@ -317,22 +319,15 @@ def download_product(results, product: Product, raw_dir: Path) -> list[Path]:
     return paths
 
 
-# =========================================================================== #
-# Per-granule cleaning  (steps 20-21) -- needs the geo stack at run time
-# --------------------------------------------------------------------------- #
+# --- Per-granule cleaning (steps 20-21; needs the geo stack at run time) -------
 def clean_tile(primary_path: Path, product: Product, reference,
                min_valid_fraction: float):
-    """Read + QC-mask + reproject one granule tile to the reference grid.
+    """Read, apply the disclosed screening mask, and reproject one granule tile.
 
-    Returns (aligned_dataset_or_None, GranuleStats). The Dataset holds every
-    measure layer (e.g. esi + pet) on the 70 m grid with non-kept pixels NaN; it
-    is None when the granule is dropped as almost entirely missing (step 16/20).
-    The drop / coverage stats are computed on the PRIMARY layer.
-    """
+    Returns (aligned_dataset_or_None, GranuleStats); the dataset is None when the
+    granule is dropped as near-empty. Drop/coverage stats use the PRIMARY layer."""
     gf = parse_granule_filename(primary_path.name)
 
-    # Step 20 read: cloud/water masks (raw), measure layers scaled to physical
-    # units via metadata. Same readers as Section 2.
     cloud = sec2._open_raw(sibling_layer_path(primary_path, "cloud"), mask_and_scale=False)
     water = sec2._open_raw(sibling_layer_path(primary_path, "water"), mask_and_scale=False)
     cloud = sec2._clip_to_bbox(cloud)
@@ -343,14 +338,9 @@ def clean_tile(primary_path: Path, product: Product, reference,
         da = sec2._open_raw(sibling_layer_path(primary_path, layer), mask_and_scale=True)
         measures[layer] = sec2._clip_to_bbox(da)
 
-    # Step 20 keep mask: cloud==0 AND water==0 AND finite(value). These products
-    # have no QC-bits layer, so we pass an all-zeros (== best) QC into Section 2's
-    # build_keep_mask and reuse its exact masking polarity.
-    zeros_qc = np.zeros_like(np.asarray(cloud.values), dtype="uint16")
     primary = measures[product.primary_layer]
-    keep_primary = sec2.build_keep_mask(primary.values, zeros_qc, cloud.values, water.values)
+    keep_primary = supporting_keep_mask(primary.values, cloud.values, water.values)
 
-    # Step 16/20 drop decision on the cleaned primary layer.
     primary_clean = sec2.apply_keep_mask(primary.values, keep_primary)
     stats = sec2.summarize_granule(
         primary_clean, gf.overpass_key, gf.datetime_utc, gf.tile,
@@ -370,11 +360,10 @@ def clean_tile(primary_path: Path, product: Product, reference,
                     gf.overpass_key, gf.tile, product.key, product.primary_var,
                     lo, hi, stats.lst_min, stats.lst_max)
 
-    # Step 21 reproject/resample every measure layer onto the 70 m grid (bilinear
-    # -- continuous quantities, per Section 9 step 48).
+    # Bilinear resample every measure layer onto the 70 m grid (continuous).
     data_vars = {}
     for layer, da in measures.items():
-        keep = sec2.build_keep_mask(da.values, zeros_qc, cloud.values, water.values)
+        keep = supporting_keep_mask(da.values, cloud.values, water.values)
         clean = sec2.apply_keep_mask(da.values, keep)
         clean_da = da.copy(data=clean)
         aligned = clean_da.rio.reproject_match(reference, resampling=Resampling.bilinear)
@@ -384,17 +373,13 @@ def clean_tile(primary_path: Path, product: Product, reference,
     return ds, stats
 
 
-# =========================================================================== #
-# Build + save the cube  (step 21)
-# --------------------------------------------------------------------------- #
+# --- Build + save the cube (step 21) ------------------------------------------
 def build_cube(primary_files: Iterable[Path], product: Product, reference,
                min_valid_fraction: float) -> tuple["xr.Dataset", pd.DataFrame]:
     """Clean every granule, mosaic tiles within an overpass, stack by time.
 
-    Returns (cube_dataset, granule_report). Tiles from the same overpass are
-    merged into one time slice; values are NEVER averaged across DIFFERENT
-    overpasses (overpass local times differ -- same caveat as Section 2).
-    """
+    Returns (cube_dataset, granule_report). Values are NEVER averaged across
+    DIFFERENT overpasses (overpass local times differ — same caveat as Section 2)."""
     per_overpass: dict[str, dict] = {}
     report_rows: list[dict] = []
 
@@ -408,7 +393,7 @@ def build_cube(primary_files: Iterable[Path], product: Product, reference,
         slot["tiles"].append(aligned)
 
     if not per_overpass:
-        raise RuntimeError(f"No {product.key} granules survived QC -- nothing to stack.")
+        raise RuntimeError(f"No {product.key} granules survived screening -- nothing to stack.")
 
     var_list = [product.var_names[l] for l in product.measure_layers]
     times, slices, keys, orbits, scenes = [], [], [], [], []
@@ -438,7 +423,10 @@ def build_cube(primary_files: Iterable[Path], product: Product, reference,
     for layer in product.measure_layers:
         v = product.var_names[layer]
         cube[v].attrs.update(
-            long_name=product.var_long_names[v], units=product.var_units[v])
+            long_name=product.var_long_names[v],
+            units=product.var_units[v],
+            **variable_disclosure_attrs(product, v),
+        )
     cube.attrs.update(
         dataset=product.dataset_id, doi=product.doi,
         note=("Per-overpass ECOSTRESS %s on the Section-1 70 m grid. SUPPORTING "
@@ -446,6 +434,7 @@ def build_cube(primary_files: Iterable[Path], product: Product, reference,
               "high-tree-fraction pixels (Section 10). Time axis preserved; not "
               "averaged across overpasses. See Section 3 of the protocol."
               % product.key.upper()),
+        **dataset_disclosure_attrs(product),
     )
     cube = cube.rio.write_crs(config.CRS)
     return cube, pd.DataFrame(report_rows)
@@ -460,16 +449,10 @@ def save_cube_zarr(cube: "xr.Dataset", product: Product, interim_dir: Path) -> P
     return out
 
 
-# =========================================================================== #
-# Overpass-link table  (step 22)
-# --------------------------------------------------------------------------- #
+# --- Overpass-link table (step 22) --------------------------------------------
 def _overpass_keys_from_cube(cube_dir: Path) -> dict[str, dict]:
-    """Read {overpass_key -> {datetime_utc, orbit, scene}} from a saved cube.
-
-    Works for the Section-2 LST cube (orbit/scene/time coords) and the Section-3
-    ET/ESI cubes. The overpass key is reconstructed exactly as GranuleFile does:
-    orbit_scene_%Y%m%dT%H%M%S.
-    """
+    """Read {overpass_key -> {datetime_utc, orbit, scene}} from a saved cube
+    (LST or ET/ESI); key reconstructed as GranuleFile does: orbit_scene_%Y%m%dT%H%M%S."""
     if not cube_dir.exists():
         return {}
     ds = xr.open_zarr(cube_dir)
@@ -485,13 +468,9 @@ def _overpass_keys_from_cube(cube_dir: Path) -> dict[str, dict]:
 
 
 def assemble_links(lst: dict, et: dict, esi: dict) -> pd.DataFrame:
-    """Pure assembly of the overpass-link table from three {key -> meta} dicts.
-
-    One row per overpass appearing in ANY of LST / ET / ESI, with boolean
-    membership flags and explicit ET<->LST and ESI<->LST pairing columns. The
-    "pairing recorded" of step 22 is the rows where in_lst & in_et/in_esi.
-    Separated from disk I/O so it is unit-testable without the geo stack.
-    """
+    """Pure assembly of the overpass-link table from three {key -> meta} dicts:
+    one row per overpass in ANY of LST/ET/ESI, with membership and pairing flags.
+    Separated from disk I/O so it is unit-testable without the geo stack."""
     rows = []
     for key in sorted(set(lst) | set(et) | set(esi)):
         meta = lst.get(key) or et.get(key) or esi.get(key)
@@ -516,11 +495,8 @@ def assemble_links(lst: dict, et: dict, esi: dict) -> pd.DataFrame:
 
 
 def build_overpass_links(interim_dir: Path) -> pd.DataFrame:
-    """Assemble the overpass-link table keyed to the Section-2 LST overpasses.
-
-    Reads the saved LST / ET / ESI cubes from disk, then delegates to the pure
-    assemble_links().
-    """
+    """Assemble the overpass-link table keyed to the Section-2 LST overpasses
+    (reads the saved LST/ET/ESI cubes, then delegates to assemble_links)."""
     lst = _overpass_keys_from_cube(config.INTERIM_DIR / sec2.CUBE_DIRNAME)
     et = _overpass_keys_from_cube(interim_dir / ET_PRODUCT.cube_dirname)
     esi = _overpass_keys_from_cube(interim_dir / ESI_PRODUCT.cube_dirname)
@@ -537,9 +513,7 @@ def save_overpass_links(df: pd.DataFrame, interim_dir: Path) -> Path:
     return out
 
 
-# =========================================================================== #
-# Figures  (deliverable: usable-obs count + mean map per product)
-# --------------------------------------------------------------------------- #
+# --- Figures (usable-obs count + mean map per product) ------------------------
 def make_figures(cube: "xr.Dataset", product: Product, figures_dir: Path) -> list[Path]:
     """Write per-pixel usable-observation count and a mean map of the primary var."""
     import matplotlib
@@ -566,7 +540,9 @@ def make_figures(cube: "xr.Dataset", product: Product, figures_dir: Path) -> lis
     fig.savefig(p1, dpi=150, bbox_inches="tight"); plt.close(fig); outputs.append(p1)
 
     fig, ax = plt.subplots(figsize=(7, 6))
-    im = ax.imshow(mean, extent=extent, origin="upper", cmap="YlGnBu")
+    # ESI is a vegetation-vigor index (sequential greens); ET is a water flux (blue-green).
+    mean_cmap = ps.CMAP["vegetation"] if product.key == "esi" else ps.CMAP["et"]
+    im = ax.imshow(mean, extent=extent, origin="upper", cmap=mean_cmap)
     ax.set_title(f"ECOSTRESS mean {var} ({product.var_units[var]}) -- visual QA only\n"
                  f"Phoenix {PILOT_START}..{PILOT_END} (supporting evidence; built-up "
                  f"pixels unreliable)")
@@ -579,9 +555,7 @@ def make_figures(cube: "xr.Dataset", product: Product, figures_dir: Path) -> lis
     return outputs
 
 
-# =========================================================================== #
-# Orchestration / CLI
-# --------------------------------------------------------------------------- #
+# --- Orchestration / CLI ------------------------------------------------------
 def process_product(product: Product, reference, max_granules, skip_download,
                     min_valid_fraction) -> "xr.Dataset":
     raw_dir = config.RAW_DIR / product.raw_subdir
@@ -599,6 +573,13 @@ def process_product(product: Product, reference, max_granules, skip_download,
             raise SystemExit(f"CMR search returned no {product.key} granules.")
         download_product(results, product, raw_dir)
         primary_files = discover_local_primary_files(raw_dir, product.primary_layer)
+
+    log.warning(
+        "%s screening disclosure: mask=%s. Retrieval-quality QA filter=%s. "
+        "Range policy=%s. %s.",
+        product.key.upper(), SCREENING_MASK, RETRIEVAL_QUALITY_QA_FILTER,
+        ADVISORY_RANGE_POLICY, ETINST_UNCERTAINTY_DISCLOSURE,
+    )
 
     cube, report = build_cube(primary_files, product, reference, min_valid_fraction)
     save_cube_zarr(cube, product, config.INTERIM_DIR)
@@ -633,7 +614,9 @@ def run(max_granules=None, skip_download=False, links_only=False,
 
 
 def _build_arg_parser() -> argparse.ArgumentParser:
-    p = argparse.ArgumentParser(description="Section 3 - ECOSTRESS ET (PT-JPL) & ESI acquisition & QC.")
+    p = argparse.ArgumentParser(
+        description="Section 3 - ECOSTRESS ET (PT-JPL) & ESI acquisition and screening."
+    )
     p.add_argument("--max-granules", type=int, default=None,
                    help="cap granules per product (quick smoke test).")
     p.add_argument("--skip-download", action="store_true",

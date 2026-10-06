@@ -1,24 +1,14 @@
 #!/usr/bin/env python3
 """Self-test for the Section 7 precip/drought pipeline (pure-logic).
 
-Mirrors test_section2/3/4_*: the geo / EE stack (rioxarray, xarray, rasterio, ee,
-geemap, earthaccess) is stubbed so the module imports without it, then the
-algorithmically risky pure logic is exercised on synthetic data:
+Geo/EE stack (rioxarray, xarray, rasterio, ee, geemap, earthaccess) is stubbed so
+the module imports without it, then the risky pure logic is exercised on synthetic
+data: antecedent rolling-sum semantics (exclusive/inclusive, incomplete->NaN,
+NaN-in-window->NaN), 1-D vs 3-D agreement, date/URL/filename helpers, PRISM zip
+member picker, GRIDMET DROUGHT band parser, and the download manifest row.
+HTTP/EE/geedim/reproject/Zarr are exercised by the real CLI, not here.
 
-  * the antecedent rolling-sum semantics: "preceding N days" excluding the
-    observation day (and the inclusive variant), incomplete windows -> NaN, and
-    NaN-in-window -> NaN (an incomplete record never reads as complete)
-  * the 1-D and 3-D (gridded) antecedent results agree pixel-by-pixel
-  * the date / URL / filename helpers (season + daily date ranges, PRISM URL)
-  * the PRISM zip raster-member picker (.tif preferred, .bil fallback)
-  * the GRIDMET DROUGHT toBands band-name parser -> (yyyymmdd, variable)
-  * the manifest row built for a download (schema + checksum prefix)
-
-The HTTP download, EE compute, geedim download, reproject and Zarr writing are
-standard library usage exercised by the real CLI in an authenticated environment,
-not re-implemented here.
-
-Runs with just numpy + pandas:  python src/test_section7_precip_drought.py
+Run: python src/test_section7_precip_drought.py
 """
 
 from __future__ import annotations
@@ -33,7 +23,7 @@ import numpy as np
 
 
 def _install_geo_stubs() -> None:
-    """Stub the heavy top-level imports so the module imports with only numpy+pandas."""
+    """Stub heavy top-level imports so the module loads with only numpy+pandas."""
     for name in ("ee", "geemap", "rioxarray", "earthaccess", "xarray"):
         if name not in sys.modules:
             sys.modules[name] = types.ModuleType(name)
@@ -76,69 +66,72 @@ def check(cond: bool, msg: str) -> None:
 
 
 def test_antecedent_exclusive() -> None:
-    print("\n[antecedent sum: preceding N days, EXCLUDING the observation day]")
+    """Exclusive: window is [t-N, t-1]."""
+    print("\n[antecedent sum: preceding N days, EXCLUDING observation day]")
     daily = np.array([1, 2, 3, 4, 5, 6], dtype="float64")
     out = sec7.antecedent_sum(daily, window=2, inclusive=False)
-    # t<2 incomplete -> NaN; t=2: days[0,1]=3; t=3: 5; t=4: 7; t=5: 9
-    check(np.isnan(out[0]) and np.isnan(out[1]), "first window-1 days are NaN (incomplete)")
+    check(np.isnan(out[0]) and np.isnan(out[1]), "first window-1 days NaN (incomplete)")
     check(out.tolist()[2:] == [3.0, 5.0, 7.0, 9.0],
-          "exclusive 2-day totals = [3,5,7,9] (window is [t-2, t-1])")
-    check(sec7.ANTECEDENT_INCLUSIVE is False, "module default is exclusive ('preceding')")
-    check(sec7.ANTECEDENT_WINDOWS == (30, 60, 90), "windows are 30/60/90 days (step 38)")
+          "exclusive 2-day totals = [3,5,7,9]")
+    check(sec7.ANTECEDENT_INCLUSIVE is False, "module default is exclusive")
+    check(sec7.ANTECEDENT_WINDOWS == (30, 60, 90), "windows are 30/60/90 days")
 
 
 def test_antecedent_inclusive() -> None:
+    """Inclusive: window is [t-N+1, t]."""
     print("\n[antecedent sum: inclusive N-day total ending on the day]")
     daily = np.array([1, 2, 3, 4, 5, 6], dtype="float64")
     out = sec7.antecedent_sum(daily, window=2, inclusive=True)
-    # t=0 incomplete; t=1: days[0,1]=3; t=2: 5; ... t=5: days[4,5]=11
     check(np.isnan(out[0]), "day 0 incomplete -> NaN")
     check(out.tolist()[1:] == [3.0, 5.0, 7.0, 9.0, 11.0],
-          "inclusive 2-day totals = [3,5,7,9,11] (window is [t-1, t])")
+          "inclusive 2-day totals = [3,5,7,9,11]")
 
 
 def test_antecedent_nan_propagates() -> None:
-    print("\n[antecedent sum: a NaN inside the window -> NaN (never undercount)]")
+    """A NaN in the window -> NaN, never a partial sum."""
+    print("\n[antecedent sum: NaN inside window -> NaN]")
     daily = np.array([1, np.nan, 3, 4], dtype="float64")
     out = sec7.antecedent_sum(daily, window=2, inclusive=False)
-    # t=2 window=[0,1] contains NaN -> NaN; t=3 window=[1,2] contains NaN -> NaN
     check(np.isnan(out[2]) and np.isnan(out[3]),
-          "windows overlapping the NaN day are NaN, not a smaller partial sum")
+          "windows overlapping the NaN day are NaN, not a partial sum")
 
 
 def test_antecedent_gridded_matches_1d() -> None:
-    print("\n[antecedent sum: 3-D (time,y,x) agrees with per-pixel 1-D]")
+    """3-D (time,y,x) result agrees with per-pixel 1-D."""
+    print("\n[antecedent sum: 3-D agrees with per-pixel 1-D]")
     rng = np.arange(7 * 2 * 2, dtype="float64").reshape(7, 2, 2)
     grid = sec7.antecedent_sum(rng, window=3, inclusive=False)
     px = sec7.antecedent_sum(rng[:, 1, 0], window=3, inclusive=False)
     check(np.allclose(grid[:, 1, 0], px, equal_nan=True),
-          "gridded antecedent matches the 1-D series at pixel (1,0)")
-    check(grid.shape == (7, 2, 2), "gridded antecedent keeps (time,y,x) shape")
+          "gridded matches 1-D series at pixel (1,0)")
+    check(grid.shape == (7, 2, 2), "gridded keeps (time,y,x) shape")
 
 
 def test_date_helpers() -> None:
+    """season_dates / daily_dates / prism_url / prism_raw_filename."""
     print("\n[date / URL / filename helpers]")
     s = sec7.season_dates([2023], ("06-01", "09-30"))
     check(s[0] == _dt.date(2023, 6, 1) and s[-1] == _dt.date(2023, 9, 30) and len(s) == 122,
-          "season_dates(2023) spans Jun 1..Sep 30 = 122 days")
+          "season_dates(2023) = Jun 1..Sep 30 = 122 days")
     multi = sec7.season_dates([2018, 2019])
-    check(len(multi) == 122 + 122, "season_dates concatenates each year's warm season")
+    check(len(multi) == 122 + 122, "season_dates concatenates each year")
     d = sec7.daily_dates("2018-01-01", "2018-01-03")
     check(d == [_dt.date(2018, 1, 1), _dt.date(2018, 1, 2), _dt.date(2018, 1, 3)],
-          "daily_dates is inclusive of both endpoints")
+          "daily_dates inclusive of both endpoints")
     url = sec7.prism_url("ppt", _dt.date(2018, 6, 1))
-    check(url.endswith("/get/us/4km/ppt/20180601"), "PRISM URL uses get/us/4km + YYYYMMDD")
+    check(url.endswith("/get/us/4km/ppt/20180601"), "PRISM URL = get/us/4km + YYYYMMDD")
     check(sec7.prism_raw_filename("tmean", _dt.date(2023, 7, 4)) == "prism_tmean_20230704_bbox.tif",
-          "PRISM raw filename encodes element + date + bbox tag")
+          "PRISM raw filename = element + date + bbox tag")
 
 
 def test_pick_raster_member() -> None:
+    """PRISM zip member picker: .tif preferred, .bil fallback, else ValueError."""
     print("\n[PRISM zip raster-member picker]")
     names = ["prism_ppt_us_25m_20180601.info.txt", "prism_ppt_us_25m_20180601.prj",
              "prism_ppt_us_25m_20180601.tif", "prism_ppt_us_25m_20180601.xml"]
-    check(sec7.pick_raster_member(names).endswith(".tif"), "prefers the .tif member")
+    check(sec7.pick_raster_member(names).endswith(".tif"), "prefers .tif")
     check(sec7.pick_raster_member(["a.hdr", "a.bil", "a.prj"]).endswith(".bil"),
-          "falls back to .bil when there is no .tif")
+          "falls back to .bil when no .tif")
     try:
         sec7.pick_raster_member(["a.prj", "a.xml"])
         check(False, "no raster -> ValueError")
@@ -147,13 +140,14 @@ def test_pick_raster_member() -> None:
 
 
 def test_parse_drought_band() -> None:
-    print("\n[GRIDMET DROUGHT toBands band-name parser]")
+    """GRIDMET DROUGHT toBands band-name parser -> (yyyymmdd, var)."""
+    print("\n[GRIDMET DROUGHT band-name parser]")
     check(sec7.parse_drought_band("20180601_pdsi") == ("20180601", "pdsi"),
           "'20180601_pdsi' -> ('20180601','pdsi')")
     check(sec7.parse_drought_band("20230705_spei90d") == ("20230705", "spei90d"),
           "'20230705_spei90d' -> ('20230705','spei90d')")
     check(sec7.parse_drought_band("0_pdsi") == (None, "pdsi"),
-          "positional '0_pdsi' -> (None,'pdsi') (date supplied from the time list)")
+          "positional '0_pdsi' -> (None,'pdsi')")
     check(sec7.parse_drought_band("spei30d") == (None, "spei30d"),
           "bare variable name -> (None, var)")
     try:
@@ -162,10 +156,52 @@ def test_parse_drought_band() -> None:
     except ValueError:
         check(True, "unknown variable -> ValueError")
     check(sec7.DROUGHT_VARS == ("pdsi", "spei30d", "spei90d"),
-          "drought vars = pdsi + 30/90-day SPEI (match antecedent windows)")
+          "drought vars = pdsi + 30/90-day SPEI")
+
+
+def test_resolve_drought_band_date() -> None:
+    """Positional bands use system time; disagreement or missing metadata fails closed."""
+    print("\n[GRIDMET DROUGHT band-date resolution]")
+    check(sec7.resolve_band_date("0_pdsi", "20230705") == ("20230705", "pdsi"),
+          "positional band resolves from system:time_start date")
+    check(sec7.resolve_band_date("20230705_spei90d", "20230705")
+          == ("20230705", "spei90d"),
+          "matching name/system dates are accepted")
+    check(sec7.resolve_band_date("20230705_spei30d", None)
+          == ("20230705", "spei30d"),
+          "dated band remains compatible when system metadata is unavailable")
+
+    for name, fallback in (("0_pdsi", None),
+                           ("20230705_pdsi", "20230710"),
+                           ("20230230_pdsi", "20230230")):
+        try:
+            sec7.resolve_band_date(name, fallback)
+            check(False, f"unresolvable/inconsistent {name!r} raises")
+        except ValueError:
+            check(True, f"unresolvable/inconsistent {name!r} raises")
+
+
+def test_expand_drought_band_dates() -> None:
+    """Earth Engine image dates expand in image-major, selected-variable order."""
+    print("\n[GRIDMET DROUGHT system-time expansion]")
+    dt1 = int(_dt.datetime(2023, 6, 5, tzinfo=_dt.timezone.utc).timestamp() * 1000)
+    dt2 = int(_dt.datetime(2023, 6, 10, tzinfo=_dt.timezone.utc).timestamp() * 1000)
+    expanded = sec7.expand_drought_band_dates([dt1, dt2], len(sec7.DROUGHT_VARS))
+    check(expanded == ["20230605"] * 3 + ["20230610"] * 3,
+          "each system date repeats once per selected drought variable")
+    dl = sec7.DroughtDownload(2023, None, ["0_pdsi"], "test",
+                              band_dates=["20230605"])
+    check(dl.band_dates == ["20230605"], "DroughtDownload carries per-band dates")
+
+    try:
+        sec7.expand_drought_band_dates([dt1], 0)
+        check(False, "zero variables raises")
+    except ValueError:
+        check(True, "zero variables raises")
 
 
 def test_manifest_row() -> None:
+    """Manifest row schema + sha256 checksum prefix."""
     print("\n[manifest row for a download]")
     import tempfile
     import pandas as pd
@@ -191,11 +227,12 @@ def test_manifest_row() -> None:
 
 
 def test_year_filter_dates() -> None:
-    print("\n[drought per-year filter dates clamp to the project period]")
+    """Drought per-year filter dates clamp to the project period."""
+    print("\n[drought per-year filter dates]")
     check(sec7._year_filter_dates(2018) == ("2018-01-01", "2019-01-01"),
-          "a full interior year is [Jan 1, next Jan 1)")
+          "interior year = [Jan 1, next Jan 1)")
     check(sec7._year_filter_dates(2024) == ("2024-01-01", "2024-10-01"),
-          "2024 is clamped to the protocol end (Sep 30 -> exclusive Oct 1)")
+          "2024 clamped to protocol end (Oct 1 exclusive)")
 
 
 def main() -> int:
@@ -207,6 +244,8 @@ def main() -> int:
         test_date_helpers,
         test_pick_raster_member,
         test_parse_drought_band,
+        test_resolve_drought_band_date,
+        test_expand_drought_band_dates,
         test_manifest_row,
         test_year_filter_dates,
     ]

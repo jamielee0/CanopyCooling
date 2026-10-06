@@ -1,22 +1,16 @@
 # notebooks/
 
-Exploratory and analysis Jupyter notebooks. Keep heavy/reusable logic in
-`src/`; notebooks should import from there.
+Analysis notebooks. Reusable logic lives in `src/`; notebooks only do IO and plotting.
 
-- `14_exploratory_threshold.ipynb` — **Section 14 deliverable** (steps 72–79): the
-  exploratory analysis of the project's central relationship — tree **cooling advantage** vs
-  the **Compound Stress Index (CSI)** — and the **first threshold estimate** for Phoenix. Reads
-  **only** `../data/processed/master_table.parquet` and imports the reusable analysis logic from
-  `../src/section14_threshold.py`. Contains: the scatter (step 72), the binned mean cooling
-  advantage ± SEM (step 73), the ET/ESI overlay on the binned axis (step 74), the distribution /
-  QC inspection of too-few-pixel neighborhoods, outliers and the day/night artifact (step 75),
-  the segmented (piecewise) regression with a bootstrap CI (steps 76–77), the independent
-  `ruptures` change-point (step 78), the linear-vs-segmented comparison, the multi-criteria
-  agreement gate, and the written conclusion (step 79). **This notebook is committed WITH its
-  executed outputs** (it is the deliverable; figures saved to `../figures/section14_*.png`). Its
-  honest verdict — **no robust threshold detected** for the Phoenix pilot (flat relationship; the
-  segmented kink is not preferred by AIC; the breakpoint is not identified by the bootstrap; the
-  two methods do not agree on a well-identified break; no ET corroboration) — and the thin-sample
-  caveats are summarised in `../docs/section14_results_note.md`. Re-execute with
-  `conda run -n canopy jupyter nbconvert --to notebook --execute --inplace
-  notebooks/14_exploratory_threshold.ipynb`.
+- `14_exploratory_threshold.ipynb` — **the secondary Section 14 CSI deliverable** (steps 72–79):
+  cooling advantage vs the Compound Stress Index and the Phoenix pilot threshold diagnostic.
+  The primary RQ1 detector is the separate Section 15 `vpd_z` × `sm_z` response surface. Reads only
+  `../data/processed/master_table.parquet` and imports `../src/section14_threshold.py`. Walks
+  through the scatter, the binned mean ± SEM, the ET/ESI overlay, the QC inspection, the segmented
+  fit + bootstrap CI, the independent `ruptures` change-point, and the honesty-gate verdict.
+  The headline sample is daytime `sample_label == "primary"` (`n_tree_valid >= 3`); night and
+  pooled-overpass runs are sensitivities. **Committed with its executed outputs** (figures →
+  `../figures/section14_*.png`). Verdict: **no robust threshold detected**; Phoenix has only 9
+  paired block groups, below the 10-cluster confirmatory minimum. See
+  [`../docs/section14_results_note.md`](../docs/section14_results_note.md).
+  Re-execute: `conda run -n canopy jupyter nbconvert --to notebook --execute --inplace notebooks/14_exploratory_threshold.ipynb`.

@@ -1,0 +1,9 @@
+city,summer_year,june_median_balance_30d_mm,july_median_balance_30d_mm,june_negative,july_rises_from_june,pass
+phoenix,2018,-251.60091955211072,-228.1590397860863,True,True,True
+phoenix,2019,-227.15691256445228,-263.58991159859545,True,False,False
+phoenix,2020,-257.0773366254365,-275.95041780302347,True,False,False
+phoenix,2021,-260.2579725070638,-249.93192152616786,True,True,True
+phoenix,2022,-260.6829299767361,-252.81242455442882,True,True,True
+phoenix,2023,-242.8875373199399,-284.55825579726843,True,False,False
+phoenix,2024,-254.8019270595954,-274.04201481428436,True,False,False
+phoenix,2025,-232.1184185306106,-281.59134149200054,True,False,False

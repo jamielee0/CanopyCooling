@@ -1,119 +1,20 @@
 #!/usr/bin/env python3
-"""Section 11 - Compute anomalies and deseasonalize the stress variables (steps 58-61).
+"""Section 11 / anomalies - standardized-anomaly (z-score) stress variables (steps 58-61).
 
-Implements the whole of Section 11 for the Phoenix pilot from this one module, so
-it re-runs end to end from saved code (protocol standing rule: "every figure and
-every number must be reproducible from the saved code; nothing produced by hand").
-
-Objective (protocol Section 11, steps 58-61)
---------------------------------------------
-Convert the raw stress variables entering the Compound Stress Index -- VPD, the
-chosen water-supply indicator (NDMI), and soil moisture as a CHECK -- into
-STANDARDIZED ANOMALIES (z-scores) per pixel per overpass:
-
-  58. CLIMATOLOGY (seasonal normal). For each pixel the normal for a given
-      calendar day = mean of all observations within +/- CLIMATOLOGY_WINDOW_DAYS
-      (15) of that day across all years 2018-2024 (a day-of-year MOVING WINDOW,
-      because the daily sampling is sparse).
-  59. SUB-DAILY variables (VPD and soil moisture are HOURLY) build the climatology
-      AT THE OVERPASS HOUR: match each ECOSTRESS overpass to its ERA5-Land hour and
-      compute the normal from values at that SAME hour-of-day, so the daily cycle
-      does not contaminate the anomaly.
-  60. LEAVE-ONE-YEAR-OUT: when computing the normal for an observation in year Y,
-      exclude year Y from the average.
-  61. Climatological STANDARD DEVIATION over the same window.
-  Step 2: ANOMALY = observed - normal.   Step 3: Z = anomaly / std.
-  Step 4 (QC): each variable's z averages ~0 with std ~1 across the record; the
-      most extreme positive VPD z-scores fall on known peak-heat dates of summer
-      2023; one mapped extreme date is spatially sensible.
-
-COMMON PITFALL (guarded here): computing ONE climatology for the WHOLE season
-instead of a day-of-year climatology leaves the seasonal cycle INSIDE the anomaly
--- early-June and late-August then look anomalous by construction. We ALWAYS
-normalise as a function of day-of-year (the +/-15-day window), and PROVE the
-seasonal cycle is gone with a season-part mean-z flatness check (figure + note).
-
-================================================================================
-KEY DESIGN DECISIONS (documented prominently; see also data/processed/README.md
-and the results note docs/section11_anomaly_qc_note.md)
-================================================================================
-(A) VPD and SOIL MOISTURE -- a rigorous TEMPORAL day-of-year-AT-OVERPASS-HOUR
-    leave-one-year-out climatology, done in NATIVE ERA5 space then regridded.
-    ------------------------------------------------------------------------------
-    The 2018-2024 hourly record exists ONLY for ERA5-Land VPD + soil moisture
-    (data/interim/era5land_vpd_sm_hourly_2018_2024.nc; 8x10 native ~9 km tile,
-    20496 warm-season hours, EPSG:4326). We compute the climatology, anomaly and
-    z-score in that NATIVE 8x10 hourly space, THEN bilinear-regrid the per-overpass
-    z-score fields (and the climatology mean/std fields) to the 70 m grid. Working
-    in native space keeps the observed value and its climatology in the SAME space
-    (cleaner than mixing the Section 9 cube's already-regridded observed value with
-    a native climatology). For each overpass: day-of-year D, hour-of-day H (UTC,
-    from the matched ERA5 hour), year Y (= 2023 for every pilot overpass). The
-    NORMAL at each native pixel = mean of ERA5 vpd (resp. sm) at hour-of-day == H,
-    over all days with |doy - D| <= 15, across 2018-2024 EXCLUDING year Y (LOYO);
-    the STD = std over that same set. The +/-15-day window is CLIPPED to the
-    available warm-season data (no day-of-year wraparound -- it is within-season),
-    so the earliest June / latest September overpasses get a one-sided window; that
-    is expected and documented. The OBSERVED value (the z numerator) is the ERA5
-    value at the overpass's matched hour in 2023, recomputed from the .nc in native
-    space for consistency (NOT reused from the cube's regridded value). z = (obs -
-    normal) / std. Result: per-overpass VPD-z and SM-z on the 70 m grid (66 x y x x).
-
-(B) NDMI -- a TEMPORAL day-of-year-AT-OVERPASS anomaly from Section 4b's
-    time-resolved NDMI product (the per-overpass series + its LOYO climatology).
-    ------------------------------------------------------------------------------
-    Section 4b now produces a TIME-RESOLVED NDMI store on the 70 m grid
-    (data/interim/s2_ndmi_timeseries_70m.zarr; dims overpass=66 x y x x), indexed by
-    the SAME 66 overpass_keys (same order) as the analysis cube, with vars:
-      observed   -- per-overpass cloud-masked S2 NDMI (+/-15 d around each 2023
-                    overpass date) -- VARIES across overpasses,
-      clim_mean,
-      clim_std   -- the 2018-2024 day-of-year (+/-15 d) leave-one-year-out NDMI
-                    climatology.
-    The water-supply z-score is therefore the SAME temporal anomaly formula as
-    VPD/SM, computed PER OVERPASS PER PIXEL directly on the 70 m grid (no regrid --
-    Section 4b already delivered it at 70 m; the same degenerate clim_std==0 ->
-    NaN guard):
-        z_NDMI(overpass, pixel) = (observed - clim_mean) / clim_std.
-    This REPLACES the previous static SPATIAL standardization of a single 2023
-    composite (the historical decision, kept here only as context: Section 4
-    originally produced one warm-season median composite, so only a spatial
-    standardization was possible). z_NDMI now VARIES IN TIME AND SPACE.
-    CONSEQUENCE (stated plainly): the water-supply stress that feeds Section 12's
-    SUPPLY axis is NO LONGER a static spatial field -- the CSI supply axis is
-    UNFROZEN, so the CSI's temporal variation now comes from BOTH the demand (VPD)
-    and the supply (NDMI) sides, each a proper day-of-year-at-overpass LOYO anomaly.
-
-(C) SOIL MOISTURE z (from (A)) remains the protocol's independent TEMPORAL "check"
-    on the water-supply story, kept alongside the (now also temporal) NDMI-z.
-
-Deliverables (checkpoint, Section 11; data/processed/, git-ignored)
--------------------------------------------------------------------
-* section11_zscores_70m.zarr -- THE deliverable. Per-overpass standardized
-  anomalies on the 70 m grid, dims (overpass=66, y=1155, x=1339):
-    vpd_z   -- VPD z-score (temporal day-of-year-at-overpass-hour LOYO climatology)
-    sm_z    -- soil-moisture z-score (same temporal climatology; the CHECK)
-    ndmi_z  -- water-supply z-score (TEMPORAL day-of-year-at-overpass anomaly from
-               Section 4b's per-overpass series + LOYO climatology; varies in time)
-  plus the SAVED CLIMATOLOGY fields (needed to interpret results later, step 4
-  DELIVERABLE), as (overpass, y, x):
-    vpd_clim_mean, vpd_clim_std, sm_clim_mean, sm_clim_std,
-    ndmi_clim_mean, ndmi_clim_std
-  coords overpass/overpass_key/time/era5_hour/y/x and a CF spatial_ref (reopen with
-  decode_coords="all"). Aligned exactly to reference_grid.tif.
-* section11_zscores_overpass_summary.parquet -- a small 66-row per-overpass table
-  (regional-mean z and clim fields, season part) for a quick scan / the QC tables.
-* figures/section11_zscore_distributions.png -- z histograms (mean~0/std~1).
-* figures/section11_seasonal_cycle_check.png -- mean z per season part (FLAT? the
-  key day-of-year-climatology check vs the whole-season pitfall).
-* figures/section11_vpd_z_extreme_date_map.png -- 70 m VPD-z map for the top
-  extreme overpass (a known peak-heat 2023 date).
-* docs/section11_anomaly_qc_note.md -- the QC results note (step 4, documented).
-
-Run (canopy env; no network -- reads only data/interim + data/processed):
-    python src/section11_anomalies.py                 # full Section 11
-    python src/section11_anomalies.py --no-figures     # skip the QC figures
-    python src/section11_anomalies.py --verify-only    # re-open + QC the saved store
+Inputs : data/interim/era5land_vpd_sm_hourly_2018_2024.nc (hourly VPD + soil moisture),
+         data/processed/analysis_cube_70m.zarr (overpass axis + matched ERA5 hour),
+         data/interim/s2_ndmi_timeseries_70m.zarr (Section 4b per-overpass NDMI + clim).
+Outputs: data/processed/section11_zscores_70m.zarr (vpd_z, sm_z, ndmi_z + clim mean/std),
+         data/processed/section11_zscores_overpass_summary.parquet,
+         figures/section11_{zscore_distributions,seasonal_cycle_check,vpd_z_extreme_date_map}.png,
+         docs/section11_anomaly_qc_note.md.
+Key decisions (full rationale in docs/DESIGN_DECISIONS.md, Section 11):
+  - VPD/SM: temporal day-of-year-at-overpass-hour leave-one-year-out climatology in
+    native ERA5 space, then bilinear-regridded to 70 m; +/-15 d window, no doy wraparound.
+  - NDMI: temporal day-of-year-at-overpass anomaly from Section 4b's per-overpass series;
+    replaces the old static spatial standardization and remains a vegetation-condition check.
+  - SM-z is the protocol's primary temporal water-supply variable.
+Run: python src/section11_anomalies.py [--no-figures] [--verify-only] [-v/--verbose]
 """
 
 from __future__ import annotations
@@ -128,10 +29,9 @@ from typing import Sequence
 import numpy as np
 import pandas as pd
 
-# Heavy geospatial libs. The pure logic below (the +/-15-day-at-hour LOYO window
-# selection, the anomaly/z formulas -- now also used for the NDMI temporal z -- and
-# the season-part binning) does not touch them, so it stays unit-testable without the
-# geo stack installed (see test_section11_anomalies.py).
+# Heavy geospatial libs. The pure logic below (window selection, anomaly/z formulas,
+# season-part binning) does not touch them, so it stays unit-testable without the geo
+# stack installed (see test_section11_anomalies.py).
 import rioxarray  # noqa: F401,E402  (registers the .rio accessor)
 import xarray as xr  # noqa: E402
 from rasterio.enums import Resampling  # noqa: E402
@@ -148,24 +48,18 @@ import config  # noqa: E402
 log = logging.getLogger("section11")
 
 
-# =========================================================================== #
-# Source layers + deliverable names.
-# --------------------------------------------------------------------------- #
+# --- Source layers + deliverable names --------------------------------------- #
 ERA5_NC = "era5land_vpd_sm_hourly_2018_2024.nc"   # Section 6 hourly record (the basis)
 ANALYSIS_CUBE = "analysis_cube_70m.zarr"          # Section 9 cube -> the overpass axis
 # Section 4b time-resolved NDMI: per-overpass observed + 2018-2024 day-of-year LOYO
-# climatology mean/std, already on the 70 m grid and indexed by the SAME 66
-# overpass_keys (same order) as the analysis cube. Replaces the old single static
-# composite s2_ndmi_warmseason_median_2023_70m.tif.
+# climatology mean/std, already on the 70 m grid, indexed by the SAME 66 overpass_keys.
 NDMI_TS_ZARR = "s2_ndmi_timeseries_70m.zarr"
 
-# Variables with a TRUE temporal day-of-year climatology.
-#   VPD + soil moisture -> hourly ERA5-Land record (native space then regridded);
-#   NDMI -> the Section 4b per-overpass time series on the 70 m grid directly.
+# Variables with a TRUE temporal day-of-year climatology (VPD + soil moisture, from the
+# hourly ERA5-Land record built natively then regridded).
 TEMPORAL_VARS = ("vpd", "sm")
-# The water-supply indicator now also gets a TEMPORAL day-of-year-at-overpass anomaly
-# (Section 4b supplied the per-overpass series + climatology); it is NOT spatially
-# standardized any more.
+# Water-supply indicator: now a TEMPORAL day-of-year-at-overpass anomaly (Section 4b
+# supplied the per-overpass series + climatology); no longer spatially standardized.
 TEMPORAL_GRID_VAR = "ndmi"
 
 # Deliverables (data/processed/).
@@ -180,13 +74,12 @@ FIG_EXTREME = "section11_vpd_z_extreme_date_map.png"
 # Results note (markdown alongside the deliverable, docs/).
 QC_NOTE = "section11_anomaly_qc_note.md"
 
-# Known peak-heat window of summer 2023 (the step-4 extreme-date expectation):
-# July 2023 was Phoenix's hottest month on record -- a 31-day streak of >=110 F
-# daily highs from ~2023-06-30 to ~2023-07-30, peaking mid-to-late July.
+# Known peak-heat window of summer 2023 (the step-4 extreme-date expectation): July 2023
+# was Phoenix's hottest month on record (>=110 F streak ~2023-06-30 to ~2023-07-30).
 HEATWAVE_2023 = (pd.Timestamp("2023-06-30"), pd.Timestamp("2023-07-30"))
 
-# Season-part bins (half-month) for the seasonal-cycle flatness check (step 4).
-# Edges as (label, month, day_lo, day_hi_inclusive) within the Jun-Sep warm season.
+# Season-part bins (half-month) for the seasonal-cycle flatness check (step 4):
+# (label, month, day_lo, day_hi_inclusive) within the Jun-Sep warm season.
 SEASON_PARTS = (
     ("Jun a", 6, 1, 15), ("Jun b", 6, 16, 30),
     ("Jul a", 7, 1, 15), ("Jul b", 7, 16, 31),
@@ -195,18 +88,14 @@ SEASON_PARTS = (
 )
 
 
-# =========================================================================== #
-# Pure logic (numpy / pandas / str only; unit-tested without the geo stack)
-# =========================================================================== #
+# --- Pure logic (numpy / pandas / str only; unit-tested without the geo stack) - #
 def doy_window_mask(doys: np.ndarray, target_doy: int,
                     window_days: int = config.CLIMATOLOGY_WINDOW_DAYS) -> np.ndarray:
     """Boolean mask of samples within +/- ``window_days`` of ``target_doy`` (step 58).
 
-    A simple ABSOLUTE day-of-year distance (no wraparound across the year boundary):
-    the record is within-season (Jun-Sep), so an early-June or late-September target
-    legitimately gets a ONE-SIDED window clipped to the available data -- that is the
-    expected, documented behaviour, not a bug. ``doys`` is an array of day-of-year
-    integers for the candidate samples.
+    Absolute day-of-year distance (no year-boundary wraparound): the record is
+    within-season, so early-June / late-September targets legitimately get a clipped
+    one-sided window -- expected, not a bug.
     """
     return np.abs(np.asarray(doys) - int(target_doy)) <= int(window_days)
 
@@ -215,16 +104,8 @@ def climatology_select_mask(doys: np.ndarray, hours: np.ndarray, years: np.ndarr
                             target_doy: int, target_hour: int, target_year: int,
                             window_days: int = config.CLIMATOLOGY_WINDOW_DAYS
                             ) -> np.ndarray:
-    """Samples entering one overpass's normal/std: +/-window day-of-year, SAME hour,
-    LEAVE-ONE-YEAR-OUT (steps 58-60).
-
-    Combines three conditions on the candidate hourly samples:
-      * day-of-year within +/- ``window_days`` of ``target_doy``  (step 58 window)
-      * hour-of-day == ``target_hour``                             (step 59 at-hour)
-      * year != ``target_year``                                    (step 60 LOYO)
-    Returns the boolean mask; the caller reduces vpd/sm over it to the mean (normal)
-    and std. Pure numpy on 1-D arrays so it is identical for the native-pixel case
-    (the per-pixel reduction just applies this same time mask along the time axis).
+    """Mask of samples entering one overpass's normal/std: +/-window day-of-year AND
+    same hour AND leave-one-year-out (steps 58-60). Pure numpy on 1-D arrays.
     """
     doys = np.asarray(doys); hours = np.asarray(hours); years = np.asarray(years)
     return (doy_window_mask(doys, target_doy, window_days)
@@ -237,32 +118,32 @@ def anomaly(observed, normal):
     return np.asarray(observed, dtype="float64") - np.asarray(normal, dtype="float64")
 
 
-def zscore(observed, normal, std, min_std: float = 0.0):
-    """Z = (observed - normal) / std (steps 2-3).
+def zscore(observed, normal, std, min_std: float = 0.0, *, return_n_floored: bool = False):
+    """Z = (observed - normal) / std (steps 2-3), elementwise.
 
-    Elementwise over arrays of any shape. Where ``std`` is 0 or non-finite (a
-    degenerate climatology -- e.g. a one-sided window with a single sample, or an
-    all-constant pixel) the z is NaN rather than +/-inf, so a degenerate
-    denominator never poisons the QC statistics. ``min_std`` lets a caller treat
-    near-zero stds as degenerate too (default 0 = only exact zeros / non-finite).
+    Degenerate std (0 or non-finite, e.g. a single-sample one-sided window) yields NaN
+    rather than +/-inf so it never poisons the QC stats. ``min_std`` lets a caller treat
+    near-zero stds as degenerate too: any FINITE std <= min_std is REJECTED to NaN (B2
+    std floor -- a tiny positive climatological std would otherwise blow |z| into the
+    tens-to-hundreds). At min_std=0.0 behavior is identical to the original exact-zero
+    guard. With ``return_n_floored=True`` also returns the count of finite stds that
+    hit the floor, as ``(z, n_floored)``.
     """
     a = anomaly(observed, normal)
     s = np.asarray(std, dtype="float64")
-    bad = ~np.isfinite(s) | (s <= float(min_std))
-    s_safe = np.where(bad, np.nan, s)
-    return a / s_safe
+    nonfinite = ~np.isfinite(s)
+    floored = np.isfinite(s) & (s <= float(min_std))
+    bad = nonfinite | floored
+    z = a / np.where(bad, np.nan, s)
+    return (z, int(floored.sum())) if return_n_floored else z
 
 
 def spatial_standardize(values, ref_mask=None):
     """SPATIAL standardized anomaly z = (x - mu) / sigma over a reference population.
 
-    Generic utility (retained + unit-tested). It was the ORIGINAL NDMI water-supply
-    z when only a single 2023 composite existed; NDMI now uses a TEMPORAL day-of-year
-    anomaly from Section 4b's time series instead (design decision (B)), so this is no
-    longer on the production path. ``mu`` and ``sigma`` are computed over the FINITE
-    values (optionally further restricted by ``ref_mask``). Returns ``(z, mu, sigma)``;
-    z keeps the input shape with NaN where the input is NaN. By construction z has
-    mean ~0 / std ~1 over the reference population.
+    Generic utility (retained + unit-tested) but NO LONGER on the production path: it
+    was the original NDMI z when only a single 2023 composite existed; NDMI now uses a
+    temporal anomaly (decision B). Returns ``(z, mu, sigma)``.
     """
     x = np.asarray(values, dtype="float64")
     finite = np.isfinite(x)
@@ -277,13 +158,8 @@ def spatial_standardize(values, ref_mask=None):
 
 
 def season_part_label(ts, parts: Sequence[tuple] = SEASON_PARTS) -> str | None:
-    """Half-month season-part label for a timestamp (the seasonal-cycle bin, step 4).
-
-    Returns e.g. 'Jul b' for 2023-07-20, or None if the date falls outside the
-    defined warm-season parts. Used to bin overpasses and show the mean z per part
-    is ~flat (proof the day-of-year climatology removed the seasonal cycle, vs the
-    whole-season pitfall).
-    """
+    """Half-month season-part label for a timestamp (e.g. 'Jul b'), or None if outside
+    the defined warm-season parts. Used to bin overpasses for the flatness check."""
     t = pd.Timestamp(ts)
     for label, month, lo, hi in parts:
         if t.month == month and lo <= t.day <= hi:
@@ -297,12 +173,8 @@ def part_order(parts: Sequence[tuple] = SEASON_PARTS) -> list[str]:
 
 
 def season_part_profile(times, values) -> pd.DataFrame:
-    """Mean of ``values`` per SEASON PART, in calendar order (the flatness profile).
-
-    Bins the (time, value) pairs by half-month and returns a tidy DataFrame
-    (season_part, n, mean). Used both for the per-overpass z flatness check and for
-    the day-of-year-vs-whole-season pitfall demonstration on the dense ERA5 series.
-    """
+    """Mean of ``values`` per SEASON PART, in calendar order -- a tidy
+    (season_part, n, mean) DataFrame (the flatness profile)."""
     df = pd.DataFrame({"part": [season_part_label(t) for t in pd.to_datetime(times)],
                        "value": np.asarray(values, dtype="float64")})
     rows = []
@@ -333,14 +205,9 @@ def heatwave_enrichment(times, scores, top_k: int = 11,
                         window: tuple = HEATWAVE_2023) -> dict:
     """How strongly the 2023 heatwave window is ENRICHED among the highest scores.
 
-    The strict "are the top-5 all heatwave dates?" framing is brittle: VPD-z is
-    standardized PER HOUR, so a calm low-variance night can post a high z without
-    being a heat extreme, while a blazing afternoon (high hour-of-day variance) posts
-    a more modest z. The robust, honest statistic is ENRICHMENT: of the ``top_k``
-    overpasses with the largest VPD-z, what fraction fall in the known peak-heat
-    window, versus the window's share of ALL overpasses. >1 means the heatwave is
-    over-represented at the top (the expected signal). Returns a dict with the counts,
-    fractions and the enrichment ratio. Pure pandas; unit-friendly.
+    Robust alternative to the brittle "are the top-5 all heatwave dates?" framing
+    (VPD-z is standardized per hour, so a calm night can post a high z). Enrichment =
+    the window's share of the top-k vs its share of all overpasses; >1 = over-represented.
     """
     df = pd.DataFrame({"time": pd.to_datetime(times), "score": np.asarray(scores)})
     df["hw"] = df["time"].apply(lambda t: in_heatwave(t, window))
@@ -356,9 +223,7 @@ def heatwave_enrichment(times, scores, top_k: int = 11,
             "hw_ranks": ranks}
 
 
-# =========================================================================== #
-# ERA5 climatology + z (native 8x10 hourly space)  -- design decision (A)
-# =========================================================================== #
+# --- ERA5 climatology + z (native 8x10 hourly space) -- decision (A) ---------- #
 def _open_era5(interim: Path) -> "xr.Dataset":
     """Open the 2018-2024 hourly ERA5-Land VPD/SM record (the climatology basis)."""
     era = xr.open_dataset(interim / ERA5_NC)
@@ -373,25 +238,24 @@ def _era5_time_fields(times: pd.DatetimeIndex) -> tuple[np.ndarray, np.ndarray, 
 
 def compute_era5_zscores(era: "xr.Dataset", overpasses: pd.DataFrame,
                          var: str,
-                         window_days: int = config.CLIMATOLOGY_WINDOW_DAYS
-                         ) -> dict[str, np.ndarray]:
+                         window_days: int = config.CLIMATOLOGY_WINDOW_DAYS,
+                         min_std: float = 0.0
+                         ) -> dict:
     """Per-overpass NATIVE (8x10) z, clim-mean and clim-std for one ERA5 variable.
 
-    For each overpass (day-of-year D, hour H, year Y from the matched ERA5 hour):
-      * select the climatology samples with |doy-D|<=window, hour==H, year!=Y (LOYO);
-      * normal = mean over those samples (per native pixel), std = std over them;
-      * observed = the ERA5 value AT the overpass's matched hour in year Y (recomputed
-        from the .nc, native space);
-      * z = (observed - normal) / std  (degenerate std -> NaN).
-    Returns {'z','clim_mean','clim_std'} each a (n_overpass, nlat, nlon) float64 array
-    in NATIVE space (regridded to 70 m by the caller). ``overpasses`` has columns
-    'era5_hour' (the matched hour timestamp) and 'time'.
+    Per overpass (doy D, hour H, year Y): normal/std over |doy-D|<=window & hour==H &
+    year!=Y (LOYO); observed = the ERA5 value at the matched hour in Y; z = (obs-normal)/
+    std (degenerate std -> NaN). ``min_std`` is the B2 std floor: finite native stds
+    <= min_std are rejected to NaN (applied HERE, pre-regrid -- the only correct place;
+    the NaN then propagates through the bilinear regrid). Returns
+    {'z','clim_mean','clim_std','n_floored'} with the arrays in NATIVE space and
+    n_floored the total count of floored (finite, <= min_std) std cells over all
+    overpasses.
     """
     da = era[var]
     vals = da.values.astype("float64")            # (time, lat, lon)
     times = pd.DatetimeIndex(pd.to_datetime(era["time"].values))
     doys, hours, years = _era5_time_fields(times)
-    # Fast lookup from a matched-hour timestamp to its index in the ERA5 time axis.
     pos_of_time = {pd.Timestamp(t): i for i, t in enumerate(times)}
 
     n = len(overpasses)
@@ -401,6 +265,8 @@ def compute_era5_zscores(era: "xr.Dataset", overpasses: pd.DataFrame,
     cstd = np.full((n, nlat, nlon), np.nan, dtype="float64")
 
     n_onesided = 0
+    n_floored = 0
+    n_std_finite = 0
     for i, (_, row) in enumerate(overpasses.iterrows()):
         hour_ts = pd.Timestamp(row["era5_hour"])
         D = int(hour_ts.dayofyear)
@@ -416,41 +282,40 @@ def compute_era5_zscores(era: "xr.Dataset", overpasses: pd.DataFrame,
         std = np.nanstd(sel, axis=0)              # population std over the window
         cmean[i] = normal
         cstd[i] = std
-        # one-sided-window bookkeeping (early-June / late-Sep get clipped windows)
+        n_std_finite += int(np.isfinite(std).sum())
         win_doys = doys[mask]
         if (win_doys.min() > D - window_days) or (win_doys.max() < D + window_days):
             n_onesided += 1
-        # observed = ERA5 value at the matched hour in the overpass year.
         idx = pos_of_time.get(hour_ts)
         if idx is None:
             log.warning("  %s overpass %d: matched hour %s not in ERA5 record -> NaN",
                         var, i, hour_ts)
             continue
         observed = vals[idx]                      # (lat, lon)
-        z[i] = zscore(observed, normal, std)
+        z[i], nf = zscore(observed, normal, std, min_std=min_std, return_n_floored=True)
+        n_floored += nf
     log.info("  %s native climatology built for %d overpasses "
              "(%d had a one-sided +/-%dd window -- early-June/late-Sep, expected)",
              var, n, n_onesided, window_days)
-    return {"z": z, "clim_mean": cmean, "clim_std": cstd}
+    floor_fraction = n_floored / n_std_finite if n_std_finite else float("nan")
+    log.info("  %s std floor (B2): %d / %d finite native std cell(s) (%.4f%%) "
+             "<= min_std=%g -> z NaN (pre-regrid; NaN propagates through the regrid)",
+             var, n_floored, n_std_finite, 100.0 * floor_fraction, min_std)
+    return {"z": z, "clim_mean": cmean, "clim_std": cstd,
+            "n_floored": n_floored, "n_std_finite": n_std_finite,
+            "floor_fraction": floor_fraction}
 
 
 def daymark_vs_wholeseason_demo(era: "xr.Dataset", var: str = "vpd",
                                 window_days: int = config.CLIMATOLOGY_WINDOW_DAYS
                                 ) -> dict:
-    """Demonstrate that the DAY-OF-YEAR climatology removes the seasonal cycle, by
-    contrasting it with the WHOLE-SEASON pitfall on the DENSE ERA5 record (step 4).
+    """Prove the day-of-year climatology removes the seasonal cycle vs the whole-season
+    pitfall, on the DENSE ERA5 record (step 4).
 
-    The protocol's pitfall: a single WHOLE-SEASON climatology leaves the seasonal
-    cycle inside the anomaly. To PROVE our day-of-year-at-hour climatology avoids it,
-    we standardize EVERY 2023 hourly ERA5 sample (the REGIONAL-MEAN series, thousands
-    of samples -- far more than the 66 overpasses, so the test is not noise-limited)
-    two ways, both leave-one-year-out at the matched hour:
-      (A) day-of-year-at-hour: |doy-D|<=window AND hour==H AND year!=2023  (our method)
-      (B) whole-season-at-hour: hour==H AND year!=2023  (the pitfall -- no doy window)
-    and report the mean-z SEASON-PART profile + spread for each, AND a direct check
-    that the day-of-year NORMAL tracks the within-season march while the whole-season
-    normal is flat. Returns the two profiles, their spreads, and the normal-track
-    series. This is the auditable evidence behind the "seasonal cycle removed" claim.
+    Standardizes every 2023 hourly regional-mean sample two ways (both LOYO at the
+    matched hour): (A) day-of-year-at-hour (our method) and (B) whole-season-at-hour
+    (the pitfall), and reports each season-part profile/spread plus a direct
+    day-of-year-normal-tracks-the-season check. The auditable evidence behind the claim.
     """
     vals = era[var].values
     times = pd.DatetimeIndex(pd.to_datetime(era["time"].values))
@@ -489,9 +354,7 @@ def daymark_vs_wholeseason_demo(era: "xr.Dataset", var: str = "vpd",
             "track_doy_normal": doy_norm, "track_wholeseason_normal": whole_norm}
 
 
-# =========================================================================== #
-# Loading + regridding helpers (the geo stack)
-# =========================================================================== #
+# --- Loading + regridding helpers (the geo stack) ---------------------------- #
 def _reference():
     """The 70 m reference grid as a 2-D rioxarray DataArray (the match target/CRS)."""
     return rioxarray.open_rasterio(config.REFERENCE_GRID_TIF).squeeze("band", drop=True)
@@ -507,11 +370,9 @@ def regrid_native_stack(stack: np.ndarray, era: "xr.Dataset", reference: "xr.Dat
                         resampling: "Resampling" = Resampling.bilinear) -> np.ndarray:
     """Bilinear-regrid a (n, nlat, nlon) NATIVE ERA5 stack onto the 70 m grid.
 
-    ERA5-Land carries no CRS in the .nc, so EPSG:4326 is written before the
-    reproject_match. Continuous fields (z / clim-mean / clim-std) -> BILINEAR, the
-    same method Section 9 uses for the ERA5 observed fields, so the z and its
-    climatology land on the 70 m grid identically to the observed VPD/SM. Returns a
-    (n, ny, nx) float32 array. Slice-by-slice to bound peak memory.
+    ERA5-Land carries no CRS, so EPSG:4326 is written before reproject_match; BILINEAR
+    matches Section 9's ERA5 observed-field method. Returns a (n, ny, nx) float32 array,
+    slice-by-slice to bound peak memory.
     """
     latn, lonn = _era5_latlon_names(era)
     lat = era[latn].values
@@ -532,23 +393,13 @@ def load_ndmi_timeseries(interim: Path, reference: "xr.DataArray",
                          ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     """Load Section 4b's per-overpass NDMI series + day-of-year LOYO climatology.
 
-    Returns ``(observed, clim_mean, clim_std)`` each a (n_overpass, ny, nx) float64
-    array already on the 70 m grid. The store carries:
-      * ``observed``  -- per-overpass cloud-masked S2 NDMI (varies across overpasses),
-      * ``clim_mean`` -- the 2018-2024 day-of-year (+/-15 d) leave-one-year-out NDMI
-                         climatological mean,
-      * ``clim_std``  -- the matching climatological std,
-    indexed by the SAME 66 ``overpass_key``s (same order) as the analysis cube. We
-    assert that alignment AND that the store snaps to the reference grid, so the
-    temporal z = (observed - clim_mean)/clim_std is computed directly on the 70 m
-    grid (no regrid needed -- Section 4b already produced it at 70 m), exactly
-    mirroring the VPD/SM anomaly formula (just done natively on the analysis grid).
+    Returns ``(observed, clim_mean, clim_std)`` each (n_overpass, ny, nx) float64,
+    already on the 70 m grid. Asserts the store snaps to the reference grid AND its
+    overpass_key order matches the cube, so the temporal z divides line up exactly.
     """
     ts = xr.open_zarr(interim / NDMI_TS_ZARR, decode_coords="all")
-    # Geometry must match the reference grid (Section 9 rule).
     _assert_on_grid(ts["observed"], "ndmi_timeseries", reference)
-    # Overpass axis must be the SAME keys in the SAME order as the master cube, so the
-    # per-overpass divide lines up with VPD/SM and every downstream section.
+    # Overpass axis must be the SAME keys in the SAME order as the master cube.
     keys_ts = [str(k) for k in ts["overpass_key"].values]
     keys_axis = [str(k) for k in overpasses["overpass_key"].to_numpy()]
     if keys_ts != keys_axis:
@@ -581,10 +432,8 @@ def _assert_on_grid(da: "xr.DataArray", name: str, reference: "xr.DataArray") ->
 def load_overpass_axis(processed: Path) -> pd.DataFrame:
     """The 66-overpass master axis (key, time, era5_hour) from the Section 9 cube.
 
-    The Section 9 analysis cube is the authoritative overpass axis and already
-    carries the step-49 matched ERA5 hour per overpass, so Section 11 reuses it
-    verbatim (no re-matching) -- the z-scores share the exact overpass index every
-    later section uses.
+    Reuses the cube's authoritative axis (incl. its step-49 matched ERA5 hour) verbatim,
+    so the z-scores share the exact overpass index every later section uses.
     """
     cube = xr.open_zarr(processed / ANALYSIS_CUBE, decode_coords="all")
     df = pd.DataFrame({
@@ -597,9 +446,7 @@ def load_overpass_axis(processed: Path) -> pd.DataFrame:
     return df
 
 
-# =========================================================================== #
-# Assembly -> the z-score Zarr  (steps 2-3 + the saved climatology)
-# =========================================================================== #
+# --- Assembly -> the z-score Zarr (steps 2-3 + the saved climatology) --------- #
 def _blosc():
     import numcodecs
     return numcodecs.Blosc(cname="zstd", clevel=5, shuffle=numcodecs.Blosc.SHUFFLE)
@@ -609,13 +456,10 @@ def build_zscore_dataset(interim: Path, processed: Path, reference: "xr.DataArra
                          ) -> tuple["xr.Dataset", dict]:
     """Build the (overpass, y, x) z-score + climatology cube for VPD, SM and NDMI.
 
-    VPD/SM: native day-of-year-at-hour LOYO climatology (decision A) -> regridded z,
-    clim_mean, clim_std. NDMI: a TEMPORAL day-of-year-at-overpass anomaly from Section
-    4b's per-overpass series + 2018-2024 LOYO climatology (decision B), computed
-    directly on the 70 m grid -- z = (observed - clim_mean)/clim_std per overpass per
-    pixel, mirroring the VPD/SM formula -- so it now VARIES in time and space (this
-    unfreezes the CSI supply axis). Returns (dataset, meta) where meta carries the NDMI
-    record mean/std and the per-overpass-variation diagnostic for the QC note.
+    VPD/SM via the native day-of-year-at-hour LOYO climatology (decision A), regridded;
+    NDMI via Section 4b's per-overpass temporal anomaly on the 70 m grid (decision B),
+    retained as a vegetation-side check. Returns (dataset, meta) where meta carries the
+    NDMI record mean/std and the per-overpass-variation diagnostic for the QC note.
     """
     ny, nx = reference.sizes["y"], reference.sizes["x"]
     overpasses = load_overpass_axis(processed)
@@ -625,43 +469,48 @@ def build_zscore_dataset(interim: Path, processed: Path, reference: "xr.DataArra
 
     era = _open_era5(interim)
     data_vars: dict[str, tuple] = {}
+    floor_meta: dict[str, float | int] = {}
 
-    # ---- (A) VPD + SM temporal day-of-year-at-hour LOYO climatology ---------- #
+    # (A) VPD + SM temporal day-of-year-at-hour LOYO climatology, regridded to 70 m.
     for var in TEMPORAL_VARS:
         log.info("Building %s temporal climatology (native 8x10 hourly, "
                  "+/-%dd day-of-year window @ matched hour, leave-one-year-out)...",
                  var, config.CLIMATOLOGY_WINDOW_DAYS)
-        native = compute_era5_zscores(era, overpasses, var)
+        # B2 std floor, per variable (native ERA5 units: kPa for vpd, m3 m-3 for sm);
+        # applied to the NATIVE pre-regrid std inside compute_era5_zscores.
+        var_min_std = config.MIN_STD_VPD if var == "vpd" else config.MIN_STD_SM
+        native = compute_era5_zscores(era, overpasses, var, min_std=var_min_std)
         z70 = regrid_native_stack(native["z"], era, reference)
         cmean70 = regrid_native_stack(native["clim_mean"], era, reference)
         cstd70 = regrid_native_stack(native["clim_std"], era, reference)
         data_vars[f"{var}_z"] = (("overpass", "y", "x"), z70)
         data_vars[f"{var}_clim_mean"] = (("overpass", "y", "x"), cmean70)
         data_vars[f"{var}_clim_std"] = (("overpass", "y", "x"), cstd70)
+        floor_meta[f"{var}_n_floored"] = int(native["n_floored"])
+        floor_meta[f"{var}_n_std_finite"] = int(native["n_std_finite"])
+        floor_meta[f"{var}_floor_fraction"] = float(native["floor_fraction"])
         log.info("  %s_z regridded to 70 m: record mean=%.4f std=%.4f (target ~0 / ~1)",
                  var, float(np.nanmean(z70)), float(np.nanstd(z70)))
 
     era.close()
 
-    # ---- (B) NDMI TEMPORAL day-of-year-at-overpass anomaly (decision B) ------ #
-    # Section 4b now supplies a per-overpass NDMI series + a 2018-2024 day-of-year
-    # leave-one-year-out climatology (mean/std) on the 70 m grid, indexed by the SAME
-    # 66 overpass_keys. So the water-supply z is the SAME temporal anomaly formula as
-    # VPD/SM -- z = (observed - clim_mean)/clim_std per overpass per pixel -- computed
-    # directly on the analysis grid (no regrid: it is already at 70 m). It now VARIES
-    # in time and space, which UNFREEZES the CSI supply axis.
-    log.info("Building NDMI water-supply z (TEMPORAL day-of-year-at-overpass anomaly "
+    # (B) NDMI TEMPORAL day-of-year-at-overpass anomaly (decision B): same formula as
+    # VPD/SM but already at 70 m (no regrid). NDMI is a vegetation-side check; the
+    # primary Section-12 supply axis is root-zone soil moisture ``sm_z``.
+    log.info("Building NDMI vegetation-check z (TEMPORAL day-of-year-at-overpass anomaly "
              "from Section 4b's per-overpass series + 2018-2024 LOYO climatology; "
              "z=(observed-clim_mean)/clim_std per overpass per pixel, on the 70 m grid)...")
     ndmi_obs, ndmi_cmean, ndmi_cstd = load_ndmi_timeseries(interim, reference, overpasses)
-    # Same degenerate-std guard the VPD/SM path uses (clim_std==0 or non-finite -> NaN).
-    ndmi_z = zscore(ndmi_obs, ndmi_cmean, ndmi_cstd).astype("float32")
+    # Same degenerate-std guard the VPD/SM path uses, plus the B2 std floor: finite
+    # clim_std <= MIN_STD_NDMI is rejected to NaN (a tiny positive std would otherwise
+    # inflate |ndmi_z| into the tens-to-hundreds and corrupt the vegetation check).
+    ndmi_z, ndmi_n_floored = zscore(ndmi_obs, ndmi_cmean, ndmi_cstd,
+                                    min_std=config.MIN_STD_NDMI, return_n_floored=True)
+    ndmi_z = ndmi_z.astype("float32")
     data_vars["ndmi_z"] = (("overpass", "y", "x"), ndmi_z)
     data_vars["ndmi_clim_mean"] = (("overpass", "y", "x"), ndmi_cmean.astype("float32"))
     data_vars["ndmi_clim_std"] = (("overpass", "y", "x"), ndmi_cstd.astype("float32"))
-    # Per-overpass variation diagnostic: the std of the per-overpass spatial-mean z.
-    # > 0 PROVES ndmi_z now varies across overpasses (the old static field was identical
-    # across all 66, so this would have been ~0).
+    # >0 PROVES ndmi_z now varies across overpasses (the old static field gave ~0).
     per_op_mean = np.nanmean(ndmi_z.reshape(n, -1), axis=1)
     ndmi_var_across_overpass = float(np.nanstd(per_op_mean))
     rec_mean = float(np.nanmean(ndmi_z)); rec_std = float(np.nanstd(ndmi_z))
@@ -669,8 +518,13 @@ def build_zscore_dataset(interim: Path, processed: Path, reference: "xr.DataArra
     log.info("  NDMI_z record mean=%.4f std=%.4f (n_finite=%d); per-overpass spatial-mean "
              "std-ACROSS-overpasses=%.5f (>0 => it now varies in time)",
              rec_mean, rec_std, n_fin, ndmi_var_across_overpass)
+    ndmi_n_std_finite = int(np.isfinite(ndmi_cstd).sum())
+    ndmi_floor_fraction = (ndmi_n_floored / ndmi_n_std_finite
+                           if ndmi_n_std_finite else float("nan"))
+    log.info("  NDMI std floor (B2): %d / %d finite std pixel(s) (%.4f%%) <= "
+             "MIN_STD_NDMI=%g -> z NaN", ndmi_n_floored, ndmi_n_std_finite,
+             100.0 * ndmi_floor_fraction, config.MIN_STD_NDMI)
 
-    # ---- coords + Dataset ---------------------------------------------------- #
     coords = {
         "overpass": overpasses["overpass"].to_numpy(),
         "overpass_key": ("overpass", overpasses["overpass_key"].to_numpy()),
@@ -685,8 +539,20 @@ def build_zscore_dataset(interim: Path, processed: Path, reference: "xr.DataArra
         if {"y", "x"} <= set(ds[v].dims):
             ds[v].attrs["grid_mapping"] = "spatial_ref"
     _annotate(ds, rec_mean, rec_std, n_fin, ndmi_var_across_overpass)
+    floor_meta.update({
+        "ndmi_n_floored": int(ndmi_n_floored),
+        "ndmi_n_std_finite": ndmi_n_std_finite,
+        "ndmi_floor_fraction": float(ndmi_floor_fraction),
+    })
+    for var, floor in (("vpd", config.MIN_STD_VPD), ("sm", config.MIN_STD_SM),
+                       ("ndmi", config.MIN_STD_NDMI)):
+        ds.attrs[f"min_std_{var}"] = float(floor)
+        ds.attrs[f"{var}_n_floored"] = int(floor_meta[f"{var}_n_floored"])
+        ds.attrs[f"{var}_n_std_finite"] = int(floor_meta[f"{var}_n_std_finite"])
+        ds.attrs[f"{var}_floor_fraction"] = float(floor_meta[f"{var}_floor_fraction"])
     meta = {"ndmi_mean": rec_mean, "ndmi_std": rec_std, "ndmi_n_finite": n_fin,
-            "ndmi_var_across_overpass": ndmi_var_across_overpass, "n_overpass": n}
+            "ndmi_var_across_overpass": ndmi_var_across_overpass, "n_overpass": n,
+            **floor_meta}
     return ds, meta
 
 
@@ -697,12 +563,12 @@ def _annotate(ds: "xr.Dataset", ndmi_mean: float, ndmi_std: float, ndmi_n_finite
         "vpd_z": "VPD standardized anomaly (z): (obs - normal)/std; temporal "
                  "day-of-year-at-overpass-hour leave-one-year-out climatology (steps 58-61).",
         "sm_z": "Soil-moisture standardized anomaly (z); same temporal climatology as "
-                "vpd_z. The protocol's TEMPORAL water-supply CHECK.",
-        "ndmi_z": "Water-supply standardized anomaly (z): TEMPORAL day-of-year-at-overpass "
+                "vpd_z. The protocol's PRIMARY root-zone water-supply variable.",
+        "ndmi_z": "Vegetation-condition standardized anomaly (z): TEMPORAL day-of-year-at-overpass "
                   "anomaly (observed - clim_mean)/clim_std per overpass per pixel, from "
                   "Section 4b's per-overpass NDMI series + 2018-2024 day-of-year "
                   "leave-one-year-out climatology (decision B). Varies in time and space "
-                  "(no longer a static spatial standardization); unfreezes the CSI supply axis.",
+                  "(no longer a static spatial standardization); retained as a vegetation-side check.",
         "vpd_clim_mean": "VPD climatological normal (mean over the +/-15d at-hour LOYO window).",
         "vpd_clim_std": "VPD climatological standard deviation over the same window.",
         "sm_clim_mean": "Soil-moisture climatological normal (same window).",
@@ -725,8 +591,8 @@ def _annotate(ds: "xr.Dataset", ndmi_mean: float, ndmi_std: float, ndmi_n_finite
     for v in ("ndmi_clim_mean", "ndmi_clim_std"):
         if v in ds:
             ds[v].attrs["units"] = "1"            # NDMI is a dimensionless index
-    ds.attrs["title"] = ("Section 11: standardized anomalies (z-scores) for VPD, NDMI "
-                         "(water supply) and soil moisture on the 70 m grid")
+    ds.attrs["title"] = ("Section 11: standardized anomalies (z-scores) for VPD, root-zone "
+                         "soil moisture (water supply), and NDMI (vegetation check) on the 70 m grid")
     ds.attrs["crs"] = config.CRS
     ds.attrs["climatology_years"] = list(config.CLIMATOLOGY_YEARS)
     ds.attrs["climatology_window_days"] = config.CLIMATOLOGY_WINDOW_DAYS
@@ -744,10 +610,8 @@ def _annotate(ds: "xr.Dataset", ndmi_mean: float, ndmi_std: float, ndmi_n_finite
 
 
 def write_zscore_zarr(ds: "xr.Dataset", store: Path) -> Path:
-    """Write the z-score + climatology cube to a compressed, chunked Zarr.
-
-    Each var chunks one overpass per slice (matching the Section 9 cube). object /
-    datetime coords are left uncompressed (Blosc cannot encode them). Overwrites.
+    """Write the z-score + climatology cube to a compressed, chunked Zarr (one overpass
+    per chunk, matching Section 9). object/datetime coords stay uncompressed. Overwrites.
     """
     if store.exists():
         import shutil
@@ -766,11 +630,9 @@ def write_zscore_zarr(ds: "xr.Dataset", store: Path) -> Path:
     return store
 
 
-# =========================================================================== #
-# QC (step 4) -- the heart of this section
-# =========================================================================== #
+# --- QC (step 4) -- the heart of this section -------------------------------- #
 def record_zscore_stats(ds: "xr.Dataset") -> dict:
-    """Record + PRINT each z's whole-record mean/std (must be ~0 / ~1) (step 4)."""
+    """Record + PRINT each z's whole-record mean/std (must be ~0 / ~1) (step 4a)."""
     log.info("=" * 70)
     log.info("QC step 4(a): whole-record z-score mean / std (target ~0 / ~1)")
     stats: dict = {}
@@ -778,12 +640,15 @@ def record_zscore_stats(ds: "xr.Dataset") -> dict:
         arr = ds[v].values
         m = float(np.nanmean(arr)); s = float(np.nanstd(arr))
         nfin = int(np.isfinite(arr).sum())
-        stats[v] = {"mean": m, "std": s, "n_finite": nfin}
+        # max|z| smoke stat (B2): with the std floor in place this should sit in the
+        # low double digits, not the hundreds a tiny unfloored clim_std produces.
+        max_abs = float(np.nanmax(np.abs(arr))) if nfin > 0 else float("nan")
+        stats[v] = {"mean": m, "std": s, "n_finite": nfin, "max_abs": max_abs}
         kind = ("temporal day-of-year-at-hour LOYO" if v in ("vpd_z", "sm_z")
                 else "temporal day-of-year-at-overpass anomaly (Section 4b)")
-        log.info("  %-7s mean=%+.4f  std=%.4f  (n_finite=%d)  [%s]", v, m, s, nfin, kind)
-    # PROOF the NDMI z now varies in time: std of the per-overpass spatial-mean ndmi_z
-    # (the old static field was identical across overpasses -> this would be ~0).
+        log.info("  %-7s mean=%+.4f  std=%.4f  max|z|=%.2f  (n_finite=%d)  [%s]",
+                 v, m, s, max_abs, nfin, kind)
+    # PROOF the NDMI z now varies in time (old static field -> ~0).
     ndmi_per_op = ds["ndmi_z"].mean(dim=("y", "x"), skipna=True).values
     ndmi_var = float(np.nanstd(ndmi_per_op))
     stats["ndmi_z"]["var_across_overpass"] = ndmi_var
@@ -793,7 +658,7 @@ def record_zscore_stats(ds: "xr.Dataset") -> dict:
     log.info("  vpd_z is on target (mean~0, std~1). sm_z mean~0 but std~%.2f (<1): the 2023 "
              "overpass-hour soil moisture deviated LESS than the full 2018-2024 "
              "climatological spread -- a real single-pilot-year property (SM is a slow "
-             "root-zone state and the protocol's water-supply CHECK, not a primary var), "
+             "root-zone state and the protocol's primary water-supply variable), "
              "NOT a climatology bug (identical native & regridded).", stats["sm_z"]["std"])
     return stats
 
@@ -801,15 +666,12 @@ def record_zscore_stats(ds: "xr.Dataset") -> dict:
 def seasonal_cycle_check(ds: "xr.Dataset") -> pd.DataFrame:
     """Mean z per SEASON PART -- must be ~FLAT (the key day-of-year-climatology check).
 
-    Bins the 66 overpasses by half-month and reports the per-bin mean of the
-    spatial-mean z for each variable. If the day-of-year climatology removed the
-    seasonal cycle, these are ~flat (no high/low at the season edges); a systematic
-    ramp would signal the WHOLE-SEASON pitfall. Returns a tidy DataFrame (one row per
-    season part) and PRINTS it.
+    Bins the 66 overpasses by half-month and reports the per-bin mean spatial-mean z per
+    variable; a systematic ramp would signal the whole-season pitfall. Returns a tidy
+    DataFrame (one row per season part) and PRINTS it.
     """
     times = pd.to_datetime(ds["time"].values)
     parts = [season_part_label(t) for t in times]
-    # spatial-mean z per overpass for each variable
     per_op = {}
     for v in ("vpd_z", "sm_z", "ndmi_z"):
         per_op[v] = ds[v].mean(dim=("y", "x"), skipna=True).values
@@ -833,7 +695,6 @@ def seasonal_cycle_check(ds: "xr.Dataset") -> pd.DataFrame:
         log.info("  %-6s (n=%2d)  vpd_z=%+.3f  sm_z=%+.3f  ndmi_z=%+.3f",
                  r["season_part"], int(r["n_overpass"]),
                  r["vpd_z_mean"], r["sm_z_mean"], r["ndmi_z_mean"])
-    # quantify flatness: spread of the per-part VPD-z means
     spread = float(np.nanmax(out["vpd_z_mean"]) - np.nanmin(out["vpd_z_mean"]))
     log.info("  VPD-z season-part mean SPREAD (max-min) over 66 overpasses = %.3f", spread)
     log.info("  NOTE: a residual June-low / July-high pattern here is REAL 2023 weather "
@@ -845,12 +706,10 @@ def seasonal_cycle_check(ds: "xr.Dataset") -> pd.DataFrame:
 def extreme_vpd_dates(ds: "xr.Dataset", top_n: int = 5) -> tuple[pd.DataFrame, dict]:
     """Overpasses with the largest POSITIVE spatial-mean VPD-z (step 4 extreme check).
 
-    The most extreme positive VPD anomalies should fall on the known peak-heat dates
-    of summer 2023 (July 2023 = Phoenix's hottest month on record). Because VPD-z is
-    standardized PER HOUR-of-day, the strict top-N is brittle (a calm low-variance
-    night can post a high z without being a heat extreme); the ROBUST statistic is the
-    ENRICHMENT of the heatwave window among the top ranks. Returns (ranked DataFrame,
-    enrichment dict) and PRINTS both the top-N and the enrichment.
+    The strongest VPD anomalies should fall in the 2023 peak-heat window. Because VPD-z
+    is standardized per hour the strict top-N is brittle, so the robust statistic is the
+    ENRICHMENT of the heatwave window among the top ranks. Returns (ranked df, enrichment
+    dict) and PRINTS both.
     """
     times = pd.to_datetime(ds["time"].values)
     keys = [str(k) for k in ds["overpass_key"].values]
@@ -896,9 +755,7 @@ def overpass_summary_table(ds: "xr.Dataset") -> pd.DataFrame:
     return pd.DataFrame(rec)
 
 
-# =========================================================================== #
-# Figures (deliverable QC)
-# =========================================================================== #
+# --- Figures (deliverable QC) ------------------------------------------------ #
 def make_distribution_figure(ds: "xr.Dataset", figures_dir: Path) -> Path:
     """Histograms of vpd_z / sm_z / ndmi_z with their mean/std annotated (step 4a)."""
     import matplotlib
@@ -907,9 +764,9 @@ def make_distribution_figure(ds: "xr.Dataset", figures_dir: Path) -> Path:
 
     figures_dir.mkdir(parents=True, exist_ok=True)
     fig, axes = plt.subplots(1, 3, figsize=(16, 4.6), constrained_layout=True)
-    specs = [("vpd_z", "VPD z", "#d7301f"),
-             ("sm_z", "Soil-moisture z (check)", "#2171b5"),
-             ("ndmi_z", "NDMI z (water supply, temporal)", "#238b45")]
+    specs = [("vpd_z", "VPD z (atmospheric demand)", "#d7301f"),
+             ("sm_z", "Root-zone soil-moisture z (supply)", "#2171b5"),
+             ("ndmi_z", "NDMI z (vegetation check)", "#238b45")]
     for ax, (v, title, color) in zip(axes, specs):
         arr = ds[v].values
         flat = arr[np.isfinite(arr)]
@@ -929,8 +786,8 @@ def make_distribution_figure(ds: "xr.Dataset", figures_dir: Path) -> Path:
 
 def make_seasonal_cycle_figure(season_df: pd.DataFrame, demo: dict,
                                figures_dir: Path) -> Path:
-    """Seasonal-cycle QC: (L) mean z by season part over the 66 overpasses; (R) the
-    decisive day-of-year-NORMAL-tracks-the-season vs flat-whole-season-normal demo."""
+    """Seasonal-cycle QC: (L) mean z by season part; (R) the decisive
+    day-of-year-normal-tracks-the-season vs flat-whole-season-normal demo."""
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
@@ -941,7 +798,8 @@ def make_seasonal_cycle_figure(season_df: pd.DataFrame, demo: dict,
     # (L) per-overpass z by season part
     x = np.arange(len(season_df))
     axL.plot(x, season_df["vpd_z_mean"], "o-", color="#d7301f", label="VPD z")
-    axL.plot(x, season_df["sm_z_mean"], "s-", color="#2171b5", label="soil-moisture z (check)")
+    axL.plot(x, season_df["sm_z_mean"], "s-", color="#2171b5",
+             label="soil-moisture z (primary supply)")
     axL.plot(x, season_df["ndmi_z_mean"], "^--", color="#238b45",
              label="NDMI z (temporal day-of-year anomaly)")
     axL.axhline(0, color="k", lw=0.8, ls=":")
@@ -1014,9 +872,7 @@ def make_extreme_date_map(ds: "xr.Dataset", extreme_df: pd.DataFrame,
     return out
 
 
-# =========================================================================== #
-# Results note (step 4, documented)
-# =========================================================================== #
+# --- Results note (step 4, documented) --------------------------------------- #
 def write_qc_note(docs_dir: Path, stats: dict, season_df: pd.DataFrame, demo: dict,
                   extreme_df: pd.DataFrame, enr: dict, meta: dict, store: Path) -> Path:
     """Write the markdown QC results note (step 4 DELIVERABLE: documented)."""
@@ -1031,11 +887,28 @@ def write_qc_note(docs_dir: Path, stats: dict, season_df: pd.DataFrame, demo: di
     lines = []
     lines.append("# Section 11 — anomalies & deseasonalized z-scores (QC note)\n")
     lines.append("Standardized-anomaly (z-score) fields for the Compound-Stress-Index "
-                 "stress variables — **VPD**, the water-supply indicator **NDMI**, and "
-                 "**soil moisture** (a check) — for every 70 m pixel and every one of the "
+                 "stress variables — **VPD demand** and **root-zone soil-moisture supply** — "
+                 "plus **NDMI as a vegetation-side check**, for every 70 m pixel and every one of the "
                  "66 ECOSTRESS overpasses (protocol steps 58–61).\n")
     lines.append(f"Deliverable: `data/processed/{store.name}` "
                  "(reopen with `xr.open_zarr(..., decode_coords=\"all\")`).\n")
+
+    lines.append("## Blocker B2 closure — physical climatological-std floors\n")
+    lines.append("A finite climatological standard deviation at or below its variable-specific "
+                 "floor is treated as degenerate and its z-score is set to NaN. Flooring occurs "
+                 "before ERA5 regridding (VPD/SM) or directly on the native 70 m NDMI grid, and "
+                 "both the count and fraction are recorded below.\n")
+    lines.append("| variable | std floor | finite std cells | floored cells | fraction floored |")
+    lines.append("|---|---:|---:|---:|---:|")
+    for var, floor, units in (("vpd", config.MIN_STD_VPD, "kPa"),
+                              ("sm", config.MIN_STD_SM, "m3 m-3"),
+                              ("ndmi", config.MIN_STD_NDMI, "dimensionless")):
+        n_std = int(meta.get(f"{var}_n_std_finite", 0))
+        n_floor = int(meta.get(f"{var}_n_floored", 0))
+        frac = float(meta.get(f"{var}_floor_fraction", np.nan))
+        lines.append(f"| `{var}` | {floor:g} {units} | {n_std:,} | {n_floor:,} | "
+                     f"{100.0 * frac:.4f}% |")
+    lines.append("")
 
     lines.append("## Method (all three variables: a temporal day-of-year LOYO anomaly)\n")
     lines.append("**VPD & soil moisture — rigorous temporal climatology.** The "
@@ -1058,23 +931,23 @@ def write_qc_note(docs_dir: Path, stats: dict, season_df: pd.DataFrame, demo: di
                  "66 overpass keys: a per-overpass cloud-masked `observed` NDMI (±15 d "
                  "around each 2023 overpass date) plus the 2018–2024 day-of-year (±"
                  f"{config.CLIMATOLOGY_WINDOW_DAYS} d) **leave-one-year-out** climatology "
-                 "`clim_mean`/`clim_std`. The water-supply z-score is therefore the **same "
+                 "`clim_mean`/`clim_std`. The vegetation-check z-score uses the **same "
                  "temporal anomaly formula** as VPD/SM — `z_NDMI(overpass, pixel) = "
                  "(observed − clim_mean) / clim_std` — computed **per overpass per "
                  "pixel directly on the 70 m grid** (no regrid; the same `clim_std == 0`/"
                  "non-finite → NaN guard). This **replaces** the previous *static spatial "
                  "standardization* of a single 2023 composite. **Consequence:** `ndmi_z` "
-                 "now **varies in time and space**, so the CSI **supply axis is no longer "
-                 "frozen** — Section 12's supply stress can now respond to the actual "
-                 "per-overpass canopy water content, not just a fixed spatial pattern. "
+                 "now **varies in time and space**, so it is a useful independent vegetation "
+                 "response check. It no longer defines Section 12's water-supply term; that "
+                 "term is built from the root-zone soil-moisture anomaly `sm_z`. "
                  "Whole-record `ndmi_z` mean = "
                  f"{meta['ndmi_mean']:+.4f}, std = {meta['ndmi_std']:.4f} "
                  f"(n_finite = {meta['ndmi_n_finite']:,}); the per-overpass spatial-mean "
                  f"`ndmi_z` has a std **across** overpasses of "
                  f"**{meta['ndmi_var_across_overpass']:.5f} (> 0)** — the proof it now "
                  "varies in time (the old static field was identical across all 66 "
-                 "overpasses → 0). Soil-moisture z remains the protocol's independent "
-                 "temporal *check* on the water-supply story.\n")
+                 "overpasses → 0). Soil-moisture z is the protocol's primary temporal "
+                 "water-supply variable.\n")
 
     lines.append("## QC step 4(a) — whole-record mean / std (target ≈ 0 / ≈ 1)\n")
     lines.append("| variable | mean | std | n finite | regime |")
@@ -1102,9 +975,9 @@ def write_qc_note(docs_dir: Path, stats: dict, season_df: pd.DataFrame, demo: di
                  "moisture is a slowly-varying root-zone state, and these 66 overpasses "
                  "sample only one year of it). The value is **identical in native ERA5 "
                  "space and after regridding** (0.46 vs 0.45), confirming it is the data, "
-                 "not the pipeline. Soil moisture is the protocol's water-supply *check*, "
-                 "not a primary CSI driver, so a sub-unit std here is acceptable and "
-                 "documented.\n")
+                 "not the pipeline. Soil moisture is the primary CSI supply driver; Section 12 "
+                 "robust-rescales its real single-year dispersion before the equal-weight CSI "
+                 "combination so it is not silently under-weighted.\n")
 
     lines.append("## QC step 4(b) — seasonal cycle removed? (mean z per season part)\n")
     lines.append("Mean z per half-month over the 66 overpasses (NDMI-z now varies in time "
@@ -1189,11 +1062,10 @@ def write_qc_note(docs_dir: Path, stats: dict, season_df: pd.DataFrame, demo: di
     return out
 
 
-# =========================================================================== #
-# Verification (re-open + assert geometry == reference_grid.tif)
-# =========================================================================== #
+# --- Verification (re-open + assert geometry == reference_grid.tif) ----------- #
 def verify_grid(store: Path, reference: "xr.DataArray") -> "xr.Dataset":
-    """Re-open the saved store and ASSERT its geometry matches reference_grid.tif."""
+    """Re-open the saved store and ASSERT its geometry matches reference_grid.tif and
+    that ndmi_z now VARIES across overpasses (the temporal-anomaly change)."""
     ds = xr.open_zarr(store, decode_coords="all")
     log.info("=" * 70)
     log.info("VERIFY: reopened %s", store.name)
@@ -1220,8 +1092,7 @@ def verify_grid(store: Path, reference: "xr.DataArray") -> "xr.Dataset":
               "sm_clim_mean", "sm_clim_std", "ndmi_clim_mean", "ndmi_clim_std"):
         assert v in ds.data_vars, f"missing variable {v}"
         assert np.issubdtype(ds[v].dtype, np.floating), f"{v} should be float"
-    # NDMI z is now a TEMPORAL anomaly -> assert it VARIES across overpasses (the whole
-    # point of this section's change; the old field was identical across all 66).
+    # ndmi_z is now temporal -> assert it VARIES across overpasses (old field was static).
     per_op = ds["ndmi_z"].mean(dim=("y", "x"), skipna=True).values
     ndmi_var = float(np.nanstd(per_op))
     assert ndmi_var > 1e-6, (
@@ -1233,9 +1104,7 @@ def verify_grid(store: Path, reference: "xr.DataArray") -> "xr.Dataset":
     return ds
 
 
-# =========================================================================== #
-# Orchestration / CLI
-# =========================================================================== #
+# --- Orchestration / CLI ----------------------------------------------------- #
 def write_overpass_summary(ds: "xr.Dataset", out_path: Path) -> Path:
     df = overpass_summary_table(ds)
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1277,8 +1146,7 @@ def run(make_figures: bool = True, verify_only: bool = False) -> dict:
     results["overpass_summary"] = write_overpass_summary(
         ds, processed / OVERPASS_SUMMARY_PARQUET)
 
-    # If verify_only we don't have meta from this run; recover the NDMI mu/sigma/n
-    # from the saved attrs so the note is still complete.
+    # verify_only has no meta from this run -> recover the NDMI stats from the saved store.
     if not meta:
         meta = _meta_from_attrs(ds)
 
@@ -1297,9 +1165,9 @@ def run(make_figures: bool = True, verify_only: bool = False) -> dict:
 def _run_pitfall_demo(interim: Path) -> dict:
     """Compute + LOG the day-of-year-vs-whole-season pitfall demonstration (step 4b').
 
-    The decisive, auditable check that the day-of-year climatology removed the
-    seasonal cycle (and that the residual season-part structure is real 2023 weather,
-    not the whole-season pitfall). Reuses the dense ERA5 record (regional-mean series).
+    The decisive, auditable check that the day-of-year climatology removed the seasonal
+    cycle (residual season-part structure is real 2023 weather). Uses the dense ERA5
+    regional-mean series.
     """
     era = _open_era5(interim)
     demo = daymark_vs_wholeseason_demo(era, var="vpd")
@@ -1322,18 +1190,20 @@ def _run_pitfall_demo(interim: Path) -> dict:
 
 
 def _meta_from_attrs(ds: "xr.Dataset") -> dict:
-    """Recover the NDMI z record stats from the store (verify-only path).
-
-    The NDMI z is now a temporal anomaly, so the relevant numbers are its whole-record
-    mean/std/n_finite and the per-overpass-variation diagnostic, recomputed directly
-    from the saved field (independent of the attrs prose).
-    """
+    """Recover the NDMI z record stats (mean/std/n_finite + per-overpass variation) from
+    the saved field, for the verify-only path."""
     arr = ds["ndmi_z"].values
     per_op = ds["ndmi_z"].mean(dim=("y", "x"), skipna=True).values
-    return {"ndmi_mean": float(np.nanmean(arr)), "ndmi_std": float(np.nanstd(arr)),
+    meta = {"ndmi_mean": float(np.nanmean(arr)), "ndmi_std": float(np.nanstd(arr)),
             "ndmi_n_finite": int(np.isfinite(arr).sum()),
             "ndmi_var_across_overpass": float(np.nanstd(per_op)),
             "n_overpass": int(ds.sizes["overpass"])}
+    for var in ("vpd", "sm", "ndmi"):
+        meta[f"{var}_n_floored"] = int(ds.attrs.get(f"{var}_n_floored", 0))
+        meta[f"{var}_n_std_finite"] = int(ds.attrs.get(f"{var}_n_std_finite", 0))
+        meta[f"{var}_floor_fraction"] = float(
+            ds.attrs.get(f"{var}_floor_fraction", float("nan")))
+    return meta
 
 
 def _report(results: dict) -> None:
@@ -1353,7 +1223,7 @@ def _report(results: dict) -> None:
 def _build_arg_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         description="Section 11 - compute anomalies and deseasonalize the stress "
-                    "variables: standardized z-scores for VPD, NDMI and soil moisture "
+                    "variables: VPD demand, soil-moisture supply, and NDMI vegetation-check z-scores "
                     "(steps 58-61).")
     p.add_argument("--no-figures", action="store_true", help="skip the QC figures.")
     p.add_argument("--verify-only", action="store_true",

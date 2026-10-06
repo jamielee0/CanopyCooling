@@ -1,0 +1,10 @@
+demand_tercile,antecedent_water_tercile,condition_cell,n_passes,expected_pass_equivalents,role
+low,dry,demand_low__antecedent_dry,8,0.552699,identification_corner
+middle,dry,demand_middle__antecedent_dry,4,1.224495,interior
+high,dry,demand_high__antecedent_dry,68,58.154375,predicted_collapse_corner
+low,middle,demand_low__antecedent_middle,6,2.232323,interior
+middle,middle,demand_middle__antecedent_middle,13,7.368476,interior
+high,middle,demand_high__antecedent_middle,53,43.834884,interior
+low,wet,demand_low__antecedent_wet,18,8.019966,interior
+middle,wet,demand_middle__antecedent_wet,15,11.532078,interior
+high,wet,demand_high__antecedent_wet,34,26.167787,identification_corner

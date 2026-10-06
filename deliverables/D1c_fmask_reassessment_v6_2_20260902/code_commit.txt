@@ -1,0 +1,5 @@
+git_commit=05ce27941a5dc3c5e0634a27b6a089fa27909499
+worktree_dirty_at_run=true
+analysis_command=python src/run_v6_2_d1c_fmask_reassessment.py --analysis-only --node <bundled-node> --node-modules <bundled-node_modules>
+memo_command=python src/build_v6_2_d1c_fmask_memo.py <manifest> <memo.pdf>
+finalize_command=python src/run_v6_2_d1c_fmask_reassessment.py --finalize

@@ -19,8 +19,8 @@ Current contents (regenerate from `src/`):
 - `s2_{ndvi,ndmi}_warmseason_median_2023_70m.tif` — Section 4 warm-season median
   vegetation/moisture indices on the 70 m grid. **Note:** the single static
   `s2_ndmi_warmseason_median_2023_70m.tif` is **superseded by the Section 4b
-  time-resolved NDMI cube below** as the input to Section 11's NDMI water-supply
-  z-score (it is retained for the Section 4 NDVI overlay and as the old-vs-new
+  time-resolved NDMI cube below** as the input to Section 11's NDMI vegetation-condition
+  check (it is retained for the Section 4 NDVI overlay and as the old-vs-new
   agreement baseline).
 - `s2_ndmi_timeseries_70m.zarr` — **Section 4b time-resolved Sentinel-2 NDMI** on the
   70 m grid, dims `(overpass=66, y=1155, x=1339)`, vars `observed` / `clim_mean` /
@@ -34,12 +34,17 @@ Current contents (regenerate from `src/`):
   within ±15 d of the day-of-year. Built server-side in Earth Engine from
   `COPERNICUS/S2_SR_HARMONIZED` (SCL-masked, `(B8−B11)/(B8+B11)`, B11 native 20 m →
   70 m bilinear), downloaded per-overpass with the climatology **deduped by unique
-  day-of-year** (52 unique windows for 66 overpasses). **This unfreezes the CSI
-  water-supply axis**: it supersedes the single static composite as Section 11's NDMI
-  z-score input, letting Section 11 compute a proper *temporal* NDMI z-score
-  `(observed − clim_mean)/clim_std` (varying in time AND space). Regenerate with
+  day-of-year** (52 unique windows for 66 overpasses). It supersedes the single static
+  composite as Section 11's **NDMI vegetation-condition check**, letting Section 11 compute a
+  proper temporal NDMI z-score `(observed − clim_mean)/clim_std` (varying in time and space).
+  It is not the primary water-supply axis and does not enter the current CSI. Regenerate with
   `python src/section4b_ndmi_timeseries.py`; raw per-overpass GeoTIFFs live in
   `../raw/sentinel2_ndmi_ts/` and are recorded in `../manifest.csv`.
+- `era5land_vpd_sm_hourly_2018_2024.nc` — Section 6 hourly ERA5-Land atmospheric demand
+  (`vpd`, kPa) and depth-weighted 0–28 cm root-zone soil moisture (`sm`, m³ m⁻³), kept at
+  native ~9 km for overpass-hour matching and LOYO anomalies. The resulting `sm_z` is the
+  **primary water-supply axis**; it is a regional background field rather than block-scale
+  irrigation detail. Time-varying NDMI is a separate vegetation-condition check.
 - `nlcd_impervious_2021_70m.tif` — Section 5 NLCD impervious surface, **percent
   (0–100)**, float32, **area-weighted** mean of the 30 m cells per 70 m cell.
 - `usfs_tcc_canopy_2025_70m.tif` — Section 5 USFS tree-canopy cover, **percent

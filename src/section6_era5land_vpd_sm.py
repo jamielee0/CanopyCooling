@@ -1,57 +1,18 @@
 #!/usr/bin/env python3
-"""Section 6 — Atmospheric demand (VPD) and background water supply (soil moisture).
+"""Section 6 — ERA5-Land atmospheric demand (VPD) and background soil moisture.
 
-Implements steps 33-36 of the Data Acquisition & Analysis Protocol for the
-Phoenix pilot. The whole section runs from this single module so the result is
-reproducible end to end (protocol standing rule: "every figure and every number
-must be reproducible from the saved code").
-
-Pipeline
---------
-33. Using the Copernicus Climate Data Store API (cdsapi), request four ERA5-Land
-    hourly variables over the config bounding box, for ALL hours, for the warm
-    season 1 June - 30 September of every year 2018-2024 (the long record is
-    needed for the Section 11 climatology). The request is CHUNKED BY CALENDAR
-    MONTH — one CDS job per (year, month) — because CDS requests queue AND enforce
-    a per-request cost limit: a whole year of 4 variables x hourly (~11.7k fields)
-    is rejected as "too large", whereas one month (~2.9k fields) passes
-    comfortably. Per-month chunks are also restartable. Each raw NetCDF is saved
-    to data/raw/era5land/ and recorded in the manifest.
-        2m_temperature                (t2m)   - air temperature        [K]
-        2m_dewpoint_temperature       (d2m)   - dewpoint temperature   [K]
-        volumetric_soil_water_layer_1 (swvl1) - soil moisture 0-7 cm   [m3/m3]
-        volumetric_soil_water_layer_2 (swvl2) - soil moisture 7-28 cm  [m3/m3]
-34. Compute vapour pressure deficit. Convert t2m and d2m from Kelvin to Celsius,
-    take the saturation vapour pressure of each via the Tetens formula
-        e(T) = 0.6108 * exp(17.27 * T / (T + 237.3))   [kPa, T in degC]
-    and form  VPD = e(t2m) - e(d2m)  [kPa].
-35. Compute a root-zone soil-moisture value by depth-weighting the two ERA5-Land
-    layers (layer 1 = 0-7 cm, layer 2 = 7-28 cm):
-        SM = (7 * swvl1 + 21 * swvl2) / 28   [m3/m3].
-36. Keep BOTH VPD and SM at their NATIVE hourly, ~9 km resolution. They are NOT
-    aggregated in time nor regridded to the 70 m grid here — that matching to the
-    ECOSTRESS overpass hour happens in Section 9, and the anomalies in Section 11.
-    The hourly VPD and SM series are saved together to data/interim/ as NetCDF.
-
-Then (deliverable extra): VPD is spot-checked against a few known Phoenix
-peak-heat dates of summer 2023 and the values are printed.
-
-IMPORTANT (protocol common pitfall): ERA5-Land at ~9 km cannot resolve
-block-to-block differences within a city. VPD and SM from this section are a
-REGIONAL BACKGROUND only. The intra-urban water-supply signal is the
-high-resolution Sentinel-2 NDMI of Section 4 — never this layer.
-
-Dataset confirmed on the Copernicus CDS:
-    name = reanalysis-era5-land   provider = Copernicus Climate Data Store / ECMWF
-    hourly, native grid 0.1 deg (~9 km), variables are instantaneous (no
-    de-accumulation needed). The new CDS returns a single NetCDF per request when
-    data_format=netcdf and download_format=unarchived; file short names are
-    t2m / d2m / swvl1 / swvl2 and the time coordinate is `valid_time`.
-
-Run (in the `canopy` env with a working ~/.cdsapirc or CDSAPI_URL/CDSAPI_KEY):
-    python src/section6_era5land_vpd_sm.py                 # full 2018-2024 run
-    python src/section6_era5land_vpd_sm.py --years 2023     # one year (smoke test)
-    python src/section6_era5land_vpd_sm.py --skip-download  # reuse data/raw files
+Inputs : Copernicus CDS reanalysis-era5-land hourly (t2m, d2m, swvl1, swvl2),
+         warm season (Jun-Sep) 2018-2024, study-area bbox -> data/raw/era5land/
+Outputs: hourly VPD [kPa] + root-zone SM [m3/m3] at native ~9 km ->
+         data/interim/era5land_vpd_sm_hourly_2018_2024.nc; manifest rows
+Key decisions (full rationale in docs/DESIGN_DECISIONS.md, Section 6):
+  - Request chunked by calendar month (CDS per-request cost limit; restartable).
+  - VPD via Tetens; SM depth-weighted over 0-7 and 7-28 cm layers.
+  - Kept native hourly ~9 km: no time-aggregation, no 70 m regrid (done in Sec 9/11).
+  - Root-zone SM is the primary water-supply axis, interpreted as a REGIONAL background;
+    Section 4b NDMI is a separate vegetation-condition check.
+Run: python src/section6_era5land_vpd_sm.py [--years Y...] [--skip-download]
+                                            [--force] [--hour H] [-v]
 """
 
 from __future__ import annotations
@@ -69,10 +30,8 @@ from typing import Sequence
 import numpy as np
 import pandas as pd
 
-# Heavy access / array libraries. Imported at module top as in Section 2; the
-# pure-numpy logic below (the Tetens VPD, the depth-weighted soil moisture, the
-# request builder, the manifest helpers) does NOT touch them, so it can be
-# unit-tested with these stubbed out (see test_section6_*).
+# Imported at module top, but the pure-numpy logic below does not touch them, so
+# it can be unit-tested with these stubbed out (see test_section6_*).
 import cdsapi  # noqa: E402
 import xarray as xr  # noqa: E402
 
@@ -84,9 +43,7 @@ import config  # noqa: E402
 
 log = logging.getLogger("section6")
 
-# --------------------------------------------------------------------------- #
-# Confirmed dataset constants (see module docstring; logged at run time).
-# --------------------------------------------------------------------------- #
+# --- Confirmed dataset constants --------------------------------------------
 DATASET = "reanalysis-era5-land"                         # CDS collection name
 DATASET_ID = DATASET                                     # recorded in the manifest
 PROVIDER = "Copernicus Climate Data Store (ECMWF)"
@@ -100,9 +57,7 @@ CDS_VARIABLES = (
 )
 SHORT_NAMES = ("t2m", "d2m", "swvl1", "swvl2")
 
-# Soil-layer thicknesses for the root-zone depth weighting (centimetres).
-#   ERA5-Land layer 1 spans 0-7 cm  -> 7 cm thick
-#   ERA5-Land layer 2 spans 7-28 cm -> 21 cm thick
+# Soil-layer thicknesses for the root-zone depth weighting (cm): L1 0-7, L2 7-28.
 SOIL_L1_CM = 7
 SOIL_L2_CM = 21
 
@@ -116,31 +71,22 @@ KELVIN_ZERO_C = 273.15
 RAW_SUBDIR = "era5land"                                  # data/raw/era5land/
 INTERIM_NAME = "era5land_vpd_sm_hourly_2018_2024.nc"     # data/interim/<this>
 
-# Spot-check defaults (step "5"): the late-July 2023 Phoenix heat wave produced a
-# record 31-day streak of daily highs >= 110 F (30 Jun - 30 Jul 2023). We sample
-# the dry peak-heat days and contrast with a humid monsoon day, at a mid-afternoon
-# hour. Phoenix is MST (UTC-7, no DST), so 22:00 UTC ~ 15:00 local.
+# Spot-check defaults: dry July-2023 Phoenix heat-wave days vs a humid monsoon
+# day, at ~mid-afternoon local. Phoenix is MST (UTC-7, no DST), so 22 UTC ~15:00.
 DEFAULT_PEAK_HEAT_DATES = ("2023-07-16", "2023-07-20", "2023-07-25")
 DEFAULT_CONTRAST_DATES = ("2023-08-18",)                 # monsoon: hot but humid
 SPOT_CHECK_UTC_HOUR = 22                                 # ~15:00 local (MST)
 
 
-# =========================================================================== #
-# Request construction  (pure; no cdsapi/xarray deps)
-# --------------------------------------------------------------------------- #
+# --- Request construction (pure; no cdsapi/xarray deps) ---------------------
 def years() -> list[int]:
-    """The inclusive climatology year span from config (2018..2024)."""
+    """Inclusive climatology year span from config (2018..2024)."""
     lo, hi = config.CLIMATOLOGY_YEARS
     return list(range(lo, hi + 1))
 
 
 def season_months() -> list[str]:
-    """Two-digit month strings spanning config.SEASON, inclusive.
-
-    config.SEASON is ("06-01", "09-30"); the season boundaries are month-aligned
-    (whole June..September), so requesting every day 01-31 of these months and
-    letting CDS ignore non-existent dates returns exactly the warm season.
-    """
+    """Two-digit month strings spanning config.SEASON, inclusive (whole Jun..Sep)."""
     (start_mm, _), (end_mm, _) = (s.split("-") for s in config.SEASON)
     return [f"{m:02d}" for m in range(int(start_mm), int(end_mm) + 1)]
 
@@ -156,20 +102,13 @@ def all_hours() -> list[str]:
 
 
 def area_for_cdsapi() -> list[float]:
-    """config.BBOX_LONLAT is (min_lon,max_lon,min_lat,max_lat); CDS wants the
-    sub-area as [North, West, South, East]."""
+    """Convert config.BBOX_LONLAT to the CDS sub-area order [N, W, S, E]."""
     min_lon, max_lon, min_lat, max_lat = config.BBOX_LONLAT
     return [max_lat, min_lon, min_lat, max_lon]
 
 
 def build_cds_request(year: int, month: str) -> dict:
-    """Build the CDS API request dict for one calendar month of one year.
-
-    All four variables, every day, every hour of the month, clipped to the study
-    area; NetCDF, unarchived so a single .nc comes back. One month of 4 variables
-    at hourly resolution (~2.9k fields) sits comfortably under the CDS per-request
-    cost limit (a whole year does not).
-    """
+    """Build the CDS API request dict for one calendar month of one year."""
     return {
         "variable": list(CDS_VARIABLES),
         "year": str(year),
@@ -182,30 +121,21 @@ def build_cds_request(year: int, month: str) -> dict:
     }
 
 
-# =========================================================================== #
-# VPD + soil-moisture maths  (pure numpy; unit-tested without the geo stack)
-# --------------------------------------------------------------------------- #
+# --- VPD + soil-moisture maths (pure numpy; unit-tested without geo stack) ---
 def kelvin_to_celsius(t_kelvin):
     """Convert a temperature (array or DataArray) from Kelvin to Celsius."""
     return t_kelvin - KELVIN_ZERO_C
 
 
 def saturation_vapour_pressure_kpa(t_celsius):
-    """Saturation vapour pressure e(T) in kPa via the Tetens formula (T in degC).
-
-        e(T) = 0.6108 * exp(17.27 * T / (T + 237.3))
-
-    Works on plain numpy arrays and on xarray DataArrays (np.exp dispatches).
-    """
+    """Saturation vapour pressure e(T) in kPa via Tetens (T in degC); xarray-safe."""
     return TETENS_A * np.exp(TETENS_B * t_celsius / (t_celsius + TETENS_C))
 
 
 def vpd_kpa(t2m_kelvin, d2m_kelvin):
-    """Vapour pressure deficit [kPa] = e(T_air) - e(T_dewpoint) (protocol step 34).
+    """Vapour pressure deficit [kPa] = e(T_air) - e(T_dewpoint) (step 34).
 
-    Inputs are temperatures in Kelvin (ERA5-Land t2m and d2m). Because the
-    dewpoint cannot exceed the air temperature, VPD is >= 0 except for
-    negligible numerical noise where the reanalysis reports T_dew ~ T_air.
+    Inputs are temperatures in Kelvin; VPD is >= 0 except for negligible noise.
     """
     e_air = saturation_vapour_pressure_kpa(kelvin_to_celsius(t2m_kelvin))
     e_dew = saturation_vapour_pressure_kpa(kelvin_to_celsius(d2m_kelvin))
@@ -213,19 +143,12 @@ def vpd_kpa(t2m_kelvin, d2m_kelvin):
 
 
 def rootzone_soil_moisture(swvl1, swvl2):
-    """Depth-weighted root-zone soil moisture [m3/m3] (protocol step 35).
-
-        SM = (7 * swvl1 + 21 * swvl2) / 28
-
-    i.e. the 0-28 cm mean weighted by each layer's thickness (0-7 and 7-28 cm).
-    """
+    """Depth-weighted root-zone soil moisture [m3/m3]: (7*swvl1+21*swvl2)/28 (step 35)."""
     total = SOIL_L1_CM + SOIL_L2_CM
     return (SOIL_L1_CM * swvl1 + SOIL_L2_CM * swvl2) / total
 
 
-# =========================================================================== #
-# Checksums + manifest  (step 33) — same schema as Section 0 / Section 2
-# --------------------------------------------------------------------------- #
+# --- Checksums + manifest (step 33) — same schema as Section 0 / Section 2 ---
 def sha256_file(path: Path, chunk: int = 1 << 20) -> str:
     """Streaming SHA-256 of a file (raw NetCDFs are not loaded whole)."""
     h = hashlib.sha256()
@@ -239,11 +162,7 @@ _MANIFEST_COLUMNS = ["source", "dataset", "filename", "download_date", "checksum
 
 
 def append_to_manifest(rows: Sequence[dict], manifest_csv: Path | None = None) -> None:
-    """Append rows to data/manifest.csv, skipping filenames already recorded.
-
-    Each row carries: source, dataset, filename, download_date, checksum — the
-    schema established in Section 0.
-    """
+    """Append rows to data/manifest.csv, skipping filenames already recorded."""
     manifest_csv = Path(manifest_csv or config.MANIFEST_CSV)
     if manifest_csv.exists() and manifest_csv.stat().st_size > 0:
         existing = pd.read_csv(manifest_csv)
@@ -272,15 +191,11 @@ def _manifest_row(path: Path, year: int, month: str) -> dict:
     }
 
 
-# =========================================================================== #
-# CDS download  (step 33) — needs cdsapi at run time
-# --------------------------------------------------------------------------- #
+# --- CDS download (step 33) — needs cdsapi at run time ----------------------
 def _load_project_dotenv() -> None:
     """Load the gitignored repo-root .env into the environment (no overwrite).
 
-    Mirrors src/check_auth.py and src/section2 so a run can pick up local CDS
-    credentials (CDSAPI_URL / CDSAPI_KEY) from the project .env without exporting
-    them by hand. Real environment variables and ~/.cdsapirc take precedence.
+    Real environment variables and ~/.cdsapirc take precedence.
     """
     env_path = _REPO_ROOT / ".env"
     if not env_path.exists():
@@ -298,10 +213,7 @@ def _load_project_dotenv() -> None:
 def make_client() -> "cdsapi.Client":
     """Construct a cdsapi client (reads ~/.cdsapirc or CDSAPI_URL/CDSAPI_KEY).
 
-    The project .env is loaded first (no overwrite) so CDS creds can live there
-    alongside the other services' creds. Kept non-quiet so the queue status
-    (queued / running / completed) cdsapi emits is surfaced through logging
-    while a request waits in the CDS queue.
+    Kept non-quiet so the CDS queue status is surfaced through logging while waiting.
     """
     _load_project_dotenv()
     return cdsapi.Client()
@@ -314,11 +226,9 @@ def _looks_like_zip(path: Path) -> bool:
 
 
 def _ensure_unarchived_netcdf(path: Path) -> Path:
-    """If CDS handed back a .zip (despite download_format=unarchived), extract.
+    """If CDS handed back a .zip (despite unarchived), extract its one NetCDF in place.
 
-    For an all-instantaneous request like ours the archive contains exactly one
-    NetCDF; extract it in place. Anything else is surfaced loudly rather than
-    silently mishandled.
+    Anything other than exactly one member is surfaced loudly.
     """
     if not _looks_like_zip(path):
         return path
@@ -372,14 +282,9 @@ def download_chunk(client, year: int, month: str, raw_dir: Path,
 
 
 def _keep_system_awake() -> None:
-    """Best-effort: ask Windows not to sleep while the long download runs.
+    """Best-effort: ask Windows not to idle-sleep while the long download runs.
 
-    The 2018-2024 pull is a few hours of mostly waiting on the CDS queue; if the
-    machine sleeps, the polling process is suspended and the run stalls (this
-    happened once overnight). Assert ES_SYSTEM_REQUIRED for the life of the
-    process (Windows releases it automatically on exit). No-op off Windows or on
-    failure. NOTE: this blocks *idle* sleep, not a laptop lid-close — keep the lid
-    open / on power for the duration too.
+    Blocks idle sleep only (not a lid-close); no-op off Windows or on failure.
     """
     if os.name != "nt":
         return
@@ -397,8 +302,7 @@ def _keep_system_awake() -> None:
 def download_all(year_list: Sequence[int], raw_dir: Path, force: bool = False) -> list[Path]:
     """Download every (year, month) chunk, recording each in the manifest as it lands.
 
-    One chunk failing (queue error, transient CDS outage) does not abort the rest;
-    failures are logged and the run continues, so a re-run fills only the gaps.
+    One chunk failing is logged and skipped; a re-run fills only the gaps.
     """
     raw_dir.mkdir(parents=True, exist_ok=True)
     _keep_system_awake()
@@ -427,14 +331,11 @@ def discover_local_chunks(raw_dir: Path) -> list[Path]:
     return sorted(raw_dir.glob("era5land_*.nc"))
 
 
-# =========================================================================== #
-# Open + compute  (steps 34-36) — needs xarray at run time
-# --------------------------------------------------------------------------- #
+# --- Open + compute (steps 34-36) — needs xarray at run time ----------------
 def _normalise(ds: "xr.Dataset") -> "xr.Dataset":
-    """Put one raw ERA5-Land NetCDF into a canonical (time, latitude, longitude).
+    """Put one raw ERA5-Land NetCDF into canonical (time, latitude, longitude).
 
-    The new CDS names the time axis `valid_time` and may carry singleton
-    `number` / `expver` coordinates; fold those away so every year stacks cleanly.
+    Renames `valid_time`->`time` and folds away singleton number/expver coords.
     """
     if "valid_time" in ds.variables and "time" not in ds.dims:
         ds = ds.rename({"valid_time": "time"})
@@ -469,11 +370,9 @@ def open_raw(paths: Sequence[Path]) -> "xr.Dataset":
 
 
 def compute_vpd_sm(ds: "xr.Dataset") -> "xr.Dataset":
-    """Derive hourly VPD and root-zone soil moisture (steps 34-35).
+    """Derive hourly VPD [kPa] and root-zone SM [m3/m3] (steps 34-35).
 
-    Returns a new dataset with two variables, `vpd` [kPa] and `sm` [m3/m3], on
-    the SAME native hourly ~9 km grid as the inputs (no regrid, no time
-    aggregation — step 36).
+    Output stays on the native hourly ~9 km grid: no regrid, no time aggregation.
     """
     vpd = vpd_kpa(ds["t2m"], ds["d2m"])
     vpd.attrs = {
@@ -499,8 +398,10 @@ def compute_vpd_sm(ds: "xr.Dataset") -> "xr.Dataset":
         "dataset": DATASET_ID,
         "provider": PROVIDER,
         "resolution_note": ("ERA5-Land ~9 km is a REGIONAL background only and cannot "
-                            "resolve block-to-block differences; the intra-urban "
-                            "water-supply signal is the Sentinel-2 NDMI of Section 4."),
+                            "resolve block-to-block irrigation differences. Its root-zone "
+                            "soil moisture is nevertheless the primary water-supply axis; "
+                            "Sentinel-2 NDMI is retained separately as a vegetation-condition "
+                            "check."),
         "warm_season": f"{config.SEASON[0]}..{config.SEASON[1]} each year",
         "years": f"{years()[0]}-{years()[-1]}",
         "crs": "EPSG:4326 (native lat/lon; NOT yet on the 70 m grid — see Section 9)",
@@ -509,16 +410,10 @@ def compute_vpd_sm(ds: "xr.Dataset") -> "xr.Dataset":
 
 
 def save_interim(ds: "xr.Dataset", interim_dir: Path) -> Path:
-    """Save the hourly VPD + SM dataset to data/interim/ as NetCDF.
+    """Save the hourly VPD + SM dataset to data/interim/ as compressed NetCDF.
 
-    Why the sys.modules line: xarray.to_netcdf calls dask's get_scheduler, which
-    calls _distributed_available() -> ``from distributed import Client``. On this
-    Windows box that import dies with ssl.SSLError (a malformed certificate in the
-    Windows trust store breaks tornado's module-level SSL init). dask only catches
-    ImportError there, so the SSLError propagates and crashes the write. We never
-    use distributed (the data is a few MB), so park a sentinel in sys.modules that
-    turns the probe into a *caught* ImportError, and dask falls back to a local
-    scheduler.
+    The sys.modules sentinel sidesteps a Windows ssl.SSLError raised by dask's
+    `from distributed import Client` probe; distributed is never used here.
     """
     sys.modules.setdefault("distributed", None)
 
@@ -530,9 +425,7 @@ def save_interim(ds: "xr.Dataset", interim_dir: Path) -> Path:
     return out
 
 
-# =========================================================================== #
-# Spot-check  (deliverable: document + spot-check the VPD calculation)
-# --------------------------------------------------------------------------- #
+# --- Spot-check (deliverable: document + spot-check the VPD calculation) -----
 def spot_check_vpd(
     ds: "xr.Dataset",
     dates: Sequence[str] = DEFAULT_PEAK_HEAT_DATES,
@@ -541,9 +434,7 @@ def spot_check_vpd(
 ) -> pd.DataFrame:
     """Print area-mean VPD (and SM) at a mid-afternoon hour on chosen dates.
 
-    On the dry peak-heat days of July 2023 the study-area VPD should be very high
-    (well above typical), and markedly higher than on a humid monsoon afternoon —
-    a quick physical sanity check on the Tetens calculation.
+    Sanity check on Tetens: dry peak-heat days should give VPD >> humid monsoon day.
     """
     rows = []
     for label, date_list in (("peak-heat", dates), ("monsoon-contrast", contrast_dates)):
@@ -579,9 +470,7 @@ def spot_check_vpd(
     return table
 
 
-# =========================================================================== #
-# Orchestration / CLI
-# --------------------------------------------------------------------------- #
+# --- Orchestration / CLI ----------------------------------------------------
 def run(
     year_list: Sequence[int] | None = None,
     skip_download: bool = False,

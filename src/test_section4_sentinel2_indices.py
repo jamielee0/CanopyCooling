@@ -1,20 +1,10 @@
 #!/usr/bin/env python3
 """Self-test for the Section 4 Sentinel-2 NDVI/NDMI pipeline (pure-logic).
 
-Mirrors test_section2/3_*: the geo / EE stack (ee, geemap, rioxarray, rasterio)
-is stubbed so the module imports without it, then the algorithmically risky pure
-logic is exercised on synthetic data:
-
-  * the normalized-difference formula and its NDVI / NDMI band polarity
-  * the SCL keep-mask (cloud / cloud-shadow / snow classes dropped, the rest kept)
-  * the high-NDVI overlay threshold (NaN-safe)
-  * product configuration, including the honest native scales (NDVI 10 m,
-    NDMI 20 m) and the resolution baked into the filenames
-  * the manifest row built for an EE download (schema + checksum prefix)
-
-The EE compute, geedim download, reproject and matplotlib glue are standard
-library usage exercised by the real CLI in an authenticated environment, not
-re-implemented here.
+Stubs the geo/EE stack (ee, geemap, rioxarray, rasterio) and exercises the risky
+pure logic on synthetic data: normalized-difference + NDVI/NDMI polarity, the SCL
+keep-mask, valid-scene counts/flags, the NaN-safe high-NDVI threshold, product config
+(honest native scales), scene-gate wording, and the EE-download manifest row.
 
 Runs with just numpy + pandas:  python src/test_section4_sentinel2_indices.py
 """
@@ -30,11 +20,7 @@ import numpy as np
 
 
 def _install_geo_stubs() -> None:
-    """Stub the heavy top-level imports so the module imports with only numpy+pandas.
-
-    sec4 pulls in section2 (earthaccess, rioxarray, xarray) plus ee + geemap; none
-    of the pure logic under test calls into them.
-    """
+    """Stub heavy top-level imports so the module imports with only numpy+pandas."""
     for name in ("ee", "geemap", "rioxarray", "earthaccess", "xarray"):
         if name not in sys.modules:
             sys.modules[name] = types.ModuleType(name)
@@ -80,11 +66,9 @@ def test_normalized_difference() -> None:
     b8 = np.array([[0.5, 0.4], [0.6, 0.0]])
     b4 = np.array([[0.1, 0.4], [0.2, 0.0]])
     ndvi = sec4.normalized_difference(b8, b4)
-    # (0.5-0.1)/(0.5+0.1) = 0.4/0.6
     check(np.isclose(ndvi[0, 0], 0.4 / 0.6), "NDVI = (B8-B4)/(B8+B4)")
     check(ndvi[0, 1] == 0.0, "equal bands -> 0")
     check(np.isnan(ndvi[1, 1]), "0/0 (sum==0) -> NaN, no divide error")
-    # Reflectance scaling cancels in a normalized difference (DN vs reflectance).
     nd_dn = sec4.normalized_difference(b8 * 10000, b4 * 10000)
     check(np.allclose(nd_dn, ndvi, equal_nan=True), "scale-invariant (DN == reflectance)")
 
@@ -93,14 +77,13 @@ def test_scl_keep_mask() -> None:
     print("\n[SCL keep-mask: drop cloud / cloud-shadow / snow]")
     scl = np.array([[4, 3], [8, 5], [11, 6], [9, 10]])
     keep = sec4.scl_keep_mask(scl)
-    expected = np.array([[True, False],   # 4 veg keep, 3 cloud-shadow drop
-                         [False, True],   # 8 cloud drop, 5 bare keep
-                         [False, True],   # 11 snow drop, 6 water keep
-                         [False, False]]) # 9 cloud-high drop, 10 cirrus drop
+    expected = np.array([[True, False],
+                         [False, True],
+                         [False, True],
+                         [False, False]])
     check(keep.tolist() == expected.tolist(), "drops {3,8,9,10,11}, keeps the rest")
     check(set(sec4.SCL_DROP_CLASSES) == {3, 8, 9, 10, 11},
           "SCL_DROP_CLASSES = cloud-shadow + cloud(med/high) + cirrus + snow")
-    # water (6) and bare (5) are intentionally kept -- they are not cloud/snow.
     check(bool(keep[2, 1]) and bool(keep[1, 1]), "water + bare soil are kept")
 
 
@@ -109,8 +92,37 @@ def test_high_veg_mask() -> None:
     ndvi = np.array([[0.55, 0.49], [np.nan, 0.5]])
     high = sec4.high_veg_mask(ndvi, 0.5)
     check(high.tolist() == [[True, False], [False, True]],
-          ">= threshold and finite; NaN never counts as high")
+          ">= threshold and finite; NaN never high")
     check(sec4.HIGH_NDVI_THRESHOLD == 0.5, "default high-NDVI threshold is 0.5 (step 52)")
+
+
+def test_valid_scene_count_helper() -> None:
+    print("\n[post-mask valid-scene count + low-count flag semantics]")
+    stack = np.array([
+        [[0.1, np.nan, 0.2], [0.1, np.nan, np.nan]],
+        [[0.2, 0.3, np.nan], [np.nan, np.nan, np.nan]],
+        [[0.3, np.nan, 0.4], [0.2, np.nan, np.nan]],
+    ])
+    got = sec4.valid_scene_count(stack)
+    check(got.dtype == np.int32, "valid-scene count is exact int32")
+    check(got.tolist() == [[3, 1, 2], [2, 0, 0]], "finite observations counted per pixel")
+    stats = sec4.valid_count_stats(got)
+    check(stats["min"] == 0 and stats["max"] == 3, "count stats retain zero and maximum")
+    check(stats["n_lt_threshold"] == 5 and stats["low_threshold"] == 3,
+          "count<3 is flagged (five pixels), not masked")
+    check(np.isfinite(stack).sum() == 8, "source index values remain unchanged by QC helper")
+
+
+def test_scene_gate_threshold_and_wording() -> None:
+    print("\n[60% scene prefilter is broad; per-pixel SCL masking is primary]")
+    check(sec4.MAX_SCENE_CLOUD_PCT == 60.0, "scene prefilter remains 60% by explicit decision")
+    rationale = sec4.SCENE_PREFILTER_RATIONALE.lower()
+    check("< 60" in rationale and "per-pixel scl" in rationale and "primary" in rationale,
+          "rationale states keep <60 and primary per-pixel SCL masking")
+    help_text = " ".join(sec4._build_arg_parser().format_help().split())
+    check("keep scenes with CLOUDY_PIXEL_PERCENTAGE < this" in help_text,
+          "CLI help matches ee.Filter.lt keep semantics")
+    check("drop >= this" in help_text, "CLI help states the rejected boundary")
 
 
 def test_product_config() -> None:
@@ -121,11 +133,19 @@ def test_product_config() -> None:
     check(ndmi.bands == ("B8", "B11"), "NDMI = normalizedDifference(B8,B11)")
     check(ndvi.native_scale_m == 10, "NDVI native scale 10 m")
     check(ndmi.native_scale_m == 20, "NDMI native scale 20 m (SWIR B11 is 20 m)")
-    # The resolution is baked into the filenames so NDMI is never dressed up as 10 m.
     check(ndvi.raw_filename.endswith("_10m.tif"), "NDVI raw filename marked 10 m")
     check(ndmi.raw_filename.endswith("_20m.tif"), "NDMI raw filename marked 20 m")
     check(ndvi.grid_filename.endswith("_70m.tif") and ndmi.grid_filename.endswith("_70m.tif"),
           "both grid filenames marked 70 m")
+    check(ndvi.count_raw_filename == "s2_ndvi_valid_scene_count_2023_10m.tif",
+          "NDVI native count filename is explicit and 10 m")
+    check(ndmi.count_raw_filename == "s2_ndmi_valid_scene_count_2023_20m.tif",
+          "NDMI native count filename is explicit and 20 m")
+    check(ndvi.count_grid_filename.endswith("_count_nearest_2023_70m.tif")
+          and ndmi.count_grid_filename.endswith("_count_nearest_2023_70m.tif"),
+          "70 m count summaries explicitly say nearest")
+    check("lt3" in ndvi.low_count_flag_grid_filename,
+          "separate low-count flag filename records the <3 rule")
     check(sec4.COLLECTION_ID == "COPERNICUS/S2_SR_HARMONIZED", "harmonized SR collection")
 
 
@@ -140,11 +160,9 @@ def test_manifest_row(tmp=None) -> None:
         raw = d / "s2_ndvi_warmseason_median_2023_10m.tif"
         raw.write_bytes(b"fake-geotiff-bytes")
         manifest = d / "manifest.csv"
-        # Point the shared helper + checksum at the temp file/manifest.
         res = sec4.DownloadResult(product=sec4.NDVI_PRODUCT, path=raw,
                                   method="geemap.download_ee_image", max_tile_size_mb=16)
-        # record_in_manifest writes to config.MANIFEST_CSV; call the underlying
-        # pieces directly against a temp manifest instead.
+        # Call the manifest pieces directly against a temp manifest.
         row = {
             "source": f"Google Earth Engine {sec4.COLLECTION_ID} (project=test)",
             "dataset": sec4.DATASET_ID,
@@ -167,8 +185,8 @@ def test_drive_fallback_shape() -> None:
                               method="Export.image.toDrive",
                               drive_task_id="ABC123", drive_folder="canopy_section4",
                               drive_filename="s2_ndmi_warmseason_median_2023_20m.tif")
-    check(not res.is_local, "no local path -> is_local is False (orchestrator skips reproject)")
-    check(res.drive_filename.endswith("_20m.tif"), "Drive filename keeps the honest 20 m tag")
+    check(not res.is_local, "no local path -> is_local False (skips reproject)")
+    check(res.drive_filename.endswith("_20m.tif"), "Drive filename keeps honest 20 m tag")
 
 
 def main() -> int:
@@ -176,6 +194,8 @@ def main() -> int:
         test_normalized_difference,
         test_scl_keep_mask,
         test_high_veg_mask,
+        test_valid_scene_count_helper,
+        test_scene_gate_threshold_and_wording,
         test_product_config,
         test_manifest_row,
         test_drive_fallback_shape,

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "decision_id": "D0050",
+  "status": "STOP_USER_SKIPPED_D0047_GEOMETRY_710_OF_911",
+  "catalogue_metadata_rows": 2968,
+  "daytime_catalogue_ceiling_passes": 1055,
+  "d0047_geometry_candidates": 911,
+  "d0047_geometry_evaluated_at_user_skip": 710,
+  "d0047_geometry_unevaluated_at_user_skip": 201,
+  "checkpoint_updated_utc": "2026-08-05T14:51:23.980632+00:00",
+  "historical_geometry_checkpoint_sha256": "72981671c2418367d7a881432c608b507ff63e69766e2078501bf37cb2402ed0",
+  "scientific_gate_eligible": false,
+  "lst_opened": false,
+  "thermal_opened": false,
+  "holdout_status": "UNSELECTED",
+  "record_2026_opened": false
+}

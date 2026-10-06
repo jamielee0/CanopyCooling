@@ -1,0 +1,16 @@
+{
+  "case_study_candidates": [
+    "denver_aurora"
+  ],
+  "decision": "COMPARATIVE_CASE_STUDY_PROPOSAL_ONLY",
+  "full_demand_by_wetness_surface_authorized": false,
+  "gate": "G8_FEEDBACK_CLOSEOUT_DECISION",
+  "holdout_selection_authorized": false,
+  "independent_verification_passed": true,
+  "pooled_high_demand_study_authorized": false,
+  "reason": "Only Denver has the required within-city high-demand wet/dry count plus positive absolute-demand and seasonal overlap at the widest selectable diagnostic threshold; the complete design has zero AM observations and zero empirical AM-PM matches.",
+  "record_2026_access_authorized": false,
+  "simulation_profiles_identifiable": false,
+  "thermal_activation_authorized": false,
+  "time_of_day_study_authorized": false
+}

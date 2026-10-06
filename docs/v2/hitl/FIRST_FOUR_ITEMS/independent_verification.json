@@ -1,0 +1,69 @@
+{
+  "checks": {
+    "item_1_attrition": {
+      "archive_available_pre_geometry": 911,
+      "early_late_individual_physical_passes": 102,
+      "raw_tiled_products": 13577,
+      "retained_physical_passes": 219,
+      "status": "PASS",
+      "unique_physical_city_orbit_observations": 2968
+    },
+    "item_2_pass_equivalent_formula": {
+      "early_late_pass_equivalent_sum": 72.68902899522442,
+      "early_late_physical_passes": 102,
+      "retained_pass_equivalent_sum": 159.0870840462331,
+      "retained_physical_passes": 219,
+      "status": "PASS"
+    },
+    "item_3_view_angle_thresholds": {
+      "historical_applied_comparator_deg": 20,
+      "prospective_primary_threshold_selected": false,
+      "raw_physical_pass_counts": {
+        "10": 40,
+        "15": 127,
+        "20": 219,
+        "25": 326,
+        "30": 413
+      },
+      "status": "PASS"
+    },
+    "item_4_within_city_high_demand_support": {
+      "climatic_water_balance_30d_sensitivity": {
+        "dry": 68,
+        "middle": 53,
+        "wet": 34
+      },
+      "pooled_effect_established": false,
+      "precipitation_30d_candidate_primary": {
+        "dry": 62,
+        "wet": 40
+      },
+      "status": "PASS",
+      "within_city_additivity": true
+    }
+  },
+  "imports_pipeline_modules": false,
+  "packet_sha256": {
+    "docs/v2/hitl/FIRST_FOUR_ITEMS/01_attrition_table.csv": "3fab710bfed1068f09ae48c93f283b30af616741cfc8372dca976f9f6bd25879",
+    "docs/v2/hitl/FIRST_FOUR_ITEMS/02_pass_equivalent_formula.md": "cc830e5675db1565b1c9f97720e40e85ac73fdd3af35f23772f0917d1a427698",
+    "docs/v2/hitl/FIRST_FOUR_ITEMS/03_view_angle_threshold_results.csv": "4719d11b37c85657781711c46d0803ed5ae579ee3ea70529a529b608992a53ef",
+    "docs/v2/hitl/FIRST_FOUR_ITEMS/04_within_city_high_demand_support.csv": "d188c0c24849cc7cb9d4b272c5d313311b90a26cd344cc0822d25bac99a07a9e"
+  },
+  "record_2026_metadata_exposures_preserved": [
+    "D0060",
+    "D0061",
+    "D0073",
+    "D0074"
+  ],
+  "record_2026_science_data_opened_or_queried": false,
+  "source_sha256": {
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/attrition_summary.csv": "fd71aca2017ebc4e92abcb90afd6eb69f32f2b8203aee7bf7edb9c2d43b63f6e",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/pass_quality_219.csv": "fdde116139bd766da806664e7ce80e51c25b0b7015bfee7df84c329182f4c2f1",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/high_demand_wet_dry_support.csv": "f47d2e4a37db72bc47d85d407ac6d2bec46fd63654a9834e572bb3096c6f004c",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN/angle_threshold_eligibility_existing_five.csv": "9ae4cd02b954bb588cdf359a11b0608de19bcc11fb8717cbd6cc389fd578b7cc"
+  },
+  "status": "PASS",
+  "thermal_or_lst_opened": false,
+  "verification_method": "standalone_network_free_direct_csv_recomputation",
+  "verified_utc": "2026-08-13T15:46:30.945559+00:00"
+}

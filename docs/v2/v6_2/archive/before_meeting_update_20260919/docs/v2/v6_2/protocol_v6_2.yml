@@ -1,0 +1,1058 @@
+study: stable_canopy_swir_condition_v6_2
+protocol_version: "6.2"
+frozen_on: "2026-08-30T17:58:40+09:00"
+version_status: effect_blind_new_coefficients_prior_phoenix_lst_disclosed
+controlling_document: Urban_Tree_Cooling_Working_Guide_v6_2.docx
+
+control_boundary:
+  branch: "v6.2"
+  inherited_commit: e32ff06aad83f1c8fe87473bf5c95e9e12f155e2
+  inherited_commit_date: "2026-06-17T23:56:49+09:00"
+  inherited_tag: v2-inherited-pre-v6.2
+  tag_scope: committed_history_only
+  inherited_working_state_manifest: checksums.txt
+  inherited_working_state_status: dirty_state_preserved_not_committed
+  new_v6_2_coefficients_viewed: false
+  new_full_archive_thermal_processing_authorized: false
+  gate_A_authorized: false
+  pre_gate_A_closeout_package: deliverables/Initial_Package_v6_2_20260902
+  consolidated_asset_inventory: deliverables/Initial_Package_v6_2_20260902/asset_inventory_and_package_index.xlsx
+  one_page_decision_summary: deliverables/Initial_Package_v6_2_20260902/one_page_summary.pdf
+  current_gate_A_recommendation: DO_NOT_BEGIN_CURRENT_FROZEN_DESIGN_PENDING_SUPERVISOR_STOP_REFRAME_OR_AMEND_DECISION
+
+cities:
+  gate_A: [phoenix, los_angeles]
+  lead_city: PENDING_GATE_A
+  lead_city_rule:
+    first: highest_simulated_detection_power_among_cities_passing_all_gate_A_minima
+    tie_tolerance_absolute_power: 0.05
+    tie_breaker: highest_median_passes_per_block_in_largest_connected_component
+    one_city_passes: that_city_leads
+  conditional_third: minneapolis_st_paul
+  alternate_third: denver_aurora
+
+years:
+  primary_complete_warm_seasons: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
+  science_tcc_stability: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
+  year_2018_role: optional_partial_year_sensitivity_only
+  year_2026_role: excluded_incomplete_not_formal_holdout
+
+season_windows:
+  phoenix:
+    provisional_primary:
+      start: "05-15"
+      end: "07-10"
+      label: restricted_pre_monsoon
+    sensitivity:
+      start: "06-01"
+      end: "09-30"
+      requirements: [rainfall_covariates, rainfall_free_block_subset]
+  los_angeles:
+    provisional_primary:
+      start: "06-01"
+      end: "09-30"
+    sensitivity:
+      start: "05-15"
+      end: "07-10"
+  final_season_ruling: PENDING_GATE_A
+  final_season_ruling_inputs: [rainfall_audit, optical_support]
+
+products:
+  ecostress_lste:
+    role: primary_lst_and_quality_layers
+    product: ECO_L2T_LSTE.003
+    short_name: ECO_L2T_LSTE
+    collection_version: "003"
+    concept_id: C3998139651-LPCLOUD
+    grid: native_70m_mgrs
+    response_units: kelvin
+    resample_lst: false
+    processed_scale_rule: apply_metadata_scale_factor
+    figure_conversion: celsius_allowed_for_figures_only
+  ecostress_geometry:
+    role: view_azimuth_and_relative_sun_sensor_geometry
+    product: ECO_L1B_GEO.002
+    collection_version: "002"
+    concept_id: C2076087338-LPCLOUD
+    collection_note: no_official_ECO_L1B_GEO_003_collection_identified_in_inherited_audit
+  ecostress_model_B_albedo:
+    product: ECO_L2T_STARS.003
+    role: model_B_only_after_uncertainty_filter_and_spot_checks
+  ecostress_model_B_radiation:
+    product: ECO_L3T_ETAUX.003
+    fields: [incoming_radiation, net_radiation]
+    exclusions: [downscaled_air_temperature, humidity, soil_moisture]
+  hls:
+    release: HLS_V2_0
+    products: [HLSL30.002, HLSS30.002]
+    dois:
+      HLSL30: https://doi.org/10.5067/HLS/HLSL30.002
+      HLSS30: https://doi.org/10.5067/HLS/HLSS30.002
+    earth_engine_collections: [NASA/HLS/HLSL30/v002, NASA/HLS/HLSS30/v002]
+    spatial_resolution_m: 30
+    band_map:
+      HLSL30: {RED: B4, NIR: B5, SWIR1: B6}
+      HLSS30: {RED: B4, NIR: B8A, SWIR1: B11}
+    reflectance_scaling: apply_product_REF_SCALE_FACTOR_and_ADD_OFFSET_before_indices
+    fmask_required_zero_bits: [1, 2, 3, 4, 5]
+    maximum_aerosol_level_bits_6_7: 2
+    role: [G, W_tree, W_bg, lead_lag_placebos]
+    final_exposures_rebuilt_from_raw: true
+    inherited_centered_plus_minus_15_day_product_role: free_check_count_only
+    pre_gate_A_local_inventory:
+      fmask_status: VERIFIED_LOCAL_149_FILES
+      fmask_manifest: data/raw/v2/hls_v2/download_manifest_fmask.json
+      fmask_manifest_sha256: 62cfc4752f87062eb9f95691d48b77340c4d4fa1c329aa771d1cc89c6bb930ab
+      fmask_file_count: 149
+      fmask_total_bytes: 161907529
+      drive_subfolder_url: https://drive.google.com/drive/folders/1_axArxHQ2-6WFZ4k3NOIBE77seXl-Jfs
+      reflectance_status: DEFERRED_UNTIL_GATE_A_APPROVAL
+  science_tcc:
+    family: USFS_USGS_Science_Tree_Canopy_Cover
+    exact_release_identifier: projects/gtac-data-publish/assets/TCC/Product_Version/2025-6
+    product_version: "2025-6"
+    verified_current_on: "2026-08-30"
+    official_release_page: https://data.fs.usda.gov/geodata/rastergateway/treecanopycover/
+    study_area: CONUS
+    band: Science_Percent_Tree_Canopy_Cover
+    standard_error_band: Science_Percent_Tree_Canopy_Cover_Standard_Error
+    source_units: percent_0_to_100
+    analysis_units: fraction_0_to_1
+    primary_amount: stable_cell_median_2019_2025
+    year_matched_amount_role: sensitivity
+    modified_nlcd_canopy_allowed: false
+    interpolation: never_bilinear
+    exact_methods_document:
+      official_url: https://data.fs.usda.gov/geodata/rastergateway/treecanopycover/docs/TCC_v2025-6_Methods.pdf
+      local_path: docs/v2/v6_2/sources/TCC_v2025-6_Methods.pdf
+      sha256: 260bbb48147a352234d85d3e1dca174d3f6b45ef51cd5d32a72c3f74067f3763
+    annual_2019_2025_local_science_asset_inventory:
+      status: VERIFIED_LOCAL_AND_PRIVATE_DRIVE
+      local_manifest: data/raw/v2/science_tcc_v2025_6/drive_output_verification.json
+      local_manifest_sha256: 265134308e0fcaddde9bbc9ba99f19af55a05a3e92d4f1c4b04323186f611206
+      drive_folder_id: 1BWuKX2np0_cTVPvVpiFCQXq5Ip6whU1R
+      drive_folder_url: https://drive.google.com/drive/folders/1BWuKX2np0_cTVPvVpiFCQXq5Ip6whU1R
+      file_count: 14
+      total_bytes: 211808618
+      google_md5_matches_all_local_files: true
+    inherited_nonconforming_assets:
+      - path: data/raw/landcover/usfs_tcc_canopy_2025_30m.tif
+        band: NLCD_Percent_Tree_Canopy_Cover
+        sha256: 9edd6a9e87a702006efad87c80ab0110af328722886f4009f6ab6cbf6972c939
+        disposition: retained_for_history_prohibited_as_v6_2_science_tcc
+      - path: data/raw/v2/hitl/g3_sampling_design_revision/mod13q1_tcc_2018_2025_composite_ndvi.csv.provenance.json
+        band: NLCD_Percent_Tree_Canopy_Cover
+        sha256: 20b05ff368a60f30fddcdfcfb100e844c736e2d18879c27985dc52a86578472e
+        disposition: retained_for_history_prohibited_as_v6_2_science_tcc
+  meteorology:
+    primary: NOAA_HRRR_operational_analysis_f00
+    fields: [2m_air_temperature, 2m_dewpoint_temperature, 10m_wind]
+    timing: exact_acquisition_time_linear_interpolation_between_bracketing_hours
+    sensitivity: ERA5_Land
+    vpd_units: kilopascal
+  precipitation:
+    primary: MRMS_MultiSensor_QPE_01H_Pass2
+    fallback: NOAA_Stage_IV
+    antecedent_windows_days: [1, 3, 7]
+    role: descriptive_covariate_and_rainfall_free_subset_only
+    product_availability_and_exact_local_checksums: NOT_ACQUIRED_PRE_GATE_A_INVENTORY_GAP
+  context:
+    urban_frame: 2020_Census_Urban_Areas
+    land_cover: USGS_Annual_NLCD_Collection_1_1
+    building_footprints: Microsoft_US_Building_Footprints_2022_snapshot
+    elevation: USGS_3DEP_one_third_arc_second_DEM
+    elevation_inventory:
+      status: VERIFIED_LOCAL_AND_PRIVATE_DRIVE
+      source_snapshot_availability_end: "2022-05-04"
+      local_manifest: data/raw/v2/usgs_3dep_10m/drive_output_verification.json
+      local_manifest_sha256: cf5e50550146672b57b3715dec099734f7cc3a0f620977d3c73407f9acb86148
+      drive_folder_url: https://drive.google.com/drive/folders/1BWuKX2np0_cTVPvVpiFCQXq5Ip6whU1R
+      file_count: 2
+      total_bytes: 426375529
+      google_md5_matches_all_local_files: true
+    independent_aerial_validation: NAIP_or_comparable_100_cells_per_city_across_canopy_deciles
+
+geometry:
+  lst_grid: native_ECOSTRESS_MGRS
+  city_block_grid:
+    primary_km: 1.0
+    sensitivities_km: [0.5, 2.0]
+    rule: fixed_local_projected_grid_with_stable_ids_across_years_and_passes
+  view_sets:
+    primary:
+      pass_statistic: p95_absolute_view_zenith_degrees
+      maximum_degrees: 15.0
+    expanded:
+      pass_statistic: p95_absolute_view_zenith_degrees
+      maximum_degrees: 25.0
+      requires_view_azimuth: true
+  cloud_before_geometry_summary: true
+  relative_sun_sensor_azimuth_reported: true
+  canopy_and_condition_registration_sensitivity_cells: [-1, 1]
+  block_pass_min_canopy_span_p10_p90: 0.20
+
+pixel_populations:
+  canopy_fraction_units: fraction_0_to_1
+  tree:
+    name: tree_dominated
+    tree_fraction_threshold: 0.40
+    inequality: greater_than_or_equal
+    provisional_basis: inherited_pre_outcome_physical_signal_floor
+  background_primary:
+    name: nontree_pervious_low_vegetation
+    background_fraction_threshold: 0.10
+    inequality: less_than_or_equal
+    maximum_impervious_fraction: 0.20
+    annual_nlcd_classes: [52, 71, 81, 82]
+    exclude_open_water: true
+    exclude_building_footprints: true
+  separating_gap:
+    lower_exclusive: 0.10
+    upper_exclusive: 0.40
+    width_fraction: 0.30
+    mixed_pixels_enter_neither_population: true
+  background_placebo:
+    name: impervious_bare
+    developed_nlcd_classes: [22, 23, 24]
+    minimum_impervious_fraction: 0.50
+    bare_nlcd_class: 31
+  minimum_effective_tree_pixels_per_block_pass: 30
+  minimum_effective_background_pixels_per_block_pass: 30
+  excluded_mixed_fraction_recorded_per_block_pass: true
+  threshold_change_rule: supervisor_approved_protocol_amendment_before_any_v6_2_coefficient_only
+
+canopy_stability:
+  years: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
+  raw_annual_science_tcc_only: true
+  primary_amount: per_cell_median_across_stable_years
+  year_matched_sensitivity: true
+  primary_stability_rule: annual_max_minus_min_fraction_less_than_or_equal_to_0_15
+  primary_stability_tolerance_fraction: 0.15
+  sensitivity_stability_tolerances_fraction: [0.10, 0.20]
+
+optical_timing:
+  minimum_lead_hours: 24
+  maximum_age_days_primary: 21
+  maximum_age_days_sensitivities: [14, 28]
+  same_acquisition_for_EVI2_and_NDMI: true
+  prefer_one_common_acquisition_per_city_pass: true
+  required_fields: [optical_acquisition_id, source_date, sensor, optical_age_days, QA]
+  cluster_or_resample_by_optical_acquisition: true
+  future_imagery_in_antecedent_exposure: false
+  final_antecedent_and_future_variables_built_separately: true
+
+condition_variables:
+  G:
+    name: greenness_linked_condition
+    definition: standardized_prepass_EVI2_anomaly_over_tree_pixels
+    climatology: block_leave_one_year_out_day_of_year
+  W_tree:
+    name: tree_side_swir_sensitive_residual_condition
+    definition: crossfitted_NDMI_on_EVI2_residual_over_tree_population
+  W_bg:
+    name: background_side_swir_sensitive_residual_condition
+    definition: same_crossfitted_residual_over_fixed_primary_background_population
+  residual_model:
+    response: NDMI
+    predictors: [EVI2, day_of_year, sensor, optical_age_days, source_date, city, block]
+    crossfit: leave_one_year_out
+    outcome_blind: true
+  formulas:
+    EVI2: "2.5 * (NIR - RED) / (NIR + 2.4 * RED + 1.0)"
+    NDMI: "(NIR - SWIR1) / (NIR + SWIR1)"
+    W: "NDMI_observed - NDMI_predicted_crossfit"
+  terminology_lock: swir_sensitive_residual_condition_anomaly_at_comparable_optical_greenness
+  prohibited_labels: [moisture_status, leaf_water_content, canopy_water_potential, physiological_stress, stomatal_closure, tree_health]
+  alternative:
+    name: tasseled_cap_greenness_and_wetness
+    coefficient_set: PENDING_GATE_A
+    selection_rule: higher_reliability_for_both_pixel_populations_without_outcome_access
+  reliability_methods: [split_half_pixels, near_coincident_HLSL30_HLSS30, short_window_replicate_acquisitions]
+  minimum_reliability_each_component: 0.50
+  partial_correlation_ceiling: 0.85
+  fallback:
+    name: difference_and_mean
+    allowed_only_if_both_fallback_components_pass_all_measurement_and_power_gates: true
+
+stage_1:
+  unit: native_cell_within_block_and_thermal_pass
+  response: LST_K
+  formula: "LST_K ~ 0 + C(block) + C(block):canopy_c + context_covariates_c"
+  canopy_centering: within_block
+  context_covariates_model_A:
+    - impervious_fraction_c
+    - low_vegetation_fraction_c
+    - bare_fraction_c
+    - building_fraction_c
+    - elevation_c
+    - distance_to_water_c
+  model_A_excludes_albedo: true
+  model_B_additions:
+    - uncertainty_filtered_albedo_c
+    - uncertainty_filtered_incoming_radiation_c
+    - uncertainty_filtered_net_radiation_c
+  model_B_role: radiatively_standardized_sensitivity
+  slope_output: one_canopy_slope_per_block_pass
+  slope_units: kelvin_per_unit_canopy_fraction
+  cooling_efficiency_formula: "CE_K_per_10pp = -0.10 * slope_K_per_fraction"
+  percent_storage_conversion_formula: "CE_K_per_10pp = -10.0 * slope_K_per_percent"
+  uncertainty: spatial_subblock_resampling
+  nominal_pixel_count_as_independent_n: prohibited
+  common_cell_or_inverse_probability_reweighted_sensitivity: required
+  no_expected_sign_gate: true
+  precision_pilot_point_estimates: sealed
+
+free_checks:
+  demand_geometry:
+    decision_id: V6.2-D002
+    frozen_on: "2026-08-30T22:14:19+09:00"
+    outcome_access: prohibited
+    new_v6_2_coefficients_viewed_at_freeze: false
+    evidence_role: historical_nonthermal_support_only_not_v6_2_study_sample
+    gate_A_cities_required_to_pass: [phoenix, los_angeles]
+    evaluation_view_sets_degrees: [15, 25]
+    binding_view_set_degrees: 25
+    binding_view_set_reason: widest_preauthorized_geometry_set_is_most_favorable_to_retention
+    required_candidate_variables:
+      - VPD_kPa
+      - two_metre_air_temperature_K
+      - actual_vapour_pressure_kPa_from_two_metre_dewpoint
+      - local_solar_time_hours
+      - solar_zenith_degrees
+      - solar_azimuth_degrees
+      - view_zenith_p95_degrees
+      - view_azimuth_degrees
+      - relative_sun_sensor_azimuth_degrees
+      - day_of_year
+    pairwise_correlations_role: descriptive_nonbinding
+    full_design_minimum_complete_passes_per_city: 30
+    vpd_vif_maximum: 5.0
+    maximum_condition_index: 30.0
+    nonlinear_leave_one_pass_out_vpd_concurvity_r2_maximum: 0.80
+    residual_vpd_sd_minimum_kPa: 0.25
+    continuously_supported_vpd_width_minimum_kPa: 0.50
+    continuous_support_definition:
+      candidate_range: intersection_of_within_tertile_VPD_p10_p90_ranges
+      stratifiers: [local_solar_time_hours, solar_zenith_degrees, day_of_year]
+      tertiles: 3
+    nuisance_basis:
+      continuous_terms: cubic_splines_four_knots
+      circular_terms: sine_and_cosine
+      validation: leave_one_pass_out
+      ridge_alpha: 1.0
+    keep_rule: all_binding_criteria_pass_in_both_gate_A_cities
+    fail_closed_rule: any_missing_required_covariate_or_any_binding_failure_drops_both_interactions
+    branch_action_if_keep: retain_both_W_tree_x_VPD_and_W_bg_x_VPD
+    branch_action_if_drop: drop_both_interactions_remove_RQ2_and_use_average_daytime_effects
+    reversal_after_new_coefficient_view: prohibited
+    result:
+      decision_id: V6.2-D003
+      recorded_on: "2026-08-30T22:31:24+09:00"
+      ruling: DROP
+      new_v6_2_coefficients_viewed_before_ruling: false
+      full_design_complete_passes_25deg: {phoenix: 0, los_angeles: 0}
+      candidate_quality_weather_passes_25deg: {phoenix: 44, los_angeles: 48}
+      missing_reason: view_azimuth_and_relative_sun_sensor_azimuth_unavailable_not_imputed
+      optimistic_reduced_diagnostics_nonbinding:
+        phoenix:
+          vpd_vif: 85.0515
+          maximum_condition_index: 37.0887
+          nonlinear_leave_one_pass_out_vpd_concurvity_r2: 0.965691
+          residual_vpd_sd_kPa: 0.307653
+          continuous_support_width_kPa: 2.52152
+        los_angeles:
+          vpd_vif: 72.5667
+          maximum_condition_index: 47.8013
+          nonlinear_leave_one_pass_out_vpd_concurvity_r2: 0.986707
+          residual_vpd_sd_kPa: 0.100169
+          continuous_support_width_kPa: 0.0
+      action: drop_both_interactions_remove_RQ2_and_use_average_daytime_effects
+      evidence_package: deliverables/D1a_demand_geometry_v6_2_20260830
+      supervisor_review: PENDING
+      post_ruling_geometry_recovery:
+        decision_id: V6.2-D008
+        recorded_on: "2026-09-01T22:16:36+09:00"
+        role: outcome_blind_source_completeness_remediation_not_decision_rule_change
+        source_product: ECO_L1B_GEO.002
+        candidate_passes: {phoenix: 44, los_angeles: 48}
+        exact_source_scenes: 139
+        all_pass_identities_processed: true
+        fully_azimuth_complete_passes: {phoenix: 4, los_angeles: 1}
+        partially_azimuth_populated_passes: 31
+        zero_valid_azimuth_over_mapped_domain_passes: 56
+        partial_arrays_imputed_or_promoted: false
+        temperature_or_lst_opened: false
+        new_v6_2_coefficients_viewed: false
+        reassessed_ruling: DROP
+        controlling_D003_ruling_changed: false
+        evidence_package: deliverables/D1a_geometry_recovery_reassessment_v6_2_20260901
+        recovery_ledger: data/processed/v2/v6_2/d1a_geometry_recovery/pass_summary.csv
+
+  science_tcc_canopy_span_screen:
+    decision_id: V6.2-D015
+    frozen_on: "2026-09-02T22:57:51+09:00"
+    status: FROZEN_BEFORE_TCC_VALUE_ACCESS
+    outcome_access: prohibited_for_screen
+    cities: [phoenix]
+    selected_orbits: [27963, 28024, 28706, 28828, 28909]
+    source_release: USFS_USGS_Science_TCC_v2025-6
+    source_years: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
+    source_band: Science_Percent_Tree_Canopy_Cover
+    prohibited_band: NLCD_Percent_Tree_Canopy_Cover
+    source_units: percent_0_to_100
+    analysis_units: fraction_0_to_1
+    stable_source_cell_rule: annual_max_minus_min_fraction_less_than_or_equal_to_0_15
+    stable_source_cell_amount: median_2019_2025
+    native_cell_aggregation: area_average_without_bilinear_interpolation
+    optimistic_nonthermal_mask: native_QC_00_or_01_and_cloud_zero_and_water_zero_and_height_finite
+    minimum_native_cells_per_block_pass: 60
+    minimum_canopy_span_p10_p90: 0.20
+    decision_rule:
+      if_zero_eligible: retain_stage_1_stop_without_opening_thermal_values
+      if_any_eligible: permit_same_five_pass_stage_1_rerun_under_D011_with_new_sealed_file
+    threshold_relaxation: prohibited
+    source_verification_manifest: data/raw/v2/science_tcc_v2025_6/drive_output_verification.json
+    source_verification_manifest_sha256: 265134308e0fcaddde9bbc9ba99f19af55a05a3e92d4f1c4b04323186f611206
+    new_v6_2_coefficient_viewed_at_freeze: false
+    supervisor_review: PENDING
+    result:
+      decision_id: V6.2-D016
+      recorded_on: "2026-09-02T23:02:30+09:00"
+      status: COMPLETE_NO_THERMAL_ACCESS
+      candidate_block_passes_with_at_least_60_nonthermal_cells: 13509
+      eligible_block_passes: 0
+      stable_science_tcc_source_cells: 9041017
+      canopy_span_fraction:
+        minimum: 0.003832
+        p25: 0.044860
+        median: 0.066004
+        p75: 0.085309
+        maximum: 0.184100
+        frozen_floor: 0.20
+      ruling: RETAIN_STAGE1_STOP_NO_OFFICIAL_TCC_ELIGIBILITY
+      threshold_relaxed: false
+      thermal_values_opened: false
+      conditional_five_pass_thermal_rerun_executed: false
+      evidence_package: deliverables/D1d_tcc_span_screen_v6_2_20260902
+      interpretation: official_required_canopy_product_confirms_zero_eligibility_under_frozen_span_floor
+      gate_A_authorized: false
+      supervisor_review: PENDING
+    post_support_sensitivity:
+      decision_id: V6.2-D021
+      recorded_on: "2026-09-03T01:44:48+09:00"
+      status: NONBINDING_POST_SUPPORT_USER_REQUESTED_SENSITIVITY
+      reason_nonbinding: canopy_span_floor_changed_after_D016_result_was_known
+      requested_minimum_canopy_span_p10_p90: 0.10
+      controlling_minimum_canopy_span_p10_p90_retained: 0.20
+      result:
+        candidate_block_passes: 13509
+        eligible_block_passes: 1368
+        eligible_share: 0.1012658228
+        unique_eligible_phoenix_blocks: 331
+        median_eligible_passes_per_eligible_block: 4
+        selected_passes_total: 5
+        by_pass_eligible_block_passes:
+          phoenix_27963: 220
+          phoenix_28024: 282
+          phoenix_28706: 311
+          phoenix_28828: 311
+          phoenix_28909: 244
+        sensitivity_ruling: WOULD_CLEAR_NONTHERMAL_ZERO_ELIGIBILITY_STOP
+      permitted_interpretation: supervisor_approved_prospective_amendment_would_allow_consideration_of_same_five_pass_sealed_stage1_pilot
+      prohibited_interpretations:
+        - gate_A_is_authorized
+        - final_thermal_slopes_are_estimable
+        - stage1_precision_or_power_passes
+        - los_angeles_support_is_established
+      thermal_values_opened: false
+      conditional_five_pass_thermal_rerun_executed: false
+      gate_A_authorized: false
+      evidence_package: deliverables/D1d_10pct_canopy_span_sensitivity_v6_2_20260903
+      supervisor_review: PENDING
+  connectivity:
+    decision_id: V6.2-D006
+    frozen_on: "2026-08-30T23:23:36+09:00"
+    status: FROZEN_FOR_OUTCOME_BLIND_RUN
+    outcome_access: prohibited
+    new_v6_2_coefficients_viewed_at_freeze: false
+    evidence_role: historical_collection2_nonthermal_feasibility_proxy_not_v6_2_study_sample
+    cities: [phoenix, los_angeles]
+    years: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
+    season_windows: [provisional_primary, sensitivity]
+    view_zenith_maximum_degrees: [15, 25]
+    pass_statistic: p95_absolute_L1B_view_zenith_degrees
+    candidate_pass_requirements:
+      - quality_and_exact_weather_complete
+      - acquisition_local_solar_date_inside_window
+      - p95_view_zenith_at_or_below_view_set
+    expanded_25_degree_set:
+      role: one_pre_authorized_incidence_widening
+      view_azimuth_requirement: must_be_resolved_before_full_geometry_admissibility
+      connectivity_role: incidence_sensitivity_only_when_azimuth_is_unavailable
+    block_grid:
+      size_m: 1000
+      crs_by_city: {phoenix: EPSG_32612, los_angeles: EPSG_32611}
+      census_geometry_topology_rule: shapely_make_valid_if_needed_before_projection_and_rasterization
+      origin_rule: floor_projected_Census_urban_area_minimum_to_1000m
+      inclusion_rule: block_centroid_inside_2020_Census_urban_area
+      stable_id_rule: city_plus_integer_grid_row_and_column
+    block_pass_edge:
+      minimum_clear_native_70m_cells: 60
+      rationale: necessary_but_not_sufficient_total_for_disjoint_30_tree_plus_30_background_cell_floors
+      cloud_rule: cloud_code_zero_after_canonical_MGRS_core_and_UTM_zone_partition
+      overlap_rule: cloudy_wins_within_overlapping_scenes
+      interpretation: optimistic_upper_bound_pending_science_TCC_tree_background_and_canopy_span_checks
+    graph:
+      nodes: [eligible_blocks, eligible_passes]
+      edges: eligible_block_passes
+      largest_component_share_denominator: all_eligible_block_pass_edges
+    passes_per_block_floor: 8
+    percentile_method: numpy_linear
+    spatial_sectors:
+      definition: four_projected_quadrants_about_Census_urban_area_centroid
+      labels: [NW, NE, SW, SE]
+      represented_rule: at_least_one_eligible_block
+    land_use_dominance:
+      product: USGS_Annual_NLCD_Collection_1_1_land_cover_2024
+      block_class: modal_class_over_block_cells_inside_Census_urban_area
+      share_denominator: eligible_block_pass_edges
+    combination_pass_rule:
+      minimum_eligible_blocks: 30
+      minimum_spatial_sectors: 3
+      minimum_largest_component_share: 0.80
+      minimum_median_passes_per_block: 8
+    free_check_rule: supportable_if_any_city_window_passes_at_15_degrees_or_after_the_single_25_degree_widening
+    collection3_limitation: current_recorded_CMR_population_is_partial_and_has_no_complete_block_cloud_geometry_assets
+    gate_A_authorization_effect: none
+    result:
+      decision_id: V6.2-D007
+      recorded_on: "2026-08-30T23:42:49+09:00"
+      status: READY_FOR_D1B_REVIEW
+      ruling: HISTORICAL_PROXY_SUPPORTS_CONNECTIVITY_AT_15_DEGREES
+      combinations_passing: 6
+      combinations_total: 8
+      single_preauthorized_25_degree_widening_used_for_ruling: false
+      all_panels_largest_component_share: 1.0
+      all_panels_spatial_sectors: 4
+      dominant_modal_land_use_class_all_panels: Developed_Medium_Intensity
+      dominant_land_use_edge_share_range: [0.601249, 0.648386]
+      failed_combinations:
+        phoenix_provisional_primary_15deg:
+          eligible_passes: 5
+          median_passes_per_block: 5.0
+          reason: count_floor_not_met
+        los_angeles_sensitivity_15deg:
+          eligible_passes: 8
+          median_passes_per_block: 6.0
+          reason: median_passes_per_block_floor_not_met
+      may_15_to_31_coverage_note: inherited_five_city_archive_begins_june_1_so_may_starting_panels_are_lower_bounds
+      evidence_package: deliverables/D1b_connectivity_v6_2_20260830
+      gate_A_authorized: false
+      supervisor_review: PENDING
+  lead_lag_feasibility:
+    decision_id: V6.2-D009
+    frozen_on: "2026-09-02T00:29:48+09:00"
+    status: FROZEN_FOR_COUNT_ONLY_OUTCOME_BLIND_RUN
+    outcome_access: prohibited
+    optical_values_access: prohibited
+    new_v6_2_coefficients_viewed_at_freeze: false
+    evidence_role: inherited_centered_product_count_only_not_final_exposure_or_placebo
+    required_reporting_dimensions:
+      cities: [phoenix, los_angeles]
+      years: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
+      season_windows: [provisional_primary, sensitivity]
+      sensors: [HLSL30.002, HLSS30.002]
+    candidate_pass_population:
+      source: inherited_D1b_historical_quality_and_exact_weather_complete_pass_census
+      view_zenith_set_degrees: 15
+      evidence_role: feasibility_denominator_only_not_v6_2_study_sample
+      thermal_values_opened: false
+    matched_pair_definition:
+      acquisition_identity_required: true
+      sensor_specific: true
+      distinct_pre_and_post_acquisitions_required: true
+      minimum_absolute_lag_days: 1
+      maximum_absolute_lag_days: 15
+      maximum_pre_post_absolute_lag_difference_days: 3
+      pre_rule: optical_source_date_at_least_24_hours_before_thermal_pass
+      post_rule: optical_source_date_strictly_after_thermal_pass
+      tie_breaker: minimum_absolute_lag_difference_then_minimum_total_lag_then_stable_acquisition_id
+    inherited_centered_product_use:
+      permitted_variables: [coordinates, attributes, observed_valid_count]
+      prohibited_variables: [observed, clim_mean, clim_std]
+      centered_count_proxy: spatial_median_observed_valid_count_at_least_two_is_a_necessary_not_sufficient_upper_bound_only
+      source_timing_or_acquisition_id_reconstruction_from_pixel_counts: prohibited
+      final_antecedent_exposure_role: prohibited
+      final_future_placebo_role: prohibited
+    confirmatory_keep_rule:
+      - every_required_city_year_window_sensor_row_is_reported
+      - source_level_acquisition_identifiers_and_dates_exist_for_verified_pairs
+      - matched_pre_post_share_is_at_least_0_70_in_each_city_under_at_least_one_frozen_season_window
+      - no_single_optical_acquisition_is_shared_by_more_than_0_25_of_candidate_thermal_passes_in_its_city_window_sensor_stratum
+    fail_closed_rule: missing_source_dates_or_acquisition_identifiers_demotes_temporal_specificity_to_exploratory
+    fmask_reassessment:
+      decision_id: V6.2-D018
+      frozen_on: "2026-09-02T23:40:41+09:00"
+      status: FROZEN_BEFORE_HLS_FMASK_VALUE_ACCESS
+      purpose: replace_catalogue_timing_potential_with_quality_screened_pair_feasibility
+      inputs:
+        acquisition_ledger: deliverables/D1c_hls_inventory_v6_2_20260902/data/hls_acquisitions.json
+        candidate_pass_pairs: deliverables/D1c_hls_inventory_v6_2_20260902/data/hls_pair_rows.json
+        fmask_manifest: data/raw/v2/hls_v2/download_manifest_fmask.json
+        urban_domain: data/raw/v2/domains/census_urban_areas.geojson
+      block_grid:
+        size_m: 1000
+        city_crs: {phoenix: EPSG:32612, los_angeles: EPSG:32611}
+        inclusion_rule: block_centroid_inside_2020_Census_urban_area
+      clear_hls_cell_rule:
+        source_nodata_excluded: true
+        fmask_bits_required_zero: [1, 2, 3, 4, 5]
+        maximum_aerosol_level_bits_6_7: 2
+      usable_acquisition_block_rule:
+        minimum_clear_hls_30m_cells: 60
+        interpretation: optimistic_necessary_condition_for_later_30_tree_plus_30_background_support
+      feasible_thermal_pass_pair_rule:
+        timing_rule: inherit_V6.2-D009_without_relaxation
+        minimum_shared_usable_blocks_between_pre_and_post: 30
+        pair_tie_breaker: minimum_absolute_lag_difference_then_minimum_total_lag_then_stable_acquisition_id
+      confirmatory_ruling_rule: inherit_V6.2-D009_without_relaxation
+      prohibited_inputs: [HLS_reflectance, optical_indices, ECOSTRESS_LST, new_v6_2_coefficients]
+      fail_closed_checks:
+        - all_149_fmask_files_match_the_frozen_manifest_hashes
+        - every_selected_acquisition_has_exact_source_time_and_identifier
+        - all_56_required_strata_are_reported
+        - every_feasible_pair_meets_timing_and_shared_block_rules
+        - computational_failure_exits_nonzero
+    gate_A_authorization_effect: none
+    initial_centered_product_result:
+      decision_id: V6.2-D010
+      recorded_on: "2026-09-02T00:37:06+09:00"
+      status: READY_FOR_D1C_REVIEW
+      ruling: DEMOTE_TO_EXPLORATORY_MISSING_SOURCE_TIMING_PROVENANCE
+      temporal_specificity_status: exploratory
+      required_hls_rows_reported: 56
+      inherited_product:
+        actual_collection: COPERNICUS/S2_SR_HARMONIZED
+        requested_hls_v2_product: false
+        city_coverage: [phoenix]
+        year_coverage: [2023]
+        thermal_axis_records: 66
+        source_dates_stored: false
+        optical_acquisition_identifiers_stored: false
+        sensor_specific_records_stored: false
+      centered_count_only_result:
+        axis_records_with_spatial_median_count_at_least_2: 66
+        axis_records_total: 66
+        phoenix_2023_provisional_primary_candidate_passes: 2
+        phoenix_2023_provisional_primary_count_upper_bound_passes: 2
+        phoenix_2023_sensitivity_candidate_passes: 3
+        phoenix_2023_sensitivity_count_upper_bound_passes: 3
+        verified_pre_lag_records: 0
+        verified_post_lag_records: 0
+        verified_matched_pair_share: NOT_ESTIMABLE_NOT_ZERO
+      final_exposure_or_placebo_from_centered_product: prohibited
+      raw_hls_rebuild_required_for_restoration: true
+      optical_index_values_opened: false
+      thermal_or_lst_values_opened: false
+      new_v6_2_coefficients_viewed: false
+      evidence_package: deliverables/D1c_leadlag_v6_2_20260902
+      gate_A_authorized: false
+      supervisor_review: PENDING
+    result:
+      decision_id: V6.2-D019
+      recorded_on: "2026-09-02T23:51:39+09:00"
+      status: READY_FOR_D1C_FMASK_REASSESSMENT_REVIEW
+      supersedes_decision: V6.2-D010
+      ruling: DEMOTE_TO_EXPLORATORY_CONFIRMATORY_SUPPORT_RULE_FAILED
+      temporal_specificity_status: exploratory
+      timing_provenance_status: REPAIRED_AND_VERIFIED
+      fmask_files_verified: 149
+      fmask_total_bytes: 161907529
+      acquisitions_with_at_least_30_usable_blocks: 77
+      candidate_pass_window_sensor_rows: 110
+      quality_screened_pairs: 41
+      quality_screened_pair_share: 0.3727272727
+      unique_selected_acquisition_ids: 57
+      failure_accounting:
+        timing_pair_found_but_shared_30_block_floor_not_met: 63
+        no_timing_valid_pair_in_downloaded_plan: 6
+      by_city:
+        phoenix:
+          quality_screened_pairs: 20
+          candidate_rows: 44
+          pooled_share: 0.4545454545
+          windows_meeting_every_nonzero_stratum_share_and_reuse_rule: 0
+          acquisition_reuse_rule_failed_strata: 0
+        los_angeles:
+          quality_screened_pairs: 21
+          candidate_rows: 66
+          pooled_share: 0.3181818182
+          windows_meeting_every_nonzero_stratum_share_and_reuse_rule: 0
+          acquisition_reuse_rule_failed_strata: 3
+      lag_summary_days:
+        pre_median: 8.157475
+        pre_p90: 13.010396
+        post_median: 8.708702
+        post_p90: 13.830848
+      download_plan_limitation: failed_rows_are_conservative_with_respect_to_un_downloaded_alternative_HLS_pairs
+      final_exposure_or_placebo_from_fmask: prohibited
+      raw_hls_reflectance_rebuild_still_required: true
+      optical_index_values_opened: false
+      thermal_or_lst_values_opened: false
+      new_v6_2_coefficients_viewed: false
+      evidence_package: deliverables/D1c_fmask_reassessment_v6_2_20260902
+      gate_A_authorized: false
+      supervisor_review: PENDING
+    post_support_sensitivity:
+      decision_id: V6.2-D020
+      recorded_on: "2026-09-03T01:27:30+09:00"
+      status: NONBINDING_POST_SUPPORT_USER_REQUESTED_SENSITIVITY
+      reason_nonbinding: minimum_share_changed_after_D019_support_result_was_known
+      requested_minimum_matched_pair_share: 0.20
+      controlling_minimum_matched_pair_share_retained: 0.70
+      unchanged_rules:
+        - one_city_window_must_pass_every_nonzero_year_sensor_stratum
+        - no_single_optical_acquisition_shared_by_more_than_0_25_of_candidate_passes_per_stratum
+        - D018_timing_Fmask_and_shared_30_block_requirements
+      result:
+        ruling: DEMOTE_TO_EXPLORATORY_CONFIRMATORY_SUPPORT_RULE_FAILED
+        controlling_D019_ruling_changed: false
+        phoenix:
+          windows_meeting_every_nonzero_stratum_share_and_reuse_rule: 0
+          provisional_primary: {nonzero_strata: 6, share_failures: 3, reuse_failures: 0}
+          sensitivity: {nonzero_strata: 14, share_failures: 6, reuse_failures: 0}
+        los_angeles:
+          windows_meeting_every_nonzero_stratum_share_and_reuse_rule: 0
+          provisional_primary: {nonzero_strata: 14, share_failures: 7, reuse_failures: 2}
+          sensitivity: {nonzero_strata: 8, share_failures: 4, reuse_failures: 1}
+        reason: every_city_window_retains_zero_share_strata_and_los_angeles_also_retains_reuse_failures
+      scope_note: D1c_lead_lag_is_separate_from_D1b_block_pass_connectivity
+      evidence_package: deliverables/D1c_20pct_sensitivity_v6_2_20260903
+      gate_A_authorized: false
+      supervisor_review: PENDING
+
+  stage_1_precision_census:
+    decision_id: V6.2-D011
+    frozen_on: "2026-09-02T21:23:31+09:00"
+    status: FROZEN_FOR_SEALED_FIVE_PASS_RUN
+    thermal_access: permitted_only_for_the_five_selected_inherited_passes
+    new_v6_2_coefficients_viewed_at_freeze: false
+    gate_A_authorization_effect: none
+    scientific_role: pre_Gate_A_precision_feasibility_only_not_a_v6_2_effect_estimate
+    city: phoenix
+    pass_selection:
+      candidate_population: already_downloaded_2023_orbits_in_D1b_phoenix_sensitivity_25_degree_metadata_set
+      required_complete_layers: [LST, QC, cloud, water, height]
+      bundle_revision_rule: highest_numeric_build_then_highest_numeric_revision_with_all_five_layers_present_per_scene_tile
+      ordering: acquisition_utc_ascending_then_orbit_ascending
+      number_selected: 5
+      selected_orbits: [27963, 28024, 28706, 28828, 28909]
+      outcome_values_used_for_selection: false
+      rationale: earliest_five_complete_geometry_screened_native_grid_passes_avoids_outcome_driven_selection
+    thermal_product:
+      product: ECO_L2T_LSTE.002
+      grid: native_70m_MGRS
+      role: inherited_precision_only
+      final_v6_2_product: ECO_L2T_LSTE.003
+      permitted_as_final_study_sample: false
+      quality_rule: finite_LST_and_mandatory_QC_bits_00_or_01_and_cloud_code_0_and_water_code_0
+      scene_overlap_rule: any_observed_cloud_or_water_invalidates_the_cell_then_latest_scene_supplies_a_remaining_valid_value
+      LST_resampling: prohibited
+    precision_only_context_proxies:
+      canopy_fraction:
+        source: data/raw/landcover/usfs_tcc_canopy_2025_30m.tif
+        band: NLCD_Percent_Tree_Canopy_Cover
+        aggregation: area_mean_to_native_cell_then_divide_by_100
+        limitation: prohibited_as_final_v6_2_Science_TCC
+      impervious_fraction:
+        source: data/raw/landcover/nlcd_impervious_2021_30m.tif
+        aggregation: area_mean_to_native_cell_then_divide_by_100
+      low_vegetation_fraction:
+        source: data/raw/v2/context/annual_nlcd_c1_1_2024/phoenix_annual_nlcd_c1_1_2024_land_cover.tif
+        classes: [52, 71, 81, 82]
+        aggregation: area_fraction_to_native_cell
+      bare_fraction:
+        source: data/raw/v2/context/annual_nlcd_c1_1_2024/phoenix_annual_nlcd_c1_1_2024_land_cover.tif
+        classes: [31]
+        aggregation: area_fraction_to_native_cell
+      building_fraction:
+        source: data/interim/building_footprints_32612.parquet
+        method: footprint_presence_rasterized_at_10m_then_area_mean_to_native_cell
+      elevation:
+        source: selected_ECO_L2T_LSTE.002_height_layer
+        method: same_native_cell_and_selected_scene_as_LST
+        limitation: precision_proxy_not_final_USGS_3DEP_context
+      distance_to_water:
+        source: annual_NLCD_2024_class_11
+        method: projected_30m_euclidean_distance_then_area_mean_to_native_cell
+        limitation: precision_proxy_not_final_hydrography_distance
+    block_pass_definition:
+      blocks: D1b_phoenix_1km_centroid_in_urban_area_blocks
+      pass_id: phoenix_colon_orbit
+      minimum_valid_cells: 60
+      minimum_canopy_p10_p90_span_fraction: 0.20
+      output_rows: every_selected_pass_block_with_at_least_60_complete_clear_land_native_cells
+    model:
+      formula: "LST_K ~ intercept + canopy_fraction_c + impervious_fraction_c + low_vegetation_fraction_c + bare_fraction_c + building_fraction_c + elevation_c + distance_to_water_c"
+      fit: separately_within_each_block_pass
+      context_processing: center_then_scale_nonconstant_context_terms_within_block_pass
+      canopy_processing: center_only_within_block_pass
+      constant_context_terms: dropped_with_count_recorded
+      slope_output: one_canopy_slope_per_estimable_block_pass
+      slope_units: kelvin_per_unit_canopy_fraction
+      open_standard_error_units: kelvin_per_10_percentage_points
+      cooling_efficiency_conversion: multiply_slope_standard_error_by_0_10
+    spatial_uncertainty:
+      method: delete_one_spatial_quadrant_jackknife
+      quadrants: four_fixed_500m_subblocks_within_each_1km_block
+      minimum_cells_per_quadrant: 8
+      required_successful_replicates: 4
+      jackknife_formula: "SE = sqrt((G - 1) / G * sum((beta_minus_g - mean_beta_minus_g)^2))"
+      nominal_cell_count_standard_error: prohibited
+    diagnostics:
+      leverage: maximum_hat_diagonal
+      high_leverage_threshold: "max(0.25, 2 * fitted_parameter_count / valid_cell_count)"
+      residual_spatial_autocorrelation: global_Morans_I_on_70m_cardinal_neighbor_pairs
+      design_stability_rule: all_four_jackknife_replicates_converge_and_max_quadrant_canopy_information_share_at_most_0_75_and_no_high_leverage
+      coefficient_sign_or_value_in_open_outputs: prohibited
+    sealed_output:
+      canonical_root: outputs/v6_2/sealed_coefficients
+      filename: d1d_coefficients_SEALED_20260902.csv
+      open_before_free_check_ruling_written: prohibited
+      permitted_fields: [city, block_id, pass_id, slope_K_per_unit_canopy_fraction, CE_K_per_10pp]
+      checksum_only_in_open_outputs: true
+    planning_grid:
+      observed_standard_error_summaries: [p25, median, p75]
+      reliability: [0.30, 0.50, 0.70]
+      attenuation_formula: "theta_observed = theta_latent * sqrt(reliability)"
+      latent_detection_effect_K_per_10pp: 0.10
+      latent_equivalence_bound_K_per_10pp: 0.05
+      design_effect: 2.5
+      detection_constant: 7.85
+      equivalence_constant: 6.18
+      detection_formula: "ceil(7.85 * 2.5 * sigma_s^2 / theta_observed^2)"
+      equivalence_formula: "ceil(6.18 * 2.5 * sigma_s^2 / delta_observed^2)"
+      available_count: floor_of_D1b_block_passes_times_largest_connected_component_share_for_each_of_eight_combinations
+    ruling:
+      optimistic_case: p25_observed_standard_error_and_reliability_0_70
+      required_count_for_case: maximum_of_detection_and_equivalence_required_counts
+      stop_rule: stop_before_Gate_A_only_if_required_count_exceeds_every_D1b_available_connected_count_in_both_cities
+      pass_effect: supports_supervisor_review_only_and_does_not_authorize_Gate_A
+      fail_closed: true
+    known_deviations:
+      - Collection_2_thermal_product_instead_of_final_Collection_3
+      - inherited_modified_NLCD_canopy_instead_of_annual_raw_Science_TCC_2019_2025
+      - LSTE_height_instead_of_USGS_3DEP
+      - NLCD_water_distance_proxy_instead_of_final_context_distance
+      - ten_metre_subgrid_footprint_fraction_approximation
+    pre_run_access_deviation:
+      event: inherited_granule_report_LST_minimum_maximum_and_mean_columns_printed_during_input_inventory
+      consequence: no_new_v6_2_coefficient_was_calculated_or_viewed_and_no_rule_or_pass_was_selected_from_those_values
+    result:
+      decision_id: V6.2-D012
+      recorded_on: "2026-09-02T21:36:50+09:00"
+      status: D1D_STOP_NO_ESTIMABLE_BLOCK_PASS
+      selected_passes: 5
+      candidate_block_passes_with_at_least_60_complete_cells: 13210
+      converged_block_passes: 0
+      design_stable_block_passes: 0
+      failure_counts:
+        canopy_span_below_0_20: 13210
+      canopy_span_fraction:
+        minimum: 0.0
+        p25: 0.021918
+        median: 0.043041
+        p75: 0.065816
+        maximum: 0.185551
+        frozen_floor: 0.20
+      observed_stage1_standard_error: NOT_ESTIMABLE
+      detection_required_count: NOT_ESTIMABLE
+      equivalence_required_count: NOT_ESTIMABLE
+      sealed_coefficient_rows: 0
+      sealed_file_sha256: 146b16f85aa89c486d174121d1e3e781ded685d8940f0dc6037e238b090d6004
+      sealed_file_opened_after_creation: false
+      ruling: STOP_BEFORE_GATE_A_NO_ESTIMABLE_BLOCK_PASS_UNDER_FROZEN_CANOPY_SPAN
+      interpretation: inherited_nonconforming_canopy_proxy_cannot_support_the_required_precision_census_or_a_binding_final_study_stop
+      required_next_action: obtain_annual_raw_Science_TCC_and_repeat_the_nonthermal_span_screen_before_any_new_thermal_run
+      gate_A_authorized: false
+      supervisor_review: PENDING
+
+sensitivity_checks:
+  parsimonious_demand_geometry:
+    decision_id: V6.2-D004
+    frozen_on: "2026-08-30T23:05:49+09:00"
+    status: NON_BINDING_USER_REQUESTED_SENSITIVITY
+    outcome_access: prohibited
+    new_v6_2_coefficients_viewed_at_freeze: false
+    controlling_D1a_ruling_changed: false
+    evidence_role: historical_nonthermal_support_only_not_v6_2_study_sample
+    cities: [phoenix, los_angeles]
+    primary_view_zenith_maximum_degrees: 15
+    view_or_relative_azimuth_completeness_required: false
+    rationale_for_azimuth_rule: near_nadir_primary_set_only_no_15_to_25_degree_expansion
+    primary_nuisance_design:
+      - solar_zenith_degrees
+      - view_zenith_p95_degrees
+      - day_of_year_sine_cosine
+    deliberately_excluded_as_redundant:
+      - local_solar_time_given_solar_zenith
+      - solar_azimuth_given_solar_zenith_and_day_of_year
+    meteorology_sensitivities_non_vetoing:
+      - primary_nuisance_design_plus_air_temperature_only
+      - primary_nuisance_design_plus_actual_vapour_pressure_only
+    meteorology_sensitivity_reason: VPD_is_mathematically_derived_from_temperature_and_vapour_pressure_so_joint_adjustment_is_overcontrol
+    linear_diagnostics: standardized_additive_terms
+    nonlinear_diagnostics:
+      basis: additive_linear_and_quadratic_terms_for_continuous_variables_plus_day_of_year_sine_cosine
+      validation: leave_one_pass_out
+      ridge_alpha: 1.0
+    continuous_support_definition:
+      candidate_range: intersection_of_within_tertile_VPD_p10_p90_ranges
+      stratifiers: [solar_zenith_degrees, day_of_year]
+      tertiles: 3
+    minimum_complete_passes_per_city: 15
+    vpd_vif_maximum: 5.0
+    maximum_condition_index: 30.0
+    nonlinear_leave_one_pass_out_vpd_concurvity_r2_maximum: 0.80
+    residual_vpd_sd_minimum_kPa: 0.25
+    continuously_supported_vpd_width_minimum_kPa: 0.50
+    sensitivity_keep_rule: all_primary_nuisance_design_criteria_pass_in_both_cities
+    meteorology_sensitivities_role: interpretation_only_do_not_veto_primary
+    governance: cannot_override_D003_without_supervisor_approved_protocol_amendment_before_coefficient_access
+    result:
+      decision_id: V6.2-D005
+      recorded_on: "2026-08-30T23:08:40+09:00"
+      sensitivity_ruling: DROP
+      controlling_D003_ruling_changed: false
+      new_v6_2_coefficients_viewed_before_ruling: false
+      primary_time_geometry:
+        phoenix:
+          n_complete: 19
+          vpd_vif: 1.036
+          maximum_condition_index: 5.105
+          nonlinear_leave_one_pass_out_vpd_concurvity_r2: -0.582
+          residual_vpd_sd_kPa: 2.289
+          continuous_support_width_kPa: 2.417
+          all_criteria_pass: true
+        los_angeles:
+          n_complete: 27
+          vpd_vif: 2.086
+          maximum_condition_index: 3.901
+          nonlinear_leave_one_pass_out_vpd_concurvity_r2: 0.290
+          residual_vpd_sd_kPa: 0.816
+          continuous_support_width_kPa: 0.300
+          all_criteria_pass: false
+          failed_criterion: continuous_support_width_minimum_0_50_kPa
+      interpretation: near_pass_but_cross_city_keep_rule_not_met
+      evidence_package: deliverables/D1a_parsimonious_sensitivity_v6_2_20260830
+      supervisor_review: PENDING
+
+stage_2:
+  unit: block_pass
+  response: CE_K_per_10pp
+  formula_primary: "CE ~ C(block) + C(pass) + G + W_tree + W_bg + frozen_quality_terms"
+  frozen_quality_terms:
+    - optical_age_days_c
+    - C(sensor)
+    - C(optical_acquisition_id)
+    - source_date_one_sided_term
+    - log1p_effective_tree_pixels_c
+    - log1p_effective_background_pixels_c
+    - excluded_mixed_fraction_c
+    - canopy_span_p10_p90_c
+    - mean_canopy_fraction_c
+  demand_branch_status: INACTIVE_HOLD_PENDING_SUPERVISOR_REVIEW
+  demand_branch_evidence_status:
+    variable: VPD_kPa
+    interactions: [W_tree_x_VPD, W_bg_x_VPD]
+    binding_D003_result: FAIL_BOTH_CITIES_UNDER_FULL_NUISANCE_RULE
+    nonbinding_D005_result: PHOENIX_PASS_LOS_ANGELES_FAIL_COMMON_SUPPORT_WIDTH
+    disposition: not_in_active_model_and_not_yet_formally_dropped
+    rq2_status: unresolved_pending_supervisor_keep_or_drop_ruling
+    high_demand_contrasts: prohibited
+    activation_before_supervisor_ruling: prohibited
+  dependence_units: [block, thermal_pass, optical_acquisition]
+  city_reporting: [city_specific, equal_city_pooling, leave_one_city_out]
+  precision_weights: capped
+  unweighted_sensitivity: required
+
+predicted_signs:
+  scale: cooling_efficiency_CE_K_per_10pp
+  theta_wt: positive
+  theta_wb: negative
+  slope_scale_signs_reversed: true
+  same_sign_interpretation: whole_block_optical_condition_framing
+  sign_consistency_is_proof_of_mechanism: false
+  expected_sign_used_as_gate: false
+  confirmatory_contrast: joint_opposite_sign_contrast
+
+power:
+  alpha_two_sided: 0.05
+  target_power: 0.80
+  meaningful_latent_effect_K_per_10pp_per_latent_SD: 0.10
+  meaningful_effect_sensitivities: [0.05, 0.20]
+  equivalence_bound_K_per_10pp: 0.05
+  attenuation_formula: "theta_observed = theta_latent * sqrt(reliability)"
+  planning_design_effect: 2.5
+  closed_form_detection_constant: 7.85
+  closed_form_equivalence_constant: 6.18
+  detection_formula: "N >= 7.85 * D * sigma_s^2 / theta^2"
+  equivalence_formula: "N >= 6.18 * D * sigma_s^2 / delta^2"
+  binding_method: full_simulation_on_actual_block_pass_graph
+  simulation_requirements:
+    - observed_canopy_distributions
+    - two_latent_correlated_condition_components
+    - correlated_measurement_error
+    - exact_exposure_construction_and_residualization
+    - spatially_correlated_thermal_error
+    - optical_acquisition_reuse_across_passes
+  maximum_type_1_error: 0.05
+  minimum_detection_power: 0.80
+  minimum_equivalence_power: 0.80
+
+gate_A:
+  minimum_optical_availability_within_21_days: 0.70
+  minimum_eligible_blocks_per_city: 30
+  minimum_distinct_urban_sectors: 3
+  minimum_largest_connected_component_share: 0.80
+  minimum_median_passes_per_block: 8
+  minimum_reliability_each_condition_component: 0.50
+  fixed_primary_background_required: true
+  connectivity_crossing:
+    seasons: [provisional_primary, sensitivity]
+    view_zenith_maximum_degrees: [15, 25]
+  exact_identifying_component_required: true
+  no_sign_gate: true
+
+gate_B:
+  pilot_passes_minimum: 15
+  pilot_passes_maximum: 20
+  minimum_stable_slope_share: 0.70
+  minimum_projected_power: 0.80
+  maximum_median_stage1_se_inflation_vs_plan: 0.25
+  common_cell_or_reweighted_estimable: true
+  registration_shift_must_preserve_estimability: true
+  background_composition_stable: true
+  no_expected_sign_gate: true
+  coefficients_sealed_until_decision: true
+
+secondary_analyses:
+  irrigation_stratification: where_records_available
+  night_diagnostic: optional_must_not_delay_core_paper
+
+load_bearing_controls:
+  - temporal_specificity
+  - fixed_background_definition
+  - cell_composition
+  - optical_source_date_and_image_reuse
+  - registration
+  - geometry
+  - rainfall_and_season
+  - independent_reconstruction
+
+stop_rules:
+  - do_not_lower_thresholds_after_results
+  - do_not_widen_windows_to_rescue_a_coefficient
+  - do_not_restore_compound_threshold_paired_pixel_or_early_late_designs
+  - do_not_treat_rainfall_as_direct_tree_water_supply
+  - stop_or_explicitly_reframe_if_gate_A_or_gate_B_fails

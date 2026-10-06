@@ -1,0 +1,16 @@
+city,variable,n,unique_share,uniform_ecdf_distance,pass
+atlanta,demand_pct,976,1.0,0.0010245901639344263,True
+atlanta,antecedent_dryness_30d_pct,976,1.0,0.0010245901639344263,True
+atlanta,antecedent_dryness_60d_pct,976,1.0,0.0010245901639344263,True
+los_angeles,demand_pct,976,1.0,0.0010245901639344263,True
+los_angeles,antecedent_dryness_30d_pct,976,1.0,0.0010245901639344263,True
+los_angeles,antecedent_dryness_60d_pct,976,1.0,0.0010245901639344263,True
+miami,demand_pct,976,1.0,0.0010245901639344263,True
+miami,antecedent_dryness_30d_pct,976,1.0,0.0010245901639344263,True
+miami,antecedent_dryness_60d_pct,976,1.0,0.0010245901639344263,True
+minneapolis_st_paul,demand_pct,976,0.9989754098360656,0.0015363598150483397,True
+minneapolis_st_paul,antecedent_dryness_30d_pct,976,1.0,0.0010245901639344263,True
+minneapolis_st_paul,antecedent_dryness_60d_pct,976,1.0,0.0010245901639344263,True
+phoenix,demand_pct,976,1.0,0.0010245901639344263,True
+phoenix,antecedent_dryness_30d_pct,976,1.0,0.0010245901639344263,True
+phoenix,antecedent_dryness_60d_pct,976,1.0,0.0010245901639344263,True

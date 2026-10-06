@@ -649,6 +649,162 @@ changed after the corresponding v6.2 coefficient has been viewed.
   and 3DEP
   `cf5e50550146672b57b3715dec099734f7cc3a0f620977d3c73407f9acb86148`.
 
+## Entry 18 — prospective HLS-Fmask lead–lag reassessment
+
+- **Decision ID:** V6.2-D018
+- **Recorded:** 2026-09-02T23:40:41+09:00
+- **Status:** FROZEN BEFORE HLS FMASK VALUE ACCESS; SUPERVISOR REVIEW PENDING
+- **Change:** Reassess D1c using the newly acquired HLS V2 source times,
+  acquisition identifiers and 149 Fmask rasters. Retain the D009 timing and
+  confirmatory thresholds without relaxation. Define a usable acquisition-block as
+  at least 60 clear 30 m HLS cells, and require a matched pre/post pair to share at
+  least 30 usable 1 km study blocks.
+- **Reason:** The source schedule requires feasible matched observations but does not
+  state an image-level cloud cutoff. Sixty cells reuses the frozen optimistic D1b
+  support floor and corresponds to the later planning requirement of 30 effective
+  tree plus 30 effective background pixels. Thirty common blocks reuses the frozen
+  Gate A block-support floor. These are outcome-blind necessary-condition screens;
+  canopy and background support may remove blocks later.
+- **v6.2 coefficient viewed before change:** no
+- **Prior retired thermal work relevant:** no; only public metadata and manifest
+  fields were inspected before this rule was frozen
+- **Files changed:** `docs/v2/v6_2/protocol_v6_2.yml`, this decision log, D1c
+  Fmask reassessment code/tests and its evidence package
+- **Gate affected:** free checks only; Gate A remains unauthorised
+- **Approved by:** USER-DIRECTED EXECUTION; PENDING_SUPERVISOR_REVIEW
+
+### Frozen implementation details for D018
+
+- Use the D1b 1 km local-UTM grid and retain blocks whose centroids lie inside each
+  2020 Census urban area.
+- A clear HLS cell is non-NoData, has Fmask bits 1–5 all zero, and aerosol bits 6–7
+  no greater than two, exactly as already frozen in the product specification.
+- For each thermal pass and sensor, enumerate distinct source-identified pairs with
+  one acquisition 1–15 days before and one 1–15 days after, and absolute lags within
+  three days. Discard pairs with fewer than 30 common usable blocks, then apply the
+  D009 lag/identifier tie-breaker.
+- Do not open HLS reflectance, an optical index, ECOSTRESS LST or any new v6.2
+  coefficient. A computational or manifest-integrity failure exits nonzero; a
+  scientific demotion remains a valid completed result.
+
+## Entry 19 — HLS-Fmask lead–lag reassessment result
+
+- **Decision ID:** V6.2-D019
+- **Recorded:** 2026-09-02T23:51:39+09:00
+- **Status:** D1C TIMING PROVENANCE REPAIRED; CONFIRMATORY SUPPORT FAILED;
+  SUPERVISOR REVIEW PENDING
+- **Change:** Apply D018 without relaxation. Supersede D010's missing-provenance
+  basis with a direct HLS V2 Fmask and source-ledger result. Keep the
+  temporal-specificity diagnostic exploratory because neither city has a frozen
+  season window meeting every nonzero year-sensor pair-share and acquisition-reuse
+  criterion.
+- **Reason:** All 149 Fmask files match the frozen manifest and all exact source
+  identifiers and times reconcile. Forty-one of 110 candidate pass-window-sensor
+  records have a timing-valid pair with at least 30 common QA-usable blocks. Sixty-
+  three have timing-valid pairs but fail the shared-block floor, and six have no
+  timing-valid pair in the downloaded 149-acquisition plan. The overall 37.3% pair
+  share is descriptive; the binding decision uses the frozen stratum-level rule.
+- **v6.2 coefficient viewed before change:** no
+- **Prior retired thermal work relevant:** no; only HLS Fmask quality values and
+  source metadata were opened
+- **Files changed:** D1c Fmask code/tests and evidence, `docs/v2/v6_2/protocol_v6_2.yml`,
+  this decision log, and the initial-package index and decision summary
+- **Gate affected:** free checks only; Gate A remains unauthorised
+- **Approved by:** USER-DIRECTED EXECUTION; PENDING_SUPERVISOR REVIEW
+
+### Numerical basis and interpretation for D019
+
+- Phoenix has 20 quality-screened pairs among 44 candidate records (45.5% pooled):
+  5/10 in the primary window and 15/34 in the sensitivity window. Acquisition
+  reuse passes every Phoenix stratum, but neither window reaches 70% in every
+  nonzero year-sensor stratum.
+- Los Angeles has 21 quality-screened pairs among 66 candidate records (31.8%
+  pooled): 15/50 in the primary window and 6/16 in the sensitivity window. Neither
+  window passes the stratum-level share rule, and three strata also fail the frozen
+  acquisition-reuse limit.
+- Seventy-seven of 149 acquisitions contain at least 30 usable blocks. Selected
+  pairs use 57 unique acquisition identifiers. Median pre/post lags are
+  8.157/8.709 days; 90th percentiles are 13.010/13.831 days.
+- D010 is superseded only as to why the check is exploratory. Timing direction,
+  identity and reuse are now estimable; the current demotion is a numerical support
+  failure, not missing provenance and not proof of zero imagery.
+- The 149 rasters were selected by the earlier catalogue pairing plan. A failed row
+  is therefore conservative with respect to alternative HLS acquisitions whose
+  Fmask was not downloaded. Passing rows are directly verified. This free check
+  does not authorize Gate A, open reflectance, or create a final exposure/placebo.
+
+## Entry 20 — nonbinding 20% lead-lag support sensitivity
+
+- **Decision ID:** V6.2-D020
+- **Recorded:** 2026-09-03T01:27:30+09:00
+- **Status:** POST-SUPPORT SENSITIVITY COMPLETE; CONTROLLING D019 UNCHANGED;
+  SUPERVISOR REVIEW PENDING
+- **Change:** At the user's request, repeat only the D1c matched-pair-share ruling
+  at 20% while retaining the all-nonzero-year-by-sensor structure, 25% acquisition-
+  reuse limit, and all D018 timing, Fmask, and common-block requirements.
+- **Reason:** The 70% support result was already known, so a relaxed cutoff cannot
+  replace the frozen D009/D019 decision. A labeled sensitivity can nevertheless
+  show whether 20% changes the practical conclusion. It does not: every city-window
+  still has one or more zero-share strata, and Los Angeles also retains three reuse
+  failures across its two windows.
+- **v6.2 coefficient viewed before change:** no
+- **Prior retired thermal work relevant:** no; the sensitivity reads only the
+  existing 56-row D1c Fmask feasibility table
+- **Files changed:** parameterized D1c ruling logic/tests, protocol, this decision
+  log, and `deliverables/D1c_20pct_sensitivity_v6_2_20260903`
+- **Gate affected:** free checks only; Gate A remains unauthorised
+- **Approved by:** USER-DIRECTED SENSITIVITY; PENDING SUPERVISOR REVIEW
+
+### Numerical basis and scope for D020
+
+- Phoenix primary has three share failures among six nonzero strata; Phoenix
+  sensitivity has six among fourteen. Acquisition reuse passes throughout Phoenix.
+- Los Angeles primary has seven share and two reuse failures among fourteen
+  nonzero strata; its sensitivity window has four share and one reuse failure
+  among eight.
+- Pooled shares (45.5% Phoenix and 31.8% Los Angeles) exceed 20%, but pooled share
+  is not the retained decision rule. The failures are concentrated in year-sensor
+  strata with zero verified pairs, which fail any positive percentage threshold.
+- This is D1c lead-lag feasibility. It is separate from D1b block-pass connectivity,
+  which is the item explicitly requested in the professor's email. D1c appears in
+  the attached schedule/guide and may later reduce graph edges when final optical
+  eligibility is applied, but it does not answer the baseline connectivity question.
+
+## Entry 21 — nonbinding 0.10 canopy-span sensitivity
+
+- **Decision ID:** V6.2-D021
+- **Recorded:** 2026-09-03T01:44:48+09:00
+- **Status:** POST-SUPPORT SENSITIVITY COMPLETE; CONTROLLING D016 UNCHANGED;
+  SUPERVISOR REVIEW PENDING
+- **Change:** At the user's request, reclassify the 13,509 already-recorded D016
+  nonthermal block-passes at a p10-p90 canopy-span floor of 0.10 rather than 0.20.
+  Do not open LST, fit Stage 1, or replace the controlling D015/D016 result.
+- **Reason:** The 0.20 result was already known. A post-support threshold change is
+  therefore nonbinding, but it can quantify whether a prospectively approved 0.10
+  rule would remove the empty-sample obstruction. It would: 1,368 block-passes
+  across 331 Phoenix blocks meet 0.10.
+- **v6.2 coefficient viewed before change:** no
+- **Prior retired thermal work relevant:** no; the sensitivity reads only D016's
+  already-open nonthermal Science TCC span rows
+- **Files changed:** protocol, this decision log, sensitivity code/tests, and
+  `deliverables/D1d_10pct_canopy_span_sensitivity_v6_2_20260903`
+- **Gate affected:** free checks only; Gate A remains unauthorised
+- **Approved by:** USER-DIRECTED SENSITIVITY; PENDING SUPERVISOR REVIEW
+
+### Numerical basis and consequence for D021
+
+- Eligibility by selected Phoenix pass is 220/2,828, 282/2,684, 311/2,876,
+  311/2,876 and 244/2,245, respectively: 1,368/13,509 (10.13%) overall.
+- The 331 eligible blocks have eligible-pass counts of one for 19 blocks, two for
+  3, three for 51, four for 100 and all five for 158; the median is four passes.
+- The 0.10 rule means a ten-percentage-point within-block p90-p10 canopy difference,
+  not ten percent of observations. Its purpose remains protection against fitting a
+  local canopy-temperature slope where canopy is nearly uniform.
+- If approved prospectively, this result would clear the nonthermal zero-eligibility
+  stop and allow consideration of the same five-pass sealed Stage-1 thermal pilot.
+  It does not establish final tree/background support, slope estimability,
+  uncertainty, power, Los Angeles feasibility or Gate-A eligibility.
+
 ## New-entry template
 
 - **Decision ID:** V6.2-D___

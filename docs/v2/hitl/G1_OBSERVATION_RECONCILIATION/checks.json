@@ -1,0 +1,220 @@
+{
+  "approval_received": false,
+  "artifact_sha256": {
+    "docs/v2/D0060_G1_2026_METADATA_QUERY_DEVIATION.md": "511363153539829815b887382dca72751e7a6c5c2f05c54ec67406ca2949a68f",
+    "docs/v2/D0061_G1_UNBOUNDED_CMR_PATTERN_DEVIATION.md": "a50b260f8da01c116451786e350e838c6b3b1c25e416c8d4220d79a6f0efed3d",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/G3A_nonthermal_tree_reference_yield_checkpoint.md": "aec2c91200a9b05b3030c2a44779c55b8e8492df2de308a520b210680a4e9251",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/archive_missing_31_audit.csv": "9eb8fa6a33e030594562e46abee6c69d4fc0617aae4f0fc532796dc33e4b9279",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/attrition_breakdown.csv": "8c72d7aa3612282146a0ed228668f96838e0ea717b3e22529be097d40f7a4e25",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/attrition_summary.csv": "fd71aca2017ebc4e92abcb90afd6eb69f32f2b8203aee7bf7edb9c2d43b63f6e",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/deduplication_summary.csv": "5f89592e60769229857b5ba4103b78b5817030df52ec22107fe4e530149c7211",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/hrrr_pass_hour_crosswalk.csv": "77150df933f62b4286903352aff0f4dfde1c96c30a0b843ba12df7a78efa43fe",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/method_notes.md": "a2a91f51167cbeec8b37c5fa5199c2593b12bbe5bf4f4e1fb52e3c1c0bc16c59",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/observation_ledger.csv": "6b6931cd06b18a5bfa66ee01e78df2c6d2aad1db1b4eecd7d4ba86ae3ecfbc79",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/pass_quality_219.csv": "fdde116139bd766da806664e7ce80e51c25b0b7015bfee7df84c329182f4c2f1",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/review.md": "79abde805ef5c81930004178461be29e49972fededf15810ee27686b2f3ff829",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/revision_response.md": "efc32a81bacf88459f3d62c5390694bd96eeb66dad1ffaa07617c66d50ceb949",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_bindings.json": "4a521549f1d377502d37b3d4eb7f3538c4602b67dfe01a598c4d7d215bef6712",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/cmr_collection3_historical_summer_2020.json": "af75e0d86b206f331c8491f1c22dcd4a0d8401bc5e5a7de75b4c214ef1e29ae7",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/cmr_collection3_historical_summer_2024.json": "20d8ba9fd40b8a969ffa61fab5c718e8882abb2e6c726410fde87f4955f794b6",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/collection3_cmr_audit.json": "75bfbdba73848b38d4b4131014537b44a6ce49fad9043810bdf4a9c1e8ac94b9",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/protocol_deviation_quarantine/DO_NOT_USE_unbounded_pattern_11645_returned_2026_metadata.json": "85b41f4e4f51912af544a6b21d1d2504d3dd60bb306399f18495a56c7c872a4c",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/within_city_wet_dry_support.csv": "75c3238440e74b4e05e0ccf3f979b90f939a4a85c3b398e439f4fd6d86c5b02f"
+  },
+  "authorized_by": "D0059",
+  "checks": [
+    {
+      "check_id": "G1-C01",
+      "evidence": "13,577 raw tiled products; 13,575 latest-revision products; 2,968 unique physical city-orbit observations.",
+      "name": "complete_revision_and_tile_to_observation_reconciliation",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G1-C02",
+      "evidence": {
+        "count_interpretation": "individual physical passes prior to empirical matching; not morning-afternoon pairs",
+        "early_late_stratum_eligible_physical_passes": 102,
+        "final_status_counts": {
+          "archive_unavailable_pre_geometry": 31,
+          "daytime_geolocation_excluded": 38,
+          "daytime_metadata_or_obstruction_excluded": 75,
+          "geometry_angle_fail": 196,
+          "geometry_coverage_and_angle_fail": 489,
+          "geometry_coverage_fail": 7,
+          "outside_daytime_10_18": 1913,
+          "retained_early_late_stratum_eligible": 102,
+          "retained_midday_not_early_late": 117
+        },
+        "sum": 2968
+      },
+      "name": "complete_mutually_exclusive_attrition_identity",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G1-C03",
+      "evidence": "911/911 archive-available candidates have definitive L1B-GEO geometry; 219 pass coverage>=0.95 and p95(abs(view zenith))<=20 degrees; the 31 pre-geometry archive exclusions were not assigned zero coverage.",
+      "name": "applied_view_rule_and_geometry_resolution",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G1-C04",
+      "evidence": {
+        "early_late_stratum_eligible_pass_equivalent_sum": 72.68902899522442,
+        "early_late_stratum_eligible_physical_passes": 102,
+        "formula": "sum(n_clear_pixels_independent_of_view / n_domain_pixels_cloud)",
+        "retained_pass_equivalent_sum": 159.08708404623306,
+        "retained_physical_passes": 219,
+        "role": "secondary_clear_domain_exposure_diagnostic"
+      },
+      "name": "physical_and_weighted_pass_counts_separated",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G1-C05",
+      "evidence": "All 219 retained passes have clear/cloud/fill pixel partitions, clear fractions, geometry metrics, and complete asset provenance. Usable tree and reference counts are explicitly unavailable. The mandatory G3A_NONTHERMAL_TREE_REFERENCE_YIELD checkpoint will compute tree/reference counts and nonthermal matching yield after G3 and before G4/G5/G7, without opening a temperature/LST value.",
+      "name": "per_pass_nonthermal_quality_counts_complete",
+      "status": "PASS_WITH_MANDATORY_LATER_CHECKPOINT"
+    },
+    {
+      "check_id": "G1-C06",
+      "evidence": {
+        "manifest_product_counts": {
+          "prs": 4,
+          "sfc": 409
+        },
+        "pass_hour_links": 438,
+        "physical_passes": 219,
+        "shared_cross_city_hours": 25,
+        "unique_hourly_assets": 413
+      },
+      "name": "hrrr_413_to_219_reconciled",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G1-C07",
+      "evidence": {
+        "explicit_city_by_cell_rows": 54,
+        "low_demand_dry_pass_equivalents": 0.5526985982886936,
+        "low_demand_dry_physical_passes": 8
+      },
+      "name": "within_city_wet_dry_support_complete",
+      "status": "PASS_RECONCILIATION_SUPPORT_REMAINS_SPARSE"
+    },
+    {
+      "check_id": "G1-C08",
+      "evidence": {
+        "by_year": {
+          "2020": 24,
+          "2024": 7
+        },
+        "daily_proxy_condition_cells": {
+          "demand_high__antecedent_dry": 4,
+          "demand_high__antecedent_middle": 1,
+          "demand_high__antecedent_wet": 2,
+          "demand_low__antecedent_dry": 2,
+          "demand_low__antecedent_middle": 4,
+          "demand_low__antecedent_wet": 3,
+          "demand_middle__antecedent_dry": 5,
+          "demand_middle__antecedent_middle": 8,
+          "demand_middle__antecedent_wet": 2
+        },
+        "definitive_acquisition_time_condition_cell_known": false,
+        "geometry_and_cloud_outcomes_known": false,
+        "low_demand_dry_daily_proxy_candidates": 2,
+        "missing_candidates": 31,
+        "proxy_scope": "daily_step1_condition_axes_only"
+      },
+      "name": "archive_missing_31_sparse_corner_audit",
+      "status": "OPEN_WITH_PROXY_EVIDENCE"
+    },
+    {
+      "check_id": "G1-C09",
+      "evidence": {
+        "date_bounded_raw_responses": [
+          {
+            "date_boundary": "2020-06-01T00:00:00Z/2020-09-30T23:59:59Z",
+            "query_id": "historical_summer_2020",
+            "raw_response_body": "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/cmr_collection3_historical_summer_2020.json",
+            "raw_response_bytes": 269,
+            "raw_response_sha256": "af75e0d86b206f331c8491f1c22dcd4a0d8401bc5e5a7de75b4c214ef1e29ae7",
+            "response_entry_count": 0
+          },
+          {
+            "date_boundary": "2024-06-01T00:00:00Z/2024-09-30T23:59:59Z",
+            "query_id": "historical_summer_2024",
+            "raw_response_body": "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/cmr_collection3_historical_summer_2024.json",
+            "raw_response_bytes": 269,
+            "raw_response_sha256": "20d8ba9fd40b8a969ffa61fab5c718e8882abb2e6c726410fde87f4955f794b6",
+            "response_entry_count": 0
+          }
+        ],
+        "gate1_conclusion": {
+          "historical_recovery_currently_available": false,
+          "missing_31_recovered": 0,
+          "reason": "Collection 3 removes the L1B-GEO dependency in principle, but the two date-bounded, raw-response-preserved CMR queries returned no granules for either historical summer containing the 31 archive-unavailable candidates. This is a current-availability finding, not a permanent-absence claim.",
+          "status": "RECHECK_AT_G3_BEFORE_SELECTION",
+          "technical_recovery_path_exists": true
+        }
+      },
+      "name": "collection3_recovery_and_fill_semantics_audited",
+      "status": "PASS_RECOVERY_NOT_CURRENTLY_AVAILABLE_RAW_RESPONSES_PRESERVED"
+    },
+    {
+      "check_id": "G1-C10",
+      "evidence": {
+        "holdout_status": "UNSELECTED",
+        "metadata_records_excluded_from_gate1_evidence": true,
+        "protocol_deviation_records": [
+          "D0060",
+          "D0061"
+        ],
+        "record_2026_metadata_query_status": "PROTOCOL_DEVIATION_OCCURRED_D0060_D0061",
+        "record_2026_science_data_status": "UNOPENED",
+        "task1_run_records_remain_stop": [
+          "R0015",
+          "R0016"
+        ],
+        "temperature_or_lst_layers_opened_during_gate1": 0
+      },
+      "name": "data_access_and_protocol_deviation_state",
+      "status": "PASS_WITH_RECORDED_PROTOCOL_DEVIATIONS_NOT_FULL_COMPLIANCE"
+    },
+    {
+      "check_id": "G1-C11",
+      "evidence": {
+        "checkpoint": "G3A_NONTHERMAL_TREE_REFERENCE_YIELD",
+        "human_approval_required_at_checkpoint": true,
+        "placement": "after_G3_before_G4_G5_or_G7",
+        "temperature_or_lst_value_access_permitted": false
+      },
+      "name": "tree_reference_yield_checkpoint_scheduled",
+      "status": "PLANNED_NOT_AUTHORIZED"
+    }
+  ],
+  "gate": "G1",
+  "gate_name": "complete_observation_reconciliation",
+  "gate_status": "REVISED_AWAITING_HUMAN_APPROVAL_WITH_RECORDED_PROTOCOL_DEVIATIONS",
+  "next_gate_authorized": false,
+  "next_gate_if_approved": "G2",
+  "prepared_at": "2026-08-13T16:43:59+09:00",
+  "protocol_compliance_pass": false,
+  "protocol_compliance_status": "D0060_D0061_RECORDED_NOT_CLEAN_COMPLIANCE",
+  "protocol_deviation_records": [
+    "D0060",
+    "D0061"
+  ],
+  "schema_version": 2,
+  "sealed_state": {
+    "heldout_thermal_status": "UNOPENED",
+    "holdout_status": "UNSELECTED",
+    "record_2026_metadata_query_status": "PROTOCOL_DEVIATION_OCCURRED_D0060_D0061",
+    "record_2026_metadata_records_excluded_from_gate1_evidence": true,
+    "record_2026_science_data_status": "UNOPENED",
+    "task1_interaction_status": "STOP",
+    "task1_time_of_day_status": "STOP_TIME_OF_DAY_ONLY_STEP3",
+    "task2_result_bearing_actions_enabled": false,
+    "thermal_or_lst_layers_opened_during_gate1": 0
+  },
+  "technical_checks_pass": true,
+  "user_action_required": "APPROVE_G1_REVISE_G1_OR_STOP"
+}

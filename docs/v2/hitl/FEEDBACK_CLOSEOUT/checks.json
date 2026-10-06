@@ -1,0 +1,23 @@
+{
+  "all_feedback_points_have_dispositions": true,
+  "decision_id": "D0083",
+  "feedback_points": 37,
+  "feedback_status_counts": {
+    "ADDRESSED": 26,
+    "ADDRESSED_BY_FAIL_CLOSED_PREFLIGHT": 1,
+    "ADDRESSED_EQUIVALENT_LABEL": 1,
+    "ADDRESSED_NEGATIVE_RESULT": 8,
+    "PARTIAL_BLOCKED_REPORTED": 1
+  },
+  "g4_pooled_contrast_authorized": false,
+  "g5_time_of_day_authorized": false,
+  "g6_all_passed": true,
+  "g7_all_profiles_identifiable": false,
+  "g7_monte_carlo_run": false,
+  "g8_decision": "COMPARATIVE_CASE_STUDY_PROPOSAL_ONLY",
+  "generated_utc": "2026-08-16T13:45:42.217566+00:00",
+  "holdout_opened": false,
+  "record_2026_opened": false,
+  "task2_result_bearing_run": false,
+  "thermal_or_lst_opened": false
+}

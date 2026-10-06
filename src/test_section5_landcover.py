@@ -1,21 +1,10 @@
 #!/usr/bin/env python3
 """Self-test for the Section 5 land-cover pipeline (pure-logic).
 
-Mirrors test_section2/3/4_*: the geo / EE stack (ee, geemap, rioxarray, rasterio,
-xarray) is stubbed so the module imports without it, then the algorithmically
-risky pure logic is exercised on synthetic data:
-
-  * the EXACT area-weighted regrid, checked against a hand-computed 30 m -> 70 m
-    overlap (the non-integer 70/30 ratio is the whole point of area weighting),
-    plus uniform-source, NaN-exclusion and coverage-threshold behaviour
-  * the 1-D interval-overlap helper and the unrotated-grid guard
-  * the categorical subset check (nearest must never invent a class)
-  * product configuration (native 30 m, 70 m filenames carry the year, units are
-    percent, the class layer is categorical/uint8)
-  * the manifest row built for an EE download (schema + checksum prefix)
-
-The EE compute, geedim download, reproject and matplotlib glue are standard
-library usage exercised by the real CLI in an authenticated environment.
+Stubs the geo/EE stack and exercises the risky numerics on synthetic data:
+area-weighted 30 m -> 70 m regrid (hand calc, uniform, NaN-exclusion, coverage
+threshold), the 1-D interval-overlap helper + unrotated-grid guard, the
+categorical-subset check, product config, and the EE-download manifest row.
 
 Runs with just numpy + pandas:  python src/test_section5_landcover.py
 """
@@ -73,7 +62,7 @@ def check(cond: bool, msg: str) -> None:
         print(f"  ok:   {msg}")
 
 
-# 30 m source: 4x4 grid covering x[0,120], y[0,120]; top-left origin (0, 120).
+# 30 m source: 4x4 grid over x[0,120], y[0,120]; top-left origin (0, 120).
 _SRC_T = (30.0, 0.0, 0.0, 0.0, -30.0, 120.0)
 _SRC = np.array([[10.0, 20.0, 30.0, 40.0],
                  [50.0, 60.0, 70.0, 80.0],
@@ -86,8 +75,7 @@ _DST_T = (70.0, 0.0, 0.0, 0.0, -70.0, 120.0)
 def test_area_weighted_hand_calc() -> None:
     print("\n[area-weighted regrid: hand-computed 30 m -> 70 m overlap]")
     out = sec5.area_weighted_regrid(_SRC, _SRC_T, _DST_T, (1, 1))
-    # wx = [30,30,10,0]; wy = [30,30,10,0]; den = 70*70 = 4900 (full coverage);
-    # num = 224000 -> mean = 2240/49 = 45.714285...
+    # wx=wy=[30,30,10,0]; den=4900 (full); num=224000 -> 2240/49=45.714286
     check(np.isclose(out[0, 0], 2240.0 / 49.0),
           f"weighted mean = 2240/49 ({2240/49:.6f}); got {out[0,0]:.6f}")
 
@@ -100,20 +88,20 @@ def test_area_weighted_uniform() -> None:
 
 
 def test_area_weighted_nan_excluded() -> None:
-    print("\n[area-weighted regrid: NaN source cells excluded from num + den]")
+    print("\n[area-weighted regrid: NaN cells excluded from num + den]")
     src = _SRC.copy()
-    src[0, 0] = np.nan                       # removes weight 30*30=900, value 10
+    src[0, 0] = np.nan                       # removes weight 900, value 10
     out = sec5.area_weighted_regrid(src, _SRC_T, _DST_T, (1, 1))
-    # den = 4900-900 = 4000; num = 224000 - 900*10 = 215000 -> 53.75
+    # den=4000; num=215000 -> 53.75
     check(np.isclose(out[0, 0], 53.75), f"NaN-excluded mean = 53.75; got {out[0,0]:.4f}")
 
 
 def test_area_weighted_coverage_threshold() -> None:
     print("\n[area-weighted regrid: sparse coverage -> NaN unless threshold lowered]")
     src = np.array([[50.0]])
-    src_t = (30.0, 0.0, 0.0, 0.0, -30.0, 30.0)   # one 30 m cell at x[0,30], y[0,30]
+    src_t = (30.0, 0.0, 0.0, 0.0, -30.0, 30.0)   # one 30 m cell x[0,30], y[0,30]
     dst_t = (70.0, 0.0, 0.0, 0.0, -70.0, 70.0)   # one 70 m cell x[0,70], y[0,70]
-    # overlap area 900 / 4900 = 0.18 coverage
+    # overlap 900/4900 = 0.18 coverage
     out_default = sec5.area_weighted_regrid(src, src_t, dst_t, (1, 1))  # coverage_min=0.5
     out_low = sec5.area_weighted_regrid(src, src_t, dst_t, (1, 1), coverage_min=0.1)
     check(np.isnan(out_default[0, 0]), "coverage 0.18 < 0.5 -> NaN")
@@ -139,11 +127,11 @@ def test_categorical_subset() -> None:
     src = np.array([11, 21, 41, 82])
     check(sec5.categorical_subset_ok(src, np.array([11, 41])), "subset -> ok")
     check(not sec5.categorical_subset_ok(src, np.array([11, 99])),
-          "class 99 not in source -> rejected (averaging bug)")
+          "class 99 not in source -> rejected")
 
 
 def test_layer_specs() -> None:
-    print("\n[product configuration: honest scales, percent units, categorical class]")
+    print("\n[product configuration: scales, percent units, categorical class]")
     imp, can, lc = sec5.IMPERVIOUS_SPEC, sec5.CANOPY_SPEC, sec5.LANDCOVER_SPEC
     check(imp.raw_filename(2021) == "nlcd_impervious_2021_30m.tif", "impervious raw name")
     check(imp.grid_filename(2021) == "nlcd_impervious_2021_70m.tif", "impervious 70 m name")
@@ -151,12 +139,12 @@ def test_layer_specs() -> None:
     check(lc.raw_filename(2021) == "nlcd_landcover_class_2021_30m.tif", "land-cover raw name")
     check(imp.kind == "continuous" and can.kind == "continuous", "impervious/canopy continuous")
     check(lc.is_categorical and lc.out_dtype == "uint8", "land-cover categorical/uint8")
-    check(lc.out_nodata == 0, "land-cover nodata = 0 (no NLCD class is 0)")
+    check(lc.out_nodata == 0, "land-cover nodata = 0")
     check("percent" in imp.units and "percent" in can.units, "impervious/canopy units percent")
     check(sec5.NLCD_COLLECTION == "USGS/NLCD_RELEASES/2021_REL/NLCD", "NLCD collection id")
     check(sec5.TCC_COLLECTION ==
           "projects/gtac-data-publish/assets/TCC/Product_Version/2025-6", "current TCC id")
-    check(sec5.NLCD_CLASS_LABELS.get(11) == "Open water", "class 11 = open water (Section 10)")
+    check(sec5.NLCD_CLASS_LABELS.get(11) == "Open water", "class 11 = open water")
 
 
 def test_manifest_row() -> None:

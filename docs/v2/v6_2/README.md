@@ -1,3 +1,9 @@
+# Current v6.2 location
+
+For new v6.2 work, use the [updated protocol](</Users/jmlee/Documents/Documents - Jamie’s Mac mini/TreeProject2/docs/v2/v6_2/protocol_v6_2.yml>) and [pilot plan](</Users/jmlee/Documents/Documents - Jamie’s Mac mini/TreeProject2/docs/v2/v6_2/pilot_plan_v6_2.md>). The September meeting and follow-up replace the old block-pass estimator and gates. This repository retains prior code, evidence and data; the earlier text below is historical for v6.2. Full-city scaling is paused pending pilot review.
+
+---
+
 # v6.2 control boundary
 
 This directory is the controlling repository record for the v6.2 redesign. The

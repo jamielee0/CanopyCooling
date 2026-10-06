@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "audit_kind": "metadata_only_collection3_historical_recovery_probe",
+  "revised_at": "2026-08-13T16:39:02+09:00",
+  "collection": {
+    "short_name": "ECO_L2T_LSTE",
+    "version": "003",
+    "concept_id": "C3998139651-LPCLOUD",
+    "doi": "10.5067/ECOSTRESS/ECO_L2T_LSTE.003",
+    "official_product_page": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-eco-l2t-lste-003",
+    "official_release_announcement": "https://forum.earthdata.nasa.gov/viewtopic.php?t=7884",
+    "release_announcement_date": "2026-05-01",
+    "release_timing_note": "NASA LP DAAC announced release of ECOSTRESS Version 3 Level 2 products on 2026-05-01."
+  },
+  "product_semantics": {
+    "view_zenith": {
+      "asset": "view_zenith.tif",
+      "data_type": "float32",
+      "valid_range_degrees": [-90.0, 90.0],
+      "fill_value": "NaN",
+      "gate_interpretation": "fill is missing or invalid support and must not be converted to a physical viewing angle"
+    },
+    "cloud": {
+      "asset": "cloud.tif",
+      "data_type": "uint8",
+      "valid_values": [0, 1],
+      "fill_value": 255,
+      "gate_interpretation": "255 is fill or missing support, not cloud and not evidence that the file is corrupt"
+    }
+  },
+  "cmr_queries_used_as_gate1_evidence": [
+    {
+      "query_id": "historical_summer_2020",
+      "date_boundary": "2020-06-01T00:00:00Z/2020-09-30T23:59:59Z",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.json?collection_concept_id=C3998139651-LPCLOUD&temporal=2020-06-01T00%3A00%3A00Z%2C2020-09-30T23%3A59%3A59Z&page_size=10",
+      "response_updated_utc": "2026-08-13T07:37:44.118Z",
+      "response_entry_count": 0,
+      "raw_response_body": "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/cmr_collection3_historical_summer_2020.json",
+      "raw_response_bytes": 269,
+      "raw_response_sha256": "af75e0d86b206f331c8491f1c22dcd4a0d8401bc5e5a7de75b4c214ef1e29ae7",
+      "interpretation": "no Collection 3 granule entries were returned for the 2020 study summer at the recorded response time"
+    },
+    {
+      "query_id": "historical_summer_2024",
+      "date_boundary": "2024-06-01T00:00:00Z/2024-09-30T23:59:59Z",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.json?collection_concept_id=C3998139651-LPCLOUD&temporal=2024-06-01T00%3A00%3A00Z%2C2024-09-30T23%3A59%3A59Z&page_size=10",
+      "response_updated_utc": "2026-08-13T07:38:04.797Z",
+      "response_entry_count": 0,
+      "raw_response_body": "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/cmr_collection3_historical_summer_2024.json",
+      "raw_response_bytes": 269,
+      "raw_response_sha256": "20d8ba9fd40b8a969ffa61fab5c718e8882abb2e6c726410fde87f4955f794b6",
+      "interpretation": "no Collection 3 granule entries were returned for the 2024 study summer at the recorded response time"
+    }
+  ],
+  "protocol_deviations": {
+    "status": "RECORDED_AND_EXCLUDED_FROM_EVIDENCE",
+    "decision_ids": ["D0060", "D0061"],
+    "summary": "Two 2026 metadata exposures occurred: the original positive-control query and a later unbounded wildcard query whose text match fell inside 2026 timestamps. Neither response is used as Collection 3 evidence or in any Gate-1 count or conclusion.",
+    "quarantined_response": "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/source_evidence/protocol_deviation_quarantine/DO_NOT_USE_unbounded_pattern_11645_returned_2026_metadata.json",
+    "quarantined_response_sha256": "85b41f4e4f51912af544a6b21d1d2504d3dd60bb306399f18495a56c7c872a4c",
+    "further_cmr_queries_permitted_in_gate1": false
+  },
+  "science_file_access": {
+    "data_links_followed": false,
+    "temperature_or_lst_opened": false,
+    "thermal_opened": false,
+    "record_2026_metadata_query": "PROTOCOL_DEVIATION_OCCURRED_D0060_D0061",
+    "record_2026_science_data": "UNOPENED",
+    "note": "Only public metadata were exposed during the deviations. No science-data link or value was opened."
+  },
+  "gate1_conclusion": {
+    "technical_recovery_path_exists": true,
+    "historical_recovery_currently_available": false,
+    "missing_31_recovered": 0,
+    "status": "RECHECK_AT_G3_BEFORE_SELECTION",
+    "reason": "Collection 3 removes the L1B-GEO dependency in principle, but the two date-bounded, raw-response-preserved CMR queries returned no granules for either historical summer containing the 31 archive-unavailable candidates. This is a current-availability finding, not a permanent-absence claim."
+  }
+}

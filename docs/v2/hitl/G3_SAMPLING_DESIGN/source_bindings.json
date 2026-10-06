@@ -1,0 +1,41 @@
+{
+  "decision_ids": [
+    "D0064",
+    "D0065"
+  ],
+  "generated_utc": "2026-08-13T09:11:40.098403+00:00",
+  "holdout_status": "UNSELECTED",
+  "official_sources": {
+    "census_tigerweb_service": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Urban/MapServer/0",
+    "census_urban_areas": "https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html",
+    "ecostress_l1_product_spec": "https://ecostress.jpl.nasa.gov/downloads/psd/ECOSTRESS_SDS_PSD_L1.pdf",
+    "ecostress_l1_user_guide": "https://lpdaac.usgs.gov/documents/1491/ECO1B_User_Guide_V2.pdf",
+    "mod13_qa_guide": "https://lpdaac.usgs.gov/documents/103/MOD13_User_Guide_V6.pdf",
+    "mod13_user_guide_v61": "https://lpdaac.usgs.gov/documents/621/MOD13_User_Guide_V61.pdf"
+  },
+  "record_2026_queried": false,
+  "source_files": {
+    "data/processed/v2/task1/step2_quality_screening_l1b_geo_D0047/geometry_pass_summary.csv": "d1c9af913a8be89836d9f9d812f1c29f60562d46504346758f8cbf0447a4fade",
+    "data/processed/v2/task1/step2_quality_screening_l1b_geo_D0047/passes_quality_screened_pre_cloud_geometry_only.csv": "a3fc9e51101ed737e87006b33ec6b16e1a17e139f8fd13685e51d4646d980d6f",
+    "data/raw/v2/domains/census_urban_areas.geojson": "dc26873e1c646b12447e75bb882d54df7e5ca138737fa123bf9bbfb9dbbf5621",
+    "data/raw/v2/hitl/g3_sampling_design/candidate_additions_l2t_metadata_2018_2025.csv": "5f0c919796d4a9fef3203217be85a1c1bec826a67bd5b647275157a6bca103fd",
+    "data/raw/v2/hitl/g3_sampling_design/candidate_additions_l2t_metadata_2018_2025.csv.provenance.json": "10987ab006218982a65476d9a358e8739ade26a9774e6a118e2e921875d7cac6",
+    "data/raw/v2/hitl/g3_sampling_design/candidate_city_daily_gridmet_2018_2025.csv": "7c17d48f27522bf454a27433708474e311b97f1f77e1c84a6d80686d3dc22a68",
+    "data/raw/v2/hitl/g3_sampling_design/candidate_city_daily_gridmet_2018_2025.csv.provenance.json": "037f8e3fd2c10191633d1baf3bc5477a4ad8dca515451d420ab20fcf7d7ee1ac",
+    "data/raw/v2/hitl/g3_sampling_design/candidate_domains_7.geojson": "cce0d32127e48c0baec38d22ede3d817e45ef3a7d11378907284b6d08021e32a",
+    "data/raw/v2/hitl/g3_sampling_design/candidate_domains_7.geojson.provenance.json": "ccb3e20052196bb6cca97df7ccf20c17557e4bb49f777b2c7c273484dfccb15e",
+    "data/raw/v2/hitl/g3_sampling_design/mod13q1_2018_2025_composite_ndvi.csv": "c57874a644c790fee617d84019d088329bcfc2f084a368baa4376fd8a3a675ac",
+    "data/raw/v2/hitl/g3_sampling_design/mod13q1_2018_2025_composite_ndvi.csv.provenance.json": "2386d63d61a45c4148c7355e4564df702a7979982d89316126aa80d86d7ecfcf",
+    "docs/v2/D0064_G2_APPROVAL_AND_G3_AUTHORIZATION.md": "1d057b924d536c17ade45c43058aa98f192b298270bf08bd7d5b582d0ff69e11",
+    "docs/v2/D0065_G3_PRE_RESULT_SAMPLING_RULES.md": "4fd22c8ec10f1af0eb7cb6739776cc6be7415e3942ffd70900c4d41d5589b1a6",
+    "docs/v2/hitl/G0_FREEZE_AND_AMENDMENT/proposed_outcome_blind_protocol_amendment.md": "ef8aa691d7ad56963a8cc942dbb674f111942f22bfffc8ed2dceb5bdfd121e1c",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/archive_missing_31_audit.csv": "9eb8fa6a33e030594562e46abee6c69d4fc0617aae4f0fc532796dc33e4b9279",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/checks.json": "842f69d5580299958dcfb424228755c42b8efc20901475a4abd605027ca71716",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/pass_hydroclimate_219.csv": "62e52e293d70155fa7209ee5bba5d38afc4a41713b0d477442be0af482ad90da",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/review.md": "fd6117e9fdaea48a5008799206122484c3cae4182ef1aa5558cc49b0f3610d89",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/source_bindings.json": "355d4a65430b701c0a623421651a1f82492559bf3de0a0cdd3885404e2f06c4f",
+    "src/run_v2_hitl_gate3.py": "d50fec44736651f7db7acd386918ea88ed6551c0150ec0f99b13d1cc34b13c7a",
+    "src/urban_cooling_v2/hitl_gate3_sampling.py": "6fadd3b29008c208dabb7c82cb505c8463b5c4f1b1033803a296d4a35657e21e"
+  },
+  "temperature_or_lst_opened": false
+}

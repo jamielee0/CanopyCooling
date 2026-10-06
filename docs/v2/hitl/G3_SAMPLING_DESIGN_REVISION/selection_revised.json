@@ -1,0 +1,62 @@
+{
+  "g3a_authorized": false,
+  "gate4_authorized": false,
+  "gate_status": "REVISE_REQUIRED",
+  "primary_city_set": "UNSELECTED",
+  "primary_season_windows": "UNSELECTED",
+  "primary_view_zenith_threshold_deg": null,
+  "reason": "No primary threshold has at least four nonexploratory cities including Denver with complete eligibility, invariant inaccessible-pass bounds, and passing balance diagnostics.",
+  "record_2026_queried": false,
+  "sampling_design_selected": false,
+  "temperature_or_lst_opened": false,
+  "threshold_status": {
+    "10": {
+      "all_candidate_city_windows_eligible": false,
+      "archive_bounds_invariant": true,
+      "audited_city_windows": 10,
+      "balance_diagnostics_complete_and_pass": false,
+      "candidate_primary_city_windows": 2,
+      "candidate_primary_unique_cities": 2,
+      "denver_included": true,
+      "eligible_city_windows": 0,
+      "four_city_minimum_pass": false,
+      "threshold_eligible": false
+    },
+    "15": {
+      "all_candidate_city_windows_eligible": false,
+      "archive_bounds_invariant": true,
+      "audited_city_windows": 10,
+      "balance_diagnostics_complete_and_pass": false,
+      "candidate_primary_city_windows": 2,
+      "candidate_primary_unique_cities": 2,
+      "denver_included": true,
+      "eligible_city_windows": 0,
+      "four_city_minimum_pass": false,
+      "threshold_eligible": false
+    },
+    "20": {
+      "all_candidate_city_windows_eligible": false,
+      "archive_bounds_invariant": true,
+      "audited_city_windows": 10,
+      "balance_diagnostics_complete_and_pass": false,
+      "candidate_primary_city_windows": 2,
+      "candidate_primary_unique_cities": 2,
+      "denver_included": true,
+      "eligible_city_windows": 0,
+      "four_city_minimum_pass": false,
+      "threshold_eligible": false
+    },
+    "25": {
+      "all_candidate_city_windows_eligible": false,
+      "archive_bounds_invariant": true,
+      "audited_city_windows": 10,
+      "balance_diagnostics_complete_and_pass": false,
+      "candidate_primary_city_windows": 2,
+      "candidate_primary_unique_cities": 2,
+      "denver_included": true,
+      "eligible_city_windows": 0,
+      "four_city_minimum_pass": false,
+      "threshold_eligible": false
+    }
+  }
+}

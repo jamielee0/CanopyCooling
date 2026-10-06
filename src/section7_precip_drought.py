@@ -1,69 +1,19 @@
 #!/usr/bin/env python3
-"""Section 7 - Acquire precipitation history and drought state.
+"""Section 7 / precip_drought - acquire precipitation history and drought state, gridded to 70 m.
 
-Implements steps 37-41 of the Data Acquisition & Analysis Protocol for the
-Phoenix pilot. Like Sections 2-4 the whole section runs from this single module
-so the result is reproducible end to end (protocol standing rule: "every figure
-and every number must be reproducible from the saved code").
-
-Pipeline (steps 37-41)
-----------------------
-37. PRISM daily PRECIPITATION (ppt) for the study bbox, 2018-01-01 .. 2024-09-30.
-    The extra lead-in (Jan 2018, well before the first warm season) makes the
-    90-day antecedent window complete from the start of every analysis season.
-38. ANTECEDENT precipitation: for every date, the rolling total ppt over the
-    preceding 30 / 60 / 90 days (short / medium / longer-term water input).
-39. A DROUGHT index for the same period: GRIDMET DROUGHT (pdsi, spei30d, spei90d)
-    pulled straight from Earth Engine with ``geemap.download_ee_image`` (geedim).
-40. PRISM mean air TEMPERATURE (tmean) for the analysis seasons - an independent
-    cross-check on ERA5-Land air temperature in Section 11.
-41. Reproject every layer to EPSG:32612 and resample to the 70 m reference grid
-    (Section 1), then save the gridded cubes to data/interim/ as Zarr.
-
-How each source is acquired (and why)
--------------------------------------
-PRISM (precipitation + temperature) is downloaded from the PRISM web service
-(``services.nacse.org/prism/data/get/us/4km/<element>/<YYYYMMDD>``), which serves
-one CONUS daily GeoTIFF per element per day at ~4 km (2.5 arc-minute) resolution
-in EPSG:4269. There is NO spatial subsetting in the service, so each CONUS grid
-is clipped to the study bbox (plus a small buffer so bilinear resampling has
-neighbours at the grid edge) and only the tiny bbox window is kept on disk. The
-service is SMOKE-TESTED with a single day first: if it is unreachable the run
-STOPS and asks for a manual download into data/raw/prism/, after which
-``--skip-download`` reuses the manually-placed files (user instruction).
-
-GRIDMET DROUGHT is pulled DIRECTLY to local disk with geemap.download_ee_image
-(geedim under the hood) at its NATIVE ~4638 m scale, ``crs="EPSG:32612"``,
-``region=bbox`` - exactly the Section 4 mechanism, and NEVER Export.image.toDrive.
-At native scale the bbox is a handful of pixels, so one tiny multi-band GeoTIFF
-per year (bands = pentads x variables) holds the whole record. On a compute/size
-failure the per-tile size is reduced (the same ladder as Section 4); only if every
-tile size fails does it fall back to the SPEI global database file (user
-instruction). The 70 m resampling happens LOCALLY afterwards, like Section 4.
-
-RESOLUTION CAVEAT (protocol Section 6 / Section 9 spirit)
----------------------------------------------------------
-PRISM (~4 km) and GRIDMET DROUGHT (~4.6 km) are COARSE regional fields. Resampled
-to 70 m they are smooth and cannot resolve block-to-block differences; they are
-regional context (antecedent water input, drought state), not high-resolution
-measurements. Bilinear is used throughout because every one of these layers is a
-continuous quantity (protocol Section 9 step 48 lists precipitation explicitly).
-
-Gridded outputs (data/interim/, EPSG:32612, 70 m reference grid, Zarr)
-----------------------------------------------------------------------
-  prism_antecedent_precip_70m.zarr   vars ppt_30d, ppt_60d, ppt_90d   [mm]
-  prism_tmean_70m.zarr               var  tmean                       [degC]
-  gridmet_drought_70m.zarr           vars pdsi, spei30d, spei90d       [index]
-All three are time-indexed over the 2018-2024 warm seasons (the analysis period;
-config.CLIMATOLOGY_YEARS x config.SEASON), which contains the 2023 pilot season
-as a subset and the full record Section 11 needs for the climatology.
-
-Run (canopy env; Earth Engine authenticated for the drought step):
-    python src/section7_precip_drought.py                  # full run
-    python src/section7_precip_drought.py --skip-prism     # drought only
-    python src/section7_precip_drought.py --skip-drought   # PRISM only
-    python src/section7_precip_drought.py --skip-download   # reuse data/raw files
-    python src/section7_precip_drought.py --years 2023      # one season (quick)
+Inputs : PRISM web service (daily ppt + tmean, ~4 km); GRIDMET DROUGHT via Earth Engine (~4638 m);
+         Section 1 reference grid (config.REFERENCE_GRID_TIF). Raw clips cached in data/raw/{prism,drought}/.
+Outputs: data/interim/ Zarr cubes on the 70 m grid (EPSG:32612), plus QA figures:
+         prism_antecedent_precip_70m.zarr (ppt_30d/60d/90d), prism_tmean_70m.zarr (tmean),
+         gridmet_drought_70m.zarr (pdsi/spei30d/spei90d).
+Key decisions (full rationale in docs/DESIGN_DECISIONS.md, Section 7):
+  - PRISM ppt runs from 2018-01-01 (lead-in) so the 90-day antecedent window is complete from season start.
+  - Coarse regional fields resampled to 70 m: bilinear throughout (continuous quantities), regional context only.
+  - PRISM via the get/us/<res> endpoint; 800 m product averaged onto the 4 km clip self-heals rate-limited days.
+  - GRIDMET DROUGHT pulled direct with geemap.download_ee_image at native scale (never Export.image.toDrive).
+  - Antecedent series needs a complete daily record; any gap skips the cube rather than faking it.
+Run: python src/section7_precip_drought.py [--skip-prism] [--skip-drought] [--skip-download]
+                                           [--years 2023] [--no-figures] [-v]
 """
 
 from __future__ import annotations
@@ -87,11 +37,9 @@ from typing import Callable, Iterable, Sequence
 import numpy as np
 import pandas as pd
 
-# Heavy geospatial / EE libraries. The pure-numpy/pandas logic below (antecedent
-# rolling sum, PRISM URL/date helpers, drought band-name parsing, manifest rows)
-# does not touch them, so it stays unit-testable without the geo / EE stack
-# installed (see test_section7_*). They are imported lazily inside the functions
-# that need them so the module imports under a stubbed test environment.
+# Heavy geospatial / EE libraries are imported lazily inside the functions that
+# need them, so the pure-numpy/pandas logic stays unit-testable without the geo /
+# EE stack installed (see test_section7_*).
 import rioxarray  # noqa: F401,E402  (registers the .rio accessor)
 import xarray as xr  # noqa: E402
 from rasterio.enums import Resampling  # noqa: E402
@@ -108,16 +56,9 @@ import config  # noqa: E402
 log = logging.getLogger("section7")
 
 
-# =========================================================================== #
-# Manifest / checksum / dotenv helpers.
-# --------------------------------------------------------------------------- #
-# These mirror the Section 2 helpers but are INLINED so Section 7 stays
-# self-contained. Section 7 acquires from the PRISM web service and Earth Engine
-# and has NO NASA Earthdata dependency, so it must not import section2 (which
-# pulls in earthaccess -> s3fs -> aiohttp at module load) just to append a
-# manifest row - that import has its own heavy side effects and failure modes.
-# Same five-column manifest schema as Section 0.
-# --------------------------------------------------------------------------- #
+# --- Manifest / checksum / dotenv helpers (inlined so Section 7 stays self-
+# --- contained; it has no NASA Earthdata dependency, so it must not import
+# --- section2 just to append a manifest row). Same five-column schema as Section 0.
 _MANIFEST_COLUMNS = ["source", "dataset", "filename", "download_date", "checksum"]
 
 
@@ -149,11 +90,7 @@ def append_to_manifest(rows: Sequence[dict], manifest_csv: Path | None = None) -
 
 
 def _load_project_dotenv() -> None:
-    """Load the gitignored repo-root .env into the environment (no overwrite).
-
-    Lets a fresh run pick up EARTHENGINE_PROJECT for the drought step without
-    exporting it by hand. Real environment variables always take precedence.
-    """
+    """Load the gitignored repo-root .env into the environment without overwriting real vars."""
     import os
     env_path = _REPO_ROOT / ".env"
     if not env_path.exists():
@@ -169,16 +106,11 @@ def _load_project_dotenv() -> None:
 
 
 def harden_ssl_if_needed() -> bool:
-    """Fall back to certifi's CA bundle iff the host's default SSL context is broken.
+    """Route https through certifi's CA bundle iff the host's default SSL context is broken.
 
-    On Windows a single malformed certificate in the system trust store makes
-    ``ssl.create_default_context()`` raise ``[ASN1: NOT_ENOUGH_DATA]`` inside
-    ``load_default_certs()`` - which breaks EVERY https client in the process
-    (urllib for the PRISM pull, geedim/requests/GDAL for the Earth Engine pull).
-    Passing an explicit ``cafile`` skips the system-store load entirely, so this
-    routes all https through certifi's bundle when (and only when) the default
-    context cannot be built. A complete no-op on a healthy host. Returns True if
-    the certifi fallback was installed.
+    A no-op on a healthy host. On Windows a malformed cert in the system store can make
+    ssl.create_default_context() raise, breaking every https client in the process; this
+    skips the system store only when it cannot be built. Returns True if the fallback was installed.
     """
     import ssl
     try:
@@ -210,54 +142,42 @@ def harden_ssl_if_needed() -> bool:
                     type(exc).__name__, exc, ca)
         return True
 
-# =========================================================================== #
-# Confirmed source constants (logged at run time).
-# --------------------------------------------------------------------------- #
-# PRISM web service. The "get/us/<res>" endpoint serves one CONUS daily GeoTIFF
-# per element/day, EPSG:4269, nodata -9999. (The older "public/4km" endpoint now
-# returns an HTML notice, not data.) 4km (2.5 arc-minute) is the protocol product;
-# the 800m (30 arc-second) product is a DIFFERENT file with its own per-file
-# rate-limit counter, used only as a self-healing fallback when a 4km day is
-# rate-limited (PRISM limits each file to twice per IP per day).
+
+# --- Confirmed source constants (logged at run time).
+# PRISM "get/us/<res>" endpoint serves one CONUS daily GeoTIFF per element/day,
+# EPSG:4269, nodata -9999. 4 km is the protocol product; 800 m is a separate file
+# with its own per-file rate-limit counter, used only as a self-healing fallback.
 PRISM_WS_BASE = "https://services.nacse.org/prism/data/get/us"
 PRISM_RES = "4km"
 PRISM_RES_FALLBACK = "800m"
 PRISM_DATASET_ID = "PRISM_daily_4km"             # recorded in the manifest
 PRISM_USER_AGENT = "canopy-protocol/1.0 (urban-canopy thermal-threshold study)"
 
-# Period covered. ppt needs the full record (lead-in for the antecedent windows);
-# tmean only the analysis seasons (step 40). PERIOD_END is the protocol's
-# "September 2024" (the climatology record runs 2018-2024).
+# ppt needs the full record (lead-in for the antecedent windows); tmean only the
+# analysis seasons. PERIOD_END is the protocol's "September 2024".
 PPT_START = "2018-01-01"
 PERIOD_END = "2024-09-30"
 
-# Antecedent windows in days (step 38: preceding 30 / 60 / 90 days).
 ANTECEDENT_WINDOWS = (30, 60, 90)
-# "Preceding N days" = the N calendar days BEFORE the observation day, not
-# including it (the rain that falls on day D is not "antecedent" to D). Flip this
-# to True for the inclusive N-day total ending on D.
+# "Preceding N days" excludes the observation day itself; flip to True for the
+# inclusive N-day total ending on D.
 ANTECEDENT_INCLUSIVE = False
 
-# GRIDMET DROUGHT (Earth Engine). pdsi = Palmer Drought Severity Index (regional
-# drought state); spei30d / spei90d = 30- and 90-day SPEI, matching the 30/90-day
-# antecedent-precip windows. Native scale is ~4638 m; the collection is pentad
-# (one image every 5 days).
+# GRIDMET DROUGHT (Earth Engine): pdsi + 30/90-day SPEI, matching the 30/90-day
+# antecedent-precip windows. Native scale ~4638 m; the collection is pentad.
 DROUGHT_COLLECTION = "GRIDMET/DROUGHT"
 DROUGHT_VARS = ("pdsi", "spei30d", "spei90d")
 DROUGHT_NATIVE_SCALE_M = 4638.312116386398       # confirmed from EE projection
 
 # Per-tile size ladder (MB) for the resilient EE download, mirroring Section 4.
-# A native-scale drought year-image over this bbox is tiny, so the first size
-# almost always succeeds; the ladder + SPEI-file fallback exist per user instruction.
 MAX_TILE_SIZES_MB = (32, 16, 8, 4, 2)
 MAX_REQUESTS = 8                                 # cap concurrent EE tile requests
 
-# Buffer the clip / EE region by ~0.15 deg (~3-4 native cells) so the 70 m grid
-# edges have surrounding coarse cells for bilinear resampling (no edge NaNs).
+# Buffer the clip / EE region so the 70 m grid edges have surrounding coarse cells
+# for bilinear resampling (no edge NaNs).
 CLIP_BUFFER_DEG = 0.15
 
-# Polite concurrency + retry for the PRISM web service (per-file courtesy limit,
-# no stated concurrency cap - keep it modest and well-behaved).
+# Polite concurrency + retry for the PRISM web service.
 PRISM_MAX_WORKERS = 5
 PRISM_RETRIES = 4
 PRISM_BACKOFF_S = 2.0
@@ -271,9 +191,8 @@ ANTECEDENT_ZARR = "prism_antecedent_precip_70m.zarr"
 TMEAN_ZARR = "prism_tmean_70m.zarr"
 DROUGHT_ZARR = "gridmet_drought_70m.zarr"
 
-# Time-block size (days) for the streaming reproject->Zarr append, so peak memory
-# stays bounded regardless of how many seasons are gridded. A block of k days holds
-# k x n_vars 70 m slices (~6 MB each) in RAM at once; 15 keeps that well under 1 GB.
+# Time-block size (days) for the streaming reproject->Zarr append; 15 keeps peak
+# memory well under 1 GB regardless of how many seasons are gridded.
 GRID_CHUNK_DAYS = 15
 
 # Plausible physical ranges for the QC sanity log (Phoenix warm season).
@@ -281,9 +200,7 @@ PPT_VALID_RANGE = (0.0, 400.0)                   # daily mm
 TMEAN_VALID_RANGE = (-20.0, 55.0)                # degC
 
 
-# =========================================================================== #
-# Pure date / URL / parsing logic  (no geo or EE deps; unit-tested)
-# --------------------------------------------------------------------------- #
+# --- Pure date / URL / parsing logic (no geo or EE deps; unit-tested) ---
 def season_dates(years: Sequence[int], season: tuple[str, str] = config.SEASON
                  ) -> list[_dt.date]:
     """Every calendar date inside the warm season (MM-DD..MM-DD) for each year."""
@@ -332,14 +249,10 @@ def pick_raster_member(names: Sequence[str]) -> str:
 
 def parse_drought_band(name: str, vars_: Sequence[str] = DROUGHT_VARS
                        ) -> tuple[str | None, str]:
-    """Parse an Earth Engine ``toBands`` band name into (yyyymmdd, variable).
+    """Parse an EE ``toBands`` band name ``<system:index>_<var>`` into (yyyymmdd, variable).
 
-    GRIDMET DROUGHT ``toBands`` names each band ``<system:index>_<var>`` where the
-    index is the pentad date code, e.g. ``20180601_pdsi`` -> ("20180601", "pdsi").
-    If the leading token is not an 8-digit date (some EE builds emit positional
-    ``0_pdsi``), the date is returned as None and the caller supplies it from the
-    image's time list. The variable is matched against the known DROUGHT_VARS so
-    underscores inside a name are handled.
+    Date is None when the leading token is not an 8-digit date (some EE builds emit
+    positional ``0_pdsi``); the caller then supplies it from the image's time list.
     """
     var = next((v for v in sorted(vars_, key=len, reverse=True)
                 if name.endswith("_" + v) or name == v), None)
@@ -351,23 +264,75 @@ def parse_drought_band(name: str, vars_: Sequence[str] = DROUGHT_VARS
     return date, var
 
 
-# =========================================================================== #
-# Pure antecedent-precipitation logic  (numpy; unit-tested)
-# --------------------------------------------------------------------------- #
+def system_time_to_date_token(value) -> str:
+    """Convert an Earth Engine ``system:time_start`` value to ``YYYYMMDD``.
+
+    Earth Engine returns milliseconds since the Unix epoch, but accepting an ISO-like
+    timestamp as well keeps the resolver testable and defensive. Invalid or missing
+    metadata raises instead of manufacturing a date.
+    """
+    if value is None:
+        raise ValueError("missing system:time_start")
+    if isinstance(value, (int, float, np.integer, np.floating)):
+        if not np.isfinite(value):
+            raise ValueError(f"invalid system:time_start {value!r}")
+        ts = pd.to_datetime(value, unit="ms", utc=True)
+    else:
+        ts = pd.Timestamp(value)
+    if pd.isna(ts):
+        raise ValueError(f"invalid system:time_start {value!r}")
+    return ts.strftime("%Y%m%d")
+
+
+def expand_drought_band_dates(system_times: Sequence, n_vars: int) -> list[str]:
+    """Expand image dates to Earth Engine ``toBands`` image-major band order."""
+    if int(n_vars) <= 0:
+        raise ValueError("n_vars must be positive")
+    dates = [system_time_to_date_token(value) for value in system_times]
+    return [date for date in dates for _ in range(int(n_vars))]
+
+
+def _validated_date_token(value: str, *, context: str) -> str:
+    """Validate and normalize a compact drought date token."""
+    token = str(value)
+    try:
+        parsed = _dt.datetime.strptime(token, "%Y%m%d")
+    except ValueError as exc:
+        raise ValueError(f"{context}: invalid YYYYMMDD date {token!r}") from exc
+    return parsed.strftime("%Y%m%d")
+
+
+def resolve_band_date(name: str, system_date: str | None,
+                      vars_: Sequence[str] = DROUGHT_VARS) -> tuple[str, str]:
+    """Resolve one drought band to ``(YYYYMMDD, variable)`` or fail closed.
+
+    A date encoded in the band name is checked against the date derived from the
+    image's ``system:time_start``. Positional names use that system date. If neither
+    source resolves the date, or the two sources disagree, the band is rejected with
+    an error rather than silently disappearing from the drought cube.
+    """
+    parsed_date, var = parse_drought_band(name, vars_)
+    parsed = (_validated_date_token(parsed_date, context=f"band {name!r}")
+              if parsed_date is not None else None)
+    fallback = (_validated_date_token(system_date, context=f"band {name!r} system time")
+                if system_date is not None else None)
+    if parsed is None and fallback is None:
+        raise ValueError(f"band {name!r}: no date in name and no system:time_start fallback")
+    if parsed is not None and fallback is not None and parsed != fallback:
+        raise ValueError(
+            f"band {name!r}: name date {parsed} disagrees with system date {fallback}")
+    return (parsed or fallback), var
+
+
+# --- Pure antecedent-precipitation logic (numpy; unit-tested) ---
 def antecedent_sum(daily: np.ndarray, window: int,
                    inclusive: bool = ANTECEDENT_INCLUSIVE) -> np.ndarray:
     """Rolling total over the preceding ``window`` days, along axis 0 (time).
 
-    ``daily`` is a (time, ...) array of daily precipitation. For each time index
-    t the result is the sum of the ``window`` days BEFORE t (``[t-window, t-1]``)
-    when ``inclusive`` is False, or the ``window`` days ENDING at t
-    (``[t-window+1, t]``) when True. Positions without a complete window are NaN.
-
-    Implemented with a cumulative sum so it is O(time) and identical for the
-    native 1-D and gridded 3-D cases (extra trailing axes are summed pointwise).
-    NaNs in the input are treated as 0 for the running total but propagate into
-    any window that contains them, so an incomplete record never silently reads
-    as a (smaller) complete one.
+    O(time) via cumulative sums; identical for the 1-D and gridded 3-D cases. NaNs are
+    treated as 0 for the running total but propagate into any window that contains them,
+    so an incomplete record never reads as a (smaller) complete one. Positions without a
+    complete window are NaN.
     """
     arr = np.asarray(daily, dtype="float64")
     n = arr.shape[0]
@@ -392,9 +357,7 @@ def antecedent_sum(daily: np.ndarray, window: int,
     return out
 
 
-# =========================================================================== #
-# PRISM web-service download  (steps 37, 40)
-# --------------------------------------------------------------------------- #
+# --- PRISM web-service download (steps 37, 40) ---
 @dataclasses.dataclass
 class ClipWindow:
     """A fixed pixel window into the (constant) PRISM CONUS grid + its transform."""
@@ -425,13 +388,9 @@ def _http_get(url: str, retries: int = PRISM_RETRIES) -> bytes:
 def _open_prism_raster(zip_bytes: bytes):
     """Yield an open rasterio dataset for the raster member of a PRISM zip.
 
-    A CONTEXT MANAGER on purpose: the dataset is backed by a rasterio MemoryFile
-    (for a self-contained .tif) or a temp dir (for a .bil that needs its sibling
-    .hdr/.prj). Returning a bare dataset would let that backing store be garbage-
-    collected while the dataset is still open, freeing the buffer underneath GDAL
-    and segfaulting on the next read. Keeping it open for the ``with`` block fixes
-    that and cleans up afterwards. Raises if the payload is not a zip (e.g. the
-    service returned an HTML notice) or has no raster member.
+    A context manager so the MemoryFile / temp-dir backing store stays alive for the
+    ``with`` block (a bare dataset would be freed underneath GDAL and segfault on read).
+    Raises if the payload is not a zip (e.g. an HTML notice) or has no raster member.
     """
     import rasterio
     from rasterio.io import MemoryFile
@@ -522,10 +481,8 @@ def _fetch_prism_800m_on_grid(element: str, date: _dt.date,
                               win: ClipWindow) -> np.ndarray:
     """Fetch the 800 m product and average it DOWN onto the 4 km clip grid.
 
-    Used only when the 4 km day is rate-limited. PRISM's 4 km grid is itself a
-    Gaussian upscale of the 800 m grid, so averaging the 800 m cells into the 4 km
-    clip is a faithful stand-in for the one missing day (and keeps the daily stack
-    perfectly aligned). NaN where the source is nodata.
+    Used only when the 4 km day is rate-limited. PRISM's 4 km grid is itself an upscale
+    of the 800 m grid, so this is a faithful stand-in that keeps the daily stack aligned.
     """
     with _open_prism_raster(_http_get(prism_url(element, date, PRISM_RES_FALLBACK))) as ds:
         w800 = _compute_clip_window(ds)
@@ -543,11 +500,9 @@ def _fetch_prism_clip(element: str, date: _dt.date,
                       win: ClipWindow | None) -> tuple[np.ndarray, ClipWindow, str]:
     """Fetch one PRISM day clipped to the bbox window. Returns (array, win, source).
 
-    Tries the 4 km product first. If that day is rate-limited (the service returns
-    a short non-zip notice -> ValueError) the 800 m product is fetched and averaged
-    onto the same 4 km clip grid, so a single rate-limited day self-heals rather
-    than punching a gap in the antecedent series. The first day of a series must
-    come from 4 km (it establishes the shared clip window).
+    Tries 4 km first; a rate-limited day (non-zip notice -> ValueError) self-heals via
+    the 800 m product averaged onto the same clip grid. The first day must come from
+    4 km (it establishes the shared clip window).
     """
     try:
         with _open_prism_raster(_http_get(prism_url(element, date, PRISM_RES))) as ds:
@@ -567,11 +522,9 @@ def _fetch_prism_clip(element: str, date: _dt.date,
 def prism_service_ok(element: str = "ppt", date: _dt.date | None = None) -> bool:
     """Smoke-test the PRISM web service with a single day (step 37 pre-flight).
 
-    Returns True if the service RESPONDS sensibly - either with a real zip+raster,
-    or with the per-file rate-limit notice (which still proves the service is up;
-    that probe file just got fetched too often today, common when re-running). Only
-    a genuine non-response (unreachable / timeout) or an unrecognised payload makes
-    it return False, so the orchestrator stops and asks for a manual download.
+    True if the service responds sensibly - a real zip+raster, or the per-file
+    rate-limit notice (which still proves it is up). Only a genuine non-response or an
+    unrecognised payload returns False, so the orchestrator can ask for a manual download.
     """
     date = date or _dt.date.fromisoformat(PPT_START)
     url = prism_url(element, date)
@@ -603,19 +556,14 @@ def download_prism_day(element: str, date: _dt.date, raw_dir: Path,
                        win: ClipWindow | None) -> tuple[Path, ClipWindow, bool, str]:
     """Download one PRISM day, clip to the bbox window, write a small GeoTIFF.
 
-    Resumable: if the clipped file already exists it is reused (no HTTP). Returns
-    (path, clip_window, downloaded?, source). The clip window is computed from the
-    first file and threaded back in for every subsequent day so the daily stack
-    aligns. ``source`` is "4km" or "800m->4km" (rate-limit fallback) or "cached".
+    Resumable: an existing clip is reused (no HTTP). Returns (path, clip_window,
+    downloaded?, source), where source is "4km" / "800m->4km" / "cached".
     """
     out_path = raw_dir / prism_raw_filename(element, date)
     if out_path.exists() and out_path.stat().st_size > 0:
-        # Pass ``win`` THROUGH unchanged - never rebuild it from the cached clip.
-        # The clip's own window is (0, 0, clip_w, clip_h); using that to read a
-        # freshly-downloaded CONUS grid would read its top-left corner (offshore
-        # Pacific = nodata) instead of the Phoenix bbox. A None win here just means
-        # the first FRESH download in this series computes the correct CONUS window
-        # via _compute_clip_window (deterministic, so every day still aligns).
+        # Pass ``win`` THROUGH unchanged - never rebuild it from the cached clip. The
+        # clip's own window is (0, 0, clip_w, clip_h); using that to read a fresh CONUS
+        # grid would read its offshore top-left corner instead of the Phoenix bbox.
         return out_path, win, False, "cached"
     arr, win, source = _fetch_prism_clip(element, date, win)
     _write_clip(arr, win, out_path)
@@ -627,12 +575,10 @@ def download_prism_series(element: str, dates: Sequence[_dt.date], raw_dir: Path
                           ) -> tuple[dict[_dt.date, Path], ClipWindow, list[_dt.date]]:
     """Download a whole element series (resumable, polite thread pool, resilient).
 
-    The first day is fetched alone to establish the shared clip window; the rest
-    run concurrently. Days that error are collected and retried once, sequentially,
-    with extra patience (a transient blip should not nuke a 2000+ file run). Every
-    successfully written NEW file is recorded in the manifest. Returns
-    (date->path map, clip_window, still_failed_dates) - the caller decides whether
-    a gap is tolerable (it is not, for the antecedent series).
+    The first day is fetched alone to establish the shared clip window; the rest run
+    concurrently, with errored days retried once sequentially. New files are recorded in
+    the manifest. Returns (date->path map, clip_window, still_failed_dates) - the caller
+    decides whether a gap is tolerable (it is not, for the antecedent series).
     """
     raw_dir.mkdir(parents=True, exist_ok=True)
     dates = list(dates)
@@ -705,9 +651,7 @@ def _record_prism_manifest(element: str,
     append_to_manifest(rows)
 
 
-# =========================================================================== #
-# GRIDMET DROUGHT via Earth Engine  (step 39) - geemap.download_ee_image (geedim)
-# --------------------------------------------------------------------------- #
+# --- GRIDMET DROUGHT via Earth Engine (step 39) - geemap.download_ee_image (geedim) ---
 def initialize_ee() -> str:
     """Initialise Earth Engine, returning the project id (mirrors Section 4)."""
     import os
@@ -758,6 +702,9 @@ class DroughtDownload:
     band_names: list[str]
     method: str
     max_tile_size_mb: float | None = None
+    # One YYYYMMDD token per raster band, derived from system:time_start. Kept as
+    # a defaulted final field so existing dated-name callers remain compatible.
+    band_dates: list[str] = dataclasses.field(default_factory=list)
 
     @property
     def is_local(self) -> bool:
@@ -770,11 +717,10 @@ def download_drought_year(year: int, region, raw_dir: Path,
                           scale_m: float = DROUGHT_NATIVE_SCALE_M) -> DroughtDownload:
     """Download one year of GRIDMET DROUGHT to a native-scale multi-band GeoTIFF.
 
-    The year's pentad images are stacked with ``toBands`` (bands named
-    ``<yyyymmdd>_<var>``) and pulled via geemap.download_ee_image in EPSG:32612 at
-    native scale - so the file is only a few pixels across and a few hundred bands.
-    On a compute/size failure the per-tile size is reduced; if every size fails the
-    caller triggers the SPEI-file fallback. Resumable: an existing file is reused.
+    Pentad images are stacked with ``toBands`` (bands ``<yyyymmdd>_<var>``) and pulled in
+    EPSG:32612 at native scale (a few pixels across). On a compute/size failure the
+    per-tile size is reduced; if all sizes fail the caller triggers the SPEI-file
+    fallback. Resumable: an existing file is reused.
     """
     import ee
     import geemap
@@ -783,15 +729,23 @@ def download_drought_year(year: int, region, raw_dir: Path,
     out_path = raw_dir / drought_raw_filename(year)
     start, end = _year_filter_dates(year)
     col = (ee.ImageCollection(DROUGHT_COLLECTION)
-           .filterBounds(region).filterDate(start, end).select(list(vars_)))
+           .filterBounds(region).filterDate(start, end).select(list(vars_))
+           .sort("system:time_start"))
+    system_times = col.aggregate_array("system:time_start").getInfo()
     image = col.toBands()
     band_names = image.bandNames().getInfo()
+    band_dates = expand_drought_band_dates(system_times, len(vars_))
+    if len(band_names) != len(band_dates):
+        raise RuntimeError(
+            f"Drought {year}: {len(band_names)} toBands names but "
+            f"{len(band_dates)} dates from system:time_start")
     log.info("Drought %d: %s..%s, %d bands (%d pentads x %d vars)",
              year, start, end, len(band_names), len(band_names) // len(vars_), len(vars_))
 
     if out_path.exists() and out_path.stat().st_size > 0:
         log.info("Drought %d: reusing %s", year, out_path.name)
-        return DroughtDownload(year, out_path, band_names, "(reused local file)")
+        return DroughtDownload(year, out_path, band_names, "(reused local file)",
+                               band_dates=band_dates)
 
     last_exc: Exception | None = None
     for mts in tile_sizes_mb:
@@ -803,19 +757,18 @@ def download_drought_year(year: int, region, raw_dir: Path,
             log.info("Drought %d downloaded (%.2f MB, max_tile_size=%sMB)",
                      year, out_path.stat().st_size / 1e6, mts)
             return DroughtDownload(year, out_path, band_names,
-                                   "geemap.download_ee_image", mts)
+                                   "geemap.download_ee_image", mts,
+                                   band_dates=band_dates)
         except Exception as exc:  # noqa: BLE001 - retry smaller, then SPEI fallback
             last_exc = exc
             log.warning("Drought %d download failed at max_tile_size=%sMB: %s: %s",
                         year, mts, type(exc).__name__, exc)
     log.error("Drought %d: all tile sizes failed (last: %s: %s)",
               year, type(last_exc).__name__, last_exc)
-    return DroughtDownload(year, None, band_names, "FAILED")
+    return DroughtDownload(year, None, band_names, "FAILED", band_dates=band_dates)
 
 
-# =========================================================================== #
-# Reproject + assemble onto the 70 m grid  (step 41)  -> Zarr cubes
-# --------------------------------------------------------------------------- #
+# --- Reproject + assemble onto the 70 m grid (step 41) -> Zarr cubes ---
 def _open_reference():
     """The 70 m reference grid as a 2-D rioxarray DataArray (the match target)."""
     return rioxarray.open_rasterio(config.REFERENCE_GRID_TIF).squeeze("band", drop=True)
@@ -825,8 +778,8 @@ def _native_stack_dataarray(paths: Sequence[Path], dates: Sequence[_dt.date],
                             name: str) -> "xr.DataArray":
     """Stack aligned single-band native PRISM GeoTIFFs into a (time, y, x) cube.
 
-    Every file shares the same clip window (so x/y match); nodata is masked to NaN.
-    The result carries CRS + transform via the .rio accessor for later reprojection.
+    Every file shares the same clip window; nodata is masked to NaN. An entirely-nodata
+    clip is treated as a bug (a resumed-run wrong-window read) and refused.
     """
     first = rioxarray.open_rasterio(paths[0], masked=True).squeeze("band", drop=True)
     data = np.empty((len(paths), first.sizes["y"], first.sizes["x"]), dtype="float32")
@@ -837,8 +790,6 @@ def _native_stack_dataarray(paths: Sequence[Path], dates: Sequence[_dt.date],
         if not np.isfinite(data[i]).any():       # an entirely-nodata clip is a bug
             empty.append(p.name)
     if empty:
-        # Over a land bbox a PRISM clip is never all-nodata; this means the clip
-        # read the wrong CONUS window (a resumed-run bug) or the source was empty.
         log.error("%s: %d/%d native clips are ENTIRELY nodata (e.g. %s) - these "
                   "would grid to all-NaN; delete them from data/raw/prism/ and "
                   "re-download.", name, len(empty), len(paths), empty[:5])
@@ -869,8 +820,8 @@ def _resample_native_block(slices: np.ndarray, crs, transform, yv: np.ndarray,
                            resampling=Resampling.bilinear) -> np.ndarray:
     """Reproject a small (k, y, x) native block onto the 70 m grid, slice by slice.
 
-    On-demand resampling (called per Zarr block) keeps peak memory to one block of
-    70 m slices, never the whole multi-year cube - essential on a memory-tight host.
+    On-demand (per Zarr block) so peak memory is one block of 70 m slices, never the
+    whole multi-year cube.
     """
     ny, nx = reference.sizes["y"], reference.sizes["x"]
     out = np.empty((len(slices), ny, nx), dtype="float32")
@@ -892,10 +843,8 @@ def write_grid_cube_zarr(store: Path, dates: Sequence[_dt.date],
                          chunk_days: int = GRID_CHUNK_DAYS) -> Path:
     """Stream a gridded cube to a Zarr store, appending GRID_CHUNK_DAYS at a time.
 
-    ``layer_provider(indices)`` returns {var_name: (k, y, x) float32 array} for the
-    requested time indices (already on the 70 m grid). The first block is written
-    with the compressor encoding; later blocks append along ``time``. Bounded peak
-    memory = one block per variable.
+    ``layer_provider(indices)`` returns {var_name: (k, y, x) float32 array} already on
+    the 70 m grid. Bounded peak memory = one block per variable.
     """
     if store.exists():
         import shutil
@@ -911,10 +860,9 @@ def write_grid_cube_zarr(store: Path, dates: Sequence[_dt.date],
             {v: (("time", "y", "x"), block[v]) for v in var_names},
             coords={"time": times[lo:hi], "y": reference.y.values, "x": reference.x.values})
         ds = ds.rio.write_crs(reference.rio.crs)
-        # Pin the CF grid_mapping in each var's ATTRS so it survives to_zarr (the
-        # explicit per-var `encoding` below otherwise drops rioxarray's encoding-
-        # level grid_mapping, leaving rio.crs unreadable on reopen). Matches the
-        # Section 2/3 cubes: reopen with decode_coords="all" to recover the CRS.
+        # Pin the CF grid_mapping in each var's ATTRS so it survives to_zarr (the explicit
+        # per-var `encoding` below otherwise drops rioxarray's grid_mapping). Reopen with
+        # decode_coords="all" to recover the CRS, like the Section 2/3 cubes.
         for v in var_names:
             ds[v].attrs["grid_mapping"] = "spatial_ref"
         if first:
@@ -928,16 +876,13 @@ def write_grid_cube_zarr(store: Path, dates: Sequence[_dt.date],
     return store
 
 
-# =========================================================================== #
-# High-level builders for each gridded product
-# --------------------------------------------------------------------------- #
+# --- High-level builders for each gridded product ---
 def build_antecedent_cube(ppt_paths: Sequence[Path], ppt_dates: Sequence[_dt.date],
                           grid_years: Sequence[int], reference) -> Path:
     """Steps 38 + 41: antecedent ppt (30/60/90 d) on the 70 m grid for warm seasons.
 
-    Antecedent totals are computed once at NATIVE 4 km resolution over the whole
-    daily series (cheap), then each Zarr block resamples only its days to 70 m -
-    so peak memory is one block, not the full multi-year 70 m cube.
+    Antecedent totals are computed once at NATIVE 4 km resolution over the whole daily
+    series (cheap); each Zarr block then resamples only its days to 70 m.
     """
     native = _native_stack_dataarray(ppt_paths, ppt_dates, "ppt")     # (time,y,x) mm
     ant_native = {f"ppt_{w}d": antecedent_sum(native.values, w) for w in ANTECEDENT_WINDOWS}
@@ -981,33 +926,54 @@ def build_drought_cube(downloads: Sequence[DroughtDownload], grid_years: Sequenc
                        reference, vars_: Sequence[str] = DROUGHT_VARS) -> Path:
     """Step 41: GRIDMET DROUGHT (pdsi/spei30d/spei90d) on the 70 m grid (warm seasons).
 
-    Each downloaded year file is a native multi-band GeoTIFF (bands
-    ``yyyymmdd_var``). Bands are parsed to (date, var) and the TINY native slices
-    (a few pixels across) are held in memory; the warm-season pentads are then
-    resampled to 70 m on demand, one Zarr block at a time, so the full 70 m cube
-    never sits in RAM at once.
+    Each year file is a native multi-band GeoTIFF (bands ``yyyymmdd_var``). The tiny
+    native slices are held in memory and warm-season pentads resampled to 70 m on
+    demand, one Zarr block at a time.
     """
     season_months = set(range(6, 10))            # Jun-Sep
     # per_var[var][ts] = (native_2d, geo_id); geos[geo_id] = (crs, transform, y, x).
     per_var: dict[str, dict[pd.Timestamp, tuple]] = {v: {} for v in vars_}
     geos: dict[int, tuple] = {}
+    wanted_years = set(grid_years)
 
     for dl in downloads:
         if not dl.is_local:
             continue
         da = rioxarray.open_rasterio(dl.path, masked=True)   # (band, y, x), native
         geos[dl.year] = (da.rio.crs, da.rio.transform(), da.y.values, da.x.values)
-        names = dl.band_names if len(dl.band_names) == da.sizes["band"] else [
-            str(x) for x in da.band.values]
+        n_bands = int(da.sizes["band"])
+        if len(dl.band_names) != n_bands:
+            raise RuntimeError(
+                f"drought {dl.year}: raster has {n_bands} bands but acquisition metadata "
+                f"has {len(dl.band_names)} names")
+        if dl.band_dates and len(dl.band_dates) != n_bands:
+            raise RuntimeError(
+                f"drought {dl.year}: raster has {n_bands} bands but system-time metadata "
+                f"has {len(dl.band_dates)} dates")
+        names = dl.band_names
         vals = da.values                          # native, tiny (band, y, x)
+        n_system_date_fallback = 0
         for b, name in enumerate(names):
-            date, var = parse_drought_band(name, vars_)
-            if var not in vars_ or date is None:
-                continue
+            parsed_date, _ = parse_drought_band(name, vars_)
+            fallback_date = dl.band_dates[b] if dl.band_dates else None
+            date, var = resolve_band_date(name, fallback_date, vars_)
+            if parsed_date is None:
+                n_system_date_fallback += 1
+            expected_var = vars_[b % len(vars_)]
+            if var != expected_var:
+                raise RuntimeError(
+                    f"drought {dl.year} band {b} {name!r}: variable {var!r} does not "
+                    f"match image-major toBands order {expected_var!r}")
             ts = pd.Timestamp(date)
-            if ts.month not in season_months or ts.year not in set(grid_years):
+            if ts.month not in season_months or ts.year not in wanted_years:
                 continue
+            if ts in per_var[var]:
+                raise RuntimeError(
+                    f"drought: duplicate {var} band for {ts.date()} (year {dl.year})")
             per_var[var][ts] = (vals[b], dl.year)
+        if n_system_date_fallback:
+            log.info("Drought %d: resolved %d positional band date(s) from "
+                     "system:time_start", dl.year, n_system_date_fallback)
 
     # Common, sorted pentad date axis across variables.
     all_dates = sorted(set().union(*[set(d.keys()) for d in per_var.values()]))
@@ -1035,15 +1001,12 @@ def build_drought_cube(downloads: Sequence[DroughtDownload], grid_years: Sequenc
                                 provider, list(vars_), reference)
 
 
-# =========================================================================== #
-# Figures  (deliverable QA)
-# --------------------------------------------------------------------------- #
+# --- Figures (deliverable QA) ---
 def make_qa_figures(figures_dir: Path) -> list[Path]:
     """QA: a representative 70 m map per product + an area-mean time series.
 
-    Confirms the gridded layers carry a physically sensible signal - the Phoenix
-    monsoon (Jul-Sep) shows up as rising antecedent precip, and PDSI tracks the
-    regional drought state - without re-deriving anything (reads the saved Zarr).
+    Confirms the gridded layers carry a physically sensible signal (monsoon rise in
+    antecedent precip, PDSI tracking drought state) by reading the saved Zarr only.
     """
     import matplotlib
     matplotlib.use("Agg")
@@ -1064,10 +1027,14 @@ def make_qa_figures(figures_dir: Path) -> list[Path]:
         # pick a date near the end of the 2023 monsoon if present, else the last.
         tsel = _pick_date(ant.time.values, "2023-09-15")
         fig, axes = plt.subplots(1, 3, figsize=(16, 5.2), constrained_layout=True)
+        arrs = {w: ant[f"ppt_{w}d"].sel(time=tsel).values for w in ANTECEDENT_WINDOWS}
+        # SHARED color scale across the 3 windows so the panels are directly comparable
+        # (90 d total >= 60 d >= 30 d at every pixel; per-panel scaling would hide that).
+        shared_vmax = max(1.0, max(float(np.nanmax(a)) for a in arrs.values()))
         for ax, w in zip(axes, ANTECEDENT_WINDOWS):
-            arr = ant[f"ppt_{w}d"].sel(time=tsel).values
+            arr = arrs[w]
             im = ax.imshow(arr, extent=extent, origin="upper", cmap="YlGnBu",
-                           vmin=0, vmax=max(1.0, float(np.nanmax(arr))))
+                           vmin=0, vmax=shared_vmax)
             ax.set_title(f"Antecedent ppt {w} d\n{pd.Timestamp(tsel):%Y-%m-%d}")
             ax.set_xlabel("Easting (m)"); ax.set_ylabel("Northing (m)")
             fig.colorbar(im, ax=ax, shrink=0.8, label="mm")
@@ -1081,19 +1048,19 @@ def make_qa_figures(figures_dir: Path) -> list[Path]:
         ant = xr.open_zarr(ant_store); dro = xr.open_zarr(drought_store)
         fig, ax1 = plt.subplots(figsize=(12, 5))
         for w, c in zip(ANTECEDENT_WINDOWS, ("#9ecae1", "#4292c6", "#08519c")):
-            s = ant[f"ppt_{w}d"].mean(dim=("y", "x")).to_series()
+            s = _break_offseason(ant[f"ppt_{w}d"].mean(dim=("y", "x")).to_series())
             ax1.plot(s.index, s.values, color=c, lw=1.2, label=f"antecedent ppt {w} d")
         ax1.set_ylabel("area-mean antecedent precip (mm)"); ax1.set_xlabel("date")
         ax2 = ax1.twinx()
-        pdsi = dro["pdsi"].mean(dim=("y", "x")).to_series()
+        pdsi = _break_offseason(dro["pdsi"].mean(dim=("y", "x")).to_series())
         ax2.plot(pdsi.index, pdsi.values, color="#d95f0e", lw=1.6, label="PDSI (drought)")
         ax2.set_ylabel("PDSI  (negative = drier)")
         ax2.axhline(0, color="#d95f0e", lw=0.6, ls=":")
         lines = ax1.get_lines() + ax2.get_lines()
         ax1.legend(lines, [l.get_label() for l in lines], loc="upper left", fontsize=8)
         ax1.set_title("Section 7 sanity check: warm-season antecedent precipitation "
-                      "and drought state (area mean)\nPhoenix bbox, 2018-2024 "
-                      "(monsoon = mid/late-summer rise)")
+                      "and drought state (area mean)\nPhoenix bbox, 2018-2024 -- gaps = "
+                      "off-season (data is Jun-Sep only); monsoon = mid/late-summer rise")
         p = figures_dir / "section7_precip_drought_timeseries.png"
         fig.savefig(p, dpi=150, bbox_inches="tight"); plt.close(fig)
         out_paths.append(p)
@@ -1126,9 +1093,26 @@ def _pick_date(times: np.ndarray, target_iso: str):
     return times[int(np.argmin(np.abs(t - target)))]
 
 
-# =========================================================================== #
-# Orchestration / CLI
-# --------------------------------------------------------------------------- #
+def _break_offseason(s, max_gap_days: int = 20):
+    """Insert a NaN breakpoint after any gap > max_gap_days so a line plot does not connect across it.
+
+    The layers are gridded for warm seasons only (Jun-Sep), so saved dates jump ~8 months
+    at each year boundary; without the break matplotlib would draw a fictional off-season
+    segment. Returns a new date-sorted series.
+    """
+    s = s.sort_index()
+    if len(s) < 2:
+        return s
+    idx = pd.DatetimeIndex(s.index)
+    gap_days = idx.to_series().diff().dt.days.to_numpy()
+    breaks = [idx[i - 1] + pd.Timedelta(days=1) for i in range(1, len(idx))
+              if gap_days[i] > max_gap_days]
+    if breaks:
+        s = pd.concat([s, pd.Series(np.nan, index=pd.DatetimeIndex(breaks))]).sort_index()
+    return s
+
+
+# --- Orchestration / CLI ---
 def _grid_years(years_arg: str | None) -> list[int]:
     lo, hi = config.CLIMATOLOGY_YEARS
     allyears = list(range(lo, hi + 1))

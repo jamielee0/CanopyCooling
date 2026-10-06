@@ -1,0 +1,281 @@
+{
+  "approval_received": false,
+  "artifact_sha256": {
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/city_year_predictor_support.csv": "03834b2d154768db78043b97d604295bb68c0e94a644aae2757d906635d8ef81",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/continuous_distributions.csv": "be7284b6b8e4c9416af3c7420147e751ca01ee744e98dc8dd3077b8d669e4505",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/daily_reference_predictors_4880.csv": "ec0f8b663cdd20e8569c760d721ae3c0628de36656b8de2ffe7342b9a304c8a9",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/demand_predictor_correlations.csv": "4bd3a74589fc17dddbc8fea10a34647f1c3889019e99714d7dff2835b211f256",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/descriptive_3x3_support.csv": "84705c13998c3fe15be206fe08e2a9103aee347ccc1de5ee00c638a95e5a942d",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/figures/continuous_predictor_distributions.png": "32f8728f7ff2cabc6a8ab147d141be20b782f2a6df3948f9373a0f810a54f935",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/figures/high_demand_wet_dry_support.png": "42fe51b5061443ca1567d857f82b376db8150c88473cca34bef1636cc72fd559",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/high_demand_absolute_vpd_overlap.csv": "34dbafacb71d2f081e5f03bfb314aa406a195cb7aa9d0b194cdf275a814944a8",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/high_demand_wet_dry_support.csv": "f47d2e4a37db72bc47d85d407ac6d2bec46fd63654a9834e572bb3096c6f004c",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/pass_hydroclimate_219.csv": "62e52e293d70155fa7209ee5bba5d38afc4a41713b0d477442be0af482ad90da",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/phoenix_june_sign_check.csv": "94c5eca8527aa51e1646f70d34c8fbecddb36de654d7b6b741b86b29603dae93",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/predictor_pair_correlations.csv": "08ae27b98d434a34ad9bd173009d6037a38525a6a7f2772457d61b4aceb5839e",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/review.md": "fd6117e9fdaea48a5008799206122484c3cae4182ef1aa5558cc49b0f3610d89",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/seasonal_variance.csv": "619560c3d98844b89faacee734df439de19beb0ad244a30e4cd7cdeeb4bc3cdd",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/source_bindings.json": "355d4a65430b701c0a623421651a1f82492559bf3de0a0cdd3885404e2f06c4f",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/window_exclusion_audit.csv": "718badea8fd6567bdce42929269e38bfc55a0bbe7701dd8dff0aa2c79a4006c1"
+  },
+  "authorized_by": "D0062",
+  "checks": [
+    {
+      "check_id": "G2-C01",
+      "evidence": {
+        "retained_physical_passes": 219,
+        "source_daily_rows": 7320,
+        "summer_reference_city_days": 4880,
+        "unique_pass_ids": 219
+      },
+      "name": "approved_populations_complete",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G2-C02",
+      "evidence": [
+        {
+          "checked_summer_city_days": 4880,
+          "climatic_balance_sum_mismatches": 0,
+          "days_since_event_mismatches": 0,
+          "incomplete_prior_day_windows": 0,
+          "observation_day_exclusion_violations": 0,
+          "precipitation_sum_mismatches": 0,
+          "window_days": 30,
+          "window_definition": "date-window through date-1 inclusive"
+        },
+        {
+          "checked_summer_city_days": 4880,
+          "climatic_balance_sum_mismatches": 0,
+          "days_since_event_mismatches": 0,
+          "incomplete_prior_day_windows": 0,
+          "observation_day_exclusion_violations": 0,
+          "precipitation_sum_mismatches": 0,
+          "window_days": 60,
+          "window_definition": "date-window through date-1 inclusive"
+        }
+      ],
+      "name": "antecedent_windows_end_day_before_observation",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G2-C03",
+      "evidence": {
+        "missing_pass_values": 0,
+        "predictors": [
+          "precipitation",
+          "days_since_meaningful_rain",
+          "climatic_water_balance",
+          "precipitation",
+          "days_since_meaningful_rain",
+          "climatic_water_balance"
+        ],
+        "windows_days": [
+          30,
+          60
+        ]
+      },
+      "name": "all_three_predictors_both_windows_complete",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G2-C04",
+      "evidence": {
+        "alternative_thresholds_evaluated": 0,
+        "decision": "D0063",
+        "no_event_encoding": "window_plus_one_with_separate_right_censor_flag",
+        "threshold_mm_per_day": 5.0
+      },
+      "name": "meaningful_rain_threshold_frozen_before_results",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G2-C05",
+      "evidence": {
+        "bootstrap_replicates": 2000,
+        "bootstrap_unit": "whole_city_summer",
+        "city_year_rows": 234,
+        "demand_correlation_rows": 36,
+        "distribution_rows": 72,
+        "predictor_pair_rows": 36
+      },
+      "name": "continuous_distributions_correlations_and_seasonal_variance_reported",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G2-C06",
+      "evidence": {
+        "tables": [
+          "continuous_distributions.csv",
+          "descriptive_3x3_support.csv",
+          "high_demand_wet_dry_support.csv",
+          "city_year_predictor_support.csv"
+        ]
+      },
+      "name": "physical_counts_accompany_pass_equivalents",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G2-C07",
+      "evidence": {
+        "all_grid_rows_descriptive_only": true,
+        "formal_overlap_gate": "G4",
+        "grid_rows": 324
+      },
+      "name": "high_demand_support_and_grid_are_descriptive",
+      "status": "PASS_G4_FORMAL_OVERLAP_STILL_REQUIRED"
+    },
+    {
+      "check_id": "G2-C08",
+      "evidence": {
+        "canonical_agreement_pass": true,
+        "canonical_agreement_tolerance_mm": 1e-09,
+        "explicit_prior_day_recalculation_mismatches": 0,
+        "maximum_absolute_difference_from_canonical_mm": 2.842170943040401e-14,
+        "observation_day_exclusion_violations": 0,
+        "overall_pass": true,
+        "pooled_june_median_balance_30d_mm": -251.64752317878492,
+        "pooled_strongly_negative_pass": true,
+        "strongly_negative_threshold_mm": -100.0,
+        "summer_years_checked": 8,
+        "summer_years_with_negative_june_median": 8
+      },
+      "name": "independent_phoenix_june_balance_reproduced",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G2-C09",
+      "evidence": {
+        "prohibited_interpretations": [
+          "irrigation",
+          "root_zone_water",
+          "soil_moisture_availability",
+          "direct_plant_water_measurement"
+        ],
+        "water_balance_name": "antecedent_climatic_water_balance",
+        "water_balance_role": "sensitivity_only"
+      },
+      "name": "construct_interpretation_limited",
+      "status": "PASS"
+    },
+    {
+      "check_id": "G2-C10",
+      "evidence": {
+        "holdout_status": "UNSELECTED",
+        "next_gate_authorized": false,
+        "prior_protocol_deviations_preserved": [
+          "D0060",
+          "D0061"
+        ],
+        "record_2026_queries_during_gate2": 0,
+        "record_2026_science_data_status": "UNOPENED",
+        "task2_result_bearing_actions_enabled": false,
+        "temperature_or_lst_layers_opened_during_gate2": 0
+      },
+      "name": "gate2_data_access_scope_preserved",
+      "status": "PASS_NO_NEW_DEVIATION"
+    },
+    {
+      "check_id": "G2-C11",
+      "evidence": [
+        {
+          "city": "ALL_CITIES",
+          "physical_unit_count": 219,
+          "right_censored_count": 68,
+          "window_days": 30
+        },
+        {
+          "city": "ALL_CITIES",
+          "physical_unit_count": 219,
+          "right_censored_count": 56,
+          "window_days": 60
+        },
+        {
+          "city": "atlanta",
+          "physical_unit_count": 40,
+          "right_censored_count": 0,
+          "window_days": 30
+        },
+        {
+          "city": "atlanta",
+          "physical_unit_count": 40,
+          "right_censored_count": 0,
+          "window_days": 60
+        },
+        {
+          "city": "los_angeles",
+          "physical_unit_count": 48,
+          "right_censored_count": 44,
+          "window_days": 30
+        },
+        {
+          "city": "los_angeles",
+          "physical_unit_count": 48,
+          "right_censored_count": 34,
+          "window_days": 60
+        },
+        {
+          "city": "miami",
+          "physical_unit_count": 16,
+          "right_censored_count": 0,
+          "window_days": 30
+        },
+        {
+          "city": "miami",
+          "physical_unit_count": 16,
+          "right_censored_count": 0,
+          "window_days": 60
+        },
+        {
+          "city": "minneapolis_st_paul",
+          "physical_unit_count": 71,
+          "right_censored_count": 1,
+          "window_days": 30
+        },
+        {
+          "city": "minneapolis_st_paul",
+          "physical_unit_count": 71,
+          "right_censored_count": 0,
+          "window_days": 60
+        },
+        {
+          "city": "phoenix",
+          "physical_unit_count": 44,
+          "right_censored_count": 23,
+          "window_days": 30
+        },
+        {
+          "city": "phoenix",
+          "physical_unit_count": 44,
+          "right_censored_count": 22,
+          "window_days": 60
+        }
+      ],
+      "name": "days_since_meaningful_rain_right_censoring_reported",
+      "status": "PASS_WITH_MATERIAL_SUPPORT_LIMITATION"
+    }
+  ],
+  "gate": "G2",
+  "gate2_scope_compliance_pass": true,
+  "gate_name": "rebuild_antecedent_hydroclimatic_support",
+  "gate_status": "COMPLETE_AWAITING_HUMAN_APPROVAL",
+  "next_gate_authorized": false,
+  "next_gate_if_approved": "G3",
+  "pre_result_rule": "D0063",
+  "prepared_at": "2026-08-13T17:36:49+09:00",
+  "schema_version": 1,
+  "sealed_state": {
+    "holdout_status": "UNSELECTED",
+    "record_2026_queries_during_gate2": 0,
+    "record_2026_science_data_status": "UNOPENED",
+    "task2_result_bearing_actions_enabled": false,
+    "thermal_or_lst_layers_opened_during_gate2": 0
+  },
+  "study_clean_protocol_compliance": false,
+  "study_protocol_deviation_records": [
+    "D0060",
+    "D0061"
+  ],
+  "technical_checks_pass": true,
+  "user_action_required": "APPROVE_G2_REVISE_G2_OR_STOP"
+}

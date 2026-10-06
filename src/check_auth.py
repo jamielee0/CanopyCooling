@@ -1,24 +1,14 @@
 #!/usr/bin/env python3
-"""Authentication smoke test for the four Canopy data services.
+"""Section 0 / check_auth — smoke-test authentication for the four Canopy data services.
 
-Attempts one minimal authenticated call against each service and prints
-PASS / FAIL per service. No secrets are hard-coded — every credential is read
-from the standard file or environment variable that each library expects:
-
-  * NASA Earthdata     earthaccess  -> ~/.netrc  or EARTHDATA_USERNAME/PASSWORD
-  * Google Earth Engine ee          -> ~/.config/earthengine/credentials
-                                        + EARTHENGINE_PROJECT / GOOGLE_CLOUD_PROJECT
-  * Copernicus CDS     cdsapi       -> ~/.cdsapirc  or CDSAPI_URL/CDSAPI_KEY
-  * US Census          REST API     -> CENSUS_API_KEY (optional)
-
-For convenience, a gitignored project-root `.env` (if present) is loaded into
-the environment first, so you can keep local credentials in one place without
-committing them. Real environment variables always take precedence over .env.
-
-Run after you have completed each service's login yourself:
-    python src/check_auth.py
-
-Exit code is 0 only if all four services PASS, otherwise 1.
+Inputs : credentials only (no data); read from each library's standard location:
+         ~/.netrc | ~/.config/earthengine/credentials | ~/.cdsapirc, plus env vars,
+         plus an optional gitignored project-root .env (real env always wins).
+Outputs: PASS/FAIL per service to stdout; exit 0 only if all four PASS, else 1.
+Key decisions (full rationale in docs/DESIGN_DECISIONS.md, Section 0):
+  - No secrets in code: credentials read from standard files/env per library.
+  - One minimal authenticated call per service (Earthdata, Earth Engine, CDS, Census).
+Run: python src/check_auth.py
 """
 
 from __future__ import annotations
@@ -26,7 +16,7 @@ from __future__ import annotations
 import os
 import sys
 
-# Make the sibling config module importable whether run from repo root or src/.
+# Importable whether run from repo root or src/.
 _REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, _REPO_ROOT)
 
@@ -37,7 +27,7 @@ RESET = "\033[0m"
 
 
 def load_dotenv(path: str) -> bool:
-    """Minimal .env loader (no external deps). Does not overwrite real env vars."""
+    """Minimal .env loader (no external deps); does not overwrite real env vars."""
     if not os.path.exists(path):
         return False
     with open(path, "r", encoding="utf-8") as fh:
@@ -135,7 +125,7 @@ def check_census() -> tuple[str, bool, str]:
 
 
 def _print_sources() -> None:
-    """Show which credential sources were detected (no secret values shown)."""
+    """Report which credential sources were detected (no secret values shown)."""
     home = os.path.expanduser("~")
     netrc = os.environ.get("NETRC", os.path.join(home, ".netrc"))
     checks = [

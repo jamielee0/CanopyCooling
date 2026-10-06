@@ -1,0 +1,6 @@
+current_branch=v6.2
+current_head=05ce27941a5dc3c5e0634a27b6a089fa27909499
+previous_version_tag=v2-inherited-pre-v6.2
+tag_object=897d4976cd1627b16d7599b4a7c925eb899d630f
+tagged_commit=e32ff06aad83f1c8fe87473bf5c95e9e12f155e2
+tag_message=Last inherited commit before v6.2 control-boundary freeze

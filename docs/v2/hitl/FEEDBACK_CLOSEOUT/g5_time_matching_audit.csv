@@ -1,0 +1,17 @@
+threshold_deg,city,window_id,physical_passes,morning_10_12_passes,afternoon_16_18_passes,candidate_cross_stratum_pairs_before_calipers,morning_solar_elevation_min_deg,morning_solar_elevation_max_deg,afternoon_solar_elevation_min_deg,afternoon_solar_elevation_max_deg,solar_elevation_range_overlap_deg,vpd_range_overlap_kpa,day_of_window_range_overlap_days,relative_azimuth_range_overlap_deg,both_strata_observed,solar_elevation_overlap_pass,empirical_matching_possible,estimand,hysteresis_or_physiology_claim_authorized,temperature_or_lst_opened,record_2026_opened
+10,atlanta,jun_sep,0,0,0,0,,,,,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+10,denver_aurora,jun_sep,2,0,0,0,,,,,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+10,minneapolis_st_paul,jun_sep,0,0,0,0,,,,,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+10,phoenix,phoenix_apr_may,1,0,1,0,,,23.868809722192008,23.868809722192008,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+15,atlanta,jun_sep,1,0,1,0,,,4.631042328929016,4.631042328929016,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+15,denver_aurora,jun_sep,2,0,0,0,,,,,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+15,minneapolis_st_paul,jun_sep,3,0,0,0,,,,,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+15,phoenix,phoenix_apr_may,1,0,1,0,,,23.868809722192008,23.868809722192008,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+20,atlanta,jun_sep,3,0,3,0,,,4.631042328929016,32.78094372231805,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+20,denver_aurora,jun_sep,6,0,1,0,,,15.867868752096333,15.867868752096333,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+20,minneapolis_st_paul,jun_sep,4,0,0,0,,,,,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+20,phoenix,phoenix_apr_may,1,0,1,0,,,23.868809722192008,23.868809722192008,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+25,atlanta,jun_sep,11,0,6,0,,,4.631042328929016,32.78094372231805,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+25,denver_aurora,jun_sep,29,0,9,0,,,9.51251869406132,32.9880728646716,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+25,minneapolis_st_paul,jun_sep,10,0,2,0,,,23.982223336754004,28.86251958283837,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False
+25,phoenix,phoenix_apr_may,2,0,1,0,,,23.868809722192008,23.868809722192008,,,,,False,False,False,time_of_day_asymmetry_at_comparable_solar_elevation,False,False,False

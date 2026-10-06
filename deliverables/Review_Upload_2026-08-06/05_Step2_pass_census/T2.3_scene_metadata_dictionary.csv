@@ -1,0 +1,80 @@
+field,units_or_type,definition,source
+city,text,Frozen analysis-domain label,frozen city-domain record
+granule_id,text,All tile identifiers represented by the pass,CMR UMM-G GranuleUR/native-id
+scene_key,text,city|orbit de-duplication key; UTC-second fallback only for unknown orbit,derived
+acquisition_utc,UTC ISO-8601,Median intersecting tiled-scene acquisition start used for the pass,CMR UMM-G temporal extent / derived
+acquisition_utc_first,UTC ISO-8601,Earliest intersecting tiled-scene acquisition start,CMR UMM-G temporal extent / derived
+acquisition_utc_last,UTC ISO-8601,Latest intersecting tiled-scene acquisition start,CMR UMM-G temporal extent / derived
+orbit,identifier,Instrument orbit number,CMR UMM-G or granule name
+scene,identifier(s),Tiled-product scene number(s) represented by the pass,granule name
+tile,MGRS identifier,Intersecting tiled-product tile(s),CMR UMM-G/additional attributes or name
+footprint_json,GeoJSON/UMM JSON,Catalogue footprint geometry,CMR UMM-G spatial extent
+n_intersecting_tiles,count,Tiles collapsed into this one pass,derived
+n_intersecting_scenes,count,Adjacent tiled-product scenes collapsed into this one pass,derived
+centroid_latitude,degrees north,Frozen domain centroid latitude,city-domain record
+centroid_longitude,degrees east,Frozen domain centroid longitude,city-domain record
+local_solar_time_hours,decimal solar hour,UTC corrected by longitude and equation of time; no time zone,derived
+local_solar_date,apparent-solar calendar date,Calendar date used for the daily antecedent-weather join,derived
+solar_zenith_deg,degrees,Apparent zenith at domain centroid,pvlib or declared fallback
+solar_azimuth_deg,degrees clockwise from north,Solar azimuth at domain centroid,pvlib or declared fallback
+solar_elevation_deg,degrees,90 minus solar zenith,derived
+day_of_year,integer 1-366,Acquisition day of year; retained separately from solar angle,derived
+daytime,boolean,Local solar time in closed interval 10:00-18:00,preregistered Step-2 rule
+night,boolean,Solar elevation below -6 degrees (civil twilight),preregistered Step-2 rule
+time_stratum,category,"10-12, 12-14, 14-16, or 16-18 local solar time",preregistered Step-2 rule
+retrieval_band_mode,category,"full, reduced, mixed, or post-fix unknown",date rule plus scene metadata
+geolocation_quality,ordered category,"best, good, suspect, or poor; worst tile retained",published scene summary / audit
+obstruction_flag,boolean,Any tile/pass appears on published solar-array obstruction list,published obstruction scene list
+view_zenith_deg,degrees,Pass-level p95 absolute sensor view zenith over valid frozen-domain pixels,native ECOSTRESS tiled view_zenith COG / derived
+near_nadir,boolean,At least 95% domain view coverage and p95 absolute view zenith <= 20 degrees,preregistered Step-2 rule / native quality raster
+vpd_kpa_at_acquisition,kPa,Hourly VPD linearly interpolated to acquisition UTC,hourly weather product
+demand_percentile,0-1 within city,Hourly demand interpolated to acquisition UTC,hourly weather product / Step 1
+antecedent_dryness_percentile,0-1 within city,Higher means drier antecedent climatic water balance,Step 1
+year,integer year,Calendar year of the representative acquisition UTC,derived
+query_year,integer year,Summer year used in the immutable catalogue query,CMR query provenance
+domain_geoid,Census GEOID,Frozen 2020 Census Urban Area identifier,TIGERweb frozen-domain record
+domain_intersects,boolean,Catalogue footprint intersects the frozen city domain,CMR footprint / derived
+collection_short_name,text,ECOSTRESS collection short name,CMR collection metadata
+collection_version,text,ECOSTRESS collection version,CMR collection metadata
+collection_concept_id,CMR identifier,Pinned collection concept identifier,CMR collection metadata
+metadata_source,text,Catalogue metadata adapter/source label,derived provenance
+solar_engine,category,Solar-position implementation used for this row,derived provenance
+night_zenith_threshold_deg,degrees,Zenith equivalent of the frozen civil-twilight night rule,derived
+reported_band_mode,category,Band-mode label reported by official metadata when present,L2T JSON sidecar
+retrieval_band_count,count,Minimum official retrieval band count represented by the pass,L2T JSON NumberOfBands
+number_of_bands_min,count,Minimum NumberOfBands across the pass's tiled scenes,L2T JSON sidecar / derived
+n_l2t_tiles,count,Number of official L2T tile records represented,L2T JSON sidecars / derived
+official_orbit_scene_key,identifier(s),Official orbit/scene join key(s),granule names / derived
+official_scene_granule_ids,text,Official tiled-scene granule identifiers joined to the pass,CMR/L2T JSON sidecars
+product_quality,category,Official product-quality label retained as a diagnostic,L2T JSON sidecar
+automatic_quality_flag,category,Official automatic quality flag retained as a diagnostic,L2T JSON sidecar
+field_of_view_obstruction_any,boolean/unknown,Whether any official tiled scene reports field-of-view obstruction,L2T JSON sidecar
+published_obstruction_flag,boolean,Whether any represented scene occurs in the published obstruction list,LP DAAC obstruction list
+obstruction_status,category,Resolved obstruction evidence status,official sidecar plus published list / derived
+qa_percent_cloud_cover_max,percent,Maximum metadata cloud-cover percentage across represented tiles,L2T JSON sidecar; diagnostic only
+qa_percent_cloud_cover,percent,Pass-level metadata cloud-cover percentage,L2T JSON sidecar; diagnostic only
+l2t_metadata_sources,text,Official L2T sidecars contributing to the pass,derived provenance
+geo_metadata_sources,text,Official geolocation records contributing to the pass,JPL flag table or L1B GEO DMR++
+official_metadata_complete,boolean,All frozen official metadata fields needed before raster screening are present,derived validation
+metadata_warnings,text,Conservative metadata gaps or conflicts,derived validation
+geolocation_source_rule,text,Rule/source used to resolve best/good/suspect/poor,derived provenance
+geolocation_usable,boolean,Resolved geolocation quality is best or good,preregistered rule / official metadata
+metadata_candidate,boolean,"Pass survives daytime, geolocation, and obstruction metadata gates",derived
+n_domain_pixels,count,Frozen-domain native-grid pixel-centre denominator across canonical MGRS cores,native ECOSTRESS view grid / derived
+n_domain_pixels_in_present_tiles,count,Domain pixels in MGRS tiles present for this pass,native ECOSTRESS view grid / derived
+n_view_valid_pixels,count,Frozen-domain pixels with a physical view angle,native ECOSTRESS view_zenith COG / derived
+view_valid_fraction,0-1,n_view_valid_pixels divided by n_domain_pixels,derived
+view_zenith_abs_min_deg,degrees,Minimum absolute view zenith over valid domain pixels,native view_zenith COG / derived
+view_zenith_abs_median_deg,degrees,Median absolute view zenith over valid domain pixels,native view_zenith COG / derived
+view_zenith_abs_mean_deg,degrees,Mean absolute view zenith over valid domain pixels,native view_zenith COG / derived
+view_zenith_abs_p95_deg,degrees,95th percentile absolute view zenith over valid domain pixels,native view_zenith COG / derived
+view_zenith_abs_max_deg,degrees,Maximum absolute view zenith over valid domain pixels,native view_zenith COG / derived
+near_nadir_threshold_deg,degrees,Frozen p95 absolute view-zenith threshold,decision D0018
+minimum_view_coverage,0-1,Frozen minimum valid-domain view coverage,decision D0018
+n_unique_mgrs_tiles,count,Canonical MGRS cores contributing domain pixels,derived
+n_selected_scene_tiles,count,Latest-revision scene/tile rasters combined for the pass,quality-layer manifest / derived
+n_overlapping_valid_pixels,count,Valid pixels seen by more than one adjacent scene before tie-breaking,native view_zenith COG / derived
+overlap_rule,text,Conservative rule used where adjacent scenes overlap,decision D0028 / derived
+n_manifest_rows_before_revision_selection,count,Quality-layer manifest rows represented before revision de-duplication,quality-layer manifest / derived
+view_screen_status,category,"Metadata-excluded, view-excluded, or near-nadir pass",derived
+quality_candidate_pre_cloud,boolean,Pass survives every frozen non-cloud Step-2 quality gate,derived

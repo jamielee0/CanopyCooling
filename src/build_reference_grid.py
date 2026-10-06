@@ -1,20 +1,14 @@
 #!/usr/bin/env python3
-"""Build the empty reference grid — the geometric anchor for the project.
+"""Section 1 / build_reference_grid — materialise the fixed reference grid as a GeoTIFF.
 
-Writes a single-band raster on the FIXED grid defined in config.py
-(70 m cells, EPSG:32612, frozen origin/extent) to data/processed/
-reference_grid.tif. Every later layer is reprojected/resampled to match this
-file exactly.
-
-The grid is NOT recomputed here: all geometry comes from the literals in
-config.py (Section 1). This script only materialises those literals as a
-GeoTIFF, prints the grid's CRS / cell size / shape / bounds, and asserts the
-cells are exactly 70 m square.
-
-Uses rasterio when available (e.g. inside the `canopy` env); otherwise falls
-back to a dependency-free GeoTIFF writer so the anchor can always be rebuilt.
-
-Run:  python src/build_reference_grid.py
+Inputs : config.py grid literals (CRS, GRID_TRANSFORM, GRID_NROWS/NCOLS, GRID_ORIGIN_XY).
+Outputs: data/processed/reference_grid.tif (single-band uint8, all zeros) — the
+         geometric anchor every later layer is reprojected/resampled to match.
+Key decisions (full rationale in docs/DESIGN_DECISIONS.md, Section 1):
+  - Geometry is not recomputed; literals from config.py are only materialised + verified.
+  - 70 m EPSG:32612 cells with a frozen origin/extent (asserted exactly square).
+  - rasterio backend when available, else a dependency-free pure-Python TIFF writer.
+Run: python src/build_reference_grid.py
 """
 
 from __future__ import annotations
@@ -39,17 +33,15 @@ def _derived_bounds() -> tuple[float, float, float, float]:
     return (left, bottom, right, top)
 
 
-# --------------------------------------------------------------------------- #
-# Pure-Python classic-TIFF (GeoTIFF) writer — single band, uint8, all zeros.
-# --------------------------------------------------------------------------- #
 def _write_geotiff_pure(path: str) -> None:
+    """Dependency-free classic-TIFF (GeoTIFF) writer: single band, uint8, all zeros."""
     ncols, nrows = config.GRID_NCOLS, config.GRID_NROWS
     a, _b, c, _d, e, f = config.GRID_TRANSFORM  # (xres,0,left,0,-yres,top)
     xres, yres = a, -e
     left, top = c, f
     epsg = _epsg_int(config.CRS)
 
-    # IFD geometry (14 tags, sorted ascending) ------------------------------
+    # IFD geometry: 14 tags sorted ascending; offsets chained after the IFD block.
     n_tags = 14
     ifd_end = 8 + (2 + 12 * n_tags + 4)        # header + IFD block
     off_ps = ifd_end                            # ModelPixelScale (3 doubles)
@@ -106,6 +98,7 @@ def _write_geotiff_pure(path: str) -> None:
 
 
 def _write_geotiff_rasterio(path: str) -> None:
+    """Write the reference grid via rasterio (preferred when the library is present)."""
     import numpy as np
     import rasterio
     from rasterio.transform import Affine
@@ -128,6 +121,7 @@ def _write_geotiff_rasterio(path: str) -> None:
 
 
 def build() -> str:
+    """Write reference_grid.tif via rasterio, falling back to the pure-Python writer."""
     config.ensure_dirs()
     path = str(config.REFERENCE_GRID_TIF)
     try:
@@ -142,10 +136,8 @@ def build() -> str:
     return path
 
 
-# --------------------------------------------------------------------------- #
-# Verification: re-read the file's georeferencing straight from the bytes.
-# --------------------------------------------------------------------------- #
 def _read_back(path: str) -> dict:
+    """Re-read the written file's georeferencing straight from the raw TIFF bytes."""
     with open(path, "rb") as fh:
         data = fh.read()
     assert data[:2] == b"II" and struct.unpack("<H", data[2:4])[0] == 42
@@ -170,6 +162,7 @@ def _read_back(path: str) -> dict:
 
 
 def main() -> int:
+    """Build the grid, print its geometry, and assert cells are exactly 70 m square."""
     path = build()
 
     left, bottom, right, top = _derived_bounds()

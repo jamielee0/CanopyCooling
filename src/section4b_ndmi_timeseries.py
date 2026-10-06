@@ -1,70 +1,27 @@
 #!/usr/bin/env python3
-"""Section 4b - Time-resolved Sentinel-2 NDMI (per-overpass + LOYO day-of-year climatology).
+"""Section 4b — time-resolved Sentinel-2 NDMI (per-overpass observed + LOYO day-of-year climatology).
 
-WHY THIS SECTION EXISTS (the supply-axis fix)
----------------------------------------------
-Section 4 originally produced only ONE NDMI image: a 2023 warm-season MEDIAN
-composite (data/interim/s2_ndmi_warmseason_median_2023_70m.tif). Because that is
-a single static field, Section 11's water-supply z-score could only be a SPATIAL
-standardization -- a deviation that varies BY PIXEL but is CONSTANT across all 66
-ECOSTRESS overpasses (decision (B) in section11_anomalies.py). With the supply
-half of the Compound Stress Index frozen in time, the CSI collapses to (almost)
-a pure temporal VPD-demand axis with little between-neighborhood variation -- the
-deepest reason the Phoenix pilot found "no robust threshold" (Section 14).
-
-The fix implemented here gives NDMI a REAL time dimension, exactly mirroring how
-Section 11 already treats VPD and soil moisture:
-  * ``observed``  -- for EACH 2023 overpass, a cloud-masked S2 NDMI MEDIAN composite
-                     within +/- CLIMATOLOGY_WINDOW_DAYS (15) days of the overpass
-                     date (in 2023). This VARIES overpass-to-overpass through the
-                     season (greener around the monsoon), and across space.
-  * ``clim_mean`` / ``clim_std`` -- the DAY-OF-YEAR climatology: for each overpass's
-                     day-of-year, the mean and std of cloud-masked S2 NDMI over years
-                     2018-2024 EXCLUDING the overpass's own year (LEAVE-ONE-YEAR-OUT;
-                     every pilot overpass is 2023, so the climatology is over
-                     2018-2022 + 2024), within +/- 15 days of that day-of-year.
-
-Section 11 can then compute a proper TEMPORAL NDMI z-score
-``z = (observed - clim_mean) / clim_std`` that varies overpass-to-overpass AND
-across space, unfreezing the CSI supply axis. This product SUPERSEDES the single
-static composite as the input to Section 11's NDMI z-score.
-
-METHOD (mirrors Section 4 + Section 11)
----------------------------------------
-* Source: COPERNICUS/S2_SR_HARMONIZED (same as Section 4). The harmonized
-  collection puts the whole archive on one reflectance offset; since NDMI is a
-  normalized difference, a consistent additive offset cancels -- so the 2018-2024
-  archive is directly comparable without manual offset handling.
-* Per scene: drop high-cloud SCENES (CLOUDY_PIXEL_PERCENTAGE < MAX_SCENE_CLOUD_PCT),
-  mask cloud / cloud-shadow / snow PIXELS via the SCL band (drop classes {3,8,9,10,11}),
-  then NDMI = (B8 - B11) / (B8 + B11). B11 (SWIR) is NATIVE 20 m, so NDMI is a 20 m
-  product, reprojected to 70 m on the EE side (bilinear) like Section 4.
-* observed: server-side ``median()`` over the per-overpass +/-15 d window in 2023.
-* clim_mean / clim_std: server-side ``mean()`` / ``stdDev()`` over the union of the
-  +/-15 d windows in each climatology year (2018-2022, 2024). EE compute is reduced
-  by DEDUPING the climatology by UNIQUE day-of-year window: many overpasses fall on
-  the same calendar day-of-year window, so the climatology is identical and computed
-  once per unique window, then mapped back to all 66 overpasses.
-* Each reduced 70 m image is downloaded with ``geemap.download_ee_image``
-  (geedim under the hood; crs=EPSG:32612, scale=70, region=bbox), tiled+stitched
-  under the EE size limit, with a smaller-tile retry ladder then an Export-to-Drive
-  fallback -- identical machinery to Section 4. We download PER overpass (small 70 m
-  images) rather than one giant cube to stay within EE compute limits.
-
-DELIVERABLE (data/interim/; git-ignored)
------------------------------------------
-* ``s2_ndmi_timeseries_70m.zarr`` -- dims (overpass=66, y=1155, x=1339), vars
-  ``observed`` / ``clim_mean`` / ``clim_std`` (NDMI, dimensionless), coords
-  overpass / overpass_key / time / doy / y / x and a CF spatial_ref (reopen with
-  ``decode_coords="all"``). Indexed by the SAME 66 overpass_keys, in the SAME order,
-  as data/processed/analysis_cube_70m.zarr -- so Section 11 can drop it in.
-  Recorded in data/manifest.csv with SHA-256 checksums (per per-overpass GeoTIFF).
-
-Run (canopy env, Earth Engine authenticated):
+Inputs : data/processed/analysis_cube_70m.zarr (the 66-overpass master axis),
+         COPERNICUS/S2_SR_HARMONIZED (Earth Engine), config.REFERENCE_GRID_TIF.
+Outputs: data/interim/s2_ndmi_timeseries_70m.zarr (overpass=66, y=1155, x=1339;
+         vars observed/clim_mean/clim_std plus observed/climatology valid counts and
+         separate count<3 flags), per-tile GeoTIFFs in
+         data/raw/sentinel2_ndmi_ts/, manifest rows with SHA-256 checksums.
+Key decisions (full rationale in docs/DESIGN_DECISIONS.md, Section 4b):
+  - Gives the Section 11 NDMI vegetation-condition check a real time dimension; NDMI is not
+    the primary water-supply axis (root-zone soil moisture is).
+  - observed = per-overpass cloud-masked S2 median within +/-15 d (2023).
+  - clim_mean/std = day-of-year leave-one-year-out climatology over 2018-2024 (drops 2023).
+  - Scene cloud <60% is a broad prefilter; per-pixel SCL masking is primary.
+  - Post-SCL counts use nearest-neighbour resampling; count<3 is flagged, never masked.
+  - Climatology deduped by unique day-of-year (computed once, mapped to all overpasses).
+  - Supersedes the single static s2_ndmi_warmseason_median_2023_70m.tif.
+Run:
     python src/section4b_ndmi_timeseries.py                 # full run (EE download)
     python src/section4b_ndmi_timeseries.py --overpass 10    # download only overpass 10 (test)
     python src/section4b_ndmi_timeseries.py --skip-download   # reuse data/raw/sentinel2_ndmi_ts/
     python src/section4b_ndmi_timeseries.py --coarse-scale 210 # quick smoke test (coarser grid)
+    python src/section4b_ndmi_timeseries.py --counts-only       # resumable count-only pull
     python src/section4b_ndmi_timeseries.py --verify-only      # re-open + QC the saved store
 """
 
@@ -81,10 +38,7 @@ from typing import Sequence
 import numpy as np
 import pandas as pd
 
-# Heavy geospatial / EE libraries. The pure logic below (NDMI formula, SCL mask,
-# the +/-15-day window selection, the LOYO year exclusion, the day-of-year dedup)
-# does not touch them, so it stays unit-testable without the geo / EE stack
-# installed (see test_section4b_ndmi_timeseries.py).
+# Heavy geospatial / EE libs; the pure logic below stays importable without them.
 import ee  # noqa: E402
 import geemap  # noqa: E402
 import rioxarray  # noqa: F401,E402  (registers the .rio accessor)
@@ -104,13 +58,11 @@ import section4_sentinel2_indices as sec4  # noqa: E402  (collection, SCL mask, 
 log = logging.getLogger("section4b")
 
 
-# =========================================================================== #
-# Constants (most inherited from Section 4 to keep the two consistent).
-# --------------------------------------------------------------------------- #
+# --- Constants (most inherited from Section 4 to keep the two consistent) ---
 COLLECTION_ID = sec4.COLLECTION_ID                # COPERNICUS/S2_SR_HARMONIZED
 DATASET_ID = COLLECTION_ID
 SCL_DROP_CLASSES = sec4.SCL_DROP_CLASSES          # (3, 8, 9, 10, 11)
-MAX_SCENE_CLOUD_PCT = sec4.MAX_SCENE_CLOUD_PCT    # 60.0
+MAX_SCENE_CLOUD_PCT = sec4.MAX_SCENE_CLOUD_PCT    # 60.0 broad prefilter; SCL is primary
 MAX_TILE_SIZES_MB = sec4.MAX_TILE_SIZES_MB        # (8, 4, 2, 1) retry ladder
 MAX_REQUESTS = sec4.MAX_REQUESTS                  # 8 (concurrency cap)
 
@@ -131,17 +83,21 @@ DRIVE_FOLDER = "canopy_section4b"                  # only used by the Export fal
 
 # How a per-overpass window with too few clear S2 pixels is flagged in the QC.
 THIN_COVERAGE_FINITE_FRAC = 0.80                  # < this fraction finite -> "thin"
+LOW_VALID_SCENE_COUNT = sec4.LOW_VALID_SCENE_COUNT  # <3 is flagged, never masked
+COUNT_MISSING = -1                                # count tile unavailable on disk
+OBS_COUNT_NAME = "observed_valid_count"
+CLIM_COUNT_NAME = "clim_valid_count"
+OBS_LOW_FLAG_NAME = "observed_low_count_lt3"
+CLIM_LOW_FLAG_NAME = "clim_low_count_lt3"
+COUNT_RESAMPLING = "nearest"                    # semantic name in metadata / notes
+COUNT_DOWNLOAD_RESAMPLING = "near"              # geemap/geedim spelling
 
 
-# =========================================================================== #
-# Pure logic (numpy / pandas only; unit-tested without the geo or EE stack)
-# =========================================================================== #
+# --- Pure logic (numpy / pandas only; unit-tested without the geo or EE stack) ---
 def ndmi_from_bands(b8: np.ndarray, b11: np.ndarray) -> np.ndarray:
     """NDMI = (B8 - B11) / (B8 + B11), NaN where the sum is zero (Section 4 formula).
 
-    A reference implementation of the index EE computes server-side, so the polarity
-    and the divide-by-zero guard are testable without Earth Engine. Reuses Section 4's
-    ``normalized_difference`` so the two sections cannot drift apart.
+    Reference for the index EE computes server-side; reuses Section 4 so the two cannot drift.
     """
     return sec4.normalized_difference(b8, b11)
 
@@ -150,12 +106,8 @@ def date_window_bounds(center_date: pd.Timestamp,
                        window_days: int = WINDOW_DAYS) -> tuple[pd.Timestamp, pd.Timestamp]:
     """Inclusive [start, end] calendar dates of the +/- ``window_days`` window.
 
-    The OBSERVED composite for one overpass is the S2 NDMI median over the scenes
-    whose acquisition date falls in [center - window, center + window] (the same
-    +/-15 d half-width Section 11 uses for the VPD/SM day-of-year window, here as an
-    ABSOLUTE calendar window within the overpass's own year). Returns midnight-floored
-    Timestamps; the EE ``filterDate`` end is treated as EXCLUSIVE by the caller, so it
-    adds one day to make ``end`` inclusive of the whole last day.
+    Returns midnight-floored Timestamps; the caller adds one day to make the EE
+    (exclusive) filterDate end inclusive of the whole last day.
     """
     c = pd.Timestamp(center_date).normalize()
     return c - pd.Timedelta(days=int(window_days)), c + pd.Timedelta(days=int(window_days))
@@ -168,12 +120,9 @@ def doy_of(ts) -> int:
 
 def climatology_years(target_year: int,
                       year_lo: int = CLIM_YEAR_LO, year_hi: int = CLIM_YEAR_HI) -> list[int]:
-    """Years entering one overpass's day-of-year climatology: [lo..hi] EXCLUDING
-    ``target_year`` (LEAVE-ONE-YEAR-OUT, step 60).
+    """Years in one overpass's day-of-year climatology: [lo..hi] minus ``target_year`` (LOYO).
 
-    Every pilot overpass is 2023, so this returns [2018, 2019, 2020, 2021, 2022, 2024]
-    -- the 2018-2024 inclusive span with 2023 (the observation's own year) dropped.
-    Pure list logic so the LOYO exclusion is unit-tested without EE.
+    For the all-2023 pilot this is [2018, 2019, 2020, 2021, 2022, 2024].
     """
     return [y for y in range(int(year_lo), int(year_hi) + 1) if y != int(target_year)]
 
@@ -183,14 +132,9 @@ def year_window_ranges(doy: int, years: Sequence[int],
                        ref_year: int = 2001) -> list[tuple[pd.Timestamp, pd.Timestamp]]:
     """For a target day-of-year, the [start, end] calendar window in EACH given year.
 
-    The day-of-year climatology samples S2 over |doy - D| <= window in every
-    climatology year. We realise that as a UNION of per-year date windows: in each
-    year Y, the window is centred on the calendar date that has day-of-year ``doy`` in
-    Y, +/- ``window_days``. ``ref_year`` (any non-leap year) maps the day-of-year to a
-    month/day; using the SAME month/day in each target year keeps the window on the
-    right calendar position (and naturally clips at the season edges, exactly like
-    Section 11's one-sided early-June / late-September windows). Returns inclusive
-    [start, end] pairs (the caller makes the EE end exclusive by +1 day).
+    The day-of-year climatology is realised as a union of per-year +/-window windows.
+    ``ref_year`` (non-leap) maps day-of-year to a month/day reused in each target year.
+    Returns inclusive pairs (the caller makes the EE end exclusive by +1 day).
     """
     # Map day-of-year -> (month, day) via a fixed reference (non-leap) year.
     anchor = (pd.Timestamp(f"{int(ref_year)}-01-01") + pd.Timedelta(days=int(doy) - 1))
@@ -210,19 +154,10 @@ def year_window_ranges(doy: int, years: Sequence[int],
 def dedup_climatology_windows(overpasses: pd.DataFrame,
                               window_days: int = WINDOW_DAYS
                               ) -> tuple[dict[int, list[int]], list[int]]:
-    """Group overpasses by their day-of-year so identical climatologies compute ONCE.
+    """Group overpasses by exact day-of-year so identical climatologies compute ONCE.
 
-    Many of the 66 overpasses share a calendar day-of-year (or are close enough that
-    their +/-window day-of-year climatology is identical). The climatology depends ONLY
-    on the day-of-year (and the fixed LOYO year set), so it is identical for all
-    overpasses with the same day-of-year. We therefore key by day-of-year: returns
-    ``(groups, unique_doys)`` where ``groups[doy]`` is the list of overpass row-indices
-    sharing that day-of-year, and ``unique_doys`` is the sorted unique day-of-year list.
-    The caller computes the climatology once per unique day-of-year and broadcasts it
-    back to every overpass in the group -- cutting EE compute from 66 to len(unique).
-
-    NB we dedup by EXACT day-of-year (not overlapping windows) so each overpass gets a
-    climatology centred precisely on ITS day-of-year; this is exact, not approximate.
+    Returns ``(groups, unique_doys)``: ``groups[doy]`` is the list of overpass row-indices
+    sharing that day-of-year; the caller computes once per unique day-of-year and broadcasts.
     """
     groups: dict[int, list[int]] = {}
     for i, (_, row) in enumerate(overpasses.iterrows()):
@@ -231,9 +166,104 @@ def dedup_climatology_windows(overpasses: pd.DataFrame,
     return groups, sorted(groups)
 
 
-# =========================================================================== #
-# Earth Engine -- per-overpass reductions  (needs ee)
-# =========================================================================== #
+def expected_count_tile_names(overpasses: pd.DataFrame,
+                              only_overpass: int | None = None) -> list[str]:
+    """Deterministic resumable count-tile inventory (observed + deduped climatology)."""
+    if only_overpass is None:
+        obs_indices = range(len(overpasses))
+        doys = dedup_climatology_windows(overpasses)[1]
+    else:
+        if not 0 <= int(only_overpass) < len(overpasses):
+            raise IndexError(f"overpass {only_overpass} outside 0..{len(overpasses)-1}")
+        obs_indices = [int(only_overpass)]
+        doys = [doy_of(overpasses.iloc[int(only_overpass)]["time"])]
+    return ([f"obs_count_op{i:02d}.tif" for i in obs_indices]
+            + [f"clim_count_doy{d:03d}.tif" for d in doys])
+
+
+def count_cache_inventory(overpasses: pd.DataFrame, raw_dir: Path,
+                          only_overpass: int | None = None) -> dict:
+    """Report how many expected count tiles are cached; no EE/network calls."""
+    expected = expected_count_tile_names(overpasses, only_overpass)
+    present = [name for name in expected if (raw_dir / name).exists()]
+    present_set = set(present)
+    missing = [name for name in expected if name not in present_set]
+    return {"expected": len(expected), "present": len(present),
+            "missing": len(missing), "missing_names": missing}
+
+
+def low_count_flag(counts: np.ndarray,
+                   threshold: int = LOW_VALID_SCENE_COUNT,
+                   missing_value: int = COUNT_MISSING) -> np.ndarray:
+    """Return a uint8 diagnostic flag for valid counts below ``threshold``.
+
+    Missing count tiles use ``missing_value`` and are not called low coverage. The
+    flag is diagnostic only: it never changes the associated NDMI values.
+    """
+    arr = np.asarray(counts)
+    return ((arr != missing_value) & (arr >= 0) & (arr < int(threshold))).astype("uint8")
+
+
+def count_cube_stats(counts: np.ndarray,
+                     threshold: int = LOW_VALID_SCENE_COUNT,
+                     missing_value: int = COUNT_MISSING) -> dict:
+    """Exact, memory-conscious stats for an integer count cube.
+
+    A histogram is accumulated one leading-axis slab at a time, avoiding a large
+    float copy of the full 66-by-y-by-x cube. Genuine zeros remain valid; only -1
+    denotes a count tile that is not available on disk.
+    """
+    arr = np.asarray(counts)
+    slabs = arr if arr.ndim > 2 else arr[np.newaxis, ...]
+    hist = np.zeros(0, dtype="int64")
+    n_missing = 0
+    for slab in slabs:
+        flat = np.asarray(slab).reshape(-1)
+        if np.any(~np.isfinite(flat)):
+            raise ValueError("valid-scene counts must be finite integers or the missing sentinel")
+        missing = flat == missing_value
+        n_missing += int(missing.sum())
+        vals = flat[~missing]
+        if np.any(vals < 0) or not np.all(vals == np.floor(vals)):
+            raise ValueError("valid-scene counts must be integer-valued and nonnegative")
+        if vals.size:
+            binc = np.bincount(vals.astype("int64"))
+            if binc.size > hist.size:
+                hist = np.pad(hist, (0, binc.size - hist.size))
+            hist[:binc.size] += binc
+
+    n_valid = int(hist.sum())
+    total = int(arr.size)
+    if not n_valid:
+        return {
+            "n_valid": 0, "n_missing": n_missing,
+            "frac_missing": n_missing / total if total else None,
+            "min": None, "median": None, "max": None, "n_lt_threshold": 0,
+            "frac_lt_threshold": None, "low_threshold": int(threshold),
+        }
+    occupied = np.flatnonzero(hist)
+    cumulative = np.cumsum(hist)
+
+    def _order_stat(k: int) -> int:
+        return int(np.searchsorted(cumulative, k + 1, side="left"))
+
+    lo_mid = _order_stat((n_valid - 1) // 2)
+    hi_mid = _order_stat(n_valid // 2)
+    n_low = int(hist[:int(threshold)].sum())
+    return {
+        "n_valid": n_valid,
+        "n_missing": n_missing,
+        "frac_missing": n_missing / total if total else None,
+        "min": int(occupied[0]),
+        "median": (lo_mid + hi_mid) / 2.0,
+        "max": int(occupied[-1]),
+        "n_lt_threshold": n_low,
+        "frac_lt_threshold": n_low / n_valid,
+        "low_threshold": int(threshold),
+    }
+
+
+# --- Earth Engine: per-overpass reductions (needs ee) ---
 def _ndmi_image(image: "ee.Image") -> "ee.Image":
     """Per-scene NDMI = normalizedDifference(B8, B11), renamed to the index name."""
     return image.normalizedDifference(list(NDMI_BANDS)).rename(NDMI_NAME)
@@ -244,9 +274,7 @@ def _masked_ndmi_collection(region: "ee.Geometry", start: str, end: str,
                             ) -> "ee.ImageCollection":
     """S2 SR (harmonized) over [start, end): scene-cloud filter, SCL-mask, per-scene NDMI.
 
-    Mirrors Section 4's load_collection + index step but for an ARBITRARY date window
-    (used both for the per-overpass observed window and for each climatology-year
-    window). ``end`` is EXCLUSIVE (EE filterDate convention).
+    ``end`` is EXCLUSIVE (EE filterDate convention).
     """
     return (ee.ImageCollection(COLLECTION_ID)
             .filterBounds(region)
@@ -263,40 +291,51 @@ def _date_str(ts: pd.Timestamp) -> str:
 
 def observed_image(region: "ee.Geometry", center_date: pd.Timestamp,
                    window_days: int = WINDOW_DAYS) -> "ee.Image":
-    """Per-overpass OBSERVED NDMI: median composite within +/-window of the overpass date.
-
-    The window is in the overpass's OWN year (2023). ``median()`` is robust to residual
-    cloud (matches Section 4's warm-season median). Returns a single-band EE image.
-    """
+    """Per-overpass OBSERVED NDMI: median composite within +/-window of the overpass date (2023)."""
     lo, hi = date_window_bounds(center_date, window_days)
     end_excl = hi + pd.Timedelta(days=1)          # make the last day inclusive
     coll = _masked_ndmi_collection(region, _date_str(lo), _date_str(end_excl))
     return coll.median().rename(NDMI_NAME)
 
 
+def observed_count_image(region: "ee.Geometry", center_date: pd.Timestamp,
+                         window_days: int = WINDOW_DAYS) -> "ee.Image":
+    """Post-SCL valid NDMI count in one observed +/-window as uint16 (zero unmasked)."""
+    lo, hi = date_window_bounds(center_date, window_days)
+    coll = _masked_ndmi_collection(
+        region, _date_str(lo), _date_str(hi + pd.Timedelta(days=1)))
+    return coll.count().rename(OBS_COUNT_NAME).unmask(0).toUint16()
+
+
+def _climatology_collection(region: "ee.Geometry", doy: int,
+                            years: Sequence[int], window_days: int = WINDOW_DAYS
+                            ) -> "ee.ImageCollection":
+    """Merged post-SCL NDMI collection for one LOYO day-of-year window."""
+    coll = None
+    for lo, hi in year_window_ranges(doy, years, window_days):
+        c = _masked_ndmi_collection(
+            region, _date_str(lo), _date_str(hi + pd.Timedelta(days=1)))
+        coll = c if coll is None else coll.merge(c)
+    return coll
+
+
 def climatology_images(region: "ee.Geometry", doy: int, years: Sequence[int],
                        window_days: int = WINDOW_DAYS) -> tuple["ee.Image", "ee.Image"]:
-    """Day-of-year LOYO climatology MEAN and STD images for one day-of-year.
-
-    Unions the +/-window date windows across every climatology ``years`` entry, builds
-    one masked-NDMI collection over that union, then reduces to ``mean()`` and
-    ``stdDev()`` (population std, matching Section 11's np.nanstd). Returns
-    ``(clim_mean_img, clim_std_img)`` as single-band EE images.
-    """
-    ranges = year_window_ranges(doy, years, window_days)
-    coll = None
-    for lo, hi in ranges:
-        end_excl = hi + pd.Timedelta(days=1)
-        c = _masked_ndmi_collection(region, _date_str(lo), _date_str(end_excl))
-        coll = c if coll is None else coll.merge(c)
+    """Day-of-year LOYO climatology mean and (population) std images for one day-of-year."""
+    coll = _climatology_collection(region, doy, years, window_days)
     mean_img = coll.mean().rename("clim_mean")
     std_img = coll.reduce(ee.Reducer.stdDev()).rename("clim_std")
     return mean_img, std_img
 
 
-# =========================================================================== #
-# Resilient download  (reuses Section 4's tiled geemap.download_ee_image ladder)
-# =========================================================================== #
+def climatology_count_image(region: "ee.Geometry", doy: int, years: Sequence[int],
+                            window_days: int = WINDOW_DAYS) -> "ee.Image":
+    """Post-SCL valid NDMI count in one merged LOYO climatology window."""
+    return (_climatology_collection(region, doy, years, window_days)
+            .count().rename(CLIM_COUNT_NAME).unmask(0).toUint16())
+
+
+# --- Resilient download (reuses Section 4's tiled geemap.download_ee_image ladder) ---
 @dataclasses.dataclass
 class TileResult:
     """Outcome of downloading one reduced 70 m image to a GeoTIFF (or Drive fallback)."""
@@ -306,6 +345,8 @@ class TileResult:
     method: str
     max_tile_size_mb: float | None = None
     drive_task_id: str | None = None
+    scale_m: int | None = None
+    resampling: str | None = None
 
     @property
     def is_local(self) -> bool:
@@ -313,7 +354,7 @@ class TileResult:
 
 
 def _export_to_drive(image: "ee.Image", name: str, region: "ee.Geometry",
-                     scale_m: int) -> TileResult:
+                     scale_m: int, resampling: str = "bilinear") -> TileResult:
     """Last resort: start an Export.image.toDrive task and flag it for the user."""
     task = ee.batch.Export.image.toDrive(
         image=image, description=name, folder=DRIVE_FOLDER, fileNamePrefix=name,
@@ -323,68 +364,64 @@ def _export_to_drive(image: "ee.Image", name: str, region: "ee.Geometry",
     log.error("Drive FALLBACK for %s: started Export.image.toDrive task id=%s "
               "(folder=%s, file=%s.tif)", name, task.id, DRIVE_FOLDER, name)
     return TileResult(name=name, path=None, method="Export.image.toDrive",
-                      drive_task_id=task.id)
+                      drive_task_id=task.id, scale_m=scale_m, resampling=resampling)
 
 
 def download_image(image: "ee.Image", name: str, region: "ee.Geometry", raw_dir: Path,
                    scale_m: int, tile_sizes_mb: Sequence[float] = MAX_TILE_SIZES_MB,
-                   overwrite: bool = True) -> TileResult:
-    """Download one reduced image to ``raw_dir/<name>.tif`` in EPSG:32612 at ``scale_m``.
+                   overwrite: bool = True, resampling: str = "bilinear") -> TileResult:
+    """Download one reduced image to ``raw_dir/<name>.tif`` (EPSG:32612, ``scale_m``).
 
-    Tiles+stitches via geemap.download_ee_image (geedim); on a compute/size failure
-    retries with a smaller per-tile size, then falls back to Export.image.toDrive --
-    the exact resilient pattern Section 4 uses. If the file already exists and
-    ``overwrite`` is False, reuses it (the --skip-download path).
+    Retries with smaller tiles on failure, then falls back to Export.image.toDrive.
+    With ``overwrite=False`` reuses a valid on-disk file (the --skip-download / resume path).
     """
     raw_dir.mkdir(parents=True, exist_ok=True)
     out_path = raw_dir / f"{name}.tif"
-    # Real 70 m composites are ~7 MB; anything tiny is a truncated/corrupt stub left by
-    # an interrupted run (e.g. a power-off mid-download) -- treat it as missing and refetch.
+    # Tiny continuous files are usually interrupted stubs. Count files may compress very
+    # small, so validate their GeoTIFF structure/dtype instead of applying a byte threshold.
     _MIN_VALID_BYTES = 100_000
     if not overwrite and out_path.exists():
-        if out_path.stat().st_size >= _MIN_VALID_BYTES:
+        is_count = "count" in name
+        valid_cache = (sec4._valid_cached_count_tif(out_path) if is_count
+                       else out_path.stat().st_size >= _MIN_VALID_BYTES)
+        if valid_cache:
             log.info("  reuse %s (%.2f MB on disk)", out_path.name,
                      out_path.stat().st_size / 1e6)
-            return TileResult(name=name, path=out_path, method="(reused local file)")
-        log.warning("  refetch %s (on-disk %d bytes < %d -> corrupt/truncated)",
-                    out_path.name, out_path.stat().st_size, _MIN_VALID_BYTES)
+            return TileResult(name=name, path=out_path, method="(reused local file)",
+                              scale_m=scale_m, resampling=resampling)
+        log.warning("  refetch %s (cached file failed %s validation)", out_path.name,
+                    "integer GeoTIFF" if is_count else f">={_MIN_VALID_BYTES}-byte")
 
     last_exc: Exception | None = None
     for mts in tile_sizes_mb:
         try:
             geemap.download_ee_image(
                 image, str(out_path), region=region, crs=config.CRS, scale=scale_m,
-                resampling="bilinear",        # continuous index; bilinear on EE reproject
+                resampling=resampling,
                 overwrite=True, max_tile_size=mts,
                 num_threads=MAX_REQUESTS, max_requests=MAX_REQUESTS)
             log.info("  downloaded %s (%.2f MB) at max_tile_size=%sMB",
                      out_path.name, out_path.stat().st_size / 1e6, mts)
             return TileResult(name=name, path=out_path,
-                              method="geemap.download_ee_image", max_tile_size_mb=mts)
+                              method="geemap.download_ee_image", max_tile_size_mb=mts,
+                              scale_m=scale_m, resampling=resampling)
         except Exception as exc:  # noqa: BLE001 - retry smaller, then Drive
             last_exc = exc
             log.warning("  download %s failed at max_tile_size=%sMB: %s: %s -- "
                         "retrying smaller", name, mts, type(exc).__name__, exc)
     log.error("  all tiled attempts for %s failed (last: %s: %s).",
               name, type(last_exc).__name__, last_exc)
-    return _export_to_drive(image, name, region, scale_m)
+    return _export_to_drive(image, name, region, scale_m, resampling=resampling)
 
 
-# =========================================================================== #
-# Loading helpers (the geo stack)
-# =========================================================================== #
+# --- Loading helpers (the geo stack) ---
 def _reference() -> "xr.DataArray":
     """The 70 m reference grid as a 2-D rioxarray DataArray (the match target / CRS)."""
     return rioxarray.open_rasterio(config.REFERENCE_GRID_TIF).squeeze("band", drop=True)
 
 
 def load_overpass_axis(processed: Path) -> pd.DataFrame:
-    """The 66-overpass master axis (overpass, key, time) from the Section 9 cube.
-
-    The Section 9 analysis cube is the authoritative overpass axis used everywhere
-    downstream, so we reuse its order verbatim -- the time series shares the exact
-    overpass index Section 11 expects. Returns columns overpass / overpass_key / time.
-    """
+    """The 66-overpass master axis (overpass, key, time) from the Section 9 cube, in its order."""
     cube = xr.open_zarr(processed / ANALYSIS_CUBE, decode_coords="all")
     df = pd.DataFrame({
         "overpass": np.asarray(cube["overpass"].values, dtype="int32"),
@@ -396,12 +433,9 @@ def load_overpass_axis(processed: Path) -> pd.DataFrame:
 
 
 def _read_grid_array(path: Path, reference: "xr.DataArray") -> np.ndarray:
-    """Open a downloaded GeoTIFF, reproject_match to the reference grid, return float32.
+    """Open a downloaded GeoTIFF, reproject_match (bilinear) to the reference grid, return float32.
 
-    geemap already wrote EPSG:32612 at the requested scale, but a tiny origin/extent
-    mismatch (sub-pixel) can occur; reproject_match snaps it EXACTLY onto
-    reference_grid.tif (bilinear, the continuous-field rule) so every band lands on the
-    identical 66 x 1155 x 1339 grid as the other cubes. NaN where masked/no-data.
+    Snaps any sub-pixel origin/extent mismatch exactly onto reference_grid.tif. NaN where masked.
     """
     from rasterio.enums import Resampling
     da = rioxarray.open_rasterio(path, masked=True).squeeze("band", drop=True)
@@ -409,17 +443,30 @@ def _read_grid_array(path: Path, reference: "xr.DataArray") -> np.ndarray:
     return matched.values.astype("float32")
 
 
-# =========================================================================== #
-# Assembly -> the NDMI time-series Zarr
-# =========================================================================== #
+def _read_grid_count(path: Path, reference: "xr.DataArray") -> np.ndarray:
+    """Open a count GeoTIFF, nearest-match to 70 m, assert exact nonnegative integers."""
+    from rasterio.enums import Resampling
+    da = rioxarray.open_rasterio(path, masked=False).squeeze("band", drop=True)
+    matched = da.rio.reproject_match(reference, resampling=Resampling.nearest)
+    values = np.asarray(matched.values)
+    if np.any(~np.isfinite(values)) or np.any(values < 0) \
+            or not np.all(values == np.floor(values)):
+        raise AssertionError(f"{path.name}: count is not finite/nonnegative integer")
+    if np.max(values, initial=0) > np.iinfo("int16").max:
+        raise AssertionError(f"{path.name}: count exceeds int16 storage")
+    return values.astype("int16")
+
+
+# --- Assembly -> the NDMI time-series Zarr ---
 def _blosc():
     import numcodecs
     return numcodecs.Blosc(cname="zstd", clevel=5, shuffle=numcodecs.Blosc.SHUFFLE)
 
 
 def assemble_dataset(observed: np.ndarray, clim_mean: np.ndarray, clim_std: np.ndarray,
+                     observed_count: np.ndarray, clim_count: np.ndarray,
                      overpasses: pd.DataFrame, reference: "xr.DataArray") -> "xr.Dataset":
-    """Build the (overpass, y, x) NDMI time-series dataset with CF coords + provenance."""
+    """Build NDMI values, nearest count diagnostics, and non-destructive <3 flags."""
     coords = {
         "overpass": overpasses["overpass"].to_numpy(),
         "overpass_key": ("overpass", overpasses["overpass_key"].to_numpy()),
@@ -433,13 +480,34 @@ def assemble_dataset(observed: np.ndarray, clim_mean: np.ndarray, clim_std: np.n
             "observed": (("overpass", "y", "x"), observed),
             "clim_mean": (("overpass", "y", "x"), clim_mean),
             "clim_std": (("overpass", "y", "x"), clim_std),
+            OBS_COUNT_NAME: (("overpass", "y", "x"), observed_count.astype("int16")),
+            CLIM_COUNT_NAME: (("overpass", "y", "x"), clim_count.astype("int16")),
+            OBS_LOW_FLAG_NAME: (("overpass", "y", "x"),
+                                low_count_flag(observed_count)),
+            CLIM_LOW_FLAG_NAME: (("overpass", "y", "x"),
+                                 low_count_flag(clim_count)),
         },
         coords=coords,
     )
     ds = ds.rio.write_crs(reference.rio.crs)
-    for v in ds.data_vars:
+    for v in ("observed", "clim_mean", "clim_std"):
         ds[v].attrs["grid_mapping"] = "spatial_ref"
         ds[v].attrs["units"] = "1"                # NDMI is dimensionless
+    for v in (OBS_COUNT_NAME, CLIM_COUNT_NAME):
+        ds[v].attrs.update({
+            "grid_mapping": "spatial_ref", "units": "valid scenes",
+            "resampling": COUNT_RESAMPLING, "missing_value": COUNT_MISSING,
+            "valid_min": 0,
+            "low_count_rule": (f"count < {LOW_VALID_SCENE_COUNT} is flagged only; "
+                               "NDMI is not masked"),
+        })
+    for v in (OBS_LOW_FLAG_NAME, CLIM_LOW_FLAG_NAME):
+        ds[v].attrs.update({
+            "grid_mapping": "spatial_ref", "units": "1",
+            "flag_values": [0, 1],
+            "flag_meanings": "adequate_or_missing low_valid_scene_count",
+            "diagnostic_only": "does not mask observed/climatological NDMI",
+        })
     ds["observed"].attrs["long_name"] = (
         "Per-overpass observed Sentinel-2 NDMI: cloud-masked S2 median composite within "
         f"+/-{WINDOW_DAYS} d of the overpass date (2023). Time-varying (vs the old single "
@@ -450,6 +518,10 @@ def assemble_dataset(observed: np.ndarray, clim_mean: np.ndarray, clim_std: np.n
         f"within +/-{WINDOW_DAYS} d of the overpass day-of-year.")
     ds["clim_std"].attrs["long_name"] = (
         "Day-of-year NDMI climatological standard deviation over the same LOYO window.")
+    ds[OBS_COUNT_NAME].attrs["long_name"] = (
+        "Post-SCL valid Sentinel-2 NDMI observations in each +/-15-day observed window")
+    ds[CLIM_COUNT_NAME].attrs["long_name"] = (
+        "Post-SCL valid Sentinel-2 NDMI observations in each merged LOYO climatology window")
     ds.attrs["title"] = ("Section 4b: time-resolved Sentinel-2 NDMI (per-overpass observed "
                          "+ 2018-2024 leave-one-year-out day-of-year climatology) on the 70 m grid")
     ds.attrs["crs"] = config.CRS
@@ -457,13 +529,23 @@ def assemble_dataset(observed: np.ndarray, clim_mean: np.ndarray, clim_std: np.n
     ds.attrs["climatology_years"] = list(config.CLIMATOLOGY_YEARS)
     ds.attrs["climatology_window_days"] = WINDOW_DAYS
     ds.attrs["scene_cloud_pct_max"] = MAX_SCENE_CLOUD_PCT
+    ds.attrs["scene_prefilter_keep_rule"] = (
+        f"CLOUDY_PIXEL_PERCENTAGE < {MAX_SCENE_CLOUD_PCT:g}")
+    ds.attrs["scene_prefilter_role"] = (
+        "broad scene guard; per-pixel SCL masking is primary")
+    ds.attrs["scene_prefilter_totals_scope"] = (
+        "not collapsed across overlapping observed/climatology windows; use the per-window "
+        "post-SCL count variables and the Section 4 warm-season before/after totals")
+    ds.attrs["valid_count_resampling"] = COUNT_RESAMPLING
+    ds.attrs["low_valid_scene_count_threshold"] = LOW_VALID_SCENE_COUNT
+    ds.attrs["low_count_action"] = "flag only; do not mask NDMI"
     ds.attrs["scl_drop_classes"] = list(SCL_DROP_CLASSES)
     ds.attrs["ndmi_bands"] = list(NDMI_BANDS)
     ds.attrs["native_scale_m"] = NDMI_NATIVE_SCALE_M
     ds.attrs["supersedes"] = (
         f"data/interim/{OLD_STATIC_NDMI_TIF} (the single static 2023 warm-season median) "
-        "as the input to Section 11's NDMI water-supply z-score: this product unfreezes the "
-        "CSI supply axis by giving NDMI a real time dimension.")
+        "as the input to Section 11's NDMI vegetation-condition check; this product gives "
+        "that check a real time dimension but does not define the primary water-supply axis.")
     ds.attrs["method_observed"] = (
         f"per-overpass S2 NDMI median over [date+/-{WINDOW_DAYS} d] in the overpass year (2023)")
     ds.attrs["method_climatology"] = (
@@ -488,9 +570,7 @@ def write_zarr(ds: "xr.Dataset", store: Path) -> Path:
     return store
 
 
-# =========================================================================== #
-# Manifest
-# =========================================================================== #
+# --- Manifest ---
 def record_in_manifest(tiles: Sequence[TileResult], project: str) -> None:
     """Append each downloaded per-overpass / per-day-of-year GeoTIFF to the manifest."""
     today = _dt.datetime.now(_dt.timezone.utc).date().isoformat()
@@ -498,9 +578,12 @@ def record_in_manifest(tiles: Sequence[TileResult], project: str) -> None:
     for t in tiles:
         if not t.is_local or t.method == "(reused local file)":
             continue
+        is_count = "count" in t.name
+        artifact = ("post-SCL valid-scene count; integer; nearest-neighbour"
+                    if is_count else "time-resolved NDMI reduction; continuous")
         rows.append({
             "source": (f"Google Earth Engine {COLLECTION_ID} (project={project}; "
-                       f"time-resolved NDMI Section 4b; {NDMI_NATIVE_SCALE_M} m native; "
+                       f"Section 4b {artifact}; output scale={t.scale_m or 'unknown'} m; "
                        f"EPSG:32612; geemap.download_ee_image; {t.name})"),
             "dataset": DATASET_ID,
             "filename": t.path.name,
@@ -512,17 +595,17 @@ def record_in_manifest(tiles: Sequence[TileResult], project: str) -> None:
         log.info("Recorded %d Section 4b GeoTIFFs in the manifest.", len(rows))
 
 
-# =========================================================================== #
-# Download orchestration (EE)
-# =========================================================================== #
+# --- Download orchestration (EE) ---
 def download_all(overpasses: pd.DataFrame, region: "ee.Geometry", raw_dir: Path,
                  scale_m: int, overwrite: bool,
-                 only_overpass: int | None = None) -> list[TileResult]:
-    """Download per-overpass observed + (deduped) day-of-year climatology mean/std.
+                 only_overpass: int | None = None,
+                 counts_only: bool = False,
+                 include_counts: bool = True) -> list[TileResult]:
+    """Download values plus counts, or resume only missing count diagnostics.
 
-    Returns ALL TileResults (observed + the unique-day-of-year clim mean/std), so the
-    manifest records every downloaded GeoTIFF. The per-day-of-year clim tiles are named
-    by day-of-year so the dedup is visible on disk and reusable across overpasses.
+    Count files are named separately and always use nearest resampling. ``counts_only``
+    skips observed/climatology value reductions, reuses existing count files, and is the
+    safe recovery path after the original continuous tiles have already been cached.
     """
     n = len(overpasses)
     groups, unique_doys = dedup_climatology_windows(overpasses)
@@ -532,7 +615,7 @@ def download_all(overpasses: pd.DataFrame, region: "ee.Geometry", raw_dir: Path,
 
     tiles: list[TileResult] = []
 
-    # --- per-overpass OBSERVED median composites (in 2023) -------------------- #
+    # Per-overpass OBSERVED median composites (in 2023).
     op_iter = range(n) if only_overpass is None else [only_overpass]
     for i in op_iter:
         row = overpasses.iloc[i]
@@ -540,12 +623,17 @@ def download_all(overpasses: pd.DataFrame, region: "ee.Geometry", raw_dir: Path,
         log.info("[observed %2d/%d] op=%d key=%s date=%s window=[%s..%s]",
                  i + 1 if only_overpass is None else i, n, int(row["overpass"]),
                  row["overpass_key"], _date_str(row["time"]), _date_str(lo), _date_str(hi))
-        img = observed_image(region, row["time"])
-        tiles.append(download_image(img, f"obs_op{i:02d}", region, raw_dir, scale_m,
-                                    overwrite=overwrite))
+        if not counts_only:
+            img = observed_image(region, row["time"])
+            tiles.append(download_image(img, f"obs_op{i:02d}", region, raw_dir, scale_m,
+                                        overwrite=overwrite))
+        if include_counts:
+            count_img = observed_count_image(region, row["time"])
+            tiles.append(download_image(
+                count_img, f"obs_count_op{i:02d}", region, raw_dir, scale_m,
+                overwrite=False, resampling=COUNT_DOWNLOAD_RESAMPLING))
 
-    # --- deduped day-of-year CLIMATOLOGY mean/std (LOYO) ---------------------- #
-    # When testing a single overpass, only fetch that overpass's day-of-year climatology.
+    # Deduped day-of-year CLIMATOLOGY mean/std (LOYO).
     doys_to_do = unique_doys
     if only_overpass is not None:
         doys_to_do = [doy_of(overpasses.iloc[only_overpass]["time"])]
@@ -553,11 +641,17 @@ def download_all(overpasses: pd.DataFrame, region: "ee.Geometry", raw_dir: Path,
         yrs = climatology_years(2023)             # all pilot overpasses are 2023 -> LOYO drops 2023
         log.info("[clim %2d/%d] doy=%d  LOYO years=%s  (serves %d overpass(es))",
                  k + 1, len(doys_to_do), d, yrs, len(groups.get(d, [])))
-        mean_img, std_img = climatology_images(region, d, yrs)
-        tiles.append(download_image(mean_img, f"clim_mean_doy{d:03d}", region, raw_dir,
-                                    scale_m, overwrite=overwrite))
-        tiles.append(download_image(std_img, f"clim_std_doy{d:03d}", region, raw_dir,
-                                    scale_m, overwrite=overwrite))
+        if not counts_only:
+            mean_img, std_img = climatology_images(region, d, yrs)
+            tiles.append(download_image(mean_img, f"clim_mean_doy{d:03d}", region, raw_dir,
+                                        scale_m, overwrite=overwrite))
+            tiles.append(download_image(std_img, f"clim_std_doy{d:03d}", region, raw_dir,
+                                        scale_m, overwrite=overwrite))
+        if include_counts:
+            count_img = climatology_count_image(region, d, yrs)
+            tiles.append(download_image(
+                count_img, f"clim_count_doy{d:03d}", region, raw_dir, scale_m,
+                overwrite=False, resampling=COUNT_DOWNLOAD_RESAMPLING))
     return tiles
 
 
@@ -565,21 +659,23 @@ def assemble_from_disk(overpasses: pd.DataFrame, raw_dir: Path,
                        reference: "xr.DataArray") -> "xr.Dataset":
     """Read the downloaded per-overpass / per-day-of-year GeoTIFFs into the (66,y,x) cube.
 
-    The climatology was deduped by day-of-year on download, so here we MAP each
-    day-of-year tile back to EVERY overpass sharing that day-of-year -- the documented
-    dedup round-trip. Missing tiles (e.g. a Drive fallback not yet retrieved) leave that
-    overpass's slice NaN and are reported by the caller.
+    Maps each deduped day-of-year clim tile back to every overpass sharing it; missing tiles
+    (e.g. a Drive fallback not yet retrieved) leave that slice NaN and are reported.
     """
     n = len(overpasses)
     ny, nx = reference.sizes["y"], reference.sizes["x"]
     observed = np.full((n, ny, nx), np.nan, dtype="float32")
     clim_mean = np.full((n, ny, nx), np.nan, dtype="float32")
     clim_std = np.full((n, ny, nx), np.nan, dtype="float32")
+    observed_count = np.full((n, ny, nx), COUNT_MISSING, dtype="int16")
+    clim_count = np.full((n, ny, nx), COUNT_MISSING, dtype="int16")
 
     # Cache per-day-of-year clim arrays so each unique tile is read from disk once.
     cm_cache: dict[int, np.ndarray] = {}
     cs_cache: dict[int, np.ndarray] = {}
-    missing: list[str] = []
+    cc_cache: dict[int, np.ndarray] = {}
+    missing_values: list[str] = []
+    missing_counts: list[str] = []
 
     for i in range(n):
         d = doy_of(overpasses.iloc[i]["time"])
@@ -587,7 +683,12 @@ def assemble_from_disk(overpasses: pd.DataFrame, raw_dir: Path,
         if obs_p.exists():
             observed[i] = _read_grid_array(obs_p, reference)
         else:
-            missing.append(obs_p.name)
+            missing_values.append(obs_p.name)
+        obs_count_p = raw_dir / f"obs_count_op{i:02d}.tif"
+        if obs_count_p.exists():
+            observed_count[i] = _read_grid_count(obs_count_p, reference)
+        else:
+            missing_counts.append(obs_count_p.name)
 
         if d not in cm_cache:
             cm_p = raw_dir / f"clim_mean_doy{d:03d}.tif"
@@ -595,23 +696,33 @@ def assemble_from_disk(overpasses: pd.DataFrame, raw_dir: Path,
             cm_cache[d] = _read_grid_array(cm_p, reference) if cm_p.exists() else None
             cs_cache[d] = _read_grid_array(cs_p, reference) if cs_p.exists() else None
             if cm_cache[d] is None:
-                missing.append(cm_p.name)
+                missing_values.append(cm_p.name)
             if cs_cache[d] is None:
-                missing.append(cs_p.name)
+                missing_values.append(cs_p.name)
+            cc_p = raw_dir / f"clim_count_doy{d:03d}.tif"
+            cc_cache[d] = _read_grid_count(cc_p, reference) if cc_p.exists() else None
+            if cc_cache[d] is None:
+                missing_counts.append(cc_p.name)
         if cm_cache[d] is not None:
             clim_mean[i] = cm_cache[d]
         if cs_cache[d] is not None:
             clim_std[i] = cs_cache[d]
+        if cc_cache[d] is not None:
+            clim_count[i] = cc_cache[d]
 
-    if missing:
-        log.warning("assemble_from_disk: %d expected GeoTIFF(s) missing -> those slices "
-                    "stay NaN: %s", len(missing), sorted(set(missing))[:8])
-    return assemble_dataset(observed, clim_mean, clim_std, overpasses, reference)
+    if missing_values:
+        unique = sorted(set(missing_values))
+        log.warning("assemble_from_disk: %d value GeoTIFF(s) missing -> those slices "
+                    "stay NaN: %s", len(unique), unique[:8])
+    if missing_counts:
+        unique = sorted(set(missing_counts))
+        log.warning("assemble_from_disk: %d count GeoTIFF(s) missing -> count=-1 and low "
+                    "flag=0; NDMI remains unchanged: %s", len(unique), unique[:8])
+    return assemble_dataset(observed, clim_mean, clim_std, observed_count, clim_count,
+                            overpasses, reference)
 
 
-# =========================================================================== #
-# QC (Section 2 of the brief)
-# =========================================================================== #
+# --- QC (Section 2 of the brief) ---
 def _assert_on_grid(ds: "xr.Dataset", reference: "xr.DataArray") -> None:
     """Assert the saved cube is EPSG:32612 and snapped EXACTLY to reference_grid.tif."""
     crs = ds.rio.crs
@@ -717,6 +828,51 @@ def run_qc(store: Path, reference: "xr.DataArray", interim: Path) -> dict:
                  r["observed_finite_frac"])
     log.info("  min observed finite-fraction over all overpasses = %.3f", float(np.nanmin(cov)))
 
+    # (g) Post-SCL valid-scene counts and diagnostic-only low-count flags.
+    log.info("-" * 72)
+    log.info("QC(g): post-SCL valid-scene counts (nearest; count<%d is FLAGGED, not masked)",
+             LOW_VALID_SCENE_COUNT)
+    count_pairs = ((OBS_COUNT_NAME, OBS_LOW_FLAG_NAME, "observed"),
+                   (CLIM_COUNT_NAME, CLIM_LOW_FLAG_NAME, "climatology"))
+    missing_vars = [name for pair in count_pairs for name in pair[:2] if name not in ds]
+    if missing_vars:
+        out["valid_count_status"] = "pending count-only retrieval/rebuild"
+        out["valid_count_missing_variables"] = missing_vars
+        log.warning("  count diagnostics not present in this saved store: %s", missing_vars)
+        log.warning("  existing continuous NDMI values remain valid; run --counts-only to "
+                    "retrieve counts, then rebuild the store.")
+    else:
+        out["valid_count_status"] = "available"
+        count_stats: dict[str, dict] = {}
+        for count_name, flag_name, label in count_pairs:
+            arr = np.asarray(ds[count_name].values)
+            stats = count_cube_stats(arr)
+            expected_flag = low_count_flag(arr)
+            actual_flag = np.asarray(ds[flag_name].values, dtype="uint8")
+            if not np.array_equal(actual_flag, expected_flag):
+                raise AssertionError(f"{flag_name} does not exactly match count<"
+                                     f"{LOW_VALID_SCENE_COUNT}")
+            per_slice_low = []
+            per_slice_missing = []
+            for slab in arr:
+                valid = slab != COUNT_MISSING
+                per_slice_low.append(
+                    float(low_count_flag(slab).sum() / valid.sum()) if valid.any() else np.nan)
+                per_slice_missing.append(float((~valid).mean()))
+            per_op[f"{label}_count_lt{LOW_VALID_SCENE_COUNT}_frac"] = per_slice_low
+            per_op[f"{label}_count_missing_frac"] = per_slice_missing
+            count_stats[count_name] = stats
+            log.info("  %-13s min=%s median=%s max=%s; low=%d/%d (%.3f%%); "
+                     "missing=%d (%.3f%%)", label, stats["min"], stats["median"],
+                     stats["max"], stats["n_lt_threshold"], stats["n_valid"],
+                     100 * (stats["frac_lt_threshold"] or 0.0), stats["n_missing"],
+                     100 * (stats["frac_missing"] or 0.0))
+        out["valid_count_stats"] = count_stats
+        log.info("  ASSERTIONS PASSED: count rasters are finite nonnegative integers (or -1 "
+                 "when unavailable); flags match exactly; NDMI arrays are not changed.")
+
+    out["per_overpass"] = per_op
+
     ds.close()
     return out
 
@@ -754,11 +910,9 @@ def _spot_check(ds: "xr.Dataset") -> pd.DataFrame:
 
 
 def _agreement_with_old(ds: "xr.Dataset", interim: Path, reference: "xr.DataArray") -> dict:
-    """Correlate the NEW observed SEASON-MEDIAN against the OLD static composite.
+    """Spatially correlate the NEW observed season-median against the OLD static composite.
 
-    The new per-overpass observed, aggregated over time (per-pixel season median),
-    should reproduce the OLD single warm-season median's spatial pattern (the new one
-    just RESOLVES the time the old one collapsed). High spatial correlation = consistent.
+    High correlation = the new product resolves the time the old one collapsed, consistently.
     """
     old_p = interim / OLD_STATIC_NDMI_TIF
     if not old_p.exists():
@@ -779,11 +933,70 @@ def _agreement_with_old(ds: "xr.Dataset", interim: Path, reference: "xr.DataArra
     return {"n_common": n, "pearson_r": r, "bias_new_minus_old": bias, "mae": mae}
 
 
-# =========================================================================== #
-# Orchestration / CLI
-# =========================================================================== #
+def render_timeseries_coverage_note(inventory: dict, qc: dict | None = None) -> str:
+    """Markdown body for the Section 4b marker in the shared coverage note."""
+    stats_by_var = (qc or {}).get("valid_count_stats", {})
+    rows = []
+    for variable, label in ((OBS_COUNT_NAME, "Observed +/-15-day window"),
+                            (CLIM_COUNT_NAME, "LOYO climatology window")):
+        stats = stats_by_var.get(variable)
+        if stats and stats.get("n_valid"):
+            low = (f"{stats['n_lt_threshold']:,} "
+                   f"({100 * stats['frac_lt_threshold']:.3f}%)")
+            missing = (f"{stats['n_missing']:,} "
+                       f"({100 * stats['frac_missing']:.3f}%)")
+            fields = (str(stats["min"]), f"{stats['median']:.1f}", str(stats["max"]),
+                      low, missing)
+        else:
+            fields = ("pending",) * 5
+        rows.append(f"| {label} | {' | '.join(fields)} |")
+
+    missing_names = inventory.get("missing_names", [])
+    sample = ", ".join(f"`{name}`" for name in missing_names[:6])
+    missing_detail = (f" First missing files: {sample}." if sample else "")
+    return "\n".join([
+        "## Section 4b time-resolved NDMI",
+        "",
+        (f"The resumable count cache expects **{inventory['expected']:,}** files "
+         f"(one observed count per overpass plus one climatology count per unique day-of-year): "
+         f"**{inventory['present']:,} present**, **{inventory['missing']:,} missing**."
+         f"{missing_detail}"),
+        "",
+        (f"The same broad scene guard keeps `CLOUDY_PIXEL_PERCENTAGE < "
+         f"{MAX_SCENE_CLOUD_PCT:g}`; per-pixel SCL masking remains primary. A single "
+         "before/after scene total is not collapsed across the overlapping time windows, "
+         "because that would double-count scenes. The non-overlapping warm-season totals "
+         "are recorded in the Section 4 table above."),
+        "",
+        "| Count variable | min | median | max | 70 m cells with count <3 | count unavailable (-1) |",
+        "|---|---:|---:|---:|---:|---:|",
+        *rows,
+        "",
+        ("Count GeoTIFFs and cube variables use nearest-neighbour resampling and exact integer "
+         "storage. A genuine zero is a valid count. Only `-1` means the count tile has not "
+         "been retrieved. The separate `<3` flags are diagnostic and never mask NDMI."),
+        "",
+        ("Existing median/mean/std tiles cannot reconstruct these counts. Missing files require "
+         "an authenticated Earth Engine run with `python src/section4b_ndmi_timeseries.py "
+         "--counts-only`; the command is interruption-safe and reuses completed count tiles."),
+    ])
+
+
+def update_timeseries_coverage_note(inventory: dict, qc: dict | None = None) -> Path:
+    """Persist Section 4b count-cache state and any available count statistics."""
+    return sec4.update_coverage_note(
+        "SECTION4B_TIMESERIES", render_timeseries_coverage_note(inventory, qc))
+
+
+# --- Orchestration / CLI ---
 def run(skip_download: bool = False, coarse_scale: int | None = None,
-        only_overpass: int | None = None, verify_only: bool = False) -> dict:
+        only_overpass: int | None = None, verify_only: bool = False,
+        counts_only: bool = False) -> dict:
+    if skip_download and counts_only:
+        raise SystemExit("--skip-download and --counts-only are mutually exclusive")
+    if coarse_scale is not None and counts_only:
+        raise SystemExit("--counts-only must run at the exact 70 m analysis scale; remove "
+                         "--coarse-scale")
     config.ensure_dirs()
     interim = config.INTERIM_DIR
     processed = config.PROCESSED_DIR
@@ -796,11 +1009,14 @@ def run(skip_download: bool = False, coarse_scale: int | None = None,
              sorted({t.year for t in overpasses["time"]}), WINDOW_DAYS,
              list(config.CLIMATOLOGY_YEARS))
 
-    results: dict = {"store": store}
+    inventory = count_cache_inventory(overpasses, raw_dir)
+    results: dict = {"store": store, "count_inventory_before": inventory}
     scale_m = coarse_scale or config.CELL_SIZE_M
 
     if verify_only:
         results["qc"] = run_qc(store, reference, interim)
+        results["count_inventory_after"] = count_cache_inventory(overpasses, raw_dir)
+        update_timeseries_coverage_note(results["count_inventory_after"], results["qc"])
         _report(results, only_overpass, coarse_scale)
         return results
 
@@ -808,14 +1024,15 @@ def run(skip_download: bool = False, coarse_scale: int | None = None,
     if not skip_download:
         project = sec4.initialize_ee()
         region = sec4.study_region()
-        # overwrite=False -> RESUME: reuse valid on-disk tiles, refetch only missing or
-        # corrupt ones. This expensive ~170-tile EE pull is interruption-safe (a power-off
-        # or killed run just continues). Delete a tile (or data/raw/sentinel2_ndmi_ts/) to
-        # force a fresh fetch; --skip-download skips the download phase entirely.
+        # overwrite=False -> RESUME: reuse valid on-disk tiles, refetch only missing/corrupt
+        # ones, so both value and count pulls are interruption-safe. Delete a tile (or the
+        # raw subdir) to force a fresh fetch; --skip-download skips downloads entirely.
         tiles = download_all(overpasses, region, raw_dir, scale_m,
-                             overwrite=False, only_overpass=only_overpass)
-        # A coarse-scale smoke test or a single --overpass run is not the full native
-        # product, so it exercises the wiring but is kept OUT of the manifest.
+                             overwrite=False, only_overpass=only_overpass,
+                             counts_only=counts_only,
+                             include_counts=coarse_scale is None)
+        # A coarse-scale or single-overpass run is not the native product -> keep it OUT of
+        # the manifest.
         if coarse_scale is None and only_overpass is None:
             record_in_manifest(tiles, project)
         results["tiles"] = tiles
@@ -828,6 +1045,8 @@ def run(skip_download: bool = False, coarse_scale: int | None = None,
             for t in drive:
                 log.error("  * %s.tif (task id=%s)", t.name, t.drive_task_id)
             results["drive_fallback"] = drive
+            results["count_inventory_after"] = count_cache_inventory(overpasses, raw_dir)
+            update_timeseries_coverage_note(results["count_inventory_after"])
             _report(results, only_overpass, coarse_scale)
             return results
 
@@ -835,6 +1054,8 @@ def run(skip_download: bool = False, coarse_scale: int | None = None,
         log.info("--overpass %d: downloaded that overpass's tiles only; skipping the "
                  "full-cube assembly (use a full run to build the Zarr).", only_overpass)
         results["single_overpass"] = only_overpass
+        results["count_inventory_after"] = count_cache_inventory(overpasses, raw_dir)
+        update_timeseries_coverage_note(results["count_inventory_after"])
         _report(results, only_overpass, coarse_scale)
         return results
 
@@ -842,6 +1063,8 @@ def run(skip_download: bool = False, coarse_scale: int | None = None,
     write_zarr(ds, store)
     ds.close()
     results["qc"] = run_qc(store, reference, interim)
+    results["count_inventory_after"] = count_cache_inventory(overpasses, raw_dir)
+    update_timeseries_coverage_note(results["count_inventory_after"], results["qc"])
     _report(results, only_overpass, coarse_scale)
     return results
 
@@ -858,22 +1081,32 @@ def _report(results: dict, only_overpass: int | None, coarse_scale: int | None) 
     if "qc" in results and results["qc"]:
         qc = results["qc"]
         if "observed_spatialmean_spread" in qc:
-            log.info("  OBSERVED spatial-mean spread across overpasses = %.4f (the supply "
-                     "axis is now TIME-VARYING).", qc["observed_spatialmean_spread"])
+            log.info("  OBSERVED spatial-mean spread across overpasses = %.4f (the NDMI "
+                     "vegetation-condition check is TIME-VARYING).",
+                     qc["observed_spatialmean_spread"])
         if qc.get("agreement"):
             log.info("  agreement with old static composite: Pearson r=%.4f",
                      qc["agreement"].get("pearson_r", float("nan")))
+    inventory = results.get("count_inventory_after", results.get("count_inventory_before"))
+    if inventory:
+        log.info("  count cache: %d/%d present; %d still require Earth Engine",
+                 inventory["present"], inventory["expected"], inventory["missing"])
     log.info("=" * 72)
 
 
 def _build_arg_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         description="Section 4b - time-resolved Sentinel-2 NDMI (per-overpass observed + "
-                    "2018-2024 leave-one-year-out day-of-year climatology) to unfreeze "
-                    "the CSI water-supply axis.")
-    p.add_argument("--skip-download", action="store_true",
-                   help="reuse the per-overpass / per-day-of-year GeoTIFFs already in "
-                        "data/raw/sentinel2_ndmi_ts/ (assemble + QC only).")
+                    "2018-2024 leave-one-year-out day-of-year climatology) for the "
+                    "vegetation-condition check.")
+    mode = p.add_mutually_exclusive_group()
+    mode.add_argument("--skip-download", action="store_true",
+                      help="reuse the per-overpass / per-day-of-year GeoTIFFs already in "
+                           "data/raw/sentinel2_ndmi_ts/ (assemble + QC only).")
+    mode.add_argument("--counts-only", action="store_true",
+                      help="retrieve/reuse only the missing post-SCL observed and climatology "
+                           "count tiles at 70 m with nearest-neighbour resampling; do not "
+                           "redownload continuous NDMI tiles.")
     p.add_argument("--overpass", type=int, default=None,
                    help="(test) download ONLY this overpass index (0-based) + its day-of-year "
                         "climatology; skip the full-cube assembly.")
@@ -891,7 +1124,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         level=logging.DEBUG if args.verbose else logging.INFO,
         format="%(asctime)s %(levelname)-7s %(message)s", datefmt="%H:%M:%S")
     run(skip_download=args.skip_download, coarse_scale=args.coarse_scale,
-        only_overpass=args.overpass, verify_only=args.verify_only)
+        only_overpass=args.overpass, verify_only=args.verify_only,
+        counts_only=args.counts_only)
     return 0
 
 

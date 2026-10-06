@@ -1,0 +1,46 @@
+{
+  "case_study_candidates_at_25deg": [
+    "denver_aurora"
+  ],
+  "decision_id": "D0083",
+  "gate": "G4_DIAGNOSTIC_CLOSEOUT",
+  "pooled_contrast_authorized": false,
+  "record_2026_opened": false,
+  "temperature_or_lst_opened": false,
+  "thresholds": {
+    "10": {
+      "city_share_cap_pass": false,
+      "four_city_pooled_support_pass": false,
+      "maximum_city_share": 0.6666666666666666,
+      "pooled_high_demand_contrast_eligible": false,
+      "within_city_passing_cities": [],
+      "within_city_passing_city_count": 0
+    },
+    "15": {
+      "city_share_cap_pass": false,
+      "four_city_pooled_support_pass": false,
+      "maximum_city_share": 0.42857142857142855,
+      "pooled_high_demand_contrast_eligible": false,
+      "within_city_passing_cities": [],
+      "within_city_passing_city_count": 0
+    },
+    "20": {
+      "city_share_cap_pass": false,
+      "four_city_pooled_support_pass": false,
+      "maximum_city_share": 0.42857142857142855,
+      "pooled_high_demand_contrast_eligible": false,
+      "within_city_passing_cities": [],
+      "within_city_passing_city_count": 0
+    },
+    "25": {
+      "city_share_cap_pass": false,
+      "four_city_pooled_support_pass": false,
+      "maximum_city_share": 0.5576923076923077,
+      "pooled_high_demand_contrast_eligible": false,
+      "within_city_passing_cities": [
+        "denver_aurora"
+      ],
+      "within_city_passing_city_count": 1
+    }
+  }
+}

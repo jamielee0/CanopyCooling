@@ -1,0 +1,26 @@
+{
+  "decision_ids": [
+    "D0065",
+    "D0066",
+    "D0067",
+    "D0068"
+  ],
+  "generated_utc": "2026-08-13T10:48:23.412537+00:00",
+  "holdout_opened": false,
+  "record_2026_queried": false,
+  "sources": {
+    "data/raw/v2/hitl/g3_sampling_design_revision/mod13q1_tcc_2018_2025_composite_ndvi.csv": "9260582bb0dcbf639321ac98b445b03d24465054622016ef735a7231fd0d2ffa",
+    "data/raw/v2/hitl/g3_sampling_design_revision/mod13q1_tcc_2018_2025_composite_ndvi.csv.provenance.json": "20b05ff368a60f30fddcdfcfb100e844c736e2d18879c27985dc52a86578472e",
+    "docs/v2/D0065_G3_PRE_RESULT_SAMPLING_RULES.md": "4fd22c8ec10f1af0eb7cb6739776cc6be7415e3942ffd70900c4d41d5589b1a6",
+    "docs/v2/D0066_G3_REVISION_AUTHORIZATION.md": "6055d2aadd9970c3372e9e4fa7815c536a303d4e6d7aef362356386200f29104",
+    "docs/v2/D0067_G3_REVISION_PRE_RESULT_RULES.md": "8a0f0b73b14478cc44d277191f8670a54032be64fe7629d96807bec2526d3ac0",
+    "docs/v2/D0068_G3_L1B_COLLECTION_CLARIFICATION.md": "8112b49dc4988d9d387a52c6c32ff1a8540fd65c49775c2e9412f11124da893a",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/archive_bounded_recheck_summary.json": "aeb0a16048b92367fcef13619eceb19b7e811e3d9d12c77fb7bc735dbba36360",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/archive_pass_bounded_recheck_and_bounds.csv": "f39e3673f901941bf89d27a5ff85fab7120db751f2cdcc948754c4e22ffee6db",
+    "src/run_v2_hitl_gate3_archive_recheck.py": "38216eadd8d62ee67d786ad750a485117a46d469cd6d883c0f66438a5a540135",
+    "src/run_v2_hitl_gate3_revision.py": "a780379366afa170405b0e218a6445dabc6f2e62226e63bfdb2ca3224e0aa22a",
+    "src/test_v2_hitl_gate3_sampling.py": "e7a4d01795fa14965c2982bdf3c1216caad1b55698443e0161a2c03d0b474481",
+    "src/urban_cooling_v2/hitl_gate3_sampling.py": "f6177c997000f837eba5a6f91a188434590016b6e2a7d3a1612351215a9fdb25"
+  },
+  "temperature_or_lst_opened": false
+}

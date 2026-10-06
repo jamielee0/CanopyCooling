@@ -1,0 +1,4 @@
+condition_cell,expected_pass_equivalents_30d,expected_pass_equivalents_60d,n_passes_30d,n_passes_60d,gate_minimum
+high demand / dry (predicted collapse),58.154375,49.454541,68,56,10.0
+high demand / wet (identification),26.167787,34.552692,34,44,10.0
+low demand / dry (identification),0.552699,0.245167,8,5,10.0

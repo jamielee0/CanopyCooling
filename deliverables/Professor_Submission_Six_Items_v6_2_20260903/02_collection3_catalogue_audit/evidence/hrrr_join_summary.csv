@@ -1,0 +1,6 @@
+check,observed,expected,result,role
+physical_passes,219,219,PASS,historical_provenance_only_not_v6_2_study_sample
+pass_hour_links,438,438,PASS,historical_provenance_only_not_v6_2_study_sample
+unique_hrrr_assets,413,413,PASS,historical_provenance_only_not_v6_2_study_sample
+request_manifest_rows,413,413,PASS,historical_provenance_only_not_v6_2_study_sample
+sampled_join_checks,10,10,PASS,historical_provenance_only_not_v6_2_study_sample

@@ -43,6 +43,10 @@ dependencies:
   # --- data access / Earth-observation API clients ---
   - earthaccess>=0.12
   - earthengine-api>=1.4
+  - pvlib>=0.11         # v2 Step 2: solar zenith/azimuth and local-solar-time validation
+  - herbie-data>=2025.7 # v2 Step 2: selective HRRR 2 m temperature/dewpoint access
+  - cfgrib>=0.9         # decode the selectively downloaded HRRR GRIB messages
+  - eccodes>=2.40       # GRIB backend used by cfgrib
   - geemap>=0.35
   - geedim>=1.7          # Section 4: geemap.download_ee_image tiles/stitches EE composites to local GeoTIFFs
   - cdsapi>=0.7

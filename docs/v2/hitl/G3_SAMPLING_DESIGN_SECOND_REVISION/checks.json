@@ -1,0 +1,126 @@
+{
+  "accessible_unresolved_geometry_passes": 386,
+  "archive_all_31_relabelled": true,
+  "archive_bound_scope_rows": 28,
+  "decision_id": "D0069",
+  "four_primary_phenology_windows_reproduced": true,
+  "full_regression_suite_all_passed": true,
+  "generated_utc": "2026-08-16T12:52:55.049039+00:00",
+  "geometry_ledger_complete": true,
+  "geometry_ledger_rows": 762,
+  "geometry_reconstruction_inventory": {
+    "format_version": "d0069-mapped-domain-cells-v1",
+    "local_source_asset_hashes_verified": true,
+    "pass_count": 734,
+    "storage_preflight_sha256": "25dfab14392291bc10d7b24f3d1aea859870f881637ab3d5fa5f6599c41afadc",
+    "total_bytes": 1987177223
+  },
+  "geometry_solar_azimuth_required": true,
+  "holdout_data_opened": false,
+  "hrrr_storage_binding": {
+    "conservative_new_data_bytes": 1122774160,
+    "estimate_sha256": "5210a8b6542fcdbfab5c0899c951f7c44210cbdf83c99fc4d30b07b9cc112714",
+    "observed_free_bytes": 12947161088,
+    "preflight_sha256": "12e2be6b7a2eca7918790b4c23d54a0ed502724ea1c8e2119d61ca4ae88ba9d2",
+    "required_free_bytes": 6491483280,
+    "weather_algorithm_version": "d0069-hrrr-exact-four-field-repaired-domains-v1"
+  },
+  "immutable_d0070_hashes_match": true,
+  "joined_25deg_passes": 52,
+  "new_archive_status_provenance": {
+    "archive_status_sha256": "f0b28520fd8a42786a759d6955007051e1458c6025fe0e504451089aed224f0a",
+    "pass_count": 300,
+    "required_scene_link_count": 488,
+    "required_scene_links_sha256": "bad6b50c1aebd6135825a58f9b8e6232b6ba15a1c164db0ce0ef3803c17606df",
+    "scene_manifest_sha256": "f58be2777a8d90e8851e5e4db2f2431d2478186d653099fdb0c340e55f9e958f",
+    "status_counts": {
+      "ACCESSIBLE": 288,
+      "RESOLVED_UNAVAILABLE": 12
+    }
+  },
+  "new_resolved_unavailable_passes": 12,
+  "old_p_minus_et0_proxy_used_for_bounds": false,
+  "record_2026_metadata_exposures_preserved": [
+    "D0060",
+    "D0061",
+    "D0073",
+    "D0074"
+  ],
+  "record_2026_science_data_opened_or_queried": false,
+  "selection": {
+    "g3a_authorized": false,
+    "gate4_authorized": false,
+    "gate_status": "REVISE_REQUIRED",
+    "primary_city_set": "UNSELECTED",
+    "primary_season_windows": "UNSELECTED",
+    "primary_view_zenith_threshold_deg": null,
+    "reason": "No primary threshold has at least four nonexploratory cities including Denver with complete eligibility, invariant inaccessible-pass bounds, and passing balance diagnostics.",
+    "record_2026_queried": false,
+    "sampling_design_selected": false,
+    "temperature_or_lst_opened": false,
+    "threshold_status": {
+      "10": {
+        "all_candidate_city_windows_eligible": false,
+        "archive_bounds_invariant": false,
+        "audited_city_windows": 4,
+        "balance_diagnostics_complete_and_pass": false,
+        "balance_membership_matches_candidates": false,
+        "candidate_primary_city_windows": 4,
+        "candidate_primary_unique_cities": 4,
+        "denver_included": true,
+        "eligibility_pass_set_matches_balance": true,
+        "eligible_city_windows": 0,
+        "exact_d0069_city_window_membership": true,
+        "four_city_minimum_pass": true,
+        "threshold_eligible": false
+      },
+      "15": {
+        "all_candidate_city_windows_eligible": false,
+        "archive_bounds_invariant": false,
+        "audited_city_windows": 4,
+        "balance_diagnostics_complete_and_pass": false,
+        "balance_membership_matches_candidates": true,
+        "candidate_primary_city_windows": 4,
+        "candidate_primary_unique_cities": 4,
+        "denver_included": true,
+        "eligibility_pass_set_matches_balance": true,
+        "eligible_city_windows": 0,
+        "exact_d0069_city_window_membership": true,
+        "four_city_minimum_pass": true,
+        "threshold_eligible": false
+      },
+      "20": {
+        "all_candidate_city_windows_eligible": false,
+        "archive_bounds_invariant": false,
+        "audited_city_windows": 4,
+        "balance_diagnostics_complete_and_pass": false,
+        "balance_membership_matches_candidates": true,
+        "candidate_primary_city_windows": 4,
+        "candidate_primary_unique_cities": 4,
+        "denver_included": true,
+        "eligibility_pass_set_matches_balance": true,
+        "eligible_city_windows": 0,
+        "exact_d0069_city_window_membership": true,
+        "four_city_minimum_pass": true,
+        "threshold_eligible": false
+      },
+      "25": {
+        "all_candidate_city_windows_eligible": false,
+        "archive_bounds_invariant": false,
+        "audited_city_windows": 4,
+        "balance_diagnostics_complete_and_pass": false,
+        "balance_membership_matches_candidates": true,
+        "candidate_primary_city_windows": 4,
+        "candidate_primary_unique_cities": 4,
+        "denver_included": true,
+        "eligibility_pass_set_matches_balance": true,
+        "eligible_city_windows": 0,
+        "exact_d0069_city_window_membership": true,
+        "four_city_minimum_pass": true,
+        "threshold_eligible": false
+      }
+    }
+  },
+  "temperature_or_lst_opened": false,
+  "unified_unavailable_passes": 43
+}

@@ -1,54 +1,22 @@
 #!/usr/bin/env python3
 """Section 2 — Acquire and quality-filter ECOSTRESS land surface temperature.
 
-Implements steps 12-18 of the Data Acquisition & Analysis Protocol for the
-Phoenix pilot. The whole section runs from this single module so the result is
-reproducible end to end (protocol standing rule: "every figure and every number
-must be reproducible from the saved code").
-
-Pipeline
---------
-12. Authenticate to NASA Earthdata (earthaccess) and search the ECO_L2T_LSTE
-    collection, restricted to the config bounding box and 2023-06-01..2023-09-30.
-13. Download all matching granules (per-band Cloud-Optimized GeoTIFFs) into
-    data/raw/ecostress_lst/ and append each file to data/manifest.csv with its
-    source, dataset, filename, download date and a SHA-256 checksum.
-14. For each granule read the LST, QC, cloud and water layers.
-15. Apply quality control: keep a pixel only if ALL hold — QC indicates a
-    best-quality retrieval; the cloud layer indicates no cloud; the water layer
-    indicates land (not water). Everything else is set to missing (NaN). The
-    metadata scale factor is applied so LST is in Kelvin.
-16. Drop any granule that is almost entirely missing after QC. Flag (but keep)
-    any retained granule whose valid LST falls outside ~290-340 K and report it.
-17. Reproject each cleaned granule to EPSG:32612 and resample it to the 70 m
-    reference grid from Section 1 (data/processed/reference_grid.tif).
-18. Stack all cleaned, aligned granules into one time-indexed cube (time, y, x),
-    preserving each overpass's UTC timestamp as the time coordinate, and save it
-    to data/interim/ecostress_lst_cube as Zarr.
-
-Deliverable extras: a per-pixel count of usable observations and a mean-LST map
-written to figures/ for visual confirmation.
-
-IMPORTANT (protocol common pitfall): ECOSTRESS overpasses occur at different
-local times because of the precessing orbit. Raw LST is therefore NEVER averaged
-across overpasses inside the cube — the time dimension and the per-overpass
-timestamps are preserved intact for the paired design in Section 10. The
-mean-LST map written to figures/ is a visual-QA artifact ONLY and is not fed
-back into the analysis.
-
-Collection confirmed on Earthdata (2026-06-10):
-    short_name = ECO_L2T_LSTE   version = 002   provider = LPCLOUD
-    doi:10.5067/ECOSTRESS/ECO_L2T_LSTE.002  (NASA LP DAAC)
-    Per-band COGs; layers used here: LST, QC, cloud, water, height.
-    QC: 16-bit; mandatory-QA in bits 0-1, "00" = pixel produced, best quality.
-    v002 caveat: the QC layer no longer carries cloud state — clouds MUST be read
-      from the separate `cloud` layer (0 = clear, 1 = cloud).
-    water layer: 0 = land, 1 = water (same binary convention as the cloud layer).
-
-Run (in an environment with the `canopy` deps and Earthdata auth configured):
-    python src/section2_ecostress_lst.py                 # full run
-    python src/section2_ecostress_lst.py --max-granules 5 # quick smoke test
-    python src/section2_ecostress_lst.py --skip-download   # reuse data/raw files
+Inputs : ECO_L2T_LSTE v002 granules from NASA Earthdata (LPCLOUD); the Section-1
+         reference grid data/processed/reference_grid.tif.
+Outputs: data/raw/ecostress_lst/ COGs + data/manifest.csv rows; the time-indexed
+         cube data/interim/ecostress_lst_cube (Zarr) and granule QC report CSV;
+         usable-obs count + mean-LST figures under figures/.
+Key decisions (full rationale in docs/DESIGN_DECISIONS.md, Section 2):
+  - Keep a pixel if QC bits 0-1 are 00 or 01, cloud == 0 (clear), and
+    water == 0 (land). Including 01 is a professor-approved coverage decision;
+    its contribution is reported separately for transparency.
+  - v002 QC no longer carries cloud state; read clouds from the cloud layer.
+  - Reproject to EPSG:32612 / 70 m with bilinear (continuous temperature field).
+  - Raw LST is NEVER averaged across overpasses (precessing-orbit local times);
+    the mean-LST map is a visual-QA artifact only.
+Run: python src/section2_ecostress_lst.py
+     python src/section2_ecostress_lst.py --max-granules 5    # smoke test
+     python src/section2_ecostress_lst.py --skip-download     # reuse data/raw
 """
 
 from __future__ import annotations
@@ -67,10 +35,8 @@ from typing import Iterable, Sequence
 import numpy as np
 import pandas as pd
 
-# Heavy geospatial / EO-access libraries. Imported at module top as usual; the
-# pure-numpy logic below (qc_best_quality_mask, build_keep_mask, granule range
-# /drop decisions, cube statistics, filename parsing) does not touch them, so it
-# can be unit-tested without the geo stack installed (see test_section2_*).
+# The pure-numpy logic below (masks, drop/flag decisions, cube stats, filename
+# parsing) does not touch these, so it is unit-testable without the geo stack.
 import earthaccess  # noqa: E402
 import rioxarray  # noqa: F401,E402  (registers the .rio accessor)
 import xarray as xr  # noqa: E402
@@ -84,9 +50,7 @@ import config  # noqa: E402
 
 log = logging.getLogger("section2")
 
-# --------------------------------------------------------------------------- #
-# Confirmed collection constants (see module docstring; logged at run time).
-# --------------------------------------------------------------------------- #
+# Confirmed collection constants (logged at run time).
 SHORT_NAME = "ECO_L2T_LSTE"
 VERSION = "002"
 PROVIDER = "LPCLOUD"
@@ -94,13 +58,21 @@ DATASET_ID = f"{SHORT_NAME}.{VERSION}"          # recorded in the manifest
 COLLECTION_DOI = "10.5067/ECOSTRESS/ECO_L2T_LSTE.002"
 
 # Per-band layers we read. LST is the measurement; QC/cloud/water gate it.
-# height is downloaded for completeness/provenance but not used in Section 2.
+# height is downloaded for provenance but not used in Section 2.
 NEEDED_LAYERS = ("LST", "QC", "cloud", "water", "height")
 QC_GATE_LAYERS = ("LST", "QC", "cloud", "water")
 
-# Quality-control conventions (confirmed on Earthdata / VITALS tutorial).
+# Collection-2 quality-control conventions from the official ECOSTRESS v002
+# User Guide, section 2.4 / Table 6. Mandatory flag 01 marks a produced
+# retrieval with one or more potentially degrading conditions. For this
+# data-limited pilot, the professor approved retaining both produced-retrieval
+# classes (00 and 01). We preserve that caveat in metadata and separately audit
+# the pixels contributed by 01. Cloud and water are still screened independently
+# with their Collection-2 layers below; 10 and 11 remain excluded.
 QC_MANDATORY_BITS = 0b11      # bits 0-1 are the mandatory QA flag
-QC_BEST_QUALITY = 0b00        # 00 = pixel produced, best quality
+QC_BEST_QUALITY = 0b00        # 00 = produced without the v002 degradation flag
+QC_DEGRADED_QUALITY = 0b01    # 01 = produced, but accuracy may be degraded
+QC_MAX_INCLUDED_QUALITY = QC_DEGRADED_QUALITY  # professor-approved: keep 00 + 01
 CLOUD_CLEAR_VALUE = 0         # cloud layer: 0 = clear, 1 = cloud
 WATER_LAND_VALUE = 0          # water layer: 0 = land,  1 = water
 
@@ -117,9 +89,7 @@ CUBE_DIRNAME = "ecostress_lst_cube"                           # data/interim/eco
 PILOT_START, PILOT_END = config.PILOT_WINDOW                  # ("2023-06-01","2023-09-30")
 
 
-# =========================================================================== #
-# Filename parsing  (pure; no geo deps)
-# --------------------------------------------------------------------------- #
+# --- Filename parsing (pure; no geo deps) ---
 # ECOv002_L2T_LSTE_28527_009_13TDE_20230718T081442_0710_01_LST.tif
 #   sensor_ver _L2T _LSTE _orbit _scene _tile _YYYYMMDDTHHMMSS _build _iter _LAYER
 _GRANULE_RE = re.compile(
@@ -145,12 +115,8 @@ class GranuleFile:
 
     @property
     def overpass_key(self) -> str:
-        """Identifies one overpass: an orbit+scene observed at one instant.
-
-        Tiles from the same overpass share orbit, scene and timestamp and differ
-        only by MGRS tile id — they are mosaicked onto the reference grid and
-        become a SINGLE time slice in the cube.
-        """
+        """Key for one overpass (orbit+scene+instant). Tiles sharing it mosaic
+        into a SINGLE time slice."""
         return f"{self.orbit}_{self.scene}_{self.datetime_utc:%Y%m%dT%H%M%S}"
 
 
@@ -182,17 +148,23 @@ def layer_path_for(lst_path: Path, layer: str) -> Path:
     return lst_path.with_name(re.sub(r"_LST\.tif$", f"_{layer}.tif", lst_path.name))
 
 
-# =========================================================================== #
-# Quality-control logic  (pure numpy; unit-tested without the geo stack)
-# --------------------------------------------------------------------------- #
+# --- Quality-control logic (pure numpy; unit-tested without the geo stack) ---
 def qc_best_quality_mask(qc: np.ndarray) -> np.ndarray:
-    """True where the mandatory-QA bits (0-1) indicate best quality ("00").
-
-    Equivalent to ``np.binary_repr(q, 16)[-2:] == '00'`` for every value, but
-    vectorised: keep where the low two bits are zero.
-    """
+    """True only for v002 mandatory-QA ``00`` retrievals (audit baseline)."""
     qc_int = np.asarray(qc)
     return (qc_int & QC_MANDATORY_BITS) == QC_BEST_QUALITY
+
+
+def qc_primary_quality_mask(qc: np.ndarray) -> np.ndarray:
+    """True for mandatory-QA ``00`` or ``01`` retrievals used in the pilot.
+
+    The inclusion of potentially degraded class ``01`` is an explicit,
+    professor-approved coverage decision for this data-limited pilot. Higher QC
+    bits do not alter the mandatory two-bit decision; classes ``10`` and ``11``
+    remain excluded.
+    """
+    mandatory = np.asarray(qc) & QC_MANDATORY_BITS
+    return mandatory <= QC_MAX_INCLUDED_QUALITY
 
 
 def build_keep_mask(
@@ -201,19 +173,12 @@ def build_keep_mask(
     cloud: np.ndarray,
     water: np.ndarray,
 ) -> np.ndarray:
-    """Pixel-keep mask implementing protocol step 15.
-
-    Keep a pixel only if ALL hold:
-      * LST is a finite, scaled value (not fill),
-      * QC indicates a best-quality retrieval (bits 0-1 == 00),
-      * the cloud layer indicates no cloud (== 0),
-      * the water layer indicates land  (== 0).
-    """
+    """Keep finite, clear, land LST with mandatory QA ``00`` or ``01``."""
     finite_lst = np.isfinite(np.asarray(lst_k, dtype="float64"))
-    best_q = qc_best_quality_mask(qc)
+    qc_ok = qc_primary_quality_mask(qc)
     clear = np.asarray(cloud) == CLOUD_CLEAR_VALUE
     land = np.asarray(water) == WATER_LAND_VALUE
-    return finite_lst & best_q & clear & land
+    return finite_lst & qc_ok & clear & land
 
 
 def apply_keep_mask(lst_k: np.ndarray, keep: np.ndarray) -> np.ndarray:
@@ -237,6 +202,8 @@ class GranuleStats:
     lst_max: float
     lst_mean: float
     n_out_of_range: int
+    n_valid_best_only: int = 0
+    n_recovered_qc01: int = 0
     dropped: bool = False
     range_flagged: bool = False
 
@@ -252,6 +219,8 @@ class GranuleStats:
             "lst_max_k": None if np.isnan(self.lst_max) else round(self.lst_max, 3),
             "lst_mean_k": None if np.isnan(self.lst_mean) else round(self.lst_mean, 3),
             "n_out_of_range": self.n_out_of_range,
+            "n_valid_best_only": self.n_valid_best_only,
+            "n_recovered_qc01": self.n_recovered_qc01,
             "dropped": self.dropped,
             "range_flagged": self.range_flagged,
         }
@@ -315,20 +284,14 @@ def decide_range_flag(
     return (stats.lst_min < lo) or (stats.lst_max > hi)
 
 
-# =========================================================================== #
-# Cube statistics  (pure numpy)
-# --------------------------------------------------------------------------- #
+# --- Cube statistics (pure numpy) ---
 def usable_observation_count(stack: np.ndarray) -> np.ndarray:
     """Per-pixel count of finite (usable) observations over the time axis 0."""
     return np.isfinite(np.asarray(stack, dtype="float64")).sum(axis=0).astype("int32")
 
 
 def mean_lst_map(stack: np.ndarray) -> np.ndarray:
-    """Per-pixel mean LST over time, ignoring NaNs (visual-QA artifact only).
-
-    NOTE: this collapses the time axis and is used ONLY for the confirmation
-    figure. The saved cube keeps every overpass separate.
-    """
+    """Per-pixel mean LST over time, ignoring NaNs (visual-QA artifact only)."""
     import warnings
 
     arr = np.asarray(stack, dtype="float64")
@@ -340,9 +303,7 @@ def mean_lst_map(stack: np.ndarray) -> np.ndarray:
     return out
 
 
-# =========================================================================== #
-# Checksums + manifest  (step 13)
-# --------------------------------------------------------------------------- #
+# --- Checksums + manifest (step 13) ---
 def sha256_file(path: Path, chunk: int = 1 << 20) -> str:
     """Streaming SHA-256 of a file (large COGs are not loaded whole)."""
     h = hashlib.sha256()
@@ -356,11 +317,7 @@ _MANIFEST_COLUMNS = ["source", "dataset", "filename", "download_date", "checksum
 
 
 def append_to_manifest(rows: Sequence[dict], manifest_csv: Path = None) -> None:
-    """Append rows to data/manifest.csv, skipping filenames already recorded.
-
-    Each row carries: source, dataset, filename, download_date, checksum — the
-    schema established in Section 0.
-    """
+    """Append rows to data/manifest.csv, skipping filenames already recorded."""
     manifest_csv = Path(manifest_csv or config.MANIFEST_CSV)
     if manifest_csv.exists() and manifest_csv.stat().st_size > 0:
         existing = pd.read_csv(manifest_csv)
@@ -377,9 +334,7 @@ def append_to_manifest(rows: Sequence[dict], manifest_csv: Path = None) -> None:
     log.info("manifest: appended %d row(s) -> %s", len(new_rows), manifest_csv)
 
 
-# =========================================================================== #
-# Earthdata search + download  (steps 12-13)
-# --------------------------------------------------------------------------- #
+# --- Earthdata search + download (steps 12-13) ---
 def bbox_for_earthaccess() -> tuple[float, float, float, float]:
     """config.BBOX_LONLAT is (min_lon,max_lon,min_lat,max_lat); earthaccess wants
     (lower_left_lon, lower_left_lat, upper_right_lon, upper_right_lat)."""
@@ -390,8 +345,6 @@ def bbox_for_earthaccess() -> tuple[float, float, float, float]:
 def _load_project_dotenv() -> None:
     """Load the gitignored repo-root .env into the environment (no overwrite).
 
-    Mirrors src/check_auth.py so a fresh run picks up local Earthdata creds
-    (EARTHDATA_USERNAME / EARTHDATA_PASSWORD) without exporting them by hand.
     Real environment variables and ~/.netrc always take precedence.
     """
     env_path = _REPO_ROOT / ".env"
@@ -424,10 +377,7 @@ def search_granules(
     temporal: tuple[str, str] = (PILOT_START, PILOT_END),
     max_granules: int | None = None,
 ):
-    """Search the ECO_L2T_LSTE collection over the study bbox and pilot window.
-
-    Logs exactly which short_name / version / provider were used (step 12).
-    """
+    """Search the ECO_L2T_LSTE collection over the study bbox and pilot window."""
     bbox = bbox_for_earthaccess()
     log.info(
         "Searching CMR: short_name=%s version=%s provider=%s bbox=%s temporal=%s",
@@ -465,10 +415,9 @@ def _needed_layer_links(results) -> list[str]:
 
 
 def download_granules(results, raw_dir: Path) -> list[Path]:
-    """Download the needed per-band COGs into data/raw/ecostress_lst/.
+    """Download the needed per-band COGs and record each in the manifest.
 
-    Returns the list of local file paths. Records every downloaded file in the
-    manifest with source URL, dataset id, download date and SHA-256 checksum.
+    Returns the list of local file paths.
     """
     raw_dir.mkdir(parents=True, exist_ok=True)
     urls = _needed_layer_links(results)
@@ -496,9 +445,7 @@ def discover_local_lst_files(raw_dir: Path) -> list[Path]:
     return sorted(raw_dir.glob("ECOv*_L2T_LSTE_*_LST.tif"))
 
 
-# =========================================================================== #
-# Per-granule cleaning  (steps 14-17) — needs the geo stack at run time
-# --------------------------------------------------------------------------- #
+# --- Per-granule cleaning (steps 14-17) — needs the geo stack at run time ---
 def _open_raw(path: Path, mask_and_scale: bool):
     """Open a single-band COG as a 2-D DataArray (band dim squeezed away)."""
     da = rioxarray.open_rasterio(path, masked=mask_and_scale,
@@ -522,9 +469,8 @@ def _clip_to_bbox(da):
 def clean_lst_tile(lst_path: Path, reference, min_valid_fraction: float):
     """Read + QC-mask + scale one granule tile and reproject it to the grid.
 
-    Returns (aligned_lst_dataarray_or_None, GranuleStats). The DataArray is on
-    the reference grid (EPSG:32612, 70 m) with non-kept pixels set to NaN; it is
-    None when the granule is dropped as almost entirely missing.
+    Returns (aligned_lst_dataarray_or_None, GranuleStats); the DataArray is None
+    when the granule is dropped as almost entirely missing.
     """
     gf = parse_granule_filename(lst_path.name)
 
@@ -540,13 +486,22 @@ def clean_lst_tile(lst_path: Path, reference, min_valid_fraction: float):
     cloud = _clip_to_bbox(cloud)
     water = _clip_to_bbox(water)
 
-    # Step 15 — keep only best-quality, clear, land pixels; everything else NaN.
+    # Step 15 — keep mandatory-QA 00+01, clear, land pixels; everything else
+    # NaN. Retain a parallel 00-only count so the coverage choice is auditable.
     keep = build_keep_mask(lst.values, qc.values, cloud.values, water.values)
+    best_only_keep = (
+        np.isfinite(np.asarray(lst.values, dtype="float64"))
+        & qc_best_quality_mask(qc.values)
+        & (np.asarray(cloud.values) == CLOUD_CLEAR_VALUE)
+        & (np.asarray(water.values) == WATER_LAND_VALUE)
+    )
     clean_values = apply_keep_mask(lst.values, keep)
     lst_clean = lst.copy(data=clean_values)
 
     # Step 16 — drop / flag decisions on the cleaned, study-area data.
     stats = summarize_granule(clean_values, gf.overpass_key, gf.datetime_utc, gf.tile)
+    stats.n_valid_best_only = int(best_only_keep.sum())
+    stats.n_recovered_qc01 = stats.n_valid - stats.n_valid_best_only
     if decide_drop(stats, min_valid_fraction):
         stats.dropped = True
         log.warning("DROP  %s tile=%s — valid_fraction=%.4f < %.4f (near-empty)",
@@ -561,16 +516,13 @@ def clean_lst_tile(lst_path: Path, reference, min_valid_fraction: float):
             stats.lst_min, stats.lst_max, stats.n_out_of_range,
         )
 
-    # Step 17 — reproject/resample onto the fixed 70 m reference grid (bilinear
-    # for the continuous temperature field, per Section 9).
+    # Step 17 — reproject onto the 70 m grid (bilinear for the continuous field).
     aligned = lst_clean.rio.reproject_match(reference, resampling=Resampling.bilinear)
     aligned = aligned.rio.write_nodata(np.nan, encoded=False)
     return aligned, stats
 
 
-# =========================================================================== #
-# Build + save the cube  (step 18)
-# --------------------------------------------------------------------------- #
+# --- Build + save the cube (step 18) ---
 def build_cube(
     lst_files: Iterable[Path],
     reference,
@@ -578,9 +530,8 @@ def build_cube(
 ) -> tuple["xr.DataArray", pd.DataFrame]:
     """Clean every granule, mosaic tiles within an overpass, and stack by time.
 
-    Returns (cube, granule_report). The cube has dims (time, y, x) with a UTC
-    overpass-time coordinate; tiles from the same overpass are merged into one
-    time slice (raw LST is never averaged across DIFFERENT overpasses).
+    Returns (cube, granule_report); cube dims are (time, y, x). Raw LST is never
+    averaged across DIFFERENT overpasses.
     """
     per_overpass: dict[str, dict] = {}
     report_rows: list[dict] = []
@@ -623,9 +574,18 @@ def build_cube(
         units="K",
         dataset=DATASET_ID,
         doi=COLLECTION_DOI,
+        mandatory_qa_policy="keep 00 and 01; exclude 10 and 11",
+        mandatory_qa_01_disclosure=(
+            "01 may be degraded; included by professor-approved coverage decision"
+        ),
+        mandatory_qa_audit=(
+            "See ecostress_lst_granule_report.csv columns n_valid_best_only "
+            "and n_recovered_qc01"
+        ),
         note=("Per-overpass LST on the Section-1 70 m grid. Time axis preserved; "
               "raw LST is NOT averaged across overpasses (overpass local times "
-              "differ). See Section 2 of the protocol."),
+              "differ). Mandatory QA 00 and 01 are included; 01 is disclosed as "
+              "potentially degraded. See Section 2 of the protocol."),
     )
     cube = cube.rio.write_crs(config.CRS)
     report = pd.DataFrame(report_rows)
@@ -636,17 +596,15 @@ def save_cube_zarr(cube: "xr.DataArray", interim_dir: Path) -> Path:
     """Save the cube to data/interim/ecostress_lst_cube as Zarr."""
     interim_dir.mkdir(parents=True, exist_ok=True)
     out = interim_dir / CUBE_DIRNAME
-    # time coords cannot ride along as non-dim string coords in zarr cleanly if
-    # they collide; keep orbit/scene as data-less coordinate variables.
+    # Keep orbit/scene as data-less coordinate variables (string non-dim coords
+    # do not ride along cleanly in zarr if they collide).
     ds = cube.to_dataset(name="lst")
     ds.to_zarr(out, mode="w", consolidated=True)
     log.info("Saved cube -> %s  dims=%s", out, dict(cube.sizes))
     return out
 
 
-# =========================================================================== #
-# Figures  (deliverable: usable-obs count + mean-LST map)
-# --------------------------------------------------------------------------- #
+# --- Figures (deliverable: usable-obs count + mean-LST map) ---
 def make_figures(cube: "xr.DataArray", figures_dir: Path) -> list[Path]:
     """Write the per-pixel usable-observation count and the mean-LST map."""
     import matplotlib
@@ -690,9 +648,7 @@ def make_figures(cube: "xr.DataArray", figures_dir: Path) -> list[Path]:
     return outputs
 
 
-# =========================================================================== #
-# Orchestration / CLI
-# --------------------------------------------------------------------------- #
+# --- Orchestration / CLI ---
 def run(
     max_granules: int | None = None,
     skip_download: bool = False,
@@ -725,8 +681,17 @@ def run(
     report.to_csv(report_path, index=False)
     n_drop = int(report["dropped"].sum()) if len(report) else 0
     n_flag = int(report["range_flagged"].sum()) if len(report) else 0
+    n_best = int(report["n_valid_best_only"].sum()) if len(report) else 0
+    n_primary = int(report["n_valid"].sum()) if len(report) else 0
+    n_recovered = int(report["n_recovered_qc01"].sum()) if len(report) else 0
+    recovery_pct = (100.0 * n_recovered / n_best) if n_best else float("nan")
     log.info("Granule report -> %s  (%d dropped, %d range-flagged of %d tiles)",
              report_path, n_drop, n_flag, len(report))
+    log.info(
+        "Mandatory-QA coverage audit: 00-only=%s px; 00+01=%s px; "
+        "QC=01 recovered=%s px (%+.2f%% vs 00-only)",
+        f"{n_best:,}", f"{n_primary:,}", f"{n_recovered:,}", recovery_pct,
+    )
 
     make_figures(cube, config.FIGURES_DIR)
     log.info("Section 2 complete: cube=%s  overpasses=%d",

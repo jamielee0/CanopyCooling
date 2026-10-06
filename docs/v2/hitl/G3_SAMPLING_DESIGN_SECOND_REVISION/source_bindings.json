@@ -1,0 +1,66 @@
+{
+  "generated_utc": "2026-08-16T12:52:54.978116+00:00",
+  "generator_version": "d0069-g3-second-revision-v1",
+  "locks": {
+    "holdout_data_opened": false,
+    "record_2026_metadata_exposures_preserved": [
+      "D0060",
+      "D0061",
+      "D0073",
+      "D0074"
+    ],
+    "record_2026_science_data_opened_or_queried": false,
+    "temperature_or_lst_opened": false
+  },
+  "new_archive_status_provenance": {
+    "archive_status_sha256": "f0b28520fd8a42786a759d6955007051e1458c6025fe0e504451089aed224f0a",
+    "pass_count": 300,
+    "required_scene_link_count": 488,
+    "required_scene_links_sha256": "bad6b50c1aebd6135825a58f9b8e6232b6ba15a1c164db0ce0ef3803c17606df",
+    "scene_manifest_sha256": "f58be2777a8d90e8851e5e4db2f2431d2478186d653099fdb0c340e55f9e958f",
+    "status_counts": {
+      "ACCESSIBLE": 288,
+      "RESOLVED_UNAVAILABLE": 12
+    }
+  },
+  "sources": {
+    "data/processed/v2/hitl/g3_sampling_design_revision2/augmentation_summary.json": "35570e44465fbb3847f3c9374ca0b5d9bcac2f0403d6f44d0ae2801eccf951ac",
+    "data/processed/v2/hitl/g3_sampling_design_revision2/cloud_pass_summary.csv": "0d7d806a4113b48d681b1510b5adf7488a98fd7717f8f27d8d0eca82d99f4aee",
+    "data/processed/v2/hitl/g3_sampling_design_revision2/exact_weather_and_condition_pass_summary.csv": "dd1306cb1d9362fa53ddf3ead464f7d5b7a49e87743b0fcdfcc49ba89beb478e",
+    "data/processed/v2/hitl/g3_sampling_design_revision2/geometry_azimuth_pass_summary.csv": "07f26e69329e37f673ebd86a94aac9d7bb8cfc58cb609ba4222ec1633f899892",
+    "data/processed/v2/hitl/g3_sampling_design_revision2/new_pass_archive_status.csv": "f0b28520fd8a42786a759d6955007051e1458c6025fe0e504451089aed224f0a",
+    "data/processed/v2/hitl/g3_sampling_design_revision2/new_unavailable_condition_pass_summary.csv": "707bfb0a205258d0f5a56528a93b2a4c8b94257ada445b3c729777e98ac2a1e4",
+    "data/processed/v2/task1/step2_quality_screening_l1b_geo_D0047/retained_city_scene_links.csv": "7883f5d50174550346a8e878cdcd9aac8cd8070e73ab13b926132c8c44b54d4a",
+    "data/raw/v2/ecostress/l1b_geo_geometry_D0047_archive_available/l1b_geo_scene_manifest.csv": "a7f8a46bdf9530b9894127a3d95a41625fdae9fd9ba9fea5e1cc1dd87f2a8bba",
+    "data/raw/v2/hitl/g3_sampling_design/candidate_additions_l2t_metadata_2018_2025.csv": "5f0c919796d4a9fef3203217be85a1c1bec826a67bd5b647275157a6bca103fd",
+    "data/raw/v2/hitl/g3_sampling_design/candidate_city_daily_gridmet_2018_2025.csv": "7c17d48f27522bf454a27433708474e311b97f1f77e1c84a6d80686d3dc22a68",
+    "data/raw/v2/hitl/g3_sampling_design_revision/mod13q1_tcc_2018_2025_composite_ndvi.csv": "9260582bb0dcbf639321ac98b445b03d24465054622016ef735a7231fd0d2ffa",
+    "data/raw/v2/hitl/g3_sampling_design_revision2/geometry_azimuth_checkpoint.json": "d6d4635d0f0f64a86b7170bfb4c105cc583b2ce335905c7fffdd64d97007d396",
+    "data/raw/v2/hitl/g3_sampling_design_revision2/geometry_reconstruction_storage_preflight.json": "25dfab14392291bc10d7b24f3d1aea859870f881637ab3d5fa5f6599c41afadc",
+    "data/raw/v2/hitl/g3_sampling_design_revision2/hrrr_exact_acquisition/hrrr_storage_estimate.csv": "5210a8b6542fcdbfab5c0899c951f7c44210cbdf83c99fc4d30b07b9cc112714",
+    "data/raw/v2/hitl/g3_sampling_design_revision2/hrrr_exact_acquisition/hrrr_storage_preflight.json": "12e2be6b7a2eca7918790b4c23d54a0ed502724ea1c8e2119d61ca4ae88ba9d2",
+    "data/raw/v2/hitl/g3_sampling_design_revision2/new_l1b_geo/l1b_geo_scene_manifest.csv": "f58be2777a8d90e8851e5e4db2f2431d2478186d653099fdb0c340e55f9e958f",
+    "docs/v2/D0067_G3_REVISION_PRE_RESULT_RULES.md": "8a0f0b73b14478cc44d277191f8670a54032be64fe7629d96807bec2526d3ac0",
+    "docs/v2/D0069_G3_PHENOLOGY_ROLE_AMENDMENT.md": "fce250d5864fb658d972d910157f3ec3d272964b07ae9cd60c6a730de6ec8718",
+    "docs/v2/D0070_G3_ARCHIVE_RECHECK_PROTOCOL_DEVIATION.md": "7091b3391ece43015687355e33bb1e0971e5418e1ffbc81a1c27b979777cbf8b",
+    "docs/v2/D0071_USER_DELEGATED_ITERATIVE_GATE_REVIEW.md": "dddf5d682926adc6cabf17dd71e5e6a11994ba3e266796dc6d1bf202e865cd14",
+    "docs/v2/D0072_G3_GEOMETRY_AND_RESUME_STORAGE_INCIDENT.md": "77c7abc5e9ae90a6965707a474561b9e7a4996dcb0b60ad3bdf7c4912a019cbb",
+    "docs/v2/D0073_G4_G5_READINESS_2026_METADATA_EXPOSURE.md": "482fe15a40b41f6f0e27e1452d9a417bc1d9b6dfb66361d35454f2caa76d3fa8",
+    "docs/v2/D0074_REPEAT_2026_METADATA_EXPOSURE.md": "78a01b4aa85fafc470c0f7e6dc20cd0e4be72efe7787a85dce5cd0f2eb71db1b",
+    "docs/v2/D0075_G3_EXCLUSIVE_WRITER_CORRECTION.md": "7524983ab03f8e73d8f9ee276903be501fe52f502de98af5e4e420fd7d934d35",
+    "docs/v2/D0076_FIRST_FOUR_ITEMS_SEQUENCE_CORRECTION.md": "78b549fa7c5ccc46ae40045a14fc4f6af540727e71bcfdbc2fc83afbdd3a932b",
+    "docs/v2/D0077_G3_PAUSE_CHECKPOINT_COUNT_CORRECTION.md": "ac5b81bd4c7d0cd8523a4381a69bcb53934c859911517e1c7bc46fdce387928e",
+    "docs/v2/D0078_FIRST_FOUR_ITEMS_APPROVAL_AND_G3_RESUME.md": "1be3bdb6a2b34b55ee102c8af21adf3ce0478372714a9eb057d6725064b8a9d6",
+    "docs/v2/D0079_G3_GENERATED_ZERO_MAP_PROOF_CORRECTION.md": "45657dce2592a2261f18f80891c047b58ecbf050ab39e653e4480fb36f6a4b34",
+    "docs/v2/D0080_G3_VALIDATOR_INTEGRATION_CORRECTIONS.md": "06a0831bcf79a52ff7d510a1918e40e99648b818a54c7f24a11732f8e3bf54d7",
+    "docs/v2/D0081_G3_HRRR_CHECKPOINT_ENVELOPE_CORRECTION.md": "bd1a704ea30c826008747fa0aa9f8f6c46ef7eb27387bad3f543945f0417cb83",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN/candidate_addition_physical_metadata_passes.csv": "eb876163713e65e2baf8c6cc986b3e8ec4c39137fe2cd6dd66a2179ad499688e",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/archive_bounded_recheck_summary.json": "aeb0a16048b92367fcef13619eceb19b7e811e3d9d12c77fb7bc735dbba36360",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/archive_pass_bounded_recheck_and_bounds.csv": "f39e3673f901941bf89d27a5ff85fab7120db751f2cdcc948754c4e22ffee6db",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_REVISION/archive_scene_bounded_recheck.csv": "54fba9c8e9d6f2c53f138f352e74615a9fa7f2a4ce4f144ab244edb34acae044",
+    "src/run_v2_hitl_gate3_cleanroom_check.py": "23af8e46e316b4b83a12ae254e7ffc48bd1e6068d3f727f94b97bf2c5ebda781",
+    "src/run_v2_hitl_gate3_second_augmentation.py": "8a5519e8f24f4139b22d1203ab1fdfb7eb44d03fdc2b84b76abe437e3324c6ec",
+    "src/run_v2_hitl_gate3_second_revision.py": "5bfdb7a47ead00b245c18d2b21664e65f1b2a8d11699820abed1854522150af3",
+    "src/urban_cooling_v2/hitl_gate3_sampling.py": "f8219904abf507297d26b881a0539017c12c54652f85eab217f35c9a55348fd0"
+  }
+}
