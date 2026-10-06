@@ -1,0 +1,29 @@
+[
+  {
+    "city": "phoenix",
+    "original_valid": false,
+    "repaired_valid": true,
+    "area_before_m2": 2884945085.9329653,
+    "area_after_m2": 2884938089.440477,
+    "area_difference_m2": -6996.492488384247,
+    "method": "shapely_make_valid_no_buffer_or_geometry_simplification"
+  },
+  {
+    "city": "atlanta",
+    "original_valid": false,
+    "repaired_valid": true,
+    "area_before_m2": 6710330322.285504,
+    "area_after_m2": 6710324876.5394945,
+    "area_difference_m2": -5445.74600982666,
+    "method": "shapely_make_valid_no_buffer_or_geometry_simplification"
+  },
+  {
+    "city": "charlotte",
+    "original_valid": true,
+    "repaired_valid": true,
+    "area_before_m2": 1730018830.4932663,
+    "area_after_m2": 1730018830.4932663,
+    "area_difference_m2": 0.0,
+    "method": "shapely_make_valid_no_buffer_or_geometry_simplification"
+  }
+]

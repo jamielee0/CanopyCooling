@@ -1,0 +1,260 @@
+{
+  "record_date_local": "2026-10-04",
+  "timezone": "America/New_York",
+  "protocol_version": "6.2",
+  "status": "DOCUMENTATION_AND_SCOPE_COMPLETE",
+  "user_authorization": {
+    "request": "ok, pls start it with the first",
+    "interpretation": "Start Step 1 of the detailed plan: bounded implementation/access record and documentation amendment",
+    "plan": "docs/v2/v6_2/results_review_and_targeted_analysis_plan_20260930.md",
+    "authorized_step": 1
+  },
+  "main_pilot": {
+    "year": 2023,
+    "phoenix_passes": 11,
+    "atlanta_passes": 5,
+    "pass_identities": [
+      {
+        "city": "atlanta",
+        "orbit": "27835",
+        "date": "2023-06-03",
+        "run_id": "pooled_pilot_20260919_atlanta",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "atlanta",
+        "orbit": "27896",
+        "date": "2023-06-07",
+        "run_id": "pooled_pilot_20260919_atlanta",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "atlanta",
+        "orbit": "27916",
+        "date": "2023-06-08",
+        "run_id": "pooled_pilot_20260919_atlanta",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "atlanta",
+        "orbit": "28145",
+        "date": "2023-06-23",
+        "run_id": "pooled_pilot_20260919_atlanta",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "atlanta",
+        "orbit": "28598",
+        "date": "2023-07-22",
+        "run_id": "pooled_pilot_20260919_atlanta",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "phoenix",
+        "orbit": "27963",
+        "date": "2023-06-11",
+        "run_id": "pooled_pilot_20260919_phoenix",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "phoenix",
+        "orbit": "28024",
+        "date": "2023-06-15",
+        "run_id": "pooled_pilot_20260919_phoenix",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "phoenix",
+        "orbit": "28085",
+        "date": "2023-06-19",
+        "run_id": "pooled_extension_20260921_phoenix",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "phoenix",
+        "orbit": "28192",
+        "date": "2023-06-26",
+        "run_id": "pooled_extension_20260921_phoenix",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "phoenix",
+        "orbit": "28706",
+        "date": "2023-07-29",
+        "run_id": "pooled_pilot_20260919_phoenix",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "phoenix",
+        "orbit": "28828",
+        "date": "2023-08-06",
+        "run_id": "pooled_pilot_20260919_phoenix",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "phoenix",
+        "orbit": "28909",
+        "date": "2023-08-11",
+        "run_id": "pooled_pilot_20260919_phoenix",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "phoenix",
+        "orbit": "28970",
+        "date": "2023-08-15",
+        "run_id": "pooled_extension_20260921_phoenix",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "phoenix",
+        "orbit": "29092",
+        "date": "2023-08-23",
+        "run_id": "pooled_extension_20260921_phoenix",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "phoenix",
+        "orbit": "29545",
+        "date": "2023-09-21",
+        "run_id": "pooled_extension_20260921_phoenix",
+        "variant": "paired_primary"
+      },
+      {
+        "city": "phoenix",
+        "orbit": "29606",
+        "date": "2023-09-25",
+        "run_id": "pooled_extension_20260921_phoenix",
+        "variant": "paired_primary"
+      }
+    ],
+    "other_year_Phoenix_weight": 0,
+    "sample_reselected": false
+  },
+  "outcome_hierarchy": {
+    "primary": "temperature canopy-associated mixed-pixel surface cooling",
+    "paired_diagnostic": "estimated emitted longwave flux = epsilon_WB * sigma * T_K^4",
+    "reference_diagnostic": "fixed-reference temperature-equivalent predicted flux difference",
+    "automatic_flux_promotion": false,
+    "vpd": "descriptive only"
+  },
+  "estimator_preserved": {
+    "unit": "native ECOSTRESS cell",
+    "fit": "one canopy slope per city-pass with 1km block intercepts",
+    "context_controls": [
+      "impervious_fraction",
+      "low_vegetation_fraction",
+      "bare_fraction",
+      "building_fraction",
+      "elevation",
+      "distance_to_water"
+    ],
+    "paired_rows_covariates_weights_draws": true,
+    "new_support_threshold": null,
+    "temperature_positive_cooling": "-0.10 * beta_T in K per +10 percentage points"
+  },
+  "sequence": [
+    "Step 1 scope/access documentation",
+    "existing sixteen-pass results packet within recorded access scope",
+    "review existing spatial comparisons and paired diagnostics",
+    "supported targeted sensitivity and calibrated time uncertainty under separate execution freeze",
+    "targeted observation design after review and separate scope decision"
+  ],
+  "spatial_comparisons_planned": {
+    "common_cells": "original versus all-eleven Phoenix common footprint; absolute change and represented-population audit",
+    "fixed_support_registration": "shifted minus unshifted on identical within-pass cells; verify existing paired draw correspondence",
+    "available_support_registration": "separate labelled sensitivity including composition change",
+    "difference_uncertainty": "equal seeds alone do not establish pairing across differing physical block universes"
+  },
+  "access_boundary": {
+    "new_effect_display_authorized_by_this_step": false,
+    "new_unsealing_authorized_by_this_step": false,
+    "existing_internal_sealed_computation_authority": "preserved; not exercised by this documentation step",
+    "prior_records": [
+      "docs/v2/v6_2/execution/limited_gradient_disclosure_20260919.json",
+      "outputs/v6_2/scientific/exploratory_review_20260921/gradient_disclosure.json",
+      "docs/v2/v6_2/execution/nonlinear_association_20260930/design.json"
+    ],
+    "prior_effect_access": "Original ten-pass T, M and temperature-equivalent file was read in the 19 September disclosure; displayed results were limited to LST. Sixteen-pass LST gradients/intervals and later LST spline summaries have their separate recorded releases. No global blindness claim.",
+    "currently_reusable_release": "existing LST gradients and intervals within prior recorded scope",
+    "unreleased_preserved": [
+      "raw paired model arrays and draws",
+      "unreleased flux and equivalent diagnostics",
+      "unreleased spatial effects and differences",
+      "original empirical time contrasts",
+      "seven other-year Phoenix coefficients"
+    ],
+    "new_sealed_files_opened": [],
+    "private_packet_display_counts_as_disclosure": true
+  },
+  "limits": {
+    "new_city_screening": "paused for existing-results review",
+    "new_thermal_expansion": "separate recorded scope decision required",
+    "scale_tolerance_K_per_10pp": null,
+    "scale_tolerance_owner": "Reza",
+    "scale_ruling": "not made",
+    "professor_approval": "not implied",
+    "new_fits": 0,
+    "new_time_comparisons": 0,
+    "results_packet": "next work package; not assembled by this step",
+    "weather_acquisition": "not performed",
+    "commit_push_messages": "not authorized by this step"
+  },
+  "legacy_code": {
+    "path": "src/urban_cooling_v2/pooled_city_pass.py",
+    "function": "scale_ruling",
+    "status": "historical promotion rule retained unchanged; excluded from current review verdicts",
+    "remediation": "Any later current-review runner must enforce temperature-primary reporting and not invoke historical promotion verdicts"
+  },
+  "data_link": {
+    "link": "data",
+    "is_symlink": true,
+    "resolved_target": "/Users/jmlee/Documents/Documents - Jamie’s Mac mini/TreeProject/project/data",
+    "target_exists": true,
+    "contents_opened_for_this_step": false
+  },
+  "preservation": {
+    "archive": "docs/v2/v6_2/archive/before_results_review_20261004",
+    "source_copies": "docs/v2/v6_2/sources/review_guidance_20261004",
+    "frozen_data_and_scientific_outputs_modified": false,
+    "historical_checksum_manifests": "preserved as snapshot records; not replaced with new active hashes"
+  },
+  "original_runs": [
+    {
+      "manifest": "docs/v2/v6_2/execution/phoenix_execution_manifest.json",
+      "run_id": "pooled_pilot_20260919_phoenix",
+      "city": "phoenix",
+      "orbits": [
+        27963,
+        28024,
+        28706,
+        28828,
+        28909
+      ]
+    },
+    {
+      "manifest": "docs/v2/v6_2/execution/atlanta_execution_manifest.json",
+      "run_id": "pooled_pilot_20260919_atlanta",
+      "city": "atlanta",
+      "orbits": [
+        27835,
+        27896,
+        27916,
+        28145,
+        28598
+      ]
+    },
+    {
+      "manifest": "docs/v2/v6_2/execution/advance_20260921/phoenix_execution_manifest.json",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "city": "phoenix",
+      "orbits": [
+        28085,
+        28192,
+        28970,
+        29092,
+        29545,
+        29606
+      ]
+    }
+  ]
+}

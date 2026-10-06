@@ -1,0 +1,24 @@
+{
+  "status": "PASSED",
+  "unchanged_scientific_settings": true,
+  "earlier_steps_preserved": true,
+  "six_Step4_documents_archived_exactly": true,
+  "archive_hashes_match_prior_completion": true,
+  "sample_and_scope_consistent": true,
+  "fit_scope_pending_explicit": true,
+  "new_local_links_exist": true,
+  "previews": [
+    "docs/v2/v6_2/execution/canopy_support_step5_20261004/qa/report_page_01.png",
+    "docs/v2/v6_2/execution/canopy_support_step5_20261004/qa/report_page_02.png",
+    "docs/v2/v6_2/execution/canopy_support_step5_20261004/qa/report_page_03.png",
+    "docs/v2/v6_2/execution/canopy_support_step5_20261004/qa/document_01_page_01.png",
+    "docs/v2/v6_2/execution/canopy_support_step5_20261004/qa/document_02_page_01.png",
+    "docs/v2/v6_2/execution/canopy_support_step5_20261004/qa/document_03_page_01.png",
+    "docs/v2/v6_2/execution/canopy_support_step5_20261004/qa/document_04_page_01.png",
+    "docs/v2/v6_2/execution/canopy_support_step5_20261004/qa/document_05_page_01.png",
+    "docs/v2/v6_2/execution/canopy_support_step5_20261004/qa/document_06_page_01.png"
+  ],
+  "native_Codex_preview_inspected": false,
+  "renderer": "basic offline text/table layout",
+  "offline_previews_inspected": true
+}

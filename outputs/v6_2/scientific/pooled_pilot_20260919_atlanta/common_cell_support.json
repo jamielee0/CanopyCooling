@@ -1,0 +1,5 @@
+{
+  "common_cells": 108438,
+  "pass_count": 5,
+  "method": "exact_native_grid_cell_identity_across_all_five_passes"
+}

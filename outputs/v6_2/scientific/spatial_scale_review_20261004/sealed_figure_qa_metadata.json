@@ -1,0 +1,55 @@
+{
+  "status": "metadata/nonblank checks only; visual review deferred until authorized display",
+  "figures": [
+    {
+      "file": "common_footprint_cooling_SEALED.png",
+      "pixels": [
+        2106,
+        1980
+      ],
+      "nonblank": true,
+      "visually_inspected": false,
+      "permissions": "0o600"
+    },
+    {
+      "file": "registration_fixed_support_SEALED.png",
+      "pixels": [
+        1908,
+        1620
+      ],
+      "nonblank": true,
+      "visually_inspected": false,
+      "permissions": "0o600"
+    },
+    {
+      "file": "registration_available_support_SEALED.png",
+      "pixels": [
+        2340,
+        1764
+      ],
+      "nonblank": true,
+      "visually_inspected": false,
+      "permissions": "0o600"
+    },
+    {
+      "file": "paired_scale_diagnostic_SEALED.png",
+      "pixels": [
+        2160,
+        1764
+      ],
+      "nonblank": true,
+      "visually_inspected": false,
+      "permissions": "0o600"
+    },
+    {
+      "file": "reference_sensitivity_SEALED.png",
+      "pixels": [
+        2160,
+        1044
+      ],
+      "nonblank": true,
+      "visually_inspected": false,
+      "permissions": "0o600"
+    }
+  ]
+}

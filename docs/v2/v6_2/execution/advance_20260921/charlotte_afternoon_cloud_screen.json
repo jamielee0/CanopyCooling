@@ -1,0 +1,341 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "charlotte",
+      "orbit": 27916,
+      "acquisition_utc": "2023-06-08T22:58:37.519Z",
+      "solar_hour": 17.611411204585313,
+      "sample_points": 300,
+      "observed_points": 41,
+      "clear_points": 41,
+      "sample_point_coverage_fraction": 0.13666666666666666,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.13666666666666666,
+      "failed_assets": 0
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27931,
+      "acquisition_utc": "2023-06-09T22:09:06.350Z",
+      "solar_hour": 16.79748284634899,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27992,
+      "acquisition_utc": "2023-06-13T20:29:54.708Z",
+      "solar_hour": 15.1164983496651,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 251,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.8366666666666667,
+      "clear_fraction_of_all_sample_points": 0.8366666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28552,
+      "acquisition_utc": "2023-07-19T22:34:56.447Z",
+      "solar_hour": 17.098448578640667,
+      "sample_points": 300,
+      "observed_points": 167,
+      "clear_points": 167,
+      "sample_point_coverage_fraction": 0.5566666666666666,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.5566666666666666,
+      "failed_assets": 0
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28598,
+      "acquisition_utc": "2023-07-22T21:46:19.714Z",
+      "solar_hour": 16.291997995268876,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 211,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.7033333333333334,
+      "clear_fraction_of_all_sample_points": 0.7033333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28923,
+      "acquisition_utc": "2023-08-12T21:03:46.872Z",
+      "solar_hour": 15.586718231037636,
+      "sample_points": 300,
+      "observed_points": 288,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 0.96,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "charlotte",
+      "orbit": 29559,
+      "acquisition_utc": "2023-09-22T21:01:02.524Z",
+      "solar_hour": 15.768049023625432,
+      "sample_points": 300,
+      "observed_points": 80,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 0.26666666666666666,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "charlotte",
+      "orbit": 27916,
+      "asset": "ECOv002_L2T_LSTE_27916_008_17SMU_20230608T225837_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27916_008_17SMU_20230608T225837_0711_01/ECOv002_L2T_LSTE_27916_008_17SMU_20230608T225837_0711_01_cloud.tif",
+      "bytes": 15131,
+      "sha256": "b9edac8c36310c9635ae16b4be3beea31ce5fc3c3b2b4f6339dd024387279b99",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_009_17SMU_20230609T220906_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_009_17SMU_20230609T220906_0711_02/ECOv002_L2T_LSTE_27931_009_17SMU_20230609T220906_0711_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "103afd828d69aac0da7e543ffb9d96ec092aff0a3b17e7a7a17a0e833c3982d2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_009_17SMV_20230609T220906_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_009_17SMV_20230609T220906_0711_02/ECOv002_L2T_LSTE_27931_009_17SMV_20230609T220906_0711_02_cloud.tif",
+      "bytes": 27311,
+      "sha256": "ce0372054ce3a6a1cbc4b4e1bf520bb02991958d906096758fe70e14f15b37d9",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_009_17SNV_20230609T220906_0710_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_009_17SNV_20230609T220906_0710_01/ECOv002_L2T_LSTE_27931_009_17SNV_20230609T220906_0710_01_cloud.tif",
+      "bytes": 6415,
+      "sha256": "d6b1ac83b63266c997488b17fc10d9161ce3113dffc3bb8ec2ccc76db91e0f7b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_010_17SMU_20230609T220958_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_010_17SMU_20230609T220958_0711_02/ECOv002_L2T_LSTE_27931_010_17SMU_20230609T220958_0711_02_cloud.tif",
+      "bytes": 5770,
+      "sha256": "a909e7181b5c7ad898eefc4c00f84abc2ad48c358d2607ee468bf75b065a8667",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_010_17SMV_20230609T220958_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_010_17SMV_20230609T220958_0711_02/ECOv002_L2T_LSTE_27931_010_17SMV_20230609T220958_0711_02_cloud.tif",
+      "bytes": 11982,
+      "sha256": "80282fb7b8036bb42c2e6cbfa09d7d415d6746d3b6c31e57016a677da2bbe43b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_010_17SNU_20230609T220958_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_010_17SNU_20230609T220958_0711_02/ECOv002_L2T_LSTE_27931_010_17SNU_20230609T220958_0711_02_cloud.tif",
+      "bytes": 6556,
+      "sha256": "97ab745b099ed7d570f675049426133100dbeb74e9facdb5b18daca4ebc1b871",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_010_17SNV_20230609T220958_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_010_17SNV_20230609T220958_0711_02/ECOv002_L2T_LSTE_27931_010_17SNV_20230609T220958_0711_02_cloud.tif",
+      "bytes": 13684,
+      "sha256": "f99f0263fbc2220df5180e8b63727a7503460273eeebfcb3e06ed1b3e2af404a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27992,
+      "asset": "ECOv002_L2T_LSTE_27992_009_17SMU_20230613T202954_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27992_009_17SMU_20230613T202954_0711_02/ECOv002_L2T_LSTE_27992_009_17SMU_20230613T202954_0711_02_cloud.tif",
+      "bytes": 11979,
+      "sha256": "4d2db7e6d314e78fe333a2978ca71797a43cb113f39de7becee5f4fcb2c72606",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27992,
+      "asset": "ECOv002_L2T_LSTE_27992_009_17SMV_20230613T202954_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27992_009_17SMV_20230613T202954_0711_02/ECOv002_L2T_LSTE_27992_009_17SMV_20230613T202954_0711_02_cloud.tif",
+      "bytes": 58134,
+      "sha256": "d8611a785a1eadda112f0d76ff0d6f2181b52dbf0f98590da44b106954dfb57b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27992,
+      "asset": "ECOv002_L2T_LSTE_27992_009_17SNU_20230613T202954_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27992_009_17SNU_20230613T202954_0711_02/ECOv002_L2T_LSTE_27992_009_17SNU_20230613T202954_0711_02_cloud.tif",
+      "bytes": 12642,
+      "sha256": "9efcfa069ade7a0a9ff1dfe19aa3e136a92397e618bfc90499620fe18348d777",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27992,
+      "asset": "ECOv002_L2T_LSTE_27992_009_17SNV_20230613T202954_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27992_009_17SNV_20230613T202954_0711_02/ECOv002_L2T_LSTE_27992_009_17SNV_20230613T202954_0711_02_cloud.tif",
+      "bytes": 45205,
+      "sha256": "bcb29e15a996e000fe6ddc93fd05c5111da6b4a8ca14fa220deb58eff16b2c08",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27992,
+      "asset": "ECOv002_L2T_LSTE_27992_010_17SMU_20230613T203046_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27992_010_17SMU_20230613T203046_0711_02/ECOv002_L2T_LSTE_27992_010_17SMU_20230613T203046_0711_02_cloud.tif",
+      "bytes": 6733,
+      "sha256": "b8e12c4af252909a8c3c4867cce560001bb952abd4a22b671178416db31be9aa",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27992,
+      "asset": "ECOv002_L2T_LSTE_27992_010_17SNU_20230613T203046_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27992_010_17SNU_20230613T203046_0711_02/ECOv002_L2T_LSTE_27992_010_17SNU_20230613T203046_0711_02_cloud.tif",
+      "bytes": 30820,
+      "sha256": "933df7579eb9e62f2c3d8ad619130ca331840b285e7ba360d8acba0e45a22bf7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 27992,
+      "asset": "ECOv002_L2T_LSTE_27992_010_17SNV_20230613T203046_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27992_010_17SNV_20230613T203046_0711_02/ECOv002_L2T_LSTE_27992_010_17SNV_20230613T203046_0711_02_cloud.tif",
+      "bytes": 15686,
+      "sha256": "c001d8512ecc247a19db02ad22116370bf865bf7c810b51ec2130e77c50eccc3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28552,
+      "asset": "ECOv002_L2T_LSTE_28552_004_17SNU_20230719T223456_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28552_004_17SNU_20230719T223456_0712_02/ECOv002_L2T_LSTE_28552_004_17SNU_20230719T223456_0712_02_cloud.tif",
+      "bytes": 20749,
+      "sha256": "119322c63e06be105b2e87f6568774746ca1bae2bed6d1c1783a27a857a7a7c4",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28552,
+      "asset": "ECOv002_L2T_LSTE_28552_005_17SNU_20230719T223548_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28552_005_17SNU_20230719T223548_0712_02/ECOv002_L2T_LSTE_28552_005_17SNU_20230719T223548_0712_02_cloud.tif",
+      "bytes": 8890,
+      "sha256": "c876f1e1991350b8757e7b2b4a9f803c650cd1c0583a25c0a7003af69c354e9d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_005_17SMU_20230722T214619_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_005_17SMU_20230722T214619_0712_02/ECOv002_L2T_LSTE_28598_005_17SMU_20230722T214619_0712_02_cloud.tif",
+      "bytes": 7026,
+      "sha256": "86be423bc4f1322f65cc10515f7663765e4ede9cd1351763e548a728ce353a9c",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_006_17SMU_20230722T214711_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_006_17SMU_20230722T214711_0712_02/ECOv002_L2T_LSTE_28598_006_17SMU_20230722T214711_0712_02_cloud.tif",
+      "bytes": 41666,
+      "sha256": "df10d6031a96eca858420ef3ba4e847e8a6edebb897029a3b93741c98ed91525",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_006_17SMV_20230722T214711_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_006_17SMV_20230722T214711_0712_02/ECOv002_L2T_LSTE_28598_006_17SMV_20230722T214711_0712_02_cloud.tif",
+      "bytes": 53910,
+      "sha256": "cd97596e3d344740ff8dfcb9bb8329b0b64e1c37a65b941ec2578ec7cf1615e2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_006_17SNU_20230722T214711_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_006_17SNU_20230722T214711_0712_02/ECOv002_L2T_LSTE_28598_006_17SNU_20230722T214711_0712_02_cloud.tif",
+      "bytes": 69381,
+      "sha256": "4b0c0d2156a7fd1d9c9bf2137d5038520a5f296495fe013d28ec4a5268b23d6d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_006_17SNV_20230722T214711_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_006_17SNV_20230722T214711_0712_02/ECOv002_L2T_LSTE_28598_006_17SNV_20230722T214711_0712_02_cloud.tif",
+      "bytes": 44339,
+      "sha256": "5a663f458c379a95e7d7cf5304799a6f650069a50dbb8456758e19053ad5b9a6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28923,
+      "asset": "ECOv002_L2T_LSTE_28923_009_17SNU_20230812T210346_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28923_009_17SNU_20230812T210346_0712_02/ECOv002_L2T_LSTE_28923_009_17SNU_20230812T210346_0712_02_cloud.tif",
+      "bytes": 11457,
+      "sha256": "a2570ed0e1a7a4d98889e59909db983b56f0b3dbd4f114cfa0b85d326783ab3e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 28923,
+      "asset": "ECOv002_L2T_LSTE_28923_009_17SNV_20230812T210346_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28923_009_17SNV_20230812T210346_0712_02/ECOv002_L2T_LSTE_28923_009_17SNV_20230812T210346_0712_02_cloud.tif",
+      "bytes": 10820,
+      "sha256": "f5bbbc10f03f934f87c4152dec52ac5f4173a54b004998f8d8964c17b94264e3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 29559,
+      "asset": "ECOv002_L2T_LSTE_29559_004_17SMU_20230922T210102_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29559_004_17SMU_20230922T210102_0712_02/ECOv002_L2T_LSTE_29559_004_17SMU_20230922T210102_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "103afd828d69aac0da7e543ffb9d96ec092aff0a3b17e7a7a17a0e833c3982d2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 29559,
+      "asset": "ECOv002_L2T_LSTE_29559_005_17SMU_20230922T210154_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29559_005_17SMU_20230922T210154_0712_02/ECOv002_L2T_LSTE_29559_005_17SMU_20230922T210154_0712_02_cloud.tif",
+      "bytes": 21324,
+      "sha256": "baaa7e84ff6179d79a61f5a2dcc6204e18ecd252911dd570fda99f5677abf2c6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "charlotte",
+      "orbit": 29559,
+      "asset": "ECOv002_L2T_LSTE_29559_005_17SMV_20230922T210154_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29559_005_17SMV_20230922T210154_0712_02/ECOv002_L2T_LSTE_29559_005_17SMV_20230922T210154_0712_02_cloud.tif",
+      "bytes": 26167,
+      "sha256": "ee7d94f0bf43e08dea2863a9532422765a07733b18ddfd1fb98af97287854edf",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

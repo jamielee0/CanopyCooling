@@ -1,0 +1,72 @@
+{
+  "time": "2023-06-11T23:00:00+00:00",
+  "rows": [
+    {
+      "city": "phoenix",
+      "timestamp_utc": "2023-06-11T23:00:00+00:00",
+      "n_domain_cells": 328,
+      "product": "sfc",
+      "t2m_mean": 305.4290652391387,
+      "d2m_mean": 275.6325988769531,
+      "u10_mean": 4.8211731794403825,
+      "v10_mean": 2.9786040143268866,
+      "vpd_mean": 4.08312802995956,
+      "wind_speed_mean": 6.042303456843072,
+      "source": "NOAA_HRRR_f00_AWS"
+    }
+  ],
+  "downloads": [
+    {
+      "url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20230611/conus/hrrr.t23z.wrfsfcf00.grib2",
+      "status": 206,
+      "bytes": 1260724,
+      "sha256": "252ece2622e7c1d60cebcb7b95e469554ae18eae76a097b6e6b43dd98233a79a",
+      "retrieved_utc": "2026-10-05T20:21:08.810379+00:00",
+      "etag": "\"fea15c2d7473537bbc47c5ef20ff91fd\"",
+      "last_modified": "Sun, 11 Jun 2023 23:56:02 GMT",
+      "byte_range": [
+        38056466,
+        39317189
+      ]
+    },
+    {
+      "url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20230611/conus/hrrr.t23z.wrfsfcf00.grib2",
+      "status": 206,
+      "bytes": 1230071,
+      "sha256": "a2c91b771003bb03e31fd9c1cb9e53add4db06ab9a8a1e39e2eef7960c15fb14",
+      "retrieved_utc": "2026-10-05T20:21:10.294238+00:00",
+      "etag": "\"fea15c2d7473537bbc47c5ef20ff91fd\"",
+      "last_modified": "Sun, 11 Jun 2023 23:56:02 GMT",
+      "byte_range": [
+        42090106,
+        43320176
+      ]
+    },
+    {
+      "url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20230611/conus/hrrr.t23z.wrfsfcf00.grib2",
+      "status": 206,
+      "bytes": 2381615,
+      "sha256": "28b725cd07cbf4b6408fab644c9723308787015ab96908e2cad743221f13c67a",
+      "retrieved_utc": "2026-10-05T20:21:11.801214+00:00",
+      "etag": "\"fea15c2d7473537bbc47c5ef20ff91fd\"",
+      "last_modified": "Sun, 11 Jun 2023 23:56:02 GMT",
+      "byte_range": [
+        45691228,
+        48072842
+      ]
+    },
+    {
+      "url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20230611/conus/hrrr.t23z.wrfsfcf00.grib2",
+      "status": 206,
+      "bytes": 2381615,
+      "sha256": "95b72dde0e42bb37a7d2312ea10539661a9de0348a37a8186703c34865f8bbc1",
+      "retrieved_utc": "2026-10-05T20:21:13.645703+00:00",
+      "etag": "\"fea15c2d7473537bbc47c5ef20ff91fd\"",
+      "last_modified": "Sun, 11 Jun 2023 23:56:02 GMT",
+      "byte_range": [
+        48072843,
+        50454457
+      ]
+    }
+  ]
+}

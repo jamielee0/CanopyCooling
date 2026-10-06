@@ -1,0 +1,381 @@
+{
+  "decision_id": "V6.2-D004",
+  "status": "NON_BINDING_SENSITIVITY",
+  "controlling_D003_ruling_changed": false,
+  "outcome_access": "none; historical nonthermal provenance only",
+  "new_v6_2_coefficients_viewed": false,
+  "sensitivity_ruling": "DROP",
+  "thresholds": {
+    "minimum_complete_passes": 15,
+    "maximum_vpd_vif": 5.0,
+    "maximum_condition_index": 30.0,
+    "maximum_nonlinear_concurvity_r2": 0.8,
+    "minimum_residual_vpd_sd_kpa": 0.25,
+    "minimum_continuous_support_width_kpa": 0.5
+  },
+  "rows": [
+    {
+      "city": "phoenix",
+      "specification": "primary_time_geometry",
+      "role": "binding_for_sensitivity",
+      "n_complete": 19,
+      "design_rank": 5,
+      "maximum_condition_index": 5.104612544751826,
+      "vpd_linear_concurvity_r2": 0.03438267034293241,
+      "vpd_vif": 1.035606931738832,
+      "vpd_nonlinear_cv_concurvity_r2": -0.5815227339012627,
+      "residual_vpd_sd_kpa": 2.288665393925206,
+      "continuous_support_low_kpa": 3.4212506258794817,
+      "continuous_support_high_kpa": 5.837985586517238,
+      "continuous_support_intersection_lower_bound_kpa": 3.4212506258794817,
+      "continuous_support_intersection_upper_bound_kpa": 5.837985586517238,
+      "continuous_support_width_kpa": 2.4167349606377564,
+      "criteria_pass": {
+        "complete_passes": true,
+        "vpd_vif": true,
+        "condition_index": true,
+        "nonlinear_concurvity": true,
+        "residual_vpd_sd": true,
+        "continuous_support_width": true
+      },
+      "all_primary_criteria_pass": true,
+      "failed_primary_criteria": ""
+    },
+    {
+      "city": "phoenix",
+      "specification": "plus_air_temperature_only",
+      "role": "non_vetoing_interpretation",
+      "n_complete": 19,
+      "design_rank": 6,
+      "maximum_condition_index": 15.920162451010935,
+      "vpd_linear_concurvity_r2": 0.9793060753879014,
+      "vpd_vif": 48.323361505596374,
+      "vpd_nonlinear_cv_concurvity_r2": 0.937628283214208,
+      "residual_vpd_sd_kpa": 0.45411576255418984,
+      "continuous_support_low_kpa": 3.4212506258794817,
+      "continuous_support_high_kpa": 5.837985586517238,
+      "continuous_support_intersection_lower_bound_kpa": 3.4212506258794817,
+      "continuous_support_intersection_upper_bound_kpa": 5.837985586517238,
+      "continuous_support_width_kpa": 2.4167349606377564,
+      "criteria_pass": {
+        "complete_passes": true,
+        "vpd_vif": false,
+        "condition_index": true,
+        "nonlinear_concurvity": false,
+        "residual_vpd_sd": true,
+        "continuous_support_width": true
+      },
+      "all_primary_criteria_pass": null,
+      "failed_primary_criteria": ""
+    },
+    {
+      "city": "phoenix",
+      "specification": "plus_actual_vapour_pressure_only",
+      "role": "non_vetoing_interpretation",
+      "n_complete": 19,
+      "design_rank": 6,
+      "maximum_condition_index": 11.524362997245607,
+      "vpd_linear_concurvity_r2": 0.8599341434144392,
+      "vpd_vif": 7.13949869281054,
+      "vpd_nonlinear_cv_concurvity_r2": 0.6713597676036214,
+      "residual_vpd_sd_kpa": 1.0429252243308063,
+      "continuous_support_low_kpa": 3.4212506258794817,
+      "continuous_support_high_kpa": 5.837985586517238,
+      "continuous_support_intersection_lower_bound_kpa": 3.4212506258794817,
+      "continuous_support_intersection_upper_bound_kpa": 5.837985586517238,
+      "continuous_support_width_kpa": 2.4167349606377564,
+      "criteria_pass": {
+        "complete_passes": true,
+        "vpd_vif": false,
+        "condition_index": true,
+        "nonlinear_concurvity": true,
+        "residual_vpd_sd": true,
+        "continuous_support_width": true
+      },
+      "all_primary_criteria_pass": null,
+      "failed_primary_criteria": ""
+    },
+    {
+      "city": "los_angeles",
+      "specification": "primary_time_geometry",
+      "role": "binding_for_sensitivity",
+      "n_complete": 27,
+      "design_rank": 5,
+      "maximum_condition_index": 3.900864381146144,
+      "vpd_linear_concurvity_r2": 0.5205841629658708,
+      "vpd_vif": 2.0858718522659294,
+      "vpd_nonlinear_cv_concurvity_r2": 0.2898082295072745,
+      "residual_vpd_sd_kpa": 0.8156556726094909,
+      "continuous_support_low_kpa": 1.63832542435412,
+      "continuous_support_high_kpa": 1.9381507679791263,
+      "continuous_support_intersection_lower_bound_kpa": 1.63832542435412,
+      "continuous_support_intersection_upper_bound_kpa": 1.9381507679791263,
+      "continuous_support_width_kpa": 0.29982534362500624,
+      "criteria_pass": {
+        "complete_passes": true,
+        "vpd_vif": true,
+        "condition_index": true,
+        "nonlinear_concurvity": true,
+        "residual_vpd_sd": true,
+        "continuous_support_width": false
+      },
+      "all_primary_criteria_pass": false,
+      "failed_primary_criteria": "continuous_support_width"
+    },
+    {
+      "city": "los_angeles",
+      "specification": "plus_air_temperature_only",
+      "role": "non_vetoing_interpretation",
+      "n_complete": 27,
+      "design_rank": 6,
+      "maximum_condition_index": 9.921842305363166,
+      "vpd_linear_concurvity_r2": 0.9290342391926638,
+      "vpd_vif": 14.09130246225196,
+      "vpd_nonlinear_cv_concurvity_r2": 0.8840168591526728,
+      "residual_vpd_sd_kpa": 0.32957493749338107,
+      "continuous_support_low_kpa": 1.63832542435412,
+      "continuous_support_high_kpa": 1.9381507679791263,
+      "continuous_support_intersection_lower_bound_kpa": 1.63832542435412,
+      "continuous_support_intersection_upper_bound_kpa": 1.9381507679791263,
+      "continuous_support_width_kpa": 0.29982534362500624,
+      "criteria_pass": {
+        "complete_passes": true,
+        "vpd_vif": false,
+        "condition_index": true,
+        "nonlinear_concurvity": false,
+        "residual_vpd_sd": true,
+        "continuous_support_width": false
+      },
+      "all_primary_criteria_pass": null,
+      "failed_primary_criteria": ""
+    },
+    {
+      "city": "los_angeles",
+      "specification": "plus_actual_vapour_pressure_only",
+      "role": "non_vetoing_interpretation",
+      "n_complete": 27,
+      "design_rank": 6,
+      "maximum_condition_index": 4.392342488703686,
+      "vpd_linear_concurvity_r2": 0.5877797856648506,
+      "vpd_vif": 2.425887827002499,
+      "vpd_nonlinear_cv_concurvity_r2": 0.3170467780606049,
+      "residual_vpd_sd_kpa": 0.7993976417980249,
+      "continuous_support_low_kpa": 1.63832542435412,
+      "continuous_support_high_kpa": 1.9381507679791263,
+      "continuous_support_intersection_lower_bound_kpa": 1.63832542435412,
+      "continuous_support_intersection_upper_bound_kpa": 1.9381507679791263,
+      "continuous_support_width_kpa": 0.29982534362500624,
+      "criteria_pass": {
+        "complete_passes": true,
+        "vpd_vif": true,
+        "condition_index": true,
+        "nonlinear_concurvity": true,
+        "residual_vpd_sd": true,
+        "continuous_support_width": false
+      },
+      "all_primary_criteria_pass": null,
+      "failed_primary_criteria": ""
+    }
+  ],
+  "binding_rows": [
+    {
+      "city": "phoenix",
+      "specification": "primary_time_geometry",
+      "role": "binding_for_sensitivity",
+      "n_complete": 19,
+      "design_rank": 5,
+      "maximum_condition_index": 5.104612544751826,
+      "vpd_linear_concurvity_r2": 0.03438267034293241,
+      "vpd_vif": 1.035606931738832,
+      "vpd_nonlinear_cv_concurvity_r2": -0.5815227339012627,
+      "residual_vpd_sd_kpa": 2.288665393925206,
+      "continuous_support_low_kpa": 3.4212506258794817,
+      "continuous_support_high_kpa": 5.837985586517238,
+      "continuous_support_intersection_lower_bound_kpa": 3.4212506258794817,
+      "continuous_support_intersection_upper_bound_kpa": 5.837985586517238,
+      "continuous_support_width_kpa": 2.4167349606377564,
+      "criteria_pass": {
+        "complete_passes": true,
+        "vpd_vif": true,
+        "condition_index": true,
+        "nonlinear_concurvity": true,
+        "residual_vpd_sd": true,
+        "continuous_support_width": true
+      },
+      "all_primary_criteria_pass": true,
+      "failed_primary_criteria": ""
+    },
+    {
+      "city": "los_angeles",
+      "specification": "primary_time_geometry",
+      "role": "binding_for_sensitivity",
+      "n_complete": 27,
+      "design_rank": 5,
+      "maximum_condition_index": 3.900864381146144,
+      "vpd_linear_concurvity_r2": 0.5205841629658708,
+      "vpd_vif": 2.0858718522659294,
+      "vpd_nonlinear_cv_concurvity_r2": 0.2898082295072745,
+      "residual_vpd_sd_kpa": 0.8156556726094909,
+      "continuous_support_low_kpa": 1.63832542435412,
+      "continuous_support_high_kpa": 1.9381507679791263,
+      "continuous_support_intersection_lower_bound_kpa": 1.63832542435412,
+      "continuous_support_intersection_upper_bound_kpa": 1.9381507679791263,
+      "continuous_support_width_kpa": 0.29982534362500624,
+      "criteria_pass": {
+        "complete_passes": true,
+        "vpd_vif": true,
+        "condition_index": true,
+        "nonlinear_concurvity": true,
+        "residual_vpd_sd": true,
+        "continuous_support_width": false
+      },
+      "all_primary_criteria_pass": false,
+      "failed_primary_criteria": "continuous_support_width"
+    }
+  ],
+  "support_details": {
+    "phoenix": {
+      "low_kpa": 3.4212506258794817,
+      "high_kpa": 5.837985586517238,
+      "intersection_lower_bound_kpa": 3.4212506258794817,
+      "intersection_upper_bound_kpa": 5.837985586517238,
+      "has_overlap": true,
+      "width_kpa": 2.4167349606377564,
+      "intervals": [
+        {
+          "stratifier": "solar_zenith_deg",
+          "tertile": 1,
+          "n": 7,
+          "vpd_p10_kpa": 3.4212506258794817,
+          "vpd_p90_kpa": 5.979434536512211
+        },
+        {
+          "stratifier": "solar_zenith_deg",
+          "tertile": 2,
+          "n": 5,
+          "vpd_p10_kpa": 2.7928080542393583,
+          "vpd_p90_kpa": 7.051743881594114
+        },
+        {
+          "stratifier": "solar_zenith_deg",
+          "tertile": 3,
+          "n": 7,
+          "vpd_p10_kpa": 2.4625183668865205,
+          "vpd_p90_kpa": 6.853884431484555
+        },
+        {
+          "stratifier": "day_of_year",
+          "tertile": 1,
+          "n": 7,
+          "vpd_p10_kpa": 2.866593316918002,
+          "vpd_p90_kpa": 6.112313359245066
+        },
+        {
+          "stratifier": "day_of_year",
+          "tertile": 2,
+          "n": 7,
+          "vpd_p10_kpa": 3.08582603264294,
+          "vpd_p90_kpa": 7.474510513510467
+        },
+        {
+          "stratifier": "day_of_year",
+          "tertile": 3,
+          "n": 5,
+          "vpd_p10_kpa": 2.332530241994868,
+          "vpd_p90_kpa": 5.837985586517238
+        }
+      ]
+    },
+    "los_angeles": {
+      "low_kpa": 1.63832542435412,
+      "high_kpa": 1.9381507679791263,
+      "intersection_lower_bound_kpa": 1.63832542435412,
+      "intersection_upper_bound_kpa": 1.9381507679791263,
+      "has_overlap": true,
+      "width_kpa": 0.29982534362500624,
+      "intervals": [
+        {
+          "stratifier": "solar_zenith_deg",
+          "tertile": 1,
+          "n": 9,
+          "vpd_p10_kpa": 1.1336803364625572,
+          "vpd_p90_kpa": 3.412606314788694
+        },
+        {
+          "stratifier": "solar_zenith_deg",
+          "tertile": 2,
+          "n": 9,
+          "vpd_p10_kpa": 0.8924890532520874,
+          "vpd_p90_kpa": 2.670943715975062
+        },
+        {
+          "stratifier": "solar_zenith_deg",
+          "tertile": 3,
+          "n": 9,
+          "vpd_p10_kpa": 1.1168294292344618,
+          "vpd_p90_kpa": 3.697593045627502
+        },
+        {
+          "stratifier": "day_of_year",
+          "tertile": 1,
+          "n": 9,
+          "vpd_p10_kpa": 0.4284526949722186,
+          "vpd_p90_kpa": 1.9381507679791263
+        },
+        {
+          "stratifier": "day_of_year",
+          "tertile": 2,
+          "n": 9,
+          "vpd_p10_kpa": 1.63832542435412,
+          "vpd_p90_kpa": 2.906252129811638
+        },
+        {
+          "stratifier": "day_of_year",
+          "tertile": 3,
+          "n": 9,
+          "vpd_p10_kpa": 1.611161230509766,
+          "vpd_p90_kpa": 3.697593045627502
+        }
+      ]
+    }
+  },
+  "interpretation": "Parsimonious support criteria still fail in at least one city; D003 remains unchanged.",
+  "input_evidence": [
+    {
+      "name": "pass_detail",
+      "path": "docs/v2/hitl/G3_SAMPLING_DESIGN/angle_threshold_pass_detail_existing_five.csv",
+      "sha256": "dfacb2ddf428cd9c18963db2d79b2f53cc522dd031b714ac0976cfeb361cb7b8",
+      "bytes": 824983
+    },
+    {
+      "name": "observation_ledger",
+      "path": "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/observation_ledger.csv",
+      "sha256": "6b6931cd06b18a5bfa66ee01e78df2c6d2aad1db1b4eecd7d4ba86ae3ecfbc79",
+      "bytes": 1570340
+    },
+    {
+      "name": "hrrr_crosswalk",
+      "path": "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/hrrr_pass_hour_crosswalk.csv",
+      "sha256": "77150df933f62b4286903352aff0f4dfde1c96c30a0b843ba12df7a78efa43fe",
+      "bytes": 127662
+    },
+    {
+      "name": "hrrr_hourly",
+      "path": "data/raw/v2/weather/hrrr_exact_acquisition_l1b_geo_D0047_archive_available/hrrr_hourly_domain_summary.csv",
+      "sha256": "b36f4d16d83055922b8e8a4d80c8bb75df3237417a4f03d018a64c633c39f0d1",
+      "bytes": 157017
+    },
+    {
+      "name": "city_config",
+      "path": "configs/v2_cities.toml",
+      "sha256": "287335aa659f68e2e6504a23402c79e671fddcd72f92c38e388a0f267e08615a",
+      "bytes": 7173
+    },
+    {
+      "name": "source_document_checksums",
+      "path": "docs/v2/v6_2/source_document_checksums.txt",
+      "sha256": "217ddd73ec4d9abb572e078619cabc2893206e98079b68f864af4b17e68a6c87",
+      "bytes": 688
+    }
+  ]
+}

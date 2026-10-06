@@ -1,0 +1,5 @@
+snapshot_date=2026-09-03
+git_commit=05ce27941a5dc3c5e0634a27b6a089fa27909499
+worktree_dirty=true
+worktree_status_entry_count=258
+interpretation=FILE_INDEX.csv and checksums.sha256 identify the exact submission snapshot.

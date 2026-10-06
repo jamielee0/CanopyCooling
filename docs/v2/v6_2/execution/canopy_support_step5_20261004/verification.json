@@ -1,0 +1,31 @@
+{
+  "status": "PREDICTOR_AUDIT_COMPLETE_VERIFIED_QUADRATIC_FITTING_SCOPE_PENDING",
+  "known_answer_tests": 12,
+  "original_passes": 16,
+  "source_hashes": 24,
+  "original_cell_pass_observations": 7511083,
+  "public_tables": 6,
+  "public_rows": 1528,
+  "typed_CSV_roundtrip": "exact",
+  "historical_counts_reconciled": true,
+  "candidate_pairs": 15,
+  "neighbourhood_widths": 3,
+  "protected_basis_designs": 32,
+  "design_resamples": 32000,
+  "decoded_outcome_columns": [],
+  "coefficient_or_effect_files_opened": [],
+  "new_outcome_fits": 0,
+  "new_effect_display": false,
+  "no_new_inclusion_cutoff": true,
+  "no_sample_change": true,
+  "native_identity_and_block_checks": true,
+  "equal_city_unique_reference_pool_sizes": true,
+  "scientific_audit_code_and_source_hashes_preserved": true,
+  "plot_only_layout_adjustment": {
+    "initial_archive": "archive/plot_canopy_support_at_freeze.py",
+    "current_sha256": "ef4dd56c2c577f57630672f6984d4ff2862c489b11d5a11d743d626bd6201dc8"
+  },
+  "public_visual_qa": "four figure families and six table previews passed; legend/colorbar/zero-count presentation repaired without changing numerical audit",
+  "public_PDF_verification": "four one-page exports checked",
+  "documentation_qa": "report and six addition previews inspected; native Codex preview not claimed"
+}

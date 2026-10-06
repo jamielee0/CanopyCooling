@@ -1,0 +1,2982 @@
+[
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 96.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019166T182809.v2.0/HLS.L30.T11SLT.2019166T182809.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2019166T182809.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019166T182809.v2.0/HLS.L30.T11SLT.2019166T182809.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019166T182809.v2.0/HLS.L30.T11SLT.2019166T182809.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019166T182809.v2.0/HLS.L30.T11SLT.2019166T182809.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-06-15T18:28:09.757000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 2.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019182T182814.v2.0/HLS.L30.T11SLT.2019182T182814.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2019182T182814.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019182T182814.v2.0/HLS.L30.T11SLT.2019182T182814.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019182T182814.v2.0/HLS.L30.T11SLT.2019182T182814.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019182T182814.v2.0/HLS.L30.T11SLT.2019182T182814.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-07-01T18:28:14.413000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 57.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019198T182817.v2.0/HLS.L30.T11SLT.2019198T182817.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2019198T182817.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019198T182817.v2.0/HLS.L30.T11SLT.2019198T182817.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019198T182817.v2.0/HLS.L30.T11SLT.2019198T182817.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019198T182817.v2.0/HLS.L30.T11SLT.2019198T182817.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-07-17T18:28:17.041000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 15.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019214T182823.v2.0/HLS.L30.T11SLT.2019214T182823.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2019214T182823.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019214T182823.v2.0/HLS.L30.T11SLT.2019214T182823.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019214T182823.v2.0/HLS.L30.T11SLT.2019214T182823.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2019214T182823.v2.0/HLS.L30.T11SLT.2019214T182823.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-08-02T18:28:23.874000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 100.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2020226T182232.v2.0/HLS.L30.T11SLT.2020226T182232.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2020226T182232.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2020226T182232.v2.0/HLS.L30.T11SLT.2020226T182232.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2020226T182232.v2.0/HLS.L30.T11SLT.2020226T182232.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2020226T182232.v2.0/HLS.L30.T11SLT.2020226T182232.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2020-08-13T18:22:32.882000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 11.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2020242T182241.v2.0/HLS.L30.T11SLT.2020242T182241.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2020242T182241.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2020242T182241.v2.0/HLS.L30.T11SLT.2020242T182241.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2020242T182241.v2.0/HLS.L30.T11SLT.2020242T182241.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2020242T182241.v2.0/HLS.L30.T11SLT.2020242T182241.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2020-08-29T18:22:41.351000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 64.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021171T182811.v2.0/HLS.L30.T11SLT.2021171T182811.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2021171T182811.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021171T182811.v2.0/HLS.L30.T11SLT.2021171T182811.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021171T182811.v2.0/HLS.L30.T11SLT.2021171T182811.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021171T182811.v2.0/HLS.L30.T11SLT.2021171T182811.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2021-06-20T18:28:11.769000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 76.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021212T182236.v2.0/HLS.L30.T11SLT.2021212T182236.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2021212T182236.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021212T182236.v2.0/HLS.L30.T11SLT.2021212T182236.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021212T182236.v2.0/HLS.L30.T11SLT.2021212T182236.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021212T182236.v2.0/HLS.L30.T11SLT.2021212T182236.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2021-07-31T18:22:36.352000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 48.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021219T182826.v2.0/HLS.L30.T11SLT.2021219T182826.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2021219T182826.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021219T182826.v2.0/HLS.L30.T11SLT.2021219T182826.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021219T182826.v2.0/HLS.L30.T11SLT.2021219T182826.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021219T182826.v2.0/HLS.L30.T11SLT.2021219T182826.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2021-08-07T18:28:26.218000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 45.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021228T182242.v2.0/HLS.L30.T11SLT.2021228T182242.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2021228T182242.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021228T182242.v2.0/HLS.L30.T11SLT.2021228T182242.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021228T182242.v2.0/HLS.L30.T11SLT.2021228T182242.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021228T182242.v2.0/HLS.L30.T11SLT.2021228T182242.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2021-08-16T18:22:42.321000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 83.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021235T182831.v2.0/HLS.L30.T11SLT.2021235T182831.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2021235T182831.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021235T182831.v2.0/HLS.L30.T11SLT.2021235T182831.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021235T182831.v2.0/HLS.L30.T11SLT.2021235T182831.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2021235T182831.v2.0/HLS.L30.T11SLT.2021235T182831.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2021-08-23T18:28:31.095000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022199T182248.v2.0/HLS.L30.T11SLT.2022199T182248.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2022199T182248.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022199T182248.v2.0/HLS.L30.T11SLT.2022199T182248.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022199T182248.v2.0/HLS.L30.T11SLT.2022199T182248.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022199T182248.v2.0/HLS.L30.T11SLT.2022199T182248.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2022-07-18T18:22:48.934000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 51.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022215T182300.v2.0/HLS.L30.T11SLT.2022215T182300.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2022215T182300.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022215T182300.v2.0/HLS.L30.T11SLT.2022215T182300.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022215T182300.v2.0/HLS.L30.T11SLT.2022215T182300.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022215T182300.v2.0/HLS.L30.T11SLT.2022215T182300.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2022-08-03T18:23:00.052000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 21.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022231T182305.v2.0/HLS.L30.T11SLT.2022231T182305.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2022231T182305.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022231T182305.v2.0/HLS.L30.T11SLT.2022231T182305.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022231T182305.v2.0/HLS.L30.T11SLT.2022231T182305.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022231T182305.v2.0/HLS.L30.T11SLT.2022231T182305.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2022-08-19T18:23:05.231000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 72.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022239T182247.v2.0/HLS.L30.T11SLT.2022239T182247.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2022239T182247.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022239T182247.v2.0/HLS.L30.T11SLT.2022239T182247.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022239T182247.v2.0/HLS.L30.T11SLT.2022239T182247.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2022239T182247.v2.0/HLS.L30.T11SLT.2022239T182247.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2022-08-27T18:22:47.266000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 99.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023145T182738.v2.0/HLS.L30.T11SLT.2023145T182738.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2023145T182738.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023145T182738.v2.0/HLS.L30.T11SLT.2023145T182738.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023145T182738.v2.0/HLS.L30.T11SLT.2023145T182738.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023145T182738.v2.0/HLS.L30.T11SLT.2023145T182738.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-05-25T18:27:38.506000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 59.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023153T182747.v2.0/HLS.L30.T11SLT.2023153T182747.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2023153T182747.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023153T182747.v2.0/HLS.L30.T11SLT.2023153T182747.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023153T182747.v2.0/HLS.L30.T11SLT.2023153T182747.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023153T182747.v2.0/HLS.L30.T11SLT.2023153T182747.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-06-02T18:27:47.984000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 96.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023169T182739.v2.0/HLS.L30.T11SLT.2023169T182739.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2023169T182739.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023169T182739.v2.0/HLS.L30.T11SLT.2023169T182739.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023169T182739.v2.0/HLS.L30.T11SLT.2023169T182739.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023169T182739.v2.0/HLS.L30.T11SLT.2023169T182739.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-06-18T18:27:39.520000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 21.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023177T182752.v2.0/HLS.L30.T11SLT.2023177T182752.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2023177T182752.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023177T182752.v2.0/HLS.L30.T11SLT.2023177T182752.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023177T182752.v2.0/HLS.L30.T11SLT.2023177T182752.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023177T182752.v2.0/HLS.L30.T11SLT.2023177T182752.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-06-26T18:27:52.615000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023193T182802.v2.0/HLS.L30.T11SLT.2023193T182802.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2023193T182802.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023193T182802.v2.0/HLS.L30.T11SLT.2023193T182802.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023193T182802.v2.0/HLS.L30.T11SLT.2023193T182802.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023193T182802.v2.0/HLS.L30.T11SLT.2023193T182802.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-07-12T18:28:02.179000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 29.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023201T182756.v2.0/HLS.L30.T11SLT.2023201T182756.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2023201T182756.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023201T182756.v2.0/HLS.L30.T11SLT.2023201T182756.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023201T182756.v2.0/HLS.L30.T11SLT.2023201T182756.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023201T182756.v2.0/HLS.L30.T11SLT.2023201T182756.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-07-20T18:27:56.035000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 98.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023210T182213.v2.0/HLS.L30.T11SLT.2023210T182213.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2023210T182213.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023210T182213.v2.0/HLS.L30.T11SLT.2023210T182213.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023210T182213.v2.0/HLS.L30.T11SLT.2023210T182213.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023210T182213.v2.0/HLS.L30.T11SLT.2023210T182213.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-07-29T18:22:13.066000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 29.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023217T182805.v2.0/HLS.L30.T11SLT.2023217T182805.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2023217T182805.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023217T182805.v2.0/HLS.L30.T11SLT.2023217T182805.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023217T182805.v2.0/HLS.L30.T11SLT.2023217T182805.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023217T182805.v2.0/HLS.L30.T11SLT.2023217T182805.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-08-05T18:28:05.064000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 68.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023226T182219.v2.0/HLS.L30.T11SLT.2023226T182219.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2023226T182219.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023226T182219.v2.0/HLS.L30.T11SLT.2023226T182219.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023226T182219.v2.0/HLS.L30.T11SLT.2023226T182219.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2023226T182219.v2.0/HLS.L30.T11SLT.2023226T182219.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-08-14T18:22:19.451000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 94.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2024197T182159.v2.0/HLS.L30.T11SLT.2024197T182159.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2024197T182159.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2024197T182159.v2.0/HLS.L30.T11SLT.2024197T182159.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2024197T182159.v2.0/HLS.L30.T11SLT.2024197T182159.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2024197T182159.v2.0/HLS.L30.T11SLT.2024197T182159.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2024-07-15T18:21:59.665000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 23.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2024205T182209.v2.0/HLS.L30.T11SLT.2024205T182209.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2024205T182209.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2024205T182209.v2.0/HLS.L30.T11SLT.2024205T182209.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2024205T182209.v2.0/HLS.L30.T11SLT.2024205T182209.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2024205T182209.v2.0/HLS.L30.T11SLT.2024205T182209.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2024-07-23T18:22:09.685000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025150T182748.v2.0/HLS.L30.T11SLT.2025150T182748.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2025150T182748.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025150T182748.v2.0/HLS.L30.T11SLT.2025150T182748.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025150T182748.v2.0/HLS.L30.T11SLT.2025150T182748.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025150T182748.v2.0/HLS.L30.T11SLT.2025150T182748.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-05-30T18:27:48.603000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 87.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025158T182746.v2.0/HLS.L30.T11SLT.2025158T182746.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2025158T182746.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025158T182746.v2.0/HLS.L30.T11SLT.2025158T182746.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025158T182746.v2.0/HLS.L30.T11SLT.2025158T182746.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025158T182746.v2.0/HLS.L30.T11SLT.2025158T182746.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-06-07T18:27:46.831000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025166T182758.v2.0/HLS.L30.T11SLT.2025166T182758.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2025166T182758.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025166T182758.v2.0/HLS.L30.T11SLT.2025166T182758.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025166T182758.v2.0/HLS.L30.T11SLT.2025166T182758.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025166T182758.v2.0/HLS.L30.T11SLT.2025166T182758.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-06-15T18:27:58.491000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 57.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025214T182815.v2.0/HLS.L30.T11SLT.2025214T182815.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2025214T182815.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025214T182815.v2.0/HLS.L30.T11SLT.2025214T182815.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025214T182815.v2.0/HLS.L30.T11SLT.2025214T182815.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025214T182815.v2.0/HLS.L30.T11SLT.2025214T182815.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-08-02T18:28:15.721000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 30.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025222T182822.v2.0/HLS.L30.T11SLT.2025222T182822.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2025222T182822.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025222T182822.v2.0/HLS.L30.T11SLT.2025222T182822.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025222T182822.v2.0/HLS.L30.T11SLT.2025222T182822.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025222T182822.v2.0/HLS.L30.T11SLT.2025222T182822.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-08-10T18:28:22.065000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 48.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025230T182823.v2.0/HLS.L30.T11SLT.2025230T182823.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2025230T182823.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025230T182823.v2.0/HLS.L30.T11SLT.2025230T182823.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025230T182823.v2.0/HLS.L30.T11SLT.2025230T182823.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025230T182823.v2.0/HLS.L30.T11SLT.2025230T182823.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-08-18T18:28:23.205000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 53.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025254T182833.v2.0/HLS.L30.T11SLT.2025254T182833.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2025254T182833.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025254T182833.v2.0/HLS.L30.T11SLT.2025254T182833.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025254T182833.v2.0/HLS.L30.T11SLT.2025254T182833.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025254T182833.v2.0/HLS.L30.T11SLT.2025254T182833.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-09-11T18:28:33.328000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 98.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025270T182836.v2.0/HLS.L30.T11SLT.2025270T182836.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.L30.T11SLT.2025270T182836.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025270T182836.v2.0/HLS.L30.T11SLT.2025270T182836.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025270T182836.v2.0/HLS.L30.T11SLT.2025270T182836.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SLT.2025270T182836.v2.0/HLS.L30.T11SLT.2025270T182836.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-09-27T18:28:36.875000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 99.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2019143T182148.v2.0/HLS.L30.T11SMT.2019143T182148.v2.0.Fmask.tif",
+    "mgrs_tile": "11SMT",
+    "optical_acquisition_id": "HLS.L30.T11SMT.2019143T182148.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2019143T182148.v2.0/HLS.L30.T11SMT.2019143T182148.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2019143T182148.v2.0/HLS.L30.T11SMT.2019143T182148.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2019143T182148.v2.0/HLS.L30.T11SMT.2019143T182148.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-05-23T18:21:48.556000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2021148T182152.v2.0/HLS.L30.T11SMT.2021148T182152.v2.0.Fmask.tif",
+    "mgrs_tile": "11SMT",
+    "optical_acquisition_id": "HLS.L30.T11SMT.2021148T182152.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2021148T182152.v2.0/HLS.L30.T11SMT.2021148T182152.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2021148T182152.v2.0/HLS.L30.T11SMT.2021148T182152.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2021148T182152.v2.0/HLS.L30.T11SMT.2021148T182152.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2021-05-28T18:21:52.272000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 5.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2021164T182158.v2.0/HLS.L30.T11SMT.2021164T182158.v2.0.Fmask.tif",
+    "mgrs_tile": "11SMT",
+    "optical_acquisition_id": "HLS.L30.T11SMT.2021164T182158.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2021164T182158.v2.0/HLS.L30.T11SMT.2021164T182158.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2021164T182158.v2.0/HLS.L30.T11SMT.2021164T182158.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2021164T182158.v2.0/HLS.L30.T11SMT.2021164T182158.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2021-06-13T18:21:58.961000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 40.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2025151T182135.v2.0/HLS.L30.T11SMT.2025151T182135.v2.0.Fmask.tif",
+    "mgrs_tile": "11SMT",
+    "optical_acquisition_id": "HLS.L30.T11SMT.2025151T182135.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2025151T182135.v2.0/HLS.L30.T11SMT.2025151T182135.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2025151T182135.v2.0/HLS.L30.T11SMT.2025151T182135.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T11SMT.2025151T182135.v2.0/HLS.L30.T11SMT.2025151T182135.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-05-31T18:21:35.691000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 75.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019163T175738.v2.0/HLS.L30.T12SUB.2019163T175738.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2019163T175738.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019163T175738.v2.0/HLS.L30.T12SUB.2019163T175738.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019163T175738.v2.0/HLS.L30.T12SUB.2019163T175738.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019163T175738.v2.0/HLS.L30.T12SUB.2019163T175738.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-06-12T17:57:38.445000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019179T175743.v2.0/HLS.L30.T12SUB.2019179T175743.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2019179T175743.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019179T175743.v2.0/HLS.L30.T12SUB.2019179T175743.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019179T175743.v2.0/HLS.L30.T12SUB.2019179T175743.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019179T175743.v2.0/HLS.L30.T12SUB.2019179T175743.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-06-28T17:57:43.478000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 99.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019218T180405.v2.0/HLS.L30.T12SUB.2019218T180405.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2019218T180405.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019218T180405.v2.0/HLS.L30.T12SUB.2019218T180405.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019218T180405.v2.0/HLS.L30.T12SUB.2019218T180405.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019218T180405.v2.0/HLS.L30.T12SUB.2019218T180405.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-08-06T18:04:05.973000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019234T180410.v2.0/HLS.L30.T12SUB.2019234T180410.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2019234T180410.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019234T180410.v2.0/HLS.L30.T12SUB.2019234T180410.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019234T180410.v2.0/HLS.L30.T12SUB.2019234T180410.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2019234T180410.v2.0/HLS.L30.T12SUB.2019234T180410.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-08-22T18:04:10.727000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023150T175718.v2.0/HLS.L30.T12SUB.2023150T175718.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2023150T175718.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023150T175718.v2.0/HLS.L30.T12SUB.2023150T175718.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023150T175718.v2.0/HLS.L30.T12SUB.2023150T175718.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023150T175718.v2.0/HLS.L30.T12SUB.2023150T175718.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-05-30T17:57:18.436000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023158T175713.v2.0/HLS.L30.T12SUB.2023158T175713.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2023158T175713.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023158T175713.v2.0/HLS.L30.T12SUB.2023158T175713.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023158T175713.v2.0/HLS.L30.T12SUB.2023158T175713.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023158T175713.v2.0/HLS.L30.T12SUB.2023158T175713.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-06-07T17:57:13.537000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023206T175736.v2.0/HLS.L30.T12SUB.2023206T175736.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2023206T175736.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023206T175736.v2.0/HLS.L30.T12SUB.2023206T175736.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023206T175736.v2.0/HLS.L30.T12SUB.2023206T175736.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023206T175736.v2.0/HLS.L30.T12SUB.2023206T175736.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-07-25T17:57:36.418000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 27.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023214T175733.v2.0/HLS.L30.T12SUB.2023214T175733.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2023214T175733.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023214T175733.v2.0/HLS.L30.T12SUB.2023214T175733.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023214T175733.v2.0/HLS.L30.T12SUB.2023214T175733.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2023214T175733.v2.0/HLS.L30.T12SUB.2023214T175733.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-08-02T17:57:33.139000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 16.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2024161T175654.v2.0/HLS.L30.T12SUB.2024161T175654.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2024161T175654.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2024161T175654.v2.0/HLS.L30.T12SUB.2024161T175654.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2024161T175654.v2.0/HLS.L30.T12SUB.2024161T175654.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2024161T175654.v2.0/HLS.L30.T12SUB.2024161T175654.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2024-06-09T17:56:54.950000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 86.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2024177T175706.v2.0/HLS.L30.T12SUB.2024177T175706.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2024177T175706.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2024177T175706.v2.0/HLS.L30.T12SUB.2024177T175706.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2024177T175706.v2.0/HLS.L30.T12SUB.2024177T175706.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2024177T175706.v2.0/HLS.L30.T12SUB.2024177T175706.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2024-06-25T17:57:06.150000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 6.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025219T175749.v2.0/HLS.L30.T12SUB.2025219T175749.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2025219T175749.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025219T175749.v2.0/HLS.L30.T12SUB.2025219T175749.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025219T175749.v2.0/HLS.L30.T12SUB.2025219T175749.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025219T175749.v2.0/HLS.L30.T12SUB.2025219T175749.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-08-07T17:57:49.503000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025227T175752.v2.0/HLS.L30.T12SUB.2025227T175752.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2025227T175752.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025227T175752.v2.0/HLS.L30.T12SUB.2025227T175752.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025227T175752.v2.0/HLS.L30.T12SUB.2025227T175752.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025227T175752.v2.0/HLS.L30.T12SUB.2025227T175752.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-08-15T17:57:52.481000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 94.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025259T175801.v2.0/HLS.L30.T12SUB.2025259T175801.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2025259T175801.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025259T175801.v2.0/HLS.L30.T12SUB.2025259T175801.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025259T175801.v2.0/HLS.L30.T12SUB.2025259T175801.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025259T175801.v2.0/HLS.L30.T12SUB.2025259T175801.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-09-16T17:58:01.444000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025275T175802.v2.0/HLS.L30.T12SUB.2025275T175802.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.L30.T12SUB.2025275T175802.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025275T175802.v2.0/HLS.L30.T12SUB.2025275T175802.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025275T175802.v2.0/HLS.L30.T12SUB.2025275T175802.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUB.2025275T175802.v2.0/HLS.L30.T12SUB.2025275T175802.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2025-10-02T17:58:02.401000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019170T180327.v2.0/HLS.L30.T12SUC.2019170T180327.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUC",
+    "optical_acquisition_id": "HLS.L30.T12SUC.2019170T180327.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019170T180327.v2.0/HLS.L30.T12SUC.2019170T180327.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019170T180327.v2.0/HLS.L30.T12SUC.2019170T180327.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019170T180327.v2.0/HLS.L30.T12SUC.2019170T180327.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-06-19T18:03:27.838000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019234T180346.v2.0/HLS.L30.T12SUC.2019234T180346.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUC",
+    "optical_acquisition_id": "HLS.L30.T12SUC.2019234T180346.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019234T180346.v2.0/HLS.L30.T12SUC.2019234T180346.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019234T180346.v2.0/HLS.L30.T12SUC.2019234T180346.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019234T180346.v2.0/HLS.L30.T12SUC.2019234T180346.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-08-22T18:03:46.840000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 10.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019250T180350.v2.0/HLS.L30.T12SUC.2019250T180350.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUC",
+    "optical_acquisition_id": "HLS.L30.T12SUC.2019250T180350.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019250T180350.v2.0/HLS.L30.T12SUC.2019250T180350.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019250T180350.v2.0/HLS.L30.T12SUC.2019250T180350.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2019250T180350.v2.0/HLS.L30.T12SUC.2019250T180350.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-09-07T18:03:50.281000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2020237T180342.v2.0/HLS.L30.T12SUC.2020237T180342.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUC",
+    "optical_acquisition_id": "HLS.L30.T12SUC.2020237T180342.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2020237T180342.v2.0/HLS.L30.T12SUC.2020237T180342.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2020237T180342.v2.0/HLS.L30.T12SUC.2020237T180342.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2020237T180342.v2.0/HLS.L30.T12SUC.2020237T180342.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2020-08-24T18:03:42.572000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 82.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022202T180332.v2.0/HLS.L30.T12SUC.2022202T180332.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUC",
+    "optical_acquisition_id": "HLS.L30.T12SUC.2022202T180332.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022202T180332.v2.0/HLS.L30.T12SUC.2022202T180332.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022202T180332.v2.0/HLS.L30.T12SUC.2022202T180332.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022202T180332.v2.0/HLS.L30.T12SUC.2022202T180332.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2022-07-21T18:03:32.067000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 3.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022218T180344.v2.0/HLS.L30.T12SUC.2022218T180344.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUC",
+    "optical_acquisition_id": "HLS.L30.T12SUC.2022218T180344.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022218T180344.v2.0/HLS.L30.T12SUC.2022218T180344.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022218T180344.v2.0/HLS.L30.T12SUC.2022218T180344.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022218T180344.v2.0/HLS.L30.T12SUC.2022218T180344.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2022-08-06T18:03:44.502000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022250T180349.v2.0/HLS.L30.T12SUC.2022250T180349.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUC",
+    "optical_acquisition_id": "HLS.L30.T12SUC.2022250T180349.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022250T180349.v2.0/HLS.L30.T12SUC.2022250T180349.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022250T180349.v2.0/HLS.L30.T12SUC.2022250T180349.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SUC.2022250T180349.v2.0/HLS.L30.T12SUC.2022250T180349.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2022-09-07T18:03:49.903000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVB.2023174T175718.v2.0/HLS.L30.T12SVB.2023174T175718.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVB",
+    "optical_acquisition_id": "HLS.L30.T12SVB.2023174T175718.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVB.2023174T175718.v2.0/HLS.L30.T12SVB.2023174T175718.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVB.2023174T175718.v2.0/HLS.L30.T12SVB.2023174T175718.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVB.2023174T175718.v2.0/HLS.L30.T12SVB.2023174T175718.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2023-06-23T17:57:18.993000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 31.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019195T175722.v2.0/HLS.L30.T12SVC.2019195T175722.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.L30.T12SVC.2019195T175722.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019195T175722.v2.0/HLS.L30.T12SVC.2019195T175722.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019195T175722.v2.0/HLS.L30.T12SVC.2019195T175722.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019195T175722.v2.0/HLS.L30.T12SVC.2019195T175722.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-07-14T17:57:22.605000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 84.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019259T175743.v2.0/HLS.L30.T12SVC.2019259T175743.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.L30.T12SVC.2019259T175743.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019259T175743.v2.0/HLS.L30.T12SVC.2019259T175743.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019259T175743.v2.0/HLS.L30.T12SVC.2019259T175743.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019259T175743.v2.0/HLS.L30.T12SVC.2019259T175743.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-09-16T17:57:43.013000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019275T175747.v2.0/HLS.L30.T12SVC.2019275T175747.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.L30.T12SVC.2019275T175747.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019275T175747.v2.0/HLS.L30.T12SVC.2019275T175747.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019275T175747.v2.0/HLS.L30.T12SVC.2019275T175747.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2019275T175747.v2.0/HLS.L30.T12SVC.2019275T175747.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2019-10-02T17:57:47.573000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 3.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2020230T175728.v2.0/HLS.L30.T12SVC.2020230T175728.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.L30.T12SVC.2020230T175728.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2020230T175728.v2.0/HLS.L30.T12SVC.2020230T175728.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2020230T175728.v2.0/HLS.L30.T12SVC.2020230T175728.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2020230T175728.v2.0/HLS.L30.T12SVC.2020230T175728.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2020-08-17T17:57:28.020000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 4.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2022275T175747.v2.0/HLS.L30.T12SVC.2022275T175747.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.L30.T12SVC.2022275T175747.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B05",
+      "B06"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2022275T175747.v2.0/HLS.L30.T12SVC.2022275T175747.v2.0.B04.tif",
+      "B05": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2022275T175747.v2.0/HLS.L30.T12SVC.2022275T175747.v2.0.B05.tif",
+      "B06": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T12SVC.2022275T175747.v2.0/HLS.L30.T12SVC.2022275T175747.v2.0.B06.tif"
+    },
+    "sensor": "HLSL30.002",
+    "source_time": "2022-10-02T17:57:47.425000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 21.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019149T182929.v2.0/HLS.S30.T11SLT.2019149T182929.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2019149T182929.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019149T182929.v2.0/HLS.S30.T11SLT.2019149T182929.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019149T182929.v2.0/HLS.S30.T11SLT.2019149T182929.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019149T182929.v2.0/HLS.S30.T11SLT.2019149T182929.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-05-29T18:45:11.504000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 67.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019159T182929.v2.0/HLS.S30.T11SLT.2019159T182929.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2019159T182929.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019159T182929.v2.0/HLS.S30.T11SLT.2019159T182929.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019159T182929.v2.0/HLS.S30.T11SLT.2019159T182929.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019159T182929.v2.0/HLS.S30.T11SLT.2019159T182929.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-06-08T18:45:10.816000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 83.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019164T182921.v2.0/HLS.S30.T11SLT.2019164T182921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2019164T182921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019164T182921.v2.0/HLS.S30.T11SLT.2019164T182921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019164T182921.v2.0/HLS.S30.T11SLT.2019164T182921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019164T182921.v2.0/HLS.S30.T11SLT.2019164T182921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-06-13T18:45:06.174000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 67.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019184T182921.v2.0/HLS.S30.T11SLT.2019184T182921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2019184T182921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019184T182921.v2.0/HLS.S30.T11SLT.2019184T182921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019184T182921.v2.0/HLS.S30.T11SLT.2019184T182921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019184T182921.v2.0/HLS.S30.T11SLT.2019184T182921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-07-03T18:45:07.996000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 62.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019217T183921.v2.0/HLS.S30.T11SLT.2019217T183921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2019217T183921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019217T183921.v2.0/HLS.S30.T11SLT.2019217T183921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019217T183921.v2.0/HLS.S30.T11SLT.2019217T183921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019217T183921.v2.0/HLS.S30.T11SLT.2019217T183921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-08-05T18:55:02.261000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 78.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019219T182929.v2.0/HLS.S30.T11SLT.2019219T182929.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2019219T182929.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019219T182929.v2.0/HLS.S30.T11SLT.2019219T182929.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019219T182929.v2.0/HLS.S30.T11SLT.2019219T182929.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019219T182929.v2.0/HLS.S30.T11SLT.2019219T182929.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-08-07T18:45:10.373000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 22.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019239T182919.v2.0/HLS.S30.T11SLT.2019239T182919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2019239T182919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019239T182919.v2.0/HLS.S30.T11SLT.2019239T182919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019239T182919.v2.0/HLS.S30.T11SLT.2019239T182919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2019239T182919.v2.0/HLS.S30.T11SLT.2019239T182919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-08-27T18:45:07.330000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 65.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020212T183921.v2.0/HLS.S30.T11SLT.2020212T183921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2020212T183921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020212T183921.v2.0/HLS.S30.T11SLT.2020212T183921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020212T183921.v2.0/HLS.S30.T11SLT.2020212T183921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020212T183921.v2.0/HLS.S30.T11SLT.2020212T183921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2020-07-30T18:55:03.817000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 51.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020222T183921.v2.0/HLS.S30.T11SLT.2020222T183921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2020222T183921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020222T183921.v2.0/HLS.S30.T11SLT.2020222T183921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020222T183921.v2.0/HLS.S30.T11SLT.2020222T183921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020222T183921.v2.0/HLS.S30.T11SLT.2020222T183921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2020-08-09T18:55:04.001000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 11.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020227T183919.v2.0/HLS.S30.T11SLT.2020227T183919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2020227T183919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020227T183919.v2.0/HLS.S30.T11SLT.2020227T183919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020227T183919.v2.0/HLS.S30.T11SLT.2020227T183919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020227T183919.v2.0/HLS.S30.T11SLT.2020227T183919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2020-08-14T18:54:58.486000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 16.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020232T183921.v2.0/HLS.S30.T11SLT.2020232T183921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2020232T183921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020232T183921.v2.0/HLS.S30.T11SLT.2020232T183921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020232T183921.v2.0/HLS.S30.T11SLT.2020232T183921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020232T183921.v2.0/HLS.S30.T11SLT.2020232T183921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2020-08-19T18:55:03.760000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 52.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020234T182919.v2.0/HLS.S30.T11SLT.2020234T182919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2020234T182919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020234T182919.v2.0/HLS.S30.T11SLT.2020234T182919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020234T182919.v2.0/HLS.S30.T11SLT.2020234T182919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2020234T182919.v2.0/HLS.S30.T11SLT.2020234T182919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2020-08-21T18:45:06.609000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 68.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021156T183921.v2.0/HLS.S30.T11SLT.2021156T183921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2021156T183921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021156T183921.v2.0/HLS.S30.T11SLT.2021156T183921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021156T183921.v2.0/HLS.S30.T11SLT.2021156T183921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021156T183921.v2.0/HLS.S30.T11SLT.2021156T183921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-06-05T18:54:58.857000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 42.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021161T183919.v2.0/HLS.S30.T11SLT.2021161T183919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2021161T183919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021161T183919.v2.0/HLS.S30.T11SLT.2021161T183919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021161T183919.v2.0/HLS.S30.T11SLT.2021161T183919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021161T183919.v2.0/HLS.S30.T11SLT.2021161T183919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-06-10T18:54:59.099000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 64.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021211T183919.v2.0/HLS.S30.T11SLT.2021211T183919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2021211T183919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021211T183919.v2.0/HLS.S30.T11SLT.2021211T183919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021211T183919.v2.0/HLS.S30.T11SLT.2021211T183919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021211T183919.v2.0/HLS.S30.T11SLT.2021211T183919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-07-30T18:54:59.734000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 57.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021223T182921.v2.0/HLS.S30.T11SLT.2021223T182921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2021223T182921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021223T182921.v2.0/HLS.S30.T11SLT.2021223T182921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021223T182921.v2.0/HLS.S30.T11SLT.2021223T182921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021223T182921.v2.0/HLS.S30.T11SLT.2021223T182921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-08-11T18:45:05.673000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 96.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021233T182921.v2.0/HLS.S30.T11SLT.2021233T182921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2021233T182921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021233T182921.v2.0/HLS.S30.T11SLT.2021233T182921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021233T182921.v2.0/HLS.S30.T11SLT.2021233T182921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2021233T182921.v2.0/HLS.S30.T11SLT.2021233T182921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-08-21T18:45:05.311000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 51.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022198T182931.v2.0/HLS.S30.T11SLT.2022198T182931.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2022198T182931.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022198T182931.v2.0/HLS.S30.T11SLT.2022198T182931.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022198T182931.v2.0/HLS.S30.T11SLT.2022198T182931.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022198T182931.v2.0/HLS.S30.T11SLT.2022198T182931.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2022-07-17T18:45:15.178000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 9.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022218T182931.v2.0/HLS.S30.T11SLT.2022218T182931.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2022218T182931.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022218T182931.v2.0/HLS.S30.T11SLT.2022218T182931.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022218T182931.v2.0/HLS.S30.T11SLT.2022218T182931.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022218T182931.v2.0/HLS.S30.T11SLT.2022218T182931.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2022-08-06T18:45:14.412000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 20.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022226T183919.v2.0/HLS.S30.T11SLT.2022226T183919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2022226T183919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022226T183919.v2.0/HLS.S30.T11SLT.2022226T183919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022226T183919.v2.0/HLS.S30.T11SLT.2022226T183919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022226T183919.v2.0/HLS.S30.T11SLT.2022226T183919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2022-08-14T18:55:01.012000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 10.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022246T183919.v2.0/HLS.S30.T11SLT.2022246T183919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2022246T183919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022246T183919.v2.0/HLS.S30.T11SLT.2022246T183919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022246T183919.v2.0/HLS.S30.T11SLT.2022246T183919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2022246T183919.v2.0/HLS.S30.T11SLT.2022246T183919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2022-09-03T18:54:59.523000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 100.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023146T183921.v2.0/HLS.S30.T11SLT.2023146T183921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2023146T183921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023146T183921.v2.0/HLS.S30.T11SLT.2023146T183921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023146T183921.v2.0/HLS.S30.T11SLT.2023146T183921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023146T183921.v2.0/HLS.S30.T11SLT.2023146T183921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-05-26T18:55:01.470000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 100.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023166T183921.v2.0/HLS.S30.T11SLT.2023166T183921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2023166T183921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023166T183921.v2.0/HLS.S30.T11SLT.2023166T183921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023166T183921.v2.0/HLS.S30.T11SLT.2023166T183921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023166T183921.v2.0/HLS.S30.T11SLT.2023166T183921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-06-15T18:55:02.234000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 14.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023196T183921.v2.0/HLS.S30.T11SLT.2023196T183921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2023196T183921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023196T183921.v2.0/HLS.S30.T11SLT.2023196T183921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023196T183921.v2.0/HLS.S30.T11SLT.2023196T183921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023196T183921.v2.0/HLS.S30.T11SLT.2023196T183921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-07-15T18:55:02.531000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 2.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023206T183921.v2.0/HLS.S30.T11SLT.2023206T183921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2023206T183921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023206T183921.v2.0/HLS.S30.T11SLT.2023206T183921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023206T183921.v2.0/HLS.S30.T11SLT.2023206T183921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023206T183921.v2.0/HLS.S30.T11SLT.2023206T183921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-07-25T18:55:02.934000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 86.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023231T183929.v2.0/HLS.S30.T11SLT.2023231T183929.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2023231T183929.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023231T183929.v2.0/HLS.S30.T11SLT.2023231T183929.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023231T183929.v2.0/HLS.S30.T11SLT.2023231T183929.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2023231T183929.v2.0/HLS.S30.T11SLT.2023231T183929.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-08-19T18:55:00.226000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 67.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2024196T183919.v2.0/HLS.S30.T11SLT.2024196T183919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2024196T183919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2024196T183919.v2.0/HLS.S30.T11SLT.2024196T183919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2024196T183919.v2.0/HLS.S30.T11SLT.2024196T183919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2024196T183919.v2.0/HLS.S30.T11SLT.2024196T183919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2024-07-14T18:55:00.795000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 40.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2024208T182921.v2.0/HLS.S30.T11SLT.2024208T182921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2024208T182921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2024208T182921.v2.0/HLS.S30.T11SLT.2024208T182921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2024208T182921.v2.0/HLS.S30.T11SLT.2024208T182921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2024208T182921.v2.0/HLS.S30.T11SLT.2024208T182921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2024-07-26T18:45:05.614000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 100.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025154T183831.v2.0/HLS.S30.T11SLT.2025154T183831.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2025154T183831.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025154T183831.v2.0/HLS.S30.T11SLT.2025154T183831.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025154T183831.v2.0/HLS.S30.T11SLT.2025154T183831.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025154T183831.v2.0/HLS.S30.T11SLT.2025154T183831.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-06-03T18:45:19.946000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 41.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025162T182941.v2.0/HLS.S30.T11SLT.2025162T182941.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2025162T182941.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025162T182941.v2.0/HLS.S30.T11SLT.2025162T182941.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025162T182941.v2.0/HLS.S30.T11SLT.2025162T182941.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025162T182941.v2.0/HLS.S30.T11SLT.2025162T182941.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-06-11T18:45:23.082000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 56.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025214T183831.v2.0/HLS.S30.T11SLT.2025214T183831.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2025214T183831.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025214T183831.v2.0/HLS.S30.T11SLT.2025214T183831.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025214T183831.v2.0/HLS.S30.T11SLT.2025214T183831.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025214T183831.v2.0/HLS.S30.T11SLT.2025214T183831.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-08-02T18:45:20.063000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 4.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025215T183941.v2.0/HLS.S30.T11SLT.2025215T183941.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2025215T183941.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025215T183941.v2.0/HLS.S30.T11SLT.2025215T183941.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025215T183941.v2.0/HLS.S30.T11SLT.2025215T183941.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025215T183941.v2.0/HLS.S30.T11SLT.2025215T183941.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-08-03T18:55:18.110000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 68.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025230T183919.v2.0/HLS.S30.T11SLT.2025230T183919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2025230T183919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025230T183919.v2.0/HLS.S30.T11SLT.2025230T183919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025230T183919.v2.0/HLS.S30.T11SLT.2025230T183919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025230T183919.v2.0/HLS.S30.T11SLT.2025230T183919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-08-18T18:55:00.391000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 28.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025237T182919.v2.0/HLS.S30.T11SLT.2025237T182919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2025237T182919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025237T182919.v2.0/HLS.S30.T11SLT.2025237T182919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025237T182919.v2.0/HLS.S30.T11SLT.2025237T182919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025237T182919.v2.0/HLS.S30.T11SLT.2025237T182919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-08-25T18:45:04.901000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025250T183919.v2.0/HLS.S30.T11SLT.2025250T183919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2025250T183919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025250T183919.v2.0/HLS.S30.T11SLT.2025250T183919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025250T183919.v2.0/HLS.S30.T11SLT.2025250T183919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025250T183919.v2.0/HLS.S30.T11SLT.2025250T183919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-09-07T18:54:57.089000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 16.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025274T183831.v2.0/HLS.S30.T11SLT.2025274T183831.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLT",
+    "optical_acquisition_id": "HLS.S30.T11SLT.2025274T183831.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025274T183831.v2.0/HLS.S30.T11SLT.2025274T183831.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025274T183831.v2.0/HLS.S30.T11SLT.2025274T183831.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLT.2025274T183831.v2.0/HLS.S30.T11SLT.2025274T183831.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-10-01T18:45:18.782000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2019194T182921.v2.0/HLS.S30.T11SLU.2019194T182921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2019194T182921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2019194T182921.v2.0/HLS.S30.T11SLU.2019194T182921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2019194T182921.v2.0/HLS.S30.T11SLU.2019194T182921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2019194T182921.v2.0/HLS.S30.T11SLU.2019194T182921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-07-13T18:44:47.457000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2020244T182919.v2.0/HLS.S30.T11SLU.2020244T182919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2020244T182919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2020244T182919.v2.0/HLS.S30.T11SLU.2020244T182919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2020244T182919.v2.0/HLS.S30.T11SLU.2020244T182919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2020244T182919.v2.0/HLS.S30.T11SLU.2020244T182919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2020-08-31T18:44:51.785000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 9.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021148T182919.v2.0/HLS.S30.T11SLU.2021148T182919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2021148T182919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021148T182919.v2.0/HLS.S30.T11SLU.2021148T182919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021148T182919.v2.0/HLS.S30.T11SLU.2021148T182919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021148T182919.v2.0/HLS.S30.T11SLU.2021148T182919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-05-28T18:44:49.256000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021163T182921.v2.0/HLS.S30.T11SLU.2021163T182921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2021163T182921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021163T182921.v2.0/HLS.S30.T11SLU.2021163T182921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021163T182921.v2.0/HLS.S30.T11SLU.2021163T182921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021163T182921.v2.0/HLS.S30.T11SLU.2021163T182921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-06-12T18:44:49.140000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021213T182921.v2.0/HLS.S30.T11SLU.2021213T182921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2021213T182921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021213T182921.v2.0/HLS.S30.T11SLU.2021213T182921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021213T182921.v2.0/HLS.S30.T11SLU.2021213T182921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021213T182921.v2.0/HLS.S30.T11SLU.2021213T182921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-08-01T18:44:51.772000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021228T182919.v2.0/HLS.S30.T11SLU.2021228T182919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2021228T182919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021228T182919.v2.0/HLS.S30.T11SLU.2021228T182919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021228T182919.v2.0/HLS.S30.T11SLU.2021228T182919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021228T182919.v2.0/HLS.S30.T11SLU.2021228T182919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-08-16T18:44:48.433000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 2.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021238T182919.v2.0/HLS.S30.T11SLU.2021238T182919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2021238T182919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021238T182919.v2.0/HLS.S30.T11SLU.2021238T182919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021238T182919.v2.0/HLS.S30.T11SLU.2021238T182919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2021238T182919.v2.0/HLS.S30.T11SLU.2021238T182919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-08-26T18:44:46.667000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 85.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023158T182919.v2.0/HLS.S30.T11SLU.2023158T182919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2023158T182919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023158T182919.v2.0/HLS.S30.T11SLU.2023158T182919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023158T182919.v2.0/HLS.S30.T11SLU.2023158T182919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023158T182919.v2.0/HLS.S30.T11SLU.2023158T182919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-06-07T18:44:53.416000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 2.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023173T182921.v2.0/HLS.S30.T11SLU.2023173T182921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2023173T182921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023173T182921.v2.0/HLS.S30.T11SLU.2023173T182921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023173T182921.v2.0/HLS.S30.T11SLU.2023173T182921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023173T182921.v2.0/HLS.S30.T11SLU.2023173T182921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-06-22T18:44:52.165000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 3.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023203T182921.v2.0/HLS.S30.T11SLU.2023203T182921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2023203T182921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023203T182921.v2.0/HLS.S30.T11SLU.2023203T182921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023203T182921.v2.0/HLS.S30.T11SLU.2023203T182921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023203T182921.v2.0/HLS.S30.T11SLU.2023203T182921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-07-22T18:44:52.971000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023208T182929.v2.0/HLS.S30.T11SLU.2023208T182929.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2023208T182929.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023208T182929.v2.0/HLS.S30.T11SLU.2023208T182929.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023208T182929.v2.0/HLS.S30.T11SLU.2023208T182929.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023208T182929.v2.0/HLS.S30.T11SLU.2023208T182929.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-07-27T18:44:54.408000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 6.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023223T182921.v2.0/HLS.S30.T11SLU.2023223T182921.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2023223T182921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023223T182921.v2.0/HLS.S30.T11SLU.2023223T182921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023223T182921.v2.0/HLS.S30.T11SLU.2023223T182921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2023223T182921.v2.0/HLS.S30.T11SLU.2023223T182921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-08-11T18:44:53.389000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 4.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2025142T182941.v2.0/HLS.S30.T11SLU.2025142T182941.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2025142T182941.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2025142T182941.v2.0/HLS.S30.T11SLU.2025142T182941.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2025142T182941.v2.0/HLS.S30.T11SLU.2025142T182941.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2025142T182941.v2.0/HLS.S30.T11SLU.2025142T182941.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-05-22T18:45:07.340000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "los_angeles",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2025167T182919.v2.0/HLS.S30.T11SLU.2025167T182919.v2.0.Fmask.tif",
+    "mgrs_tile": "11SLU",
+    "optical_acquisition_id": "HLS.S30.T11SLU.2025167T182919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2025167T182919.v2.0/HLS.S30.T11SLU.2025167T182919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2025167T182919.v2.0/HLS.S30.T11SLU.2025167T182919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T11SLU.2025167T182919.v2.0/HLS.S30.T11SLU.2025167T182919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-06-16T18:44:48.115000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 38.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2019180T175919.v2.0/HLS.S30.T12SUB.2019180T175919.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2019180T175919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2019180T175919.v2.0/HLS.S30.T12SUB.2019180T175919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2019180T175919.v2.0/HLS.S30.T12SUB.2019180T175919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2019180T175919.v2.0/HLS.S30.T12SUB.2019180T175919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-06-29T18:15:18.425000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2019183T180929.v2.0/HLS.S30.T12SUB.2019183T180929.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2019183T180929.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2019183T180929.v2.0/HLS.S30.T12SUB.2019183T180929.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2019183T180929.v2.0/HLS.S30.T12SUB.2019183T180929.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2019183T180929.v2.0/HLS.S30.T12SUB.2019183T180929.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-07-02T18:25:14.711000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 51.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021222T180919.v2.0/HLS.S30.T12SUB.2021222T180919.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2021222T180919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021222T180919.v2.0/HLS.S30.T12SUB.2021222T180919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021222T180919.v2.0/HLS.S30.T12SUB.2021222T180919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021222T180919.v2.0/HLS.S30.T12SUB.2021222T180919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-08-10T18:25:06.717000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 49.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021244T175911.v2.0/HLS.S30.T12SUB.2021244T175911.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2021244T175911.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021244T175911.v2.0/HLS.S30.T12SUB.2021244T175911.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021244T175911.v2.0/HLS.S30.T12SUB.2021244T175911.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021244T175911.v2.0/HLS.S30.T12SUB.2021244T175911.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-09-01T18:15:11.087000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 26.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021247T180921.v2.0/HLS.S30.T12SUB.2021247T180921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2021247T180921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021247T180921.v2.0/HLS.S30.T12SUB.2021247T180921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021247T180921.v2.0/HLS.S30.T12SUB.2021247T180921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2021247T180921.v2.0/HLS.S30.T12SUB.2021247T180921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-09-04T18:25:06.800000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 4.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022199T175921.v2.0/HLS.S30.T12SUB.2022199T175921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2022199T175921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022199T175921.v2.0/HLS.S30.T12SUB.2022199T175921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022199T175921.v2.0/HLS.S30.T12SUB.2022199T175921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022199T175921.v2.0/HLS.S30.T12SUB.2022199T175921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2022-07-18T18:15:21.773000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 13.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022219T175921.v2.0/HLS.S30.T12SUB.2022219T175921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2022219T175921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022219T175921.v2.0/HLS.S30.T12SUB.2022219T175921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022219T175921.v2.0/HLS.S30.T12SUB.2022219T175921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022219T175921.v2.0/HLS.S30.T12SUB.2022219T175921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2022-08-07T18:15:21.382000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 55.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022252T180931.v2.0/HLS.S30.T12SUB.2022252T180931.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2022252T180931.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022252T180931.v2.0/HLS.S30.T12SUB.2022252T180931.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022252T180931.v2.0/HLS.S30.T12SUB.2022252T180931.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022252T180931.v2.0/HLS.S30.T12SUB.2022252T180931.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2022-09-09T18:25:16.988000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 21.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022272T181141.v2.0/HLS.S30.T12SUB.2022272T181141.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2022272T181141.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022272T181141.v2.0/HLS.S30.T12SUB.2022272T181141.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022272T181141.v2.0/HLS.S30.T12SUB.2022272T181141.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2022272T181141.v2.0/HLS.S30.T12SUB.2022272T181141.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2022-09-29T18:25:13.324000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2023157T180921.v2.0/HLS.S30.T12SUB.2023157T180921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2023157T180921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2023157T180921.v2.0/HLS.S30.T12SUB.2023157T180921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2023157T180921.v2.0/HLS.S30.T12SUB.2023157T180921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2023157T180921.v2.0/HLS.S30.T12SUB.2023157T180921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-06-06T18:25:09.611000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2023167T180921.v2.0/HLS.S30.T12SUB.2023167T180921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2023167T180921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2023167T180921.v2.0/HLS.S30.T12SUB.2023167T180921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2023167T180921.v2.0/HLS.S30.T12SUB.2023167T180921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2023167T180921.v2.0/HLS.S30.T12SUB.2023167T180921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-06-16T18:25:10.260000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025215T180751.v2.0/HLS.S30.T12SUB.2025215T180751.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2025215T180751.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025215T180751.v2.0/HLS.S30.T12SUB.2025215T180751.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025215T180751.v2.0/HLS.S30.T12SUB.2025215T180751.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025215T180751.v2.0/HLS.S30.T12SUB.2025215T180751.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-08-03T18:15:26.550000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 69.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025231T180919.v2.0/HLS.S30.T12SUB.2025231T180919.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2025231T180919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025231T180919.v2.0/HLS.S30.T12SUB.2025231T180919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025231T180919.v2.0/HLS.S30.T12SUB.2025231T180919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025231T180919.v2.0/HLS.S30.T12SUB.2025231T180919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-08-19T18:25:08.363000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025256T181001.v2.0/HLS.S30.T12SUB.2025256T181001.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2025256T181001.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025256T181001.v2.0/HLS.S30.T12SUB.2025256T181001.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025256T181001.v2.0/HLS.S30.T12SUB.2025256T181001.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025256T181001.v2.0/HLS.S30.T12SUB.2025256T181001.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-09-13T18:25:19.620000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025278T181801.v2.0/HLS.S30.T12SUB.2025278T181801.v2.0.Fmask.tif",
+    "mgrs_tile": "12SUB",
+    "optical_acquisition_id": "HLS.S30.T12SUB.2025278T181801.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025278T181801.v2.0/HLS.S30.T12SUB.2025278T181801.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025278T181801.v2.0/HLS.S30.T12SUB.2025278T181801.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SUB.2025278T181801.v2.0/HLS.S30.T12SUB.2025278T181801.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2025-10-05T18:25:21.691000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 83.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVB.2021227T180921.v2.0/HLS.S30.T12SVB.2021227T180921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVB",
+    "optical_acquisition_id": "HLS.S30.T12SVB.2021227T180921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVB.2021227T180921.v2.0/HLS.S30.T12SVB.2021227T180921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVB.2021227T180921.v2.0/HLS.S30.T12SVB.2021227T180921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVB.2021227T180921.v2.0/HLS.S30.T12SVB.2021227T180921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-08-15T18:25:04.544000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 15.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019158T180921.v2.0/HLS.S30.T12SVC.2019158T180921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2019158T180921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019158T180921.v2.0/HLS.S30.T12SVC.2019158T180921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019158T180921.v2.0/HLS.S30.T12SVC.2019158T180921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019158T180921.v2.0/HLS.S30.T12SVC.2019158T180921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-06-07T18:24:49.771000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019185T175921.v2.0/HLS.S30.T12SVC.2019185T175921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2019185T175921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019185T175921.v2.0/HLS.S30.T12SVC.2019185T175921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019185T175921.v2.0/HLS.S30.T12SVC.2019185T175921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019185T175921.v2.0/HLS.S30.T12SVC.2019185T175921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-07-04T18:14:56.848000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 39.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019215T175921.v2.0/HLS.S30.T12SVC.2019215T175921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2019215T175921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019215T175921.v2.0/HLS.S30.T12SVC.2019215T175921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019215T175921.v2.0/HLS.S30.T12SVC.2019215T175921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019215T175921.v2.0/HLS.S30.T12SVC.2019215T175921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-08-03T18:14:56.326000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019228T180921.v2.0/HLS.S30.T12SVC.2019228T180921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2019228T180921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019228T180921.v2.0/HLS.S30.T12SVC.2019228T180921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019228T180921.v2.0/HLS.S30.T12SVC.2019228T180921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019228T180921.v2.0/HLS.S30.T12SVC.2019228T180921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-08-16T18:24:50.595000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 5.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019238T180921.v2.0/HLS.S30.T12SVC.2019238T180921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2019238T180921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019238T180921.v2.0/HLS.S30.T12SVC.2019238T180921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019238T180921.v2.0/HLS.S30.T12SVC.2019238T180921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019238T180921.v2.0/HLS.S30.T12SVC.2019238T180921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-08-26T18:24:49.041000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019255T175931.v2.0/HLS.S30.T12SVC.2019255T175931.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2019255T175931.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019255T175931.v2.0/HLS.S30.T12SVC.2019255T175931.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019255T175931.v2.0/HLS.S30.T12SVC.2019255T175931.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019255T175931.v2.0/HLS.S30.T12SVC.2019255T175931.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-09-12T18:14:50.344000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019263T181029.v2.0/HLS.S30.T12SVC.2019263T181029.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2019263T181029.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019263T181029.v2.0/HLS.S30.T12SVC.2019263T181029.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019263T181029.v2.0/HLS.S30.T12SVC.2019263T181029.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019263T181029.v2.0/HLS.S30.T12SVC.2019263T181029.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-09-20T18:24:46.800000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 62.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019270T180119.v2.0/HLS.S30.T12SVC.2019270T180119.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2019270T180119.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019270T180119.v2.0/HLS.S30.T12SVC.2019270T180119.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019270T180119.v2.0/HLS.S30.T12SVC.2019270T180119.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2019270T180119.v2.0/HLS.S30.T12SVC.2019270T180119.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2019-09-27T18:14:52.058000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 8.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2020225T175919.v2.0/HLS.S30.T12SVC.2020225T175919.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2020225T175919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2020225T175919.v2.0/HLS.S30.T12SVC.2020225T175919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2020225T175919.v2.0/HLS.S30.T12SVC.2020225T175919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2020225T175919.v2.0/HLS.S30.T12SVC.2020225T175919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2020-08-12T18:14:55.343000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 57.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2020240T175921.v2.0/HLS.S30.T12SVC.2020240T175921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2020240T175921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2020240T175921.v2.0/HLS.S30.T12SVC.2020240T175921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2020240T175921.v2.0/HLS.S30.T12SVC.2020240T175921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2020240T175921.v2.0/HLS.S30.T12SVC.2020240T175921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2020-08-27T18:14:57.102000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 7.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2021214T175921.v2.0/HLS.S30.T12SVC.2021214T175921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2021214T175921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2021214T175921.v2.0/HLS.S30.T12SVC.2021214T175921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2021214T175921.v2.0/HLS.S30.T12SVC.2021214T175921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2021214T175921.v2.0/HLS.S30.T12SVC.2021214T175921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-08-02T18:14:55.005000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 41.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2021229T175909.v2.0/HLS.S30.T12SVC.2021229T175909.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2021229T175909.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2021229T175909.v2.0/HLS.S30.T12SVC.2021229T175909.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2021229T175909.v2.0/HLS.S30.T12SVC.2021229T175909.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2021229T175909.v2.0/HLS.S30.T12SVC.2021229T175909.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2021-08-17T18:14:51.570000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 3.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023159T175919.v2.0/HLS.S30.T12SVC.2023159T175919.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2023159T175919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023159T175919.v2.0/HLS.S30.T12SVC.2023159T175919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023159T175919.v2.0/HLS.S30.T12SVC.2023159T175919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023159T175919.v2.0/HLS.S30.T12SVC.2023159T175919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-06-08T18:14:56.800000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023174T175911.v2.0/HLS.S30.T12SVC.2023174T175911.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2023174T175911.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023174T175911.v2.0/HLS.S30.T12SVC.2023174T175911.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023174T175911.v2.0/HLS.S30.T12SVC.2023174T175911.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023174T175911.v2.0/HLS.S30.T12SVC.2023174T175911.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-06-23T18:14:55.238000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 12.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023204T175921.v2.0/HLS.S30.T12SVC.2023204T175921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2023204T175921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023204T175921.v2.0/HLS.S30.T12SVC.2023204T175921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023204T175921.v2.0/HLS.S30.T12SVC.2023204T175921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023204T175921.v2.0/HLS.S30.T12SVC.2023204T175921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-07-23T18:14:56.462000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 0.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023217T180921.v2.0/HLS.S30.T12SVC.2023217T180921.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2023217T180921.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023217T180921.v2.0/HLS.S30.T12SVC.2023217T180921.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023217T180921.v2.0/HLS.S30.T12SVC.2023217T180921.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2023217T180921.v2.0/HLS.S30.T12SVC.2023217T180921.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2023-08-05T18:24:52.467000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 1.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2024157T180919.v2.0/HLS.S30.T12SVC.2024157T180919.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2024157T180919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2024157T180919.v2.0/HLS.S30.T12SVC.2024157T180919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2024157T180919.v2.0/HLS.S30.T12SVC.2024157T180919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2024157T180919.v2.0/HLS.S30.T12SVC.2024157T180919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2024-06-05T18:24:50.010000+00:00"
+  },
+  {
+    "all_required_urls_present": true,
+    "city": "phoenix",
+    "cloud_coverage_percent": 22.0,
+    "fmask_url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2024184T175919.v2.0/HLS.S30.T12SVC.2024184T175919.v2.0.Fmask.tif",
+    "mgrs_tile": "12SVC",
+    "optical_acquisition_id": "HLS.S30.T12SVC.2024184T175919.v2.0",
+    "reflectance_asset_names": [
+      "B04",
+      "B8A",
+      "B11"
+    ],
+    "reflectance_urls": {
+      "B04": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2024184T175919.v2.0/HLS.S30.T12SVC.2024184T175919.v2.0.B04.tif",
+      "B11": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2024184T175919.v2.0/HLS.S30.T12SVC.2024184T175919.v2.0.B11.tif",
+      "B8A": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T12SVC.2024184T175919.v2.0/HLS.S30.T12SVC.2024184T175919.v2.0.B8A.tif"
+    },
+    "sensor": "HLSS30.002",
+    "source_time": "2024-07-02T18:14:55.684000+00:00"
+  }
+]

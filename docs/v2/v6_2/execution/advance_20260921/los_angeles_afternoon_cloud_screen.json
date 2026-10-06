@@ -1,0 +1,300 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "los_angeles",
+      "orbit": 27902,
+      "acquisition_utc": "2023-06-08T01:17:47.375Z",
+      "solar_hour": 17.44592899735625,
+      "sample_points": 300,
+      "observed_points": 18,
+      "clear_points": 18,
+      "sample_point_coverage_fraction": 0.06,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.06,
+      "failed_assets": 0
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27948,
+      "acquisition_utc": "2023-06-11T00:28:10.428Z",
+      "solar_hour": 16.60946995470217,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28523,
+      "acquisition_utc": "2023-07-18T01:42:32.681Z",
+      "solar_hour": 17.732953539187765,
+      "sample_points": 300,
+      "observed_points": 142,
+      "clear_points": 142,
+      "sample_point_coverage_fraction": 0.47333333333333333,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.47333333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28569,
+      "acquisition_utc": "2023-07-21T00:54:11.146Z",
+      "solar_hour": 16.92289073767847,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28630,
+      "acquisition_utc": "2023-07-24T23:17:32.954Z",
+      "solar_hour": 15.30852834828483,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28833,
+      "acquisition_utc": "2023-08-07T01:47:01.503Z",
+      "solar_hour": 17.8069990762762,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29515,
+      "acquisition_utc": "2023-09-20T00:55:56.564Z",
+      "solar_hour": 17.16322362112742,
+      "sample_points": 300,
+      "observed_points": 186,
+      "clear_points": 186,
+      "sample_point_coverage_fraction": 0.62,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.62,
+      "failed_assets": 0
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29576,
+      "acquisition_utc": "2023-09-23T23:21:04.439Z",
+      "solar_hour": 15.606470848973022,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "los_angeles",
+      "orbit": 27902,
+      "asset": "ECOv002_L2T_LSTE_27902_009_11SLU_20230608T011747_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27902_009_11SLU_20230608T011747_0711_02/ECOv002_L2T_LSTE_27902_009_11SLU_20230608T011747_0711_02_cloud.tif",
+      "bytes": 21097,
+      "sha256": "3a4bfc1c6ab80a0e0da5686c77f817b79b855b7c1aa0a0fc0ba94b2ee9b803a7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27948,
+      "asset": "ECOv002_L2T_LSTE_27948_016_11SLT_20230611T002810_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27948_016_11SLT_20230611T002810_0711_02/ECOv002_L2T_LSTE_27948_016_11SLT_20230611T002810_0711_02_cloud.tif",
+      "bytes": 29830,
+      "sha256": "78ea283f07bc2f3b3ed2adb3683b56a58fc3a2ddadc0a5ea8aa2e5e8acc2a776",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27948,
+      "asset": "ECOv002_L2T_LSTE_27948_016_11SLU_20230611T002810_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27948_016_11SLU_20230611T002810_0711_02/ECOv002_L2T_LSTE_27948_016_11SLU_20230611T002810_0711_02_cloud.tif",
+      "bytes": 13938,
+      "sha256": "c3e34b157c407779dc021af8008fbf1fe49d7a5d0551ef713a21ee76dc8f084e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27948,
+      "asset": "ECOv002_L2T_LSTE_27948_016_11SMT_20230611T002810_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27948_016_11SMT_20230611T002810_0711_02/ECOv002_L2T_LSTE_27948_016_11SMT_20230611T002810_0711_02_cloud.tif",
+      "bytes": 21702,
+      "sha256": "1607728858581125c838ba7dba2cffcd276958eaf597703c201a4aea1b418473",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28523,
+      "asset": "ECOv002_L2T_LSTE_28523_003_11SMT_20230718T014232_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28523_003_11SMT_20230718T014232_0712_02/ECOv002_L2T_LSTE_28523_003_11SMT_20230718T014232_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "48c2239a24a9bd82d67ff86345a0b0c8fc7600d22751729780fdbf97053d05b2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28569,
+      "asset": "ECOv002_L2T_LSTE_28569_003_11SLT_20230721T005411_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28569_003_11SLT_20230721T005411_0712_02/ECOv002_L2T_LSTE_28569_003_11SLT_20230721T005411_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "9f0416de333a0c7707e5f01438e3313bf171b48cc4c57373b571cffa202f12e8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28569,
+      "asset": "ECOv002_L2T_LSTE_28569_003_11SLU_20230721T005411_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28569_003_11SLU_20230721T005411_0712_02/ECOv002_L2T_LSTE_28569_003_11SLU_20230721T005411_0712_02_cloud.tif",
+      "bytes": 5719,
+      "sha256": "d9d56b7563a24324fa4be1ef36c6f8c72023db7cf534a7ff1a3c7784b6e14e18",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28569,
+      "asset": "ECOv002_L2T_LSTE_28569_003_11SMT_20230721T005411_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28569_003_11SMT_20230721T005411_0712_02/ECOv002_L2T_LSTE_28569_003_11SMT_20230721T005411_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "48c2239a24a9bd82d67ff86345a0b0c8fc7600d22751729780fdbf97053d05b2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28630,
+      "asset": "ECOv002_L2T_LSTE_28630_001_11SLT_20230724T231732_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28630_001_11SLT_20230724T231732_0712_02/ECOv002_L2T_LSTE_28630_001_11SLT_20230724T231732_0712_02_cloud.tif",
+      "bytes": 7212,
+      "sha256": "6b4f9416016937853ae047af168bf25d97384b2b1fa14bb4bf8855f1b2da328d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28630,
+      "asset": "ECOv002_L2T_LSTE_28630_001_11SLU_20230724T231732_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28630_001_11SLU_20230724T231732_0712_02/ECOv002_L2T_LSTE_28630_001_11SLU_20230724T231732_0712_02_cloud.tif",
+      "bytes": 21128,
+      "sha256": "8cba22925a88ee54a06515bb0bc2ab22ce75dea9efd0046b6797d08a1b448613",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28630,
+      "asset": "ECOv002_L2T_LSTE_28630_001_11SMT_20230724T231732_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28630_001_11SMT_20230724T231732_0712_02/ECOv002_L2T_LSTE_28630_001_11SMT_20230724T231732_0712_02_cloud.tif",
+      "bytes": 5749,
+      "sha256": "59cc9a226c0b93db3bb3d14e14546267e128cb6ff8055f5fe69f3de50295d2b3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28833,
+      "asset": "ECOv002_L2T_LSTE_28833_013_11SLT_20230807T014701_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28833_013_11SLT_20230807T014701_0712_02/ECOv002_L2T_LSTE_28833_013_11SLT_20230807T014701_0712_02_cloud.tif",
+      "bytes": 47579,
+      "sha256": "3f1075f304faa69a8020fbb3030209dcb10487ab1db25747362d846b4d22b0ca",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28833,
+      "asset": "ECOv002_L2T_LSTE_28833_013_11SLU_20230807T014701_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28833_013_11SLU_20230807T014701_0712_02/ECOv002_L2T_LSTE_28833_013_11SLU_20230807T014701_0712_02_cloud.tif",
+      "bytes": 8914,
+      "sha256": "a3d64cd460495e17c198d273f77a0653567a9c80a12f74b33b9e867253f0cba9",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28833,
+      "asset": "ECOv002_L2T_LSTE_28833_013_11SMT_20230807T014701_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28833_013_11SMT_20230807T014701_0712_02/ECOv002_L2T_LSTE_28833_013_11SMT_20230807T014701_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "48c2239a24a9bd82d67ff86345a0b0c8fc7600d22751729780fdbf97053d05b2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28833,
+      "asset": "ECOv002_L2T_LSTE_28833_014_11SLT_20230807T014752_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28833_014_11SLT_20230807T014752_0712_02/ECOv002_L2T_LSTE_28833_014_11SLT_20230807T014752_0712_02_cloud.tif",
+      "bytes": 13715,
+      "sha256": "ecd0785f093f0129b84a8940747660007108bbd443aed2c1f4fded6772cc7a52",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28833,
+      "asset": "ECOv002_L2T_LSTE_28833_014_11SMT_20230807T014752_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28833_014_11SMT_20230807T014752_0712_02/ECOv002_L2T_LSTE_28833_014_11SMT_20230807T014752_0712_02_cloud.tif",
+      "bytes": 19329,
+      "sha256": "129c0afeb7cc80d90308584695245d2044a3d0b94a1c3cb32bf023079a61cb5b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29515,
+      "asset": "ECOv002_L2T_LSTE_29515_003_11SLT_20230920T005556_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29515_003_11SLT_20230920T005556_0712_02/ECOv002_L2T_LSTE_29515_003_11SLT_20230920T005556_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "9f0416de333a0c7707e5f01438e3313bf171b48cc4c57373b571cffa202f12e8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29515,
+      "asset": "ECOv002_L2T_LSTE_29515_003_11SLU_20230920T005556_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29515_003_11SLU_20230920T005556_0712_02/ECOv002_L2T_LSTE_29515_003_11SLU_20230920T005556_0712_02_cloud.tif",
+      "bytes": 46108,
+      "sha256": "cde6e05edd1aa1d12b2bb421badaac4c34a26c14d4272c9319e52ae5b43ef3d2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29576,
+      "asset": "ECOv002_L2T_LSTE_29576_005_11SLT_20230923T232104_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29576_005_11SLT_20230923T232104_0712_02/ECOv002_L2T_LSTE_29576_005_11SLT_20230923T232104_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "9f0416de333a0c7707e5f01438e3313bf171b48cc4c57373b571cffa202f12e8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29576,
+      "asset": "ECOv002_L2T_LSTE_29576_005_11SLU_20230923T232104_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29576_005_11SLU_20230923T232104_0712_02/ECOv002_L2T_LSTE_29576_005_11SLU_20230923T232104_0712_02_cloud.tif",
+      "bytes": 17553,
+      "sha256": "55cfb037acabf3e84dd04cdf5fba048b84d2765780fd6f73d6fee471e7e3e27b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29576,
+      "asset": "ECOv002_L2T_LSTE_29576_005_11SMT_20230923T232104_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29576_005_11SMT_20230923T232104_0712_02/ECOv002_L2T_LSTE_29576_005_11SMT_20230923T232104_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "48c2239a24a9bd82d67ff86345a0b0c8fc7600d22751729780fdbf97053d05b2",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

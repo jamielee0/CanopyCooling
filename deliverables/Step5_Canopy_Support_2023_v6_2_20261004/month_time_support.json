@@ -1,0 +1,255 @@
+{
+  "rule": "Existing descriptive morning/afternoon windows; no time comparison or new inclusion filter",
+  "rows": [
+    {
+      "city": "phoenix",
+      "month": 6,
+      "window": "morning_9.5_to_11.5",
+      "passes": 1,
+      "orbits": [
+        "28192"
+      ],
+      "spanning_blocks": [
+        1461
+      ]
+    },
+    {
+      "city": "phoenix",
+      "month": 6,
+      "window": "afternoon_15_to_18",
+      "passes": 1,
+      "orbits": [
+        "27963"
+      ],
+      "spanning_blocks": [
+        1375
+      ]
+    },
+    {
+      "city": "phoenix",
+      "month": 6,
+      "window": "other_observed_time",
+      "passes": 2,
+      "orbits": [
+        "28024",
+        "28085"
+      ],
+      "spanning_blocks": [
+        1387,
+        1425
+      ]
+    },
+    {
+      "city": "phoenix",
+      "month": 7,
+      "window": "morning_9.5_to_11.5",
+      "passes": 0,
+      "orbits": [],
+      "spanning_blocks": []
+    },
+    {
+      "city": "phoenix",
+      "month": 7,
+      "window": "afternoon_15_to_18",
+      "passes": 0,
+      "orbits": [],
+      "spanning_blocks": []
+    },
+    {
+      "city": "phoenix",
+      "month": 7,
+      "window": "other_observed_time",
+      "passes": 1,
+      "orbits": [
+        "28706"
+      ],
+      "spanning_blocks": [
+        1479
+      ]
+    },
+    {
+      "city": "phoenix",
+      "month": 8,
+      "window": "morning_9.5_to_11.5",
+      "passes": 2,
+      "orbits": [
+        "28828",
+        "29092"
+      ],
+      "spanning_blocks": [
+        1479,
+        1475
+      ]
+    },
+    {
+      "city": "phoenix",
+      "month": 8,
+      "window": "afternoon_15_to_18",
+      "passes": 1,
+      "orbits": [
+        "28909"
+      ],
+      "spanning_blocks": [
+        1174
+      ]
+    },
+    {
+      "city": "phoenix",
+      "month": 8,
+      "window": "other_observed_time",
+      "passes": 1,
+      "orbits": [
+        "28970"
+      ],
+      "spanning_blocks": [
+        1195
+      ]
+    },
+    {
+      "city": "phoenix",
+      "month": 9,
+      "window": "morning_9.5_to_11.5",
+      "passes": 0,
+      "orbits": [],
+      "spanning_blocks": []
+    },
+    {
+      "city": "phoenix",
+      "month": 9,
+      "window": "afternoon_15_to_18",
+      "passes": 1,
+      "orbits": [
+        "29545"
+      ],
+      "spanning_blocks": [
+        880
+      ]
+    },
+    {
+      "city": "phoenix",
+      "month": 9,
+      "window": "other_observed_time",
+      "passes": 1,
+      "orbits": [
+        "29606"
+      ],
+      "spanning_blocks": [
+        1479
+      ]
+    },
+    {
+      "city": "atlanta",
+      "month": 6,
+      "window": "morning_9.5_to_11.5",
+      "passes": 1,
+      "orbits": [
+        "27896"
+      ],
+      "spanning_blocks": [
+        2397
+      ]
+    },
+    {
+      "city": "atlanta",
+      "month": 6,
+      "window": "afternoon_15_to_18",
+      "passes": 1,
+      "orbits": [
+        "27916"
+      ],
+      "spanning_blocks": [
+        2254
+      ]
+    },
+    {
+      "city": "atlanta",
+      "month": 6,
+      "window": "other_observed_time",
+      "passes": 2,
+      "orbits": [
+        "27835",
+        "28145"
+      ],
+      "spanning_blocks": [
+        2262,
+        1358
+      ]
+    },
+    {
+      "city": "atlanta",
+      "month": 7,
+      "window": "morning_9.5_to_11.5",
+      "passes": 0,
+      "orbits": [],
+      "spanning_blocks": []
+    },
+    {
+      "city": "atlanta",
+      "month": 7,
+      "window": "afternoon_15_to_18",
+      "passes": 1,
+      "orbits": [
+        "28598"
+      ],
+      "spanning_blocks": [
+        1174
+      ]
+    },
+    {
+      "city": "atlanta",
+      "month": 7,
+      "window": "other_observed_time",
+      "passes": 0,
+      "orbits": [],
+      "spanning_blocks": []
+    },
+    {
+      "city": "atlanta",
+      "month": 8,
+      "window": "morning_9.5_to_11.5",
+      "passes": 0,
+      "orbits": [],
+      "spanning_blocks": []
+    },
+    {
+      "city": "atlanta",
+      "month": 8,
+      "window": "afternoon_15_to_18",
+      "passes": 0,
+      "orbits": [],
+      "spanning_blocks": []
+    },
+    {
+      "city": "atlanta",
+      "month": 8,
+      "window": "other_observed_time",
+      "passes": 0,
+      "orbits": [],
+      "spanning_blocks": []
+    },
+    {
+      "city": "atlanta",
+      "month": 9,
+      "window": "morning_9.5_to_11.5",
+      "passes": 0,
+      "orbits": [],
+      "spanning_blocks": []
+    },
+    {
+      "city": "atlanta",
+      "month": 9,
+      "window": "afternoon_15_to_18",
+      "passes": 0,
+      "orbits": [],
+      "spanning_blocks": []
+    },
+    {
+      "city": "atlanta",
+      "month": 9,
+      "window": "other_observed_time",
+      "passes": 0,
+      "orbits": [],
+      "spanning_blocks": []
+    }
+  ]
+}

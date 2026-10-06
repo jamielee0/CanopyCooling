@@ -1,0 +1,37 @@
+{
+  "missing_MRMS_hours": [
+    {
+      "time": "2023-07-24T15:00:00+00:00",
+      "cities": [
+        "phoenix"
+      ]
+    }
+  ],
+  "primary_download_failures": [
+    {
+      "job": {
+        "time": "2023-07-24T15:00:00+00:00",
+        "cities": [
+          "phoenix"
+        ]
+      },
+      "error_type": "HTTPError",
+      "message": "404 Client Error: Not Found for url: https://mtarchive.geol.iastate.edu/2023/07/24/mrms/ncep/MultiSensor_QPE_01H_Pass2/MultiSensor_QPE_01H_Pass2_00.00_20230724-150000.grib2.gz"
+    }
+  ],
+  "whole_window_fallback": {
+    "city": "phoenix",
+    "orbit": 28706,
+    "days": 7,
+    "product": "NOAA_Stage_IV",
+    "n_domain_cells": 186,
+    "weights": "inverse squared spherical polar-stereographic scale",
+    "download_failures": [],
+    "status": "COMPLETE_LAST_CLOSED_HOUR_WINDOW",
+    "total_mm": 3.5995267216919142,
+    "complete_cell_fraction": 1.0,
+    "required_hours": 168,
+    "available_hours": 168
+  },
+  "note": "No fabricated primary total; no interpolation or single-hour cross-product replacement"
+}

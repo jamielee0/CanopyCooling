@@ -1,0 +1,19 @@
+{
+  "checks": [
+    {
+      "group_km": 1,
+      "informative_common_blocks": 10,
+      "informative_groups": 10,
+      "missing_bare_draws": 0,
+      "all_failure_indices_match": true
+    },
+    {
+      "group_km": 8,
+      "informative_common_blocks": 10,
+      "informative_groups": 5,
+      "missing_bare_draws": 4,
+      "all_failure_indices_match": true
+    }
+  ],
+  "outcomes_read_for_rank_diagnosis": false
+}

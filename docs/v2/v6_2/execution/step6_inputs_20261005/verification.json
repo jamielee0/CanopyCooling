@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "frozen_inputs_verified": 33,
+  "downloaded_source_files": 2200,
+  "downloaded_bytes": 1275862214,
+  "known_answer_tests_passed": 12,
+  "weather_passes": 16,
+  "hourly_weather_grids_verified": 32,
+  "prior_weather_hours_reconciled": 20,
+  "rainfall_windows_checked": 48,
+  "primary_MRMS_windows": 47,
+  "separate_full_Stage_IV_windows": 1,
+  "all_five_date_comparison_rainfall_windows_MRMS": true,
+  "geometry_array_audits": 11,
+  "view_only_evidence_records": 5,
+  "geometry_acquisition_identities_matched": 16,
+  "model_cell_geometry_coverage_claimed": false,
+  "no_temporal_or_spatial_rainfall_gap_filling": true,
+  "no_cross_product_hour_blending": true,
+  "no_new_or_sealed_empirical_cooling_or_time_effect_access": true,
+  "header_discovery_previously_released_table_rows_parsed": 1,
+  "released_effect_fields_used_or_displayed": false,
+  "output_boundary_passed": true,
+  "code_sha256": {
+    "docs/v2/v6_2/execution/step6_inputs_20261005/verify_step6.py": "6e56bd5989f71485c1518857cb16b2c3e2f566378947f91db5feeb42a103d1fe",
+    "src/v6_2_advance/assemble_step6_inputs.py": "420358dc8e5748a0d02639cdfbb59df050e7efcb5c84ceab0a34cfc581bbd2f9",
+    "src/v6_2_advance/step6_inputs.py": "6da261d142d0c46f4ea80fedaa2b45cca5f6b52d1b8423fa8ebb66830c3ffc25",
+    "src/v6_2_advance/summarize_step6_rainfall.py": "3a6f27b395797d5e0e0a385a7c95981908e33a665e65ed0c67b50164bfa1526c",
+    "src/v6_2_advance/run_step6_inputs.py": "cf7e6f80a58806ea044326dd47942adaa5db6506d26febc79d0f3f543fd7d534",
+    "src/v6_2_advance/plot_step6_inputs.py": "02d973570a7df1164208fae3526e8056a96ec3bd501cb0990c9ae889efb769b0",
+    "src/v6_2_advance/step6_rain_fallback.py": "ee9c9eba536f27a77a6853f41d59a7ce96b4b5ed90ed4dc029157b09d201c2e4"
+  }
+}

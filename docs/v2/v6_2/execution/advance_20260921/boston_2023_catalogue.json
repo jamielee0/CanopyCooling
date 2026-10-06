@@ -1,0 +1,3805 @@
+{
+  "audit": {
+    "city": "boston",
+    "retrieved_utc": "2026-09-21T17:46:30.448852+00:00",
+    "period_utc": "2023-06-01/2023-09-30",
+    "CMR_bbox_hits": 378,
+    "CMR_rows_received": 378,
+    "pages": 1,
+    "intersecting_granules_before_revision_dedup": 378,
+    "unique_passes": 53,
+    "morning_0930_1130_passes": 5,
+    "afternoon_1500_1800_passes": 5,
+    "afternoon_months": [
+      "06",
+      "07",
+      "08",
+      "09"
+    ],
+    "afternoon_tile_mean_cloud_pct_median": null,
+    "afternoon_passes_with_cloud_metadata": 0,
+    "limitation": "CMR tile cloud metadata is not urban-domain clear fraction; no view-angle, full-domain coverage or usable-cell certification; windows are descriptive summaries, not selection gates."
+  },
+  "granules": [
+    {
+      "city": "boston",
+      "orbit": 27854,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_27854_009_18TYM_20230604T230101_0710_01",
+      "acquisition_utc": "2023-06-04T23:01:01.570Z",
+      "apparent_solar_hour_at_domain_centroid": 18.307740708553197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27854,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_27854_009_19TBG_20230604T230101_0710_01",
+      "acquisition_utc": "2023-06-04T23:01:01.570Z",
+      "apparent_solar_hour_at_domain_centroid": 18.307740708553197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27854,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_27854_009_18TYM_20230604T230101_0711_02",
+      "acquisition_utc": "2023-06-04T23:01:01.575Z",
+      "apparent_solar_hour_at_domain_centroid": 18.307740708553197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27854,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_27854_009_19TBG_20230604T230101_0711_02",
+      "acquisition_utc": "2023-06-04T23:01:01.575Z",
+      "apparent_solar_hour_at_domain_centroid": 18.307740708553197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_27930_008_18TYN_20230609T203237_0711_02",
+      "acquisition_utc": "2023-06-09T20:32:37.632Z",
+      "apparent_solar_hour_at_domain_centroid": 15.81952000031715,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_27930_009_18TYM_20230609T203329_0710_01",
+      "acquisition_utc": "2023-06-09T20:33:29.600Z",
+      "apparent_solar_hour_at_domain_centroid": 15.833962498957039,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_27930_009_18TYN_20230609T203329_0710_01",
+      "acquisition_utc": "2023-06-09T20:33:29.600Z",
+      "apparent_solar_hour_at_domain_centroid": 15.833962498957039,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_27930_009_19TCH_20230609T203329_0710_01",
+      "acquisition_utc": "2023-06-09T20:33:29.600Z",
+      "apparent_solar_hour_at_domain_centroid": 15.833962498957039,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_27930_009_19TCG_20230609T203329_0710_01",
+      "acquisition_utc": "2023-06-09T20:33:29.600Z",
+      "apparent_solar_hour_at_domain_centroid": 15.833962498957039,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_27930_009_18TYM_20230609T203329_0711_02",
+      "acquisition_utc": "2023-06-09T20:33:29.601Z",
+      "apparent_solar_hour_at_domain_centroid": 15.833962498957039,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_27930_009_19TCH_20230609T203329_0711_02",
+      "acquisition_utc": "2023-06-09T20:33:29.601Z",
+      "apparent_solar_hour_at_domain_centroid": 15.833962498957039,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_27930_009_18TYN_20230609T203329_0711_02",
+      "acquisition_utc": "2023-06-09T20:33:29.601Z",
+      "apparent_solar_hour_at_domain_centroid": 15.833962498957039,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_27930_009_19TCG_20230609T203329_0711_02",
+      "acquisition_utc": "2023-06-09T20:33:29.601Z",
+      "apparent_solar_hour_at_domain_centroid": 15.833962498957039,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27991,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_27991_008_18TYN_20230613T185334_0710_01",
+      "acquisition_utc": "2023-06-13T18:53:34.252Z",
+      "apparent_solar_hour_at_domain_centroid": 14.155493100987968,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27991,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_27991_008_19TCH_20230613T185334_0710_01",
+      "acquisition_utc": "2023-06-13T18:53:34.252Z",
+      "apparent_solar_hour_at_domain_centroid": 14.155493100987968,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27991,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_27991_008_19TCH_20230613T185334_0711_02",
+      "acquisition_utc": "2023-06-13T18:53:34.252Z",
+      "apparent_solar_hour_at_domain_centroid": 14.155493100987968,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27991,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_27991_008_18TYN_20230613T185334_0711_02",
+      "acquisition_utc": "2023-06-13T18:53:34.252Z",
+      "apparent_solar_hour_at_domain_centroid": 14.155493100987968,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27991,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_27991_009_19TCG_20230613T185426_0710_01",
+      "acquisition_utc": "2023-06-13T18:54:26.222Z",
+      "apparent_solar_hour_at_domain_centroid": 14.169935460285743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27991,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_27991_009_19TCH_20230613T185426_0710_01",
+      "acquisition_utc": "2023-06-13T18:54:26.222Z",
+      "apparent_solar_hour_at_domain_centroid": 14.169935460285743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27991,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_27991_009_19TCH_20230613T185426_0711_02",
+      "acquisition_utc": "2023-06-13T18:54:26.222Z",
+      "apparent_solar_hour_at_domain_centroid": 14.169935460285743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 27991,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_27991_009_19TCG_20230613T185426_0711_02",
+      "acquisition_utc": "2023-06-13T18:54:26.222Z",
+      "apparent_solar_hour_at_domain_centroid": 14.169935460285743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28022,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28022_009_18TYM_20230615T185203_0710_01",
+      "acquisition_utc": "2023-06-15T18:52:03.248Z",
+      "apparent_solar_hour_at_domain_centroid": 14.123202617170293,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28022,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28022_009_18TYM_20230615T185203_0711_02",
+      "acquisition_utc": "2023-06-15T18:52:03.248Z",
+      "apparent_solar_hour_at_domain_centroid": 14.123202617170293,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28037,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28037_009_18TYN_20230616T180347_0710_01",
+      "acquisition_utc": "2023-06-16T18:03:47.676Z",
+      "apparent_solar_hour_at_domain_centroid": 13.31531334808373,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28037,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28037_009_18TYM_20230616T180347_0710_01",
+      "acquisition_utc": "2023-06-16T18:03:47.676Z",
+      "apparent_solar_hour_at_domain_centroid": 13.31531334808373,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28037,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28037_009_19TCG_20230616T180347_0710_01",
+      "acquisition_utc": "2023-06-16T18:03:47.676Z",
+      "apparent_solar_hour_at_domain_centroid": 13.31531334808373,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28037,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28037_009_19TCH_20230616T180347_0710_01",
+      "acquisition_utc": "2023-06-16T18:03:47.676Z",
+      "apparent_solar_hour_at_domain_centroid": 13.31531334808373,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28037,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28037_009_19TBG_20230616T180347_0710_01",
+      "acquisition_utc": "2023-06-16T18:03:47.676Z",
+      "apparent_solar_hour_at_domain_centroid": 13.31531334808373,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28037,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28037_009_19TBG_20230616T180347_0711_02",
+      "acquisition_utc": "2023-06-16T18:03:47.676Z",
+      "apparent_solar_hour_at_domain_centroid": 13.31531334808373,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28037,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28037_009_18TYN_20230616T180347_0711_02",
+      "acquisition_utc": "2023-06-16T18:03:47.676Z",
+      "apparent_solar_hour_at_domain_centroid": 13.31531334808373,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28037,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28037_009_19TCH_20230616T180347_0711_02",
+      "acquisition_utc": "2023-06-16T18:03:47.676Z",
+      "apparent_solar_hour_at_domain_centroid": 13.31531334808373,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28037,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28037_009_18TYM_20230616T180347_0711_02",
+      "acquisition_utc": "2023-06-16T18:03:47.676Z",
+      "apparent_solar_hour_at_domain_centroid": 13.31531334808373,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28037,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28037_009_19TCG_20230616T180347_0711_02",
+      "acquisition_utc": "2023-06-16T18:03:47.676Z",
+      "apparent_solar_hour_at_domain_centroid": 13.31531334808373,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28083,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28083_009_18TYM_20230619T171447_0710_01",
+      "acquisition_utc": "2023-06-19T17:14:47.331Z",
+      "apparent_solar_hour_at_domain_centroid": 12.487923638992001,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28083,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28083_009_18TYN_20230619T171447_0710_01",
+      "acquisition_utc": "2023-06-19T17:14:47.331Z",
+      "apparent_solar_hour_at_domain_centroid": 12.487923638992001,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28083,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28083_009_19TBG_20230619T171447_0710_01",
+      "acquisition_utc": "2023-06-19T17:14:47.331Z",
+      "apparent_solar_hour_at_domain_centroid": 12.487923638992001,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28083,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28083_009_19TCG_20230619T171447_0710_01",
+      "acquisition_utc": "2023-06-19T17:14:47.331Z",
+      "apparent_solar_hour_at_domain_centroid": 12.487923638992001,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28083,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28083_009_18TYM_20230619T171447_0711_02",
+      "acquisition_utc": "2023-06-19T17:14:47.331Z",
+      "apparent_solar_hour_at_domain_centroid": 12.487923638992001,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28083,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28083_009_18TYN_20230619T171447_0711_02",
+      "acquisition_utc": "2023-06-19T17:14:47.331Z",
+      "apparent_solar_hour_at_domain_centroid": 12.487923638992001,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28083,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28083_009_19TCG_20230619T171447_0711_02",
+      "acquisition_utc": "2023-06-19T17:14:47.331Z",
+      "apparent_solar_hour_at_domain_centroid": 12.487923638992001,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28083,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28083_009_19TBG_20230619T171447_0711_02",
+      "acquisition_utc": "2023-06-19T17:14:47.331Z",
+      "apparent_solar_hour_at_domain_centroid": 12.487923638992001,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28186,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28186_008_18TYM_20230626T081845_0710_01",
+      "acquisition_utc": "2023-06-26T08:18:45.795Z",
+      "apparent_solar_hour_at_domain_centroid": 3.5299305184997025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28186,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28186_008_18TYN_20230626T081845_0710_01",
+      "acquisition_utc": "2023-06-26T08:18:45.795Z",
+      "apparent_solar_hour_at_domain_centroid": 3.5299305184997025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28186,
+      "scene": 8,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28186_008_19TCG_20230626T081845_0710_01",
+      "acquisition_utc": "2023-06-26T08:18:45.795Z",
+      "apparent_solar_hour_at_domain_centroid": 3.5299305184997025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28186,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28186_008_19TCH_20230626T081845_0710_01",
+      "acquisition_utc": "2023-06-26T08:18:45.795Z",
+      "apparent_solar_hour_at_domain_centroid": 3.5299305184997025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28186,
+      "scene": 8,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28186_008_19TBG_20230626T081845_0710_01",
+      "acquisition_utc": "2023-06-26T08:18:45.795Z",
+      "apparent_solar_hour_at_domain_centroid": 3.5299305184997025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28186,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28186_008_18TYN_20230626T081845_0711_02",
+      "acquisition_utc": "2023-06-26T08:18:45.795Z",
+      "apparent_solar_hour_at_domain_centroid": 3.5299305184997025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28186,
+      "scene": 8,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28186_008_19TCG_20230626T081845_0711_02",
+      "acquisition_utc": "2023-06-26T08:18:45.795Z",
+      "apparent_solar_hour_at_domain_centroid": 3.5299305184997025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28186,
+      "scene": 8,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28186_008_19TBG_20230626T081845_0711_02",
+      "acquisition_utc": "2023-06-26T08:18:45.795Z",
+      "apparent_solar_hour_at_domain_centroid": 3.5299305184997025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28186,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28186_008_18TYM_20230626T081845_0711_02",
+      "acquisition_utc": "2023-06-26T08:18:45.795Z",
+      "apparent_solar_hour_at_domain_centroid": 3.5299305184997025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28186,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28186_008_19TCH_20230626T081845_0711_02",
+      "acquisition_utc": "2023-06-26T08:18:45.795Z",
+      "apparent_solar_hour_at_domain_centroid": 3.5299305184997025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28220,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28220_009_18TYM_20230628T131014_0710_01",
+      "acquisition_utc": "2023-06-28T13:10:14.522Z",
+      "apparent_solar_hour_at_domain_centroid": 8.38016716623532,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28220,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28220_009_19TCG_20230628T131014_0710_01",
+      "acquisition_utc": "2023-06-28T13:10:14.522Z",
+      "apparent_solar_hour_at_domain_centroid": 8.38016716623532,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28220,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28220_009_19TBG_20230628T131014_0710_01",
+      "acquisition_utc": "2023-06-28T13:10:14.522Z",
+      "apparent_solar_hour_at_domain_centroid": 8.38016716623532,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28220,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28220_009_18TYM_20230628T131014_0711_02",
+      "acquisition_utc": "2023-06-28T13:10:14.522Z",
+      "apparent_solar_hour_at_domain_centroid": 8.38016716623532,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28220,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28220_009_19TCG_20230628T131014_0711_02",
+      "acquisition_utc": "2023-06-28T13:10:14.522Z",
+      "apparent_solar_hour_at_domain_centroid": 8.38016716623532,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28266,
+      "scene": 10,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28266_010_18TYM_20230701T121945_0710_01",
+      "acquisition_utc": "2023-07-01T12:19:45.526Z",
+      "apparent_solar_hour_at_domain_centroid": 7.528585927848546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28266,
+      "scene": 10,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28266_010_18TYN_20230701T121945_0710_01",
+      "acquisition_utc": "2023-07-01T12:19:45.526Z",
+      "apparent_solar_hour_at_domain_centroid": 7.528585927848546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28266,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28266_010_19TCH_20230701T121945_0710_01",
+      "acquisition_utc": "2023-07-01T12:19:45.526Z",
+      "apparent_solar_hour_at_domain_centroid": 7.528585927848546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28266,
+      "scene": 10,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28266_010_19TCG_20230701T121945_0710_01",
+      "acquisition_utc": "2023-07-01T12:19:45.526Z",
+      "apparent_solar_hour_at_domain_centroid": 7.528585927848546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28266,
+      "scene": 10,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28266_010_18TYM_20230701T121945_0711_02",
+      "acquisition_utc": "2023-07-01T12:19:45.526Z",
+      "apparent_solar_hour_at_domain_centroid": 7.528585927848546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28266,
+      "scene": 10,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28266_010_19TCG_20230701T121945_0711_02",
+      "acquisition_utc": "2023-07-01T12:19:45.526Z",
+      "apparent_solar_hour_at_domain_centroid": 7.528585927848546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28266,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28266_010_19TCH_20230701T121945_0711_02",
+      "acquisition_utc": "2023-07-01T12:19:45.526Z",
+      "apparent_solar_hour_at_domain_centroid": 7.528585927848546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28266,
+      "scene": 10,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28266_010_18TYN_20230701T121945_0711_02",
+      "acquisition_utc": "2023-07-01T12:19:45.526Z",
+      "apparent_solar_hour_at_domain_centroid": 7.528585927848546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28308,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28308_009_19TCG_20230704T050044_0710_01",
+      "acquisition_utc": "2023-07-04T05:00:44.570Z",
+      "apparent_solar_hour_at_domain_centroid": 0.2028273865073034,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28308,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28308_009_19TCG_20230704T050044_0712_02",
+      "acquisition_utc": "2023-07-04T05:00:44.570Z",
+      "apparent_solar_hour_at_domain_centroid": 0.2028273865073034,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28327,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28327_009_18TYN_20230705T104123_0710_01",
+      "acquisition_utc": "2023-07-05T10:41:23.235Z",
+      "apparent_solar_hour_at_domain_centroid": 5.876459312688462,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28327,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28327_009_18TYM_20230705T104123_0710_01",
+      "acquisition_utc": "2023-07-05T10:41:23.235Z",
+      "apparent_solar_hour_at_domain_centroid": 5.876459312688462,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28327,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28327_009_19TCH_20230705T104123_0710_01",
+      "acquisition_utc": "2023-07-05T10:41:23.235Z",
+      "apparent_solar_hour_at_domain_centroid": 5.876459312688462,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28327,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28327_009_19TBG_20230705T104123_0710_01",
+      "acquisition_utc": "2023-07-05T10:41:23.235Z",
+      "apparent_solar_hour_at_domain_centroid": 5.876459312688462,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28327,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28327_009_19TCG_20230705T104123_0710_01",
+      "acquisition_utc": "2023-07-05T10:41:23.235Z",
+      "apparent_solar_hour_at_domain_centroid": 5.876459312688462,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28327,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28327_009_18TYN_20230705T104123_0712_02",
+      "acquisition_utc": "2023-07-05T10:41:23.235Z",
+      "apparent_solar_hour_at_domain_centroid": 5.876459312688462,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28327,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28327_009_18TYM_20230705T104123_0712_02",
+      "acquisition_utc": "2023-07-05T10:41:23.235Z",
+      "apparent_solar_hour_at_domain_centroid": 5.876459312688462,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28327,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28327_009_19TCG_20230705T104123_0712_02",
+      "acquisition_utc": "2023-07-05T10:41:23.235Z",
+      "apparent_solar_hour_at_domain_centroid": 5.876459312688462,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28327,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28327_009_19TBG_20230705T104123_0712_02",
+      "acquisition_utc": "2023-07-05T10:41:23.235Z",
+      "apparent_solar_hour_at_domain_centroid": 5.876459312688462,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28327,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28327_009_19TCH_20230705T104123_0712_02",
+      "acquisition_utc": "2023-07-05T10:41:23.235Z",
+      "apparent_solar_hour_at_domain_centroid": 5.876459312688462,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28342,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28342_009_18TYN_20230706T095254_0710_01",
+      "acquisition_utc": "2023-07-06T09:52:54.851Z",
+      "apparent_solar_hour_at_domain_centroid": 5.065467804310809,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28342,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28342_009_18TYN_20230706T095254_0712_02",
+      "acquisition_utc": "2023-07-06T09:52:54.851Z",
+      "apparent_solar_hour_at_domain_centroid": 5.065467804310809,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28342,
+      "scene": 10,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28342_010_19TCG_20230706T095346_0710_01",
+      "acquisition_utc": "2023-07-06T09:53:46.820Z",
+      "apparent_solar_hour_at_domain_centroid": 5.079910445091004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28342,
+      "scene": 10,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28342_010_18TYN_20230706T095346_0710_01",
+      "acquisition_utc": "2023-07-06T09:53:46.820Z",
+      "apparent_solar_hour_at_domain_centroid": 5.079910445091004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28342,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28342_010_19TCH_20230706T095346_0710_01",
+      "acquisition_utc": "2023-07-06T09:53:46.820Z",
+      "apparent_solar_hour_at_domain_centroid": 5.079910445091004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28342,
+      "scene": 10,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28342_010_19TCG_20230706T095346_0712_02",
+      "acquisition_utc": "2023-07-06T09:53:46.820Z",
+      "apparent_solar_hour_at_domain_centroid": 5.079910445091004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28342,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28342_010_19TCH_20230706T095346_0712_02",
+      "acquisition_utc": "2023-07-06T09:53:46.820Z",
+      "apparent_solar_hour_at_domain_centroid": 5.079910445091004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28342,
+      "scene": 10,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28342_010_18TYN_20230706T095346_0712_02",
+      "acquisition_utc": "2023-07-06T09:53:46.820Z",
+      "apparent_solar_hour_at_domain_centroid": 5.079910445091004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28373,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28373_008_18TYM_20230708T095358_0710_01",
+      "acquisition_utc": "2023-07-08T09:53:58.579Z",
+      "apparent_solar_hour_at_domain_centroid": 5.077431635556354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28373,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28373_008_18TYM_20230708T095358_0712_02",
+      "acquisition_utc": "2023-07-08T09:53:58.579Z",
+      "apparent_solar_hour_at_domain_centroid": 5.077431635556354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28434,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28434_009_19TCG_20230712T081842_0710_01",
+      "acquisition_utc": "2023-07-12T08:18:42.888Z",
+      "apparent_solar_hour_at_domain_centroid": 3.479404444802202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28434,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28434_009_18TYN_20230712T081842_0710_01",
+      "acquisition_utc": "2023-07-12T08:18:42.888Z",
+      "apparent_solar_hour_at_domain_centroid": 3.479404444802202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28434,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28434_009_18TYM_20230712T081842_0710_01",
+      "acquisition_utc": "2023-07-12T08:18:42.888Z",
+      "apparent_solar_hour_at_domain_centroid": 3.479404444802202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28434,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28434_009_19TCG_20230712T081842_0712_02",
+      "acquisition_utc": "2023-07-12T08:18:42.888Z",
+      "apparent_solar_hour_at_domain_centroid": 3.479404444802202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28434,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28434_009_18TYM_20230712T081842_0712_02",
+      "acquisition_utc": "2023-07-12T08:18:42.888Z",
+      "apparent_solar_hour_at_domain_centroid": 3.479404444802202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28434,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28434_009_18TYN_20230712T081842_0712_02",
+      "acquisition_utc": "2023-07-12T08:18:42.888Z",
+      "apparent_solar_hour_at_domain_centroid": 3.479404444802202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28464,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28464_010_19TCH_20230714T064259_0710_01",
+      "acquisition_utc": "2023-07-14T06:42:59.092Z",
+      "apparent_solar_hour_at_domain_centroid": 1.879737127856154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28491,
+      "scene": 6,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28491_006_18TYM_20230716T001343_0710_01",
+      "acquisition_utc": "2023-07-16T00:13:43.289Z",
+      "apparent_solar_hour_at_domain_centroid": 19.388431779878985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28491,
+      "scene": 6,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28491_006_19TCG_20230716T001343_0710_01",
+      "acquisition_utc": "2023-07-16T00:13:43.289Z",
+      "apparent_solar_hour_at_domain_centroid": 19.388431779878985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28491,
+      "scene": 6,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28491_006_19TBG_20230716T001343_0710_01",
+      "acquisition_utc": "2023-07-16T00:13:43.289Z",
+      "apparent_solar_hour_at_domain_centroid": 19.388431779878985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28491,
+      "scene": 6,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28491_006_18TYM_20230716T001343_0712_02",
+      "acquisition_utc": "2023-07-16T00:13:43.289Z",
+      "apparent_solar_hour_at_domain_centroid": 19.388431779878985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28491,
+      "scene": 6,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28491_006_19TBG_20230716T001343_0712_02",
+      "acquisition_utc": "2023-07-16T00:13:43.289Z",
+      "apparent_solar_hour_at_domain_centroid": 19.388431779878985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28491,
+      "scene": 6,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28491_006_19TCG_20230716T001343_0712_02",
+      "acquisition_utc": "2023-07-16T00:13:43.289Z",
+      "apparent_solar_hour_at_domain_centroid": 19.388431779878985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28495,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28495_009_18TYM_20230716T064258_0710_01",
+      "acquisition_utc": "2023-07-16T06:42:58.974Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8754160905708313,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28495,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28495_009_19TBG_20230716T064258_0710_01",
+      "acquisition_utc": "2023-07-16T06:42:58.974Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8754160905708313,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28495,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28495_009_19TCG_20230716T064258_0710_01",
+      "acquisition_utc": "2023-07-16T06:42:58.974Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8754160905708313,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28495,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28495_009_19TCG_20230716T064258_0712_02",
+      "acquisition_utc": "2023-07-16T06:42:58.974Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8754160905708313,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28495,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28495_009_19TBG_20230716T064258_0712_02",
+      "acquisition_utc": "2023-07-16T06:42:58.974Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8754160905708313,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28495,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28495_009_18TYM_20230716T064258_0712_02",
+      "acquisition_utc": "2023-07-16T06:42:58.974Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8754160905708313,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28510,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28510_008_18TYM_20230717T055448_0710_01",
+      "acquisition_utc": "2023-07-17T05:54:48.129Z",
+      "apparent_solar_hour_at_domain_centroid": 1.0708755383911006,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28510,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28510_008_18TYN_20230717T055448_0710_01",
+      "acquisition_utc": "2023-07-17T05:54:48.129Z",
+      "apparent_solar_hour_at_domain_centroid": 1.0708755383911006,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28510,
+      "scene": 8,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28510_008_19TBG_20230717T055448_0710_01",
+      "acquisition_utc": "2023-07-17T05:54:48.129Z",
+      "apparent_solar_hour_at_domain_centroid": 1.0708755383911006,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28510,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28510_008_18TYM_20230717T055448_0712_02",
+      "acquisition_utc": "2023-07-17T05:54:48.129Z",
+      "apparent_solar_hour_at_domain_centroid": 1.0708755383911006,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28510,
+      "scene": 8,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28510_008_19TBG_20230717T055448_0712_02",
+      "acquisition_utc": "2023-07-17T05:54:48.129Z",
+      "apparent_solar_hour_at_domain_centroid": 1.0708755383911006,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28510,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28510_008_18TYN_20230717T055448_0712_02",
+      "acquisition_utc": "2023-07-17T05:54:48.129Z",
+      "apparent_solar_hour_at_domain_centroid": 1.0708755383911006,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28571,
+      "scene": 11,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28571_011_18TYM_20230721T041833_0710_01",
+      "acquisition_utc": "2023-07-21T04:18:33.649Z",
+      "apparent_solar_hour_at_domain_centroid": 23.460908014584877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28571,
+      "scene": 11,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28571_011_18TYN_20230721T041833_0710_01",
+      "acquisition_utc": "2023-07-21T04:18:33.649Z",
+      "apparent_solar_hour_at_domain_centroid": 23.460908014584877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28571,
+      "scene": 11,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28571_011_19TBG_20230721T041833_0710_01",
+      "acquisition_utc": "2023-07-21T04:18:33.649Z",
+      "apparent_solar_hour_at_domain_centroid": 23.460908014584877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28571,
+      "scene": 11,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28571_011_19TCG_20230721T041833_0710_01",
+      "acquisition_utc": "2023-07-21T04:18:33.649Z",
+      "apparent_solar_hour_at_domain_centroid": 23.460908014584877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28571,
+      "scene": 11,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28571_011_19TCH_20230721T041833_0710_01",
+      "acquisition_utc": "2023-07-21T04:18:33.649Z",
+      "apparent_solar_hour_at_domain_centroid": 23.460908014584877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28571,
+      "scene": 11,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28571_011_19TCH_20230721T041833_0712_02",
+      "acquisition_utc": "2023-07-21T04:18:33.649Z",
+      "apparent_solar_hour_at_domain_centroid": 23.460908014584877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28571,
+      "scene": 11,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28571_011_18TYM_20230721T041833_0712_02",
+      "acquisition_utc": "2023-07-21T04:18:33.649Z",
+      "apparent_solar_hour_at_domain_centroid": 23.460908014584877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28571,
+      "scene": 11,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28571_011_18TYN_20230721T041833_0712_02",
+      "acquisition_utc": "2023-07-21T04:18:33.649Z",
+      "apparent_solar_hour_at_domain_centroid": 23.460908014584877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28571,
+      "scene": 11,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28571_011_19TCG_20230721T041833_0712_02",
+      "acquisition_utc": "2023-07-21T04:18:33.649Z",
+      "apparent_solar_hour_at_domain_centroid": 23.460908014584877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28571,
+      "scene": 11,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28571_011_19TBG_20230721T041833_0712_02",
+      "acquisition_utc": "2023-07-21T04:18:33.649Z",
+      "apparent_solar_hour_at_domain_centroid": 23.460908014584877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28659_008_18TYM_20230726T201243_0710_01",
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "apparent_solar_hour_at_domain_centroid": 15.359525177300396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28659_008_18TYN_20230726T201243_0710_01",
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "apparent_solar_hour_at_domain_centroid": 15.359525177300396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 8,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28659_008_19TBG_20230726T201243_0710_01",
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "apparent_solar_hour_at_domain_centroid": 15.359525177300396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28659_008_19TCH_20230726T201243_0710_01",
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "apparent_solar_hour_at_domain_centroid": 15.359525177300396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 8,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28659_008_19TCG_20230726T201243_0710_01",
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "apparent_solar_hour_at_domain_centroid": 15.359525177300396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 8,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28659_008_19TBG_20230726T201243_0712_02",
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "apparent_solar_hour_at_domain_centroid": 15.359525177300396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28659_008_18TYN_20230726T201243_0712_02",
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "apparent_solar_hour_at_domain_centroid": 15.359525177300396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28659_008_19TCH_20230726T201243_0712_02",
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "apparent_solar_hour_at_domain_centroid": 15.359525177300396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 8,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28659_008_19TCG_20230726T201243_0712_02",
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "apparent_solar_hour_at_domain_centroid": 15.359525177300396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28659_008_18TYM_20230726T201243_0712_02",
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "apparent_solar_hour_at_domain_centroid": 15.359525177300396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28659_009_18TYN_20230726T201335_0710_01",
+      "acquisition_utc": "2023-07-26T20:13:35.169Z",
+      "apparent_solar_hour_at_domain_centroid": 15.373969457990947,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28659_009_19TCG_20230726T201335_0710_01",
+      "acquisition_utc": "2023-07-26T20:13:35.169Z",
+      "apparent_solar_hour_at_domain_centroid": 15.373969457990947,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28659_009_19TCH_20230726T201335_0710_01",
+      "acquisition_utc": "2023-07-26T20:13:35.169Z",
+      "apparent_solar_hour_at_domain_centroid": 15.373969457990947,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28659_009_19TCH_20230726T201335_0712_02",
+      "acquisition_utc": "2023-07-26T20:13:35.169Z",
+      "apparent_solar_hour_at_domain_centroid": 15.373969457990947,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28659_009_18TYN_20230726T201335_0712_02",
+      "acquisition_utc": "2023-07-26T20:13:35.169Z",
+      "apparent_solar_hour_at_domain_centroid": 15.373969457990947,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28659_009_19TCG_20230726T201335_0712_02",
+      "acquisition_utc": "2023-07-26T20:13:35.169Z",
+      "apparent_solar_hour_at_domain_centroid": 15.373969457990947,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28693,
+      "scene": 16,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28693_016_18TYN_20230729T010447_0710_01",
+      "acquisition_utc": "2023-07-29T01:04:47.542Z",
+      "apparent_solar_hour_at_domain_centroid": 20.227114317005633,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28693,
+      "scene": 16,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28693_016_18TYN_20230729T010447_0712_02",
+      "acquisition_utc": "2023-07-29T01:04:47.542Z",
+      "apparent_solar_hour_at_domain_centroid": 20.227114317005633,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28693,
+      "scene": 17,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28693_017_18TYM_20230729T010539_0710_01",
+      "acquisition_utc": "2023-07-29T01:05:39.512Z",
+      "apparent_solar_hour_at_domain_centroid": 20.241558823088152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28693,
+      "scene": 17,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28693_017_18TYN_20230729T010539_0710_01",
+      "acquisition_utc": "2023-07-29T01:05:39.512Z",
+      "apparent_solar_hour_at_domain_centroid": 20.241558823088152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28693,
+      "scene": 17,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28693_017_19TCG_20230729T010539_0710_01",
+      "acquisition_utc": "2023-07-29T01:05:39.512Z",
+      "apparent_solar_hour_at_domain_centroid": 20.241558823088152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28693,
+      "scene": 17,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28693_017_19TCH_20230729T010539_0710_01",
+      "acquisition_utc": "2023-07-29T01:05:39.512Z",
+      "apparent_solar_hour_at_domain_centroid": 20.241558823088152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28693,
+      "scene": 17,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28693_017_19TCH_20230729T010539_0712_02",
+      "acquisition_utc": "2023-07-29T01:05:39.512Z",
+      "apparent_solar_hour_at_domain_centroid": 20.241558823088152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28693,
+      "scene": 17,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28693_017_18TYM_20230729T010539_0712_02",
+      "acquisition_utc": "2023-07-29T01:05:39.512Z",
+      "apparent_solar_hour_at_domain_centroid": 20.241558823088152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28693,
+      "scene": 17,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28693_017_19TCG_20230729T010539_0712_02",
+      "acquisition_utc": "2023-07-29T01:05:39.512Z",
+      "apparent_solar_hour_at_domain_centroid": 20.241558823088152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28693,
+      "scene": 17,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28693_017_19TBG_20230729T010539_0712_02",
+      "acquisition_utc": "2023-07-29T01:05:39.512Z",
+      "apparent_solar_hour_at_domain_centroid": 20.241558823088152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28693,
+      "scene": 17,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28693_017_18TYN_20230729T010539_0712_02",
+      "acquisition_utc": "2023-07-29T01:05:39.512Z",
+      "apparent_solar_hour_at_domain_centroid": 20.241558823088152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28720,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28720_008_18TYM_20230730T183602_0710_01",
+      "acquisition_utc": "2023-07-30T18:36:02.658Z",
+      "apparent_solar_hour_at_domain_centroid": 13.748383394645314,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28720,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28720_008_18TYM_20230730T183602_0712_02",
+      "acquisition_utc": "2023-07-30T18:36:02.658Z",
+      "apparent_solar_hour_at_domain_centroid": 13.748383394645314,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28720,
+      "scene": 8,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28720_008_19TBG_20230730T183602_0712_02",
+      "acquisition_utc": "2023-07-30T18:36:02.658Z",
+      "apparent_solar_hour_at_domain_centroid": 13.748383394645314,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28739,
+      "scene": 7,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28739_007_18TYN_20230801T001729_0710_01",
+      "acquisition_utc": "2023-08-01T00:17:29.738Z",
+      "apparent_solar_hour_at_domain_centroid": 19.43984800994703,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28739,
+      "scene": 7,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28739_007_18TYM_20230801T001729_0710_01",
+      "acquisition_utc": "2023-08-01T00:17:29.738Z",
+      "apparent_solar_hour_at_domain_centroid": 19.43984800994703,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28739,
+      "scene": 7,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28739_007_19TCG_20230801T001729_0710_01",
+      "acquisition_utc": "2023-08-01T00:17:29.738Z",
+      "apparent_solar_hour_at_domain_centroid": 19.43984800994703,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28739,
+      "scene": 7,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28739_007_19TCH_20230801T001729_0710_01",
+      "acquisition_utc": "2023-08-01T00:17:29.738Z",
+      "apparent_solar_hour_at_domain_centroid": 19.43984800994703,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28739,
+      "scene": 7,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28739_007_19TBG_20230801T001729_0710_01",
+      "acquisition_utc": "2023-08-01T00:17:29.738Z",
+      "apparent_solar_hour_at_domain_centroid": 19.43984800994703,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28739,
+      "scene": 7,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28739_007_18TYM_20230801T001729_0712_02",
+      "acquisition_utc": "2023-08-01T00:17:29.738Z",
+      "apparent_solar_hour_at_domain_centroid": 19.43984800994703,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28739,
+      "scene": 7,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28739_007_18TYN_20230801T001729_0712_02",
+      "acquisition_utc": "2023-08-01T00:17:29.738Z",
+      "apparent_solar_hour_at_domain_centroid": 19.43984800994703,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28739,
+      "scene": 7,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28739_007_19TCG_20230801T001729_0712_02",
+      "acquisition_utc": "2023-08-01T00:17:29.738Z",
+      "apparent_solar_hour_at_domain_centroid": 19.43984800994703,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28739,
+      "scene": 7,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28739_007_19TBG_20230801T001729_0712_02",
+      "acquisition_utc": "2023-08-01T00:17:29.738Z",
+      "apparent_solar_hour_at_domain_centroid": 19.43984800994703,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28739,
+      "scene": 7,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28739_007_19TCH_20230801T001729_0712_02",
+      "acquisition_utc": "2023-08-01T00:17:29.738Z",
+      "apparent_solar_hour_at_domain_centroid": 19.43984800994703,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28754,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28754_009_18TYM_20230801T232837_0710_01",
+      "acquisition_utc": "2023-08-01T23:28:37.724Z",
+      "apparent_solar_hour_at_domain_centroid": 18.626083496347032,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28754,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28754_009_18TYN_20230801T232837_0710_01",
+      "acquisition_utc": "2023-08-01T23:28:37.724Z",
+      "apparent_solar_hour_at_domain_centroid": 18.626083496347032,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28754,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28754_009_19TCG_20230801T232837_0710_01",
+      "acquisition_utc": "2023-08-01T23:28:37.724Z",
+      "apparent_solar_hour_at_domain_centroid": 18.626083496347032,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28754,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28754_009_19TCH_20230801T232837_0710_01",
+      "acquisition_utc": "2023-08-01T23:28:37.724Z",
+      "apparent_solar_hour_at_domain_centroid": 18.626083496347032,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28754,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28754_009_18TYM_20230801T232837_0712_02",
+      "acquisition_utc": "2023-08-01T23:28:37.724Z",
+      "apparent_solar_hour_at_domain_centroid": 18.626083496347032,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28754,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28754_009_18TYN_20230801T232837_0712_02",
+      "acquisition_utc": "2023-08-01T23:28:37.724Z",
+      "apparent_solar_hour_at_domain_centroid": 18.626083496347032,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28754,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28754_009_19TCG_20230801T232837_0712_02",
+      "acquisition_utc": "2023-08-01T23:28:37.724Z",
+      "apparent_solar_hour_at_domain_centroid": 18.626083496347032,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28754,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28754_009_19TCH_20230801T232837_0712_02",
+      "acquisition_utc": "2023-08-01T23:28:37.724Z",
+      "apparent_solar_hour_at_domain_centroid": 18.626083496347032,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28754,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28754_010_19TCH_20230801T232929_0710_01",
+      "acquisition_utc": "2023-08-01T23:29:29.694Z",
+      "apparent_solar_hour_at_domain_centroid": 18.64052841568693,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28754,
+      "scene": 10,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28754_010_19TCG_20230801T232929_0712_02",
+      "acquisition_utc": "2023-08-01T23:29:29.694Z",
+      "apparent_solar_hour_at_domain_centroid": 18.64052841568693,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28754,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28754_010_19TCH_20230801T232929_0712_02",
+      "acquisition_utc": "2023-08-01T23:29:29.694Z",
+      "apparent_solar_hour_at_domain_centroid": 18.64052841568693,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28766,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28766_008_18TYM_20230802T174810_0710_01",
+      "acquisition_utc": "2023-08-02T17:48:10.615Z",
+      "apparent_solar_hour_at_domain_centroid": 12.95257083638593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28766,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28766_008_18TYN_20230802T174810_0710_01",
+      "acquisition_utc": "2023-08-02T17:48:10.615Z",
+      "apparent_solar_hour_at_domain_centroid": 12.95257083638593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28766,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28766_008_19TCH_20230802T174810_0710_01",
+      "acquisition_utc": "2023-08-02T17:48:10.615Z",
+      "apparent_solar_hour_at_domain_centroid": 12.95257083638593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28766,
+      "scene": 8,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28766_008_19TCG_20230802T174810_0710_01",
+      "acquisition_utc": "2023-08-02T17:48:10.615Z",
+      "apparent_solar_hour_at_domain_centroid": 12.95257083638593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28766,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28766_008_19TCH_20230802T174810_0712_02",
+      "acquisition_utc": "2023-08-02T17:48:10.615Z",
+      "apparent_solar_hour_at_domain_centroid": 12.95257083638593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28766,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28766_008_18TYN_20230802T174810_0712_02",
+      "acquisition_utc": "2023-08-02T17:48:10.615Z",
+      "apparent_solar_hour_at_domain_centroid": 12.95257083638593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28766,
+      "scene": 8,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28766_008_19TBG_20230802T174810_0712_02",
+      "acquisition_utc": "2023-08-02T17:48:10.615Z",
+      "apparent_solar_hour_at_domain_centroid": 12.95257083638593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28766,
+      "scene": 8,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28766_008_19TCG_20230802T174810_0712_02",
+      "acquisition_utc": "2023-08-02T17:48:10.615Z",
+      "apparent_solar_hour_at_domain_centroid": 12.95257083638593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28766,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28766_008_18TYM_20230802T174810_0712_02",
+      "acquisition_utc": "2023-08-02T17:48:10.615Z",
+      "apparent_solar_hour_at_domain_centroid": 12.95257083638593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28766,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28766_009_19TCH_20230802T174902_0710_01",
+      "acquisition_utc": "2023-08-02T17:49:02.585Z",
+      "apparent_solar_hour_at_domain_centroid": 12.967015837015609,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28766,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28766_009_19TCH_20230802T174902_0712_02",
+      "acquisition_utc": "2023-08-02T17:49:02.585Z",
+      "apparent_solar_hour_at_domain_centroid": 12.967015837015609,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28781,
+      "scene": 10,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28781_010_18TYM_20230803T165940_0710_01",
+      "acquisition_utc": "2023-08-03T16:59:40.863Z",
+      "apparent_solar_hour_at_domain_centroid": 12.145213227491709,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28781,
+      "scene": 10,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28781_010_18TYN_20230803T165940_0710_01",
+      "acquisition_utc": "2023-08-03T16:59:40.863Z",
+      "apparent_solar_hour_at_domain_centroid": 12.145213227491709,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28781,
+      "scene": 10,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28781_010_19TBG_20230803T165940_0710_01",
+      "acquisition_utc": "2023-08-03T16:59:40.863Z",
+      "apparent_solar_hour_at_domain_centroid": 12.145213227491709,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28781,
+      "scene": 10,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28781_010_19TCG_20230803T165940_0710_01",
+      "acquisition_utc": "2023-08-03T16:59:40.863Z",
+      "apparent_solar_hour_at_domain_centroid": 12.145213227491709,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28781,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28781_010_19TCH_20230803T165940_0710_01",
+      "acquisition_utc": "2023-08-03T16:59:40.863Z",
+      "apparent_solar_hour_at_domain_centroid": 12.145213227491709,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28781,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28781_010_19TCH_20230803T165940_0712_02",
+      "acquisition_utc": "2023-08-03T16:59:40.863Z",
+      "apparent_solar_hour_at_domain_centroid": 12.145213227491709,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28781,
+      "scene": 10,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28781_010_18TYM_20230803T165940_0712_02",
+      "acquisition_utc": "2023-08-03T16:59:40.863Z",
+      "apparent_solar_hour_at_domain_centroid": 12.145213227491709,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28781,
+      "scene": 10,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28781_010_19TCG_20230803T165940_0712_02",
+      "acquisition_utc": "2023-08-03T16:59:40.863Z",
+      "apparent_solar_hour_at_domain_centroid": 12.145213227491709,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28781,
+      "scene": 10,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28781_010_18TYN_20230803T165940_0712_02",
+      "acquisition_utc": "2023-08-03T16:59:40.863Z",
+      "apparent_solar_hour_at_domain_centroid": 12.145213227491709,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28781,
+      "scene": 10,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28781_010_19TBG_20230803T165940_0712_02",
+      "acquisition_utc": "2023-08-03T16:59:40.863Z",
+      "apparent_solar_hour_at_domain_centroid": 12.145213227491709,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28800,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28800_009_18TYM_20230804T224026_0710_01",
+      "acquisition_utc": "2023-08-04T22:40:26.800Z",
+      "apparent_solar_hour_at_domain_centroid": 17.82614825531105,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28800,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28800_009_19TBG_20230804T224026_0710_01",
+      "acquisition_utc": "2023-08-04T22:40:26.800Z",
+      "apparent_solar_hour_at_domain_centroid": 17.82614825531105,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28800,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28800_009_19TCG_20230804T224026_0710_01",
+      "acquisition_utc": "2023-08-04T22:40:26.800Z",
+      "apparent_solar_hour_at_domain_centroid": 17.82614825531105,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28800,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28800_009_19TCG_20230804T224026_0712_02",
+      "acquisition_utc": "2023-08-04T22:40:26.800Z",
+      "apparent_solar_hour_at_domain_centroid": 17.82614825531105,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28800,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28800_009_18TYM_20230804T224026_0712_02",
+      "acquisition_utc": "2023-08-04T22:40:26.800Z",
+      "apparent_solar_hour_at_domain_centroid": 17.82614825531105,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28800,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28800_009_19TBG_20230804T224026_0712_02",
+      "acquisition_utc": "2023-08-04T22:40:26.800Z",
+      "apparent_solar_hour_at_domain_centroid": 17.82614825531105,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28815_008_18TYN_20230805T215118_0710_01",
+      "acquisition_utc": "2023-08-05T21:51:18.075Z",
+      "apparent_solar_hour_at_domain_centroid": 17.008612735043865,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28815_008_19TCH_20230805T215118_0712_02",
+      "acquisition_utc": "2023-08-05T21:51:18.075Z",
+      "apparent_solar_hour_at_domain_centroid": 17.008612735043865,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28815_008_18TYN_20230805T215118_0712_02",
+      "acquisition_utc": "2023-08-05T21:51:18.075Z",
+      "apparent_solar_hour_at_domain_centroid": 17.008612735043865,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28815_009_18TYN_20230805T215210_0710_01",
+      "acquisition_utc": "2023-08-05T21:52:10.044Z",
+      "apparent_solar_hour_at_domain_centroid": 17.023058074516715,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28815_009_19TCG_20230805T215210_0710_01",
+      "acquisition_utc": "2023-08-05T21:52:10.044Z",
+      "apparent_solar_hour_at_domain_centroid": 17.023058074516715,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28815_009_19TCH_20230805T215210_0710_01",
+      "acquisition_utc": "2023-08-05T21:52:10.044Z",
+      "apparent_solar_hour_at_domain_centroid": 17.023058074516715,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28815_009_19TCH_20230805T215210_0712_02",
+      "acquisition_utc": "2023-08-05T21:52:10.044Z",
+      "apparent_solar_hour_at_domain_centroid": 17.023058074516715,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28815_009_18TYN_20230805T215210_0712_02",
+      "acquisition_utc": "2023-08-05T21:52:10.044Z",
+      "apparent_solar_hour_at_domain_centroid": 17.023058074516715,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28815_009_19TCG_20230805T215210_0712_02",
+      "acquisition_utc": "2023-08-05T21:52:10.044Z",
+      "apparent_solar_hour_at_domain_centroid": 17.023058074516715,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28888,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28888_009_18TYM_20230810T143403_0710_01",
+      "acquisition_utc": "2023-08-10T14:34:03.637Z",
+      "apparent_solar_hour_at_domain_centroid": 9.730050628228488,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28888,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28888_009_18TYN_20230810T143403_0710_01",
+      "acquisition_utc": "2023-08-10T14:34:03.637Z",
+      "apparent_solar_hour_at_domain_centroid": 9.730050628228488,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28888,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28888_009_19TBG_20230810T143403_0710_01",
+      "acquisition_utc": "2023-08-10T14:34:03.637Z",
+      "apparent_solar_hour_at_domain_centroid": 9.730050628228488,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28888,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28888_009_19TCH_20230810T143403_0710_01",
+      "acquisition_utc": "2023-08-10T14:34:03.637Z",
+      "apparent_solar_hour_at_domain_centroid": 9.730050628228488,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28888,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28888_009_19TCG_20230810T143403_0710_01",
+      "acquisition_utc": "2023-08-10T14:34:03.637Z",
+      "apparent_solar_hour_at_domain_centroid": 9.730050628228488,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28888,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28888_009_19TCH_20230810T143403_0712_02",
+      "acquisition_utc": "2023-08-10T14:34:03.637Z",
+      "apparent_solar_hour_at_domain_centroid": 9.730050628228488,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28888,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28888_009_19TCG_20230810T143403_0712_02",
+      "acquisition_utc": "2023-08-10T14:34:03.637Z",
+      "apparent_solar_hour_at_domain_centroid": 9.730050628228488,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28888,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28888_009_19TBG_20230810T143403_0712_02",
+      "acquisition_utc": "2023-08-10T14:34:03.637Z",
+      "apparent_solar_hour_at_domain_centroid": 9.730050628228488,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28888,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28888_009_18TYM_20230810T143403_0712_02",
+      "acquisition_utc": "2023-08-10T14:34:03.637Z",
+      "apparent_solar_hour_at_domain_centroid": 9.730050628228488,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28888,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28888_009_18TYN_20230810T143403_0712_02",
+      "acquisition_utc": "2023-08-10T14:34:03.637Z",
+      "apparent_solar_hour_at_domain_centroid": 9.730050628228488,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28937,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28937_008_18TYN_20230813T183854_0710_01",
+      "acquisition_utc": "2023-08-13T18:38:54.315Z",
+      "apparent_solar_hour_at_domain_centroid": 13.819098558688482,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28937,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28937_008_18TYN_20230813T183854_0712_02",
+      "acquisition_utc": "2023-08-13T18:38:54.315Z",
+      "apparent_solar_hour_at_domain_centroid": 13.819098558688482,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28949,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28949_009_18TYM_20230814T125913_0710_01",
+      "acquisition_utc": "2023-08-14T12:59:13.467Z",
+      "apparent_solar_hour_at_domain_centroid": 8.15994692627545,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28949,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28949_009_19TBG_20230814T125913_0710_01",
+      "acquisition_utc": "2023-08-14T12:59:13.467Z",
+      "apparent_solar_hour_at_domain_centroid": 8.15994692627545,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28949,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28949_009_19TCH_20230814T125913_0710_01",
+      "acquisition_utc": "2023-08-14T12:59:13.467Z",
+      "apparent_solar_hour_at_domain_centroid": 8.15994692627545,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28949,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28949_009_19TCG_20230814T125913_0710_01",
+      "acquisition_utc": "2023-08-14T12:59:13.467Z",
+      "apparent_solar_hour_at_domain_centroid": 8.15994692627545,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28949,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28949_009_18TYM_20230814T125913_0712_02",
+      "acquisition_utc": "2023-08-14T12:59:13.467Z",
+      "apparent_solar_hour_at_domain_centroid": 8.15994692627545,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28949,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28949_009_19TCH_20230814T125913_0712_02",
+      "acquisition_utc": "2023-08-14T12:59:13.467Z",
+      "apparent_solar_hour_at_domain_centroid": 8.15994692627545,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28949,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28949_009_19TBG_20230814T125913_0712_02",
+      "acquisition_utc": "2023-08-14T12:59:13.467Z",
+      "apparent_solar_hour_at_domain_centroid": 8.15994692627545,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28949,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28949_009_18TYN_20230814T125913_0712_02",
+      "acquisition_utc": "2023-08-14T12:59:13.467Z",
+      "apparent_solar_hour_at_domain_centroid": 8.15994692627545,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28949,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28949_009_19TCG_20230814T125913_0712_02",
+      "acquisition_utc": "2023-08-14T12:59:13.467Z",
+      "apparent_solar_hour_at_domain_centroid": 8.15994692627545,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28968,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28968_009_18TYN_20230815T184034_0710_01",
+      "acquisition_utc": "2023-08-15T18:40:34.857Z",
+      "apparent_solar_hour_at_domain_centroid": 13.852943359199097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28968,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28968_009_19TBG_20230815T184034_0710_01",
+      "acquisition_utc": "2023-08-15T18:40:34.857Z",
+      "apparent_solar_hour_at_domain_centroid": 13.852943359199097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28968,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28968_009_19TCG_20230815T184034_0710_01",
+      "acquisition_utc": "2023-08-15T18:40:34.857Z",
+      "apparent_solar_hour_at_domain_centroid": 13.852943359199097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28968,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_28968_009_19TBG_20230815T184034_0712_02",
+      "acquisition_utc": "2023-08-15T18:40:34.857Z",
+      "apparent_solar_hour_at_domain_centroid": 13.852943359199097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28968,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_28968_009_19TCG_20230815T184034_0712_02",
+      "acquisition_utc": "2023-08-15T18:40:34.857Z",
+      "apparent_solar_hour_at_domain_centroid": 13.852943359199097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28968,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_28968_009_18TYN_20230815T184034_0712_02",
+      "acquisition_utc": "2023-08-15T18:40:34.857Z",
+      "apparent_solar_hour_at_domain_centroid": 13.852943359199097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28968,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_28968_009_18TYM_20230815T184034_0712_02",
+      "acquisition_utc": "2023-08-15T18:40:34.857Z",
+      "apparent_solar_hour_at_domain_centroid": 13.852943359199097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28998,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28998_010_19TCH_20230817T170458_0710_01",
+      "acquisition_utc": "2023-08-17T17:04:58.071Z",
+      "apparent_solar_hour_at_domain_centroid": 12.266101683782379,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 28998,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_28998_010_19TCH_20230817T170458_0712_02",
+      "acquisition_utc": "2023-08-17T17:04:58.071Z",
+      "apparent_solar_hour_at_domain_centroid": 12.266101683782379,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29025,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29025_009_18TYM_20230819T103705_0710_01",
+      "acquisition_utc": "2023-08-19T10:37:05.199Z",
+      "apparent_solar_hour_at_domain_centroid": 5.80769907201729,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29025,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29025_009_19TBG_20230819T103705_0710_01",
+      "acquisition_utc": "2023-08-19T10:37:05.199Z",
+      "apparent_solar_hour_at_domain_centroid": 5.80769907201729,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29025,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29025_009_19TCH_20230819T103705_0710_01",
+      "acquisition_utc": "2023-08-19T10:37:05.199Z",
+      "apparent_solar_hour_at_domain_centroid": 5.80769907201729,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29025,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29025_009_19TCG_20230819T103705_0710_01",
+      "acquisition_utc": "2023-08-19T10:37:05.199Z",
+      "apparent_solar_hour_at_domain_centroid": 5.80769907201729,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29025,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29025_009_19TCG_20230819T103705_0712_02",
+      "acquisition_utc": "2023-08-19T10:37:05.199Z",
+      "apparent_solar_hour_at_domain_centroid": 5.80769907201729,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29025,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29025_009_19TCH_20230819T103705_0712_02",
+      "acquisition_utc": "2023-08-19T10:37:05.199Z",
+      "apparent_solar_hour_at_domain_centroid": 5.80769907201729,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29025,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29025_009_19TBG_20230819T103705_0712_02",
+      "acquisition_utc": "2023-08-19T10:37:05.199Z",
+      "apparent_solar_hour_at_domain_centroid": 5.80769907201729,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29025,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29025_009_18TYM_20230819T103705_0712_02",
+      "acquisition_utc": "2023-08-19T10:37:05.199Z",
+      "apparent_solar_hour_at_domain_centroid": 5.80769907201729,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29029,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29029_009_19TCG_20230819T170552_0710_01",
+      "acquisition_utc": "2023-08-19T17:05:52.540Z",
+      "apparent_solar_hour_at_domain_centroid": 12.28844956278154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29029,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29029_009_18TYN_20230819T170552_0710_01",
+      "acquisition_utc": "2023-08-19T17:05:52.540Z",
+      "apparent_solar_hour_at_domain_centroid": 12.28844956278154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29029,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29029_009_18TYM_20230819T170552_0710_01",
+      "acquisition_utc": "2023-08-19T17:05:52.540Z",
+      "apparent_solar_hour_at_domain_centroid": 12.28844956278154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29029,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29029_009_18TYM_20230819T170552_0712_02",
+      "acquisition_utc": "2023-08-19T17:05:52.540Z",
+      "apparent_solar_hour_at_domain_centroid": 12.28844956278154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29029,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29029_009_18TYN_20230819T170552_0712_02",
+      "acquisition_utc": "2023-08-19T17:05:52.540Z",
+      "apparent_solar_hour_at_domain_centroid": 12.28844956278154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29029,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29029_009_19TCG_20230819T170552_0712_02",
+      "acquisition_utc": "2023-08-19T17:05:52.540Z",
+      "apparent_solar_hour_at_domain_centroid": 12.28844956278154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29029,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29029_009_19TBG_20230819T170552_0712_02",
+      "acquisition_utc": "2023-08-19T17:05:52.540Z",
+      "apparent_solar_hour_at_domain_centroid": 12.28844956278154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29044,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29044_009_18TYM_20230820T161819_0710_01",
+      "acquisition_utc": "2023-08-20T16:18:19.490Z",
+      "apparent_solar_hour_at_domain_centroid": 11.499724362889653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29044,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29044_009_18TYN_20230820T161819_0710_01",
+      "acquisition_utc": "2023-08-20T16:18:19.490Z",
+      "apparent_solar_hour_at_domain_centroid": 11.499724362889653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29044,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29044_009_19TCH_20230820T161819_0710_01",
+      "acquisition_utc": "2023-08-20T16:18:19.490Z",
+      "apparent_solar_hour_at_domain_centroid": 11.499724362889653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29044,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29044_009_19TCG_20230820T161819_0710_01",
+      "acquisition_utc": "2023-08-20T16:18:19.490Z",
+      "apparent_solar_hour_at_domain_centroid": 11.499724362889653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29044,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29044_009_19TBG_20230820T161819_0710_01",
+      "acquisition_utc": "2023-08-20T16:18:19.490Z",
+      "apparent_solar_hour_at_domain_centroid": 11.499724362889653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29044,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29044_009_18TYM_20230820T161819_0712_02",
+      "acquisition_utc": "2023-08-20T16:18:19.490Z",
+      "apparent_solar_hour_at_domain_centroid": 11.499724362889653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29044,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29044_009_18TYN_20230820T161819_0712_02",
+      "acquisition_utc": "2023-08-20T16:18:19.490Z",
+      "apparent_solar_hour_at_domain_centroid": 11.499724362889653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29044,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29044_009_19TCG_20230820T161819_0712_02",
+      "acquisition_utc": "2023-08-20T16:18:19.490Z",
+      "apparent_solar_hour_at_domain_centroid": 11.499724362889653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29044,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29044_009_19TCH_20230820T161819_0712_02",
+      "acquisition_utc": "2023-08-20T16:18:19.490Z",
+      "apparent_solar_hour_at_domain_centroid": 11.499724362889653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29044,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29044_009_19TBG_20230820T161819_0712_02",
+      "acquisition_utc": "2023-08-20T16:18:19.490Z",
+      "apparent_solar_hour_at_domain_centroid": 11.499724362889653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29059,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29059_008_19TCH_20230821T153013_0710_01",
+      "acquisition_utc": "2023-08-21T15:30:13.365Z",
+      "apparent_solar_hour_at_domain_centroid": 10.701972478015907,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29059,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29059_008_19TCH_20230821T153013_0712_02",
+      "acquisition_utc": "2023-08-21T15:30:13.365Z",
+      "apparent_solar_hour_at_domain_centroid": 10.701972478015907,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29090,
+      "scene": 7,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29090_007_18TYM_20230823T153053_0710_01",
+      "acquisition_utc": "2023-08-23T15:30:53.454Z",
+      "apparent_solar_hour_at_domain_centroid": 10.721621153422975,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29090,
+      "scene": 7,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29090_007_19TCG_20230823T153053_0710_01",
+      "acquisition_utc": "2023-08-23T15:30:53.454Z",
+      "apparent_solar_hour_at_domain_centroid": 10.721621153422975,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29090,
+      "scene": 7,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29090_007_18TYN_20230823T153053_0710_01",
+      "acquisition_utc": "2023-08-23T15:30:53.454Z",
+      "apparent_solar_hour_at_domain_centroid": 10.721621153422975,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29090,
+      "scene": 7,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29090_007_18TYM_20230823T153053_0712_02",
+      "acquisition_utc": "2023-08-23T15:30:53.454Z",
+      "apparent_solar_hour_at_domain_centroid": 10.721621153422975,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29090,
+      "scene": 7,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29090_007_18TYN_20230823T153053_0712_02",
+      "acquisition_utc": "2023-08-23T15:30:53.454Z",
+      "apparent_solar_hour_at_domain_centroid": 10.721621153422975,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29090,
+      "scene": 7,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29090_007_19TCG_20230823T153053_0712_02",
+      "acquisition_utc": "2023-08-23T15:30:53.454Z",
+      "apparent_solar_hour_at_domain_centroid": 10.721621153422975,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29105,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29105_008_18TYN_20230824T144216_0710_01",
+      "acquisition_utc": "2023-08-24T14:42:16.802Z",
+      "apparent_solar_hour_at_domain_centroid": 9.9156703536766,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29105,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29105_008_18TYN_20230824T144216_0712_02",
+      "acquisition_utc": "2023-08-24T14:42:16.802Z",
+      "apparent_solar_hour_at_domain_centroid": 9.9156703536766,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29105,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29105_009_18TYM_20230824T144308_0710_01",
+      "acquisition_utc": "2023-08-24T14:43:08.772Z",
+      "apparent_solar_hour_at_domain_centroid": 9.930117533438827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29105,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29105_009_19TBG_20230824T144308_0710_01",
+      "acquisition_utc": "2023-08-24T14:43:08.772Z",
+      "apparent_solar_hour_at_domain_centroid": 9.930117533438827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29105,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29105_009_19TCG_20230824T144308_0710_01",
+      "acquisition_utc": "2023-08-24T14:43:08.772Z",
+      "apparent_solar_hour_at_domain_centroid": 9.930117533438827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29105,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29105_009_19TCH_20230824T144308_0710_01",
+      "acquisition_utc": "2023-08-24T14:43:08.772Z",
+      "apparent_solar_hour_at_domain_centroid": 9.930117533438827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29105,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29105_009_19TBG_20230824T144308_0712_02",
+      "acquisition_utc": "2023-08-24T14:43:08.772Z",
+      "apparent_solar_hour_at_domain_centroid": 9.930117533438827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29105,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29105_009_18TYM_20230824T144308_0712_02",
+      "acquisition_utc": "2023-08-24T14:43:08.772Z",
+      "apparent_solar_hour_at_domain_centroid": 9.930117533438827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29105,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29105_009_19TCG_20230824T144308_0712_02",
+      "acquisition_utc": "2023-08-24T14:43:08.772Z",
+      "apparent_solar_hour_at_domain_centroid": 9.930117533438827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29105,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29105_009_19TCH_20230824T144308_0712_02",
+      "acquisition_utc": "2023-08-24T14:43:08.772Z",
+      "apparent_solar_hour_at_domain_centroid": 9.930117533438827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29105,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29105_009_18TYN_20230824T144308_0712_02",
+      "acquisition_utc": "2023-08-24T14:43:08.772Z",
+      "apparent_solar_hour_at_domain_centroid": 9.930117533438827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 6,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29151_006_18TYN_20230827T135427_0710_01",
+      "acquisition_utc": "2023-08-27T13:54:27.160Z",
+      "apparent_solar_hour_at_domain_centroid": 9.132791870389356,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 6,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29151_006_18TYM_20230827T135427_0710_01",
+      "acquisition_utc": "2023-08-27T13:54:27.160Z",
+      "apparent_solar_hour_at_domain_centroid": 9.132791870389356,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 6,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29151_006_18TYN_20230827T135427_0712_02",
+      "acquisition_utc": "2023-08-27T13:54:27.160Z",
+      "apparent_solar_hour_at_domain_centroid": 9.132791870389356,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 6,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29151_006_18TYM_20230827T135427_0712_02",
+      "acquisition_utc": "2023-08-27T13:54:27.160Z",
+      "apparent_solar_hour_at_domain_centroid": 9.132791870389356,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 7,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29151_007_18TYM_20230827T135519_0710_01",
+      "acquisition_utc": "2023-08-27T13:55:19.130Z",
+      "apparent_solar_hour_at_domain_centroid": 9.147239282583952,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 7,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29151_007_19TBG_20230827T135519_0710_01",
+      "acquisition_utc": "2023-08-27T13:55:19.130Z",
+      "apparent_solar_hour_at_domain_centroid": 9.147239282583952,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 7,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29151_007_19TCG_20230827T135519_0710_01",
+      "acquisition_utc": "2023-08-27T13:55:19.130Z",
+      "apparent_solar_hour_at_domain_centroid": 9.147239282583952,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 7,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29151_007_19TCH_20230827T135519_0710_01",
+      "acquisition_utc": "2023-08-27T13:55:19.130Z",
+      "apparent_solar_hour_at_domain_centroid": 9.147239282583952,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 7,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29151_007_19TCH_20230827T135519_0712_02",
+      "acquisition_utc": "2023-08-27T13:55:19.130Z",
+      "apparent_solar_hour_at_domain_centroid": 9.147239282583952,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 7,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29151_007_19TBG_20230827T135519_0712_02",
+      "acquisition_utc": "2023-08-27T13:55:19.130Z",
+      "apparent_solar_hour_at_domain_centroid": 9.147239282583952,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 7,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29151_007_18TYN_20230827T135519_0712_02",
+      "acquisition_utc": "2023-08-27T13:55:19.130Z",
+      "apparent_solar_hour_at_domain_centroid": 9.147239282583952,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 7,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29151_007_18TYM_20230827T135519_0712_02",
+      "acquisition_utc": "2023-08-27T13:55:19.130Z",
+      "apparent_solar_hour_at_domain_centroid": 9.147239282583952,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29151,
+      "scene": 7,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29151_007_19TCG_20230827T135519_0712_02",
+      "acquisition_utc": "2023-08-27T13:55:19.130Z",
+      "apparent_solar_hour_at_domain_centroid": 9.147239282583952,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29178,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29178_009_18TYM_20230829T072602_0710_01",
+      "acquisition_utc": "2023-08-29T07:26:02.375Z",
+      "apparent_solar_hour_at_domain_centroid": 2.667893454142717,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29178,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29178_009_19TBG_20230829T072602_0712_02",
+      "acquisition_utc": "2023-08-29T07:26:02.375Z",
+      "apparent_solar_hour_at_domain_centroid": 2.667893454142717,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29178,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29178_009_18TYM_20230829T072602_0712_02",
+      "acquisition_utc": "2023-08-29T07:26:02.375Z",
+      "apparent_solar_hour_at_domain_centroid": 2.667893454142717,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29178,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29178_009_18TYN_20230829T072602_0712_02",
+      "acquisition_utc": "2023-08-29T07:26:02.375Z",
+      "apparent_solar_hour_at_domain_centroid": 2.667893454142717,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29193,
+      "scene": 6,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29193_006_18TYN_20230830T063744_0710_01",
+      "acquisition_utc": "2023-08-30T06:37:44.430Z",
+      "apparent_solar_hour_at_domain_centroid": 1.867911689895052,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29193,
+      "scene": 6,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29193_006_19TCG_20230830T063744_0710_01",
+      "acquisition_utc": "2023-08-30T06:37:44.430Z",
+      "apparent_solar_hour_at_domain_centroid": 1.867911689895052,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29193,
+      "scene": 6,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29193_006_18TYN_20230830T063744_0712_02",
+      "acquisition_utc": "2023-08-30T06:37:44.430Z",
+      "apparent_solar_hour_at_domain_centroid": 1.867911689895052,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29193,
+      "scene": 6,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29193_006_19TCG_20230830T063744_0712_02",
+      "acquisition_utc": "2023-08-30T06:37:44.430Z",
+      "apparent_solar_hour_at_domain_centroid": 1.867911689895052,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29227,
+      "scene": 11,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29227_011_18TYN_20230901T112928_0710_01",
+      "acquisition_utc": "2023-09-01T11:29:28.669Z",
+      "apparent_solar_hour_at_domain_centroid": 6.74194801243309,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29227,
+      "scene": 11,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29227_011_18TYM_20230901T112928_0710_01",
+      "acquisition_utc": "2023-09-01T11:29:28.669Z",
+      "apparent_solar_hour_at_domain_centroid": 6.74194801243309,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29227,
+      "scene": 11,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29227_011_19TCH_20230901T112928_0710_01",
+      "acquisition_utc": "2023-09-01T11:29:28.669Z",
+      "apparent_solar_hour_at_domain_centroid": 6.74194801243309,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29227,
+      "scene": 11,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29227_011_18TYN_20230901T112928_0712_02",
+      "acquisition_utc": "2023-09-01T11:29:28.669Z",
+      "apparent_solar_hour_at_domain_centroid": 6.74194801243309,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29227,
+      "scene": 11,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29227_011_19TBG_20230901T112928_0712_02",
+      "acquisition_utc": "2023-09-01T11:29:28.669Z",
+      "apparent_solar_hour_at_domain_centroid": 6.74194801243309,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29227,
+      "scene": 11,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29227_011_19TCH_20230901T112928_0712_02",
+      "acquisition_utc": "2023-09-01T11:29:28.669Z",
+      "apparent_solar_hour_at_domain_centroid": 6.74194801243309,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29227,
+      "scene": 11,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29227_011_19TCG_20230901T112928_0712_02",
+      "acquisition_utc": "2023-09-01T11:29:28.669Z",
+      "apparent_solar_hour_at_domain_centroid": 6.74194801243309,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29227,
+      "scene": 11,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29227_011_18TYM_20230901T112928_0712_02",
+      "acquisition_utc": "2023-09-01T11:29:28.669Z",
+      "apparent_solar_hour_at_domain_centroid": 6.74194801243309,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29273,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29273_009_18TYN_20230904T104031_0710_01",
+      "acquisition_utc": "2023-09-04T10:40:31.617Z",
+      "apparent_solar_hour_at_domain_centroid": 5.942768306220038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29273,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29273_009_18TYM_20230904T104031_0710_01",
+      "acquisition_utc": "2023-09-04T10:40:31.617Z",
+      "apparent_solar_hour_at_domain_centroid": 5.942768306220038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29273,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29273_009_19TBG_20230904T104031_0710_01",
+      "acquisition_utc": "2023-09-04T10:40:31.617Z",
+      "apparent_solar_hour_at_domain_centroid": 5.942768306220038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29273,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29273_009_19TCG_20230904T104031_0710_01",
+      "acquisition_utc": "2023-09-04T10:40:31.617Z",
+      "apparent_solar_hour_at_domain_centroid": 5.942768306220038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29273,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29273_009_19TCH_20230904T104031_0710_01",
+      "acquisition_utc": "2023-09-04T10:40:31.617Z",
+      "apparent_solar_hour_at_domain_centroid": 5.942768306220038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29273,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29273_009_19TCH_20230904T104031_0712_02",
+      "acquisition_utc": "2023-09-04T10:40:31.617Z",
+      "apparent_solar_hour_at_domain_centroid": 5.942768306220038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29273,
+      "scene": 9,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29273_009_18TYM_20230904T104031_0712_02",
+      "acquisition_utc": "2023-09-04T10:40:31.617Z",
+      "apparent_solar_hour_at_domain_centroid": 5.942768306220038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29273,
+      "scene": 9,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29273_009_19TCG_20230904T104031_0712_02",
+      "acquisition_utc": "2023-09-04T10:40:31.617Z",
+      "apparent_solar_hour_at_domain_centroid": 5.942768306220038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29273,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29273_009_18TYN_20230904T104031_0712_02",
+      "acquisition_utc": "2023-09-04T10:40:31.617Z",
+      "apparent_solar_hour_at_domain_centroid": 5.942768306220038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29273,
+      "scene": 9,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29273_009_19TBG_20230904T104031_0712_02",
+      "acquisition_utc": "2023-09-04T10:40:31.617Z",
+      "apparent_solar_hour_at_domain_centroid": 5.942768306220038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29288,
+      "scene": 11,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29288_011_18TYM_20230905T095158_0710_01",
+      "acquisition_utc": "2023-09-05T09:51:58.496Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139189967550055,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29288,
+      "scene": 11,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29288_011_18TYN_20230905T095158_0710_01",
+      "acquisition_utc": "2023-09-05T09:51:58.496Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139189967550055,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29288,
+      "scene": 11,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29288_011_19TCG_20230905T095158_0710_01",
+      "acquisition_utc": "2023-09-05T09:51:58.496Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139189967550055,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29288,
+      "scene": 11,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29288_011_19TCH_20230905T095158_0710_01",
+      "acquisition_utc": "2023-09-05T09:51:58.496Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139189967550055,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29288,
+      "scene": 11,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29288_011_18TYM_20230905T095158_0712_02",
+      "acquisition_utc": "2023-09-05T09:51:58.496Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139189967550055,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29288,
+      "scene": 11,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29288_011_19TBG_20230905T095158_0712_02",
+      "acquisition_utc": "2023-09-05T09:51:58.496Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139189967550055,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29288,
+      "scene": 11,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29288_011_18TYN_20230905T095158_0712_02",
+      "acquisition_utc": "2023-09-05T09:51:58.496Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139189967550055,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29288,
+      "scene": 11,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29288_011_19TCG_20230905T095158_0712_02",
+      "acquisition_utc": "2023-09-05T09:51:58.496Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139189967550055,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29288,
+      "scene": 11,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29288_011_19TCH_20230905T095158_0712_02",
+      "acquisition_utc": "2023-09-05T09:51:58.496Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139189967550055,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29334,
+      "scene": 14,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29334_014_18TYM_20230908T090236_0710_01",
+      "acquisition_utc": "2023-09-08T09:02:36.692Z",
+      "apparent_solar_hour_at_domain_centroid": 4.333984348175452,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29334,
+      "scene": 14,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29334_014_18TYN_20230908T090236_0710_01",
+      "acquisition_utc": "2023-09-08T09:02:36.692Z",
+      "apparent_solar_hour_at_domain_centroid": 4.333984348175452,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29334,
+      "scene": 14,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29334_014_19TCH_20230908T090236_0710_01",
+      "acquisition_utc": "2023-09-08T09:02:36.692Z",
+      "apparent_solar_hour_at_domain_centroid": 4.333984348175452,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29334,
+      "scene": 14,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29334_014_19TCG_20230908T090236_0710_01",
+      "acquisition_utc": "2023-09-08T09:02:36.692Z",
+      "apparent_solar_hour_at_domain_centroid": 4.333984348175452,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29334,
+      "scene": 14,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29334_014_18TYM_20230908T090236_0712_02",
+      "acquisition_utc": "2023-09-08T09:02:36.692Z",
+      "apparent_solar_hour_at_domain_centroid": 4.333984348175452,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29334,
+      "scene": 14,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29334_014_18TYN_20230908T090236_0712_02",
+      "acquisition_utc": "2023-09-08T09:02:36.692Z",
+      "apparent_solar_hour_at_domain_centroid": 4.333984348175452,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29334,
+      "scene": 14,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29334_014_19TCG_20230908T090236_0712_02",
+      "acquisition_utc": "2023-09-08T09:02:36.692Z",
+      "apparent_solar_hour_at_domain_centroid": 4.333984348175452,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29334,
+      "scene": 14,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29334_014_19TBG_20230908T090236_0712_02",
+      "acquisition_utc": "2023-09-08T09:02:36.692Z",
+      "apparent_solar_hour_at_domain_centroid": 4.333984348175452,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29334,
+      "scene": 14,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29334_014_19TCH_20230908T090236_0712_02",
+      "acquisition_utc": "2023-09-08T09:02:36.692Z",
+      "apparent_solar_hour_at_domain_centroid": 4.333984348175452,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29437,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29437_008_18TYM_20230915T001323_0710_01",
+      "acquisition_utc": "2023-09-15T00:13:23.899Z",
+      "apparent_solar_hour_at_domain_centroid": 19.55459760141837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29437,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29437_008_18TYN_20230915T001323_0710_01",
+      "acquisition_utc": "2023-09-15T00:13:23.899Z",
+      "apparent_solar_hour_at_domain_centroid": 19.55459760141837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29437,
+      "scene": 8,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29437_008_19TBG_20230915T001323_0710_01",
+      "acquisition_utc": "2023-09-15T00:13:23.899Z",
+      "apparent_solar_hour_at_domain_centroid": 19.55459760141837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29437,
+      "scene": 8,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29437_008_19TCG_20230915T001323_0710_01",
+      "acquisition_utc": "2023-09-15T00:13:23.899Z",
+      "apparent_solar_hour_at_domain_centroid": 19.55459760141837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29437,
+      "scene": 8,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29437_008_18TYM_20230915T001323_0712_02",
+      "acquisition_utc": "2023-09-15T00:13:23.899Z",
+      "apparent_solar_hour_at_domain_centroid": 19.55459760141837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29437,
+      "scene": 8,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29437_008_19TCH_20230915T001323_0712_02",
+      "acquisition_utc": "2023-09-15T00:13:23.899Z",
+      "apparent_solar_hour_at_domain_centroid": 19.55459760141837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29437,
+      "scene": 8,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29437_008_18TYN_20230915T001323_0712_02",
+      "acquisition_utc": "2023-09-15T00:13:23.899Z",
+      "apparent_solar_hour_at_domain_centroid": 19.55459760141837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29437,
+      "scene": 8,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29437_008_19TBG_20230915T001323_0712_02",
+      "acquisition_utc": "2023-09-15T00:13:23.899Z",
+      "apparent_solar_hour_at_domain_centroid": 19.55459760141837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29437,
+      "scene": 8,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29437_008_19TCG_20230915T001323_0712_02",
+      "acquisition_utc": "2023-09-15T00:13:23.899Z",
+      "apparent_solar_hour_at_domain_centroid": 19.55459760141837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29532,
+      "scene": 11,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29532_011_19TCG_20230921T033244_0710_01",
+      "acquisition_utc": "2023-09-21T03:32:44.793Z",
+      "apparent_solar_hour_at_domain_centroid": 22.915547830984817,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29532,
+      "scene": 11,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29532_011_18TYN_20230921T033244_0710_01",
+      "acquisition_utc": "2023-09-21T03:32:44.793Z",
+      "apparent_solar_hour_at_domain_centroid": 22.915547830984817,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29532,
+      "scene": 11,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29532_011_19TCH_20230921T033244_0710_01",
+      "acquisition_utc": "2023-09-21T03:32:44.793Z",
+      "apparent_solar_hour_at_domain_centroid": 22.915547830984817,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29532,
+      "scene": 11,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29532_011_18TYN_20230921T033244_0712_02",
+      "acquisition_utc": "2023-09-21T03:32:44.793Z",
+      "apparent_solar_hour_at_domain_centroid": 22.915547830984817,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29532,
+      "scene": 11,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29532_011_19TCG_20230921T033244_0712_02",
+      "acquisition_utc": "2023-09-21T03:32:44.793Z",
+      "apparent_solar_hour_at_domain_centroid": 22.915547830984817,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29532,
+      "scene": 11,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29532_011_19TCH_20230921T033244_0712_02",
+      "acquisition_utc": "2023-09-21T03:32:44.793Z",
+      "apparent_solar_hour_at_domain_centroid": 22.915547830984817,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29578,
+      "scene": 7,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29578_007_18TYM_20230924T024545_0710_01",
+      "acquisition_utc": "2023-09-24T02:45:45.837Z",
+      "apparent_solar_hour_at_domain_centroid": 22.150804293292843,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29578,
+      "scene": 7,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29578_007_19TBG_20230924T024545_0710_01",
+      "acquisition_utc": "2023-09-24T02:45:45.837Z",
+      "apparent_solar_hour_at_domain_centroid": 22.150804293292843,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29578,
+      "scene": 7,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29578_007_18TYM_20230924T024545_0712_02",
+      "acquisition_utc": "2023-09-24T02:45:45.837Z",
+      "apparent_solar_hour_at_domain_centroid": 22.150804293292843,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29578,
+      "scene": 7,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29578_007_19TBG_20230924T024545_0712_02",
+      "acquisition_utc": "2023-09-24T02:45:45.837Z",
+      "apparent_solar_hour_at_domain_centroid": 22.150804293292843,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29605,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29605_009_18TYN_20230925T201710_0710_01",
+      "acquisition_utc": "2023-09-25T20:17:10.204Z",
+      "apparent_solar_hour_at_domain_centroid": 15.684908374157482,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29605,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29605_009_19TCH_20230925T201710_0710_01",
+      "acquisition_utc": "2023-09-25T20:17:10.204Z",
+      "apparent_solar_hour_at_domain_centroid": 15.684908374157482,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29605,
+      "scene": 9,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29605_009_19TCH_20230925T201710_0712_02",
+      "acquisition_utc": "2023-09-25T20:17:10.204Z",
+      "apparent_solar_hour_at_domain_centroid": 15.684908374157482,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29605,
+      "scene": 9,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29605_009_18TYN_20230925T201710_0712_02",
+      "acquisition_utc": "2023-09-25T20:17:10.204Z",
+      "apparent_solar_hour_at_domain_centroid": 15.684908374157482,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29624,
+      "scene": 17,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29624_017_18TYM_20230927T015753_0711_01",
+      "acquisition_utc": "2023-09-27T01:57:53.751Z",
+      "apparent_solar_hour_at_domain_centroid": 21.370911300938356,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29624,
+      "scene": 17,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29624_017_18TYM_20230927T015753_0712_02",
+      "acquisition_utc": "2023-09-27T01:57:53.751Z",
+      "apparent_solar_hour_at_domain_centroid": 21.370911300938356,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29639,
+      "scene": 15,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29639_015_19TBG_20230928T011002_0711_01",
+      "acquisition_utc": "2023-09-28T01:10:02.963Z",
+      "apparent_solar_hour_at_domain_centroid": 20.57911800013228,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29639,
+      "scene": 15,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29639_015_18TYN_20230928T011002_0711_01",
+      "acquisition_utc": "2023-09-28T01:10:02.963Z",
+      "apparent_solar_hour_at_domain_centroid": 20.57911800013228,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29639,
+      "scene": 15,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29639_015_18TYM_20230928T011002_0711_01",
+      "acquisition_utc": "2023-09-28T01:10:02.963Z",
+      "apparent_solar_hour_at_domain_centroid": 20.57911800013228,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29639,
+      "scene": 15,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29639_015_19TCH_20230928T011002_0711_01",
+      "acquisition_utc": "2023-09-28T01:10:02.963Z",
+      "apparent_solar_hour_at_domain_centroid": 20.57911800013228,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29639,
+      "scene": 15,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29639_015_19TCG_20230928T011002_0711_01",
+      "acquisition_utc": "2023-09-28T01:10:02.963Z",
+      "apparent_solar_hour_at_domain_centroid": 20.57911800013228,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29639,
+      "scene": 15,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29639_015_19TCH_20230928T011002_0712_02",
+      "acquisition_utc": "2023-09-28T01:10:02.963Z",
+      "apparent_solar_hour_at_domain_centroid": 20.57911800013228,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29639,
+      "scene": 15,
+      "tile": "18TYM",
+      "granule_id": "ECOv002_L2T_LSTE_29639_015_18TYM_20230928T011002_0712_02",
+      "acquisition_utc": "2023-09-28T01:10:02.963Z",
+      "apparent_solar_hour_at_domain_centroid": 20.57911800013228,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29639,
+      "scene": 15,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29639_015_18TYN_20230928T011002_0712_02",
+      "acquisition_utc": "2023-09-28T01:10:02.963Z",
+      "apparent_solar_hour_at_domain_centroid": 20.57911800013228,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29639,
+      "scene": 15,
+      "tile": "19TCG",
+      "granule_id": "ECOv002_L2T_LSTE_29639_015_19TCG_20230928T011002_0712_02",
+      "acquisition_utc": "2023-09-28T01:10:02.963Z",
+      "apparent_solar_hour_at_domain_centroid": 20.57911800013228,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29639,
+      "scene": 15,
+      "tile": "19TBG",
+      "granule_id": "ECOv002_L2T_LSTE_29639_015_19TBG_20230928T011002_0712_02",
+      "acquisition_utc": "2023-09-28T01:10:02.963Z",
+      "apparent_solar_hour_at_domain_centroid": 20.57911800013228,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29654,
+      "scene": 10,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29654_010_18TYN_20230929T002154_0711_01",
+      "acquisition_utc": "2023-09-29T00:21:54.652Z",
+      "apparent_solar_hour_at_domain_centroid": 19.78253135550181,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29654,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29654_010_19TCH_20230929T002154_0712_02",
+      "acquisition_utc": "2023-09-29T00:21:54.652Z",
+      "apparent_solar_hour_at_domain_centroid": 19.78253135550181,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29654,
+      "scene": 10,
+      "tile": "18TYN",
+      "granule_id": "ECOv002_L2T_LSTE_29654_010_18TYN_20230929T002154_0712_02",
+      "acquisition_utc": "2023-09-29T00:21:54.652Z",
+      "apparent_solar_hour_at_domain_centroid": 19.78253135550181,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "boston",
+      "orbit": 29654,
+      "scene": 10,
+      "tile": "19TCH",
+      "granule_id": "ECOv002_L2T_LSTE_29654_010_19TCH_20230929T002154_0711_01",
+      "acquisition_utc": "2023-09-29T00:21:54.652Z",
+      "apparent_solar_hour_at_domain_centroid": 19.78253135550181,
+      "cloud_cover_metadata": null
+    }
+  ]
+}

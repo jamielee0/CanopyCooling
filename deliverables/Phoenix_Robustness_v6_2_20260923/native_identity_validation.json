@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "passes": 11,
+  "common_cells": 196090,
+  "cross_pass_fields_checked": [
+    "cell_id",
+    "native_crs",
+    "native_x",
+    "native_y",
+    "block"
+  ],
+  "coordinate_matching": "exact",
+  "cell_id_unique_all_passes": true
+}

@@ -1,0 +1,10 @@
+{
+  "reason": "ecCodes element lookup requires a Python list instead of ndarray; preserve frozen sources/settings and resume cached downloads",
+  "science_settings_changed": false,
+  "freeze_sha256": "231e3ebf02bdf771677421284e22e2815d1ab3b9b8401807674b3b5a42309501",
+  "original_code_sha256": "b7fd0405dda0d8a2108636be7d66056302099023cdccdf3823d6bd1dff5c0ba6",
+  "updated_code_sha256": {
+    "src/v6_2_advance/run_step6_inputs.py": "cf7e6f80a58806ea044326dd47942adaa5db6506d26febc79d0f3f543fd7d534"
+  },
+  "checksum_validation_note": "Code appears in both source and input manifests; the same reviewed implementation-only override applies to both, all data hashes remain unchanged."
+}

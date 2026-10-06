@@ -1,0 +1,160 @@
+{
+  "record_date_local": "2026-10-04",
+  "status": "DOCUMENTATION_STEP_ONLY",
+  "active_documents": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 6720,
+      "sha256": "2c5abc24ecb8de7694b75b87d077c372abb35ffc8de30c721eaf852bd56e9f96"
+    },
+    {
+      "path": "docs/v2/v6_2/protocol_v6_2.yml",
+      "bytes": 44244,
+      "sha256": "3e7096cf60c34ac9e4cc61fb7a6ed7544348d2aa0a22814f14f4ef731a85bbc7"
+    },
+    {
+      "path": "docs/v2/v6_2/pilot_plan_v6_2.md",
+      "bytes": 25153,
+      "sha256": "546ca70771880797c04b4df3d5485ba402d376775800410771b51a351916a910"
+    },
+    {
+      "path": "docs/v2/v6_2/decision_log_v6_2.md",
+      "bytes": 69608,
+      "sha256": "8c4d95dd336bbcf90e7f77428af4598cab590e706a8579c720e056a37387ce22"
+    },
+    {
+      "path": "docs/v2/v6_2/README.md",
+      "bytes": 5167,
+      "sha256": "76639d87f2d5a07efe18ce4153ee766272a4b1903f89e844d139a041e9da8e0f"
+    },
+    {
+      "path": "docs/v2/v6_2/results_review_and_targeted_analysis_plan_20260930.md",
+      "bytes": 26035,
+      "sha256": "e8fe39c477ccb3044f7e3a3a93738cb3f95e6643465946152538767e49fe67b8"
+    }
+  ],
+  "pre_amendment_documents": [
+    {
+      "path": "docs/v2/v6_2/archive/before_results_review_20261004/AGENTS.md",
+      "sha256": "4b422ad66fdedb950e67c0a80d4c9232077385ffb41f601c89a2e1c5760bf59b"
+    },
+    {
+      "path": "docs/v2/v6_2/archive/before_results_review_20261004/docs/v2/v6_2/protocol_v6_2.yml",
+      "sha256": "976ef880b142c926ad8c8932d1c9558768ed0b4a7f38f05a3c6148f57c5e0e84"
+    },
+    {
+      "path": "docs/v2/v6_2/archive/before_results_review_20261004/docs/v2/v6_2/pilot_plan_v6_2.md",
+      "sha256": "e295f55562db578e8273532b6d3cdb2953c53c4d091b486ef6d9236c40f3abed"
+    },
+    {
+      "path": "docs/v2/v6_2/archive/before_results_review_20261004/docs/v2/v6_2/decision_log_v6_2.md",
+      "sha256": "bea947b2950a1fe2786142d6fff0fea9bf4ba97b85c19b31ce8ff4c051595a91"
+    },
+    {
+      "path": "docs/v2/v6_2/archive/before_results_review_20261004/docs/v2/v6_2/README.md",
+      "sha256": "878f1e3f9eb3966bccf95e1b0ecd6586afdb451a56a08dc38a5f33c7c70d1ef7"
+    },
+    {
+      "path": "docs/v2/v6_2/archive/before_results_review_20261004/docs/v2/v6_2/results_review_and_targeted_analysis_plan_20260930.md",
+      "sha256": "acbbdecb568ef4ece9490e63973b4e8395e8ecfa53cb7434d9fb19a2c17e6902"
+    }
+  ],
+  "source_copies": [
+    {
+      "path": "docs/v2/v6_2/sources/review_guidance_20261004/Urban_Tree_Cooling_Next_Steps.docx",
+      "bytes": 43594,
+      "sha256": "5276db09412154a0751b879f6b844a2817dd918c50c58da91229321ea34af0c5"
+    },
+    {
+      "path": "docs/v2/v6_2/sources/review_guidance_20261004/Pasted text.txt",
+      "bytes": 5662,
+      "sha256": "e4342928e03a5546d4ba333098db1ec59c5a821c92970af7af6aabac6a5dacad"
+    }
+  ],
+  "input_metadata_and_prior_disclosure_snapshots": [
+    {
+      "path": "docs/v2/v6_2/execution/phoenix_execution_manifest.json",
+      "bytes": 139446,
+      "sha256": "e776f517f07b5c526214b1152e07b530501c08a2b26e75913bbbe8e69994bcc8"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/atlanta_execution_manifest.json",
+      "bytes": 405306,
+      "sha256": "7d0484124316e584cc927cc9e5c6782c1d473f8a725613745998f31bb388f449"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/advance_20260921/phoenix_execution_manifest.json",
+      "bytes": 140995,
+      "sha256": "381a252d86e01d2a125596d32d2355047fca949cfb9b9c0948c04ea64ca42dbc"
+    },
+    {
+      "path": "outputs/v6_2/scientific/exploratory_review_20260921/pass_gradients_exploratory.csv",
+      "bytes": 14900,
+      "sha256": "bb7bef594662ae0462cabe459dd84ea54fb709482d2761e4cc6e15b3c72c9d71"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/limited_gradient_disclosure_20260919.json",
+      "bytes": 1081,
+      "sha256": "91e94b99ac56c96098a1f9ab44c2361b58a18f6080c4b5359caeeaa700ff58ec"
+    },
+    {
+      "path": "outputs/v6_2/scientific/exploratory_review_20260921/gradient_disclosure.json",
+      "bytes": 649,
+      "sha256": "fd08dceb8160b80bbbb559843ba5301ba819be7b5f131f137db0fa4a6d5873c9"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/execution_freeze.json",
+      "bytes": 4844,
+      "sha256": "40193689b4d0c646da2f35d6c48a208e4b36d45517404acbe1df5cc2a1c4e07c"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/matched_support_comparison_freeze.json",
+      "bytes": 4227,
+      "sha256": "f50fca4e7ecd2a71397f29aca5dce15d3fd0a6000dffcf59106b494a8085d49c"
+    },
+    {
+      "path": "outputs/v6_2/scientific/scale_diagnostics_20260919/frozen_numeric_references.json",
+      "bytes": 519,
+      "sha256": "735e26b5bfc38bf987c19d4adc4e5742bb92c0321b8925743ba443745dbd2ecd"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/nonlinear_association_20260930/design.json",
+      "bytes": 3865,
+      "sha256": "e5033143f468cb4d60444c107526a8a29c8725e52b039f9f1f13bfd313ffac62"
+    }
+  ],
+  "code_snapshot_unchanged": [
+    {
+      "path": "src/urban_cooling_v2/pooled_city_pass.py",
+      "bytes": 11003,
+      "sha256": "0434337b39c76dcdbba3fcb9695869aff8c483784e8521274fdb9b2869942d22"
+    },
+    {
+      "path": "src/urban_cooling_v2/pilot_native.py",
+      "bytes": 11436,
+      "sha256": "91bf31447363aedb06abc99b7e8774c32930281393f779e9bf379126e92df21c"
+    },
+    {
+      "path": "src/urban_cooling_v2/v6_2_output_boundary.py",
+      "bytes": 4623,
+      "sha256": "16ffab193ed2fd3b14cb81148e029ee8e835cef0f43971dbbd6f7f5cc672906c"
+    },
+    {
+      "path": "src/v6_2_advance/run_robustness_completion.py",
+      "bytes": 12386,
+      "sha256": "85f432ae72d4f3c31db9c64dee693b873f20e8bbe16f93259bd02aecbc680bbc"
+    },
+    {
+      "path": "src/v6_2_advance/finish_robustness_comparisons.py",
+      "bytes": 3888,
+      "sha256": "eac0abe60e40ba6632b0979ab008e024346daf132e98c4252ea20aa1f5a72eaa"
+    },
+    {
+      "path": "src/v6_2_advance/time_resampling.py",
+      "bytes": 1038,
+      "sha256": "4030e6f3041c70cd1a50adb03f84c50e5676c68d2a9d7dfe6ea1964faa32ec4b"
+    }
+  ],
+  "sealed_and_raw_inputs": "Not opened; existing execution freezes preserve their identities/checksums. This metadata snapshot does not revalidate raw thermal values.",
+  "data_link_target": "/Users/jmlee/Documents/Documents - Jamie’s Mac mini/TreeProject/project/data"
+}

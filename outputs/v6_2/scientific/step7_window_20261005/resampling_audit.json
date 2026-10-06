@@ -1,0 +1,202 @@
+[
+  {
+    "group_km": 1,
+    "groups": 3246,
+    "physical_union_blocks": 3246,
+    "requested": 1000,
+    "complete_city_draws": 1000,
+    "per_pass_estimable": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "per_pass_failed_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "structural_absent_groups": [
+      14,
+      146,
+      52,
+      1,
+      0,
+      0,
+      482,
+      247,
+      2,
+      964,
+      0
+    ],
+    "physical_group_identity_sha256": "702e7e0514678ea061f4492aca93df61f6cae4ceff46b04abcf08d076ce1242a",
+    "draw_multiplicity_sha256": "cacf61b59d8894406f63c158b4b1abef135fc4d17faef4d7d74da95a421a32f4",
+    "city": "phoenix",
+    "orbits": [
+      27963,
+      28024,
+      28085,
+      28192,
+      28706,
+      28828,
+      28909,
+      28970,
+      29092,
+      29545,
+      29606
+    ]
+  },
+  {
+    "group_km": 8,
+    "groups": 79,
+    "physical_union_blocks": 3246,
+    "requested": 1000,
+    "complete_city_draws": 1000,
+    "per_pass_estimable": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "per_pass_failed_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "structural_absent_groups": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      9,
+      0
+    ],
+    "physical_group_identity_sha256": "b1b89a45a58a2ea9b24542aed5261f8fed7565538c0a193db7b4d856570d80a5",
+    "draw_multiplicity_sha256": "55a7297b77df665a4ca25163966e06f5dde7ec620a4b2fa947ff0b73ef2241c5",
+    "city": "phoenix",
+    "orbits": [
+      27963,
+      28024,
+      28085,
+      28192,
+      28706,
+      28828,
+      28909,
+      28970,
+      29092,
+      29545,
+      29606
+    ]
+  },
+  {
+    "group_km": 1,
+    "groups": 7562,
+    "physical_union_blocks": 7562,
+    "requested": 1000,
+    "complete_city_draws": 1000,
+    "per_pass_estimable": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "per_pass_failed_indices": [
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "structural_absent_groups": [
+      235,
+      5,
+      317,
+      2546,
+      2659
+    ],
+    "physical_group_identity_sha256": "ca1db46c9ec86602fb741643ed04c9424b616a63b924b94d2ab60c1d19746b70",
+    "draw_multiplicity_sha256": "3fb83d2e0c6461210718d9bf23d91f08884ff099e4147690e365d5dd23cbb376",
+    "city": "atlanta",
+    "orbits": [
+      27835,
+      27896,
+      27916,
+      28145,
+      28598
+    ]
+  },
+  {
+    "group_km": 8,
+    "groups": 164,
+    "physical_union_blocks": 7562,
+    "requested": 1000,
+    "complete_city_draws": 1000,
+    "per_pass_estimable": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "per_pass_failed_indices": [
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "structural_absent_groups": [
+      0,
+      0,
+      0,
+      18,
+      6
+    ],
+    "physical_group_identity_sha256": "d394c83bb645bbca3c16e89d533f8297091ede704b5d9294ad1a3d3b40566ffa",
+    "draw_multiplicity_sha256": "00133b598957b080080b5f2d9848ab5ab3f595821e743b41e9fe8e8ce6613ae7",
+    "city": "atlanta",
+    "orbits": [
+      27835,
+      27896,
+      27916,
+      28145,
+      28598
+    ]
+  }
+]

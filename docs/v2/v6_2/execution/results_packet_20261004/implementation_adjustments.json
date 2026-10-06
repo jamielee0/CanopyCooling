@@ -1,0 +1,39 @@
+{
+  "initial_implementation_corresponds_to_freeze": true,
+  "versions": [
+    {
+      "path": "src/v6_2_advance/results_packet.py",
+      "initial_sha256": "e4c83a3bb22c35ebb638622fc40a45aea187a7b46a54593555acbecca766433c",
+      "final_sha256": "84f8cd3fa6790dd46855e12938503531256452da016c132db4652f5c554707be",
+      "initial_archive": "docs/v2/v6_2/execution/results_packet_20261004/archive/initial_implementation/results_packet.py"
+    },
+    {
+      "path": "src/v6_2_advance/run_results_packet.py",
+      "initial_sha256": "9abf5a4a04ed29987bf9ed959bc847484a0745c4143a9a54ec69b6d369f5931a",
+      "final_sha256": "cde47c5c8968539bd9ec1755bdf1a80fb10b7ff1263aed3dfddf0ff3f1e09f7a",
+      "initial_archive": "docs/v2/v6_2/execution/results_packet_20261004/archive/initial_implementation/run_results_packet.py"
+    },
+    {
+      "path": "tests/v6_2_advance/test_results_packet.py",
+      "initial_sha256": "a5c7745c85033f5474272ab3fe896f35b5e5ddf07a823e9aab74679dc5247483",
+      "final_sha256": "81912e09c46b4eb1c691be204f916c5af8f6d72b9d6c806ff639ff6c8a52c79b",
+      "initial_archive": "docs/v2/v6_2/execution/results_packet_20261004/archive/initial_implementation/test_results_packet.py"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/results_packet_20261004/build_results_csv.mjs",
+      "initial_sha256": "f482dee7f60cbfb23747d8e94a07e1fd41f81a0c1f4d464ccc99a536ff264dd8",
+      "final_sha256": "4fdebace50a3b11f08fa2d5ad6a619977f0127486c34cc80e4757bda4e0804e6",
+      "initial_archive": "docs/v2/v6_2/execution/results_packet_20261004/archive/initial_implementation/build_results_csv.mjs"
+    }
+  ],
+  "changes_after_freeze": [
+    "Rejecting acquisition/product check exposed older numeric CSV label 2; verify collection equivalence against exact manifest, author 002 and preserve original source label. Added one known-answer test.",
+    "Artifact value setter coerced exact ISO strings to Date and lost original offsets/subseconds formatting. Guard rejected those attempts. Preserve exact text with reversible prefix, verify encoded sheet and decoded matrix before CSV serialization.",
+    "Public API documents native XLSX export only; requested CSV uses RFC4180 serialization of verified artifact sheet values, not rounded display values.",
+    "Visual QA moved close Phoenix labels and added two leader lines; moved footnotes clear of bottom edge. No numerical plot coordinate or interval changed."
+  ],
+  "scientific_design_changed": false,
+  "source_files_changed": false,
+  "accepted_csv_numeric_roundtrip": "exact",
+  "original_code_preserved": true
+}

@@ -1,0 +1,36 @@
+{
+  "record_date_local": "2026-10-04",
+  "purpose": "Preserve completed Step 1 documents before Step 2 completion amendment",
+  "files": [
+    {
+      "original_path": "AGENTS.md",
+      "archive_path": "docs/v2/v6_2/archive/before_results_packet_20261004/AGENTS.md",
+      "sha256": "2c5abc24ecb8de7694b75b87d077c372abb35ffc8de30c721eaf852bd56e9f96"
+    },
+    {
+      "original_path": "docs/v2/v6_2/protocol_v6_2.yml",
+      "archive_path": "docs/v2/v6_2/archive/before_results_packet_20261004/docs/v2/v6_2/protocol_v6_2.yml",
+      "sha256": "3e7096cf60c34ac9e4cc61fb7a6ed7544348d2aa0a22814f14f4ef731a85bbc7"
+    },
+    {
+      "original_path": "docs/v2/v6_2/pilot_plan_v6_2.md",
+      "archive_path": "docs/v2/v6_2/archive/before_results_packet_20261004/docs/v2/v6_2/pilot_plan_v6_2.md",
+      "sha256": "546ca70771880797c04b4df3d5485ba402d376775800410771b51a351916a910"
+    },
+    {
+      "original_path": "docs/v2/v6_2/decision_log_v6_2.md",
+      "archive_path": "docs/v2/v6_2/archive/before_results_packet_20261004/docs/v2/v6_2/decision_log_v6_2.md",
+      "sha256": "8c4d95dd336bbcf90e7f77428af4598cab590e706a8579c720e056a37387ce22"
+    },
+    {
+      "original_path": "docs/v2/v6_2/README.md",
+      "archive_path": "docs/v2/v6_2/archive/before_results_packet_20261004/docs/v2/v6_2/README.md",
+      "sha256": "76639d87f2d5a07efe18ce4153ee766272a4b1903f89e844d139a041e9da8e0f"
+    },
+    {
+      "original_path": "docs/v2/v6_2/results_review_and_targeted_analysis_plan_20260930.md",
+      "archive_path": "docs/v2/v6_2/archive/before_results_packet_20261004/docs/v2/v6_2/results_review_and_targeted_analysis_plan_20260930.md",
+      "sha256": "e8fe39c477ccb3044f7e3a3a93738cb3f95e6643465946152538767e49fe67b8"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+# Canopy protocol — conda environment
+# ---------------------------------------------------------------------------
+# Created: 2026-06-10  |  Channel: conda-forge
+#
+# Python is pinned to 3.11 per the protocol. NOTE: 3.11 caps the geospatial /
+# array stack at its spring-2025 generation, because:
+#   * numpy 2.5 (Jun 2026) dropped Python 3.11      -> held at numpy 2.4.x
+#   * rioxarray 0.20+ (Oct 2025) dropped Python 3.11 -> held at rioxarray 0.19.x
+#   * rioxarray 0.19.x is not compatible with xarray 2026.x -> xarray held < 2026
+# These caps keep the whole environment mutually solvable on Python 3.11.
+# If you later move to python>=3.12 you can lift the numpy / rioxarray / xarray
+# caps to the newest releases.
+#
+# Versions below are pinned to the newest 3.11-compatible release of each
+# package as of 2026-06-10. Core scientific/geo libs are pinned to major.minor;
+# fast-moving API clients use a floor (>=) so the solver can take the latest
+# 3.11-compatible build. After the first solve, capture an exact lock with:
+#     conda env export --no-builds > environment.lock.yml
+# ---------------------------------------------------------------------------
+name: canopy
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  # --- interpreter ---
+  - python=3.11
+
+  # --- arrays / dataframes ---
+  - numpy=2.4
+  - pandas=2.2
+  - xarray=2025.7
+  - dask=2025.5
+
+  # --- geospatial ---
+  - rioxarray=0.19
+  - rasterio=1.4
+  - geopandas=1.0
+  - shapely=2.0
+  - netcdf4=1.7
+
+  # --- data access / Earth-observation API clients ---
+  - earthaccess>=0.12
+  - earthengine-api>=1.4
+  - pvlib>=0.11         # v2 Step 2: solar zenith/azimuth and local-solar-time validation
+  - herbie-data>=2025.7 # v2 Step 2: selective HRRR 2 m temperature/dewpoint access
+  - cfgrib>=0.9         # decode the selectively downloaded HRRR GRIB messages
+  - eccodes>=2.40       # GRIB backend used by cfgrib
+  - geemap>=0.35
+  - geedim>=1.7          # Section 4: geemap.download_ee_image tiles/stitches EE composites to local GeoTIFFs
+  - cdsapi>=0.7
+  - requests>=2.32       # Section 8: Census + ArcGIS REST + footprints HTTP (sync; uses certifi CAs)
+  # Section 8 building footprints: Microsoft Planetary Computer STAC `ms-buildings`.
+  - pystac-client>=0.8   # query the STAC API for the bbox items
+  - planetary-computer>=1.0  # sign the (anonymous) Azure blob assets
+  - adlfs>=2024.4        # read the signed abfs:// GeoParquet partitions into geopandas
+  # NOTE (this machine only): adlfs pulls azure-storage-blob -> openssl 3.6.3, whose
+  # stricter cert parsing trips a malformed entry in the local Windows cert store and
+  # breaks `import aiohttp`/earthaccess. Pinned openssl=3.6.2 here as a workaround; on
+  # a machine with a clean cert store this pin is unnecessary.
+  - openssl=3.6.2
+
+  # --- modelling / stats / changepoint ---
+  - scikit-learn=1.6
+  - statsmodels=0.14
+  - pwlf>=2.5
+  - ruptures>=1.1
+
+  # --- visualisation ---
+  - matplotlib=3.9
+  - seaborn=0.13
+  - contextily=1.6
+
+  # --- environment / notebooks ---
+  - jupyterlab=4.3

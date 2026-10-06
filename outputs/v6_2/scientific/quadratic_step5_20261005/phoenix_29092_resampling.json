@@ -1,0 +1,32 @@
+[
+  {
+    "city": "phoenix",
+    "orbit": 29092,
+    "date": "2023-08-23",
+    "group_km": 1,
+    "groups": 3244,
+    "requested": 1000,
+    "linear_estimable": 1000,
+    "quadratic_estimable": 1000,
+    "paired_estimable": 1000,
+    "paired_failed": 0,
+    "linear_failed_indices": [],
+    "quadratic_failed_indices": [],
+    "draw_multiplicity_sha256": "7eafcfd41750ea972a12b3f5b7192d8c5d58787dc5e0c351871afbba96c165a6"
+  },
+  {
+    "city": "phoenix",
+    "orbit": 29092,
+    "date": "2023-08-23",
+    "group_km": 8,
+    "groups": 79,
+    "requested": 1000,
+    "linear_estimable": 1000,
+    "quadratic_estimable": 1000,
+    "paired_estimable": 1000,
+    "paired_failed": 0,
+    "linear_failed_indices": [],
+    "quadratic_failed_indices": [],
+    "draw_multiplicity_sha256": "a927ace3b932f9ff52988c0b8204ba168162a7dec114fd7bcdd09822b656932a"
+  }
+]

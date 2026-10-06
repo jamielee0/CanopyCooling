@@ -1,0 +1,459 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "seattle",
+      "orbit": 27825,
+      "acquisition_utc": "2023-06-03T02:06:46.620Z",
+      "solar_hour": 17.99952730408722,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 27871,
+      "acquisition_utc": "2023-06-06T01:16:30.672Z",
+      "solar_hour": 17.153486063693997,
+      "sample_points": 300,
+      "observed_points": 277,
+      "clear_points": 277,
+      "sample_point_coverage_fraction": 0.9233333333333333,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.9233333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 27886,
+      "acquisition_utc": "2023-06-07T00:27:25.471Z",
+      "solar_hour": 16.332561045005512,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "acquisition_utc": "2023-07-24T01:43:39.779Z",
+      "solar_hour": 17.474531006690054,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 28631,
+      "acquisition_utc": "2023-07-25T00:55:31.441Z",
+      "solar_hour": 16.66445841748425,
+      "sample_points": 300,
+      "observed_points": 277,
+      "clear_points": 19,
+      "sample_point_coverage_fraction": 0.9233333333333333,
+      "clear_fraction_of_observed_points": 0.06859205776173286,
+      "clear_fraction_of_all_sample_points": 0.06333333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 28662,
+      "acquisition_utc": "2023-07-27T00:55:13.608Z",
+      "solar_hour": 16.658646510408992,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 269,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.8966666666666666,
+      "clear_fraction_of_all_sample_points": 0.8966666666666666,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 28723,
+      "acquisition_utc": "2023-07-30T23:18:39.972Z",
+      "solar_hour": 15.06402630930015,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 273,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.91,
+      "clear_fraction_of_all_sample_points": 0.91,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 28771,
+      "acquisition_utc": "2023-08-03T01:44:41.074Z",
+      "solar_hour": 17.485668924290753,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 28786,
+      "acquisition_utc": "2023-08-04T00:56:55.024Z",
+      "solar_hour": 16.69059086737037,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 29531,
+      "acquisition_utc": "2023-09-21T01:46:13.695Z",
+      "solar_hour": 17.730647869638148,
+      "sample_points": 300,
+      "observed_points": 277,
+      "clear_points": 277,
+      "sample_point_coverage_fraction": 0.9233333333333333,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.9233333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 29562,
+      "acquisition_utc": "2023-09-23T01:46:46.636Z",
+      "solar_hour": 17.759426095885292,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 29577,
+      "acquisition_utc": "2023-09-24T00:59:23.006Z",
+      "solar_hour": 16.968413231711622,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 29623,
+      "acquisition_utc": "2023-09-27T00:11:39.188Z",
+      "solar_hour": 16.190755726619642,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "seattle",
+      "orbit": 29669,
+      "acquisition_utc": "2023-09-29T23:23:43.787Z",
+      "solar_hour": 15.409167021249612,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 292,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9733333333333334,
+      "clear_fraction_of_all_sample_points": 0.9733333333333334,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "seattle",
+      "orbit": 27825,
+      "asset": "ECOv002_L2T_LSTE_27825_001_10TET_20230603T020646_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27825_001_10TET_20230603T020646_0711_02/ECOv002_L2T_LSTE_27825_001_10TET_20230603T020646_0711_02_cloud.tif",
+      "bytes": 8842,
+      "sha256": "aa9b1069fb1be695394df364cece7b4e5fadb772fc8997d9e5e14275a28509f6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 27825,
+      "asset": "ECOv002_L2T_LSTE_27825_001_10UEU_20230603T020646_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27825_001_10UEU_20230603T020646_0711_02/ECOv002_L2T_LSTE_27825_001_10UEU_20230603T020646_0711_02_cloud.tif",
+      "bytes": 6351,
+      "sha256": "dfdc0797348193ace2a0d29ca5953753e11b790d5e0506780d7d9c8513cc7c18",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 27871,
+      "asset": "ECOv002_L2T_LSTE_27871_010_10TET_20230606T011630_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27871_010_10TET_20230606T011630_0711_02/ECOv002_L2T_LSTE_27871_010_10TET_20230606T011630_0711_02_cloud.tif",
+      "bytes": 7920,
+      "sha256": "cda44a24107f4758ad0cb81d8cb4989818b092e9475fbe3b5716477a45dce80a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 27886,
+      "asset": "ECOv002_L2T_LSTE_27886_006_10TET_20230607T002725_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27886_006_10TET_20230607T002725_0712_01/ECOv002_L2T_LSTE_27886_006_10TET_20230607T002725_0712_01_cloud.tif",
+      "bytes": 11291,
+      "sha256": "70707e15798f3ae39b5a7e8a35260ddad66264ad6b10e6bc646d6cac3903017c",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 27886,
+      "asset": "ECOv002_L2T_LSTE_27886_006_10UEU_20230607T002725_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27886_006_10UEU_20230607T002725_0712_01/ECOv002_L2T_LSTE_27886_006_10UEU_20230607T002725_0712_01_cloud.tif",
+      "bytes": 23430,
+      "sha256": "c8e968c338086b24a602c90001499080a9988d5d19025969f9477a95a8054ddf",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "asset": "ECOv002_L2T_LSTE_28616_005_10TET_20230724T014339_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28616_005_10TET_20230724T014339_0712_02/ECOv002_L2T_LSTE_28616_005_10TET_20230724T014339_0712_02_cloud.tif",
+      "bytes": 15452,
+      "sha256": "0cad7fbd86e0419df817ce34299a1df4457ce230e4692a68dee09a3d9d2f08b8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "asset": "ECOv002_L2T_LSTE_28616_005_10UEU_20230724T014339_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28616_005_10UEU_20230724T014339_0712_02/ECOv002_L2T_LSTE_28616_005_10UEU_20230724T014339_0712_02_cloud.tif",
+      "bytes": 23959,
+      "sha256": "777b222c7fe1b54524dc8422868a3303dfb383324471bbf322518ae62519a479",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "asset": "ECOv002_L2T_LSTE_28616_006_10TET_20230724T014431_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28616_006_10TET_20230724T014431_0712_02/ECOv002_L2T_LSTE_28616_006_10TET_20230724T014431_0712_02_cloud.tif",
+      "bytes": 5666,
+      "sha256": "0dd87ac0e8e0979da93ffd297bb4a370e4a3dc00d221881cf37dc2aa757b6c81",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "asset": "ECOv002_L2T_LSTE_28616_006_10UEU_20230724T014431_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28616_006_10UEU_20230724T014431_0712_02/ECOv002_L2T_LSTE_28616_006_10UEU_20230724T014431_0712_02_cloud.tif",
+      "bytes": 9168,
+      "sha256": "145b1431362fcfe80930e9502c590296fcc549006f14825b6d4ec3d4c8e2a7c4",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28631,
+      "asset": "ECOv002_L2T_LSTE_28631_006_10TET_20230725T005531_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28631_006_10TET_20230725T005531_0712_02/ECOv002_L2T_LSTE_28631_006_10TET_20230725T005531_0712_02_cloud.tif",
+      "bytes": 11758,
+      "sha256": "21076cd0f29c75737bb22b7b731c6283dfc9ff2010620d602ec48c75ff8ea239",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28662,
+      "asset": "ECOv002_L2T_LSTE_28662_007_10TET_20230727T005513_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28662_007_10TET_20230727T005513_0712_02/ECOv002_L2T_LSTE_28662_007_10TET_20230727T005513_0712_02_cloud.tif",
+      "bytes": 27207,
+      "sha256": "ed50f30c338132ff1bf8cf362ecd606f55bcee9d1cde696846d489e1b19f7e56",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28662,
+      "asset": "ECOv002_L2T_LSTE_28662_007_10UEU_20230727T005513_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28662_007_10UEU_20230727T005513_0712_02/ECOv002_L2T_LSTE_28662_007_10UEU_20230727T005513_0712_02_cloud.tif",
+      "bytes": 35552,
+      "sha256": "72ca0f94cb5fe5f12fe49496e978fbc1d2850e98b4837a5ea5c2bad2b15d1072",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28723,
+      "asset": "ECOv002_L2T_LSTE_28723_001_10TET_20230730T231839_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28723_001_10TET_20230730T231839_0712_02/ECOv002_L2T_LSTE_28723_001_10TET_20230730T231839_0712_02_cloud.tif",
+      "bytes": 29740,
+      "sha256": "1217c26538b499e63790ae83fc0bf654530d31b3ed863ba89713e28fe61d835a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28723,
+      "asset": "ECOv002_L2T_LSTE_28723_002_10TET_20230730T231931_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28723_002_10TET_20230730T231931_0712_02/ECOv002_L2T_LSTE_28723_002_10TET_20230730T231931_0712_02_cloud.tif",
+      "bytes": 57867,
+      "sha256": "21bb7b3156379e94ef95c94319337b7b0056eb61e6814a6e3e337f80a4c0872f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28723,
+      "asset": "ECOv002_L2T_LSTE_28723_002_10UEU_20230730T231931_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28723_002_10UEU_20230730T231931_0712_02/ECOv002_L2T_LSTE_28723_002_10UEU_20230730T231931_0712_02_cloud.tif",
+      "bytes": 63597,
+      "sha256": "47bd91369b239bc85793b122cecfc7607d246aee72d713ade5fe4489b5e49751",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28771,
+      "asset": "ECOv002_L2T_LSTE_28771_010_10TET_20230803T014441_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28771_010_10TET_20230803T014441_0712_02/ECOv002_L2T_LSTE_28771_010_10TET_20230803T014441_0712_02_cloud.tif",
+      "bytes": 15670,
+      "sha256": "4ad75721bf5f3ac3ebd2dfe9097712cd1e914aa1e5f1d98a761b464ed0ad4f1a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28771,
+      "asset": "ECOv002_L2T_LSTE_28771_010_10UEU_20230803T014441_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28771_010_10UEU_20230803T014441_0712_02/ECOv002_L2T_LSTE_28771_010_10UEU_20230803T014441_0712_02_cloud.tif",
+      "bytes": 26373,
+      "sha256": "2edb57a115e7ee0c336cba5d6b6d40b6dff707c7535c638cd0676e81b76fa611",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28786,
+      "asset": "ECOv002_L2T_LSTE_28786_009_10TET_20230804T005655_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28786_009_10TET_20230804T005655_0712_02/ECOv002_L2T_LSTE_28786_009_10TET_20230804T005655_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "8445fb0c34a5a3bb868c87e9c59eea8c10641518604c7a809b40f0427f2d8935",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 28786,
+      "asset": "ECOv002_L2T_LSTE_28786_009_10UEU_20230804T005655_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28786_009_10UEU_20230804T005655_0712_02/ECOv002_L2T_LSTE_28786_009_10UEU_20230804T005655_0712_02_cloud.tif",
+      "bytes": 5700,
+      "sha256": "2076431b1dde30dea38ba897f11201917b01ed32998060e9c91ffd66875d4517",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 29531,
+      "asset": "ECOv002_L2T_LSTE_29531_007_10TET_20230921T014613_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29531_007_10TET_20230921T014613_0712_02/ECOv002_L2T_LSTE_29531_007_10TET_20230921T014613_0712_02_cloud.tif",
+      "bytes": 7039,
+      "sha256": "6e24ea086ab371777d33480f9d47cffb7f062bdab833bd6d0b3e2037c65df4d5",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 29562,
+      "asset": "ECOv002_L2T_LSTE_29562_007_10TET_20230923T014646_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29562_007_10TET_20230923T014646_0712_02/ECOv002_L2T_LSTE_29562_007_10TET_20230923T014646_0712_02_cloud.tif",
+      "bytes": 7067,
+      "sha256": "3bc50d0702e0e2e34d68e1d90a9f14e0885d4e5612a87bc70272f7d9b0e365dc",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 29562,
+      "asset": "ECOv002_L2T_LSTE_29562_007_10UEU_20230923T014646_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29562_007_10UEU_20230923T014646_0712_02/ECOv002_L2T_LSTE_29562_007_10UEU_20230923T014646_0712_02_cloud.tif",
+      "bytes": 27600,
+      "sha256": "f03121e394d855fd96f542c997b793427afa53b98814c875d8d0b1280e8d0399",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 29562,
+      "asset": "ECOv002_L2T_LSTE_29562_008_10TET_20230923T014738_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29562_008_10TET_20230923T014738_0712_02/ECOv002_L2T_LSTE_29562_008_10TET_20230923T014738_0712_02_cloud.tif",
+      "bytes": 5656,
+      "sha256": "18105021c46e48353b160bbf9fb77136876442c86d9085e251996696a88c755a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 29562,
+      "asset": "ECOv002_L2T_LSTE_29562_008_10UEU_20230923T014738_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29562_008_10UEU_20230923T014738_0712_02/ECOv002_L2T_LSTE_29562_008_10UEU_20230923T014738_0712_02_cloud.tif",
+      "bytes": 24182,
+      "sha256": "12b9ca90a65c9b70d9927b8efe6e20bc5e17ba92f439474f38333f8192d27ca5",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 29577,
+      "asset": "ECOv002_L2T_LSTE_29577_006_10TET_20230924T005923_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29577_006_10TET_20230924T005923_0712_02/ECOv002_L2T_LSTE_29577_006_10TET_20230924T005923_0712_02_cloud.tif",
+      "bytes": 7039,
+      "sha256": "2aaee507c002472e8b31cb2bbc7237ff1498deefe60562a1ab071d37db6f5038",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 29577,
+      "asset": "ECOv002_L2T_LSTE_29577_006_10UEU_20230924T005923_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29577_006_10UEU_20230924T005923_0712_02/ECOv002_L2T_LSTE_29577_006_10UEU_20230924T005923_0712_02_cloud.tif",
+      "bytes": 8363,
+      "sha256": "a6da1518dc667299853a27975296e290fdbbe49fa41ecc0ad8f463a651dea637",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 29623,
+      "asset": "ECOv002_L2T_LSTE_29623_001_10TET_20230927T001139_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29623_001_10TET_20230927T001139_0712_02/ECOv002_L2T_LSTE_29623_001_10TET_20230927T001139_0712_02_cloud.tif",
+      "bytes": 8705,
+      "sha256": "dbc3412e013d5b320602bf8e42d7cb29a86015246c66d47233fe583ff6db55be",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 29623,
+      "asset": "ECOv002_L2T_LSTE_29623_001_10UEU_20230927T001139_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29623_001_10UEU_20230927T001139_0712_02/ECOv002_L2T_LSTE_29623_001_10UEU_20230927T001139_0712_02_cloud.tif",
+      "bytes": 7330,
+      "sha256": "7451c9cf9862e0e2466c66637c6446d69d98bdc3250c96960a437712b4caeb25",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 29669,
+      "asset": "ECOv002_L2T_LSTE_29669_001_10TET_20230929T232343_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29669_001_10TET_20230929T232343_0712_02/ECOv002_L2T_LSTE_29669_001_10TET_20230929T232343_0712_02_cloud.tif",
+      "bytes": 24865,
+      "sha256": "965556812422b12e1166d3eaf0d156eb7f280d175aedf032cdf6c536ec1dc242",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "seattle",
+      "orbit": 29669,
+      "asset": "ECOv002_L2T_LSTE_29669_001_10UEU_20230929T232343_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29669_001_10UEU_20230929T232343_0712_02/ECOv002_L2T_LSTE_29669_001_10UEU_20230929T232343_0712_02_cloud.tif",
+      "bytes": 100039,
+      "sha256": "1928881935468f12f75fb44ba9ed420d4ae756a6ce12f663543b1b806a590801",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

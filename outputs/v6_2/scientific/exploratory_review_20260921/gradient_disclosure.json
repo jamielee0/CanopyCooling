@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-21T17:55:05.856946+00:00",
+  "authorization": "User explicitly requested gradients on 19 September and on 21 September requested continued implementation and increased passes after discussing the pass-level plot.",
+  "scope": "LST signed city-pass gradients and bootstrap precision/interval derivatives only, original Phoenix+Atlanta and six additional Phoenix passes. Raw coefficients and bootstraps remain in sealed model storage; no release of prior time-comparison effects.",
+  "analysis_status": "exploratory_after_prior_disclosure",
+  "new_time_regression_fitted": false,
+  "original_pilot_artifacts": "unchanged"
+}

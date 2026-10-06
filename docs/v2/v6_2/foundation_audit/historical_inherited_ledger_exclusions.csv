@@ -1,0 +1,3 @@
+city,orbit,pass_id,scene,tile,acquisition_utc,build,revision,granule_id,inherited_selection_status,strict_revision_status,role
+minneapolis_st_paul,29106,minneapolis_st_paul|orbit_29106,4,15TVK,2023-08-24 16:15:18.828000+00:00,710,1,ECOv002_L2T_LSTE_29106_004_15TVK_20230824T161518_0710_01,omitted_from_inherited_canonical_ledger,superseded,historical_provenance_only_not_v6_2_study_sample
+minneapolis_st_paul,29106,minneapolis_st_paul|orbit_29106,4,15TVK,2023-08-24 16:15:18.828000+00:00,712,2,ECOv002_L2T_LSTE_29106_004_15TVK_20230824T161518_0712_02,omitted_from_inherited_canonical_ledger,latest,historical_provenance_only_not_v6_2_study_sample

@@ -1,0 +1,62 @@
+[
+  {
+    "city": "phoenix",
+    "design": "seeded_300_1km_blocks_at_least_50pct_urban_area_30m_stable_Science_TCC_not_yet_ECOSTRESS_pass_mask",
+    "seed": 20260919,
+    "eligible_blocks": 2876,
+    "sampled_blocks": 300,
+    "valid_blocks": 300,
+    "sampled_Sxx": 546.9735000182006,
+    "sampled_within_block_variance": 0.0015892169168808018,
+    "median_block_variance": 0.0015786667265636307,
+    "max_block_information_share": 0.010829454952506083,
+    "block_variance_quantiles": [
+      8.72421488715397e-05,
+      0.0005968676319411493,
+      0.0015786667265636307,
+      0.0025680392211508696,
+      0.005067087150266629
+    ],
+    "sampled_mean_canopy": 0.040448328861671316
+  },
+  {
+    "city": "atlanta",
+    "design": "seeded_300_1km_blocks_at_least_50pct_urban_area_30m_stable_Science_TCC_not_yet_ECOSTRESS_pass_mask",
+    "seed": 20260919,
+    "eligible_blocks": 6721,
+    "sampled_blocks": 300,
+    "valid_blocks": 300,
+    "sampled_Sxx": 24537.246892281404,
+    "sampled_within_block_variance": 0.08301052427765773,
+    "median_block_variance": 0.08331945232079949,
+    "max_block_information_share": 0.006293504218377777,
+    "block_variance_quantiles": [
+      0.005923702369959966,
+      0.05523771089944245,
+      0.08331945232079949,
+      0.11220405219415375,
+      0.14005927790908176
+    ],
+    "sampled_mean_canopy": 0.432574655948645
+  },
+  {
+    "city": "charlotte",
+    "design": "seeded_300_1km_blocks_at_least_50pct_urban_area_30m_stable_Science_TCC_not_yet_ECOSTRESS_pass_mask",
+    "seed": 20260919,
+    "eligible_blocks": 1722,
+    "sampled_blocks": 300,
+    "valid_blocks": 300,
+    "sampled_Sxx": 20791.411909027483,
+    "sampled_within_block_variance": 0.07189409190693989,
+    "median_block_variance": 0.07074374486510429,
+    "max_block_information_share": 0.006372836728385734,
+    "block_variance_quantiles": [
+      0.0010177182249817278,
+      0.04314308002203501,
+      0.07074374486510429,
+      0.10418044354315982,
+      0.13744841644071257
+    ],
+    "sampled_mean_canopy": 0.3868003058176905
+  }
+]

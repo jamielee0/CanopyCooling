@@ -1,0 +1,4 @@
+variant,point,q025,q975,interval_status
+Original linear / original populations,-0.32498961353810085,-0.3907657558093867,-0.2620914616908658,JOINT_8KM_FIXED_DATE_INTERVAL
+Original linear / common footprint,-0.1056786193164104,,,POINT_ONLY_NO_JOINT_CROSS_DATE_INTERVAL
+Quadratic / original populations,-0.43331753333473205,,,POINT_ONLY_NO_JOINT_CROSS_DATE_INTERVAL

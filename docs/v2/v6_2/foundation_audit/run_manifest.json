@@ -1,0 +1,80 @@
+{
+  "audit": "v6_2_independent_foundation_catalogue",
+  "boundaries": {
+    "historical_counts_role": "historical_provenance_only_not_v6_2_study_sample",
+    "new_v6_2_study_sample_selected": false,
+    "temperature_or_lst_opened": false,
+    "thermal_science_file_opened": false
+  },
+  "execution": {
+    "imports_project_code": false,
+    "live_cmr": false,
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:29:05) [Clang 19.1.7 ]",
+    "script": "src/urban_cooling_v2/independent_foundation_audit.py"
+  },
+  "generated_utc": "2026-08-30T12:32:40.097803+00:00",
+  "inputs": {
+    "data/processed/v2/hitl/g3_sampling_design_revision2/geometry_azimuth_pass_summary.csv": "07f26e69329e37f673ebd86a94aac9d7bb8cfc58cb609ba4222ec1633f899892",
+    "data/raw/v2/domains/census_urban_areas.geojson.provenance.json": "c03b167886eaf0043e338bd73687d354c0d1385abfd174722fd880a8a60875e4",
+    "data/raw/v2/ecostress/catalogue_tiles_2018_2025.csv": "eb9260c0a7e5ebfdc4c255eada77b1ae2c59f9433c9fef2f02d8f55ceb949bc5",
+    "data/raw/v2/weather/hrrr_exact_acquisition_l1b_geo_D0047_archive_available/hrrr_hourly_domain_summary.csv": "b36f4d16d83055922b8e8a4d80c8bb75df3237417a4f03d018a64c633c39f0d1",
+    "data/raw/v2/weather/hrrr_exact_acquisition_l1b_geo_D0047_archive_available_manifest.csv": "9773ea5c23e0276772d68370a4d54dd6caa6dd84fea4f280b9b9eeb179c2f52d",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/archive_missing_31_audit.csv": "9eb8fa6a33e030594562e46abee6c69d4fc0617aae4f0fc532796dc33e4b9279",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/hrrr_pass_hour_crosswalk.csv": "77150df933f62b4286903352aff0f4dfde1c96c30a0b843ba12df7a78efa43fe",
+    "docs/v2/hitl/G1_OBSERVATION_RECONCILIATION/observation_ledger.csv": "6b6931cd06b18a5bfa66ee01e78df2c6d2aad1db1b4eecd7d4ba86ae3ecfbc79",
+    "docs/v2/hitl/G2_HYDROCLIMATE_SUPPORT/pass_hydroclimate_219.csv": "62e52e293d70155fa7209ee5bba5d38afc4a41713b0d477442be0af482ad90da",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_SECOND_REVISION/pass_evidence_25deg_joined.csv": "adc2aa2a6b5748ff854a165aeef9872ed1f7f4ac487ab95bf981ee5dfecff1a0",
+    "docs/v2/hitl/G3_SAMPLING_DESIGN_SECOND_REVISION/unified_unavailable_pass_ledger.csv": "6d9b2bdb632dabced23c1470480b4912dff6bc6d55fdf5d631250d769ada10eb",
+    "src/urban_cooling_v2/independent_foundation_audit.py": "87d7a5f467ff6329037075fc6c29d1d063cbc4c84ee796ddf1740095a45a03dd"
+  },
+  "readiness": {
+    "checks_file": "docs/v2/v6_2/foundation_audit/readiness_checks.csv",
+    "failed_check_ids": [],
+    "guard": "all required historical, archive, geometry, and HRRR checks must pass",
+    "required_checks_failed": 0,
+    "required_checks_passed": 31,
+    "required_checks_total": 31
+  },
+  "results": {
+    "collection3_primary_los_angeles_entries": 4,
+    "collection3_primary_phoenix_entries": 0,
+    "collection3_recorded_query_rows": 72,
+    "collection3_unique_entries_all_recorded_queries": 18,
+    "collection3_unique_query_urls": 56,
+    "geometry_checks_passed": 762,
+    "geometry_rows": 762,
+    "historical_archive_gaps": 31,
+    "hrrr_sample_checks_passed": 10,
+    "hrrr_sample_checks_total": 10,
+    "inherited_ledger_provenance_records": 13575,
+    "physical_city_orbit_observations": 2968,
+    "raw_tiled_records": 13577,
+    "strict_latest_revision_records": 11880,
+    "unified_archive_gaps": 43
+  },
+  "revision_count_resolution": {
+    "inherited_count_claims_latest_revision_selection": false,
+    "inherited_ledger_provenance_records": 13575,
+    "resolution": "13,575 is retained only as the inherited ledger provenance count; 11,880 is accepted as the strict latest-build/latest-revision count",
+    "strict_identity_key": [
+      "city",
+      "orbit",
+      "scene",
+      "tile"
+    ],
+    "strict_latest_build_revision_records": 11880,
+    "strict_rank": [
+      "build",
+      "revision",
+      "granule_id"
+    ]
+  },
+  "schema_version": 2,
+  "source_evidence": {
+    "aggregate_sha256": "dd5ef0a27d7589c46297305d6431cab8e2e65cfd13408a9f734fcc3ef21763f9",
+    "cmr_response_directory": "docs/v2/v6_2/foundation_audit/source_evidence/cmr_collection3",
+    "offline_replay_required": true,
+    "tracked_response_files": 57
+  },
+  "status": "READY_FOR_FOUNDATION_SIGN_OFF"
+}

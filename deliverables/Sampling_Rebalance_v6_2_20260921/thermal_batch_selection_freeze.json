@@ -1,0 +1,101 @@
+{
+  "recorded_utc": "2026-09-21T21:23:37.152704+00:00",
+  "selection_inputs": "acquisition dates/times; definitive inherited geometry; cloud masks at frozen 300 sample blocks; no new LST or fitted gradients",
+  "priority_rationale": "Among seven matched year-month strata, the largest observed gap in common clear block-point counts is 3 to 214 of 300. Prioritize the upper group for the bounded thermal batch. This is a documented distribution-based acquisition priority, not a universal cloud QA cutoff or permanent exclusion of the lower group; no target pass count was chosen.",
+  "cloud_support_distribution": [
+    {
+      "year_month": "2019-08",
+      "passes": 2,
+      "common_clear_points_all_passes": 300,
+      "min_pass_clear_points": 300,
+      "sampled_blocks": 300,
+      "batch_priority": "first_rebalance_batch"
+    },
+    {
+      "year_month": "2021-08",
+      "passes": 3,
+      "common_clear_points_all_passes": 0,
+      "min_pass_clear_points": 0,
+      "sampled_blocks": 300,
+      "batch_priority": "cloud_support_review_queue"
+    },
+    {
+      "year_month": "2022-08",
+      "passes": 2,
+      "common_clear_points_all_passes": 3,
+      "min_pass_clear_points": 3,
+      "sampled_blocks": 300,
+      "batch_priority": "cloud_support_review_queue"
+    },
+    {
+      "year_month": "2023-06",
+      "passes": 2,
+      "common_clear_points_all_passes": 275,
+      "min_pass_clear_points": 278,
+      "sampled_blocks": 300,
+      "batch_priority": "first_rebalance_batch"
+    },
+    {
+      "year_month": "2023-08",
+      "passes": 3,
+      "common_clear_points_all_passes": 214,
+      "min_pass_clear_points": 214,
+      "sampled_blocks": 300,
+      "batch_priority": "first_rebalance_batch"
+    },
+    {
+      "year_month": "2024-06",
+      "passes": 2,
+      "common_clear_points_all_passes": 300,
+      "min_pass_clear_points": 300,
+      "sampled_blocks": 300,
+      "batch_priority": "first_rebalance_batch"
+    },
+    {
+      "year_month": "2025-08",
+      "passes": 3,
+      "common_clear_points_all_passes": 240,
+      "min_pass_clear_points": 266,
+      "sampled_blocks": 300,
+      "batch_priority": "first_rebalance_batch"
+    }
+  ],
+  "selected_new_orbits": [
+    6281,
+    6510,
+    33496,
+    33623,
+    40111,
+    40192,
+    40376
+  ],
+  "balanced_endpoint_orbits": [
+    6281,
+    6510,
+    27963,
+    28192,
+    28828,
+    28909,
+    29092,
+    33496,
+    33623,
+    40111,
+    40192,
+    40376
+  ],
+  "total_processed_if_all_new_succeed": 18,
+  "balanced_endpoint_count_if_all_succeed": 12,
+  "balanced_year_month_count": 5,
+  "retention": "All eleven existing fits remain. Three July/September passes are descriptive-only for the matched-season analysis. Three other June/August middle-time passes remain for shape/context, outside the endpoint-window contrast.",
+  "primary_analysis_limit": "Window balance does not establish an exact 10:30-to-16:00 contrast. Current original total-time interpretation remains; exact-target model/support and secondary geometry/season standardization still pending.",
+  "execution": "Same paired native-cell block-intercept Stage1, 1000 paired block bootstrap draws, 1/2/4/8km groups; report precision, no new empirical time regression.",
+  "coefficient_handling": "New point estimates remain sealed in this rebalancing run; current public gradients stay as previously disclosed. No old sealed time contrasts opened.",
+  "context_limit": "Uses the same stable 2019-2025 median canopy and frozen context surfaces as the eleven-pass pilot. Earlier years increase possible context-vintage mismatch; matched annual context remains a sensitivity, not a silently changed estimator.",
+  "selection_inputs_sha256": {
+    "selection_design.json": "037d17ce3a5bff5843f3d69877f1be151dc1e745dde4bf856596d04a9cd247de",
+    "matched_year_month_candidates.csv": "0a988e8ee5c81af7042c13656b0ceec366ef52a59ecb4ae06354be39f3f4ae91",
+    "cloud_screen_summary.csv": "748171a9c47921bb800ad0f056c35ebc95fa8a22c7c75cd29df96a8bfcec7591",
+    "cloud_screen_points.csv": "ff9e27628cc47a39feb8b989240b63ba3bad4da72b76e6c48e0bd595f6ea4498",
+    "matched_strata_cloud_support.csv": "945186eb0c4b1f7c518201ebed455faba4900864e1309870c6f39b15f81ac787"
+  }
+}

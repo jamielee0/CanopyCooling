@@ -1,0 +1,42 @@
+[
+  {
+    "city": "phoenix",
+    "variant": "total",
+    "status": "COMPUTED_SEALED",
+    "independent_days": 5,
+    "estimable_resamples": 999
+  },
+  {
+    "city": "phoenix",
+    "variant": "total_spatial8km",
+    "status": "COMPUTED_SEALED",
+    "independent_days": 5,
+    "estimable_resamples": 999
+  },
+  {
+    "city": "phoenix",
+    "variant": "geometry_season",
+    "status": "NOT_ESTIMABLE",
+    "reason": "Secondary geometry/season common support absent"
+  },
+  {
+    "city": "atlanta",
+    "variant": "total",
+    "status": "COMPUTED_SEALED",
+    "independent_days": 5,
+    "estimable_resamples": 998
+  },
+  {
+    "city": "atlanta",
+    "variant": "total_spatial8km",
+    "status": "COMPUTED_SEALED",
+    "independent_days": 5,
+    "estimable_resamples": 998
+  },
+  {
+    "city": "atlanta",
+    "variant": "geometry_season",
+    "status": "NOT_ESTIMABLE",
+    "reason": "Secondary geometry/season common support absent"
+  }
+]

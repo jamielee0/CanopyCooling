@@ -1,0 +1,238 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "philadelphia",
+      "orbit": 27900,
+      "acquisition_utc": "2023-06-07T22:10:59.622Z",
+      "solar_hour": 17.188617590876454,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 27946,
+      "acquisition_utc": "2023-06-10T21:21:01.414Z",
+      "solar_hour": 16.346353734463936,
+      "sample_points": 300,
+      "observed_points": 43,
+      "clear_points": 43,
+      "sample_point_coverage_fraction": 0.14333333333333334,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.14333333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 27961,
+      "acquisition_utc": "2023-06-11T20:31:39.699Z",
+      "solar_hour": 15.520357701735952,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 99,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.33,
+      "clear_fraction_of_all_sample_points": 0.33,
+      "failed_assets": 0
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 28598,
+      "acquisition_utc": "2023-07-22T21:48:03.654Z",
+      "solar_hour": 16.688749311675792,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 129,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.43,
+      "clear_fraction_of_all_sample_points": 0.43,
+      "failed_assets": 0
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 28644,
+      "acquisition_utc": "2023-07-25T21:00:29.269Z",
+      "solar_hour": 15.87952263641662,
+      "sample_points": 300,
+      "observed_points": 259,
+      "clear_points": 259,
+      "sample_point_coverage_fraction": 0.8633333333333333,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.8633333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 28659,
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "solar_hour": 15.08307027584005,
+      "sample_points": 300,
+      "observed_points": 68,
+      "clear_points": 68,
+      "sample_point_coverage_fraction": 0.22666666666666666,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.22666666666666666,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "philadelphia",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_010_18SVJ_20230607T221059_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_010_18SVJ_20230607T221059_0711_02/ECOv002_L2T_LSTE_27900_010_18SVJ_20230607T221059_0711_02_cloud.tif",
+      "bytes": 29062,
+      "sha256": "7652c5f5f2a2694c433ed086898592c2b89f92e675b5cd80bd4363d60eebb625",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_010_18SWJ_20230607T221059_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_010_18SWJ_20230607T221059_0711_02/ECOv002_L2T_LSTE_27900_010_18SWJ_20230607T221059_0711_02_cloud.tif",
+      "bytes": 77290,
+      "sha256": "721157d38833689c33cbb43d4028d90e7213fdd3b8edf7bf106d15807f1aa3b0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_010_18TVK_20230607T221059_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_010_18TVK_20230607T221059_0711_02/ECOv002_L2T_LSTE_27900_010_18TVK_20230607T221059_0711_02_cloud.tif",
+      "bytes": 9588,
+      "sha256": "5ecc34fac1e159765a97295e0f1d28bf90a7060afcd250ffcefc743d16e93bc2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_010_18TWK_20230607T221059_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_010_18TWK_20230607T221059_0711_02/ECOv002_L2T_LSTE_27900_010_18TWK_20230607T221059_0711_02_cloud.tif",
+      "bytes": 40721,
+      "sha256": "517cfdef55544a19baebd1c0613f49b2f4b9583be04358745dcf4634734231c4",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_007_18SVJ_20230610T212101_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_007_18SVJ_20230610T212101_0711_02/ECOv002_L2T_LSTE_27946_007_18SVJ_20230610T212101_0711_02_cloud.tif",
+      "bytes": 11638,
+      "sha256": "6ce593d0faf92c711597b84f68d17cee793d2513538cf12d5bfc82a7a6cbc5e6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_007_18SWJ_20230610T212101_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_007_18SWJ_20230610T212101_0711_02/ECOv002_L2T_LSTE_27946_007_18SWJ_20230610T212101_0711_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "48c709b95ea4c6bb5ebf8ab450758bda22db67b54b286b6eb4d0493d6d59c14d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18SVJ_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18SVJ_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18SVJ_20230611T203139_0711_02_cloud.tif",
+      "bytes": 47635,
+      "sha256": "6cc653505086d4c55c8cedaba5d811e91f2712b841e146d4e4ab9c47819b2190",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18SWJ_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18SWJ_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18SWJ_20230611T203139_0711_02_cloud.tif",
+      "bytes": 31451,
+      "sha256": "1645ba163da7b3cabf05e94995545301b3f4ed47697af3cb173cdeccf867008d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18TVK_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18TVK_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18TVK_20230611T203139_0711_02_cloud.tif",
+      "bytes": 51017,
+      "sha256": "d5a7fcb5733896caf2f3169ce050df83052231556f9aef4be787b0d8883352bb",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18TWK_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18TWK_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18TWK_20230611T203139_0711_02_cloud.tif",
+      "bytes": 38150,
+      "sha256": "1ddc2e514e13563b9440aa0bb08d0246835a1a6870f6459ac9f77192b9514e1f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_007_18SVJ_20230722T214803_0710_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_007_18SVJ_20230722T214803_0710_01/ECOv002_L2T_LSTE_28598_007_18SVJ_20230722T214803_0710_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "fa14afcba9147c2e1ff1430c67625c98ee0836849068a6e5132d472549e5f621",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18SVJ_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18SVJ_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18SVJ_20230722T214855_0712_02_cloud.tif",
+      "bytes": 43488,
+      "sha256": "f11e7955e64ebd950bbe97f7ee65570748f5a5f2bf38968170251805c6b47277",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18SWJ_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18SWJ_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18SWJ_20230722T214855_0712_02_cloud.tif",
+      "bytes": 59883,
+      "sha256": "48856c88814c5cad3649e5d29e7ab43d59fb13798cde3deda9bb309b23ea573e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18TVK_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18TVK_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18TVK_20230722T214855_0712_02_cloud.tif",
+      "bytes": 57780,
+      "sha256": "3a829382fe4a092adcf406ecfba2a9bb472ac5e8b463f0596f645469ebca6a97",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18TWK_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18TWK_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18TWK_20230722T214855_0712_02_cloud.tif",
+      "bytes": 66779,
+      "sha256": "33ac9d68213ca0acb7669842ff0508f3eae752c6c1ad31b6764faccbcf56e452",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 28644,
+      "asset": "ECOv002_L2T_LSTE_28644_007_18TVK_20230725T210029_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28644_007_18TVK_20230725T210029_0712_01/ECOv002_L2T_LSTE_28644_007_18TVK_20230725T210029_0712_01_cloud.tif",
+      "bytes": 32391,
+      "sha256": "2cb0c88b55925f528285f6178fbf63113960018c5d874dc33eb3d72cd7aa4e46",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "philadelphia",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_18TWK_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_18TWK_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_18TWK_20230726T201243_0712_02_cloud.tif",
+      "bytes": 9119,
+      "sha256": "fd25377279dc3099256cb83ad8602542f74fc7d0af8acea9b8580a7d730f9f27",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

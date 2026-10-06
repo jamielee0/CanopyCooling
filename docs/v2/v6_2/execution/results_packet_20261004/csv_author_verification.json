@@ -1,0 +1,10 @@
+{
+  "author": "@oai/artifact-tool",
+  "format": "RFC4180 CSV from exact verified typed sheet values; reversible literal-text prefix decoded",
+  "rows": 64,
+  "columns": 97,
+  "exact_value_roundtrip": true,
+  "csv_sha256": "3b037c2a2bfb85ac67a8c5634dd38e957237ab67c8e04b817d52cf3772cbd48d",
+  "missing_encoding": "empty field, never zero",
+  "preview": "qa/table_preview.png"
+}

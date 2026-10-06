@@ -1,0 +1,434 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "chicago",
+      "orbit": 27839,
+      "acquisition_utc": "2023-06-03T23:47:03.687Z",
+      "solar_hour": 17.959970347462292,
+      "sample_points": 300,
+      "observed_points": 6,
+      "clear_points": 6,
+      "sample_point_coverage_fraction": 0.02,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.02,
+      "failed_assets": 0
+    },
+    {
+      "city": "chicago",
+      "orbit": 27885,
+      "acquisition_utc": "2023-06-06T22:57:38.347Z",
+      "solar_hour": 17.127838763042543,
+      "sample_points": 300,
+      "observed_points": 34,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 0.11333333333333333,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "chicago",
+      "orbit": 27931,
+      "acquisition_utc": "2023-06-09T22:07:22.416Z",
+      "solar_hour": 16.28079087574596,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 299,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9966666666666667,
+      "clear_fraction_of_all_sample_points": 0.9966666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "chicago",
+      "orbit": 27946,
+      "acquisition_utc": "2023-06-10T21:18:25.505Z",
+      "solar_hour": 15.461798352508367,
+      "sample_points": 300,
+      "observed_points": 299,
+      "clear_points": 233,
+      "sample_point_coverage_fraction": 0.9966666666666667,
+      "clear_fraction_of_observed_points": 0.7792642140468228,
+      "clear_fraction_of_all_sample_points": 0.7766666666666666,
+      "failed_assets": 0
+    },
+    {
+      "city": "chicago",
+      "orbit": 28660,
+      "acquisition_utc": "2023-07-26T21:46:56.091Z",
+      "solar_hour": 15.812102596683552,
+      "sample_points": 300,
+      "observed_points": 101,
+      "clear_points": 101,
+      "sample_point_coverage_fraction": 0.33666666666666667,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.33666666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "chicago",
+      "orbit": 28831,
+      "acquisition_utc": "2023-08-06T22:37:08.312Z",
+      "solar_hour": 16.656447741777278,
+      "sample_points": 300,
+      "observed_points": 291,
+      "clear_points": 273,
+      "sample_point_coverage_fraction": 0.97,
+      "clear_fraction_of_observed_points": 0.9381443298969072,
+      "clear_fraction_of_all_sample_points": 0.91,
+      "failed_assets": 0
+    },
+    {
+      "city": "chicago",
+      "orbit": 28862,
+      "acquisition_utc": "2023-08-08T22:37:41.521Z",
+      "solar_hour": 16.669310551902324,
+      "sample_points": 300,
+      "observed_points": 97,
+      "clear_points": 97,
+      "sample_point_coverage_fraction": 0.3233333333333333,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.3233333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "chicago",
+      "orbit": 28892,
+      "acquisition_utc": "2023-08-10T21:00:24.338Z",
+      "solar_hour": 15.052162252576345,
+      "sample_points": 300,
+      "observed_points": 235,
+      "clear_points": 235,
+      "sample_point_coverage_fraction": 0.7833333333333333,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.7833333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "chicago",
+      "orbit": 28923,
+      "acquisition_utc": "2023-08-12T21:01:10.963Z",
+      "solar_hour": 15.070015522125914,
+      "sample_points": 300,
+      "observed_points": 126,
+      "clear_points": 126,
+      "sample_point_coverage_fraction": 0.42,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.42,
+      "failed_assets": 0
+    },
+    {
+      "city": "chicago",
+      "orbit": 29575,
+      "acquisition_utc": "2023-09-23T21:49:54.622Z",
+      "solar_hour": 16.11547989666088,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 274,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9133333333333333,
+      "clear_fraction_of_all_sample_points": 0.9133333333333333,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "chicago",
+      "orbit": 27839,
+      "asset": "ECOv002_L2T_LSTE_27839_006_16TDN_20230603T234703_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27839_006_16TDN_20230603T234703_0711_02/ECOv002_L2T_LSTE_27839_006_16TDN_20230603T234703_0711_02_cloud.tif",
+      "bytes": 13292,
+      "sha256": "e0b4a2f9a4a81f48a153dd970c2f77d01cf8a78135b44f8329187fe117b3c867",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_007_16TDL_20230606T225738_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_007_16TDL_20230606T225738_0711_02/ECOv002_L2T_LSTE_27885_007_16TDL_20230606T225738_0711_02_cloud.tif",
+      "bytes": 10981,
+      "sha256": "f00a1dcd6878b8a3f196307c3332799ed66e976ed9d68ccf4951589b9724529b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_007_16TCL_20230609T220722_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_007_16TCL_20230609T220722_0711_02/ECOv002_L2T_LSTE_27931_007_16TCL_20230609T220722_0711_02_cloud.tif",
+      "bytes": 18389,
+      "sha256": "c3cbdc4f625ebc4f57615ca189072d6e69f8f973b7eafed143111c47c242d6f8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_007_16TCM_20230609T220722_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_007_16TCM_20230609T220722_0711_02/ECOv002_L2T_LSTE_27931_007_16TCM_20230609T220722_0711_02_cloud.tif",
+      "bytes": 15426,
+      "sha256": "41b1411e01fee5d15e8d738e1c16d8c07dbffe2829256ad4f23fc42418a41f48",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_007_16TDL_20230609T220722_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_007_16TDL_20230609T220722_0711_02/ECOv002_L2T_LSTE_27931_007_16TDL_20230609T220722_0711_02_cloud.tif",
+      "bytes": 7528,
+      "sha256": "1d9845d8a5ea6974d8ec893fd55872984a1a09f08e1c7af8f892de1253354f99",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_007_16TDM_20230609T220722_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_007_16TDM_20230609T220722_0711_02/ECOv002_L2T_LSTE_27931_007_16TDM_20230609T220722_0711_02_cloud.tif",
+      "bytes": 6014,
+      "sha256": "782e9d1e4ec1ab9fecc7990a5a9c0f8f03953a2a08b219141eb1cce739a47f79",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_007_16TDN_20230609T220722_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_007_16TDN_20230609T220722_0711_02/ECOv002_L2T_LSTE_27931_007_16TDN_20230609T220722_0711_02_cloud.tif",
+      "bytes": 17009,
+      "sha256": "75c2340ea1e0330f15a14b0f7291d8e6a6bd79da279b4a95c23c63fca597b1bf",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_008_16TDL_20230609T220814_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_008_16TDL_20230609T220814_0711_02/ECOv002_L2T_LSTE_27931_008_16TDL_20230609T220814_0711_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "0f2063ce5f8d68b30857cde3f2b2f72ce2c05861d277e88e63453e68eb06d1ba",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_004_16TCM_20230610T211825_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_004_16TCM_20230610T211825_0711_02/ECOv002_L2T_LSTE_27946_004_16TCM_20230610T211825_0711_02_cloud.tif",
+      "bytes": 28297,
+      "sha256": "73a0e66471ab418ade5d54434c95cb0e540383f5c9b86323c4cd83e08ae9c8a0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_004_16TDL_20230610T211825_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_004_16TDL_20230610T211825_0711_02/ECOv002_L2T_LSTE_27946_004_16TDL_20230610T211825_0711_02_cloud.tif",
+      "bytes": 5978,
+      "sha256": "d2ab439f736bb746bd238f2b47164f13aee621dd1429ff42f37598fe2ac764a7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_004_16TDM_20230610T211825_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_004_16TDM_20230610T211825_0711_02/ECOv002_L2T_LSTE_27946_004_16TDM_20230610T211825_0711_02_cloud.tif",
+      "bytes": 43400,
+      "sha256": "33949806d4abef894e5caa87847556609d7e11aa997ba76b4e60f6dd6f970b5a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_004_16TDN_20230610T211825_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_004_16TDN_20230610T211825_0711_02/ECOv002_L2T_LSTE_27946_004_16TDN_20230610T211825_0711_02_cloud.tif",
+      "bytes": 9961,
+      "sha256": "3d9b9873815199e912c178be707e27a6713c633b9c4e95854e06eb2eaf631109",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28660,
+      "asset": "ECOv002_L2T_LSTE_28660_005_16TCM_20230726T214656_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28660_005_16TCM_20230726T214656_0712_02/ECOv002_L2T_LSTE_28660_005_16TCM_20230726T214656_0712_02_cloud.tif",
+      "bytes": 9774,
+      "sha256": "766f364b24f3adf5414507b3ab32f4f8c8f686b143b367429241206eba103bb6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28660,
+      "asset": "ECOv002_L2T_LSTE_28660_005_16TDN_20230726T214656_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28660_005_16TDN_20230726T214656_0712_02/ECOv002_L2T_LSTE_28660_005_16TDN_20230726T214656_0712_02_cloud.tif",
+      "bytes": 17105,
+      "sha256": "7fde975cbe58ebc45fcf88d22922821515a29576d2314c38155ca3c926550228",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28831,
+      "asset": "ECOv002_L2T_LSTE_28831_006_16TCM_20230806T223708_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28831_006_16TCM_20230806T223708_0712_02/ECOv002_L2T_LSTE_28831_006_16TCM_20230806T223708_0712_02_cloud.tif",
+      "bytes": 6486,
+      "sha256": "4605e308750d44b4eb17202902c8c46234a349a2ebba6487adceab4498bdbb23",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28831,
+      "asset": "ECOv002_L2T_LSTE_28831_006_16TDM_20230806T223708_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28831_006_16TDM_20230806T223708_0712_02/ECOv002_L2T_LSTE_28831_006_16TDM_20230806T223708_0712_02_cloud.tif",
+      "bytes": 7934,
+      "sha256": "28016ef91854a109b14adf8db371397dc90ee87205213c54353bfca77c6f5477",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28831,
+      "asset": "ECOv002_L2T_LSTE_28831_006_16TDN_20230806T223708_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28831_006_16TDN_20230806T223708_0712_02/ECOv002_L2T_LSTE_28831_006_16TDN_20230806T223708_0712_02_cloud.tif",
+      "bytes": 15972,
+      "sha256": "4d2a50a34c567b4731cfc36a36c63da44204eacd57d7cb77139f34f8598c4f8f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28862,
+      "asset": "ECOv002_L2T_LSTE_28862_005_16TCL_20230808T223741_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28862_005_16TCL_20230808T223741_0712_02/ECOv002_L2T_LSTE_28862_005_16TCL_20230808T223741_0712_02_cloud.tif",
+      "bytes": 29699,
+      "sha256": "6df6bdb63b03627caf16951d7c4e805c99ea3e0d77e575f35771c59ea968fc32",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28862,
+      "asset": "ECOv002_L2T_LSTE_28862_005_16TCM_20230808T223741_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28862_005_16TCM_20230808T223741_0712_02/ECOv002_L2T_LSTE_28862_005_16TCM_20230808T223741_0712_02_cloud.tif",
+      "bytes": 8175,
+      "sha256": "314cfa141bcb2277a033405392b225b7fb33b91c041a92caebd04d670cbc274e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28892,
+      "asset": "ECOv002_L2T_LSTE_28892_006_16TDM_20230810T210024_0712_03_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28892_006_16TDM_20230810T210024_0712_03/ECOv002_L2T_LSTE_28892_006_16TDM_20230810T210024_0712_03_cloud.tif",
+      "bytes": 5798,
+      "sha256": "27af35cf531af8676f5ee4963b4b5007155e24e0ff80940c2b5d737e94a20efc",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28892,
+      "asset": "ECOv002_L2T_LSTE_28892_006_16TDN_20230810T210024_0712_03_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28892_006_16TDN_20230810T210024_0712_03/ECOv002_L2T_LSTE_28892_006_16TDN_20230810T210024_0712_03_cloud.tif",
+      "bytes": 27282,
+      "sha256": "9243b50081d10b2f1cdfb4ffe4db244ced66ddf194b133c6195f07dfa162a192",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28923,
+      "asset": "ECOv002_L2T_LSTE_28923_006_16TCL_20230812T210110_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28923_006_16TCL_20230812T210110_0712_02/ECOv002_L2T_LSTE_28923_006_16TCL_20230812T210110_0712_02_cloud.tif",
+      "bytes": 9310,
+      "sha256": "6130798649b9481de84c5d820940f6a1f99b73fccd11fab96708ba58e0709ac7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28923,
+      "asset": "ECOv002_L2T_LSTE_28923_006_16TCM_20230812T210110_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28923_006_16TCM_20230812T210110_0712_02/ECOv002_L2T_LSTE_28923_006_16TCM_20230812T210110_0712_02_cloud.tif",
+      "bytes": 5752,
+      "sha256": "5db369f68bbf4288eb3d5aa9a1247c1f6ba842530d75e26071cf85b672f90fde",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28923,
+      "asset": "ECOv002_L2T_LSTE_28923_006_16TDL_20230812T210110_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28923_006_16TDL_20230812T210110_0712_02/ECOv002_L2T_LSTE_28923_006_16TDL_20230812T210110_0712_02_cloud.tif",
+      "bytes": 5994,
+      "sha256": "debf7a9072057c8cbb6c2d775533f34c945771ece07d185b6eb4412c7f1ddd64",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 28923,
+      "asset": "ECOv002_L2T_LSTE_28923_007_16TDL_20230812T210202_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28923_007_16TDL_20230812T210202_0712_02/ECOv002_L2T_LSTE_28923_007_16TDL_20230812T210202_0712_02_cloud.tif",
+      "bytes": 8514,
+      "sha256": "e5dde1513abd417a42c071c2246e141de439eb94831c86f8959331611f1a2718",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_008_16TCL_20230923T214954_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_008_16TCL_20230923T214954_0712_02/ECOv002_L2T_LSTE_29575_008_16TCL_20230923T214954_0712_02_cloud.tif",
+      "bytes": 20611,
+      "sha256": "bb75138441d3c9dbea69f671c8c44216dca17de625f64fa678645b28a7100fed",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_008_16TCM_20230923T214954_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_008_16TCM_20230923T214954_0712_02/ECOv002_L2T_LSTE_29575_008_16TCM_20230923T214954_0712_02_cloud.tif",
+      "bytes": 7981,
+      "sha256": "9e82eac43311f5046c1563ae01893b613721bc6f7e8b8db854a61576220c6317",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_008_16TDL_20230923T214954_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_008_16TDL_20230923T214954_0712_02/ECOv002_L2T_LSTE_29575_008_16TDL_20230923T214954_0712_02_cloud.tif",
+      "bytes": 8001,
+      "sha256": "5216d18907f8364d0ae51171466c9f8c69a9d7ca75948af48d9c9b433b611c4f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_009_16TCL_20230923T215046_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_009_16TCL_20230923T215046_0712_02/ECOv002_L2T_LSTE_29575_009_16TCL_20230923T215046_0712_02_cloud.tif",
+      "bytes": 18894,
+      "sha256": "8edd3de9555a86fc220e350e449b6aea12c06a6583a145e0cb40f260768464f5",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_009_16TCM_20230923T215046_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_009_16TCM_20230923T215046_0712_02/ECOv002_L2T_LSTE_29575_009_16TCM_20230923T215046_0712_02_cloud.tif",
+      "bytes": 40740,
+      "sha256": "8083278472e8fc2b67ac347972df81ad35c5f064381557a3b3a5444128b4752d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_009_16TDL_20230923T215046_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_009_16TDL_20230923T215046_0712_02/ECOv002_L2T_LSTE_29575_009_16TDL_20230923T215046_0712_02_cloud.tif",
+      "bytes": 35262,
+      "sha256": "a875b47d45b34b950877ea16bbf48c18611b6a0d6402f8c7eb491f8e2d0afbe5",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_009_16TDM_20230923T215046_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_009_16TDM_20230923T215046_0712_02/ECOv002_L2T_LSTE_29575_009_16TDM_20230923T215046_0712_02_cloud.tif",
+      "bytes": 19178,
+      "sha256": "ccf1e3a8ea698b1731b291104b4ae4303dffb21efdc54fae917e407a1a5c23a2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "chicago",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_009_16TDN_20230923T215046_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_009_16TDN_20230923T215046_0712_02/ECOv002_L2T_LSTE_29575_009_16TDN_20230923T215046_0712_02_cloud.tif",
+      "bytes": 45778,
+      "sha256": "94b722cb3044b6c616c552609ade79e55368e62c4f549d12710e73152ad9223f",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

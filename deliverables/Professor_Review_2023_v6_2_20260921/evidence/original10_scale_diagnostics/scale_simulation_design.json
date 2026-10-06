@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-19T22:36:40.375072+00:00",
+  "early_solar_hour": 10.5,
+  "late_solar_hour": 16.0,
+  "time_basis": "linear_city_specific_total_unweighted; equal_city_mean_when_all_supported",
+  "secondary_basis": "linear_time_plus_solar_elevation_plus_day_of_year_only_with_convex_hull_overlap",
+  "reference_rule": "maximize_minimum_number_of_supporting_blocks_across_passes_then_lowest_f0; equal_city_equal_pass_medians_T_and_epsilon",
+  "contrast_grid_K": [
+    0,
+    2,
+    5,
+    10
+  ],
+  "simulation_blocks_per_pass": 200,
+  "simulation_block_selection": "seeded_uniform_whole_block_sample_same_blocks_all_scenarios",
+  "simulation_bootstrap_replicates": 100,
+  "empirical_time_bootstrap_replicates": 1000,
+  "stage1_uncertainty_sensitivity": "paired_8km_spatial_bootstrap_in_addition_to_1km_primary",
+  "seed": 20260919,
+  "tolerance": null,
+  "unsealing_authorized": false,
+  "input_execution_manifest_hashes": [
+    "e776f517f07b5c526214b1152e07b530501c08a2b26e75913bbbe8e69994bcc8",
+    "7d0484124316e584cc927cc9e5c6782c1d473f8a725613745998f31bb388f449"
+  ],
+  "absolute_thermal_access": "allowed_for_aggregate_reference_and_simulation_anchors_only_effects_stay_sealed",
+  "simulation_assumptions": "block_median_T_and_emissivity_primary; 0.5K_block_and_0.5K_cell_noise; tree_epsilon_plus_0.01_capped_0.999; halve_canopy_range; background_plus_minus_10K; within_block_permutation_T_sensitivity",
+  "code_hashes": {
+    "src/run_v6_2_scale_diagnostics.py": "33ef6afc785fab4852a320769167e25f66a681d08407d35cb950ac7a230333f3",
+    "src/urban_cooling_v2/pilot_scale.py": "22da21c6b499883ea59de501b6d32f7cd0beb5a13b1673c8dbddd08e6bf5edd2",
+    "src/urban_cooling_v2/pooled_city_pass.py": "0434337b39c76dcdbba3fcb9695869aff8c483784e8521274fdb9b2869942d22"
+  }
+}

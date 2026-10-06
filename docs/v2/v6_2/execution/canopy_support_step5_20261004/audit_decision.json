@@ -1,0 +1,43 @@
+{
+  "record_date_local": "2026-10-04",
+  "status": "SUPPORT_AND_DESIGN_AUDIT_COMPLETE_QUADRATIC_FITTING_SCOPE_PENDING",
+  "user_request": "go to the next step 5",
+  "completed_scope": "Predictor-only support and protected quadratic-design audit recommended in Step4",
+  "scope_question": {
+    "question": "Does the Step5 request also authorize eligible quadratic fits internally while all new effects remain sealed?",
+    "answer_recorded": null,
+    "current_disposition": "retain existing Step4 fitting hold pending clarification"
+  },
+  "sample": {"year": 2023, "Phoenix": 11, "Atlanta": 5, "other_year_weight": 0},
+  "evidence": {
+    "candidate_pairs": 15,
+    "neighbourhood_halfwidths_fraction": [0.01, 0.025, 0.05],
+    "historical_pair_spanned_in_all16": true,
+    "linear_and_quadratic_designs_estimable": 32,
+    "context_terms_removed": 0,
+    "design_resamples_requested": 32000,
+    "paired_design_resamples_estimable": 32000,
+    "outcome_columns_read": false,
+    "outcome_model_fits": 0
+  },
+  "decisions": {
+    "mathematical_design_feasibility": "supported for all16 original samples and tested draws",
+    "historical_pair": "retained as reference metadata; support described without reselection",
+    "new_inclusion_cutoff": null,
+    "cell_or_pass_selection_change": false,
+    "shared_city_ranking_contrast_selected": false,
+    "cross_city_context_overlap": "descriptive profiles/distances only; no validated positivity or comparability verdict",
+    "quadratic_outcome_fitting": "not executed; scope clarification pending",
+    "new_effect_display": false,
+    "scale_tolerance": null,
+    "scale_agreement_ruling": "not made",
+    "time_inference_and_expansion": "remain held under existing scope"
+  },
+  "if_fitting_is_later_authorized": [
+    "Record the bounded fit/contrast/curve execution settings before reading outcome columns",
+    "Use the same original paired cells, controls, weights and physical draws in temperature and flux models",
+    "Keep both raw canopy terms protected; report non-estimability without rescue",
+    "Change both canopy basis columns at prediction endpoints and preserve averaging-before-inversion",
+    "Preserve original models and keep all new coefficients, finite contrasts, curves and draws sealed"
+  ]
+}

@@ -1,0 +1,690 @@
+{
+  "missing_encoding": "empty CSV field, never zero; consult field/status definitions",
+  "record_key": [
+    "city",
+    "orbit",
+    "source_run_id",
+    "variant"
+  ],
+  "fields": [
+    {
+      "name": "city",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "Frozen city identifier",
+      "missing": "never missing"
+    },
+    {
+      "name": "orbit",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "ECOSTRESS acquisition orbit, retained as identifier text",
+      "missing": "never missing"
+    },
+    {
+      "name": "variant",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "original (1km intervals) or spatial_uncertainty_2/4/8km; same point model and cells",
+      "missing": "never missing"
+    },
+    {
+      "name": "source_run_id",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "Original scientific run identity",
+      "missing": "never missing"
+    },
+    {
+      "name": "source_model_variant",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "paired_primary original point model",
+      "missing": "never missing"
+    },
+    {
+      "name": "source_resampling_variant",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "paired_primary or spatial_2/4/8km interval source",
+      "missing": "never missing"
+    },
+    {
+      "name": "acquisition_utc",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "Exact acquisition instant as timezone-aware ISO8601 UTC",
+      "missing": "never missing"
+    },
+    {
+      "name": "civil_datetime",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "Acquisition in city's IANA civil timezone, explicit UTC offset",
+      "missing": "never missing"
+    },
+    {
+      "name": "civil_timezone",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "IANA timezone identifier",
+      "missing": "never missing"
+    },
+    {
+      "name": "local_date",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "Civil acquisition date, YYYY-MM-DD",
+      "missing": "never missing"
+    },
+    {
+      "name": "collection",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "ECOSTRESS collection identifier as text; retain leading zeros",
+      "missing": "never missing"
+    },
+    {
+      "name": "source_collection_label",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "Unmodified collection label in released CSV; previous numeric export wrote 2 for 002",
+      "missing": "never missing"
+    },
+    {
+      "name": "sample_status",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "2023 observational pilot; exploratory after prior release",
+      "missing": "never missing"
+    },
+    {
+      "name": "analysis_crs",
+      "type": "string",
+      "unit": "identifier or ISO8601",
+      "definition": "Original projected city coordinate reference system",
+      "missing": "never missing"
+    },
+    {
+      "name": "month",
+      "type": "integer",
+      "unit": "calendar month",
+      "definition": "Month of local civil acquisition date",
+      "missing": "never missing"
+    },
+    {
+      "name": "solar_longitude_deg",
+      "type": "number",
+      "unit": "degree",
+      "definition": "East-positive frozen geographic-domain centroid longitude",
+      "missing": "never missing"
+    },
+    {
+      "name": "equation_of_time_min",
+      "type": "number",
+      "unit": "minute",
+      "definition": "Harmonic equation-of-time correction, documented in execution freeze",
+      "missing": "never missing"
+    },
+    {
+      "name": "mean_solar_hour",
+      "type": "number",
+      "unit": "hour",
+      "definition": "Computed UTC fractional hour + longitude/15, modulo 24",
+      "missing": "never missing"
+    },
+    {
+      "name": "apparent_solar_hour",
+      "type": "number",
+      "unit": "hour",
+      "definition": "Computed mean solar hour + equation-of-time/60, modulo 24; plotted x",
+      "missing": "never missing"
+    },
+    {
+      "name": "source_plot_solar_hour",
+      "type": "number",
+      "unit": "hour",
+      "definition": "Unmodified solar_hour in released pass table",
+      "missing": "never missing"
+    },
+    {
+      "name": "apparent_minus_source_solar_seconds",
+      "type": "number",
+      "unit": "second",
+      "definition": "Signed wrapped clock difference in seconds relative to released plot time",
+      "missing": "never missing"
+    },
+    {
+      "name": "source_mean_solar_hour",
+      "type": "number",
+      "unit": "hour",
+      "definition": "Unmodified local_mean_solar_hour from released pass table",
+      "missing": "blank where that inherited field was absent; use computed apparent_solar_hour"
+    },
+    {
+      "name": "source_apparent_solar_hour",
+      "type": "number",
+      "unit": "hour",
+      "definition": "Unmodified apparent_local_solar_hour from released pass table",
+      "missing": "blank where that inherited field was absent; use computed apparent_solar_hour"
+    },
+    {
+      "name": "source_inherited_solar_hour",
+      "type": "number",
+      "unit": "hour",
+      "definition": "Unmodified local_solar_hour_inherited_metadata from released pass table",
+      "missing": "blank where that inherited field was absent; use computed apparent_solar_hour"
+    },
+    {
+      "name": "signed_slope_T_K_per_canopy_fraction",
+      "type": "number",
+      "unit": "K / unit canopy fraction",
+      "definition": "10 \u00d7 released signed temperature change per +10pp",
+      "missing": "never missing"
+    },
+    {
+      "name": "signed_change_T_K_per_10pp",
+      "type": "number",
+      "unit": "K / +10pp canopy",
+      "definition": "Released conditional linear temperature change, 0.10 \u00d7 canopy slope",
+      "missing": "never missing"
+    },
+    {
+      "name": "cooling_K_per_10pp",
+      "type": "number",
+      "unit": "K / +10pp canopy",
+      "definition": "Negative signed temperature change; positive means lower mixed-pixel LST",
+      "missing": "never missing"
+    },
+    {
+      "name": "spatial_SE_K_per_10pp",
+      "type": "number",
+      "unit": "K / +10pp canopy",
+      "definition": "Sample SD (ddof=1) of existing whole-group bootstrap temperature changes",
+      "missing": "never missing"
+    },
+    {
+      "name": "cooling_q025_K_per_10pp",
+      "type": "number",
+      "unit": "K / +10pp canopy",
+      "definition": "Existing 2.5th percentile of sign-reversed bootstrap temperature changes",
+      "missing": "never missing"
+    },
+    {
+      "name": "cooling_q975_K_per_10pp",
+      "type": "number",
+      "unit": "K / +10pp canopy",
+      "definition": "Existing 97.5th percentile of sign-reversed bootstrap temperature changes",
+      "missing": "never missing"
+    },
+    {
+      "name": "interval_width_K_per_10pp",
+      "type": "number",
+      "unit": "K / +10pp canopy",
+      "definition": "97.5th minus 2.5th percentile, checked against independent public precision",
+      "missing": "never missing"
+    },
+    {
+      "name": "cluster_sandwich_SE_K_per_10pp",
+      "type": "number",
+      "unit": "K / +10pp canopy",
+      "definition": "Previously published cluster-sandwich SE for the same spatial grouping",
+      "missing": "never missing"
+    },
+    {
+      "name": "interval_method",
+      "type": "string",
+      "unit": "method",
+      "definition": "Existing 95% percentile bootstrap; whole physical spatial groups, original 1km block intercepts",
+      "missing": "never missing"
+    },
+    {
+      "name": "resampling_group_km",
+      "type": "integer",
+      "unit": "km",
+      "definition": "Side length of resampling group; does not change the fitted mean model",
+      "missing": "never missing"
+    },
+    {
+      "name": "resampling_groups",
+      "type": "integer",
+      "unit": "count",
+      "definition": "Existing precision record: resampling_groups",
+      "missing": "never missing"
+    },
+    {
+      "name": "bootstrap_requested",
+      "type": "integer",
+      "unit": "count",
+      "definition": "Existing precision record: bootstrap_requested",
+      "missing": "never missing"
+    },
+    {
+      "name": "bootstrap_estimable",
+      "type": "integer",
+      "unit": "count",
+      "definition": "Existing precision record: bootstrap_estimable",
+      "missing": "never missing"
+    },
+    {
+      "name": "bootstrap_failed",
+      "type": "integer",
+      "unit": "count",
+      "definition": "Existing precision record: bootstrap_failed",
+      "missing": "never missing"
+    },
+    {
+      "name": "bootstrap_seed",
+      "type": "integer",
+      "unit": "seed",
+      "definition": "Existing precision record: bootstrap_seed",
+      "missing": "never missing"
+    },
+    {
+      "name": "signed_flux_change_W_m2_per_10pp",
+      "type": "number",
+      "unit": "W/m\u00b2 / +10pp canopy",
+      "definition": "Reserved paired diagnostic effect field; no coefficient read or conversion in this step",
+      "missing": "always blank: SEALED_NOT_RELEASED"
+    },
+    {
+      "name": "flux_reduction_W_m2_per_10pp",
+      "type": "number",
+      "unit": "W/m\u00b2 / +10pp canopy",
+      "definition": "Reserved paired diagnostic effect field; no coefficient read or conversion in this step",
+      "missing": "always blank: SEALED_NOT_RELEASED"
+    },
+    {
+      "name": "signed_equivalent_change_K_per_10pp",
+      "type": "number",
+      "unit": "K / +10pp canopy",
+      "definition": "Reserved paired diagnostic effect field; no coefficient read or conversion in this step",
+      "missing": "always blank: SEALED_NOT_RELEASED"
+    },
+    {
+      "name": "equivalent_cooling_K_per_10pp",
+      "type": "number",
+      "unit": "K / +10pp canopy",
+      "definition": "Reserved paired diagnostic effect field; no coefficient read or conversion in this step",
+      "missing": "always blank: SEALED_NOT_RELEASED"
+    },
+    {
+      "name": "paired_effect_status",
+      "type": "string",
+      "unit": "status",
+      "definition": "SEALED_NOT_RELEASED; prior LST reuse does not authorize flux or equivalent display",
+      "missing": "never missing"
+    },
+    {
+      "name": "flux_spatial_SE_W_m2_per_10pp",
+      "type": "number",
+      "unit": "W/m\u00b2 / +10pp canopy",
+      "definition": "Permitted existing public flux precision for matched spatial grouping, no effect",
+      "missing": "never missing"
+    },
+    {
+      "name": "flux_interval_width_W_m2_per_10pp",
+      "type": "number",
+      "unit": "W/m\u00b2 / +10pp canopy",
+      "definition": "Permitted existing public flux percentile width; endpoints withheld",
+      "missing": "never missing"
+    },
+    {
+      "name": "reference_temperature_K",
+      "type": "number",
+      "unit": "K",
+      "definition": "Existing September19 fixed reference; metadata only, no new transformation",
+      "missing": "never missing"
+    },
+    {
+      "name": "reference_emissivity",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Existing September19 fixed reference emissivity",
+      "missing": "never missing"
+    },
+    {
+      "name": "reference_status",
+      "type": "string",
+      "unit": "status",
+      "definition": "Historical original-ten-pass reference metadata; applicability to six additions not established here",
+      "missing": "never missing"
+    },
+    {
+      "name": "reference_source",
+      "type": "string",
+      "unit": "relative repository path",
+      "definition": "Exact numeric reference manifest, hashed in freeze",
+      "missing": "never missing"
+    },
+    {
+      "name": "n_cells",
+      "type": "integer",
+      "unit": "count",
+      "definition": "Unique paired complete native cells in original fit (cell-pass observations)",
+      "missing": "never missing"
+    },
+    {
+      "name": "n_blocks",
+      "type": "integer",
+      "unit": "count",
+      "definition": "Original occupied 1km intercept blocks",
+      "missing": "never missing"
+    },
+    {
+      "name": "contributing_blocks",
+      "type": "integer",
+      "unit": "count",
+      "definition": "Blocks contributing within-block canopy information",
+      "missing": "never missing"
+    },
+    {
+      "name": "design_rank",
+      "type": "integer",
+      "unit": "count",
+      "definition": "Rank of original within-block slope/context design",
+      "missing": "never missing"
+    },
+    {
+      "name": "residual_degrees_of_freedom",
+      "type": "integer",
+      "unit": "count",
+      "definition": "Original fit residual degrees of freedom",
+      "missing": "never missing"
+    },
+    {
+      "name": "footprint_area_km2",
+      "type": "number",
+      "unit": "km\u00b2",
+      "definition": "Sum of unique retained whole native-cell footprints: n \u00d7 4900 m\u00b2 / 1e6; reconcile canonical tile audit; not city-clipped area",
+      "missing": "never missing"
+    },
+    {
+      "name": "footprint_area_status",
+      "type": "string",
+      "unit": "status",
+      "definition": "VERIFIED_CANONICAL_WHOLE_CELLS; selected cell centres fall in domain; edge cells are not clipped",
+      "missing": "never missing"
+    },
+    {
+      "name": "within_block_canopy_Sxx",
+      "type": "number",
+      "unit": "fraction\u00b2",
+      "definition": "Sum of squared block-demeaned canopy fractions",
+      "missing": "never missing"
+    },
+    {
+      "name": "within_block_canopy_variance",
+      "type": "number",
+      "unit": "fraction\u00b2",
+      "definition": "Published within_block_variance; Sxx divided by n_cells",
+      "missing": "never missing"
+    },
+    {
+      "name": "residualized_canopy_Sxx",
+      "type": "number",
+      "unit": "fraction\u00b2",
+      "definition": "Canopy information remaining after block intercepts and context controls",
+      "missing": "never missing"
+    },
+    {
+      "name": "maximum_block_information_share",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Largest block share of residualized canopy information",
+      "missing": "never missing"
+    },
+    {
+      "name": "top_five_block_information_share",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Sum of five largest residualized information shares",
+      "missing": "never missing"
+    },
+    {
+      "name": "effective_information_blocks",
+      "type": "number",
+      "unit": "effective blocks",
+      "definition": "Inverse sum of squared residualized block information shares",
+      "missing": "never missing"
+    },
+    {
+      "name": "maximum_slope_design_leverage",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Published maximum single-cell canopy-slope leverage",
+      "missing": "never missing"
+    },
+    {
+      "name": "removed_context_terms",
+      "type": "string",
+      "unit": "JSON array",
+      "definition": "Context terms removed from the original design; no redesign at assembly",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0p01",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0.01, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0p05",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0.05, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0p1",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0.1, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0p25",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0.25, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0p35",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0.35, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0p5",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0.5, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0p65",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0.65, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0p75",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0.75, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0p9",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0.9, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0p95",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0.95, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q0p99",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 0.99, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "canopy_q1",
+      "type": "number",
+      "unit": "fraction",
+      "definition": "Cell-weighted canopy fraction quantile at probability 1, reused from predictor-only support snapshot; no cutoff",
+      "missing": "never missing"
+    },
+    {
+      "name": "view_zenith_p95_deg",
+      "type": "number",
+      "unit": "degree",
+      "definition": "Inherited pass p95 sensor view zenith, not mean or solar zenith",
+      "missing": "never missing"
+    },
+    {
+      "name": "geometry_coverage_status",
+      "type": "string",
+      "unit": "status",
+      "definition": "NOT_QUANTIFIED_IN_REUSED_SOURCES; p95 alone does not establish complete cell-level geometry",
+      "missing": "never missing"
+    },
+    {
+      "name": "view_azimuth_status",
+      "type": "string",
+      "unit": "status",
+      "definition": "UNRESOLVED_FROZEN_PILOT_EXCEPTION; do not claim completed azimuth recovery",
+      "missing": "never missing"
+    },
+    {
+      "name": "geometry_exception_status",
+      "type": "string",
+      "unit": "status",
+      "definition": "Frozen 25-degree pilot precision exception retained as inherited metadata",
+      "missing": "never missing"
+    },
+    {
+      "name": "weather_status",
+      "type": "string",
+      "unit": "status",
+      "definition": "Cached linked HRRR interpolation status or missing bracketing hourly records",
+      "missing": "never missing"
+    },
+    {
+      "name": "air_temperature_K",
+      "type": "number",
+      "unit": "K",
+      "definition": "Cached HRRR 2m domain-mean air temperature interpolated at exact acquisition, independently reconciled",
+      "missing": "blank: MISSING_BRACKETING_HOURLY_RECORDS"
+    },
+    {
+      "name": "VPD_kPa",
+      "type": "number",
+      "unit": "kPa",
+      "definition": "Cached HRRR domain-mean VPD interpolated at exact acquisition; descriptive only",
+      "missing": "blank: MISSING_BRACKETING_HOURLY_RECORDS"
+    },
+    {
+      "name": "source_inherited_VPD_kPa",
+      "type": "number",
+      "unit": "kPa",
+      "definition": "Unmodified inherited VPD metadata from released table, kept distinct from linked HRRR fields",
+      "missing": "blank: inherited metadata absent"
+    },
+    {
+      "name": "weather_bracket_start_utc",
+      "type": "string",
+      "unit": "ISO8601 UTC",
+      "definition": "Exact existing hourly bracket used for HRRR interpolation",
+      "missing": "blank: MISSING_BRACKETING_HOURLY_RECORDS"
+    },
+    {
+      "name": "weather_bracket_end_utc",
+      "type": "string",
+      "unit": "ISO8601 UTC",
+      "definition": "Exact existing hourly bracket used for HRRR interpolation",
+      "missing": "blank: MISSING_BRACKETING_HOURLY_RECORDS"
+    },
+    {
+      "name": "rainfall_prior_1d_mm",
+      "type": "number",
+      "unit": "mm",
+      "definition": "Reserved antecedent rainfall total over 1 days before acquisition",
+      "missing": "always blank: NOT_ACQUIRED"
+    },
+    {
+      "name": "rainfall_prior_3d_mm",
+      "type": "number",
+      "unit": "mm",
+      "definition": "Reserved antecedent rainfall total over 3 days before acquisition",
+      "missing": "always blank: NOT_ACQUIRED"
+    },
+    {
+      "name": "rainfall_prior_7d_mm",
+      "type": "number",
+      "unit": "mm",
+      "definition": "Reserved antecedent rainfall total over 7 days before acquisition",
+      "missing": "always blank: NOT_ACQUIRED"
+    },
+    {
+      "name": "rainfall_status",
+      "type": "string",
+      "unit": "status",
+      "definition": "NOT_ACQUIRED; no cached acquisition-linked totals located or retrieved in this step",
+      "missing": "never missing"
+    },
+    {
+      "name": "source_precision",
+      "type": "string",
+      "unit": "path or SHA256",
+      "definition": "Public source of group/draw accounting and paired precision",
+      "missing": "never missing"
+    },
+    {
+      "name": "source_ownership_audit",
+      "type": "string",
+      "unit": "path or SHA256",
+      "definition": "Canonical tile ownership/count/area audit used for this pass",
+      "missing": "never missing"
+    },
+    {
+      "name": "source_predictor_snapshot",
+      "type": "string",
+      "unit": "path or SHA256",
+      "definition": "Predictor-only support freeze reused without opening cached thermal frame",
+      "missing": "never missing"
+    },
+    {
+      "name": "native_frame_sha256_recorded",
+      "type": "string",
+      "unit": "path or SHA256",
+      "definition": "Historical input-frame checksum from predictor freeze, not a new checksum/read of sealed frame",
+      "missing": "never missing"
+    },
+    {
+      "name": "source_weather",
+      "type": "string",
+      "unit": "path or SHA256",
+      "definition": "Cached exact-acquisition weather table; raw hourly source in execution manifest",
+      "missing": "never missing"
+    }
+  ]
+}

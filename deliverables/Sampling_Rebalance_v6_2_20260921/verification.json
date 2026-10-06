@@ -1,0 +1,133 @@
+{
+  "created_utc": "2026-09-21T21:29:56.976803+00:00",
+  "processed_phoenix_passes": 18,
+  "new_phoenix_passes": 7,
+  "balanced_endpoint_passes": 12,
+  "matched_year_month_strata": 5,
+  "new_paired_fits": 28,
+  "requested_new_bootstrap_draws": 28000,
+  "failed_new_bootstrap_draws": 0,
+  "new_primary_SE_range": {
+    "min": 0.0247634137258828,
+    "max": 0.0375657680737941
+  },
+  "new_8km_SE_range": {
+    "min": 0.0458033546846062,
+    "max": 0.0561148955148042
+  },
+  "common_cell_retention_range": {
+    "min": 0.7319862827907946,
+    "max": 0.9999928144530092
+  },
+  "new_gradients_disclosed": false,
+  "new_time_model_fitted": false,
+  "all_eleven_preserved": true,
+  "native_cell_checks": [
+    {
+      "orbit": 6281,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 556673
+    },
+    {
+      "orbit": 6510,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 556675
+    },
+    {
+      "orbit": 27963,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 516781
+    },
+    {
+      "orbit": 28192,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 550489
+    },
+    {
+      "orbit": 28828,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 556673
+    },
+    {
+      "orbit": 28909,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 409964
+    },
+    {
+      "orbit": 29092,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 553858
+    },
+    {
+      "orbit": 33496,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 556673
+    },
+    {
+      "orbit": 33623,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 556409
+    },
+    {
+      "orbit": 40111,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 556677
+    },
+    {
+      "orbit": 40192,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 502864
+    },
+    {
+      "orbit": 40376,
+      "unique_native_cell_ids": true,
+      "emitted_energy_identity": true,
+      "native_cells": 496066
+    }
+  ],
+  "output_boundary_errors": [],
+  "status": "PASS",
+  "checks": {
+    "data_link_matches_selection": true,
+    "manifest_unchanged": true,
+    "run_code_unchanged": true,
+    "selection_precedes_model_execution": true,
+    "download_bound_to_selection": true,
+    "selected_inputs_match_frozen_sources": true,
+    "all_180_input_assets_verified": true,
+    "28_successful_paired_fits": true,
+    "all_28000_draws_estimable": true,
+    "no_public_cooling_gradients": true,
+    "18_distinct_passes": true,
+    "roles_12_3_3": true,
+    "identical_stratum_mass_in_both_arms": true,
+    "joint_weights_sum_to_one": true,
+    "catalogue_547_unique_orbits": true,
+    "2023_july_september_morning_absent": true,
+    "129_nonthermal_cloud_assets_verified": true,
+    "unchanged_core_estimator_and_native_builder": true,
+    "preserved_Methodology_and_Expansion_v6_2_20260921": true,
+    "same_protocol_no_scale_ruling": true,
+    "same_counts_in_protocol": true
+  },
+  "errors": [],
+  "test_counts": {
+    "existing_paired_model_and_native_tests": 21,
+    "new_sampling_design_tests": 8
+  },
+  "input_files_hashed": 192,
+  "visual_review": "PNG inspected: all labels, points, legend and limitations readable; no overlap/clipping",
+  "verified_utc": "2026-09-21T21:34:44.217058+00:00",
+  "workspace_checksum_refresh": "New and changed files rehashed; unaffected workspace entries retained from prior inventory. The run-specific inventory and 192 source input files were fully hashed."
+}

@@ -1,0 +1,193 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "sacramento",
+      "orbit": 27948,
+      "acquisition_utc": "2023-06-11T00:26:26.488Z",
+      "solar_hour": 16.373907147454418,
+      "sample_points": 300,
+      "observed_points": 283,
+      "clear_points": 283,
+      "sample_point_coverage_fraction": 0.9433333333333334,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.9433333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "sacramento",
+      "orbit": 28600,
+      "acquisition_utc": "2023-07-23T00:54:26.419Z",
+      "solar_hour": 16.7110574475443,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "sacramento",
+      "orbit": 28661,
+      "acquisition_utc": "2023-07-26T23:17:29.293Z",
+      "solar_hour": 15.092961343160534,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "sacramento",
+      "orbit": 29546,
+      "acquisition_utc": "2023-09-22T00:57:14.384Z",
+      "solar_hour": 16.983444970488332,
+      "sample_points": 300,
+      "observed_points": 62,
+      "clear_points": 62,
+      "sample_point_coverage_fraction": 0.20666666666666667,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.20666666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "sacramento",
+      "orbit": 29561,
+      "acquisition_utc": "2023-09-23T00:09:02.322Z",
+      "solar_hour": 16.186082317315808,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 298,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9933333333333333,
+      "clear_fraction_of_all_sample_points": 0.9933333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "sacramento",
+      "orbit": 29607,
+      "acquisition_utc": "2023-09-25T23:22:03.384Z",
+      "solar_hour": 15.421094463011991,
+      "sample_points": 300,
+      "observed_points": 62,
+      "clear_points": 62,
+      "sample_point_coverage_fraction": 0.20666666666666667,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.20666666666666667,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "sacramento",
+      "orbit": 27948,
+      "asset": "ECOv002_L2T_LSTE_27948_014_10SFH_20230611T002626_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27948_014_10SFH_20230611T002626_0711_02/ECOv002_L2T_LSTE_27948_014_10SFH_20230611T002626_0711_02_cloud.tif",
+      "bytes": 8181,
+      "sha256": "f768f97dbffd34c6907fa53d9a57040be57b2a96539a395d182fb67a695aa0b8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "sacramento",
+      "orbit": 27948,
+      "asset": "ECOv002_L2T_LSTE_27948_015_10SFH_20230611T002718_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27948_015_10SFH_20230611T002718_0711_02/ECOv002_L2T_LSTE_27948_015_10SFH_20230611T002718_0711_02_cloud.tif",
+      "bytes": 29594,
+      "sha256": "465652f03774fbe4b2f1c4a0b34571f031b8ab683255a50f907319440f280840",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "sacramento",
+      "orbit": 28600,
+      "asset": "ECOv002_L2T_LSTE_28600_005_10SFH_20230723T005426_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28600_005_10SFH_20230723T005426_0712_02/ECOv002_L2T_LSTE_28600_005_10SFH_20230723T005426_0712_02_cloud.tif",
+      "bytes": 11994,
+      "sha256": "e50776a74495aec9de7d03fe2e127d8e345b8d35c5ed6c3ada18f23d1228f60f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "sacramento",
+      "orbit": 28600,
+      "asset": "ECOv002_L2T_LSTE_28600_005_10SFJ_20230723T005426_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28600_005_10SFJ_20230723T005426_0712_02/ECOv002_L2T_LSTE_28600_005_10SFJ_20230723T005426_0712_02_cloud.tif",
+      "bytes": 15132,
+      "sha256": "31cb04042368724330c874767ec160a161d889e40d62203387ed48a1b0cb522b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "sacramento",
+      "orbit": 28661,
+      "asset": "ECOv002_L2T_LSTE_28661_004_10SFH_20230726T231729_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28661_004_10SFH_20230726T231729_0712_02/ECOv002_L2T_LSTE_28661_004_10SFH_20230726T231729_0712_02_cloud.tif",
+      "bytes": 5712,
+      "sha256": "bd090cb5ee5d7dd15337cb453b276bb50e6abe6b64e2836f6e2d8acf63291a80",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "sacramento",
+      "orbit": 28661,
+      "asset": "ECOv002_L2T_LSTE_28661_004_10SFJ_20230726T231729_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28661_004_10SFJ_20230726T231729_0712_02/ECOv002_L2T_LSTE_28661_004_10SFJ_20230726T231729_0712_02_cloud.tif",
+      "bytes": 11702,
+      "sha256": "d1cdc3ce5bd6432bf292e46dc055d2be956acdac74b6d52f0ba1dbfcc6364fe1",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "sacramento",
+      "orbit": 28661,
+      "asset": "ECOv002_L2T_LSTE_28661_005_10SFJ_20230726T231821_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28661_005_10SFJ_20230726T231821_0712_02/ECOv002_L2T_LSTE_28661_005_10SFJ_20230726T231821_0712_02_cloud.tif",
+      "bytes": 5789,
+      "sha256": "cd049877ddc3382f02455fc00dce39a7f35ca21778c8e0bcbb8a344fc4b0095b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "sacramento",
+      "orbit": 29546,
+      "asset": "ECOv002_L2T_LSTE_29546_005_10SFJ_20230922T005714_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29546_005_10SFJ_20230922T005714_0712_02/ECOv002_L2T_LSTE_29546_005_10SFJ_20230922T005714_0712_02_cloud.tif",
+      "bytes": 14741,
+      "sha256": "4636e7be61a9fdd6f54e0cb7ea52cf33ffe202aaed3089b071e61490a60796bb",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "sacramento",
+      "orbit": 29561,
+      "asset": "ECOv002_L2T_LSTE_29561_006_10SFH_20230923T000902_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29561_006_10SFH_20230923T000902_0712_02/ECOv002_L2T_LSTE_29561_006_10SFH_20230923T000902_0712_02_cloud.tif",
+      "bytes": 66076,
+      "sha256": "3323ba999e83a37a987e026b9dce54b11aabd5e2aa2816c324ba881977fffa3d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "sacramento",
+      "orbit": 29561,
+      "asset": "ECOv002_L2T_LSTE_29561_006_10SFJ_20230923T000902_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29561_006_10SFJ_20230923T000902_0712_02/ECOv002_L2T_LSTE_29561_006_10SFJ_20230923T000902_0712_02_cloud.tif",
+      "bytes": 110879,
+      "sha256": "b677a1d51b89dbb7972477baee60ade38ffac57e35c5cd2cc2fcb8c176185eb3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "sacramento",
+      "orbit": 29561,
+      "asset": "ECOv002_L2T_LSTE_29561_007_10SFJ_20230923T000954_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29561_007_10SFJ_20230923T000954_0712_02/ECOv002_L2T_LSTE_29561_007_10SFJ_20230923T000954_0712_02_cloud.tif",
+      "bytes": 14784,
+      "sha256": "212d3703c97dff3ef4ac5196e3e86d751d98c323ef7173f158fa1d31b8255139",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "sacramento",
+      "orbit": 29607,
+      "asset": "ECOv002_L2T_LSTE_29607_005_10SFJ_20230925T232203_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29607_005_10SFJ_20230925T232203_0712_02/ECOv002_L2T_LSTE_29607_005_10SFJ_20230925T232203_0712_02_cloud.tif",
+      "bytes": 25138,
+      "sha256": "c60981f5b72dfb56f9f5d0fedd98f4b939fc780c5f0b5bad0cb0f8dd8889ac58",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

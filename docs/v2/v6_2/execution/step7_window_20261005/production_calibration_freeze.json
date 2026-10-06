@@ -1,0 +1,21 @@
+{
+  "methods_unchanged_after_development": true,
+  "execution_freeze_sha256": "36af3e8d9e058e9af8aec349b95cff1dc4147e034be91682e7930c2ec89a8b85",
+  "code_sha256": {
+    "src/v6_2_advance/window_uncertainty.py": "0b689227316ac93ac645741de0289255156f5ce4d3d4a0513707a8fbd89cefb4",
+    "src/v6_2_advance/run_step7_window.py": "ceb51cd0393673eb1c8ff393623f609e99f827b6f99b387ef617153905a36339",
+    "src/v6_2_advance/calibrate_step7_window.py": "728010ff6a92100908909eeb46ff515a2e25d5f4cff98b365a817daa5e01aa6a",
+    "src/v6_2_advance/plot_step7_window.py": "c28ecd57365bf42b436872778999a4b355d085d8b28e4fc2a8c1f48c06259249",
+    "src/v6_2_advance/time_resampling.py": "4030e6f3041c70cd1a50adb03f84c50e5676c68d2a9d7dfe6ea1964faa32ec4b",
+    "src/v6_2_advance/spatial_review.py": "7111f6cf7cd881526911de572a61daf384edc4a394641f494d1d9a82b069434d",
+    "src/v6_2_advance/quadratic_sensitivity.py": "0a6924e6ab7ea13661e645acd68f4723660164e63271cb4436c38c59af89fc8d",
+    "tests/v6_2_advance/test_window_uncertainty.py": "66fee1be375b187aa5ceccc41d00f38c3d82e8597625908c91804bca9a4a4f4b",
+    "src/urban_cooling_v2/pooled_city_pass.py": "0434337b39c76dcdbba3fcb9695869aff8c483784e8521274fdb9b2869942d22",
+    "src/urban_cooling_v2/pilot_scale.py": "22da21c6b499883ea59de501b6d32f7cd0beb5a13b1673c8dbddd08e6bf5edd2",
+    "src/urban_cooling_v2/v6_2_output_boundary.py": "16ffab193ed2fd3b14cb81148e029ee8e835cef0f43971dbbd6f7f5cc672906c"
+  },
+  "production_seed": 80261005,
+  "production_bank_seed": 100261005,
+  "datasets_each": 2000,
+  "empirical_effect_means_read": false
+}

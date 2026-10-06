@@ -1,0 +1,19 @@
+{
+  "known_answer_tests_passed": 7,
+  "paired_fits": 16,
+  "bootstrap_estimable": 16000,
+  "original_linear_gradients_reproduced": 16,
+  "input_hashes_verified": 16,
+  "unique_native_coordinates_verified": true,
+  "emitted_energy_physics_verified": true,
+  "whole_block_nesting_verified": true,
+  "pointwise_interval_order_and_reference_zero_verified": true,
+  "bins_with_all_requested_passes": 40,
+  "public_output_fields_and_sealed_permissions_verified": true,
+  "source_code_freeze_verified": true,
+  "yaml_semantics_preserved_except_new_exploratory_record": true,
+  "figures_visually_inspected": [
+    "adjusted_nonlinear_association.png",
+    "observed_binned_association.png"
+  ]
+}

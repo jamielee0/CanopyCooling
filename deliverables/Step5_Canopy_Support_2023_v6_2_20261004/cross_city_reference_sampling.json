@@ -1,0 +1,106 @@
+{
+  "scaling_mean": {
+    "impervious_fraction": 0.35656402912409135,
+    "low_vegetation_fraction": 0.0754241869772437,
+    "bare_fraction": 0.0018604044484736568,
+    "building_fraction": 0.11261181457371672,
+    "elevation": 357.9011733131408,
+    "distance_to_water": 2247.0680737113153
+  },
+  "scaling_sd": {
+    "impervious_fraction": 0.30045468890925425,
+    "low_vegetation_fraction": 0.2358916578227243,
+    "bare_fraction": 0.041176164697599986,
+    "building_fraction": 0.1458587915780758,
+    "elevation": 99.03157833443755,
+    "distance_to_water": 2510.410246355694
+  },
+  "zero_SD_dimensions": [],
+  "references": [
+    {
+      "city": "phoenix",
+      "endpoint": "lower",
+      "halfwidth_fraction": 0.01,
+      "sampled_unique_candidates": 20457,
+      "equal_city_reference_cells": 5000
+    },
+    {
+      "city": "atlanta",
+      "endpoint": "lower",
+      "halfwidth_fraction": 0.01,
+      "sampled_unique_candidates": 8414,
+      "equal_city_reference_cells": 5000
+    },
+    {
+      "city": "phoenix",
+      "endpoint": "upper",
+      "halfwidth_fraction": 0.01,
+      "sampled_unique_candidates": 11136,
+      "equal_city_reference_cells": 5000
+    },
+    {
+      "city": "atlanta",
+      "endpoint": "upper",
+      "halfwidth_fraction": 0.01,
+      "sampled_unique_candidates": 7924,
+      "equal_city_reference_cells": 5000
+    },
+    {
+      "city": "phoenix",
+      "endpoint": "lower",
+      "halfwidth_fraction": 0.025,
+      "sampled_unique_candidates": 21367,
+      "equal_city_reference_cells": 5000
+    },
+    {
+      "city": "atlanta",
+      "endpoint": "lower",
+      "halfwidth_fraction": 0.025,
+      "sampled_unique_candidates": 9255,
+      "equal_city_reference_cells": 5000
+    },
+    {
+      "city": "phoenix",
+      "endpoint": "upper",
+      "halfwidth_fraction": 0.025,
+      "sampled_unique_candidates": 17207,
+      "equal_city_reference_cells": 5000
+    },
+    {
+      "city": "atlanta",
+      "endpoint": "upper",
+      "halfwidth_fraction": 0.025,
+      "sampled_unique_candidates": 9127,
+      "equal_city_reference_cells": 5000
+    },
+    {
+      "city": "phoenix",
+      "endpoint": "lower",
+      "halfwidth_fraction": 0.05,
+      "sampled_unique_candidates": 21519,
+      "equal_city_reference_cells": 5000
+    },
+    {
+      "city": "atlanta",
+      "endpoint": "lower",
+      "halfwidth_fraction": 0.05,
+      "sampled_unique_candidates": 9609,
+      "equal_city_reference_cells": 5000
+    },
+    {
+      "city": "phoenix",
+      "endpoint": "upper",
+      "halfwidth_fraction": 0.05,
+      "sampled_unique_candidates": 19684,
+      "equal_city_reference_cells": 5000
+    },
+    {
+      "city": "atlanta",
+      "endpoint": "upper",
+      "halfwidth_fraction": 0.05,
+      "sampled_unique_candidates": 9584,
+      "equal_city_reference_cells": 5000
+    }
+  ],
+  "diagnostic_only": true
+}

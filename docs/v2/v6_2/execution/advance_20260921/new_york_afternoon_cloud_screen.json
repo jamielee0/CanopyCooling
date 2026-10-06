@@ -1,0 +1,440 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "new_york",
+      "orbit": 27900,
+      "acquisition_utc": "2023-06-07T22:10:59.622Z",
+      "solar_hour": 17.278031904454952,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 295,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9833333333333333,
+      "clear_fraction_of_all_sample_points": 0.9833333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "new_york",
+      "orbit": 27946,
+      "acquisition_utc": "2023-06-10T21:21:01.414Z",
+      "solar_hour": 16.435768048042434,
+      "sample_points": 300,
+      "observed_points": 1,
+      "clear_points": 1,
+      "sample_point_coverage_fraction": 0.0033333333333333335,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.0033333333333333335,
+      "failed_assets": 0
+    },
+    {
+      "city": "new_york",
+      "orbit": 27961,
+      "acquisition_utc": "2023-06-11T20:31:39.699Z",
+      "solar_hour": 15.609772015314448,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 106,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.35333333333333333,
+      "clear_fraction_of_all_sample_points": 0.35333333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "new_york",
+      "orbit": 28598,
+      "acquisition_utc": "2023-07-22T21:48:55.624Z",
+      "solar_hour": 16.778163625254287,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 55,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.18333333333333332,
+      "clear_fraction_of_all_sample_points": 0.18333333333333332,
+      "failed_assets": 0
+    },
+    {
+      "city": "new_york",
+      "orbit": 28644,
+      "acquisition_utc": "2023-07-25T21:00:29.269Z",
+      "solar_hour": 15.97615904179887,
+      "sample_points": 300,
+      "observed_points": 0,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 0.0,
+      "clear_fraction_of_observed_points": null,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "new_york",
+      "orbit": 28659,
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "solar_hour": 15.172484589418548,
+      "sample_points": 300,
+      "observed_points": 299,
+      "clear_points": 294,
+      "sample_point_coverage_fraction": 0.9966666666666667,
+      "clear_fraction_of_observed_points": 0.9832775919732442,
+      "clear_fraction_of_all_sample_points": 0.98,
+      "failed_assets": 0
+    },
+    {
+      "city": "new_york",
+      "orbit": 28800,
+      "acquisition_utc": "2023-08-04T22:39:34.830Z",
+      "solar_hour": 17.6391076674292,
+      "sample_points": 300,
+      "observed_points": 234,
+      "clear_points": 138,
+      "sample_point_coverage_fraction": 0.78,
+      "clear_fraction_of_observed_points": 0.5897435897435898,
+      "clear_fraction_of_all_sample_points": 0.46,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "new_york",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_010_18SWJ_20230607T221059_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_010_18SWJ_20230607T221059_0711_02/ECOv002_L2T_LSTE_27900_010_18SWJ_20230607T221059_0711_02_cloud.tif",
+      "bytes": 77290,
+      "sha256": "721157d38833689c33cbb43d4028d90e7213fdd3b8edf7bf106d15807f1aa3b0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_010_18TWK_20230607T221059_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_010_18TWK_20230607T221059_0711_02/ECOv002_L2T_LSTE_27900_010_18TWK_20230607T221059_0711_02_cloud.tif",
+      "bytes": 40721,
+      "sha256": "517cfdef55544a19baebd1c0613f49b2f4b9583be04358745dcf4634734231c4",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_010_18TWL_20230607T221059_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_010_18TWL_20230607T221059_0711_02/ECOv002_L2T_LSTE_27900_010_18TWL_20230607T221059_0711_02_cloud.tif",
+      "bytes": 75117,
+      "sha256": "cbb958ff44eacfcf7b24f2720416163b3eebc1e2da7728e8e7d06c5e95f19478",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_010_18TWM_20230607T221059_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_010_18TWM_20230607T221059_0711_02/ECOv002_L2T_LSTE_27900_010_18TWM_20230607T221059_0711_02_cloud.tif",
+      "bytes": 23620,
+      "sha256": "d4e3f1fa0a680b62a8a103076208e7f77ee87ef3619f56bec5a77c957dd2803e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_010_18TXK_20230607T221059_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_010_18TXK_20230607T221059_0711_02/ECOv002_L2T_LSTE_27900_010_18TXK_20230607T221059_0711_02_cloud.tif",
+      "bytes": 131868,
+      "sha256": "ea6e3bd94cd12a5254866a1c651d78c26145046a94642218511b52ec9f8cdf15",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_010_18TXL_20230607T221059_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_010_18TXL_20230607T221059_0711_02/ECOv002_L2T_LSTE_27900_010_18TXL_20230607T221059_0711_02_cloud.tif",
+      "bytes": 23053,
+      "sha256": "40e60861cf746e3b33e790beb7b6b1705a11055720fa784f04c2644bd664045f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_007_18SWJ_20230610T212101_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_007_18SWJ_20230610T212101_0711_02/ECOv002_L2T_LSTE_27946_007_18SWJ_20230610T212101_0711_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "48c709b95ea4c6bb5ebf8ab450758bda22db67b54b286b6eb4d0493d6d59c14d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18SWJ_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18SWJ_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18SWJ_20230611T203139_0711_02_cloud.tif",
+      "bytes": 31451,
+      "sha256": "1645ba163da7b3cabf05e94995545301b3f4ed47697af3cb173cdeccf867008d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18TWK_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18TWK_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18TWK_20230611T203139_0711_02_cloud.tif",
+      "bytes": 38150,
+      "sha256": "1ddc2e514e13563b9440aa0bb08d0246835a1a6870f6459ac9f77192b9514e1f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18TWL_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18TWL_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18TWL_20230611T203139_0711_02_cloud.tif",
+      "bytes": 52981,
+      "sha256": "739ae3e4ada460f5b51373cca5f8789e58daf8884c4e5279f12b9519106e6ae6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18TWM_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18TWM_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18TWM_20230611T203139_0711_02_cloud.tif",
+      "bytes": 60034,
+      "sha256": "6dce79dae5a127ad01945147dca0a205c77c035a05da9742ec0671e471fa3670",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18TXK_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18TXK_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18TXK_20230611T203139_0711_02_cloud.tif",
+      "bytes": 9470,
+      "sha256": "c60df6812db83e8bdc43344ebaf6a4204306ad2d2aa4cfa95feb7dc87fea8d65",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18TXL_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18TXL_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18TXL_20230611T203139_0711_02_cloud.tif",
+      "bytes": 26439,
+      "sha256": "bee5562276da15dba2342e3f530ba223658f86d813f9223ef57cece0f8d0b056",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18TXM_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18TXM_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18TXM_20230611T203139_0711_02_cloud.tif",
+      "bytes": 14562,
+      "sha256": "943d0bbf8d70dc1edab8985c1b00d6e0ce1c13102083407bf61df2ecbac8dcda",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18SWJ_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18SWJ_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18SWJ_20230722T214855_0712_02_cloud.tif",
+      "bytes": 59883,
+      "sha256": "48856c88814c5cad3649e5d29e7ab43d59fb13798cde3deda9bb309b23ea573e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18TWK_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18TWK_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18TWK_20230722T214855_0712_02_cloud.tif",
+      "bytes": 66779,
+      "sha256": "33ac9d68213ca0acb7669842ff0508f3eae752c6c1ad31b6764faccbcf56e452",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18TWL_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18TWL_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18TWL_20230722T214855_0712_02_cloud.tif",
+      "bytes": 45696,
+      "sha256": "27f53e8db7cdac3140f2ec7b59ea307e42f1d531e39cc3cdd47087bc122b9394",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18TWM_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18TWM_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18TWM_20230722T214855_0712_02_cloud.tif",
+      "bytes": 27383,
+      "sha256": "997c4f62f1aebbe84d6ffed7634039007bd0d402ff55c571aaba5825bb89775e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18TXK_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18TXK_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18TXK_20230722T214855_0712_02_cloud.tif",
+      "bytes": 60083,
+      "sha256": "35f318f6866ffffc22c42cefa5c9af481f8d2f7388b11044b41cfc47f25fd9dc",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18TXL_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18TXL_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18TXL_20230722T214855_0712_02_cloud.tif",
+      "bytes": 27385,
+      "sha256": "395ad27020ffd960cf1e4d0e0e407a21b9010b2594cf90e0e413d12b0b669d9f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18TXM_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18TXM_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18TXM_20230722T214855_0712_02_cloud.tif",
+      "bytes": 7576,
+      "sha256": "66c90faf871e18cd482fb6d67cae4a494e8a8bd611609cb8a1b5d46f1934e852",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28644,
+      "asset": "ECOv002_L2T_LSTE_28644_007_18TWM_20230725T210029_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28644_007_18TWM_20230725T210029_0712_01/ECOv002_L2T_LSTE_28644_007_18TWM_20230725T210029_0712_01_cloud.tif",
+      "bytes": 13522,
+      "sha256": "a255eced386cf56d9615a0cc4715ceac3b0bb35eea227cb4620cdda0d0e0abba",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28644,
+      "asset": "ECOv002_L2T_LSTE_28644_008_18TWM_20230725T210121_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28644_008_18TWM_20230725T210121_0712_01/ECOv002_L2T_LSTE_28644_008_18TWM_20230725T210121_0712_01_cloud.tif",
+      "bytes": 11921,
+      "sha256": "6e759459e3b661b4967abc2bd8355dae94337f607b39463ac7a4e85fddfa62c5",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_18TWK_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_18TWK_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_18TWK_20230726T201243_0712_02_cloud.tif",
+      "bytes": 9119,
+      "sha256": "fd25377279dc3099256cb83ad8602542f74fc7d0af8acea9b8580a7d730f9f27",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_18TWL_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_18TWL_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_18TWL_20230726T201243_0712_02_cloud.tif",
+      "bytes": 52093,
+      "sha256": "83ed016179e1b1ee4162af59eac613030f7133f5b0dd612080ae1a5aadf2c0c3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_18TWM_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_18TWM_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_18TWM_20230726T201243_0712_02_cloud.tif",
+      "bytes": 55275,
+      "sha256": "7cb05cadff336e9af54e356e92c9db611bf0c74ebeec97b7a6cce1a660a543b8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_18TXK_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_18TXK_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_18TXK_20230726T201243_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "9d2dbfffbf6fc8e5674f912afac96004b1afc9d53ce74086f6276aa2a6ec0035",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_18TXL_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_18TXL_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_18TXL_20230726T201243_0712_02_cloud.tif",
+      "bytes": 15859,
+      "sha256": "247b58c014370ea16cba9a547aad562ebaff2028ccba260e0f08f76057045fde",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_18TXM_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_18TXM_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_18TXM_20230726T201243_0712_02_cloud.tif",
+      "bytes": 46039,
+      "sha256": "4d9d96cd5d487898b324054ef86709b09abcb02631c9ab432b45c2b007f069e0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_18TYL_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_18TYL_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_18TYL_20230726T201243_0712_02_cloud.tif",
+      "bytes": 5817,
+      "sha256": "d6e14a3d9a43a23a9f7442cda04ce88c1043e6a11a82aaccbc1a778f64ef6a8c",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_19TBF_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_19TBF_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_19TBF_20230726T201243_0712_02_cloud.tif",
+      "bytes": 5717,
+      "sha256": "d1389e3786c9b1a4f3c40689b4e0959e60eb52ede30b37bad5ea8e5d53f2bde0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28800,
+      "asset": "ECOv002_L2T_LSTE_28800_008_18TWM_20230804T223934_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28800_008_18TWM_20230804T223934_0712_02/ECOv002_L2T_LSTE_28800_008_18TWM_20230804T223934_0712_02_cloud.tif",
+      "bytes": 9478,
+      "sha256": "f4680db5bbd2beab26653c7c65f7fb111c705e392a44224d8135e06544179feb",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28800,
+      "asset": "ECOv002_L2T_LSTE_28800_009_18TWL_20230804T224026_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28800_009_18TWL_20230804T224026_0712_02/ECOv002_L2T_LSTE_28800_009_18TWL_20230804T224026_0712_02_cloud.tif",
+      "bytes": 15924,
+      "sha256": "95a11678c18db1a0fb713677aed225eed01d5dad9247f35eac277e59cdca59d6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28800,
+      "asset": "ECOv002_L2T_LSTE_28800_009_18TWM_20230804T224026_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28800_009_18TWM_20230804T224026_0712_02/ECOv002_L2T_LSTE_28800_009_18TWM_20230804T224026_0712_02_cloud.tif",
+      "bytes": 17340,
+      "sha256": "e03f5418eed92db7d60daa79d099a22f8a9ace3a6cb62bd91ed0992e35e72221",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28800,
+      "asset": "ECOv002_L2T_LSTE_28800_009_18TXL_20230804T224026_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28800_009_18TXL_20230804T224026_0712_02/ECOv002_L2T_LSTE_28800_009_18TXL_20230804T224026_0712_02_cloud.tif",
+      "bytes": 8636,
+      "sha256": "242c93c0d9ba59b54af113392a2a8103f8deabf3b41bca7e569d42b415ba70a0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28800,
+      "asset": "ECOv002_L2T_LSTE_28800_009_18TXM_20230804T224026_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28800_009_18TXM_20230804T224026_0712_02/ECOv002_L2T_LSTE_28800_009_18TXM_20230804T224026_0712_02_cloud.tif",
+      "bytes": 35419,
+      "sha256": "62419b966d16852fe6ac795703e0cabe7633e06223613ba083d0902bddf98b02",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28800,
+      "asset": "ECOv002_L2T_LSTE_28800_009_18TYL_20230804T224026_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28800_009_18TYL_20230804T224026_0712_02/ECOv002_L2T_LSTE_28800_009_18TYL_20230804T224026_0712_02_cloud.tif",
+      "bytes": 7016,
+      "sha256": "9d988b30b92f3521464099668f2f26eba9144c59369a716eb95bd112e80314f3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "new_york",
+      "orbit": 28800,
+      "asset": "ECOv002_L2T_LSTE_28800_009_19TBF_20230804T224026_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28800_009_19TBF_20230804T224026_0712_02/ECOv002_L2T_LSTE_28800_009_19TBF_20230804T224026_0712_02_cloud.tif",
+      "bytes": 7016,
+      "sha256": "ed0fc4623a2441a76875131d66c1e40955dc8e53f5ea6038a0ba8340ed8e8eed",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

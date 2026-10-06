@@ -1,0 +1,78 @@
+{
+  "phoenix": {
+    "original_passes": 11,
+    "cooling_K_per_10pp_range": [
+      0.8927882384055235,
+      1.705227828868181
+    ],
+    "SE_1km_range": [
+      0.017323052633300695,
+      0.054155236584696745
+    ],
+    "SE_8km_range": [
+      0.03318330643587326,
+      0.08151448705813746
+    ],
+    "native_cells_range": [
+      341920,
+      556675
+    ],
+    "footprint_area_km2_range": [
+      1675.408,
+      2727.7075
+    ],
+    "canopy_median_range": [
+      0.024833221919834614,
+      0.030140208080410957
+    ],
+    "complete_linked_weather": 6,
+    "apparent_solar_hour_range": [
+      10.102393451268636,
+      16.212501193031922
+    ],
+    "month_counts": {
+      "6": 4,
+      "7": 1,
+      "8": 4,
+      "9": 2
+    },
+    "intervals_8km_above_zero": 11
+  },
+  "atlanta": {
+    "original_passes": 5,
+    "cooling_K_per_10pp_range": [
+      0.09739955103292858,
+      0.33790819348265183
+    ],
+    "SE_1km_range": [
+      0.0022975879629280344,
+      0.008929117018884858
+    ],
+    "SE_8km_range": [
+      0.004845022551326529,
+      0.013468850648950342
+    ],
+    "native_cells_range": [
+      237294,
+      510119
+    ],
+    "footprint_area_km2_range": [
+      1162.7406,
+      2499.5831
+    ],
+    "canopy_median_range": [
+      0.2817208468914032,
+      0.33606940507888794
+    ],
+    "complete_linked_weather": 4,
+    "apparent_solar_hour_range": [
+      10.055209145853059,
+      17.37627874224167
+    ],
+    "month_counts": {
+      "6": 4,
+      "7": 1
+    },
+    "intervals_8km_above_zero": 5
+  }
+}

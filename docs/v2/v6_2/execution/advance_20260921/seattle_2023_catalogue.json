@@ -1,0 +1,4085 @@
+{
+  "audit": {
+    "city": "seattle",
+    "retrieved_utc": "2026-09-21T17:46:37.310334+00:00",
+    "period_utc": "2023-06-01/2023-09-30",
+    "CMR_bbox_hits": 406,
+    "CMR_rows_received": 406,
+    "pages": 1,
+    "intersecting_granules_before_revision_dedup": 406,
+    "unique_passes": 96,
+    "morning_0930_1130_passes": 5,
+    "afternoon_1500_1800_passes": 14,
+    "afternoon_months": [
+      "06",
+      "07",
+      "08",
+      "09"
+    ],
+    "afternoon_tile_mean_cloud_pct_median": null,
+    "afternoon_passes_with_cloud_metadata": 0,
+    "limitation": "CMR tile cloud metadata is not urban-domain clear fraction; no view-angle, full-domain coverage or usable-cell certification; windows are descriptive summaries, not selection gates."
+  },
+  "granules": [
+    {
+      "city": "seattle",
+      "orbit": 27807,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27807_006_10TET_20230601T220404_0710_01",
+      "acquisition_utc": "2023-06-01T22:04:04.080Z",
+      "apparent_solar_hour_at_domain_centroid": 13.957537959027057,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27807,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27807_006_10UEU_20230601T220404_0710_01",
+      "acquisition_utc": "2023-06-01T22:04:04.080Z",
+      "apparent_solar_hour_at_domain_centroid": 13.957537959027057,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27807,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27807_006_10TET_20230601T220404_0711_02",
+      "acquisition_utc": "2023-06-01T22:04:04.088Z",
+      "apparent_solar_hour_at_domain_centroid": 13.957537959027057,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27807,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27807_006_10UEU_20230601T220404_0711_02",
+      "acquisition_utc": "2023-06-01T22:04:04.088Z",
+      "apparent_solar_hour_at_domain_centroid": 13.957537959027057,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27807,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27807_007_10TET_20230601T220456_0710_01",
+      "acquisition_utc": "2023-06-01T22:04:56.050Z",
+      "apparent_solar_hour_at_domain_centroid": 13.971980890931144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27807,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27807_007_10UEU_20230601T220456_0710_01",
+      "acquisition_utc": "2023-06-01T22:04:56.050Z",
+      "apparent_solar_hour_at_domain_centroid": 13.971980890931144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27807,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27807_007_10UEU_20230601T220456_0711_02",
+      "acquisition_utc": "2023-06-01T22:04:56.057Z",
+      "apparent_solar_hour_at_domain_centroid": 13.971980890931144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27823,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27823_007_10UEU_20230602T225231_0710_01",
+      "acquisition_utc": "2023-06-02T22:52:31.400Z",
+      "apparent_solar_hour_at_domain_centroid": 14.762382295959483,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27823,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27823_007_10UEU_20230602T225231_0711_02",
+      "acquisition_utc": "2023-06-02T22:52:31.401Z",
+      "apparent_solar_hour_at_domain_centroid": 14.762382295959483,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27825,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27825_001_10UEU_20230603T020646_0710_01",
+      "acquisition_utc": "2023-06-03T02:06:46.620Z",
+      "apparent_solar_hour_at_domain_centroid": 17.99952730408722,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27825,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27825_001_10TET_20230603T020646_0710_01",
+      "acquisition_utc": "2023-06-03T02:06:46.620Z",
+      "apparent_solar_hour_at_domain_centroid": 17.99952730408722,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27825,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27825_001_10TET_20230603T020646_0711_02",
+      "acquisition_utc": "2023-06-03T02:06:46.620Z",
+      "apparent_solar_hour_at_domain_centroid": 17.99952730408722,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27825,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27825_001_10UEU_20230603T020646_0711_02",
+      "acquisition_utc": "2023-06-03T02:06:46.620Z",
+      "apparent_solar_hour_at_domain_centroid": 17.99952730408722,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27838,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27838_003_10TET_20230603T220257_0710_01",
+      "acquisition_utc": "2023-06-03T22:02:57.860Z",
+      "apparent_solar_hour_at_domain_centroid": 13.933688602967004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27838,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27838_003_10TET_20230603T220257_0711_02",
+      "acquisition_utc": "2023-06-03T22:02:57.866Z",
+      "apparent_solar_hour_at_domain_centroid": 13.933688602967004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27838,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27838_004_10TET_20230603T220349_0710_01",
+      "acquisition_utc": "2023-06-03T22:03:49.830Z",
+      "apparent_solar_hour_at_domain_centroid": 13.94813140792011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27838,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27838_004_10UEU_20230603T220349_0710_01",
+      "acquisition_utc": "2023-06-03T22:03:49.830Z",
+      "apparent_solar_hour_at_domain_centroid": 13.94813140792011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27838,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27838_004_10TET_20230603T220349_0711_02",
+      "acquisition_utc": "2023-06-03T22:03:49.836Z",
+      "apparent_solar_hour_at_domain_centroid": 13.94813140792011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27838,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27838_004_10UEU_20230603T220349_0711_02",
+      "acquisition_utc": "2023-06-03T22:03:49.836Z",
+      "apparent_solar_hour_at_domain_centroid": 13.94813140792011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27853,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27853_003_10TET_20230604T211437_0710_01",
+      "acquisition_utc": "2023-06-04T21:14:37.560Z",
+      "apparent_solar_hour_at_domain_centroid": 13.125454096806648,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27853,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27853_003_10UEU_20230604T211437_0710_01",
+      "acquisition_utc": "2023-06-04T21:14:37.560Z",
+      "apparent_solar_hour_at_domain_centroid": 13.125454096806648,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27853,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27853_003_10TET_20230604T211437_0711_02",
+      "acquisition_utc": "2023-06-04T21:14:37.562Z",
+      "apparent_solar_hour_at_domain_centroid": 13.125454096806648,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27853,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27853_003_10UEU_20230604T211437_0711_02",
+      "acquisition_utc": "2023-06-04T21:14:37.562Z",
+      "apparent_solar_hour_at_domain_centroid": 13.125454096806648,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27868,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27868_006_10UEU_20230605T202544_0710_01",
+      "acquisition_utc": "2023-06-05T20:25:44.180Z",
+      "apparent_solar_hour_at_domain_centroid": 12.307964324650415,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27868,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27868_006_10TET_20230605T202544_0710_01",
+      "acquisition_utc": "2023-06-05T20:25:44.180Z",
+      "apparent_solar_hour_at_domain_centroid": 12.307964324650415,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27868,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27868_006_10UEU_20230605T202544_0711_02",
+      "acquisition_utc": "2023-06-05T20:25:44.185Z",
+      "apparent_solar_hour_at_domain_centroid": 12.307964324650415,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27868,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27868_006_10TET_20230605T202544_0711_02",
+      "acquisition_utc": "2023-06-05T20:25:44.185Z",
+      "apparent_solar_hour_at_domain_centroid": 12.307964324650415,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27871,
+      "scene": 10,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27871_010_10TET_20230606T011630_0710_01",
+      "acquisition_utc": "2023-06-06T01:16:30.670Z",
+      "apparent_solar_hour_at_domain_centroid": 17.153486063693997,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27871,
+      "scene": 10,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27871_010_10TET_20230606T011630_0711_02",
+      "acquisition_utc": "2023-06-06T01:16:30.672Z",
+      "apparent_solar_hour_at_domain_centroid": 17.153486063693997,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27886,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27886_006_10UEU_20230607T002725_0712_01",
+      "acquisition_utc": "2023-06-07T00:27:25.471Z",
+      "apparent_solar_hour_at_domain_centroid": 16.332561045005512,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27886,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27886_006_10TET_20230607T002725_0712_01",
+      "acquisition_utc": "2023-06-07T00:27:25.471Z",
+      "apparent_solar_hour_at_domain_centroid": 16.332561045005512,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27899,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27899_001_10UEU_20230607T202421_0710_01",
+      "acquisition_utc": "2023-06-07T20:24:21.610Z",
+      "apparent_solar_hour_at_domain_centroid": 12.278916847738339,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27899,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27899_001_10TET_20230607T202421_0710_01",
+      "acquisition_utc": "2023-06-07T20:24:21.610Z",
+      "apparent_solar_hour_at_domain_centroid": 12.278916847738339,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27899,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27899_001_10TET_20230607T202421_0711_02",
+      "acquisition_utc": "2023-06-07T20:24:21.617Z",
+      "apparent_solar_hour_at_domain_centroid": 12.278916847738339,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27899,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27899_001_10UEU_20230607T202421_0711_02",
+      "acquisition_utc": "2023-06-07T20:24:21.617Z",
+      "apparent_solar_hour_at_domain_centroid": 12.278916847738339,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27899,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27899_002_10TET_20230607T202513_0710_01",
+      "acquisition_utc": "2023-06-07T20:25:13.580Z",
+      "apparent_solar_hour_at_domain_centroid": 12.2933594374439,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27899,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27899_002_10UEU_20230607T202513_0710_01",
+      "acquisition_utc": "2023-06-07T20:25:13.580Z",
+      "apparent_solar_hour_at_domain_centroid": 12.2933594374439,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27899,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27899_002_10UEU_20230607T202513_0711_02",
+      "acquisition_utc": "2023-06-07T20:25:13.587Z",
+      "apparent_solar_hour_at_domain_centroid": 12.2933594374439,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27899,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27899_002_10TET_20230607T202513_0711_02",
+      "acquisition_utc": "2023-06-07T20:25:13.587Z",
+      "apparent_solar_hour_at_domain_centroid": 12.2933594374439,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27929,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27929_002_10TET_20230609T184641_0710_01",
+      "acquisition_utc": "2023-06-09T18:46:41.960Z",
+      "apparent_solar_hour_at_domain_centroid": 10.645040244624875,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27929,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27929_002_10TET_20230609T184641_0711_02",
+      "acquisition_utc": "2023-06-09T18:46:41.965Z",
+      "apparent_solar_hour_at_domain_centroid": 10.645040244624875,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27960,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27960_001_10UEU_20230611T184521_0710_01",
+      "acquisition_utc": "2023-06-11T18:45:21.590Z",
+      "apparent_solar_hour_at_domain_centroid": 10.616232092851503,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27960,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27960_001_10TET_20230611T184521_0710_01",
+      "acquisition_utc": "2023-06-11T18:45:21.590Z",
+      "apparent_solar_hour_at_domain_centroid": 10.616232092851503,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27960,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27960_001_10UEU_20230611T184521_0711_02",
+      "acquisition_utc": "2023-06-11T18:45:21.591Z",
+      "apparent_solar_hour_at_domain_centroid": 10.616232092851503,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27960,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27960_001_10TET_20230611T184521_0711_02",
+      "acquisition_utc": "2023-06-11T18:45:21.591Z",
+      "apparent_solar_hour_at_domain_centroid": 10.616232092851503,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27960,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27960_002_10UEU_20230611T184613_0710_01",
+      "acquisition_utc": "2023-06-11T18:46:13.560Z",
+      "apparent_solar_hour_at_domain_centroid": 10.63067451662674,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27960,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27960_002_10UEU_20230611T184613_0711_02",
+      "acquisition_utc": "2023-06-11T18:46:13.561Z",
+      "apparent_solar_hour_at_domain_centroid": 10.63067451662674,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27962,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27962_001_10TET_20230611T215953_0710_01",
+      "acquisition_utc": "2023-06-11T21:59:53.520Z",
+      "apparent_solar_hour_at_domain_centroid": 13.858000217311027,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27962,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27962_001_10UEU_20230611T215953_0710_01",
+      "acquisition_utc": "2023-06-11T21:59:53.520Z",
+      "apparent_solar_hour_at_domain_centroid": 13.858000217311027,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27962,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_27962_001_10UEU_20230611T215953_0711_02",
+      "acquisition_utc": "2023-06-11T21:59:53.526Z",
+      "apparent_solar_hour_at_domain_centroid": 13.858000217311027,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 27962,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_27962_001_10TET_20230611T215953_0711_02",
+      "acquisition_utc": "2023-06-11T21:59:53.526Z",
+      "apparent_solar_hour_at_domain_centroid": 13.858000217311027,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28021,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28021_002_10TET_20230615T170613_0710_01",
+      "acquisition_utc": "2023-06-15T17:06:13.487Z",
+      "apparent_solar_hour_at_domain_centroid": 8.950412541505827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28021,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28021_002_10UEU_20230615T170613_0710_01",
+      "acquisition_utc": "2023-06-15T17:06:13.487Z",
+      "apparent_solar_hour_at_domain_centroid": 8.950412541505827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28021,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28021_002_10UEU_20230615T170613_0711_02",
+      "acquisition_utc": "2023-06-15T17:06:13.487Z",
+      "apparent_solar_hour_at_domain_centroid": 8.950412541505827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28021,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28021_002_10TET_20230615T170613_0711_02",
+      "acquisition_utc": "2023-06-15T17:06:13.487Z",
+      "apparent_solar_hour_at_domain_centroid": 8.950412541505827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28021,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28021_002_10TET_20230615T170613_0712_03",
+      "acquisition_utc": "2023-06-15T17:06:13.487Z",
+      "apparent_solar_hour_at_domain_centroid": 8.950412541505827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28021,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28021_002_10UEU_20230615T170613_0712_03",
+      "acquisition_utc": "2023-06-15T17:06:13.487Z",
+      "apparent_solar_hour_at_domain_centroid": 8.950412541505827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28067,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28067_002_10TET_20230618T161711_0710_01",
+      "acquisition_utc": "2023-06-18T16:17:11.969Z",
+      "apparent_solar_hour_at_domain_centroid": 8.122541923240279,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28067,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28067_002_10UEU_20230618T161711_0710_01",
+      "acquisition_utc": "2023-06-18T16:17:11.969Z",
+      "apparent_solar_hour_at_domain_centroid": 8.122541923240279,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28067,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28067_002_10UEU_20230618T161711_0711_02",
+      "acquisition_utc": "2023-06-18T16:17:11.969Z",
+      "apparent_solar_hour_at_domain_centroid": 8.122541923240279,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28067,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28067_002_10TET_20230618T161711_0711_02",
+      "acquisition_utc": "2023-06-18T16:17:11.969Z",
+      "apparent_solar_hour_at_domain_centroid": 8.122541923240279,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28082,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28082_003_10TET_20230619T152822_0710_01",
+      "acquisition_utc": "2023-06-19T15:28:22.137Z",
+      "apparent_solar_hour_at_domain_centroid": 7.305419799894577,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28082,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28082_003_10UEU_20230619T152822_0710_01",
+      "acquisition_utc": "2023-06-19T15:28:22.137Z",
+      "apparent_solar_hour_at_domain_centroid": 7.305419799894577,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28082,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28082_003_10TET_20230619T152822_0711_02",
+      "acquisition_utc": "2023-06-19T15:28:22.137Z",
+      "apparent_solar_hour_at_domain_centroid": 7.305419799894577,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28082,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28082_003_10UEU_20230619T152822_0711_02",
+      "acquisition_utc": "2023-06-19T15:28:22.137Z",
+      "apparent_solar_hour_at_domain_centroid": 7.305419799894577,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28097,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28097_005_10UEU_20230620T143924_0711_01",
+      "acquisition_utc": "2023-06-20T14:39:24.035Z",
+      "apparent_solar_hour_at_domain_centroid": 6.485786444743949,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28097,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28097_005_10TET_20230620T143924_0711_01",
+      "acquisition_utc": "2023-06-20T14:39:24.035Z",
+      "apparent_solar_hour_at_domain_centroid": 6.485786444743949,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28097,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28097_006_10TET_20230620T144014_0711_01",
+      "acquisition_utc": "2023-06-20T14:40:14.824Z",
+      "apparent_solar_hour_at_domain_centroid": 6.4996732211677575,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28097,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28097_006_10UEU_20230620T144014_0711_01",
+      "acquisition_utc": "2023-06-20T14:40:14.824Z",
+      "apparent_solar_hour_at_domain_centroid": 6.4996732211677575,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28143,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28143_003_10TET_20230623T135024_0710_01",
+      "acquisition_utc": "2023-06-23T13:50:24.856Z",
+      "apparent_solar_hour_at_domain_centroid": 5.658291001920275,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28143,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28143_003_10UEU_20230623T135024_0710_01",
+      "acquisition_utc": "2023-06-23T13:50:24.856Z",
+      "apparent_solar_hour_at_domain_centroid": 5.658291001920275,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28143,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28143_003_10UEU_20230623T135024_0711_02",
+      "acquisition_utc": "2023-06-23T13:50:24.856Z",
+      "apparent_solar_hour_at_domain_centroid": 5.658291001920275,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28143,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28143_003_10TET_20230623T135024_0711_02",
+      "acquisition_utc": "2023-06-23T13:50:24.856Z",
+      "apparent_solar_hour_at_domain_centroid": 5.658291001920275,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28143,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28143_004_10TET_20230623T135116_0710_01",
+      "acquisition_utc": "2023-06-23T13:51:16.826Z",
+      "apparent_solar_hour_at_domain_centroid": 5.672733254029509,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28143,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28143_004_10UEU_20230623T135116_0710_01",
+      "acquisition_utc": "2023-06-23T13:51:16.826Z",
+      "apparent_solar_hour_at_domain_centroid": 5.672733254029509,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28143,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28143_004_10UEU_20230623T135116_0711_02",
+      "acquisition_utc": "2023-06-23T13:51:16.826Z",
+      "apparent_solar_hour_at_domain_centroid": 5.672733254029509,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28143,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28143_004_10TET_20230623T135116_0711_02",
+      "acquisition_utc": "2023-06-23T13:51:16.826Z",
+      "apparent_solar_hour_at_domain_centroid": 5.672733254029509,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28158,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28158_006_10TET_20230624T130153_0710_01",
+      "acquisition_utc": "2023-06-24T13:01:53.914Z",
+      "apparent_solar_hour_at_domain_centroid": 4.846166360120361,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28158,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28158_006_10UEU_20230624T130153_0710_01",
+      "acquisition_utc": "2023-06-24T13:01:53.914Z",
+      "apparent_solar_hour_at_domain_centroid": 4.846166360120361,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28158,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28158_006_10TET_20230624T130153_0711_02",
+      "acquisition_utc": "2023-06-24T13:01:53.914Z",
+      "apparent_solar_hour_at_domain_centroid": 4.846166360120361,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28158,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28158_006_10UEU_20230624T130153_0711_02",
+      "acquisition_utc": "2023-06-24T13:01:53.914Z",
+      "apparent_solar_hour_at_domain_centroid": 4.846166360120361,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28204,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28204_004_10TET_20230627T121150_0710_01",
+      "acquisition_utc": "2023-06-27T12:11:50.746Z",
+      "apparent_solar_hour_at_domain_centroid": 4.00134464283884,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28204,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28204_004_10TET_20230627T121150_0711_02",
+      "acquisition_utc": "2023-06-27T12:11:50.746Z",
+      "apparent_solar_hour_at_domain_centroid": 4.00134464283884,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28204,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28204_005_10TET_20230627T121242_0710_01",
+      "acquisition_utc": "2023-06-27T12:12:42.716Z",
+      "apparent_solar_hour_at_domain_centroid": 4.015786951189149,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28204,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28204_005_10UEU_20230627T121242_0710_01",
+      "acquisition_utc": "2023-06-27T12:12:42.716Z",
+      "apparent_solar_hour_at_domain_centroid": 4.015786951189149,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28204,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28204_005_10UEU_20230627T121242_0711_02",
+      "acquisition_utc": "2023-06-27T12:12:42.716Z",
+      "apparent_solar_hour_at_domain_centroid": 4.015786951189149,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28204,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28204_005_10TET_20230627T121242_0711_02",
+      "acquisition_utc": "2023-06-27T12:12:42.716Z",
+      "apparent_solar_hour_at_domain_centroid": 4.015786951189149,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28235,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28235_001_10UEU_20230629T121101_0710_01",
+      "acquisition_utc": "2023-06-29T12:11:01.038Z",
+      "apparent_solar_hour_at_domain_centroid": 3.980716652738637,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28235,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28235_001_10UEU_20230629T121101_0711_02",
+      "acquisition_utc": "2023-06-29T12:11:01.038Z",
+      "apparent_solar_hour_at_domain_centroid": 3.980716652738637,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28235,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28235_002_10UEU_20230629T121153_0710_01",
+      "acquisition_utc": "2023-06-29T12:11:53.008Z",
+      "apparent_solar_hour_at_domain_centroid": 3.995159011387401,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28235,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28235_002_10UEU_20230629T121153_0711_02",
+      "acquisition_utc": "2023-06-29T12:11:53.008Z",
+      "apparent_solar_hour_at_domain_centroid": 3.995159011387401,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28265,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28265_002_10TET_20230701T103312_0710_01",
+      "acquisition_utc": "2023-07-01T10:33:12.066Z",
+      "apparent_solar_hour_at_domain_centroid": 2.34383936610689,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28265,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28265_002_10UEU_20230701T103312_0710_01",
+      "acquisition_utc": "2023-07-01T10:33:12.066Z",
+      "apparent_solar_hour_at_domain_centroid": 2.34383936610689,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28265,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28265_002_10TET_20230701T103312_0711_02",
+      "acquisition_utc": "2023-07-01T10:33:12.066Z",
+      "apparent_solar_hour_at_domain_centroid": 2.34383936610689,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28265,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28265_002_10UEU_20230701T103312_0711_02",
+      "acquisition_utc": "2023-07-01T10:33:12.066Z",
+      "apparent_solar_hour_at_domain_centroid": 2.34383936610689,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28265,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28265_003_10TET_20230701T103404_0710_01",
+      "acquisition_utc": "2023-07-01T10:34:04.036Z",
+      "apparent_solar_hour_at_domain_centroid": 2.35828178700964,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28265,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28265_003_10UEU_20230701T103404_0710_01",
+      "acquisition_utc": "2023-07-01T10:34:04.036Z",
+      "apparent_solar_hour_at_domain_centroid": 2.35828178700964,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28265,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28265_003_10TET_20230701T103404_0711_02",
+      "acquisition_utc": "2023-07-01T10:34:04.036Z",
+      "apparent_solar_hour_at_domain_centroid": 2.35828178700964,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28265,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28265_003_10UEU_20230701T103404_0711_02",
+      "acquisition_utc": "2023-07-01T10:34:04.036Z",
+      "apparent_solar_hour_at_domain_centroid": 2.35828178700964,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28280,
+      "scene": 8,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28280_008_10TET_20230702T094445_0710_01",
+      "acquisition_utc": "2023-07-02T09:44:45.834Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5331188156061264,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28280,
+      "scene": 8,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28280_008_10TET_20230702T094445_0711_02",
+      "acquisition_utc": "2023-07-02T09:44:45.834Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5331188156061264,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28298,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28298_006_10TET_20230703T134623_0710_01",
+      "acquisition_utc": "2023-07-03T13:46:23.576Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5565304285628105,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28298,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28298_006_10UEU_20230703T134623_0710_01",
+      "acquisition_utc": "2023-07-03T13:46:23.576Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5565304285628105,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28298,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28298_006_10TET_20230703T134623_0711_02",
+      "acquisition_utc": "2023-07-03T13:46:23.576Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5565304285628105,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28298,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28298_006_10UEU_20230703T134623_0711_02",
+      "acquisition_utc": "2023-07-03T13:46:23.576Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5565304285628105,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28311,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28311_001_10TET_20230704T094317_0710_01",
+      "acquisition_utc": "2023-07-04T09:43:17.161Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5022104833803531,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28311,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28311_001_10UEU_20230704T094317_0710_01",
+      "acquisition_utc": "2023-07-04T09:43:17.161Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5022104833803531,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28311,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28311_001_10TET_20230704T094317_0712_02",
+      "acquisition_utc": "2023-07-04T09:43:17.161Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5022104833803531,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28311,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28311_001_10UEU_20230704T094317_0712_02",
+      "acquisition_utc": "2023-07-04T09:43:17.161Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5022104833803531,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28326,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28326_006_10TET_20230705T085501_0710_01",
+      "acquisition_utc": "2023-07-05T08:55:01.584Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6947473271423612,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28326,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28326_006_10UEU_20230705T085501_0710_01",
+      "acquisition_utc": "2023-07-05T08:55:01.584Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6947473271423612,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28326,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28326_006_10UEU_20230705T085501_0712_02",
+      "acquisition_utc": "2023-07-05T08:55:01.584Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6947473271423612,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28326,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28326_006_10TET_20230705T085501_0712_02",
+      "acquisition_utc": "2023-07-05T08:55:01.584Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6947473271423612,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28359,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28359_007_10TET_20230707T121005_0710_01",
+      "acquisition_utc": "2023-07-07T12:10:05.536Z",
+      "apparent_solar_hour_at_domain_centroid": 3.939466047498172,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28359,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28359_007_10UEU_20230707T121005_0710_01",
+      "acquisition_utc": "2023-07-07T12:10:05.536Z",
+      "apparent_solar_hour_at_domain_centroid": 3.939466047498172,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28359,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28359_007_10TET_20230707T121005_0712_02",
+      "acquisition_utc": "2023-07-07T12:10:05.536Z",
+      "apparent_solar_hour_at_domain_centroid": 3.939466047498172,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28359,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28359_007_10UEU_20230707T121005_0712_02",
+      "acquisition_utc": "2023-07-07T12:10:05.536Z",
+      "apparent_solar_hour_at_domain_centroid": 3.939466047498172,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28372,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28372_001_10TET_20230708T080732_0710_01",
+      "acquisition_utc": "2023-07-08T08:07:32.203Z",
+      "apparent_solar_hour_at_domain_centroid": 23.894588961257337,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28372,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28372_001_10UEU_20230708T080732_0710_01",
+      "acquisition_utc": "2023-07-08T08:07:32.203Z",
+      "apparent_solar_hour_at_domain_centroid": 23.894588961257337,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28372,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28372_001_10TET_20230708T080732_0712_02",
+      "acquisition_utc": "2023-07-08T08:07:32.203Z",
+      "apparent_solar_hour_at_domain_centroid": 23.894588961257337,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28372,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28372_001_10UEU_20230708T080732_0712_02",
+      "acquisition_utc": "2023-07-08T08:07:32.203Z",
+      "apparent_solar_hour_at_domain_centroid": 23.894588961257337,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28372,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28372_002_10TET_20230708T080824_0710_01",
+      "acquisition_utc": "2023-07-08T08:08:24.173Z",
+      "apparent_solar_hour_at_domain_centroid": 23.909031709346205,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28372,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28372_002_10UEU_20230708T080824_0710_01",
+      "acquisition_utc": "2023-07-08T08:08:24.173Z",
+      "apparent_solar_hour_at_domain_centroid": 23.909031709346205,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28372,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28372_002_10TET_20230708T080824_0712_02",
+      "acquisition_utc": "2023-07-08T08:08:24.173Z",
+      "apparent_solar_hour_at_domain_centroid": 23.909031709346205,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28372,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28372_002_10UEU_20230708T080824_0712_02",
+      "acquisition_utc": "2023-07-08T08:08:24.173Z",
+      "apparent_solar_hour_at_domain_centroid": 23.909031709346205,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28403,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28403_002_10UEU_20230710T080839_0710_01",
+      "acquisition_utc": "2023-07-10T08:08:39.465Z",
+      "apparent_solar_hour_at_domain_centroid": 23.907763004835864,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28403,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28403_002_10UEU_20230710T080839_0712_02",
+      "acquisition_utc": "2023-07-10T08:08:39.465Z",
+      "apparent_solar_hour_at_domain_centroid": 23.907763004835864,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28418,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28418_001_10TET_20230711T072013_0710_01",
+      "acquisition_utc": "2023-07-11T07:20:13.229Z",
+      "apparent_solar_hour_at_domain_centroid": 23.098066788733284,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28418,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28418_001_10UEU_20230711T072013_0710_01",
+      "acquisition_utc": "2023-07-11T07:20:13.229Z",
+      "apparent_solar_hour_at_domain_centroid": 23.098066788733284,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28418,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28418_001_10TET_20230711T072013_0712_02",
+      "acquisition_utc": "2023-07-11T07:20:13.229Z",
+      "apparent_solar_hour_at_domain_centroid": 23.098066788733284,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28418,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28418_001_10UEU_20230711T072013_0712_02",
+      "acquisition_utc": "2023-07-11T07:20:13.229Z",
+      "apparent_solar_hour_at_domain_centroid": 23.098066788733284,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28418,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28418_002_10UEU_20230711T072105_0710_01",
+      "acquisition_utc": "2023-07-11T07:21:05.199Z",
+      "apparent_solar_hour_at_domain_centroid": 23.112509724675647,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28418,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28418_002_10UEU_20230711T072105_0712_02",
+      "acquisition_utc": "2023-07-11T07:21:05.199Z",
+      "apparent_solar_hour_at_domain_centroid": 23.112509724675647,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28435,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28435_003_10UEU_20230712T094635_0710_01",
+      "acquisition_utc": "2023-07-12T09:46:35.455Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5348193776175652,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28435,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28435_003_10UEU_20230712T094635_0712_02",
+      "acquisition_utc": "2023-07-12T09:46:35.455Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5348193776175652,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28435,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28435_003_10TET_20230712T094635_0712_02",
+      "acquisition_utc": "2023-07-12T09:46:35.455Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5348193776175652,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28464,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28464_002_10UEU_20230714T063251_0710_01",
+      "acquisition_utc": "2023-07-14T06:32:51.991Z",
+      "apparent_solar_hour_at_domain_centroid": 22.30170153178448,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28464,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28464_002_10UEU_20230714T063251_0712_02",
+      "acquisition_utc": "2023-07-14T06:32:51.991Z",
+      "apparent_solar_hour_at_domain_centroid": 22.30170153178448,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28479,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28479_001_10TET_20230715T054432_0710_01",
+      "acquisition_utc": "2023-07-15T05:44:32.834Z",
+      "apparent_solar_hour_at_domain_centroid": 21.49440383922678,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28479,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28479_001_10UEU_20230715T054432_0710_01",
+      "acquisition_utc": "2023-07-15T05:44:32.834Z",
+      "apparent_solar_hour_at_domain_centroid": 21.49440383922678,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28479,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28479_001_10TET_20230715T054432_0712_02",
+      "acquisition_utc": "2023-07-15T05:44:32.834Z",
+      "apparent_solar_hour_at_domain_centroid": 21.49440383922678,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28479,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28479_001_10UEU_20230715T054432_0712_02",
+      "acquisition_utc": "2023-07-15T05:44:32.834Z",
+      "apparent_solar_hour_at_domain_centroid": 21.49440383922678,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28479,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28479_002_10UEU_20230715T054524_0710_01",
+      "acquisition_utc": "2023-07-15T05:45:24.804Z",
+      "apparent_solar_hour_at_domain_centroid": 21.508847063349876,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28479,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28479_002_10UEU_20230715T054524_0712_02",
+      "acquisition_utc": "2023-07-15T05:45:24.804Z",
+      "apparent_solar_hour_at_domain_centroid": 21.508847063349876,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28494,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28494_003_10TET_20230716T045618_0710_01",
+      "acquisition_utc": "2023-07-16T04:56:18.425Z",
+      "apparent_solar_hour_at_domain_centroid": 20.68861680505782,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28494,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28494_003_10UEU_20230716T045618_0710_01",
+      "acquisition_utc": "2023-07-16T04:56:18.425Z",
+      "apparent_solar_hour_at_domain_centroid": 20.68861680505782,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28494,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28494_003_10TET_20230716T045618_0712_02",
+      "acquisition_utc": "2023-07-16T04:56:18.425Z",
+      "apparent_solar_hour_at_domain_centroid": 20.68861680505782,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28494,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28494_003_10UEU_20230716T045618_0712_02",
+      "acquisition_utc": "2023-07-16T04:56:18.425Z",
+      "apparent_solar_hour_at_domain_centroid": 20.68861680505782,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28494,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28494_004_10TET_20230716T045710_0710_01",
+      "acquisition_utc": "2023-07-16T04:57:10.395Z",
+      "apparent_solar_hour_at_domain_centroid": 20.703060106276336,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28494,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28494_004_10UEU_20230716T045710_0710_01",
+      "acquisition_utc": "2023-07-16T04:57:10.395Z",
+      "apparent_solar_hour_at_domain_centroid": 20.703060106276336,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28494,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28494_004_10UEU_20230716T045710_0712_02",
+      "acquisition_utc": "2023-07-16T04:57:10.395Z",
+      "apparent_solar_hour_at_domain_centroid": 20.703060106276336,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28494,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28494_004_10TET_20230716T045710_0712_02",
+      "acquisition_utc": "2023-07-16T04:57:10.395Z",
+      "apparent_solar_hour_at_domain_centroid": 20.703060106276336,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28496,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28496_003_10UEU_20230716T081058_0710_01",
+      "acquisition_utc": "2023-07-16T08:10:58.630Z",
+      "apparent_solar_hour_at_domain_centroid": 23.93280568897655,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28496,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28496_003_10UEU_20230716T081058_0712_02",
+      "acquisition_utc": "2023-07-16T08:10:58.630Z",
+      "apparent_solar_hour_at_domain_centroid": 23.93280568897655,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28509,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28509_002_10TET_20230717T040843_0710_01",
+      "acquisition_utc": "2023-07-17T04:08:43.012Z",
+      "apparent_solar_hour_at_domain_centroid": 19.89378797548123,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28509,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28509_002_10UEU_20230717T040843_0710_01",
+      "acquisition_utc": "2023-07-17T04:08:43.012Z",
+      "apparent_solar_hour_at_domain_centroid": 19.89378797548123,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28509,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28509_002_10TET_20230717T040843_0712_02",
+      "acquisition_utc": "2023-07-17T04:08:43.012Z",
+      "apparent_solar_hour_at_domain_centroid": 19.89378797548123,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28509,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28509_002_10UEU_20230717T040843_0712_02",
+      "acquisition_utc": "2023-07-17T04:08:43.012Z",
+      "apparent_solar_hour_at_domain_centroid": 19.89378797548123,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28525,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28525_002_10UEU_20230718T045726_0710_01",
+      "acquisition_utc": "2023-07-18T04:57:26.879Z",
+      "apparent_solar_hour_at_domain_centroid": 20.70397975424132,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28525,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28525_002_10UEU_20230718T045726_0712_02",
+      "acquisition_utc": "2023-07-18T04:57:26.879Z",
+      "apparent_solar_hour_at_domain_centroid": 20.70397975424132,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28555,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28555_001_10TET_20230720T032025_0710_01",
+      "acquisition_utc": "2023-07-20T03:20:25.211Z",
+      "apparent_solar_hour_at_domain_centroid": 19.0841702544879,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28555,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28555_001_10UEU_20230720T032025_0710_01",
+      "acquisition_utc": "2023-07-20T03:20:25.211Z",
+      "apparent_solar_hour_at_domain_centroid": 19.0841702544879,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28555,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28555_001_10TET_20230720T032025_0712_02",
+      "acquisition_utc": "2023-07-20T03:20:25.211Z",
+      "apparent_solar_hour_at_domain_centroid": 19.0841702544879,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28555,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28555_001_10UEU_20230720T032025_0712_02",
+      "acquisition_utc": "2023-07-20T03:20:25.211Z",
+      "apparent_solar_hour_at_domain_centroid": 19.0841702544879,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28557,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28557_005_10UEU_20230720T063409_0710_01",
+      "acquisition_utc": "2023-07-20T06:34:09.904Z",
+      "apparent_solar_hour_at_domain_centroid": 22.312880173072983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28557,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28557_005_10UEU_20230720T063409_0712_02",
+      "acquisition_utc": "2023-07-20T06:34:09.904Z",
+      "apparent_solar_hour_at_domain_centroid": 22.312880173072983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28601,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28601_001_10TET_20230723T023202_0710_01",
+      "acquisition_utc": "2023-07-23T02:32:02.466Z",
+      "apparent_solar_hour_at_domain_centroid": 18.274476794524322,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28601,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28601_001_10UEU_20230723T023202_0710_01",
+      "acquisition_utc": "2023-07-23T02:32:02.466Z",
+      "apparent_solar_hour_at_domain_centroid": 18.274476794524322,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28601,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28601_001_10TET_20230723T023202_0712_02",
+      "acquisition_utc": "2023-07-23T02:32:02.466Z",
+      "apparent_solar_hour_at_domain_centroid": 18.274476794524322,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28601,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28601_001_10UEU_20230723T023202_0712_02",
+      "acquisition_utc": "2023-07-23T02:32:02.466Z",
+      "apparent_solar_hour_at_domain_centroid": 18.274476794524322,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28601,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28601_002_10TET_20230723T023254_0710_01",
+      "acquisition_utc": "2023-07-23T02:32:54.436Z",
+      "apparent_solar_hour_at_domain_centroid": 18.288920707515203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28601,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28601_002_10UEU_20230723T023254_0710_01",
+      "acquisition_utc": "2023-07-23T02:32:54.436Z",
+      "apparent_solar_hour_at_domain_centroid": 18.288920707515203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28601,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28601_002_10TET_20230723T023254_0712_02",
+      "acquisition_utc": "2023-07-23T02:32:54.436Z",
+      "apparent_solar_hour_at_domain_centroid": 18.288920707515203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28601,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28601_002_10UEU_20230723T023254_0712_02",
+      "acquisition_utc": "2023-07-23T02:32:54.436Z",
+      "apparent_solar_hour_at_domain_centroid": 18.288920707515203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28616_005_10TET_20230724T014339_0710_01",
+      "acquisition_utc": "2023-07-24T01:43:39.779Z",
+      "apparent_solar_hour_at_domain_centroid": 17.46730900366531,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28616_005_10UEU_20230724T014339_0710_01",
+      "acquisition_utc": "2023-07-24T01:43:39.779Z",
+      "apparent_solar_hour_at_domain_centroid": 17.46730900366531,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28616_005_10UEU_20230724T014339_0712_02",
+      "acquisition_utc": "2023-07-24T01:43:39.779Z",
+      "apparent_solar_hour_at_domain_centroid": 17.46730900366531,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28616_005_10TET_20230724T014339_0712_02",
+      "acquisition_utc": "2023-07-24T01:43:39.779Z",
+      "apparent_solar_hour_at_domain_centroid": 17.46730900366531,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28616_006_10TET_20230724T014431_0710_01",
+      "acquisition_utc": "2023-07-24T01:44:31.748Z",
+      "apparent_solar_hour_at_domain_centroid": 17.481753009714797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28616_006_10UEU_20230724T014431_0710_01",
+      "acquisition_utc": "2023-07-24T01:44:31.748Z",
+      "apparent_solar_hour_at_domain_centroid": 17.481753009714797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28616_006_10UEU_20230724T014431_0712_02",
+      "acquisition_utc": "2023-07-24T01:44:31.748Z",
+      "apparent_solar_hour_at_domain_centroid": 17.481753009714797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28616,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28616_006_10TET_20230724T014431_0712_02",
+      "acquisition_utc": "2023-07-24T01:44:31.748Z",
+      "apparent_solar_hour_at_domain_centroid": 17.481753009714797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28631,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28631_006_10TET_20230725T005531_0710_01",
+      "acquisition_utc": "2023-07-25T00:55:31.441Z",
+      "apparent_solar_hour_at_domain_centroid": 16.66445841748425,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28631,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28631_006_10TET_20230725T005531_0712_02",
+      "acquisition_utc": "2023-07-25T00:55:31.441Z",
+      "apparent_solar_hour_at_domain_centroid": 16.66445841748425,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28649,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28649_007_10TET_20230726T045834_0710_01",
+      "acquisition_utc": "2023-07-26T04:58:34.029Z",
+      "apparent_solar_hour_at_domain_centroid": 20.714736493878835,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28649,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28649_007_10UEU_20230726T045834_0710_01",
+      "acquisition_utc": "2023-07-26T04:58:34.029Z",
+      "apparent_solar_hour_at_domain_centroid": 20.714736493878835,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28649,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28649_007_10UEU_20230726T045834_0712_02",
+      "acquisition_utc": "2023-07-26T04:58:34.029Z",
+      "apparent_solar_hour_at_domain_centroid": 20.714736493878835,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28649,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28649_007_10TET_20230726T045834_0712_02",
+      "acquisition_utc": "2023-07-26T04:58:34.029Z",
+      "apparent_solar_hour_at_domain_centroid": 20.714736493878835,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28662,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28662_007_10TET_20230727T005513_0710_01",
+      "acquisition_utc": "2023-07-27T00:55:13.608Z",
+      "apparent_solar_hour_at_domain_centroid": 16.658646510408992,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28662,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28662_007_10UEU_20230727T005513_0710_01",
+      "acquisition_utc": "2023-07-27T00:55:13.608Z",
+      "apparent_solar_hour_at_domain_centroid": 16.658646510408992,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28662,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28662_007_10UEU_20230727T005513_0712_02",
+      "acquisition_utc": "2023-07-27T00:55:13.608Z",
+      "apparent_solar_hour_at_domain_centroid": 16.658646510408992,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28662,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28662_007_10TET_20230727T005513_0712_02",
+      "acquisition_utc": "2023-07-27T00:55:13.608Z",
+      "apparent_solar_hour_at_domain_centroid": 16.658646510408992,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28664,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28664_001_10TET_20230727T040911_0710_01",
+      "acquisition_utc": "2023-07-27T04:09:11.290Z",
+      "apparent_solar_hour_at_domain_centroid": 19.89139360121365,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28664,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28664_001_10UEU_20230727T040911_0710_01",
+      "acquisition_utc": "2023-07-27T04:09:11.290Z",
+      "apparent_solar_hour_at_domain_centroid": 19.89139360121365,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28664,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28664_001_10TET_20230727T040911_0712_02",
+      "acquisition_utc": "2023-07-27T04:09:11.290Z",
+      "apparent_solar_hour_at_domain_centroid": 19.89139360121365,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28664,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28664_001_10UEU_20230727T040911_0712_02",
+      "acquisition_utc": "2023-07-27T04:09:11.290Z",
+      "apparent_solar_hour_at_domain_centroid": 19.89139360121365,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28723,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28723_001_10TET_20230730T231839_0712_02",
+      "acquisition_utc": "2023-07-30T23:18:39.972Z",
+      "apparent_solar_hour_at_domain_centroid": 15.049581602207244,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28723,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28723_002_10TET_20230730T231931_0710_01",
+      "acquisition_utc": "2023-07-30T23:19:31.942Z",
+      "apparent_solar_hour_at_domain_centroid": 15.06402630930015,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28723,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28723_002_10UEU_20230730T231931_0710_01",
+      "acquisition_utc": "2023-07-30T23:19:31.942Z",
+      "apparent_solar_hour_at_domain_centroid": 15.06402630930015,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28723,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28723_002_10TET_20230730T231931_0712_02",
+      "acquisition_utc": "2023-07-30T23:19:31.942Z",
+      "apparent_solar_hour_at_domain_centroid": 15.06402630930015,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28723,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28723_002_10UEU_20230730T231931_0712_02",
+      "acquisition_utc": "2023-07-30T23:19:31.942Z",
+      "apparent_solar_hour_at_domain_centroid": 15.06402630930015,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28738,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28738_005_10TET_20230731T223037_0710_01",
+      "acquisition_utc": "2023-07-31T22:30:37.560Z",
+      "apparent_solar_hour_at_domain_centroid": 14.249529616835888,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28738,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28738_005_10UEU_20230731T223037_0710_01",
+      "acquisition_utc": "2023-07-31T22:30:37.560Z",
+      "apparent_solar_hour_at_domain_centroid": 14.249529616835888,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28738,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28738_005_10TET_20230731T223037_0712_02",
+      "acquisition_utc": "2023-07-31T22:30:37.560Z",
+      "apparent_solar_hour_at_domain_centroid": 14.249529616835888,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28738,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28738_005_10UEU_20230731T223037_0712_02",
+      "acquisition_utc": "2023-07-31T22:30:37.560Z",
+      "apparent_solar_hour_at_domain_centroid": 14.249529616835888,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28738,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28738_006_10UEU_20230731T223129_0710_01",
+      "acquisition_utc": "2023-07-31T22:31:29.530Z",
+      "apparent_solar_hour_at_domain_centroid": 14.263974425863355,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28738,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28738_006_10UEU_20230731T223129_0712_02",
+      "acquisition_utc": "2023-07-31T22:31:29.530Z",
+      "apparent_solar_hour_at_domain_centroid": 14.263974425863355,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28753,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28753_002_10TET_20230801T214230_0710_01",
+      "acquisition_utc": "2023-08-01T21:42:30.246Z",
+      "apparent_solar_hour_at_domain_centroid": 13.44825287531307,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28753,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28753_002_10TET_20230801T214230_0712_02",
+      "acquisition_utc": "2023-08-01T21:42:30.246Z",
+      "apparent_solar_hour_at_domain_centroid": 13.44825287531307,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28769,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28769_003_10UEU_20230802T223121_0710_01",
+      "acquisition_utc": "2023-08-02T22:31:21.185Z",
+      "apparent_solar_hour_at_domain_centroid": 14.26331636136832,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28769,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28769_003_10UEU_20230802T223121_0712_02",
+      "acquisition_utc": "2023-08-02T22:31:21.185Z",
+      "apparent_solar_hour_at_domain_centroid": 14.26331636136832,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28771,
+      "scene": 10,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28771_010_10TET_20230803T014441_0710_01",
+      "acquisition_utc": "2023-08-03T01:44:41.074Z",
+      "apparent_solar_hour_at_domain_centroid": 17.485668924290753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28771,
+      "scene": 10,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28771_010_10UEU_20230803T014441_0710_01",
+      "acquisition_utc": "2023-08-03T01:44:41.074Z",
+      "apparent_solar_hour_at_domain_centroid": 17.485668924290753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28771,
+      "scene": 10,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28771_010_10UEU_20230803T014441_0712_02",
+      "acquisition_utc": "2023-08-03T01:44:41.074Z",
+      "apparent_solar_hour_at_domain_centroid": 17.485668924290753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28771,
+      "scene": 10,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28771_010_10TET_20230803T014441_0712_02",
+      "acquisition_utc": "2023-08-03T01:44:41.074Z",
+      "apparent_solar_hour_at_domain_centroid": 17.485668924290753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28786,
+      "scene": 9,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28786_009_10TET_20230804T005655_0710_01",
+      "acquisition_utc": "2023-08-04T00:56:55.024Z",
+      "apparent_solar_hour_at_domain_centroid": 16.69059086737037,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28786,
+      "scene": 9,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28786_009_10UEU_20230804T005655_0710_01",
+      "acquisition_utc": "2023-08-04T00:56:55.024Z",
+      "apparent_solar_hour_at_domain_centroid": 16.69059086737037,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28786,
+      "scene": 9,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28786_009_10TET_20230804T005655_0712_02",
+      "acquisition_utc": "2023-08-04T00:56:55.024Z",
+      "apparent_solar_hour_at_domain_centroid": 16.69059086737037,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28786,
+      "scene": 9,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28786_009_10UEU_20230804T005655_0712_02",
+      "acquisition_utc": "2023-08-04T00:56:55.024Z",
+      "apparent_solar_hour_at_domain_centroid": 16.69059086737037,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28799,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28799_002_10TET_20230804T205401_0710_01",
+      "acquisition_utc": "2023-08-04T20:54:01.605Z",
+      "apparent_solar_hour_at_domain_centroid": 12.6432785840142,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28799,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28799_002_10UEU_20230804T205401_0710_01",
+      "acquisition_utc": "2023-08-04T20:54:01.605Z",
+      "apparent_solar_hour_at_domain_centroid": 12.6432785840142,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28799,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28799_002_10UEU_20230804T205401_0712_02",
+      "acquisition_utc": "2023-08-04T20:54:01.605Z",
+      "apparent_solar_hour_at_domain_centroid": 12.6432785840142,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28799,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28799_002_10TET_20230804T205401_0712_02",
+      "acquisition_utc": "2023-08-04T20:54:01.605Z",
+      "apparent_solar_hour_at_domain_centroid": 12.6432785840142,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28814,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28814_006_10TET_20230805T200510_0710_01",
+      "acquisition_utc": "2023-08-05T20:05:10.779Z",
+      "apparent_solar_hour_at_domain_centroid": 11.830452880486215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28814,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28814_006_10TET_20230805T200510_0712_02",
+      "acquisition_utc": "2023-08-05T20:05:10.779Z",
+      "apparent_solar_hour_at_domain_centroid": 11.830452880486215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28830,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28830_004_10UEU_20230806T205358_0712_01",
+      "acquisition_utc": "2023-08-06T20:53:58.185Z",
+      "apparent_solar_hour_at_domain_centroid": 12.645405143094473,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28830,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28830_004_10TET_20230806T205358_0712_01",
+      "acquisition_utc": "2023-08-06T20:53:58.185Z",
+      "apparent_solar_hour_at_domain_centroid": 12.645405143094473,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28845,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28845_002_10UEU_20230807T200523_0712_01",
+      "acquisition_utc": "2023-08-07T20:05:23.718Z",
+      "apparent_solar_hour_at_domain_centroid": 11.8373675567986,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28845,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28845_002_10TET_20230807T200523_0712_01",
+      "acquisition_utc": "2023-08-07T20:05:23.718Z",
+      "apparent_solar_hour_at_domain_centroid": 11.8373675567986,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28860,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28860_006_10UEU_20230808T191627_0712_02",
+      "acquisition_utc": "2023-08-08T19:16:27.997Z",
+      "apparent_solar_hour_at_domain_centroid": 11.023661524373694,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28860,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28860_006_10TET_20230808T191627_0712_02",
+      "acquisition_utc": "2023-08-08T19:16:27.997Z",
+      "apparent_solar_hour_at_domain_centroid": 11.023661524373694,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28860,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28860_007_10UEU_20230808T191719_0712_02",
+      "acquisition_utc": "2023-08-08T19:17:19.967Z",
+      "apparent_solar_hour_at_domain_centroid": 11.03810717251751,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28860,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28860_007_10TET_20230808T191719_0712_02",
+      "acquisition_utc": "2023-08-08T19:17:19.967Z",
+      "apparent_solar_hour_at_domain_centroid": 11.03810717251751,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28891,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28891_002_10TET_20230810T191650_0710_01",
+      "acquisition_utc": "2023-08-10T19:16:50.589Z",
+      "apparent_solar_hour_at_domain_centroid": 11.034402666133017,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28891,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28891_002_10UEU_20230810T191650_0710_01",
+      "acquisition_utc": "2023-08-10T19:16:50.589Z",
+      "apparent_solar_hour_at_domain_centroid": 11.034402666133017,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28891,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28891_002_10TET_20230810T191650_0712_02",
+      "acquisition_utc": "2023-08-10T19:16:50.589Z",
+      "apparent_solar_hour_at_domain_centroid": 11.034402666133017,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28891,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28891_002_10UEU_20230810T191650_0712_02",
+      "acquisition_utc": "2023-08-10T19:16:50.589Z",
+      "apparent_solar_hour_at_domain_centroid": 11.034402666133017,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28906,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28906_003_10TET_20230811T182810_0710_01",
+      "acquisition_utc": "2023-08-11T18:28:10.838Z",
+      "apparent_solar_hour_at_domain_centroid": 10.22564437803965,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28906,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28906_003_10UEU_20230811T182810_0710_01",
+      "acquisition_utc": "2023-08-11T18:28:10.838Z",
+      "apparent_solar_hour_at_domain_centroid": 10.22564437803965,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28906,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28906_003_10TET_20230811T182810_0712_02",
+      "acquisition_utc": "2023-08-11T18:28:10.838Z",
+      "apparent_solar_hour_at_domain_centroid": 10.22564437803965,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28906,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28906_003_10UEU_20230811T182810_0712_02",
+      "acquisition_utc": "2023-08-11T18:28:10.838Z",
+      "apparent_solar_hour_at_domain_centroid": 10.22564437803965,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28967,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28967_003_10TET_20230815T165409_0710_01",
+      "acquisition_utc": "2023-08-15T16:54:09.661Z",
+      "apparent_solar_hour_at_domain_centroid": 8.669934459677684,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28967,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28967_003_10UEU_20230815T165409_0710_01",
+      "acquisition_utc": "2023-08-15T16:54:09.661Z",
+      "apparent_solar_hour_at_domain_centroid": 8.669934459677684,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28967,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28967_003_10TET_20230815T165409_0712_02",
+      "acquisition_utc": "2023-08-15T16:54:09.661Z",
+      "apparent_solar_hour_at_domain_centroid": 8.669934459677684,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28967,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28967_003_10UEU_20230815T165409_0712_02",
+      "acquisition_utc": "2023-08-15T16:54:09.661Z",
+      "apparent_solar_hour_at_domain_centroid": 8.669934459677684,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28982,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28982_006_10TET_20230816T160637_0710_01",
+      "acquisition_utc": "2023-08-16T16:06:37.804Z",
+      "apparent_solar_hour_at_domain_centroid": 7.8808707223481855,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28982,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28982_006_10UEU_20230816T160637_0710_01",
+      "acquisition_utc": "2023-08-16T16:06:37.804Z",
+      "apparent_solar_hour_at_domain_centroid": 7.8808707223481855,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28982,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28982_006_10UEU_20230816T160637_0712_02",
+      "acquisition_utc": "2023-08-16T16:06:37.804Z",
+      "apparent_solar_hour_at_domain_centroid": 7.8808707223481855,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28982,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_28982_006_10TET_20230816T160637_0712_02",
+      "acquisition_utc": "2023-08-16T16:06:37.804Z",
+      "apparent_solar_hour_at_domain_centroid": 7.8808707223481855,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28998,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28998_003_10UEU_20230817T165506_0710_01",
+      "acquisition_utc": "2023-08-17T16:55:06.324Z",
+      "apparent_solar_hour_at_domain_centroid": 8.692471318748813,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 28998,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_28998_003_10UEU_20230817T165506_0712_02",
+      "acquisition_utc": "2023-08-17T16:55:06.324Z",
+      "apparent_solar_hour_at_domain_centroid": 8.692471318748813,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29013,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29013_002_10TET_20230818T160739_0710_01",
+      "acquisition_utc": "2023-08-18T16:07:39.370Z",
+      "apparent_solar_hour_at_domain_centroid": 7.905109900779549,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29013,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29013_002_10UEU_20230818T160739_0710_01",
+      "acquisition_utc": "2023-08-18T16:07:39.370Z",
+      "apparent_solar_hour_at_domain_centroid": 7.905109900779549,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29013,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29013_002_10TET_20230818T160739_0712_02",
+      "acquisition_utc": "2023-08-18T16:07:39.370Z",
+      "apparent_solar_hour_at_domain_centroid": 7.905109900779549,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29013,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29013_002_10UEU_20230818T160739_0712_02",
+      "acquisition_utc": "2023-08-18T16:07:39.370Z",
+      "apparent_solar_hour_at_domain_centroid": 7.905109900779549,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29028,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29028_001_10TET_20230819T151927_0710_01",
+      "acquisition_utc": "2023-08-19T15:19:27.345Z",
+      "apparent_solar_hour_at_domain_centroid": 7.105394028246363,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29028,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29028_001_10UEU_20230819T151927_0710_01",
+      "acquisition_utc": "2023-08-19T15:19:27.345Z",
+      "apparent_solar_hour_at_domain_centroid": 7.105394028246363,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29028,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29028_001_10TET_20230819T151927_0712_02",
+      "acquisition_utc": "2023-08-19T15:19:27.345Z",
+      "apparent_solar_hour_at_domain_centroid": 7.105394028246363,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29028,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29028_001_10UEU_20230819T151927_0712_02",
+      "acquisition_utc": "2023-08-19T15:19:27.345Z",
+      "apparent_solar_hour_at_domain_centroid": 7.105394028246363,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29043,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29043_006_10UEU_20230820T143155_0710_01",
+      "acquisition_utc": "2023-08-20T14:31:55.476Z",
+      "apparent_solar_hour_at_domain_centroid": 6.316935709484647,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29043,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29043_006_10TET_20230820T143155_0712_02",
+      "acquisition_utc": "2023-08-20T14:31:55.476Z",
+      "apparent_solar_hour_at_domain_centroid": 6.316935709484647,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29043,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29043_006_10UEU_20230820T143155_0712_02",
+      "acquisition_utc": "2023-08-20T14:31:55.476Z",
+      "apparent_solar_hour_at_domain_centroid": 6.316935709484647,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29059,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29059_001_10UEU_20230821T152104_0710_01",
+      "acquisition_utc": "2023-08-21T15:21:04.139Z",
+      "apparent_solar_hour_at_domain_centroid": 7.140284442019768,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29059,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29059_001_10UEU_20230821T152104_0712_02",
+      "acquisition_utc": "2023-08-21T15:21:04.139Z",
+      "apparent_solar_hour_at_domain_centroid": 7.140284442019768,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29089,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29089_003_10TET_20230823T134416_0710_01",
+      "acquisition_utc": "2023-08-23T13:44:16.630Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5351886673182245,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29089,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29089_003_10UEU_20230823T134416_0710_01",
+      "acquisition_utc": "2023-08-23T13:44:16.630Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5351886673182245,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29089,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29089_003_10TET_20230823T134416_0712_02",
+      "acquisition_utc": "2023-08-23T13:44:16.630Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5351886673182245,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29089,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29089_003_10UEU_20230823T134416_0712_02",
+      "acquisition_utc": "2023-08-23T13:44:16.630Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5351886673182245,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29089,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29089_004_10TET_20230823T134508_0710_01",
+      "acquisition_utc": "2023-08-23T13:45:08.597Z",
+      "apparent_solar_hour_at_domain_centroid": 5.549635760235416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29089,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29089_004_10UEU_20230823T134508_0710_01",
+      "acquisition_utc": "2023-08-23T13:45:08.597Z",
+      "apparent_solar_hour_at_domain_centroid": 5.549635760235416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29089,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29089_004_10UEU_20230823T134508_0712_02",
+      "acquisition_utc": "2023-08-23T13:45:08.597Z",
+      "apparent_solar_hour_at_domain_centroid": 5.549635760235416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29089,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29089_004_10TET_20230823T134508_0712_02",
+      "acquisition_utc": "2023-08-23T13:45:08.597Z",
+      "apparent_solar_hour_at_domain_centroid": 5.549635760235416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29104,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29104_006_10TET_20230824T125644_0710_01",
+      "acquisition_utc": "2023-08-24T12:56:44.758Z",
+      "apparent_solar_hour_at_domain_centroid": 4.747286911269644,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29104,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29104_006_10UEU_20230824T125644_0710_01",
+      "acquisition_utc": "2023-08-24T12:56:44.758Z",
+      "apparent_solar_hour_at_domain_centroid": 4.747286911269644,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29104,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29104_006_10TET_20230824T125644_0712_02",
+      "acquisition_utc": "2023-08-24T12:56:44.758Z",
+      "apparent_solar_hour_at_domain_centroid": 4.747286911269644,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29104,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29104_006_10UEU_20230824T125644_0712_02",
+      "acquisition_utc": "2023-08-24T12:56:44.758Z",
+      "apparent_solar_hour_at_domain_centroid": 4.747286911269644,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29135,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29135_001_10TET_20230826T125634_0710_01",
+      "acquisition_utc": "2023-08-26T12:56:34.074Z",
+      "apparent_solar_hour_at_domain_centroid": 4.753846278801238,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29135,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29135_001_10TET_20230826T125634_0712_02",
+      "acquisition_utc": "2023-08-26T12:56:34.074Z",
+      "apparent_solar_hour_at_domain_centroid": 4.753846278801238,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29135,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29135_001_10UEU_20230826T125634_0712_02",
+      "acquisition_utc": "2023-08-26T12:56:34.074Z",
+      "apparent_solar_hour_at_domain_centroid": 4.753846278801238,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29135,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29135_002_10UEU_20230826T125726_0710_01",
+      "acquisition_utc": "2023-08-26T12:57:26.044Z",
+      "apparent_solar_hour_at_domain_centroid": 4.76829361217992,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29135,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29135_002_10UEU_20230826T125726_0712_02",
+      "acquisition_utc": "2023-08-26T12:57:26.044Z",
+      "apparent_solar_hour_at_domain_centroid": 4.76829361217992,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29165,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29165_005_10TET_20230828T112017_0710_01",
+      "acquisition_utc": "2023-08-28T11:20:17.281Z",
+      "apparent_solar_hour_at_domain_centroid": 3.158637335607705,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29165,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29165_005_10UEU_20230828T112017_0710_01",
+      "acquisition_utc": "2023-08-28T11:20:17.281Z",
+      "apparent_solar_hour_at_domain_centroid": 3.158637335607705,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29165,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29165_005_10UEU_20230828T112017_0712_02",
+      "acquisition_utc": "2023-08-28T11:20:17.281Z",
+      "apparent_solar_hour_at_domain_centroid": 3.158637335607705,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29165,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29165_005_10TET_20230828T112017_0712_02",
+      "acquisition_utc": "2023-08-28T11:20:17.281Z",
+      "apparent_solar_hour_at_domain_centroid": 3.158637335607705,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29211,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29211_004_10TET_20230831T103117_0710_01",
+      "acquisition_utc": "2023-08-31T10:31:17.900Z",
+      "apparent_solar_hour_at_domain_centroid": 2.3574203633226016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29211,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29211_004_10UEU_20230831T103117_0710_01",
+      "acquisition_utc": "2023-08-31T10:31:17.900Z",
+      "apparent_solar_hour_at_domain_centroid": 2.3574203633226016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29211,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29211_004_10UEU_20230831T103117_0712_02",
+      "acquisition_utc": "2023-08-31T10:31:17.900Z",
+      "apparent_solar_hour_at_domain_centroid": 2.3574203633226016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29211,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29211_004_10TET_20230831T103117_0712_02",
+      "acquisition_utc": "2023-08-31T10:31:17.900Z",
+      "apparent_solar_hour_at_domain_centroid": 2.3574203633226016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29211,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29211_005_10UEU_20230831T103209_0710_01",
+      "acquisition_utc": "2023-08-31T10:32:09.870Z",
+      "apparent_solar_hour_at_domain_centroid": 2.371868040422464,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29211,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29211_005_10UEU_20230831T103209_0712_02",
+      "acquisition_utc": "2023-08-31T10:32:09.870Z",
+      "apparent_solar_hour_at_domain_centroid": 2.371868040422464,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29226,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29226_007_10TET_20230901T094251_0710_01",
+      "acquisition_utc": "2023-09-01T09:42:51.665Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5554365017104437,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29226,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29226_007_10TET_20230901T094251_0712_02",
+      "acquisition_utc": "2023-09-01T09:42:51.665Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5554365017104437,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29257,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29257_001_10TET_20230903T094213_0710_01",
+      "acquisition_utc": "2023-09-03T09:42:13.747Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5560079454916937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29257,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29257_001_10UEU_20230903T094213_0710_01",
+      "acquisition_utc": "2023-09-03T09:42:13.747Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5560079454916937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29257,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29257_001_10TET_20230903T094213_0712_02",
+      "acquisition_utc": "2023-09-03T09:42:13.747Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5560079454916937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29257,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29257_001_10UEU_20230903T094213_0712_02",
+      "acquisition_utc": "2023-09-03T09:42:13.747Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5560079454916937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29257,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29257_002_10TET_20230903T094305_0710_01",
+      "acquisition_utc": "2023-09-03T09:43:05.717Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5704557942377853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29257,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29257_002_10UEU_20230903T094305_0710_01",
+      "acquisition_utc": "2023-09-03T09:43:05.717Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5704557942377853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29257,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29257_002_10UEU_20230903T094305_0712_02",
+      "acquisition_utc": "2023-09-03T09:43:05.717Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5704557942377853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29257,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29257_002_10TET_20230903T094305_0712_02",
+      "acquisition_utc": "2023-09-03T09:43:05.717Z",
+      "apparent_solar_hour_at_domain_centroid": 1.5704557942377853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29272,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29272_005_10TET_20230904T085413_0710_01",
+      "acquisition_utc": "2023-09-04T08:54:13.510Z",
+      "apparent_solar_hour_at_domain_centroid": 0.761515948188957,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29272,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29272_005_10UEU_20230904T085413_0710_01",
+      "acquisition_utc": "2023-09-04T08:54:13.510Z",
+      "apparent_solar_hour_at_domain_centroid": 0.761515948188957,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29272,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29272_005_10UEU_20230904T085413_0712_02",
+      "acquisition_utc": "2023-09-04T08:54:13.510Z",
+      "apparent_solar_hour_at_domain_centroid": 0.761515948188957,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29272,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29272_005_10TET_20230904T085413_0712_02",
+      "acquisition_utc": "2023-09-04T08:54:13.510Z",
+      "apparent_solar_hour_at_domain_centroid": 0.761515948188957,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29287,
+      "scene": 8,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29287_008_10TET_20230905T080516_0710_01",
+      "acquisition_utc": "2023-09-05T08:05:16.766Z",
+      "apparent_solar_hour_at_domain_centroid": 23.951263675227338,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29287,
+      "scene": 8,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29287_008_10TET_20230905T080516_0712_02",
+      "acquisition_utc": "2023-09-05T08:05:16.766Z",
+      "apparent_solar_hour_at_domain_centroid": 23.951263675227338,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29287,
+      "scene": 9,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29287_009_10TET_20230905T080608_0710_01",
+      "acquisition_utc": "2023-09-05T08:06:08.736Z",
+      "apparent_solar_hour_at_domain_centroid": 23.965711619679126,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29287,
+      "scene": 9,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29287_009_10TET_20230905T080608_0712_02",
+      "acquisition_utc": "2023-09-05T08:06:08.736Z",
+      "apparent_solar_hour_at_domain_centroid": 23.965711619679126,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29318,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29318_001_10TET_20230907T080443_0710_01",
+      "acquisition_utc": "2023-09-07T08:04:43.616Z",
+      "apparent_solar_hour_at_domain_centroid": 23.95387066034218,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29318,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29318_001_10UEU_20230907T080443_0710_01",
+      "acquisition_utc": "2023-09-07T08:04:43.616Z",
+      "apparent_solar_hour_at_domain_centroid": 23.95387066034218,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29318,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29318_001_10UEU_20230907T080443_0712_02",
+      "acquisition_utc": "2023-09-07T08:04:43.616Z",
+      "apparent_solar_hour_at_domain_centroid": 23.95387066034218,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29318,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29318_001_10TET_20230907T080443_0712_02",
+      "acquisition_utc": "2023-09-07T08:04:43.616Z",
+      "apparent_solar_hour_at_domain_centroid": 23.95387066034218,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29318,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29318_002_10TET_20230907T080535_0710_01",
+      "acquisition_utc": "2023-09-07T08:05:35.586Z",
+      "apparent_solar_hour_at_domain_centroid": 23.968318689717016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29318,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29318_002_10UEU_20230907T080535_0710_01",
+      "acquisition_utc": "2023-09-07T08:05:35.586Z",
+      "apparent_solar_hour_at_domain_centroid": 23.968318689717016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29318,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29318_002_10UEU_20230907T080535_0712_02",
+      "acquisition_utc": "2023-09-07T08:05:35.586Z",
+      "apparent_solar_hour_at_domain_centroid": 23.968318689717016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29318,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29318_002_10TET_20230907T080535_0712_02",
+      "acquisition_utc": "2023-09-07T08:05:35.586Z",
+      "apparent_solar_hour_at_domain_centroid": 23.968318689717016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29348,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29348_006_10TET_20230909T062807_0710_01",
+      "acquisition_utc": "2023-09-09T06:28:07.736Z",
+      "apparent_solar_hour_at_domain_centroid": 22.355496955686622,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29348,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29348_006_10TET_20230909T062807_0712_02",
+      "acquisition_utc": "2023-09-09T06:28:07.736Z",
+      "apparent_solar_hour_at_domain_centroid": 22.355496955686622,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29364,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29364_002_10TET_20230910T071749_0710_01",
+      "acquisition_utc": "2023-09-10T07:17:49.652Z",
+      "apparent_solar_hour_at_domain_centroid": 23.190135991305144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29364,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29364_002_10UEU_20230910T071749_0710_01",
+      "acquisition_utc": "2023-09-10T07:17:49.652Z",
+      "apparent_solar_hour_at_domain_centroid": 23.190135991305144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29364,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29364_002_10TET_20230910T071749_0712_02",
+      "acquisition_utc": "2023-09-10T07:17:49.652Z",
+      "apparent_solar_hour_at_domain_centroid": 23.190135991305144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29364,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29364_002_10UEU_20230910T071749_0712_02",
+      "acquisition_utc": "2023-09-10T07:17:49.652Z",
+      "apparent_solar_hour_at_domain_centroid": 23.190135991305144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29366,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29366_006_10TET_20230910T103140_0710_01",
+      "acquisition_utc": "2023-09-10T10:31:40.068Z",
+      "apparent_solar_hour_at_domain_centroid": 2.421793613055275,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29366,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29366_006_10UEU_20230910T103140_0710_01",
+      "acquisition_utc": "2023-09-10T10:31:40.068Z",
+      "apparent_solar_hour_at_domain_centroid": 2.421793613055275,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29366,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29366_006_10TET_20230910T103140_0712_02",
+      "acquisition_utc": "2023-09-10T10:31:40.068Z",
+      "apparent_solar_hour_at_domain_centroid": 2.421793613055275,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29366,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29366_006_10UEU_20230910T103140_0712_02",
+      "acquisition_utc": "2023-09-10T10:31:40.068Z",
+      "apparent_solar_hour_at_domain_centroid": 2.421793613055275,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29379,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29379_001_10TET_20230911T062932_0710_01",
+      "acquisition_utc": "2023-09-11T06:29:32.896Z",
+      "apparent_solar_hour_at_domain_centroid": 22.391349031052886,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29379,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29379_001_10TET_20230911T062932_0712_02",
+      "acquisition_utc": "2023-09-11T06:29:32.896Z",
+      "apparent_solar_hour_at_domain_centroid": 22.391349031052886,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29379,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29379_002_10TET_20230911T063024_0710_01",
+      "acquisition_utc": "2023-09-11T06:30:24.863Z",
+      "apparent_solar_hour_at_domain_centroid": 22.405797183653355,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29379,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29379_002_10UEU_20230911T063024_0710_01",
+      "acquisition_utc": "2023-09-11T06:30:24.863Z",
+      "apparent_solar_hour_at_domain_centroid": 22.405797183653355,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29379,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29379_002_10UEU_20230911T063024_0712_02",
+      "acquisition_utc": "2023-09-11T06:30:24.863Z",
+      "apparent_solar_hour_at_domain_centroid": 22.405797183653355,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29379,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29379_002_10TET_20230911T063024_0712_02",
+      "acquisition_utc": "2023-09-11T06:30:24.863Z",
+      "apparent_solar_hour_at_domain_centroid": 22.405797183653355,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29381,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29381_003_10TET_20230911T094348_0710_01",
+      "acquisition_utc": "2023-09-11T09:43:48.117Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6299583605563421,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29381,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29381_003_10UEU_20230911T094348_0710_01",
+      "acquisition_utc": "2023-09-11T09:43:48.117Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6299583605563421,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29381,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29381_003_10TET_20230911T094348_0712_02",
+      "acquisition_utc": "2023-09-11T09:43:48.117Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6299583605563421,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29381,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29381_003_10UEU_20230911T094348_0712_02",
+      "acquisition_utc": "2023-09-11T09:43:48.117Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6299583605563421,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29412,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29412_005_10UEU_20230913T094551_0710_01",
+      "acquisition_utc": "2023-09-13T09:45:51.075Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6765351340793029,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29412,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29412_005_10UEU_20230913T094551_0712_02",
+      "acquisition_utc": "2023-09-13T09:45:51.075Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6765351340793029,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29412,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29412_005_10TET_20230913T094551_0712_02",
+      "acquisition_utc": "2023-09-13T09:45:51.075Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6765351340793029,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29425,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29425_002_10TET_20230914T054401_0710_01",
+      "acquisition_utc": "2023-09-14T05:44:01.438Z",
+      "apparent_solar_hour_at_domain_centroid": 21.651171728926784,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29425,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29425_002_10UEU_20230914T054401_0710_01",
+      "acquisition_utc": "2023-09-14T05:44:01.438Z",
+      "apparent_solar_hour_at_domain_centroid": 21.651171728926784,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29425,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29425_002_10UEU_20230914T054401_0712_02",
+      "acquisition_utc": "2023-09-14T05:44:01.438Z",
+      "apparent_solar_hour_at_domain_centroid": 21.651171728926784,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29425,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29425_002_10TET_20230914T054401_0712_02",
+      "acquisition_utc": "2023-09-14T05:44:01.438Z",
+      "apparent_solar_hour_at_domain_centroid": 21.651171728926784,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29440,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29440_001_10TET_20230915T045622_0710_01",
+      "acquisition_utc": "2023-09-15T04:56:22.658Z",
+      "apparent_solar_hour_at_domain_centroid": 20.863055549233554,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29440,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29440_001_10UEU_20230915T045622_0710_01",
+      "acquisition_utc": "2023-09-15T04:56:22.658Z",
+      "apparent_solar_hour_at_domain_centroid": 20.863055549233554,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29440,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29440_001_10TET_20230915T045622_0712_02",
+      "acquisition_utc": "2023-09-15T04:56:22.658Z",
+      "apparent_solar_hour_at_domain_centroid": 20.863055549233554,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29440,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29440_001_10UEU_20230915T045622_0712_02",
+      "acquisition_utc": "2023-09-15T04:56:22.658Z",
+      "apparent_solar_hour_at_domain_centroid": 20.863055549233554,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29455,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29455_002_10TET_20230916T040759_0710_01",
+      "acquisition_utc": "2023-09-16T04:07:59.967Z",
+      "apparent_solar_hour_at_domain_centroid": 20.062726251762427,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29455,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29455_002_10UEU_20230916T040759_0710_01",
+      "acquisition_utc": "2023-09-16T04:07:59.967Z",
+      "apparent_solar_hour_at_domain_centroid": 20.062726251762427,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29455,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29455_002_10TET_20230916T040759_0712_02",
+      "acquisition_utc": "2023-09-16T04:07:59.967Z",
+      "apparent_solar_hour_at_domain_centroid": 20.062726251762427,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29455,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29455_002_10UEU_20230916T040759_0712_02",
+      "acquisition_utc": "2023-09-16T04:07:59.967Z",
+      "apparent_solar_hour_at_domain_centroid": 20.062726251762427,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29470,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29470_006_10TET_20230917T032047_0710_01",
+      "acquisition_utc": "2023-09-17T03:20:47.882Z",
+      "apparent_solar_hour_at_domain_centroid": 19.282130485188347,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29470,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29470_006_10TET_20230917T032047_0712_02",
+      "acquisition_utc": "2023-09-17T03:20:47.882Z",
+      "apparent_solar_hour_at_domain_centroid": 19.282130485188347,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29486,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29486_002_10UEU_20230918T041004_0712_02",
+      "acquisition_utc": "2023-09-18T04:10:04.802Z",
+      "apparent_solar_hour_at_domain_centroid": 20.110010636132515,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29501,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29501_003_10TET_20230919T032132_0710_01",
+      "acquisition_utc": "2023-09-19T03:21:32.675Z",
+      "apparent_solar_hour_at_domain_centroid": 19.307179920160547,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29501,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29501_003_10UEU_20230919T032132_0710_01",
+      "acquisition_utc": "2023-09-19T03:21:32.675Z",
+      "apparent_solar_hour_at_domain_centroid": 19.307179920160547,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29501,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29501_003_10UEU_20230919T032132_0712_02",
+      "acquisition_utc": "2023-09-19T03:21:32.675Z",
+      "apparent_solar_hour_at_domain_centroid": 19.307179920160547,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29501,
+      "scene": 3,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29501_003_10TET_20230919T032132_0712_02",
+      "acquisition_utc": "2023-09-19T03:21:32.675Z",
+      "apparent_solar_hour_at_domain_centroid": 19.307179920160547,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29501,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29501_004_10TET_20230919T032224_0710_01",
+      "acquisition_utc": "2023-09-19T03:22:24.645Z",
+      "apparent_solar_hour_at_domain_centroid": 19.321628134536176,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29501,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29501_004_10UEU_20230919T032224_0710_01",
+      "acquisition_utc": "2023-09-19T03:22:24.645Z",
+      "apparent_solar_hour_at_domain_centroid": 19.321628134536176,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29501,
+      "scene": 4,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29501_004_10UEU_20230919T032224_0712_02",
+      "acquisition_utc": "2023-09-19T03:22:24.645Z",
+      "apparent_solar_hour_at_domain_centroid": 19.321628134536176,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29501,
+      "scene": 4,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29501_004_10TET_20230919T032224_0712_02",
+      "acquisition_utc": "2023-09-19T03:22:24.645Z",
+      "apparent_solar_hour_at_domain_centroid": 19.321628134536176,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29518,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29518_003_10UEU_20230920T054826_0710_01",
+      "acquisition_utc": "2023-09-20T05:48:26.803Z",
+      "apparent_solar_hour_at_domain_centroid": 21.76240623637662,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29518,
+      "scene": 3,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29518_003_10UEU_20230920T054826_0712_02",
+      "acquisition_utc": "2023-09-20T05:48:26.803Z",
+      "apparent_solar_hour_at_domain_centroid": 21.76240623637662,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29531,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29531_007_10TET_20230921T014613_0710_01",
+      "acquisition_utc": "2023-09-21T01:46:13.695Z",
+      "apparent_solar_hour_at_domain_centroid": 17.730647869638148,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29531,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29531_007_10TET_20230921T014613_0712_02",
+      "acquisition_utc": "2023-09-21T01:46:13.695Z",
+      "apparent_solar_hour_at_domain_centroid": 17.730647869638148,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29547,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29547_001_10TET_20230922T023439_0710_01",
+      "acquisition_utc": "2023-09-22T02:34:39.800Z",
+      "apparent_solar_hour_at_domain_centroid": 18.54428798748683,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29547,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29547_001_10TET_20230922T023439_0712_02",
+      "acquisition_utc": "2023-09-22T02:34:39.800Z",
+      "apparent_solar_hour_at_domain_centroid": 18.54428798748683,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29547,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29547_001_10UEU_20230922T023439_0712_02",
+      "acquisition_utc": "2023-09-22T02:34:39.800Z",
+      "apparent_solar_hour_at_domain_centroid": 18.54428798748683,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29547,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29547_002_10UEU_20230922T023531_0710_01",
+      "acquisition_utc": "2023-09-22T02:35:31.769Z",
+      "apparent_solar_hour_at_domain_centroid": 18.558736158933915,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29547,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29547_002_10UEU_20230922T023531_0712_02",
+      "acquisition_utc": "2023-09-22T02:35:31.769Z",
+      "apparent_solar_hour_at_domain_centroid": 18.558736158933915,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29549,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29549_007_10TET_20230922T054944_0710_01",
+      "acquisition_utc": "2023-09-22T05:49:44.623Z",
+      "apparent_solar_hour_at_domain_centroid": 21.796515494228895,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29549,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29549_007_10UEU_20230922T054944_0710_01",
+      "acquisition_utc": "2023-09-22T05:49:44.623Z",
+      "apparent_solar_hour_at_domain_centroid": 21.796515494228895,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29549,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29549_007_10TET_20230922T054944_0712_02",
+      "acquisition_utc": "2023-09-22T05:49:44.623Z",
+      "apparent_solar_hour_at_domain_centroid": 21.796515494228895,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29549,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29549_007_10UEU_20230922T054944_0712_02",
+      "acquisition_utc": "2023-09-22T05:49:44.623Z",
+      "apparent_solar_hour_at_domain_centroid": 21.796515494228895,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29562,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29562_007_10TET_20230923T014646_0710_01",
+      "acquisition_utc": "2023-09-23T01:46:46.636Z",
+      "apparent_solar_hour_at_domain_centroid": 17.752202021107937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29562,
+      "scene": 7,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29562_007_10TET_20230923T014646_0712_02",
+      "acquisition_utc": "2023-09-23T01:46:46.636Z",
+      "apparent_solar_hour_at_domain_centroid": 17.752202021107937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29562,
+      "scene": 7,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29562_007_10UEU_20230923T014646_0712_02",
+      "acquisition_utc": "2023-09-23T01:46:46.636Z",
+      "apparent_solar_hour_at_domain_centroid": 17.752202021107937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29562,
+      "scene": 8,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29562_008_10UEU_20230923T014738_0710_01",
+      "acquisition_utc": "2023-09-23T01:47:38.606Z",
+      "apparent_solar_hour_at_domain_centroid": 17.766650170662647,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29562,
+      "scene": 8,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29562_008_10TET_20230923T014738_0712_02",
+      "acquisition_utc": "2023-09-23T01:47:38.606Z",
+      "apparent_solar_hour_at_domain_centroid": 17.766650170662647,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29562,
+      "scene": 8,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29562_008_10UEU_20230923T014738_0712_02",
+      "acquisition_utc": "2023-09-23T01:47:38.606Z",
+      "apparent_solar_hour_at_domain_centroid": 17.766650170662647,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29577,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29577_006_10TET_20230924T005923_0710_01",
+      "acquisition_utc": "2023-09-24T00:59:23.006Z",
+      "apparent_solar_hour_at_domain_centroid": 16.968413231711622,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29577,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29577_006_10UEU_20230924T005923_0710_01",
+      "acquisition_utc": "2023-09-24T00:59:23.006Z",
+      "apparent_solar_hour_at_domain_centroid": 16.968413231711622,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29577,
+      "scene": 6,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29577_006_10TET_20230924T005923_0712_02",
+      "acquisition_utc": "2023-09-24T00:59:23.006Z",
+      "apparent_solar_hour_at_domain_centroid": 16.968413231711622,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29577,
+      "scene": 6,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29577_006_10UEU_20230924T005923_0712_02",
+      "acquisition_utc": "2023-09-24T00:59:23.006Z",
+      "apparent_solar_hour_at_domain_centroid": 16.968413231711622,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29623,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29623_001_10TET_20230927T001139_0711_01",
+      "acquisition_utc": "2023-09-27T00:11:39.188Z",
+      "apparent_solar_hour_at_domain_centroid": 16.190755726619642,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29623,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29623_001_10UEU_20230927T001139_0711_01",
+      "acquisition_utc": "2023-09-27T00:11:39.188Z",
+      "apparent_solar_hour_at_domain_centroid": 16.190755726619642,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29623,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29623_001_10UEU_20230927T001139_0712_02",
+      "acquisition_utc": "2023-09-27T00:11:39.188Z",
+      "apparent_solar_hour_at_domain_centroid": 16.190755726619642,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29623,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29623_001_10TET_20230927T001139_0712_02",
+      "acquisition_utc": "2023-09-27T00:11:39.188Z",
+      "apparent_solar_hour_at_domain_centroid": 16.190755726619642,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29656,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29656_005_10TET_20230929T032540_0711_01",
+      "acquisition_utc": "2023-09-29T03:25:40.329Z",
+      "apparent_solar_hour_at_domain_centroid": 19.436885797792364,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29656,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29656_005_10UEU_20230929T032540_0711_01",
+      "acquisition_utc": "2023-09-29T03:25:40.329Z",
+      "apparent_solar_hour_at_domain_centroid": 19.436885797792364,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29656,
+      "scene": 5,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29656_005_10UEU_20230929T032540_0712_02",
+      "acquisition_utc": "2023-09-29T03:25:40.329Z",
+      "apparent_solar_hour_at_domain_centroid": 19.436885797792364,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29656,
+      "scene": 5,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29656_005_10TET_20230929T032540_0712_02",
+      "acquisition_utc": "2023-09-29T03:25:40.329Z",
+      "apparent_solar_hour_at_domain_centroid": 19.436885797792364,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29669,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29669_001_10TET_20230929T232343_0711_01",
+      "acquisition_utc": "2023-09-29T23:23:43.787Z",
+      "apparent_solar_hour_at_domain_centroid": 15.409167021249612,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29669,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29669_001_10UEU_20230929T232343_0711_01",
+      "acquisition_utc": "2023-09-29T23:23:43.787Z",
+      "apparent_solar_hour_at_domain_centroid": 15.409167021249612,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29669,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29669_001_10UEU_20230929T232343_0712_02",
+      "acquisition_utc": "2023-09-29T23:23:43.787Z",
+      "apparent_solar_hour_at_domain_centroid": 15.409167021249612,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29669,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29669_001_10TET_20230929T232343_0712_02",
+      "acquisition_utc": "2023-09-29T23:23:43.787Z",
+      "apparent_solar_hour_at_domain_centroid": 15.409167021249612,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29684,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29684_001_10TET_20230930T223523_0711_01",
+      "acquisition_utc": "2023-09-30T22:35:23.484Z",
+      "apparent_solar_hour_at_domain_centroid": 14.60908892381587,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29684,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29684_001_10UEU_20230930T223523_0711_01",
+      "acquisition_utc": "2023-09-30T22:35:23.484Z",
+      "apparent_solar_hour_at_domain_centroid": 14.60908892381587,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29684,
+      "scene": 1,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29684_001_10TET_20230930T223523_0712_02",
+      "acquisition_utc": "2023-09-30T22:35:23.484Z",
+      "apparent_solar_hour_at_domain_centroid": 14.60908892381587,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29684,
+      "scene": 1,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29684_001_10UEU_20230930T223523_0712_02",
+      "acquisition_utc": "2023-09-30T22:35:23.484Z",
+      "apparent_solar_hour_at_domain_centroid": 14.60908892381587,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29684,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29684_002_10TET_20230930T223615_0711_01",
+      "acquisition_utc": "2023-09-30T22:36:15.454Z",
+      "apparent_solar_hour_at_domain_centroid": 14.6235367526229,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29684,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29684_002_10UEU_20230930T223615_0711_01",
+      "acquisition_utc": "2023-09-30T22:36:15.454Z",
+      "apparent_solar_hour_at_domain_centroid": 14.6235367526229,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29684,
+      "scene": 2,
+      "tile": "10TET",
+      "granule_id": "ECOv002_L2T_LSTE_29684_002_10TET_20230930T223615_0712_02",
+      "acquisition_utc": "2023-09-30T22:36:15.454Z",
+      "apparent_solar_hour_at_domain_centroid": 14.6235367526229,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "seattle",
+      "orbit": 29684,
+      "scene": 2,
+      "tile": "10UEU",
+      "granule_id": "ECOv002_L2T_LSTE_29684_002_10UEU_20230930T223615_0712_02",
+      "acquisition_utc": "2023-09-30T22:36:15.454Z",
+      "apparent_solar_hour_at_domain_centroid": 14.6235367526229,
+      "cloud_cover_metadata": null
+    }
+  ]
+}

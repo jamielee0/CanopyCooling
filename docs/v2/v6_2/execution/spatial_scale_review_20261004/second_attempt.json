@@ -1,0 +1,7 @@
+{
+  "status": "STOPPED_BEFORE_FIRST_DIAGNOSTIC_WRITE",
+  "reason": "new sealed directory had not yet been created for first Atlanta pass",
+  "new_effect_values_displayed": false,
+  "new_comparison_artifacts_created": false,
+  "repair": "guarded sealed path creation before writing; vectorized equivalent averaging removes repeated full-frame scans"
+}

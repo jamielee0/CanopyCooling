@@ -1,0 +1,8 @@
+{
+  "completed_utc": "2026-09-21T17:46:20.720425+00:00",
+  "requested_passes": 6,
+  "primary_fits": 6,
+  "fits": 24,
+  "failures": [],
+  "registration_and_full_composition_sensitivity": "pending_for_added_passes"
+}

@@ -1,0 +1,471 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "atlanta",
+      "orbit": 27916,
+      "acquisition_utc": "2023-06-08T22:58:37.519Z",
+      "solar_hour": 17.37613456959231,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 278,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9266666666666666,
+      "clear_fraction_of_all_sample_points": 0.9266666666666666,
+      "failed_assets": 0
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27931,
+      "acquisition_utc": "2023-06-09T22:09:06.356Z",
+      "solar_hour": 16.54776371553028,
+      "sample_points": 300,
+      "observed_points": 12,
+      "clear_points": 12,
+      "sample_point_coverage_fraction": 0.04,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.04,
+      "failed_assets": 0
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27962,
+      "acquisition_utc": "2023-06-11T22:08:16.691Z",
+      "solar_hour": 16.52726962785872,
+      "sample_points": 300,
+      "observed_points": 34,
+      "clear_points": 34,
+      "sample_point_coverage_fraction": 0.11333333333333333,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.11333333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28598,
+      "acquisition_utc": "2023-07-22T21:45:27.745Z",
+      "solar_hour": 16.042277466196598,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 145,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.48333333333333334,
+      "clear_fraction_of_all_sample_points": 0.48333333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28923,
+      "acquisition_utc": "2023-08-12T21:02:54.902Z",
+      "solar_hour": 15.344218558370024,
+      "sample_points": 300,
+      "observed_points": 297,
+      "clear_points": 93,
+      "sample_point_coverage_fraction": 0.99,
+      "clear_fraction_of_observed_points": 0.31313131313131315,
+      "clear_fraction_of_all_sample_points": 0.31,
+      "failed_assets": 0
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29483,
+      "acquisition_utc": "2023-09-17T23:22:45.197Z",
+      "solar_hour": 17.86416257367031,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 264,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.88,
+      "clear_fraction_of_all_sample_points": 0.88,
+      "failed_assets": 0
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29544,
+      "acquisition_utc": "2023-09-21T21:48:08.443Z",
+      "solar_hour": 16.297344186825324,
+      "sample_points": 300,
+      "observed_points": 3,
+      "clear_points": 3,
+      "sample_point_coverage_fraction": 0.01,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.01,
+      "failed_assets": 0
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29559,
+      "acquisition_utc": "2023-09-22T21:01:02.524Z",
+      "solar_hour": 15.518324234267723,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 299,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9966666666666667,
+      "clear_fraction_of_all_sample_points": 0.9966666666666667,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "atlanta",
+      "orbit": 27916,
+      "asset": "ECOv002_L2T_LSTE_27916_008_16SFB_20230608T225837_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27916_008_16SFB_20230608T225837_0711_01/ECOv002_L2T_LSTE_27916_008_16SFB_20230608T225837_0711_01_cloud.tif",
+      "bytes": 39203,
+      "sha256": "e2e522fae1ac27fb004ebb3ecf9cdbed1e7f96cb9302fc1eef5bfe0c45447684",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27916,
+      "asset": "ECOv002_L2T_LSTE_27916_008_16SFC_20230608T225837_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27916_008_16SFC_20230608T225837_0711_01/ECOv002_L2T_LSTE_27916_008_16SFC_20230608T225837_0711_01_cloud.tif",
+      "bytes": 15956,
+      "sha256": "bc89838e585b32623bccae66f46bde2428d7692a1fa6e11dc78263a44cacd41b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27916,
+      "asset": "ECOv002_L2T_LSTE_27916_008_16SGB_20230608T225837_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27916_008_16SGB_20230608T225837_0711_01/ECOv002_L2T_LSTE_27916_008_16SGB_20230608T225837_0711_01_cloud.tif",
+      "bytes": 50711,
+      "sha256": "c4ce1e4606df99ea0ac8f568198aedfc9f8b53a0f86130765a5354e41c851ca7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27916,
+      "asset": "ECOv002_L2T_LSTE_27916_008_16SGC_20230608T225837_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27916_008_16SGC_20230608T225837_0711_01/ECOv002_L2T_LSTE_27916_008_16SGC_20230608T225837_0711_01_cloud.tif",
+      "bytes": 16746,
+      "sha256": "a3b11856e7be50aac939802c17c8316eac16b082620251eba2a3301c848fe5a0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27916,
+      "asset": "ECOv002_L2T_LSTE_27916_008_16SGD_20230608T225837_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27916_008_16SGD_20230608T225837_0711_01/ECOv002_L2T_LSTE_27916_008_16SGD_20230608T225837_0711_01_cloud.tif",
+      "bytes": 6392,
+      "sha256": "8af354d74b67d717cd58fe857c4c76e28b4321146050d90f51e41f7705a49ad8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27916,
+      "asset": "ECOv002_L2T_LSTE_27916_008_17SKS_20230608T225837_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27916_008_17SKS_20230608T225837_0711_01/ECOv002_L2T_LSTE_27916_008_17SKS_20230608T225837_0711_01_cloud.tif",
+      "bytes": 42010,
+      "sha256": "1dac2dfcb000cbdde6046e9c5a8b7c19be4dbe4996a0079517fe8b49c0703636",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27916,
+      "asset": "ECOv002_L2T_LSTE_27916_008_17SKT_20230608T225837_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27916_008_17SKT_20230608T225837_0711_01/ECOv002_L2T_LSTE_27916_008_17SKT_20230608T225837_0711_01_cloud.tif",
+      "bytes": 11117,
+      "sha256": "7e3b320c1eefc166902e4e39712b81705bfe4983d293e9e3b2052afa17fc525b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27916,
+      "asset": "ECOv002_L2T_LSTE_27916_008_17SKU_20230608T225837_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27916_008_17SKU_20230608T225837_0711_01/ECOv002_L2T_LSTE_27916_008_17SKU_20230608T225837_0711_01_cloud.tif",
+      "bytes": 12436,
+      "sha256": "da3993255cafc85d4615be8d305a2f0032f505f7067e4012c463abb580d55177",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_009_17SKU_20230609T220906_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_009_17SKU_20230609T220906_0711_02/ECOv002_L2T_LSTE_27931_009_17SKU_20230609T220906_0711_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "4a1282538e10ff260cdeb474cd073b27ca7b87ce2d195cb70ad35be10535d127",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27962,
+      "asset": "ECOv002_L2T_LSTE_27962_005_16SFB_20230611T220816_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27962_005_16SFB_20230611T220816_0711_02/ECOv002_L2T_LSTE_27962_005_16SFB_20230611T220816_0711_02_cloud.tif",
+      "bytes": 28353,
+      "sha256": "a7af46870c9b4110fe853aca35e00d4ea0af9f3d04f50c366c18f2fa9d040965",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27962,
+      "asset": "ECOv002_L2T_LSTE_27962_005_16SFC_20230611T220816_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27962_005_16SFC_20230611T220816_0711_02/ECOv002_L2T_LSTE_27962_005_16SFC_20230611T220816_0711_02_cloud.tif",
+      "bytes": 19219,
+      "sha256": "752367f0032e9f888f17f559e9f11ca9248f02ff53faffceb2b5af4bf8fd3a2e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 27962,
+      "asset": "ECOv002_L2T_LSTE_27962_005_16SGB_20230611T220816_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27962_005_16SGB_20230611T220816_0711_02/ECOv002_L2T_LSTE_27962_005_16SGB_20230611T220816_0711_02_cloud.tif",
+      "bytes": 9546,
+      "sha256": "3245673d7752d3cd154c46b5a0ce28a893f56db3a577f982f9a128fdb6db102a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_004_16SFB_20230722T214527_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_004_16SFB_20230722T214527_0712_02/ECOv002_L2T_LSTE_28598_004_16SFB_20230722T214527_0712_02_cloud.tif",
+      "bytes": 25187,
+      "sha256": "d946ce0b41546be7f27dc83337d5b2f90b4e614de24a77f4a58dca4c3cea046c",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_005_16SFB_20230722T214619_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_005_16SFB_20230722T214619_0712_02/ECOv002_L2T_LSTE_28598_005_16SFB_20230722T214619_0712_02_cloud.tif",
+      "bytes": 58209,
+      "sha256": "b2cabb7586683a31e00e0384d669c345aeaa96f8e14a937527a44e6a9d1eec1b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_005_16SFC_20230722T214619_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_005_16SFC_20230722T214619_0712_02/ECOv002_L2T_LSTE_28598_005_16SFC_20230722T214619_0712_02_cloud.tif",
+      "bytes": 69262,
+      "sha256": "ce462b938079c5a12a50ce5746b91db42848c241fbc23e298484fb24fc6a1327",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_005_16SGB_20230722T214619_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_005_16SGB_20230722T214619_0712_02/ECOv002_L2T_LSTE_28598_005_16SGB_20230722T214619_0712_02_cloud.tif",
+      "bytes": 33507,
+      "sha256": "b50fedab23b0f534641d26098e12287a6270aeb03af4f63d0f05dc3c4c353e4d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_005_16SGC_20230722T214619_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_005_16SGC_20230722T214619_0712_02/ECOv002_L2T_LSTE_28598_005_16SGC_20230722T214619_0712_02_cloud.tif",
+      "bytes": 72562,
+      "sha256": "7b10725792f2d7461278d94b915b9049d70fae266fe4b9311cb0597d71f2c6c4",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_005_16SGD_20230722T214619_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_005_16SGD_20230722T214619_0712_02/ECOv002_L2T_LSTE_28598_005_16SGD_20230722T214619_0712_02_cloud.tif",
+      "bytes": 50600,
+      "sha256": "ce78eb6004408e13f8c913133d648423940df461e0389bb830bbcf4249234620",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_005_17SKS_20230722T214619_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_005_17SKS_20230722T214619_0712_02/ECOv002_L2T_LSTE_28598_005_17SKS_20230722T214619_0712_02_cloud.tif",
+      "bytes": 15436,
+      "sha256": "d28bce1a7919dc5005f83d9ec9bf1ac75c35ccd52ed9a54473aee8c147b82a48",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_005_17SKT_20230722T214619_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_005_17SKT_20230722T214619_0712_02/ECOv002_L2T_LSTE_28598_005_17SKT_20230722T214619_0712_02_cloud.tif",
+      "bytes": 56817,
+      "sha256": "94bea10634fc49646da792d581b2e77f5b77815fb5251a7593189a34f7671286",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_005_17SKU_20230722T214619_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_005_17SKU_20230722T214619_0712_02/ECOv002_L2T_LSTE_28598_005_17SKU_20230722T214619_0712_02_cloud.tif",
+      "bytes": 35529,
+      "sha256": "ed0b5821c8eb8a4401683096fe37e6baee37cb1b1b173930e3e01a19b3cf5032",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28923,
+      "asset": "ECOv002_L2T_LSTE_28923_008_16SFC_20230812T210254_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28923_008_16SFC_20230812T210254_0712_02/ECOv002_L2T_LSTE_28923_008_16SFC_20230812T210254_0712_02_cloud.tif",
+      "bytes": 8072,
+      "sha256": "601457c9657063b9bb7c26113b6cdb26724ac26e66cc2443eb69ccad0c1eab8e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28923,
+      "asset": "ECOv002_L2T_LSTE_28923_008_16SGC_20230812T210254_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28923_008_16SGC_20230812T210254_0712_02/ECOv002_L2T_LSTE_28923_008_16SGC_20230812T210254_0712_02_cloud.tif",
+      "bytes": 10351,
+      "sha256": "0a7ced2feee8e0ab11d8b30c3db6f7fa83a7f01167314586c9d2ea50cd489376",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28923,
+      "asset": "ECOv002_L2T_LSTE_28923_009_17SKS_20230812T210346_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28923_009_17SKS_20230812T210346_0712_02/ECOv002_L2T_LSTE_28923_009_17SKS_20230812T210346_0712_02_cloud.tif",
+      "bytes": 18560,
+      "sha256": "ff111f89768d78f7a134503590ed2a9d90c990b0d54da2f7394459eceb56e4f4",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 28923,
+      "asset": "ECOv002_L2T_LSTE_28923_009_17SKT_20230812T210346_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28923_009_17SKT_20230812T210346_0712_02/ECOv002_L2T_LSTE_28923_009_17SKT_20230812T210346_0712_02_cloud.tif",
+      "bytes": 17363,
+      "sha256": "af53b1411072ad54c01368b4371d3639fa1f738a2dbee515058148df7f4a07c5",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29483,
+      "asset": "ECOv002_L2T_LSTE_29483_006_16SFB_20230917T232245_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29483_006_16SFB_20230917T232245_0712_02/ECOv002_L2T_LSTE_29483_006_16SFB_20230917T232245_0712_02_cloud.tif",
+      "bytes": 6953,
+      "sha256": "bea45e62acf4ac2b748d7f80564d99173c789be72ad0161ff30fad1c08286f71",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29483,
+      "asset": "ECOv002_L2T_LSTE_29483_007_16SFB_20230917T232337_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29483_007_16SFB_20230917T232337_0712_02/ECOv002_L2T_LSTE_29483_007_16SFB_20230917T232337_0712_02_cloud.tif",
+      "bytes": 17467,
+      "sha256": "e7251c6388be217d387cfb8fdcfaf8ced3352fd72592066b8480f3f596180814",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29483,
+      "asset": "ECOv002_L2T_LSTE_29483_007_16SFC_20230917T232337_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29483_007_16SFC_20230917T232337_0712_02/ECOv002_L2T_LSTE_29483_007_16SFC_20230917T232337_0712_02_cloud.tif",
+      "bytes": 95646,
+      "sha256": "805a64bea6a94007f44a833ebaa38e3e0cf7ddc42aba2ae84084df7986a31c56",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29483,
+      "asset": "ECOv002_L2T_LSTE_29483_007_16SGB_20230917T232337_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29483_007_16SGB_20230917T232337_0712_02/ECOv002_L2T_LSTE_29483_007_16SGB_20230917T232337_0712_02_cloud.tif",
+      "bytes": 25270,
+      "sha256": "143f7ae8569a2b657b9e69481167e3e03923b7832cab68862058a88210d9c457",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29483,
+      "asset": "ECOv002_L2T_LSTE_29483_007_16SGC_20230917T232337_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29483_007_16SGC_20230917T232337_0712_02/ECOv002_L2T_LSTE_29483_007_16SGC_20230917T232337_0712_02_cloud.tif",
+      "bytes": 163251,
+      "sha256": "7ab3bb53beb06d7459425ff83e799215ac1f07127fee41a6305ec4e3e1c89e0b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29483,
+      "asset": "ECOv002_L2T_LSTE_29483_007_16SGD_20230917T232337_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29483_007_16SGD_20230917T232337_0712_02/ECOv002_L2T_LSTE_29483_007_16SGD_20230917T232337_0712_02_cloud.tif",
+      "bytes": 130156,
+      "sha256": "9348020e1fd78c314441ade380d3fed51caf14bc6183cb5b10ca93a247047844",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29483,
+      "asset": "ECOv002_L2T_LSTE_29483_007_17SKT_20230917T232337_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29483_007_17SKT_20230917T232337_0712_02/ECOv002_L2T_LSTE_29483_007_17SKT_20230917T232337_0712_02_cloud.tif",
+      "bytes": 122365,
+      "sha256": "e970424ef14041fd046c7ef2247edcfab9a81a01f419564f647ed3e1973464dd",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29483,
+      "asset": "ECOv002_L2T_LSTE_29483_007_17SKU_20230917T232337_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29483_007_17SKU_20230917T232337_0712_02/ECOv002_L2T_LSTE_29483_007_17SKU_20230917T232337_0712_02_cloud.tif",
+      "bytes": 112778,
+      "sha256": "8372dbec0f244a5052f4fe22713926d6e7875c1dd84e4e396a1627cfd2e70013",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29544,
+      "asset": "ECOv002_L2T_LSTE_29544_006_16SFB_20230921T214808_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29544_006_16SFB_20230921T214808_0712_02/ECOv002_L2T_LSTE_29544_006_16SFB_20230921T214808_0712_02_cloud.tif",
+      "bytes": 19635,
+      "sha256": "159d67062c721c2f46a89d9592a56ab7230a6efc1402bddafdbfe9b762caa40f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29559,
+      "asset": "ECOv002_L2T_LSTE_29559_004_16SFB_20230922T210102_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29559_004_16SFB_20230922T210102_0712_02/ECOv002_L2T_LSTE_29559_004_16SFB_20230922T210102_0712_02_cloud.tif",
+      "bytes": 13759,
+      "sha256": "b64b196a29a7af63c304b40a4440eaf3a336219b1370aeef6d01d32c5ec61a3a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29559,
+      "asset": "ECOv002_L2T_LSTE_29559_004_16SGB_20230922T210102_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29559_004_16SGB_20230922T210102_0712_02/ECOv002_L2T_LSTE_29559_004_16SGB_20230922T210102_0712_02_cloud.tif",
+      "bytes": 59432,
+      "sha256": "112bac0aac5e4eec99b01d8bc63a48c468b52444863227ffa72ec10c8b3fa603",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29559,
+      "asset": "ECOv002_L2T_LSTE_29559_004_16SGC_20230922T210102_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29559_004_16SGC_20230922T210102_0712_02/ECOv002_L2T_LSTE_29559_004_16SGC_20230922T210102_0712_02_cloud.tif",
+      "bytes": 18803,
+      "sha256": "e970193ed50271feb893c3e1c86936db157a828a3713e1c1ad50eadc65353ab6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29559,
+      "asset": "ECOv002_L2T_LSTE_29559_004_17SKS_20230922T210102_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29559_004_17SKS_20230922T210102_0712_02/ECOv002_L2T_LSTE_29559_004_17SKS_20230922T210102_0712_02_cloud.tif",
+      "bytes": 77485,
+      "sha256": "633a7dd33f58dfc4d51575d85bd34e89b38aa24e57ef080db34d2e7ae60289e8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29559,
+      "asset": "ECOv002_L2T_LSTE_29559_004_17SKT_20230922T210102_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29559_004_17SKT_20230922T210102_0712_02/ECOv002_L2T_LSTE_29559_004_17SKT_20230922T210102_0712_02_cloud.tif",
+      "bytes": 26586,
+      "sha256": "d089f5cd38daf68eaa4253a1a26bd7f1d482fb91472acc2c75a2a27e590b265d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "atlanta",
+      "orbit": 29559,
+      "asset": "ECOv002_L2T_LSTE_29559_004_17SKU_20230922T210102_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29559_004_17SKU_20230922T210102_0712_02/ECOv002_L2T_LSTE_29559_004_17SKU_20230922T210102_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "4a1282538e10ff260cdeb474cd073b27ca7b87ce2d195cb70ad35be10535d127",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

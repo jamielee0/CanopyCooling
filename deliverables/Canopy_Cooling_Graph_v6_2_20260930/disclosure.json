@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-09-30T19:56:22.134791+00:00",
+  "authorization": "User requested a graph of canopy percentage versus cooling benefit on 30 September 2026.",
+  "scope": "Re-express previously disclosed LST slopes from the 11 Phoenix and 5 Atlanta 2023 passes.",
+  "source": "outputs/v6_2/scientific/exploratory_review_20260921/pass_gradients_exploratory.csv",
+  "source_sha256": "bb7bef594662ae0462cabe459dd84ea54fb709482d2761e4cc6e15b3c72c9d71",
+  "prior_disclosure": "outputs/v6_2/scientific/exploratory_review_20260921/gradient_disclosure.json",
+  "prior_disclosure_sha256": "fd08dceb8160b80bbbb559843ba5301ba819be7b5f131f137db0fa4a6d5873c9",
+  "conversion": "cooling_C = -gradient_K_per_10pp * canopy_increase_percentage_points / 10",
+  "aggregation": "Unweighted within-city median of the existing pass slopes, for descriptive illustration only.",
+  "band": "Minimum to maximum pass slopes; not sampling uncertainty or a confidence interval.",
+  "domain": "0 to 10 percentage-point differences; no absolute zero-canopy reference or 0\u2013100% extrapolation.",
+  "new_model_fit": false,
+  "new_sealed_coefficients_opened": false,
+  "thermal_rasters_opened": false,
+  "time_contrasts_opened": false,
+  "common_cell_or_registration_coefficients_opened": false,
+  "scale_agreement_ruling": "pending; this is not the emitted-energy comparison",
+  "historical_outputs_modified": false,
+  "verification": "Known-answer sign/unit checks, exact +10pp source reconciliation, unique pass IDs and 2023 scope verified."
+}

@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-09-30T20:05:51.427879+00:00",
+  "user_authorization": "Display exploratory nonlinear LST associations and observed bins, requested 30 September 2026.",
+  "code_sha256": {
+    "src/v6_2_advance/run_nonlinear_association.py": "e74ba6e209cf477050805decc7110560bf9691960a15a41553590dd07f9d603f",
+    "src/v6_2_advance/nonlinear_association.py": "9fbcf6af8e7c89a72b9b6a0be82ea72b796983d706dc50c86c88a096b491162f",
+    "src/urban_cooling_v2/pooled_city_pass.py": "0434337b39c76dcdbba3fcb9695869aff8c483784e8521274fdb9b2869942d22",
+    "tests/v6_2_advance/test_nonlinear_association.py": "a56f9fb9bba7351cb6f11eeefc329a2d591119d77bb6719fc973f97ae379c9b9"
+  },
+  "numeric_support_sha256": "d1e04d87ad30e261a489fa649b557aa17a2dd5f53b811bc64d3417b4b8897cf5",
+  "source_linear_table_sha256": "bb7bef594662ae0462cabe459dd84ea54fb709482d2761e4cc6e15b3c72c9d71",
+  "model": "Restricted cubic spline, original block intercepts/context, paired LST/emitted energy",
+  "prior_time_comparisons_opened": false,
+  "prior_robustness_effects_opened": false,
+  "scale_ruling": "pending",
+  "status": "exploratory, after prior linear-effect disclosure"
+}

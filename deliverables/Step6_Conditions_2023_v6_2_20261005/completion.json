@@ -1,0 +1,19 @@
+{
+  "status": "STEP6_INPUT_ASSEMBLY_COMPLETE_WITH_EXPLICIT_GEOMETRY_AND_HOURLY_RAIN_LIMITS",
+  "passes": 16,
+  "exact_acquisition_weather_complete": 16,
+  "rainfall_windows": 48,
+  "complete_rainfall_windows": 48,
+  "missing_rainfall_windows": 0,
+  "complete_primary_MRMS_windows": 47,
+  "Stage_IV_fallback_windows": 1,
+  "MRMS_source_hours": 1872,
+  "MRMS_missing_hours": 1,
+  "Stage_IV_source_hours": 168,
+  "exact_subhourly_rainfall_windows": 0,
+  "empirical_time_effect_computed": false,
+  "new_effect_display": false,
+  "geometry_modeled_cell_coverage": "not established by domain evidence",
+  "new_inclusion_cutoff": null,
+  "scale_ruling": null
+}

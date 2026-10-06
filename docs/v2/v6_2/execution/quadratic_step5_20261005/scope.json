@@ -1,0 +1,163 @@
+{
+  "authority": {
+    "request": "ok lets do that part of part 5? Is part 5 fully done yet?",
+    "interpretation": "Authorize internal quadratic fitting and matched linear comparison, resolving Step4 fitting hold",
+    "prior_sealing_reply": "Not yet\u2014keep new effects sealed",
+    "new_effect_display": false,
+    "professor_approval": false
+  },
+  "settings": {
+    "candidate_pairs": [
+      {
+        "pair_id": "near_-0.02",
+        "f0": 0.008509538620710373,
+        "f1": 0.10850953862071037
+      },
+      {
+        "pair_id": "near_-0.01",
+        "f0": 0.01850953862071037,
+        "f1": 0.11850953862071037
+      },
+      {
+        "pair_id": "historical",
+        "f0": 0.028509538620710373,
+        "f1": 0.12850953862071038
+      },
+      {
+        "pair_id": "near_+0.01",
+        "f0": 0.038509538620710375,
+        "f1": 0.1385095386207104
+      },
+      {
+        "pair_id": "near_+0.02",
+        "f0": 0.04850953862071038,
+        "f1": 0.14850953862071037
+      },
+      {
+        "pair_id": "grid_00",
+        "f0": 0.0,
+        "f1": 0.1
+      },
+      {
+        "pair_id": "grid_01",
+        "f0": 0.1,
+        "f1": 0.2
+      },
+      {
+        "pair_id": "grid_02",
+        "f0": 0.2,
+        "f1": 0.3
+      },
+      {
+        "pair_id": "grid_03",
+        "f0": 0.3,
+        "f1": 0.4
+      },
+      {
+        "pair_id": "grid_04",
+        "f0": 0.4,
+        "f1": 0.5
+      },
+      {
+        "pair_id": "grid_05",
+        "f0": 0.5,
+        "f1": 0.6
+      },
+      {
+        "pair_id": "grid_06",
+        "f0": 0.6,
+        "f1": 0.7
+      },
+      {
+        "pair_id": "grid_07",
+        "f0": 0.7,
+        "f1": 0.8
+      },
+      {
+        "pair_id": "grid_08",
+        "f0": 0.8,
+        "f1": 0.9
+      },
+      {
+        "pair_id": "grid_09",
+        "f0": 0.9,
+        "f1": 1.0
+      }
+    ],
+    "halfwidths_fraction": [
+      0.01,
+      0.025,
+      0.05
+    ],
+    "reference": {
+      "f0": 0.028509538620710373,
+      "f1": 0.12850953862071038,
+      "reference_K": 314.7740020751953,
+      "reference_emissivity": 0.9473999977111817,
+      "rule": "equal_city_average_of_equal_pass_medians; covariance_reference_rows_within_support_blocks",
+      "reference_rows": [
+        241990,
+        257185,
+        278368,
+        278368,
+        206134,
+        184256,
+        195123,
+        182576,
+        96379,
+        81083
+      ],
+      "reference_blocks": [
+        1375,
+        1387,
+        1479,
+        1479,
+        1174,
+        2262,
+        2397,
+        2254,
+        1358,
+        1174
+      ]
+    },
+    "displays": {
+      "phoenix": {
+        "lower": 0.0031363328569568695,
+        "upper": 0.10791953429579733,
+        "reference": 0.0031363328569568695,
+        "points": 101,
+        "rule": "intersection of audited pass P05-P95; display only, no row exclusion"
+      },
+      "atlanta": {
+        "lower": 0.038939791917800906,
+        "upper": 0.8569015741348266,
+        "reference": 0.038939791917800906,
+        "points": 101,
+        "rule": "intersection of audited pass P05-P95; display only, no row exclusion"
+      }
+    },
+    "mean_model": "same original 1km block intercepts, all six frozen controls, unit native-cell weights",
+    "protected_basis": "raw f plus raw f squared, transformed before separate block centering",
+    "baseline": "reconstruct linear fit on same cells; verify prior released temperature slope",
+    "groups_km": [
+      1,
+      8
+    ],
+    "replicates": 1000,
+    "seed_rule": "20261004 + 100000 + orbit; reuse audited design multiplicities",
+    "inference": "matched percentile bootstrap of each finite contrast and quadratic-minus-linear difference",
+    "reference_weights": "fixed unit weights on all cells in original blocks spanning endpoints; same for both models",
+    "pair_policy": "report all15 frozen candidates; no numerical effect for zero-spanning-block pairs; any positive spanning count is only descriptive range support, not a positivity cutoff",
+    "curve_policy": "101 city-specific canopy points, pointwise intervals, no city mean or simultaneous band",
+    "scale_tolerance": null,
+    "scale_ruling": null,
+    "primary_estimator_replaced": false,
+    "new_inclusion_cutoff": null,
+    "new_time_inference": false,
+    "city_ranking": false,
+    "log_or_higher_degree_model_search": false,
+    "raw_thermal_raster_access": false,
+    "visual_effect_review": "deferred under explicit sealing instruction"
+  },
+  "status": "FROZEN_BEFORE_OUTCOME_ACCESS"
+}

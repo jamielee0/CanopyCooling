@@ -1,0 +1,77 @@
+**I’d implement this in two stages: assemble the existing results for Prof. Alizadeh’s review first, then run the few targeted analyses in his guide.** I checked the repository: the current sample is **11 Phoenix and 5 Atlanta passes, all from 2023**. The six additions are Phoenix passes. His guide explicitly puts results review before further expansion. :codex-file-citation{path="/Users/jmlee/.codex/attachments/04ca87e3-4e40-4e71-8b50-d8dc90f128b2/Urban_Tree_Cooling_Next_Steps.docx" purpose="source"}
+
+Here is the implementation order I recommend.
+
+1. **Update the controlling v6.2 plan.**
+
+   Record temperature as the primary outcome and emitted longwave flux as a diagnostic. Replace the old rule that automatically promoted flux when the models disagreed. Keep the review packet private, preserve the frozen results, and record access to the previously sealed comparisons. Pause further city screening until the review.
+
+2. **Build the sixteen-pass results packet from existing outputs.**
+
+   The [released gradient table](/Users/jmlee/Documents/TreeProject/outputs/v6_2/scientific/exploratory_review_20260921/pass_gradients_exploratory.csv) already contains the sixteen cooling estimates, dates, times, viewing angles, sample counts and spatial uncertainty results.
+
+   Turn that into one clearly labelled table containing:
+
+   - Signed temperature slope and positive cooling in **K per +10 percentage points**, with SE and 95% interval.
+   - Date, consistently calculated apparent solar time, viewing angle, collection and run identifier.
+   - Valid cells, footprint area, contributing blocks, canopy distribution and information concentration.
+   - Available air-temperature and rainfall descriptors, with missing records explicitly marked.
+   - Flux and its temperature-equivalent diagnostic where supported.
+
+   Then make one cooling-versus-solar-time plot per city, with date labels and intervals. Retain the 1, 2, 4 and 8 km uncertainty sensitivity so the precision assumptions are visible.
+
+3. **Expose and interpret the completed spatial comparisons.**
+
+   Reuse the September 23 results:
+
+   | Comparison | What to present |
+   |---|---|
+   | Original versus common cells | Both estimates and their absolute change for all eleven Phoenix passes |
+   | Fixed-support registration | Shifted-minus-unshifted cooling, with paired intervals, for the six added Phoenix passes |
+   | Available-support shifts | Separate results, because both alignment and sample composition change |
+   | Shared footprint | A map and comparison of canopy/context distributions in retained and excluded cells |
+
+   One implementation detail needs attention: **the fixed-support registration difference intervals already exist; the common-cell records contain point changes.** We should verify uncertainty for the original-versus-common-cell differences rather than pair bootstrap draws from different block lists merely because they share a seed. This does not require repeating the completed 65 fits.
+
+4. **Add the supported June/August time sensitivity after reviewing that packet.**
+
+   Keep all eleven Phoenix passes in the descriptive plot. For the sensitivity, calculate:
+
+   \[
+   C_{\mathrm{afternoon}}
+   =0.50C_{\mathrm{June\,11}}+0.50C_{\mathrm{August\,11}}
+   \]
+
+   \[
+   C_{\mathrm{morning}}
+   =0.50C_{\mathrm{June\,26}}
+   +0.25C_{\mathrm{August\,6}}
+   +0.25C_{\mathrm{August\,23}}
+   \]
+
+   Report afternoon minus morning, plus the June and August comparisons separately. This compares **09:30–11:30 with 15:00–18:00**, rather than estimating an exact 10:30-versus-16:00 difference.
+
+   Complete missing weather records, make leave-one-date-out influence plots, and mark comparisons unsupported when removing a date eliminates an arm. Calibrate temporal uncertainty using the actual sampling design, accounting for repeated geography and avoiding counting first-stage uncertainty twice.
+
+5. **Implement his specific quadratic sensitivity.**
+
+   Our September 30 spline graph is an exploratory addition. **It does not complete his requested simple quadratic check**, particularly because its cities use different references.
+
+   Fit the same cells, blocks and controls with canopy terms \(f\) and \(f^2\). Square raw canopy first, then centre each term within blocks.
+
+   For supported endpoints \(f_1=f_0+0.10\), calculate:
+
+   \[
+   \text{Cooling}
+   =-\left[\beta_1(f_1-f_0)+\beta_2(f_1^2-f_0^2)\right].
+   \]
+
+   Both terms must change in every prediction and bootstrap draw. The required verification example must return **0.44 K cooling** from 10% to 20% canopy.
+
+   Before comparing cities, check observations near both endpoints and overlap in the other controls. The old **2.85%–12.85%** pair needs this stronger support audit; block minima and maxima alone are insufficient.
+
+6. **Choose additional observations only after those findings are reviewed.**
+
+   Prioritize repeated morning and afternoon dates within comparable city–year–month groups. Further years or another city should address a demonstrated gap. Draft the methods and figure captions while the analysis proceeds.
+
+**The immediate deliverable is therefore a complete estimate table, two time plots, spatial comparison figures, a paired temperature/flux diagnostic, and a short interpretation.** The substantive new work comes afterward: weather completion, calibrated time uncertainty, and the supported quadratic comparison. Before selecting an extension, you and Prof. Alizadeh need to agree on the target comparison, a practically meaningful difference and acceptable uncertainty.

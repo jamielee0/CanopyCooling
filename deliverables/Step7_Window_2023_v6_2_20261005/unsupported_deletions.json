@@ -1,0 +1,38 @@
+[
+  {
+    "dropped_orbit": 27963,
+    "date": "2023-06-11",
+    "status": "UNSUPPORTED_EMPTY_MONTH_ARM",
+    "missing_month_arms": [
+      [
+        6,
+        "afternoon"
+      ]
+    ],
+    "remaining_weights": {}
+  },
+  {
+    "dropped_orbit": 28192,
+    "date": "2023-06-26",
+    "status": "UNSUPPORTED_EMPTY_MONTH_ARM",
+    "missing_month_arms": [
+      [
+        6,
+        "morning"
+      ]
+    ],
+    "remaining_weights": {}
+  },
+  {
+    "dropped_orbit": 28909,
+    "date": "2023-08-11",
+    "status": "UNSUPPORTED_EMPTY_MONTH_ARM",
+    "missing_month_arms": [
+      [
+        8,
+        "afternoon"
+      ]
+    ],
+    "remaining_weights": {}
+  }
+]

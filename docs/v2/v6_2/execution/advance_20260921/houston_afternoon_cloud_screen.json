@@ -1,0 +1,516 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "houston",
+      "orbit": 27932,
+      "acquisition_utc": "2023-06-09T23:44:38.385Z",
+      "solar_hour": 17.402059202624695,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 97,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.3233333333333333,
+      "clear_fraction_of_all_sample_points": 0.3233333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "houston",
+      "orbit": 27947,
+      "acquisition_utc": "2023-06-10T22:55:45.017Z",
+      "solar_hour": 16.584173282690028,
+      "sample_points": 300,
+      "observed_points": 14,
+      "clear_points": 14,
+      "sample_point_coverage_fraction": 0.04666666666666667,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.04666666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "houston",
+      "orbit": 27993,
+      "acquisition_utc": "2023-06-13T22:04:57.210Z",
+      "solar_hour": 15.74188995557996,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 296,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9866666666666667,
+      "clear_fraction_of_all_sample_points": 0.9866666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "houston",
+      "orbit": 28583,
+      "acquisition_utc": "2023-07-21T22:32:05.115Z",
+      "solar_hour": 16.068302546062665,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 228,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.76,
+      "clear_fraction_of_all_sample_points": 0.76,
+      "failed_assets": 0
+    },
+    {
+      "city": "houston",
+      "orbit": 28939,
+      "acquisition_utc": "2023-08-13T21:50:49.164Z",
+      "solar_hour": 15.408009020466071,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 299,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9966666666666667,
+      "clear_fraction_of_all_sample_points": 0.9966666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "houston",
+      "orbit": 29483,
+      "acquisition_utc": "2023-09-17T23:21:01.257Z",
+      "solar_hour": 17.083106124100972,
+      "sample_points": 300,
+      "observed_points": 182,
+      "clear_points": 182,
+      "sample_point_coverage_fraction": 0.6066666666666667,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.6066666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "houston",
+      "orbit": 29529,
+      "acquisition_utc": "2023-09-20T22:34:07.041Z",
+      "solar_hour": 16.320005618524988,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "houston",
+      "orbit": 29544,
+      "acquisition_utc": "2023-09-21T21:46:24.504Z",
+      "solar_hour": 15.5307360499782,
+      "sample_points": 300,
+      "observed_points": 182,
+      "clear_points": 182,
+      "sample_point_coverage_fraction": 0.6066666666666667,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.6066666666666667,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "houston",
+      "orbit": 27932,
+      "asset": "ECOv002_L2T_LSTE_27932_013_14RQT_20230609T234438_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27932_013_14RQT_20230609T234438_0711_02/ECOv002_L2T_LSTE_27932_013_14RQT_20230609T234438_0711_02_cloud.tif",
+      "bytes": 19306,
+      "sha256": "95d2e3dcbc5cb35cf4037c8d65ea1888e2ad4d20ac5d4b4b69499b6ae93ac30b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27932,
+      "asset": "ECOv002_L2T_LSTE_27932_013_14RQU_20230609T234438_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27932_013_14RQU_20230609T234438_0711_02/ECOv002_L2T_LSTE_27932_013_14RQU_20230609T234438_0711_02_cloud.tif",
+      "bytes": 17623,
+      "sha256": "587cf449d841dfab96b834efe3d1ecaeb4d8c79f7e9bb50c69cdd4aa16bb541d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27932,
+      "asset": "ECOv002_L2T_LSTE_27932_013_15RTN_20230609T234438_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27932_013_15RTN_20230609T234438_0711_02/ECOv002_L2T_LSTE_27932_013_15RTN_20230609T234438_0711_02_cloud.tif",
+      "bytes": 11118,
+      "sha256": "2490048bc40c8c2ddfc773a05d008de37b71fe3f06e14722fcb31f3d54c20bc9",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27932,
+      "asset": "ECOv002_L2T_LSTE_27932_013_15RTP_20230609T234438_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27932_013_15RTP_20230609T234438_0711_02/ECOv002_L2T_LSTE_27932_013_15RTP_20230609T234438_0711_02_cloud.tif",
+      "bytes": 16380,
+      "sha256": "29214ba861b8d3dc9603ab8a23005073c96ffa029cf3f29b6d2066dc389b58dc",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27932,
+      "asset": "ECOv002_L2T_LSTE_27932_013_15RUN_20230609T234438_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27932_013_15RUN_20230609T234438_0711_02/ECOv002_L2T_LSTE_27932_013_15RUN_20230609T234438_0711_02_cloud.tif",
+      "bytes": 6013,
+      "sha256": "888b019c6e07e41305c23d02b9d12eaf009bad5a454baaf1b10d8f97563365d0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27932,
+      "asset": "ECOv002_L2T_LSTE_27932_013_15RUP_20230609T234438_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27932_013_15RUP_20230609T234438_0711_02/ECOv002_L2T_LSTE_27932_013_15RUP_20230609T234438_0711_02_cloud.tif",
+      "bytes": 6676,
+      "sha256": "5e6dd1e4f4effad182a17e79db9b182c401cd1b145241d7c9799bd1e4229ee85",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27947,
+      "asset": "ECOv002_L2T_LSTE_27947_012_15RUP_20230610T225545_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27947_012_15RUP_20230610T225545_0711_02/ECOv002_L2T_LSTE_27947_012_15RUP_20230610T225545_0711_02_cloud.tif",
+      "bytes": 12468,
+      "sha256": "cc962843d061da22562ee873d9b2ef3245d72d15d8c3694107223d50d7267d17",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_011_14RQT_20230613T220457_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_011_14RQT_20230613T220457_0711_02/ECOv002_L2T_LSTE_27993_011_14RQT_20230613T220457_0711_02_cloud.tif",
+      "bytes": 8923,
+      "sha256": "6fb4b605ded0cb750fb052f2f536f4608434b594adecd06d7341255307b0e78b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_011_14RQU_20230613T220457_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_011_14RQU_20230613T220457_0711_02/ECOv002_L2T_LSTE_27993_011_14RQU_20230613T220457_0711_02_cloud.tif",
+      "bytes": 44109,
+      "sha256": "b1603390a5d1fd12e7664dd895a028884acb9334d1f8beff74b59a553e4f1e6d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_011_15RTP_20230613T220457_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_011_15RTP_20230613T220457_0711_02/ECOv002_L2T_LSTE_27993_011_15RTP_20230613T220457_0711_02_cloud.tif",
+      "bytes": 8206,
+      "sha256": "7bcb62b702d61b94d21b37d43b104e4ac58583bb1424a034e52c71572abcf93b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_012_14RQT_20230613T220549_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_012_14RQT_20230613T220549_0711_02/ECOv002_L2T_LSTE_27993_012_14RQT_20230613T220549_0711_02_cloud.tif",
+      "bytes": 20356,
+      "sha256": "a96d79e06ec02095f518d8131dbb44eabb62e36777ceedde663842007de9c74a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_012_14RQU_20230613T220549_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_012_14RQU_20230613T220549_0711_02/ECOv002_L2T_LSTE_27993_012_14RQU_20230613T220549_0711_02_cloud.tif",
+      "bytes": 14101,
+      "sha256": "511deeab976d14d8b05cab0611816aef3693c6d8eccd6f673b1ab77b2dc525c9",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_012_15RTN_20230613T220549_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_012_15RTN_20230613T220549_0711_02/ECOv002_L2T_LSTE_27993_012_15RTN_20230613T220549_0711_02_cloud.tif",
+      "bytes": 7713,
+      "sha256": "ae0189f3f7af3b66ea9d964c939cfc74b7cc005493cb05a39f478366095413bb",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_012_15RTP_20230613T220549_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_012_15RTP_20230613T220549_0711_02/ECOv002_L2T_LSTE_27993_012_15RTP_20230613T220549_0711_02_cloud.tif",
+      "bytes": 17115,
+      "sha256": "13a82cb7dff2bb04aced4ae7aa6036d1bc1efabb1b7fc7ca7671622ee4204b82",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_012_15RUN_20230613T220549_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_012_15RUN_20230613T220549_0711_02/ECOv002_L2T_LSTE_27993_012_15RUN_20230613T220549_0711_02_cloud.tif",
+      "bytes": 17716,
+      "sha256": "ccfe63473238894202f8c1d8a324c456285607fce9f864715f8c8f8d76a494e7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_012_15RUP_20230613T220549_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_012_15RUP_20230613T220549_0711_02/ECOv002_L2T_LSTE_27993_012_15RUP_20230613T220549_0711_02_cloud.tif",
+      "bytes": 33584,
+      "sha256": "e1b2b464c314f939b6b8e83b6bd0cdd15cdc6f2298986d671af117d1951c1610",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28583,
+      "asset": "ECOv002_L2T_LSTE_28583_003_14RQT_20230721T223205_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28583_003_14RQT_20230721T223205_0712_02/ECOv002_L2T_LSTE_28583_003_14RQT_20230721T223205_0712_02_cloud.tif",
+      "bytes": 26907,
+      "sha256": "7b3272fd31b9e9d4d8f13b3d33e9aa6698d5fac953f9a957f8ded6e0aa974619",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28583,
+      "asset": "ECOv002_L2T_LSTE_28583_003_14RQU_20230721T223205_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28583_003_14RQU_20230721T223205_0712_02/ECOv002_L2T_LSTE_28583_003_14RQU_20230721T223205_0712_02_cloud.tif",
+      "bytes": 13720,
+      "sha256": "e8148c5cce6ff3b8d614d670cb63afee2e047561067dc8b701b5a02672b7e3f5",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28583,
+      "asset": "ECOv002_L2T_LSTE_28583_003_15RTN_20230721T223205_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28583_003_15RTN_20230721T223205_0712_02/ECOv002_L2T_LSTE_28583_003_15RTN_20230721T223205_0712_02_cloud.tif",
+      "bytes": 27751,
+      "sha256": "61fe8e279d5b372ebfe2d3cc28879ee47abe0c1d272b3e13ce661aa44cddcd4d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28583,
+      "asset": "ECOv002_L2T_LSTE_28583_003_15RTP_20230721T223205_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28583_003_15RTP_20230721T223205_0712_02/ECOv002_L2T_LSTE_28583_003_15RTP_20230721T223205_0712_02_cloud.tif",
+      "bytes": 33003,
+      "sha256": "aae2682d3534630cb9f8b34e77acddc6ec59ded81ddce5e1d65eda64d5a2f2e7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28583,
+      "asset": "ECOv002_L2T_LSTE_28583_003_15RUN_20230721T223205_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28583_003_15RUN_20230721T223205_0712_02/ECOv002_L2T_LSTE_28583_003_15RUN_20230721T223205_0712_02_cloud.tif",
+      "bytes": 7062,
+      "sha256": "924808f816cd27ca26e842f50a0132d4052fa06bf111d25d4849c266469bafd0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28583,
+      "asset": "ECOv002_L2T_LSTE_28583_003_15RUP_20230721T223205_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28583_003_15RUP_20230721T223205_0712_02/ECOv002_L2T_LSTE_28583_003_15RUP_20230721T223205_0712_02_cloud.tif",
+      "bytes": 30243,
+      "sha256": "54f47563b27cb065e5dd146de23e1a3c0339cf23d11abed195dbff6b5ac58b8f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_006_14RQT_20230813T215049_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_006_14RQT_20230813T215049_0712_02/ECOv002_L2T_LSTE_28939_006_14RQT_20230813T215049_0712_02_cloud.tif",
+      "bytes": 6106,
+      "sha256": "c5f54b9d94f851dcd0345d2535f861be2b5b9ccfd57592c8dd8db452c562e5bb",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_006_14RQU_20230813T215049_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_006_14RQU_20230813T215049_0712_02/ECOv002_L2T_LSTE_28939_006_14RQU_20230813T215049_0712_02_cloud.tif",
+      "bytes": 5917,
+      "sha256": "7c8f750ba94fc1d9b5c9aba984bdd3466109660739727006db990a9dbe641972",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_006_15RTN_20230813T215049_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_006_15RTN_20230813T215049_0712_02/ECOv002_L2T_LSTE_28939_006_15RTN_20230813T215049_0712_02_cloud.tif",
+      "bytes": 6189,
+      "sha256": "6c4981db694f895d272ffcdc730de0156f5d29a03703fb5d54be19bb02d47944",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_006_15RTP_20230813T215049_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_006_15RTP_20230813T215049_0712_02/ECOv002_L2T_LSTE_28939_006_15RTP_20230813T215049_0712_02_cloud.tif",
+      "bytes": 5852,
+      "sha256": "7729afd5edab6e08b15d2c797ffef3335fc022a18be2aed2c466d72d9669d01b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_006_15RUP_20230813T215049_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_006_15RUP_20230813T215049_0712_02/ECOv002_L2T_LSTE_28939_006_15RUP_20230813T215049_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "e827624e00bd9627db2549e5beabc9cc9f9de8a54615a5078fbd81f0818f2b74",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_007_14RQT_20230813T215141_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_007_14RQT_20230813T215141_0712_02/ECOv002_L2T_LSTE_28939_007_14RQT_20230813T215141_0712_02_cloud.tif",
+      "bytes": 5738,
+      "sha256": "6663f92ff34f2fffc65410ea50cccb778a76077e5bf2a0c127e831bbfeb12f6b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_007_15RTN_20230813T215141_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_007_15RTN_20230813T215141_0712_02/ECOv002_L2T_LSTE_28939_007_15RTN_20230813T215141_0712_02_cloud.tif",
+      "bytes": 6083,
+      "sha256": "5dc0d80d3820ce84b500e59352d49abf61d12d7d116705a2c32c3db1dbacaacf",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_007_15RTP_20230813T215141_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_007_15RTP_20230813T215141_0712_02/ECOv002_L2T_LSTE_28939_007_15RTP_20230813T215141_0712_02_cloud.tif",
+      "bytes": 5775,
+      "sha256": "5831cf45805d0ff2ba15af2156a09770722e5ae8ab0a9261a355a03275354c3a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_007_15RUN_20230813T215141_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_007_15RUN_20230813T215141_0712_02/ECOv002_L2T_LSTE_28939_007_15RUN_20230813T215141_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "f7a4879515f72d3664af96fb8d784391089c3d3262f83a39fefe0869291a0f03",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_007_15RUP_20230813T215141_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_007_15RUP_20230813T215141_0712_02/ECOv002_L2T_LSTE_28939_007_15RUP_20230813T215141_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "e827624e00bd9627db2549e5beabc9cc9f9de8a54615a5078fbd81f0818f2b74",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29483,
+      "asset": "ECOv002_L2T_LSTE_29483_004_15RTN_20230917T232101_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29483_004_15RTN_20230917T232101_0712_02/ECOv002_L2T_LSTE_29483_004_15RTN_20230917T232101_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "203e9f0d0f6ac2e44368334590dfeabae1b42938be193f29f8578697eba5b38a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29483,
+      "asset": "ECOv002_L2T_LSTE_29483_004_15RUN_20230917T232101_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29483_004_15RUN_20230917T232101_0712_02/ECOv002_L2T_LSTE_29483_004_15RUN_20230917T232101_0712_02_cloud.tif",
+      "bytes": 10331,
+      "sha256": "22bd2ad42c0fe892685c2b8625343600b0ed61b27f8770326cbf2c2abdfba544",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29483,
+      "asset": "ECOv002_L2T_LSTE_29483_004_15RUP_20230917T232101_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29483_004_15RUP_20230917T232101_0712_02/ECOv002_L2T_LSTE_29483_004_15RUP_20230917T232101_0712_02_cloud.tif",
+      "bytes": 7793,
+      "sha256": "d035d3ff2043cb8121b16c343f0ec3d26e62b51119a68696d44f382cb83d7d9a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_004_14RQT_20230920T223407_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_004_14RQT_20230920T223407_0712_02/ECOv002_L2T_LSTE_29529_004_14RQT_20230920T223407_0712_02_cloud.tif",
+      "bytes": 11649,
+      "sha256": "3220c1b3b210bc27da269addca381e1a62aecb2cfc9c69d972a5e2f88ab3eddf",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_004_14RQU_20230920T223407_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_004_14RQU_20230920T223407_0712_02/ECOv002_L2T_LSTE_29529_004_14RQU_20230920T223407_0712_02_cloud.tif",
+      "bytes": 6959,
+      "sha256": "426b9c265ed2d4b58ad3f15fb5906080633dfc59218dd1a0827331e02cec89a7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_004_15RTN_20230920T223407_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_004_15RTN_20230920T223407_0712_02/ECOv002_L2T_LSTE_29529_004_15RTN_20230920T223407_0712_02_cloud.tif",
+      "bytes": 6588,
+      "sha256": "9b154c62fc038a9d1bb0f6fec1c60ad9f49b87c71ec36b3f0e4d6459b3d44438",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_004_15RTP_20230920T223407_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_004_15RTP_20230920T223407_0712_02/ECOv002_L2T_LSTE_29529_004_15RTP_20230920T223407_0712_02_cloud.tif",
+      "bytes": 9618,
+      "sha256": "2437bf43043c3548f565cfe830d11ebe8b264a5163e5910b0b01f3418b949668",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_004_15RUN_20230920T223407_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_004_15RUN_20230920T223407_0712_02/ECOv002_L2T_LSTE_29529_004_15RUN_20230920T223407_0712_02_cloud.tif",
+      "bytes": 5846,
+      "sha256": "31e44d6d40fc8ba9c76eacb87ae14169694fec53dcf8f239b30ef64a65a181ff",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_004_15RUP_20230920T223407_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_004_15RUP_20230920T223407_0712_02/ECOv002_L2T_LSTE_29529_004_15RUP_20230920T223407_0712_02_cloud.tif",
+      "bytes": 16844,
+      "sha256": "58d230d9164114159e3b2e399ba2d792f1a48aa87b7169eaffb0d2ac387b511d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_005_15RUP_20230920T223459_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_005_15RUP_20230920T223459_0712_02/ECOv002_L2T_LSTE_29529_005_15RUP_20230920T223459_0712_02_cloud.tif",
+      "bytes": 10693,
+      "sha256": "ef6f54ebf38e148da3ffd921179533544a5f83bf3c330d7335a0da6b1bf2d3ab",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29544,
+      "asset": "ECOv002_L2T_LSTE_29544_004_15RTN_20230921T214624_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29544_004_15RTN_20230921T214624_0712_02/ECOv002_L2T_LSTE_29544_004_15RTN_20230921T214624_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "203e9f0d0f6ac2e44368334590dfeabae1b42938be193f29f8578697eba5b38a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29544,
+      "asset": "ECOv002_L2T_LSTE_29544_004_15RUN_20230921T214624_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29544_004_15RUN_20230921T214624_0712_02/ECOv002_L2T_LSTE_29544_004_15RUN_20230921T214624_0712_02_cloud.tif",
+      "bytes": 13925,
+      "sha256": "d739057a3f4c2cd61d771a0801cbf3ad836f4b6dbcdfe7adb6dbf427c44f7f42",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "houston",
+      "orbit": 29544,
+      "asset": "ECOv002_L2T_LSTE_29544_004_15RUP_20230921T214624_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29544_004_15RUP_20230921T214624_0712_02/ECOv002_L2T_LSTE_29544_004_15RUP_20230921T214624_0712_02_cloud.tif",
+      "bytes": 7397,
+      "sha256": "d622dc92a8f131da7eebeff4d1d2ad585da16a88cd931770fc4c3dce67d6cc6c",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

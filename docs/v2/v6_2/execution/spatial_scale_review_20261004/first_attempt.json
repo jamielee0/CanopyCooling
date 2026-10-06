@@ -1,0 +1,9 @@
+{
+  "status": "STOPPED_BEFORE_COMPARISON_OUTPUTS",
+  "reason": "Historical block_labels arrays have object dtype; allow_pickle=False rejected them",
+  "new_effect_values_displayed": false,
+  "new_comparison_artifacts_created": false,
+  "source_inputs_modified": false,
+  "cached_outcome_access": "first Atlanta frame T/M/emissivity for internal reference diagnostic; all-eleven Phoenix cell_id columns; first primary model read attempted",
+  "repair": "restricted NumPy label unpickler; no arbitrary globals; convert verified 1D string labels to Unicode"
+}

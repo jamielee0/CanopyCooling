@@ -1,0 +1,197 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "baltimore",
+      "orbit": 27885,
+      "acquisition_utc": "2023-06-06T22:59:22.287Z",
+      "solar_hour": 17.914936472691195,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 226,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.7533333333333333,
+      "clear_fraction_of_all_sample_points": 0.7533333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27900,
+      "acquisition_utc": "2023-06-07T22:10:59.622Z",
+      "solar_hour": 17.098380703348237,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 191,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.6366666666666667,
+      "clear_fraction_of_all_sample_points": 0.6366666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27946,
+      "acquisition_utc": "2023-06-10T21:20:09.444Z",
+      "solar_hour": 16.2488956184759,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 286,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9533333333333334,
+      "clear_fraction_of_all_sample_points": 0.9533333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27961,
+      "acquisition_utc": "2023-06-11T20:31:39.699Z",
+      "solar_hour": 15.430120814207733,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 189,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.63,
+      "clear_fraction_of_all_sample_points": 0.63,
+      "failed_assets": 0
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28598,
+      "acquisition_utc": "2023-07-22T21:48:03.654Z",
+      "solar_hour": 16.591290477050674,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 281,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9366666666666666,
+      "clear_fraction_of_all_sample_points": 0.9366666666666666,
+      "failed_assets": 0
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28644,
+      "acquisition_utc": "2023-07-25T20:59:37.299Z",
+      "solar_hour": 15.78206365711467,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29605,
+      "acquisition_utc": "2023-09-25T20:16:18.234Z",
+      "solar_hour": 15.303768519790546,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 22,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.07333333333333333,
+      "clear_fraction_of_all_sample_points": 0.07333333333333333,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "baltimore",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_009_18SUJ_20230606T225922_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_009_18SUJ_20230606T225922_0711_02/ECOv002_L2T_LSTE_27885_009_18SUJ_20230606T225922_0711_02_cloud.tif",
+      "bytes": 16648,
+      "sha256": "af23d3cb28386ec5bf1556d2311d6b43b52b91923323025a92c79d15007e0f9a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_010_18SUJ_20230606T230014_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_010_18SUJ_20230606T230014_0711_02/ECOv002_L2T_LSTE_27885_010_18SUJ_20230606T230014_0711_02_cloud.tif",
+      "bytes": 11329,
+      "sha256": "451c35c132b4c748bce14b9b6639fb98a2db3551837be4acded1aaa5b91fe434",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_010_18SUJ_20230607T221059_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_010_18SUJ_20230607T221059_0711_02/ECOv002_L2T_LSTE_27900_010_18SUJ_20230607T221059_0711_02_cloud.tif",
+      "bytes": 72218,
+      "sha256": "a2eb21060864911cc9935c6d2714f491af60f700b8c9382d870547726110090b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_006_18SUJ_20230610T212009_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_006_18SUJ_20230610T212009_0711_02/ECOv002_L2T_LSTE_27946_006_18SUJ_20230610T212009_0711_02_cloud.tif",
+      "bytes": 6171,
+      "sha256": "3997e56d6986e031557a4e57faad48c7aafff9552ff43613804ec49a13f2437e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_007_18SUJ_20230610T212101_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_007_18SUJ_20230610T212101_0711_02/ECOv002_L2T_LSTE_27946_007_18SUJ_20230610T212101_0711_02_cloud.tif",
+      "bytes": 39602,
+      "sha256": "b6eef2d96e520167c110ea7cdcb7a1d80b9688d4dbb4b336c43ef214b5fb2f09",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27961,
+      "asset": "ECOv002_L2T_LSTE_27961_010_18SUJ_20230611T203139_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27961_010_18SUJ_20230611T203139_0711_02/ECOv002_L2T_LSTE_27961_010_18SUJ_20230611T203139_0711_02_cloud.tif",
+      "bytes": 49209,
+      "sha256": "194e5d5c78eda20965730d5244cea8876729d331af141aa919e9237ccf98f2a7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_007_18SUJ_20230722T214803_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_007_18SUJ_20230722T214803_0712_02/ECOv002_L2T_LSTE_28598_007_18SUJ_20230722T214803_0712_02_cloud.tif",
+      "bytes": 29340,
+      "sha256": "946dae44f7033ad8d5352aa49681b9ca2cbf4eb77e00aa1c3a73ff8eeb779e9a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_008_18SUJ_20230722T214855_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_008_18SUJ_20230722T214855_0712_02/ECOv002_L2T_LSTE_28598_008_18SUJ_20230722T214855_0712_02_cloud.tif",
+      "bytes": 25257,
+      "sha256": "984fe7d792dda64fb8d741fbb112415ee981c0c3b5dca1d36fce4f62428b3523",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28644,
+      "asset": "ECOv002_L2T_LSTE_28644_006_18SUJ_20230725T205937_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28644_006_18SUJ_20230725T205937_0712_01/ECOv002_L2T_LSTE_28644_006_18SUJ_20230725T205937_0712_01_cloud.tif",
+      "bytes": 7663,
+      "sha256": "bb8130916839ba78c8d3880c8b20be521a7d71ef93fc9077bcf51a8f03f2c3fa",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28644,
+      "asset": "ECOv002_L2T_LSTE_28644_007_18SUJ_20230725T210029_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28644_007_18SUJ_20230725T210029_0712_01/ECOv002_L2T_LSTE_28644_007_18SUJ_20230725T210029_0712_01_cloud.tif",
+      "bytes": 9436,
+      "sha256": "c8d96c37d922a2566384505f05cbd0051917ff84a90b136208ce402c18825951",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29605,
+      "asset": "ECOv002_L2T_LSTE_29605_008_18SUJ_20230925T201618_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29605_008_18SUJ_20230925T201618_0712_02/ECOv002_L2T_LSTE_29605_008_18SUJ_20230925T201618_0712_02_cloud.tif",
+      "bytes": 10248,
+      "sha256": "0febfb4404f1f7f9fdd08f7fb41bf5f028655fb6d031cd6b0862ad2e7e367d75",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

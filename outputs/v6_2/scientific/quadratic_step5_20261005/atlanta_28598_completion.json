@@ -1,0 +1,28 @@
+{
+  "city": "atlanta",
+  "orbit": 28598,
+  "date": "2023-07-22",
+  "n_cells": 237294,
+  "n_blocks": 4903,
+  "linear_rank": 7,
+  "quadratic_rank": 8,
+  "controls_retained": 6,
+  "original_linear_recovered": true,
+  "paired_draws_requested": 2000,
+  "paired_draws_estimable": 2000,
+  "paired_draws_failed": 0,
+  "supported_candidate_pairs": 14,
+  "execution_freeze_sha256": "92a5ed885da6705ab35498b6f269e78987790e6f67f116d807d15f8c2c57e837",
+  "source_sha256": "1800ff20c9087dd62e46460f1cceda3ae00033739f1b06bd736a0e5779a034d2",
+  "effect_status": "SEALED_USER_REQUEST",
+  "elapsed_seconds": 2.993,
+  "output_sha256": {
+    "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_models_SEALED.npz": "db68d7c0f104f4934ada96d284737d40c2553134c71c4e28082d34a350989805",
+    "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_finite_contrasts_SEALED.json": "ac84f08a48c1ed660f3584c6802a99dc3019b2d280ab5f2428a78ad38e917dd8",
+    "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_curves_SEALED.json": "fbab0cf760fb7ccb6d6f3ba9ae9ee5a5f1ea164572bb4b38d658f42ce8170ccf",
+    "outputs/v6_2/scientific/quadratic_step5_20261005/atlanta_28598_precision.json": "9f35aad7248a81c16b84f67696fb9283b2f534f010598486a63789ef716f78fe",
+    "outputs/v6_2/scientific/quadratic_step5_20261005/atlanta_28598_support.json": "429bb079698eeb5561a9a664fb83e3bc940202308fd279c74a058ebea4ff2550",
+    "outputs/v6_2/scientific/quadratic_step5_20261005/atlanta_28598_resampling.json": "d1a6f269b10d638fa2e7f145c720669ad24a1948b94acd698859c4f7b92d3966",
+    "outputs/v6_2/scientific/quadratic_step5_20261005/atlanta_28598_canopy_histogram.json": "362ab5644d20e3025c144e00043e3af25d135840577968a3b948267bf17d40d9"
+  }
+}

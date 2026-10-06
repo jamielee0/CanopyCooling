@@ -1,0 +1,31 @@
+{
+  "f0": 0.028509538620710373,
+  "f1": 0.12850953862071038,
+  "reference_K": 314.7740020751953,
+  "reference_emissivity": 0.9473999977111817,
+  "rule": "equal_city_average_of_equal_pass_medians; covariance_reference_rows_within_support_blocks",
+  "reference_rows": [
+    241990,
+    257185,
+    278368,
+    278368,
+    206134,
+    184256,
+    195123,
+    182576,
+    96379,
+    81083
+  ],
+  "reference_blocks": [
+    1375,
+    1387,
+    1479,
+    1479,
+    1174,
+    2262,
+    2397,
+    2254,
+    1358,
+    1174
+  ]
+}

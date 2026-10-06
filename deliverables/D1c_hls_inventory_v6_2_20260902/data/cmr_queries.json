@@ -1,0 +1,478 @@
+[
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 52,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2019-06-05T22:18:31Z,2019-10-09T00:42:41Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2019_HLSL30_002.json",
+    "raw_response_sha256": "fb61e10655bee5cb5b0b39f50a1f1f277ca7d9138bec4f260700f907e3de050f",
+    "retrieved": 52,
+    "retrieved_utc": "2026-09-02T05:46:10.017194+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2019
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 194,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2019-06-05T22:18:31Z,2019-10-09T00:42:41Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2019_HLSS30_002.json",
+    "raw_response_sha256": "a5cbe55537b1cd4333a5bd4acaa346e76b1fd444c9b922eb421583cc37e50f78",
+    "retrieved": 194,
+    "retrieved_utc": "2026-09-02T05:46:12.439829+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2019
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 14,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2020-08-04T21:36:23Z,2020-09-03T21:36:23Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2020_HLSL30_002.json",
+    "raw_response_sha256": "ecb644c807c6a075f092fcab7e4e43b3aa87efe0eb17d6d140f2ab8437e1a978",
+    "retrieved": 14,
+    "retrieved_utc": "2026-09-02T05:46:13.699296+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2020
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 48,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2020-08-04T21:36:23Z,2020-09-03T21:36:23Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2020_HLSS30_002.json",
+    "raw_response_sha256": "ab51e031556baf05b165186210912460f8fab5ccafc7b5eb68d01597513c46d4",
+    "retrieved": 48,
+    "retrieved_utc": "2026-09-02T05:46:15.222863+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2020
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 21,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2021-07-26T01:11:48Z,2021-09-09T19:02:53Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2021_HLSL30_002.json",
+    "raw_response_sha256": "7b0e1b483840d584ac2a9936823ac7610455aeb253a2cbf0797b27970295ddb5",
+    "retrieved": 21,
+    "retrieved_utc": "2026-09-02T05:46:16.339581+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2021
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 75,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2021-07-26T01:11:48Z,2021-09-09T19:02:53Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2021_HLSS30_002.json",
+    "raw_response_sha256": "0a7753dc25242a288b8bcfbdb7b3efcfe6fa07653c1e864673292de6a00739fc",
+    "retrieved": 75,
+    "retrieved_utc": "2026-09-02T05:46:17.887043+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2021
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 69,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2022-07-13T21:47:53Z,2022-10-05T00:42:04Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2022_HLSL30_002.json",
+    "raw_response_sha256": "8b6ba14b9bbe6724d647cc284e11712f14087207a1cad4fc10c42592df88566f",
+    "retrieved": 69,
+    "retrieved_utc": "2026-09-02T05:46:19.779747+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2022
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 131,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2022-07-13T21:47:53Z,2022-10-05T00:42:04Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2022_HLSS30_002.json",
+    "raw_response_sha256": "6d098e77597933d2362eab99ed6a26b5dafdd2aab9108d5e2644f088bf524f9d",
+    "retrieved": 131,
+    "retrieved_utc": "2026-09-02T05:46:21.565333+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2022
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 70,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2023-05-27T23:39:53Z,2023-08-13T20:53:55Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2023_HLSL30_002.json",
+    "raw_response_sha256": "cd8684f5383be21057ac929188cc40e8bf78a41bfaa2666aebd03468a9d4cf37",
+    "retrieved": 70,
+    "retrieved_utc": "2026-09-02T05:46:23.086749+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2023
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 124,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2023-05-27T23:39:53Z,2023-08-13T20:53:55Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2023_HLSS30_002.json",
+    "raw_response_sha256": "56e3692e902471322a9ce46d70a52c361c12df7c1bd0da6b738dd4dfa499be3e",
+    "retrieved": 124,
+    "retrieved_utc": "2026-09-02T05:46:25.054228+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2023
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 28,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2024-06-03T20:02:36Z,2024-07-03T20:02:36Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2024_HLSL30_002.json",
+    "raw_response_sha256": "921957dabfd18dd44c9a7dea8ee80b22c32ad8695d49e3b675f1ecae95b104e4",
+    "retrieved": 28,
+    "retrieved_utc": "2026-09-02T05:46:26.375923+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2024
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 44,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2024-06-03T20:02:36Z,2024-07-03T20:02:36Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2024_HLSS30_002.json",
+    "raw_response_sha256": "a8c107c7e77e4f7c597d06a1b2afc40e355924a608fff2e6aa906d43d819cef1",
+    "retrieved": 44,
+    "retrieved_utc": "2026-09-02T05:46:27.788132+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2024
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 67,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2025-07-27T22:02:12Z,2025-10-09T20:46:33Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2025_HLSL30_002.json",
+    "raw_response_sha256": "b5ed893fe13af793269762ffe910854c3863e6632073158a110b96ce6e7aee87",
+    "retrieved": 67,
+    "retrieved_utc": "2026-09-02T05:46:29.417138+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2025
+  },
+  {
+    "city": "phoenix",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 148,
+    "parameters": {
+      "bounding_box": "-112.46039000,33.11814000,-111.46917000,33.89293000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2025-07-27T22:02:12Z,2025-10-09T20:46:33Z"
+    },
+    "raw_response_path": "data/cmr_raw/phoenix_2025_HLSS30_002.json",
+    "raw_response_sha256": "3e704e38ed6a8a477c77efe2d3193aa0db9485e56a47a784416743427a4c8184",
+    "retrieved": 148,
+    "retrieved_utc": "2026-09-02T05:46:31.862965+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2025
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 59,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2019-05-19T21:44:10Z,2019-09-01T23:33:24Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2019_HLSL30_002.json",
+    "raw_response_sha256": "339bfa2d09442de65662a8801d15c191350855ae2f3a307e13b3d414ccc0a2bc",
+    "retrieved": 59,
+    "retrieved_utc": "2026-09-02T05:46:33.425681+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2019
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 122,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2019-05-19T21:44:10Z,2019-09-01T23:33:24Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2019_HLSS30_002.json",
+    "raw_response_sha256": "ee172fd192e4e7a3e37856e7998e5d5892598835cf0bd81e727df2c3c40b7029",
+    "retrieved": 122,
+    "retrieved_utc": "2026-09-02T05:46:35.537083+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2019
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 25,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2020-07-27T01:29:54Z,2020-09-06T20:49:04Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2020_HLSL30_002.json",
+    "raw_response_sha256": "0059426fd139e0f969d9f50706402740da8d626072896c4e869961ab895b8d18",
+    "retrieved": 25,
+    "retrieved_utc": "2026-09-02T05:46:36.829952+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2020
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 51,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2020-07-27T01:29:54Z,2020-09-06T20:49:04Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2020_HLSS30_002.json",
+    "raw_response_sha256": "150902b1bf52d0a04c77eeb0fc388bed1471e019d553b66d919857ff397fad14",
+    "retrieved": 51,
+    "retrieved_utc": "2026-09-02T05:46:38.301249+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2020
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 59,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2021-05-20T20:03:01Z,2021-08-31T22:52:42Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2021_HLSL30_002.json",
+    "raw_response_sha256": "946430dbd106d120cc977cc25e4d87bf35fb61ac1771c342ffcb4e765a951bad",
+    "retrieved": 59,
+    "retrieved_utc": "2026-09-02T05:46:39.907360+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2021
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 122,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2021-05-20T20:03:01Z,2021-08-31T22:52:42Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2021_HLSS30_002.json",
+    "raw_response_sha256": "0d242fe6c75c44c0928477e1c4e41f766b3b3881ffdb0252d7012a4a77d1fe04",
+    "retrieved": 122,
+    "retrieved_utc": "2026-09-02T05:46:41.611350+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2021
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 60,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2022-07-12T22:35:31Z,2022-09-08T19:20:25Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2022_HLSL30_002.json",
+    "raw_response_sha256": "865e32c53530c3596a8baf343844f16101cce7e5c307c2e5d17f298af027ec83",
+    "retrieved": 60,
+    "retrieved_utc": "2026-09-02T05:46:43.359262+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2022
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 66,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2022-07-12T22:35:31Z,2022-09-08T19:20:25Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2022_HLSS30_002.json",
+    "raw_response_sha256": "09275a921365fcd8fa18c4de45eedb97ab053813c2b7eb254bbb76f4b230970a",
+    "retrieved": 66,
+    "retrieved_utc": "2026-09-02T05:46:44.930598+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2022
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 94,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2023-05-21T18:47:43Z,2023-08-22T01:47:01Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2023_HLSL30_002.json",
+    "raw_response_sha256": "dca23a8898178e2b87866eddefbe2c3c760fd5355bdb39cd2fa57d6e70b90dcd",
+    "retrieved": 94,
+    "retrieved_utc": "2026-09-02T05:46:46.648689+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2023
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 106,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2023-05-21T18:47:43Z,2023-08-22T01:47:01Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2023_HLSS30_002.json",
+    "raw_response_sha256": "9ebbfbffe9e4bb05f12c121c7b7e17a16bb7f3f4fc41c52d06a05f568c5bc116",
+    "retrieved": 106,
+    "retrieved_utc": "2026-09-02T05:46:48.755547+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2023
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 30,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2024-07-05T23:55:50Z,2024-08-04T23:55:50Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2024_HLSL30_002.json",
+    "raw_response_sha256": "29e4d7b73373517afb427ad77e07684dbe541d8fd362af2f4ccd6f89cd804e56",
+    "retrieved": 30,
+    "retrieved_utc": "2026-09-02T05:46:50.168697+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2024
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 36,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2024-07-05T23:55:50Z,2024-08-04T23:55:50Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2024_HLSS30_002.json",
+    "raw_response_sha256": "ec816ee51d83d7f981354d086707884206bc06b1c11b066c3213ccdbc5b8d657",
+    "retrieved": 36,
+    "retrieved_utc": "2026-09-02T05:46:51.740687+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2024
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 147,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957657-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2025-05-20T01:42:27Z,2025-10-04T23:13:29Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2025_HLSL30_002.json",
+    "raw_response_sha256": "6ddac988de4d665ddcb539a2b4d29009042ca226a5fb28e26429ddd6d2ba8ced",
+    "retrieved": 147,
+    "retrieved_utc": "2026-09-02T05:46:53.520481+00:00",
+    "sensor": "HLSL30.002",
+    "year": 2025
+  },
+  {
+    "city": "los_angeles",
+    "endpoint": "https://cmr.earthdata.nasa.gov/search/granules.umm_json",
+    "hits": 206,
+    "parameters": {
+      "bounding_box": "-118.91591000,33.56400000,-117.44495000,34.33349000",
+      "collection_concept_id": "C2021957295-LPCLOUD",
+      "page_size": "2000",
+      "temporal": "2025-05-20T01:42:27Z,2025-10-04T23:13:29Z"
+    },
+    "raw_response_path": "data/cmr_raw/los_angeles_2025_HLSS30_002.json",
+    "raw_response_sha256": "f481fcdb40098404b2b29ea78b3b8b3a6f7dad82b54a4bddacc30e7adab975ff",
+    "retrieved": 206,
+    "retrieved_utc": "2026-09-02T05:46:56.155907+00:00",
+    "sensor": "HLSS30.002",
+    "year": 2025
+  }
+]

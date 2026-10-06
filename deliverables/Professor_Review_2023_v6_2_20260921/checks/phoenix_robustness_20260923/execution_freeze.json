@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-09-23T20:32:03.888990+00:00",
+  "specification": {
+    "run_id": "phoenix_robustness_20260923",
+    "city": "phoenix",
+    "year": 2023,
+    "registration_orbits": [
+      28085,
+      28192,
+      28970,
+      29092,
+      29545,
+      29606
+    ],
+    "common_cell_orbits": [
+      27963,
+      28024,
+      28706,
+      28828,
+      28909,
+      28085,
+      28192,
+      28970,
+      29092,
+      29545,
+      29606
+    ],
+    "registration_shifts_native_cells": [
+      [
+        0,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "cell_metres": 70,
+    "registration_rule": "shift all context layers together; retain unchanged thermal outcomes; reproduce historical full-support checks and additionally compare on common support across five alignments",
+    "common_cell_rule": "exact unique native-cell intersection across all eleven 2023 Phoenix passes; refit all eleven, including original five",
+    "paired_spaces": "same cells, context, weights and bootstrap draws for LST and M",
+    "bootstrap_replicates": 1000,
+    "seed_policy": "reuse source manifest seed for each orbit",
+    "baseline_validation": "rebuilt unshifted registration frame must exactly equal cached original rows; baseline coefficients are unchanged",
+    "publication": "support, precision, numerical completion only; coefficients and baseline differences sealed",
+    "no_new_passes_or_time_model": true,
+    "no_new_stability_cutoff": true,
+    "prior_disclosure": "Original ten and added six LST gradients previously disclosed; new robustness comparisons remain sealed; no global blindness claim.",
+    "data_target": "${USER_HOME}/Documents/Documents - Jamie\u2019s Mac mini/TreeProject/project/data",
+    "source_manifests_sha256": {
+      "docs/v2/v6_2/execution/phoenix_execution_manifest.json": "e776f517f07b5c526214b1152e07b530501c08a2b26e75913bbbe8e69994bcc8",
+      "docs/v2/v6_2/execution/advance_20260921/phoenix_execution_manifest.json": "381a252d86e01d2a125596d32d2355047fca949cfb9b9c0948c04ea64ca42dbc"
+    },
+    "code_sha256": {
+      "src/v6_2_advance/run_robustness_completion.py": "85f432ae72d4f3c31db9c64dee693b873f20e8bbe16f93259bd02aecbc680bbc",
+      "src/urban_cooling_v2/pooled_city_pass.py": "0434337b39c76dcdbba3fcb9695869aff8c483784e8521274fdb9b2869942d22",
+      "src/urban_cooling_v2/pilot_native.py": "91bf31447363aedb06abc99b7e8774c32930281393f779e9bf379126e92df21c",
+      "src/urban_cooling_v2/v6_2_output_boundary.py": "16ffab193ed2fd3b14cb81148e029ee8e835cef0f43971dbbd6f7f5cc672906c",
+      "src/run_v6_2_d1d_stage1_precision.py": "340d854dea07848602190a367155d0227195bf8e509e71d35b76fae57593045c"
+    },
+    "native_inputs_sha256": {
+      "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet": "f0316cbd2288a293a3d8167476347ff4e6bc771ae7350921a728a16f6b182ea9",
+      "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_native_cells_SEALED.parquet": "47b712521ba258e29b751d5f82fe0f5c9b5f600c2c43af930dfdc91ffe406798",
+      "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_native_cells_SEALED.parquet": "cfd98b1f2e726b22fa7500c41f04690c39e7a7ec764b24742e0215034d91f6a2",
+      "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_native_cells_SEALED.parquet": "b550e55bbb5aeb6ea04fe33d3fad11e3ba4d5bcaae24fe825e1dfa625a2179f4",
+      "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_native_cells_SEALED.parquet": "f41faa1bec1bcffd7372cf8b96c5e7483d414670ac48c33cdc0bedafaf9c9548",
+      "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_native_cells_SEALED.parquet": "c99e449075d720f2c06ff4755ba55bd7204a3556ea5a5adef4bfc74795b17bc5",
+      "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_native_cells_SEALED.parquet": "4cdeb2ceaca6d37d6b1b63ffceefb6134fc7ec07dc576db641af778fd9e6ea58",
+      "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_native_cells_SEALED.parquet": "116793cc2d9c41feb8acdc7b3e23c1452f5bd434d96bfb7858dca1e3e075da26",
+      "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_native_cells_SEALED.parquet": "d3a46602378ab9b36f589264bfed1c6617f1bccfc961c89fd7a702d6f941405a",
+      "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_native_cells_SEALED.parquet": "033782207ae1fe2eff6b759f158d7d6205599edd4e37cf96ffb22a2fd9b4d541",
+      "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_native_cells_SEALED.parquet": "6e9c255eda75c6ddcbadda2e290389ed205d9419b51ac160d787036b12167d44"
+    }
+  }
+}

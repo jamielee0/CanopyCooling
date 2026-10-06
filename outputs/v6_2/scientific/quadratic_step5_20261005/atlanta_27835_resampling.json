@@ -1,0 +1,32 @@
+[
+  {
+    "city": "atlanta",
+    "orbit": 27835,
+    "date": "2023-06-03",
+    "group_km": 1,
+    "groups": 7327,
+    "requested": 1000,
+    "linear_estimable": 1000,
+    "quadratic_estimable": 1000,
+    "paired_estimable": 1000,
+    "paired_failed": 0,
+    "linear_failed_indices": [],
+    "quadratic_failed_indices": [],
+    "draw_multiplicity_sha256": "5f41d09858193958e981847352ad13f8f276db94cb1558ce299acb6ec9dbaef0"
+  },
+  {
+    "city": "atlanta",
+    "orbit": 27835,
+    "date": "2023-06-03",
+    "group_km": 8,
+    "groups": 164,
+    "requested": 1000,
+    "linear_estimable": 1000,
+    "quadratic_estimable": 1000,
+    "paired_estimable": 1000,
+    "paired_failed": 0,
+    "linear_failed_indices": [],
+    "quadratic_failed_indices": [],
+    "draw_multiplicity_sha256": "850cf64b9fe089ab61350f9a496341519cbc32c2651f53e171c10ce11e86d063"
+  }
+]

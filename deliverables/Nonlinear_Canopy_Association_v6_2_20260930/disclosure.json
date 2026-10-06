@@ -1,0 +1,16 @@
+{
+  "authorization": "User: why is it linear? can u make it like not linear? and show the real association",
+  "date": "2026-09-30",
+  "scope": "New exploratory LST spline curves, adjusted bins and observed temperature-bin summaries for exactly 11 Phoenix and 5 Atlanta 2023 passes.",
+  "new_outcomes_read": "Existing native-cell LST and emitted energy, programmatically for matched fitting.",
+  "released": "LST curve summaries, individual curves with pointwise spatial uncertainty and binned aggregates only.",
+  "full_paired_models": "outputs/v6_2/sealed_coefficients/nonlinear_association_20260930",
+  "prior_sealed_time_comparisons_opened": false,
+  "prior_robustness_effects_opened": false,
+  "new_time_model": false,
+  "scale_ruling": "pending",
+  "primary_model_replaced": false,
+  "design": "docs/v2/v6_2/execution/nonlinear_association_20260930/design.json",
+  "execution_freeze_sha256": "c533dfb485d6eb9153473b1dc2313cb6f1064a02ae728db11836552553bda788",
+  "other_year_data_used": false
+}

@@ -1,0 +1,98 @@
+{
+  "reason": "Historical NumPy object-label metadata prevented allow_pickle=False loading; add restricted decoder of verified 1D string labels, not general pickle loading",
+  "scientific_design_changed": false,
+  "source_inputs_changed": false,
+  "arbitrary_pickle_globals_allowed": false,
+  "known_answer_boundary_tests": 20,
+  "versions": [
+    {
+      "path": "src/v6_2_advance/spatial_review.py",
+      "initial_sha256": "58165109320d54658c2a1fbd09098b13bf21a34b755c14efa22b5e2d0e724938",
+      "final_sha256": "7111f6cf7cd881526911de572a61daf384edc4a394641f494d1d9a82b069434d",
+      "initial_archive": "docs/v2/v6_2/execution/spatial_scale_review_20261004/archive/frozen_code/src/v6_2_advance/spatial_review.py",
+      "changed": true
+    },
+    {
+      "path": "src/v6_2_advance/run_spatial_review.py",
+      "initial_sha256": "9090261c8b1837afc6fcb9e03ba905d53137b0cb88cc44ab803f478ea5c2eed2",
+      "final_sha256": "9cd70304fba2ad1599da70d4218fc99c5b4e07702927a0b59487d8fd0c3bad1e",
+      "initial_archive": "docs/v2/v6_2/execution/spatial_scale_review_20261004/archive/frozen_code/src/v6_2_advance/run_spatial_review.py",
+      "changed": true
+    },
+    {
+      "path": "src/v6_2_advance/plot_spatial_review.py",
+      "initial_sha256": "e642c87ebb820f994299ae9ab0ef7f0f136aa76222d74cb8585bb5d6d19be21d",
+      "final_sha256": "04c2fac7efb7bc5d6e7cf8db685c35c08b17a2f78361a27fe8614f3eebd6defb",
+      "initial_archive": "docs/v2/v6_2/execution/spatial_scale_review_20261004/archive/frozen_code/src/v6_2_advance/plot_spatial_review.py",
+      "changed": true
+    },
+    {
+      "path": "tests/v6_2_advance/test_spatial_review.py",
+      "initial_sha256": "9c97ad5dc958e77f4039de20c6ed40ec2da7c939a3e25608406328af1cda8063",
+      "final_sha256": "d3b9346c8556f781b501e475ea7adb543bc33bd5b451b4d63074b506b3d5d06d",
+      "initial_archive": "docs/v2/v6_2/execution/spatial_scale_review_20261004/archive/frozen_code/tests/v6_2_advance/test_spatial_review.py",
+      "changed": true
+    },
+    {
+      "path": "src/urban_cooling_v2/pooled_city_pass.py",
+      "initial_sha256": "0434337b39c76dcdbba3fcb9695869aff8c483784e8521274fdb9b2869942d22",
+      "final_sha256": "0434337b39c76dcdbba3fcb9695869aff8c483784e8521274fdb9b2869942d22",
+      "initial_archive": "docs/v2/v6_2/execution/spatial_scale_review_20261004/archive/frozen_code/src/urban_cooling_v2/pooled_city_pass.py",
+      "changed": false
+    },
+    {
+      "path": "src/urban_cooling_v2/pilot_scale.py",
+      "initial_sha256": "22da21c6b499883ea59de501b6d32f7cd0beb5a13b1673c8dbddd08e6bf5edd2",
+      "final_sha256": "22da21c6b499883ea59de501b6d32f7cd0beb5a13b1673c8dbddd08e6bf5edd2",
+      "initial_archive": "docs/v2/v6_2/execution/spatial_scale_review_20261004/archive/frozen_code/src/urban_cooling_v2/pilot_scale.py",
+      "changed": false
+    },
+    {
+      "path": "src/v6_2_advance/run_robustness_completion.py",
+      "initial_sha256": "85f432ae72d4f3c31db9c64dee693b873f20e8bbe16f93259bd02aecbc680bbc",
+      "final_sha256": "85f432ae72d4f3c31db9c64dee693b873f20e8bbe16f93259bd02aecbc680bbc",
+      "initial_archive": "docs/v2/v6_2/execution/spatial_scale_review_20261004/archive/frozen_code/src/v6_2_advance/run_robustness_completion.py",
+      "changed": false
+    },
+    {
+      "path": "src/v6_2_advance/finish_robustness_comparisons.py",
+      "initial_sha256": "eac0abe60e40ba6632b0979ab008e024346daf132e98c4252ea20aa1f5a72eaa",
+      "final_sha256": "eac0abe60e40ba6632b0979ab008e024346daf132e98c4252ea20aa1f5a72eaa",
+      "initial_archive": "docs/v2/v6_2/execution/spatial_scale_review_20261004/archive/frozen_code/src/v6_2_advance/finish_robustness_comparisons.py",
+      "changed": false
+    },
+    {
+      "path": "src/urban_cooling_v2/v6_2_output_boundary.py",
+      "initial_sha256": "16ffab193ed2fd3b14cb81148e029ee8e835cef0f43971dbbd6f7f5cc672906c",
+      "final_sha256": "16ffab193ed2fd3b14cb81148e029ee8e835cef0f43971dbbd6f7f5cc672906c",
+      "initial_archive": "docs/v2/v6_2/execution/spatial_scale_review_20261004/archive/frozen_code/src/urban_cooling_v2/v6_2_output_boundary.py",
+      "changed": false
+    },
+    {
+      "path": "docs/v2/v6_2/execution/spatial_scale_review_20261004/build_public_tables.mjs",
+      "initial_sha256": "a791b54158fbd337cd09a6466b9ffbd7ff3bc6642f80c1fdef84ea21a97f0bf1",
+      "final_sha256": "a791b54158fbd337cd09a6466b9ffbd7ff3bc6642f80c1fdef84ea21a97f0bf1",
+      "initial_archive": "docs/v2/v6_2/execution/spatial_scale_review_20261004/archive/frozen_code/docs/v2/v6_2/execution/spatial_scale_review_20261004/build_public_tables.mjs",
+      "changed": false
+    }
+  ],
+  "additional_operational_repairs": [
+    "Create guarded sealed output directory with 0700 permission before the first Atlanta diagnostic write",
+    "Vectorize reference block-support verification and endpoint prediction averaging; known-answer test confirms exact agreement with archived prediction function, controls and training centres unchanged",
+    "Move public map footnotes upward after visual QA; numerical map/support inputs and sealed figures unchanged"
+  ],
+  "after_label_repair_versions": [
+    {
+      "path": "archive/after_label_repair/run_spatial_review.py",
+      "sha256": "a2a05d679d6b3b42df7386e15bf4333b4fe79f24d35e0f3dab5432cac72ddb92"
+    },
+    {
+      "path": "archive/after_label_repair/spatial_review.py",
+      "sha256": "04a12301647b0122252c53329f2116c126e23074843b5e957a654a220ba8cf6e"
+    },
+    {
+      "path": "archive/after_label_repair/test_spatial_review.py",
+      "sha256": "65714961491446611204ba57477b21182243aaaf1d28daf41eed2809d5e5d39d"
+    }
+  ]
+}

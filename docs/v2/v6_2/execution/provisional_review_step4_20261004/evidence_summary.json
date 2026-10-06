@@ -1,0 +1,113 @@
+{
+  "status": "PUBLIC_EVIDENCE_RECONCILED",
+  "year": 2023,
+  "cities": {
+    "phoenix": {
+      "count": 11,
+      "released_extremes": {
+        "minimum": {
+          "city": "phoenix",
+          "orbit": "27963",
+          "local_date": "2023-06-11",
+          "apparent_solar_hour": "16.212501193031922",
+          "cooling_K_per_10pp": "0.8927882384055235",
+          "source_run_id": "pooled_pilot_20260919_phoenix"
+        },
+        "maximum": {
+          "city": "phoenix",
+          "orbit": "28706",
+          "local_date": "2023-07-29",
+          "apparent_solar_hour": "13.325074240149092",
+          "cooling_K_per_10pp": "1.705227828868181",
+          "source_run_id": "pooled_pilot_20260919_phoenix"
+        }
+      },
+      "range_K_per_10pp": [
+        0.8927882384055235,
+        1.705227828868181
+      ],
+      "linked_weather": 6,
+      "all_8km_intervals_above_zero": true
+    },
+    "atlanta": {
+      "count": 5,
+      "released_extremes": {
+        "minimum": {
+          "city": "atlanta",
+          "orbit": "27916",
+          "local_date": "2023-06-08",
+          "apparent_solar_hour": "17.37627874224167",
+          "cooling_K_per_10pp": "0.09739955103292858",
+          "source_run_id": "pooled_pilot_20260919_atlanta"
+        },
+        "maximum": {
+          "city": "atlanta",
+          "orbit": "27835",
+          "local_date": "2023-06-03",
+          "apparent_solar_hour": "11.709323622945252",
+          "cooling_K_per_10pp": "0.33790819348265183",
+          "source_run_id": "pooled_pilot_20260919_atlanta"
+        }
+      },
+      "range_K_per_10pp": [
+        0.09739955103292858,
+        0.33790819348265183
+      ],
+      "linked_weather": 4,
+      "all_8km_intervals_above_zero": true
+    }
+  },
+  "spatial_support": {
+    "main_pilot": {
+      "Phoenix": 11,
+      "Atlanta": 5,
+      "year": 2023
+    },
+    "common_cells": 196090,
+    "common_area_km2": 960.841,
+    "retained_fraction_range": [
+      0.3522522117932366,
+      0.5734967243799719
+    ],
+    "reference_support_status": {
+      "SUPPORTED": 16
+    },
+    "joint_difference_intervals": "computed internally using union-block draws; all new effects remain sealed",
+    "fixed_registration": "24 paired differences validated",
+    "available_registration": "44 points, no unsupported paired difference interval",
+    "raw_model_or_time_files_disclosed": false,
+    "scale_ruling": "not made",
+    "tolerance": null,
+    "canopy_medians": {
+      "original": [
+        0.024833221919834614,
+        0.030140208080410957
+      ],
+      "retained_all11": [
+        0.027900987304747105,
+        0.027900987304747105
+      ],
+      "excluded_from_all11": [
+        0.021273035556077957,
+        0.03233961760997772
+      ]
+    }
+  },
+  "rank_summary": {
+    "common_cells_with_positive_bare_fraction": 54,
+    "common_blocks_with_within_block_bare_variation": 10,
+    "information_groups_8km": 5,
+    "reported_joint_nonestimable_draws": 48,
+    "all_failures_exactly_match_absence_of_common_bare_variation": true
+  },
+  "verified_internal_spatial_computation": {
+    "joint_estimable": 21952,
+    "joint_nonestimable": 48,
+    "fixed_registration_pairs": 24,
+    "paired_scale_configurations": 32
+  },
+  "quantitative_time_comparisons_computed": false,
+  "formal_date_or_neighborhood_influence_computed": false,
+  "simulation_effect_range_selected": false,
+  "sealed_files_opened": []
+}

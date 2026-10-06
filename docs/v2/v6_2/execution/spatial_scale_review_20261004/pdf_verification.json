@@ -1,0 +1,32 @@
+{
+  "common_footprint_predictor_map": {
+    "pages": 1,
+    "title_text_present": true,
+    "media_box": [
+      0.0,
+      0.0,
+      864.0,
+      432.0
+    ]
+  },
+  "common_footprint_retention": {
+    "pages": 1,
+    "title_text_present": true,
+    "media_box": [
+      0.0,
+      0.0,
+      748.8,
+      439.2
+    ]
+  },
+  "retained_excluded_predictor_distributions": {
+    "pages": 1,
+    "title_text_present": true,
+    "media_box": [
+      0.0,
+      0.0,
+      936.0,
+      655.2
+    ]
+  }
+}

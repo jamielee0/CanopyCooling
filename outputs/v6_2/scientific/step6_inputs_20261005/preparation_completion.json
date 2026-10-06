@@ -1,0 +1,9 @@
+{
+  "weather_complete": 16,
+  "historical_hourly_records_reconciled": 20,
+  "geometry_records": 16,
+  "geometry_arrays_checked": 11,
+  "geometry_timestamp_mismatches": 0,
+  "effect_files_opened": false,
+  "empirical_comparison_computed": false
+}

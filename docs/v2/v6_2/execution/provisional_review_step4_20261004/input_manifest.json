@@ -1,0 +1,79 @@
+{
+  "record_date_local": "2026-10-04",
+  "inputs": [
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "bytes": 131461,
+      "sha256": "3b037c2a2bfb85ac67a8c5634dd38e957237ab67c8e04b817d52cf3772cbd48d"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/descriptive_summary.json",
+      "bytes": 1528,
+      "sha256": "c5df8e6e58038721cb57901c248783f6482aa26a24c2424e11cb396aa1d3609e"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/missing_inputs.json",
+      "bytes": 9061,
+      "sha256": "cdf52aa3c4ec44d2fd7b635cae8e042ed3cfcdfd14a24aa457f6e48f25ce6c03"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/README.md",
+      "bytes": 8771,
+      "sha256": "f9ced7991c0994cef0cd6ec43ca32666828cbd65f845bf80b4a75b8a73a137d8"
+    },
+    {
+      "path": "deliverables/Spatial_Scale_Review_2023_v6_2_20261004/footprint_and_reference_support.csv",
+      "bytes": 6750,
+      "sha256": "58b3ca6d1af2cffd0f71d7ea35e55fb2f9c3d6b988448cef93505b345624f675"
+    },
+    {
+      "path": "deliverables/Spatial_Scale_Review_2023_v6_2_20261004/canopy_context_distributions.csv",
+      "bytes": 62217,
+      "sha256": "51aaecc59d4c3329ad84630e1971e8072d9853865ee1c4c1912502a9835b90cd"
+    },
+    {
+      "path": "deliverables/Spatial_Scale_Review_2023_v6_2_20261004/nonthermal_summary.json",
+      "bytes": 908,
+      "sha256": "eb4d2c38ecccc94f3a2f95e0df3b579fec60e32ed1249e1b43f80130e94f6620"
+    },
+    {
+      "path": "deliverables/Spatial_Scale_Review_2023_v6_2_20261004/sparse_control_rank_audit.json",
+      "bytes": 13635,
+      "sha256": "686e250ad28ba9c7ba3f19765ad81f11c7d351e9b967603101394a1ef8b3c8d5"
+    },
+    {
+      "path": "deliverables/Spatial_Scale_Review_2023_v6_2_20261004/remaining_limits.json",
+      "bytes": 1110,
+      "sha256": "1046f7a05bf39e93ea52537ae47dfc52d5039312eb7569a6cac77eede8a0fc81"
+    },
+    {
+      "path": "deliverables/Spatial_Scale_Review_2023_v6_2_20261004/README.md",
+      "bytes": 10077,
+      "sha256": "8b8a5383875ded07996d799a97abbe482fcfdd7a1d7fd0af014ad0955f8fff3b"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/results_review_20261004/scope.json",
+      "bytes": 9004,
+      "sha256": "eb7ada197a2f7b8e7f2ecffca2e250128b2b9b2d5d37385b95a2fcaa57eb8cbd"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/spatial_scale_review_20261004/verification.json",
+      "bytes": 2096,
+      "sha256": "56b90d85aef6599d914f036871591e49a6881ef33b76e61cbe3c1f1500d703c8"
+    },
+    {
+      "path": "docs/v2/v6_2/phoenix_2023_sample_scope.md",
+      "bytes": 3842,
+      "sha256": "9749e6a2f339403eb2b912f8ff42b9367c08e2283d80fa71019573b00283da03"
+    },
+    {
+      "path": "outputs/v6_2/scientific/exploratory_review_20260921/gradient_disclosure.json",
+      "bytes": 649,
+      "sha256": "fd08dceb8160b80bbbb559843ba5301ba819be7b5f131f137db0fa4a6d5873c9"
+    }
+  ],
+  "code_sha256": "4e9bd9019ac7a4a118061983ac8cde97f0cec567f0fd5497031294e5375f931c",
+  "data_link_target": "/Users/jmlee/Documents/Documents - Jamie\u2019s Mac mini/TreeProject/project/data",
+  "public_evidence_only": true,
+  "sealed_files_opened": []
+}

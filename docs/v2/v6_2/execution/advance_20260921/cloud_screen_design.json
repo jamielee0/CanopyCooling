@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-09-21T17:49:40.318619+00:00",
+  "scope": "all nineteen candidate cities; 2023 June-September apparent solar 15:00<=hour<18:00 CMR passes; cloud masks only, no LST/emissivity",
+  "sample": "one point at center of each frozen sampled canopy-screen block if inside urban domain; otherwise representative point of block/domain intersection; equal block weights",
+  "rule": "report observed point coverage, clear among observed, and clear fraction of all sampled points; no inclusion threshold; any-cloud veto over overlapping tiles/scenes; retain missing masks as missing",
+  "limits": "sampling proxy for urban cloud opportunity, not full-resolution valid-cell coverage; no water/view-angle/thermal-quality screening; morning cloud availability remains to audit"
+}

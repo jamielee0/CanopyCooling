@@ -1,0 +1,5594 @@
+{
+  "audit": {
+    "city": "dallas",
+    "retrieved_utc": "2026-09-21T17:46:33.865812+00:00",
+    "period_utc": "2023-06-01/2023-09-30",
+    "CMR_bbox_hits": 557,
+    "CMR_rows_received": 557,
+    "pages": 1,
+    "intersecting_granules_before_revision_dedup": 557,
+    "unique_passes": 69,
+    "morning_0930_1130_passes": 6,
+    "afternoon_1500_1800_passes": 9,
+    "afternoon_months": [
+      "06",
+      "08",
+      "09"
+    ],
+    "afternoon_tile_mean_cloud_pct_median": null,
+    "afternoon_passes_with_cloud_metadata": 0,
+    "limitation": "CMR tile cloud metadata is not urban-domain clear fraction; no view-angle, full-domain coverage or usable-cell certification; windows are descriptive summaries, not selection gates."
+  },
+  "granules": [
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27805_003_14SQA_20230601T185217_0710_01",
+      "acquisition_utc": "2023-06-01T18:52:17.510Z",
+      "apparent_solar_hour_at_domain_centroid": 12.448619303684751,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 3,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27805_003_14SPB_20230601T185217_0710_01",
+      "acquisition_utc": "2023-06-01T18:52:17.510Z",
+      "apparent_solar_hour_at_domain_centroid": 12.448619303684751,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27805_003_14SPA_20230601T185217_0710_01",
+      "acquisition_utc": "2023-06-01T18:52:17.510Z",
+      "apparent_solar_hour_at_domain_centroid": 12.448619303684751,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 3,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27805_003_14SPB_20230601T185217_0711_02",
+      "acquisition_utc": "2023-06-01T18:52:17.510Z",
+      "apparent_solar_hour_at_domain_centroid": 12.448619303684751,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27805_003_14SPA_20230601T185217_0711_02",
+      "acquisition_utc": "2023-06-01T18:52:17.510Z",
+      "apparent_solar_hour_at_domain_centroid": 12.448619303684751,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27805_003_14SQA_20230601T185217_0711_02",
+      "acquisition_utc": "2023-06-01T18:52:17.510Z",
+      "apparent_solar_hour_at_domain_centroid": 12.448619303684751,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27805_004_14SPB_20230601T185309_0710_01",
+      "acquisition_utc": "2023-06-01T18:53:09.470Z",
+      "apparent_solar_hour_at_domain_centroid": 12.463062244441383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27805_004_14SPA_20230601T185309_0710_01",
+      "acquisition_utc": "2023-06-01T18:53:09.470Z",
+      "apparent_solar_hour_at_domain_centroid": 12.463062244441383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_27805_004_14SQB_20230601T185309_0710_01",
+      "acquisition_utc": "2023-06-01T18:53:09.470Z",
+      "apparent_solar_hour_at_domain_centroid": 12.463062244441383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27805_004_14SQA_20230601T185309_0710_01",
+      "acquisition_utc": "2023-06-01T18:53:09.470Z",
+      "apparent_solar_hour_at_domain_centroid": 12.463062244441383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27805_004_14SPA_20230601T185309_0711_02",
+      "acquisition_utc": "2023-06-01T18:53:09.479Z",
+      "apparent_solar_hour_at_domain_centroid": 12.463062244441383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27805_004_14SPB_20230601T185309_0711_02",
+      "acquisition_utc": "2023-06-01T18:53:09.479Z",
+      "apparent_solar_hour_at_domain_centroid": 12.463062244441383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_27805_004_14SQB_20230601T185309_0711_02",
+      "acquisition_utc": "2023-06-01T18:53:09.479Z",
+      "apparent_solar_hour_at_domain_centroid": 12.463062244441383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27805,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27805_004_14SQA_20230601T185309_0711_02",
+      "acquisition_utc": "2023-06-01T18:53:09.479Z",
+      "apparent_solar_hour_at_domain_centroid": 12.463062244441383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27820,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27820_004_14SQA_20230602T180341_0710_01",
+      "acquisition_utc": "2023-06-02T18:03:41.840Z",
+      "apparent_solar_hour_at_domain_centroid": 11.636154210134459,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27820,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27820_004_14SQA_20230602T180341_0711_02",
+      "acquisition_utc": "2023-06-02T18:03:41.847Z",
+      "apparent_solar_hour_at_domain_centroid": 11.636154210134459,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27820,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27820_005_14SQA_20230602T180433_0710_01",
+      "acquisition_utc": "2023-06-02T18:04:33.810Z",
+      "apparent_solar_hour_at_domain_centroid": 11.650597087772452,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27820,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27820_005_14SQA_20230602T180433_0711_02",
+      "acquisition_utc": "2023-06-02T18:04:33.817Z",
+      "apparent_solar_hour_at_domain_centroid": 11.650597087772452,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27912,
+      "scene": 6,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27912_006_14SPB_20230608T162435_0711_01",
+      "acquisition_utc": "2023-06-08T16:24:35.998Z",
+      "apparent_solar_hour_at_domain_centroid": 9.967346101965374,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27927,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27927_004_14SQA_20230609T153519_0710_01",
+      "acquisition_utc": "2023-06-09T15:35:19.000Z",
+      "apparent_solar_hour_at_domain_centroid": 9.143160645142878,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27927,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27927_004_14SPB_20230609T153519_0710_01",
+      "acquisition_utc": "2023-06-09T15:35:19.000Z",
+      "apparent_solar_hour_at_domain_centroid": 9.143160645142878,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27927,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_27927_004_14SQB_20230609T153519_0710_01",
+      "acquisition_utc": "2023-06-09T15:35:19.000Z",
+      "apparent_solar_hour_at_domain_centroid": 9.143160645142878,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27927,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27927_004_14SPA_20230609T153519_0710_01",
+      "acquisition_utc": "2023-06-09T15:35:19.000Z",
+      "apparent_solar_hour_at_domain_centroid": 9.143160645142878,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27927,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27927_004_14SPA_20230609T153519_0711_02",
+      "acquisition_utc": "2023-06-09T15:35:19.007Z",
+      "apparent_solar_hour_at_domain_centroid": 9.143160645142878,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27927,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_27927_004_14SQB_20230609T153519_0711_02",
+      "acquisition_utc": "2023-06-09T15:35:19.007Z",
+      "apparent_solar_hour_at_domain_centroid": 9.143160645142878,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27927,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27927_004_14SQA_20230609T153519_0711_02",
+      "acquisition_utc": "2023-06-09T15:35:19.007Z",
+      "apparent_solar_hour_at_domain_centroid": 9.143160645142878,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27927,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27927_004_14SPB_20230609T153519_0711_02",
+      "acquisition_utc": "2023-06-09T15:35:19.007Z",
+      "apparent_solar_hour_at_domain_centroid": 9.143160645142878,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27932,
+      "scene": 13,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27932_013_14SQA_20230609T234438_0710_01",
+      "acquisition_utc": "2023-06-09T23:44:38.380Z",
+      "apparent_solar_hour_at_domain_centroid": 17.29734071579204,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27932,
+      "scene": 13,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27932_013_14SPB_20230609T234438_0710_01",
+      "acquisition_utc": "2023-06-09T23:44:38.380Z",
+      "apparent_solar_hour_at_domain_centroid": 17.29734071579204,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27932,
+      "scene": 13,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27932_013_14SPA_20230609T234438_0710_01",
+      "acquisition_utc": "2023-06-09T23:44:38.380Z",
+      "apparent_solar_hour_at_domain_centroid": 17.29734071579204,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27932,
+      "scene": 13,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27932_013_14SQA_20230609T234438_0711_02",
+      "acquisition_utc": "2023-06-09T23:44:38.385Z",
+      "apparent_solar_hour_at_domain_centroid": 17.29734071579204,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27932,
+      "scene": 13,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27932_013_14SPB_20230609T234438_0711_02",
+      "acquisition_utc": "2023-06-09T23:44:38.385Z",
+      "apparent_solar_hour_at_domain_centroid": 17.29734071579204,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27932,
+      "scene": 13,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27932_013_14SPA_20230609T234438_0711_02",
+      "acquisition_utc": "2023-06-09T23:44:38.385Z",
+      "apparent_solar_hour_at_domain_centroid": 17.29734071579204,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27973,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27973_004_14SPA_20230612T144433_0710_01",
+      "acquisition_utc": "2023-06-12T14:44:33.550Z",
+      "apparent_solar_hour_at_domain_centroid": 8.28721932815114,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27973,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27973_004_14SPB_20230612T144433_0710_01",
+      "acquisition_utc": "2023-06-12T14:44:33.550Z",
+      "apparent_solar_hour_at_domain_centroid": 8.28721932815114,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27973,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27973_004_14SPB_20230612T144433_0711_02",
+      "acquisition_utc": "2023-06-12T14:44:33.559Z",
+      "apparent_solar_hour_at_domain_centroid": 8.28721932815114,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27973,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27973_004_14SPA_20230612T144433_0711_02",
+      "acquisition_utc": "2023-06-12T14:44:33.559Z",
+      "apparent_solar_hour_at_domain_centroid": 8.28721932815114,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27973,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27973_005_14SPB_20230612T144525_0710_01",
+      "acquisition_utc": "2023-06-12T14:45:25.520Z",
+      "apparent_solar_hour_at_domain_centroid": 8.301661723459912,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27973,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_27973_005_14SQB_20230612T144525_0710_01",
+      "acquisition_utc": "2023-06-12T14:45:25.520Z",
+      "apparent_solar_hour_at_domain_centroid": 8.301661723459912,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27973,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27973_005_14SPB_20230612T144525_0711_02",
+      "acquisition_utc": "2023-06-12T14:45:25.529Z",
+      "apparent_solar_hour_at_domain_centroid": 8.301661723459912,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27973,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_27973_005_14SQB_20230612T144525_0711_02",
+      "acquisition_utc": "2023-06-12T14:45:25.529Z",
+      "apparent_solar_hour_at_domain_centroid": 8.301661723459912,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27988,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_27988_004_14SQB_20230613T135549_0710_01",
+      "acquisition_utc": "2023-06-13T13:55:49.643Z",
+      "apparent_solar_hour_at_domain_centroid": 7.471683102760529,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27988,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27988_004_14SPB_20230613T135549_0710_01",
+      "acquisition_utc": "2023-06-13T13:55:49.643Z",
+      "apparent_solar_hour_at_domain_centroid": 7.471683102760529,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27988,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27988_004_14SQA_20230613T135549_0710_01",
+      "acquisition_utc": "2023-06-13T13:55:49.643Z",
+      "apparent_solar_hour_at_domain_centroid": 7.471683102760529,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27988,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27988_004_14SPA_20230613T135549_0710_01",
+      "acquisition_utc": "2023-06-13T13:55:49.643Z",
+      "apparent_solar_hour_at_domain_centroid": 7.471683102760529,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27988,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_27988_004_14SQB_20230613T135549_0711_02",
+      "acquisition_utc": "2023-06-13T13:55:49.643Z",
+      "apparent_solar_hour_at_domain_centroid": 7.471683102760529,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27988,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27988_004_14SPB_20230613T135549_0711_02",
+      "acquisition_utc": "2023-06-13T13:55:49.643Z",
+      "apparent_solar_hour_at_domain_centroid": 7.471683102760529,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27988,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27988_004_14SPA_20230613T135549_0711_02",
+      "acquisition_utc": "2023-06-13T13:55:49.643Z",
+      "apparent_solar_hour_at_domain_centroid": 7.471683102760529,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27988,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27988_004_14SQA_20230613T135549_0711_02",
+      "acquisition_utc": "2023-06-13T13:55:49.643Z",
+      "apparent_solar_hour_at_domain_centroid": 7.471683102760529,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27988,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_27988_005_14SQB_20230613T135641_0710_01",
+      "acquisition_utc": "2023-06-13T13:56:41.612Z",
+      "apparent_solar_hour_at_domain_centroid": 7.486125468057145,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27988,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_27988_005_14SQB_20230613T135641_0711_02",
+      "acquisition_utc": "2023-06-13T13:56:41.612Z",
+      "apparent_solar_hour_at_domain_centroid": 7.486125468057145,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27993,
+      "scene": 11,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27993_011_14SPA_20230613T220457_0710_01",
+      "acquisition_utc": "2023-06-13T22:04:57.210Z",
+      "apparent_solar_hour_at_domain_centroid": 15.622729113225997,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27993,
+      "scene": 11,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27993_011_14SQA_20230613T220457_0710_01",
+      "acquisition_utc": "2023-06-13T22:04:57.210Z",
+      "apparent_solar_hour_at_domain_centroid": 15.622729113225997,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27993,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27993_011_14SPB_20230613T220457_0710_01",
+      "acquisition_utc": "2023-06-13T22:04:57.210Z",
+      "apparent_solar_hour_at_domain_centroid": 15.622729113225997,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27993,
+      "scene": 11,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_27993_011_14SPA_20230613T220457_0711_02",
+      "acquisition_utc": "2023-06-13T22:04:57.210Z",
+      "apparent_solar_hour_at_domain_centroid": 15.622729113225997,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27993,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_27993_011_14SPB_20230613T220457_0711_02",
+      "acquisition_utc": "2023-06-13T22:04:57.210Z",
+      "apparent_solar_hour_at_domain_centroid": 15.622729113225997,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 27993,
+      "scene": 11,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_27993_011_14SQA_20230613T220457_0711_02",
+      "acquisition_utc": "2023-06-13T22:04:57.210Z",
+      "apparent_solar_hour_at_domain_centroid": 15.622729113225997,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28008,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28008_005_14SQB_20230614T211537_0710_01",
+      "acquisition_utc": "2023-06-14T21:15:37.857Z",
+      "apparent_solar_hour_at_domain_centroid": 14.797134031625413,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28008,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28008_005_14SQB_20230614T211537_0711_02",
+      "acquisition_utc": "2023-06-14T21:15:37.857Z",
+      "apparent_solar_hour_at_domain_centroid": 14.797134031625413,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28034,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28034_004_14SPA_20230616T130459_0710_01",
+      "acquisition_utc": "2023-06-16T13:04:59.469Z",
+      "apparent_solar_hour_at_domain_centroid": 6.614030149418861,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28034,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28034_004_14SPA_20230616T130459_0711_02",
+      "acquisition_utc": "2023-06-16T13:04:59.469Z",
+      "apparent_solar_hour_at_domain_centroid": 6.614030149418861,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28034,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28034_005_14SPA_20230616T130551_0710_01",
+      "acquisition_utc": "2023-06-16T13:05:51.439Z",
+      "apparent_solar_hour_at_domain_centroid": 6.628472443216823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28034,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28034_005_14SPB_20230616T130551_0710_01",
+      "acquisition_utc": "2023-06-16T13:05:51.439Z",
+      "apparent_solar_hour_at_domain_centroid": 6.628472443216823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28034,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28034_005_14SQA_20230616T130551_0710_01",
+      "acquisition_utc": "2023-06-16T13:05:51.439Z",
+      "apparent_solar_hour_at_domain_centroid": 6.628472443216823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28034,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28034_005_14SQB_20230616T130551_0710_01",
+      "acquisition_utc": "2023-06-16T13:05:51.439Z",
+      "apparent_solar_hour_at_domain_centroid": 6.628472443216823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28034,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28034_005_14SPA_20230616T130551_0711_02",
+      "acquisition_utc": "2023-06-16T13:05:51.439Z",
+      "apparent_solar_hour_at_domain_centroid": 6.628472443216823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28034,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28034_005_14SQA_20230616T130551_0711_02",
+      "acquisition_utc": "2023-06-16T13:05:51.439Z",
+      "apparent_solar_hour_at_domain_centroid": 6.628472443216823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28034,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28034_005_14SPB_20230616T130551_0711_02",
+      "acquisition_utc": "2023-06-16T13:05:51.439Z",
+      "apparent_solar_hour_at_domain_centroid": 6.628472443216823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28034,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28034_005_14SQB_20230616T130551_0711_02",
+      "acquisition_utc": "2023-06-16T13:05:51.439Z",
+      "apparent_solar_hour_at_domain_centroid": 6.628472443216823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 10,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28054_010_14SPA_20230617T202537_0710_01",
+      "acquisition_utc": "2023-06-17T20:25:37.104Z",
+      "apparent_solar_hour_at_domain_centroid": 13.953227816069985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28054_010_14SPB_20230617T202537_0710_01",
+      "acquisition_utc": "2023-06-17T20:25:37.104Z",
+      "apparent_solar_hour_at_domain_centroid": 13.953227816069985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 10,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28054_010_14SQB_20230617T202537_0710_01",
+      "acquisition_utc": "2023-06-17T20:25:37.104Z",
+      "apparent_solar_hour_at_domain_centroid": 13.953227816069985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 10,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28054_010_14SPA_20230617T202537_0711_02",
+      "acquisition_utc": "2023-06-17T20:25:37.104Z",
+      "apparent_solar_hour_at_domain_centroid": 13.953227816069985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28054_010_14SPB_20230617T202537_0711_02",
+      "acquisition_utc": "2023-06-17T20:25:37.104Z",
+      "apparent_solar_hour_at_domain_centroid": 13.953227816069985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 10,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28054_010_14SQB_20230617T202537_0711_02",
+      "acquisition_utc": "2023-06-17T20:25:37.104Z",
+      "apparent_solar_hour_at_domain_centroid": 13.953227816069985,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 11,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28054_011_14SPA_20230617T202629_0710_01",
+      "acquisition_utc": "2023-06-17T20:26:29.074Z",
+      "apparent_solar_hour_at_domain_centroid": 13.96767008839971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28054_011_14SPB_20230617T202629_0710_01",
+      "acquisition_utc": "2023-06-17T20:26:29.074Z",
+      "apparent_solar_hour_at_domain_centroid": 13.96767008839971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 11,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28054_011_14SQA_20230617T202629_0710_01",
+      "acquisition_utc": "2023-06-17T20:26:29.074Z",
+      "apparent_solar_hour_at_domain_centroid": 13.96767008839971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 11,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28054_011_14SQB_20230617T202629_0710_01",
+      "acquisition_utc": "2023-06-17T20:26:29.074Z",
+      "apparent_solar_hour_at_domain_centroid": 13.96767008839971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28054_011_14SPB_20230617T202629_0711_02",
+      "acquisition_utc": "2023-06-17T20:26:29.074Z",
+      "apparent_solar_hour_at_domain_centroid": 13.96767008839971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 11,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28054_011_14SQB_20230617T202629_0711_02",
+      "acquisition_utc": "2023-06-17T20:26:29.074Z",
+      "apparent_solar_hour_at_domain_centroid": 13.96767008839971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 11,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28054_011_14SQA_20230617T202629_0711_02",
+      "acquisition_utc": "2023-06-17T20:26:29.074Z",
+      "apparent_solar_hour_at_domain_centroid": 13.96767008839971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28054,
+      "scene": 11,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28054_011_14SPA_20230617T202629_0711_02",
+      "acquisition_utc": "2023-06-17T20:26:29.074Z",
+      "apparent_solar_hour_at_domain_centroid": 13.96767008839971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28095,
+      "scene": 7,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28095_007_14SPB_20230620T112808_0710_01",
+      "acquisition_utc": "2023-06-20T11:28:08.166Z",
+      "apparent_solar_hour_at_domain_centroid": 4.985629968588615,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28095,
+      "scene": 7,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28095_007_14SPA_20230620T112808_0710_01",
+      "acquisition_utc": "2023-06-20T11:28:08.166Z",
+      "apparent_solar_hour_at_domain_centroid": 4.985629968588615,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28095,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28095_007_14SQB_20230620T112808_0710_01",
+      "acquisition_utc": "2023-06-20T11:28:08.166Z",
+      "apparent_solar_hour_at_domain_centroid": 4.985629968588615,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28095,
+      "scene": 7,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28095_007_14SQA_20230620T112808_0710_01",
+      "acquisition_utc": "2023-06-20T11:28:08.166Z",
+      "apparent_solar_hour_at_domain_centroid": 4.985629968588615,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28095,
+      "scene": 7,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28095_007_14SPA_20230620T112808_0711_02",
+      "acquisition_utc": "2023-06-20T11:28:08.166Z",
+      "apparent_solar_hour_at_domain_centroid": 4.985629968588615,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28095,
+      "scene": 7,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28095_007_14SPB_20230620T112808_0711_02",
+      "acquisition_utc": "2023-06-20T11:28:08.166Z",
+      "apparent_solar_hour_at_domain_centroid": 4.985629968588615,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28095,
+      "scene": 7,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28095_007_14SQA_20230620T112808_0711_02",
+      "acquisition_utc": "2023-06-20T11:28:08.166Z",
+      "apparent_solar_hour_at_domain_centroid": 4.985629968588615,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28095,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28095_007_14SQB_20230620T112808_0711_02",
+      "acquisition_utc": "2023-06-20T11:28:08.166Z",
+      "apparent_solar_hour_at_domain_centroid": 4.985629968588615,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28095,
+      "scene": 8,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28095_008_14SQB_20230620T112900_0710_01",
+      "acquisition_utc": "2023-06-20T11:29:00.136Z",
+      "apparent_solar_hour_at_domain_centroid": 5.000072216623319,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28095,
+      "scene": 8,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28095_008_14SQB_20230620T112900_0711_02",
+      "acquisition_utc": "2023-06-20T11:29:00.136Z",
+      "apparent_solar_hour_at_domain_centroid": 5.000072216623319,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28110,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28110_005_14SQA_20230621T103943_0710_01",
+      "acquisition_utc": "2023-06-21T10:39:43.318Z",
+      "apparent_solar_hour_at_domain_centroid": 4.17515630647364,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28110,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28110_005_14SQA_20230621T103943_0711_02",
+      "acquisition_utc": "2023-06-21T10:39:43.318Z",
+      "apparent_solar_hour_at_domain_centroid": 4.17515630647364,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28156,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28156_005_14SPA_20230624T095045_0710_01",
+      "acquisition_utc": "2023-06-24T09:50:45.131Z",
+      "apparent_solar_hour_at_domain_centroid": 3.348229077870753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28156,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28156_005_14SQA_20230624T095045_0710_01",
+      "acquisition_utc": "2023-06-24T09:50:45.131Z",
+      "apparent_solar_hour_at_domain_centroid": 3.348229077870753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28156,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28156_005_14SPB_20230624T095045_0710_01",
+      "acquisition_utc": "2023-06-24T09:50:45.131Z",
+      "apparent_solar_hour_at_domain_centroid": 3.348229077870753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28156,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28156_005_14SQB_20230624T095045_0710_01",
+      "acquisition_utc": "2023-06-24T09:50:45.131Z",
+      "apparent_solar_hour_at_domain_centroid": 3.348229077870753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28156,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28156_005_14SQB_20230624T095045_0711_02",
+      "acquisition_utc": "2023-06-24T09:50:45.131Z",
+      "apparent_solar_hour_at_domain_centroid": 3.348229077870753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28156,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28156_005_14SPA_20230624T095045_0711_02",
+      "acquisition_utc": "2023-06-24T09:50:45.131Z",
+      "apparent_solar_hour_at_domain_centroid": 3.348229077870753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28156,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28156_005_14SPB_20230624T095045_0711_02",
+      "acquisition_utc": "2023-06-24T09:50:45.131Z",
+      "apparent_solar_hour_at_domain_centroid": 3.348229077870753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28156,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28156_005_14SQA_20230624T095045_0711_02",
+      "acquisition_utc": "2023-06-24T09:50:45.131Z",
+      "apparent_solar_hour_at_domain_centroid": 3.348229077870753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28161,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28161_012_14SPA_20230624T175857_0710_01",
+      "acquisition_utc": "2023-06-24T17:58:57.179Z",
+      "apparent_solar_hour_at_domain_centroid": 11.483665826051242,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28161,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28161_012_14SPA_20230624T175857_0711_02",
+      "acquisition_utc": "2023-06-24T17:58:57.179Z",
+      "apparent_solar_hour_at_domain_centroid": 11.483665826051242,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28161,
+      "scene": 13,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28161_013_14SPA_20230624T175949_0710_01",
+      "acquisition_utc": "2023-06-24T17:59:49.149Z",
+      "apparent_solar_hour_at_domain_centroid": 11.498108088971847,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28161,
+      "scene": 13,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28161_013_14SPA_20230624T175949_0711_02",
+      "acquisition_utc": "2023-06-24T17:59:49.149Z",
+      "apparent_solar_hour_at_domain_centroid": 11.498108088971847,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 7,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28176_007_14SPA_20230625T171015_0710_01",
+      "acquisition_utc": "2023-06-25T17:10:15.605Z",
+      "apparent_solar_hour_at_domain_centroid": 10.668506805270797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 7,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28176_007_14SPB_20230625T171015_0710_01",
+      "acquisition_utc": "2023-06-25T17:10:15.605Z",
+      "apparent_solar_hour_at_domain_centroid": 10.668506805270797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28176_007_14SQB_20230625T171015_0710_01",
+      "acquisition_utc": "2023-06-25T17:10:15.605Z",
+      "apparent_solar_hour_at_domain_centroid": 10.668506805270797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 7,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28176_007_14SQA_20230625T171015_0710_01",
+      "acquisition_utc": "2023-06-25T17:10:15.605Z",
+      "apparent_solar_hour_at_domain_centroid": 10.668506805270797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28176_007_14SQB_20230625T171015_0711_02",
+      "acquisition_utc": "2023-06-25T17:10:15.605Z",
+      "apparent_solar_hour_at_domain_centroid": 10.668506805270797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 7,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28176_007_14SPB_20230625T171015_0711_02",
+      "acquisition_utc": "2023-06-25T17:10:15.605Z",
+      "apparent_solar_hour_at_domain_centroid": 10.668506805270797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 7,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28176_007_14SQA_20230625T171015_0711_02",
+      "acquisition_utc": "2023-06-25T17:10:15.605Z",
+      "apparent_solar_hour_at_domain_centroid": 10.668506805270797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 7,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28176_007_14SPA_20230625T171015_0711_02",
+      "acquisition_utc": "2023-06-25T17:10:15.605Z",
+      "apparent_solar_hour_at_domain_centroid": 10.668506805270797,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 8,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28176_008_14SPA_20230625T171107_0710_01",
+      "acquisition_utc": "2023-06-25T17:11:07.574Z",
+      "apparent_solar_hour_at_domain_centroid": 10.682949080916083,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 8,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28176_008_14SQA_20230625T171107_0710_01",
+      "acquisition_utc": "2023-06-25T17:11:07.574Z",
+      "apparent_solar_hour_at_domain_centroid": 10.682949080916083,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 8,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28176_008_14SQB_20230625T171107_0710_01",
+      "acquisition_utc": "2023-06-25T17:11:07.574Z",
+      "apparent_solar_hour_at_domain_centroid": 10.682949080916083,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 8,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28176_008_14SQA_20230625T171107_0711_02",
+      "acquisition_utc": "2023-06-25T17:11:07.574Z",
+      "apparent_solar_hour_at_domain_centroid": 10.682949080916083,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 8,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28176_008_14SPA_20230625T171107_0711_02",
+      "acquisition_utc": "2023-06-25T17:11:07.574Z",
+      "apparent_solar_hour_at_domain_centroid": 10.682949080916083,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28176,
+      "scene": 8,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28176_008_14SQB_20230625T171107_0711_02",
+      "acquisition_utc": "2023-06-25T17:11:07.574Z",
+      "apparent_solar_hour_at_domain_centroid": 10.682949080916083,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28217,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28217_005_14SPA_20230628T081154_0710_01",
+      "acquisition_utc": "2023-06-28T08:11:54.666Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6866474237206925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28217,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28217_005_14SPB_20230628T081154_0710_01",
+      "acquisition_utc": "2023-06-28T08:11:54.666Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6866474237206925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28217,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28217_005_14SQA_20230628T081154_0710_01",
+      "acquisition_utc": "2023-06-28T08:11:54.666Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6866474237206925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28217,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28217_005_14SQB_20230628T081154_0710_01",
+      "acquisition_utc": "2023-06-28T08:11:54.666Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6866474237206925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28217,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28217_005_14SQB_20230628T081154_0711_02",
+      "acquisition_utc": "2023-06-28T08:11:54.666Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6866474237206925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28217,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28217_005_14SPB_20230628T081154_0711_02",
+      "acquisition_utc": "2023-06-28T08:11:54.666Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6866474237206925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28217,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28217_005_14SQA_20230628T081154_0711_02",
+      "acquisition_utc": "2023-06-28T08:11:54.666Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6866474237206925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28217,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28217_005_14SPA_20230628T081154_0711_02",
+      "acquisition_utc": "2023-06-28T08:11:54.666Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6866474237206925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 11,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28237_011_14SPA_20230629T153137_0710_01",
+      "acquisition_utc": "2023-06-29T15:31:37.942Z",
+      "apparent_solar_hour_at_domain_centroid": 9.010704177925401,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28237_011_14SPB_20230629T153137_0710_01",
+      "acquisition_utc": "2023-06-29T15:31:37.942Z",
+      "apparent_solar_hour_at_domain_centroid": 9.010704177925401,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 11,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28237_011_14SQA_20230629T153137_0710_01",
+      "acquisition_utc": "2023-06-29T15:31:37.942Z",
+      "apparent_solar_hour_at_domain_centroid": 9.010704177925401,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 11,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28237_011_14SQB_20230629T153137_0710_01",
+      "acquisition_utc": "2023-06-29T15:31:37.942Z",
+      "apparent_solar_hour_at_domain_centroid": 9.010704177925401,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 11,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28237_011_14SPA_20230629T153137_0711_02",
+      "acquisition_utc": "2023-06-29T15:31:37.942Z",
+      "apparent_solar_hour_at_domain_centroid": 9.010704177925401,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 11,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28237_011_14SQB_20230629T153137_0711_02",
+      "acquisition_utc": "2023-06-29T15:31:37.942Z",
+      "apparent_solar_hour_at_domain_centroid": 9.010704177925401,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28237_011_14SPB_20230629T153137_0711_02",
+      "acquisition_utc": "2023-06-29T15:31:37.942Z",
+      "apparent_solar_hour_at_domain_centroid": 9.010704177925401,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 11,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28237_011_14SQA_20230629T153137_0711_02",
+      "acquisition_utc": "2023-06-29T15:31:37.942Z",
+      "apparent_solar_hour_at_domain_centroid": 9.010704177925401,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28237_012_14SQB_20230629T153229_0710_01",
+      "acquisition_utc": "2023-06-29T15:32:29.912Z",
+      "apparent_solar_hour_at_domain_centroid": 9.025146540616824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 12,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28237_012_14SQA_20230629T153229_0710_01",
+      "acquisition_utc": "2023-06-29T15:32:29.912Z",
+      "apparent_solar_hour_at_domain_centroid": 9.025146540616824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28237_012_14SPA_20230629T153229_0710_01",
+      "acquisition_utc": "2023-06-29T15:32:29.912Z",
+      "apparent_solar_hour_at_domain_centroid": 9.025146540616824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28237_012_14SPB_20230629T153229_0710_01",
+      "acquisition_utc": "2023-06-29T15:32:29.912Z",
+      "apparent_solar_hour_at_domain_centroid": 9.025146540616824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28237_012_14SPA_20230629T153229_0711_02",
+      "acquisition_utc": "2023-06-29T15:32:29.912Z",
+      "apparent_solar_hour_at_domain_centroid": 9.025146540616824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28237_012_14SQB_20230629T153229_0711_02",
+      "acquisition_utc": "2023-06-29T15:32:29.912Z",
+      "apparent_solar_hour_at_domain_centroid": 9.025146540616824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28237_012_14SPB_20230629T153229_0711_02",
+      "acquisition_utc": "2023-06-29T15:32:29.912Z",
+      "apparent_solar_hour_at_domain_centroid": 9.025146540616824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28237,
+      "scene": 12,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28237_012_14SQA_20230629T153229_0711_02",
+      "acquisition_utc": "2023-06-29T15:32:29.912Z",
+      "apparent_solar_hour_at_domain_centroid": 9.025146540616824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28278,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28278_005_14SPA_20230702T063302_0711_01",
+      "acquisition_utc": "2023-07-02T06:33:02.801Z",
+      "apparent_solar_hour_at_domain_centroid": 0.025417768965108715,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28278,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28278_005_14SQA_20230702T063302_0711_01",
+      "acquisition_utc": "2023-07-02T06:33:02.801Z",
+      "apparent_solar_hour_at_domain_centroid": 0.025417768965108715,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28283,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28283_012_14SPA_20230702T144136_0710_01",
+      "acquisition_utc": "2023-07-02T14:41:36.105Z",
+      "apparent_solar_hour_at_domain_centroid": 8.167075966733837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28283,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28283_012_14SQB_20230702T144136_0710_01",
+      "acquisition_utc": "2023-07-02T14:41:36.105Z",
+      "apparent_solar_hour_at_domain_centroid": 8.167075966733837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28283,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28283_012_14SPB_20230702T144136_0710_01",
+      "acquisition_utc": "2023-07-02T14:41:36.105Z",
+      "apparent_solar_hour_at_domain_centroid": 8.167075966733837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28283,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28283_012_14SPB_20230702T144136_0711_02",
+      "acquisition_utc": "2023-07-02T14:41:36.105Z",
+      "apparent_solar_hour_at_domain_centroid": 8.167075966733837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28283,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28283_012_14SQB_20230702T144136_0711_02",
+      "acquisition_utc": "2023-07-02T14:41:36.105Z",
+      "apparent_solar_hour_at_domain_centroid": 8.167075966733837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28283,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28283_012_14SPA_20230702T144136_0711_02",
+      "acquisition_utc": "2023-07-02T14:41:36.105Z",
+      "apparent_solar_hour_at_domain_centroid": 8.167075966733837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28283,
+      "scene": 13,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28283_013_14SQB_20230702T144228_0710_01",
+      "acquisition_utc": "2023-07-02T14:42:28.072Z",
+      "apparent_solar_hour_at_domain_centroid": 8.181518431848295,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28283,
+      "scene": 13,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28283_013_14SQA_20230702T144228_0710_01",
+      "acquisition_utc": "2023-07-02T14:42:28.072Z",
+      "apparent_solar_hour_at_domain_centroid": 8.181518431848295,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28283,
+      "scene": 13,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28283_013_14SQA_20230702T144228_0711_02",
+      "acquisition_utc": "2023-07-02T14:42:28.072Z",
+      "apparent_solar_hour_at_domain_centroid": 8.181518431848295,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28283,
+      "scene": 13,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28283_013_14SQB_20230702T144228_0711_02",
+      "acquisition_utc": "2023-07-02T14:42:28.072Z",
+      "apparent_solar_hour_at_domain_centroid": 8.181518431848295,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28339,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28339_005_14SPB_20230706T045511_0710_01",
+      "acquisition_utc": "2023-07-06T04:55:11.423Z",
+      "apparent_solar_hour_at_domain_centroid": 22.38211948065208,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28339,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28339_005_14SPA_20230706T045511_0710_01",
+      "acquisition_utc": "2023-07-06T04:55:11.423Z",
+      "apparent_solar_hour_at_domain_centroid": 22.38211948065208,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28339,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28339_005_14SQA_20230706T045511_0710_01",
+      "acquisition_utc": "2023-07-06T04:55:11.423Z",
+      "apparent_solar_hour_at_domain_centroid": 22.38211948065208,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28339,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28339_005_14SQB_20230706T045511_0710_01",
+      "acquisition_utc": "2023-07-06T04:55:11.423Z",
+      "apparent_solar_hour_at_domain_centroid": 22.38211948065208,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28339,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28339_005_14SPA_20230706T045511_0712_02",
+      "acquisition_utc": "2023-07-06T04:55:11.423Z",
+      "apparent_solar_hour_at_domain_centroid": 22.38211948065208,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28339,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28339_005_14SPB_20230706T045511_0712_02",
+      "acquisition_utc": "2023-07-06T04:55:11.423Z",
+      "apparent_solar_hour_at_domain_centroid": 22.38211948065208,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28339,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28339_005_14SQB_20230706T045511_0712_02",
+      "acquisition_utc": "2023-07-06T04:55:11.423Z",
+      "apparent_solar_hour_at_domain_centroid": 22.38211948065208,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28339,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28339_005_14SQA_20230706T045511_0712_02",
+      "acquisition_utc": "2023-07-06T04:55:11.423Z",
+      "apparent_solar_hour_at_domain_centroid": 22.38211948065208,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28339,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28339_006_14SQB_20230706T045603_0710_01",
+      "acquisition_utc": "2023-07-06T04:56:03.393Z",
+      "apparent_solar_hour_at_domain_centroid": 22.396562110630814,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28339,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28339_006_14SQB_20230706T045603_0712_02",
+      "acquisition_utc": "2023-07-06T04:56:03.393Z",
+      "apparent_solar_hour_at_domain_centroid": 22.396562110630814,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28359,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28359_012_14SQB_20230707T121625_0710_01",
+      "acquisition_utc": "2023-07-07T12:16:25.860Z",
+      "apparent_solar_hour_at_domain_centroid": 5.732145367136562,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28359,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28359_012_14SQB_20230707T121625_0712_02",
+      "acquisition_utc": "2023-07-07T12:16:25.860Z",
+      "apparent_solar_hour_at_domain_centroid": 5.732145367136562,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28405,
+      "scene": 9,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28405_009_14SPA_20230710T112916_0710_01",
+      "acquisition_utc": "2023-07-10T11:29:16.370Z",
+      "apparent_solar_hour_at_domain_centroid": 4.93814764195624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28405,
+      "scene": 9,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28405_009_14SQB_20230710T112916_0710_01",
+      "acquisition_utc": "2023-07-10T11:29:16.370Z",
+      "apparent_solar_hour_at_domain_centroid": 4.93814764195624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28405,
+      "scene": 9,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28405_009_14SPB_20230710T112916_0710_01",
+      "acquisition_utc": "2023-07-10T11:29:16.370Z",
+      "apparent_solar_hour_at_domain_centroid": 4.93814764195624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28405,
+      "scene": 9,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28405_009_14SQA_20230710T112916_0710_01",
+      "acquisition_utc": "2023-07-10T11:29:16.370Z",
+      "apparent_solar_hour_at_domain_centroid": 4.93814764195624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28405,
+      "scene": 9,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28405_009_14SPA_20230710T112916_0712_02",
+      "acquisition_utc": "2023-07-10T11:29:16.370Z",
+      "apparent_solar_hour_at_domain_centroid": 4.93814764195624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28405,
+      "scene": 9,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28405_009_14SPB_20230710T112916_0712_02",
+      "acquisition_utc": "2023-07-10T11:29:16.370Z",
+      "apparent_solar_hour_at_domain_centroid": 4.93814764195624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28405,
+      "scene": 9,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28405_009_14SQB_20230710T112916_0712_02",
+      "acquisition_utc": "2023-07-10T11:29:16.370Z",
+      "apparent_solar_hour_at_domain_centroid": 4.93814764195624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28405,
+      "scene": 9,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28405_009_14SQA_20230710T112916_0712_02",
+      "acquisition_utc": "2023-07-10T11:29:16.370Z",
+      "apparent_solar_hour_at_domain_centroid": 4.93814764195624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28446,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28446_005_14SPA_20230713T023228_0710_01",
+      "acquisition_utc": "2023-07-13T02:32:28.681Z",
+      "apparent_solar_hour_at_domain_centroid": 19.985044931822557,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28446,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28446_005_14SPB_20230713T023228_0710_01",
+      "acquisition_utc": "2023-07-13T02:32:28.681Z",
+      "apparent_solar_hour_at_domain_centroid": 19.985044931822557,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28446,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28446_005_14SQB_20230713T023228_0710_01",
+      "acquisition_utc": "2023-07-13T02:32:28.681Z",
+      "apparent_solar_hour_at_domain_centroid": 19.985044931822557,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28446,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28446_005_14SQB_20230713T023228_0712_02",
+      "acquisition_utc": "2023-07-13T02:32:28.681Z",
+      "apparent_solar_hour_at_domain_centroid": 19.985044931822557,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28446,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28446_005_14SQA_20230713T023228_0712_02",
+      "acquisition_utc": "2023-07-13T02:32:28.681Z",
+      "apparent_solar_hour_at_domain_centroid": 19.985044931822557,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28446,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28446_005_14SPB_20230713T023228_0712_02",
+      "acquisition_utc": "2023-07-13T02:32:28.681Z",
+      "apparent_solar_hour_at_domain_centroid": 19.985044931822557,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28446,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28446_005_14SPA_20230713T023228_0712_02",
+      "acquisition_utc": "2023-07-13T02:32:28.681Z",
+      "apparent_solar_hour_at_domain_centroid": 19.985044931822557,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28446,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28446_006_14SQB_20230713T023320_0710_01",
+      "acquisition_utc": "2023-07-13T02:33:20.651Z",
+      "apparent_solar_hour_at_domain_centroid": 19.999487994369396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28446,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28446_006_14SQB_20230713T023320_0712_02",
+      "acquisition_utc": "2023-07-13T02:33:20.651Z",
+      "apparent_solar_hour_at_domain_centroid": 19.999487994369396,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28461,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28461_005_14SPA_20230714T014426_0710_01",
+      "acquisition_utc": "2023-07-14T01:44:26.065Z",
+      "apparent_solar_hour_at_domain_centroid": 19.182327098376273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28461,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28461_005_14SQA_20230714T014426_0710_01",
+      "acquisition_utc": "2023-07-14T01:44:26.065Z",
+      "apparent_solar_hour_at_domain_centroid": 19.182327098376273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28461,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28461_005_14SQB_20230714T014426_0710_01",
+      "acquisition_utc": "2023-07-14T01:44:26.065Z",
+      "apparent_solar_hour_at_domain_centroid": 19.182327098376273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28461,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28461_005_14SQB_20230714T014426_0712_02",
+      "acquisition_utc": "2023-07-14T01:44:26.065Z",
+      "apparent_solar_hour_at_domain_centroid": 19.182327098376273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28461,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28461_005_14SQA_20230714T014426_0712_02",
+      "acquisition_utc": "2023-07-14T01:44:26.065Z",
+      "apparent_solar_hour_at_domain_centroid": 19.182327098376273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28461,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28461_005_14SPA_20230714T014426_0712_02",
+      "acquisition_utc": "2023-07-14T01:44:26.065Z",
+      "apparent_solar_hour_at_domain_centroid": 19.182327098376273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 2,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28507_002_14SQA_20230717T005620_0710_01",
+      "acquisition_utc": "2023-07-17T00:56:20.998Z",
+      "apparent_solar_hour_at_domain_centroid": 18.374772974993324,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 2,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28507_002_14SPB_20230717T005620_0710_01",
+      "acquisition_utc": "2023-07-17T00:56:20.998Z",
+      "apparent_solar_hour_at_domain_centroid": 18.374772974993324,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 2,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28507_002_14SPA_20230717T005620_0710_01",
+      "acquisition_utc": "2023-07-17T00:56:20.998Z",
+      "apparent_solar_hour_at_domain_centroid": 18.374772974993324,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 2,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28507_002_14SPB_20230717T005620_0712_02",
+      "acquisition_utc": "2023-07-17T00:56:20.998Z",
+      "apparent_solar_hour_at_domain_centroid": 18.374772974993324,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 2,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28507_002_14SPA_20230717T005620_0712_02",
+      "acquisition_utc": "2023-07-17T00:56:20.998Z",
+      "apparent_solar_hour_at_domain_centroid": 18.374772974993324,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 2,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28507_002_14SQA_20230717T005620_0712_02",
+      "acquisition_utc": "2023-07-17T00:56:20.998Z",
+      "apparent_solar_hour_at_domain_centroid": 18.374772974993324,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28507_003_14SPA_20230717T005712_0710_01",
+      "acquisition_utc": "2023-07-17T00:57:12.968Z",
+      "apparent_solar_hour_at_domain_centroid": 18.389216344541445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 3,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28507_003_14SPB_20230717T005712_0710_01",
+      "acquisition_utc": "2023-07-17T00:57:12.968Z",
+      "apparent_solar_hour_at_domain_centroid": 18.389216344541445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28507_003_14SQA_20230717T005712_0710_01",
+      "acquisition_utc": "2023-07-17T00:57:12.968Z",
+      "apparent_solar_hour_at_domain_centroid": 18.389216344541445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 3,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28507_003_14SQB_20230717T005712_0710_01",
+      "acquisition_utc": "2023-07-17T00:57:12.968Z",
+      "apparent_solar_hour_at_domain_centroid": 18.389216344541445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 3,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28507_003_14SQB_20230717T005712_0712_02",
+      "acquisition_utc": "2023-07-17T00:57:12.968Z",
+      "apparent_solar_hour_at_domain_centroid": 18.389216344541445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28507_003_14SQA_20230717T005712_0712_02",
+      "acquisition_utc": "2023-07-17T00:57:12.968Z",
+      "apparent_solar_hour_at_domain_centroid": 18.389216344541445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28507_003_14SPA_20230717T005712_0712_02",
+      "acquisition_utc": "2023-07-17T00:57:12.968Z",
+      "apparent_solar_hour_at_domain_centroid": 18.389216344541445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28507,
+      "scene": 3,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28507_003_14SPB_20230717T005712_0712_02",
+      "acquisition_utc": "2023-07-17T00:57:12.968Z",
+      "apparent_solar_hour_at_domain_centroid": 18.389216344541445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28527_012_14SPB_20230718T081724_0710_01",
+      "acquisition_utc": "2023-07-18T08:17:24.809Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7236701236286591,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28527_012_14SPA_20230718T081724_0710_01",
+      "acquisition_utc": "2023-07-18T08:17:24.809Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7236701236286591,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 12,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28527_012_14SQA_20230718T081724_0710_01",
+      "acquisition_utc": "2023-07-18T08:17:24.809Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7236701236286591,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28527_012_14SQB_20230718T081724_0710_01",
+      "acquisition_utc": "2023-07-18T08:17:24.809Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7236701236286591,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28527_012_14SPA_20230718T081724_0712_02",
+      "acquisition_utc": "2023-07-18T08:17:24.809Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7236701236286591,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28527_012_14SPB_20230718T081724_0712_02",
+      "acquisition_utc": "2023-07-18T08:17:24.809Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7236701236286591,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28527_012_14SQB_20230718T081724_0712_02",
+      "acquisition_utc": "2023-07-18T08:17:24.809Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7236701236286591,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 12,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28527_012_14SQA_20230718T081724_0712_02",
+      "acquisition_utc": "2023-07-18T08:17:24.809Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7236701236286591,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 13,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28527_013_14SPA_20230718T081816_0710_01",
+      "acquisition_utc": "2023-07-18T08:18:16.779Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7381136035950762,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 13,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28527_013_14SQB_20230718T081816_0710_01",
+      "acquisition_utc": "2023-07-18T08:18:16.779Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7381136035950762,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 13,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28527_013_14SQA_20230718T081816_0710_01",
+      "acquisition_utc": "2023-07-18T08:18:16.779Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7381136035950762,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 13,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28527_013_14SQB_20230718T081816_0712_02",
+      "acquisition_utc": "2023-07-18T08:18:16.779Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7381136035950762,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 13,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28527_013_14SQA_20230718T081816_0712_02",
+      "acquisition_utc": "2023-07-18T08:18:16.779Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7381136035950762,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28527,
+      "scene": 13,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28527_013_14SPA_20230718T081816_0712_02",
+      "acquisition_utc": "2023-07-18T08:18:16.779Z",
+      "apparent_solar_hour_at_domain_centroid": 1.7381136035950762,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28649,
+      "scene": 9,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28649_009_14SPA_20230726T050410_0710_01",
+      "acquisition_utc": "2023-07-26T05:04:10.651Z",
+      "apparent_solar_hour_at_domain_centroid": 22.4952048662173,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28649,
+      "scene": 9,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28649_009_14SPB_20230726T050410_0710_01",
+      "acquisition_utc": "2023-07-26T05:04:10.651Z",
+      "apparent_solar_hour_at_domain_centroid": 22.4952048662173,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28649,
+      "scene": 9,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28649_009_14SQB_20230726T050410_0710_01",
+      "acquisition_utc": "2023-07-26T05:04:10.651Z",
+      "apparent_solar_hour_at_domain_centroid": 22.4952048662173,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28649,
+      "scene": 9,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28649_009_14SQB_20230726T050410_0712_02",
+      "acquisition_utc": "2023-07-26T05:04:10.651Z",
+      "apparent_solar_hour_at_domain_centroid": 22.4952048662173,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28649,
+      "scene": 9,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28649_009_14SPA_20230726T050410_0712_02",
+      "acquisition_utc": "2023-07-26T05:04:10.651Z",
+      "apparent_solar_hour_at_domain_centroid": 22.4952048662173,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28649,
+      "scene": 9,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28649_009_14SPB_20230726T050410_0712_02",
+      "acquisition_utc": "2023-07-26T05:04:10.651Z",
+      "apparent_solar_hour_at_domain_centroid": 22.4952048662173,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28690_004_14SPA_20230728T200705_0710_01",
+      "acquisition_utc": "2023-07-28T20:07:05.299Z",
+      "apparent_solar_hour_at_domain_centroid": 13.54340482351064,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28690_004_14SQB_20230728T200705_0710_01",
+      "acquisition_utc": "2023-07-28T20:07:05.299Z",
+      "apparent_solar_hour_at_domain_centroid": 13.54340482351064,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28690_004_14SQA_20230728T200705_0710_01",
+      "acquisition_utc": "2023-07-28T20:07:05.299Z",
+      "apparent_solar_hour_at_domain_centroid": 13.54340482351064,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28690_004_14SPB_20230728T200705_0710_01",
+      "acquisition_utc": "2023-07-28T20:07:05.299Z",
+      "apparent_solar_hour_at_domain_centroid": 13.54340482351064,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28690_004_14SQB_20230728T200705_0712_02",
+      "acquisition_utc": "2023-07-28T20:07:05.299Z",
+      "apparent_solar_hour_at_domain_centroid": 13.54340482351064,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28690_004_14SPA_20230728T200705_0712_02",
+      "acquisition_utc": "2023-07-28T20:07:05.299Z",
+      "apparent_solar_hour_at_domain_centroid": 13.54340482351064,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28690_004_14SPB_20230728T200705_0712_02",
+      "acquisition_utc": "2023-07-28T20:07:05.299Z",
+      "apparent_solar_hour_at_domain_centroid": 13.54340482351064,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28690_004_14SQA_20230728T200705_0712_02",
+      "acquisition_utc": "2023-07-28T20:07:05.299Z",
+      "apparent_solar_hour_at_domain_centroid": 13.54340482351064,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28690_005_14SPB_20230728T200757_0710_01",
+      "acquisition_utc": "2023-07-28T20:07:57.269Z",
+      "apparent_solar_hour_at_domain_centroid": 13.557849308217968,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28690_005_14SQA_20230728T200757_0710_01",
+      "acquisition_utc": "2023-07-28T20:07:57.269Z",
+      "apparent_solar_hour_at_domain_centroid": 13.557849308217968,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28690_005_14SQB_20230728T200757_0710_01",
+      "acquisition_utc": "2023-07-28T20:07:57.269Z",
+      "apparent_solar_hour_at_domain_centroid": 13.557849308217968,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28690_005_14SQB_20230728T200757_0712_02",
+      "acquisition_utc": "2023-07-28T20:07:57.269Z",
+      "apparent_solar_hour_at_domain_centroid": 13.557849308217968,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28690_005_14SPB_20230728T200757_0712_02",
+      "acquisition_utc": "2023-07-28T20:07:57.269Z",
+      "apparent_solar_hour_at_domain_centroid": 13.557849308217968,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28690,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28690_005_14SQA_20230728T200757_0712_02",
+      "acquisition_utc": "2023-07-28T20:07:57.269Z",
+      "apparent_solar_hour_at_domain_centroid": 13.557849308217968,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28736,
+      "scene": 2,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28736_002_14SPB_20230731T191842_0712_01",
+      "acquisition_utc": "2023-07-31T19:18:42.714Z",
+      "apparent_solar_hour_at_domain_centroid": 12.737975847722906,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28736,
+      "scene": 3,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28736_003_14SPB_20230731T191934_0712_01",
+      "acquisition_utc": "2023-07-31T19:19:34.684Z",
+      "apparent_solar_hour_at_domain_centroid": 12.752420642660686,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28812_004_14SPA_20230805T165317_0710_01",
+      "acquisition_utc": "2023-08-05T16:53:17.112Z",
+      "apparent_solar_hour_at_domain_centroid": 10.319339003604744,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28812_004_14SQA_20230805T165317_0710_01",
+      "acquisition_utc": "2023-08-05T16:53:17.112Z",
+      "apparent_solar_hour_at_domain_centroid": 10.319339003604744,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28812_004_14SQA_20230805T165317_0712_02",
+      "acquisition_utc": "2023-08-05T16:53:17.112Z",
+      "apparent_solar_hour_at_domain_centroid": 10.319339003604744,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28812_004_14SPB_20230805T165317_0712_02",
+      "acquisition_utc": "2023-08-05T16:53:17.112Z",
+      "apparent_solar_hour_at_domain_centroid": 10.319339003604744,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28812_004_14SPA_20230805T165317_0712_02",
+      "acquisition_utc": "2023-08-05T16:53:17.112Z",
+      "apparent_solar_hour_at_domain_centroid": 10.319339003604744,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28812_005_14SPA_20230805T165409_0710_01",
+      "acquisition_utc": "2023-08-05T16:54:09.082Z",
+      "apparent_solar_hour_at_domain_centroid": 10.333784320926288,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28812_005_14SPB_20230805T165409_0710_01",
+      "acquisition_utc": "2023-08-05T16:54:09.082Z",
+      "apparent_solar_hour_at_domain_centroid": 10.333784320926288,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28812_005_14SQA_20230805T165409_0710_01",
+      "acquisition_utc": "2023-08-05T16:54:09.082Z",
+      "apparent_solar_hour_at_domain_centroid": 10.333784320926288,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28812_005_14SPB_20230805T165409_0712_02",
+      "acquisition_utc": "2023-08-05T16:54:09.082Z",
+      "apparent_solar_hour_at_domain_centroid": 10.333784320926288,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28812_005_14SPA_20230805T165409_0712_02",
+      "acquisition_utc": "2023-08-05T16:54:09.082Z",
+      "apparent_solar_hour_at_domain_centroid": 10.333784320926288,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28812_005_14SQA_20230805T165409_0712_02",
+      "acquisition_utc": "2023-08-05T16:54:09.082Z",
+      "apparent_solar_hour_at_domain_centroid": 10.333784320926288,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28812,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28812_005_14SQB_20230805T165409_0712_02",
+      "acquisition_utc": "2023-08-05T16:54:09.082Z",
+      "apparent_solar_hour_at_domain_centroid": 10.333784320926288,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28832,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28832_011_14SPB_20230807T001425_0712_02",
+      "acquisition_utc": "2023-08-07T00:14:25.462Z",
+      "apparent_solar_hour_at_domain_centroid": 17.67360746284704,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28832,
+      "scene": 11,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28832_011_14SQB_20230807T001425_0712_02",
+      "acquisition_utc": "2023-08-07T00:14:25.462Z",
+      "apparent_solar_hour_at_domain_centroid": 17.67360746284704,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28858_003_14SPA_20230808T160455_0710_01",
+      "acquisition_utc": "2023-08-08T16:04:55.589Z",
+      "apparent_solar_hour_at_domain_centroid": 9.518311361887578,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 3,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28858_003_14SPB_20230808T160455_0710_01",
+      "acquisition_utc": "2023-08-08T16:04:55.589Z",
+      "apparent_solar_hour_at_domain_centroid": 9.518311361887578,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28858_003_14SQA_20230808T160455_0710_01",
+      "acquisition_utc": "2023-08-08T16:04:55.589Z",
+      "apparent_solar_hour_at_domain_centroid": 9.518311361887578,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 3,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28858_003_14SQB_20230808T160455_0710_01",
+      "acquisition_utc": "2023-08-08T16:04:55.589Z",
+      "apparent_solar_hour_at_domain_centroid": 9.518311361887578,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28858_003_14SPA_20230808T160455_0712_02",
+      "acquisition_utc": "2023-08-08T16:04:55.589Z",
+      "apparent_solar_hour_at_domain_centroid": 9.518311361887578,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 3,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28858_003_14SPB_20230808T160455_0712_02",
+      "acquisition_utc": "2023-08-08T16:04:55.589Z",
+      "apparent_solar_hour_at_domain_centroid": 9.518311361887578,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28858_003_14SQA_20230808T160455_0712_02",
+      "acquisition_utc": "2023-08-08T16:04:55.589Z",
+      "apparent_solar_hour_at_domain_centroid": 9.518311361887578,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 3,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28858_003_14SQB_20230808T160455_0712_02",
+      "acquisition_utc": "2023-08-08T16:04:55.589Z",
+      "apparent_solar_hour_at_domain_centroid": 9.518311361887578,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28858_004_14SPB_20230808T160547_0710_01",
+      "acquisition_utc": "2023-08-08T16:05:47.559Z",
+      "apparent_solar_hour_at_domain_centroid": 9.532756995899742,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28858_004_14SQB_20230808T160547_0710_01",
+      "acquisition_utc": "2023-08-08T16:05:47.559Z",
+      "apparent_solar_hour_at_domain_centroid": 9.532756995899742,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28858_004_14SPB_20230808T160547_0712_02",
+      "acquisition_utc": "2023-08-08T16:05:47.559Z",
+      "apparent_solar_hour_at_domain_centroid": 9.532756995899742,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28858,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28858_004_14SQB_20230808T160547_0712_02",
+      "acquisition_utc": "2023-08-08T16:05:47.559Z",
+      "apparent_solar_hour_at_domain_centroid": 9.532756995899742,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28873,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28873_003_14SPA_20230809T151629_0712_02",
+      "acquisition_utc": "2023-08-09T15:16:29.582Z",
+      "apparent_solar_hour_at_domain_centroid": 8.71308145115109,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28873,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28873_003_14SQA_20230809T151629_0712_02",
+      "acquisition_utc": "2023-08-09T15:16:29.582Z",
+      "apparent_solar_hour_at_domain_centroid": 8.71308145115109,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28873,
+      "scene": 3,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28873_003_14SQB_20230809T151629_0712_02",
+      "acquisition_utc": "2023-08-09T15:16:29.582Z",
+      "apparent_solar_hour_at_domain_centroid": 8.71308145115109,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28873,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28873_004_14SQA_20230809T151721_0710_01",
+      "acquisition_utc": "2023-08-09T15:17:21.551Z",
+      "apparent_solar_hour_at_domain_centroid": 8.727527187629908,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28873,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28873_004_14SQB_20230809T151721_0710_01",
+      "acquisition_utc": "2023-08-09T15:17:21.551Z",
+      "apparent_solar_hour_at_domain_centroid": 8.727527187629908,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28873,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28873_004_14SQB_20230809T151721_0712_02",
+      "acquisition_utc": "2023-08-09T15:17:21.551Z",
+      "apparent_solar_hour_at_domain_centroid": 8.727527187629908,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28873,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28873_004_14SQA_20230809T151721_0712_02",
+      "acquisition_utc": "2023-08-09T15:17:21.551Z",
+      "apparent_solar_hour_at_domain_centroid": 8.727527187629908,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28878,
+      "scene": 10,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28878_010_14SQA_20230809T232548_0710_01",
+      "acquisition_utc": "2023-08-09T23:25:48.782Z",
+      "apparent_solar_hour_at_domain_centroid": 16.869098827951582,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28878,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28878_010_14SPB_20230809T232548_0710_01",
+      "acquisition_utc": "2023-08-09T23:25:48.782Z",
+      "apparent_solar_hour_at_domain_centroid": 16.869098827951582,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28878,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28878_010_14SPB_20230809T232548_0712_02",
+      "acquisition_utc": "2023-08-09T23:25:48.782Z",
+      "apparent_solar_hour_at_domain_centroid": 16.869098827951582,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28878,
+      "scene": 10,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28878_010_14SQA_20230809T232548_0712_02",
+      "acquisition_utc": "2023-08-09T23:25:48.782Z",
+      "apparent_solar_hour_at_domain_centroid": 16.869098827951582,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28878,
+      "scene": 10,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28878_010_14SPA_20230809T232548_0712_02",
+      "acquisition_utc": "2023-08-09T23:25:48.782Z",
+      "apparent_solar_hour_at_domain_centroid": 16.869098827951582,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28878,
+      "scene": 10,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28878_010_14SQB_20230809T232548_0712_02",
+      "acquisition_utc": "2023-08-09T23:25:48.782Z",
+      "apparent_solar_hour_at_domain_centroid": 16.869098827951582,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28893,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28893_012_14SQB_20230810T223709_0710_01",
+      "acquisition_utc": "2023-08-10T22:37:09.595Z",
+      "apparent_solar_hour_at_domain_centroid": 16.06047902544869,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28893,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28893_012_14SQB_20230810T223709_0712_02",
+      "acquisition_utc": "2023-08-10T22:37:09.595Z",
+      "apparent_solar_hour_at_domain_centroid": 16.06047902544869,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28919,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28919_005_14SQA_20230812T142838_0710_01",
+      "acquisition_utc": "2023-08-12T14:28:38.026Z",
+      "apparent_solar_hour_at_domain_centroid": 7.922718643833517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28919,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28919_005_14SPB_20230812T142838_0712_02",
+      "acquisition_utc": "2023-08-12T14:28:38.026Z",
+      "apparent_solar_hour_at_domain_centroid": 7.922718643833517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28919,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28919_005_14SPA_20230812T142838_0712_02",
+      "acquisition_utc": "2023-08-12T14:28:38.026Z",
+      "apparent_solar_hour_at_domain_centroid": 7.922718643833517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28919,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28919_005_14SQA_20230812T142838_0712_02",
+      "acquisition_utc": "2023-08-12T14:28:38.026Z",
+      "apparent_solar_hour_at_domain_centroid": 7.922718643833517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28919,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28919_005_14SQB_20230812T142838_0712_02",
+      "acquisition_utc": "2023-08-12T14:28:38.026Z",
+      "apparent_solar_hour_at_domain_centroid": 7.922718643833517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28919,
+      "scene": 6,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28919_006_14SQA_20230812T142929_0710_01",
+      "acquisition_utc": "2023-08-12T14:29:29.995Z",
+      "apparent_solar_hour_at_domain_centroid": 7.936886882307704,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28919,
+      "scene": 6,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28919_006_14SPB_20230812T142929_0710_01",
+      "acquisition_utc": "2023-08-12T14:29:29.995Z",
+      "apparent_solar_hour_at_domain_centroid": 7.936886882307704,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28919,
+      "scene": 6,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28919_006_14SPB_20230812T142929_0712_02",
+      "acquisition_utc": "2023-08-12T14:29:29.995Z",
+      "apparent_solar_hour_at_domain_centroid": 7.936886882307704,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28919,
+      "scene": 6,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28919_006_14SQA_20230812T142929_0712_02",
+      "acquisition_utc": "2023-08-12T14:29:29.995Z",
+      "apparent_solar_hour_at_domain_centroid": 7.936886882307704,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28919,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28919_006_14SQB_20230812T142929_0712_02",
+      "acquisition_utc": "2023-08-12T14:29:29.995Z",
+      "apparent_solar_hour_at_domain_centroid": 7.936886882307704,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28939_005_14SPA_20230813T214957_0710_01",
+      "acquisition_utc": "2023-08-13T21:49:57.194Z",
+      "apparent_solar_hour_at_domain_centroid": 15.28162126167815,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28939_005_14SPB_20230813T214957_0710_01",
+      "acquisition_utc": "2023-08-13T21:49:57.194Z",
+      "apparent_solar_hour_at_domain_centroid": 15.28162126167815,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28939_005_14SPA_20230813T214957_0712_02",
+      "acquisition_utc": "2023-08-13T21:49:57.194Z",
+      "apparent_solar_hour_at_domain_centroid": 15.28162126167815,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28939_005_14SPB_20230813T214957_0712_02",
+      "acquisition_utc": "2023-08-13T21:49:57.194Z",
+      "apparent_solar_hour_at_domain_centroid": 15.28162126167815,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 6,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28939_006_14SPB_20230813T215049_0710_01",
+      "acquisition_utc": "2023-08-13T21:50:49.164Z",
+      "apparent_solar_hour_at_domain_centroid": 15.296067442961196,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 6,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28939_006_14SPA_20230813T215049_0710_01",
+      "acquisition_utc": "2023-08-13T21:50:49.164Z",
+      "apparent_solar_hour_at_domain_centroid": 15.296067442961196,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 6,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28939_006_14SQA_20230813T215049_0710_01",
+      "acquisition_utc": "2023-08-13T21:50:49.164Z",
+      "apparent_solar_hour_at_domain_centroid": 15.296067442961196,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28939_006_14SQB_20230813T215049_0710_01",
+      "acquisition_utc": "2023-08-13T21:50:49.164Z",
+      "apparent_solar_hour_at_domain_centroid": 15.296067442961196,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28939_006_14SQB_20230813T215049_0712_02",
+      "acquisition_utc": "2023-08-13T21:50:49.164Z",
+      "apparent_solar_hour_at_domain_centroid": 15.296067442961196,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 6,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_28939_006_14SPB_20230813T215049_0712_02",
+      "acquisition_utc": "2023-08-13T21:50:49.164Z",
+      "apparent_solar_hour_at_domain_centroid": 15.296067442961196,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 6,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28939_006_14SPA_20230813T215049_0712_02",
+      "acquisition_utc": "2023-08-13T21:50:49.164Z",
+      "apparent_solar_hour_at_domain_centroid": 15.296067442961196,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "scene": 6,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28939_006_14SQA_20230813T215049_0712_02",
+      "acquisition_utc": "2023-08-13T21:50:49.164Z",
+      "apparent_solar_hour_at_domain_centroid": 15.296067442961196,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28954,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28954_012_14SQB_20230814T210250_0710_01",
+      "acquisition_utc": "2023-08-14T21:02:50.138Z",
+      "apparent_solar_hour_at_domain_centroid": 14.499213820336045,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28954,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28954_012_14SQB_20230814T210250_0712_02",
+      "acquisition_utc": "2023-08-14T21:02:50.138Z",
+      "apparent_solar_hour_at_domain_centroid": 14.499213820336045,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28995,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28995_005_14SQB_20230817T120639_0710_01",
+      "acquisition_utc": "2023-08-17T12:06:39.389Z",
+      "apparent_solar_hour_at_domain_centroid": 5.571407348681921,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28995,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28995_005_14SPA_20230817T120639_0710_01",
+      "acquisition_utc": "2023-08-17T12:06:39.389Z",
+      "apparent_solar_hour_at_domain_centroid": 5.571407348681921,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28995,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28995_005_14SQA_20230817T120639_0710_01",
+      "acquisition_utc": "2023-08-17T12:06:39.389Z",
+      "apparent_solar_hour_at_domain_centroid": 5.571407348681921,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28995,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_28995_005_14SQA_20230817T120639_0712_02",
+      "acquisition_utc": "2023-08-17T12:06:39.389Z",
+      "apparent_solar_hour_at_domain_centroid": 5.571407348681921,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28995,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_28995_005_14SPA_20230817T120639_0712_02",
+      "acquisition_utc": "2023-08-17T12:06:39.389Z",
+      "apparent_solar_hour_at_domain_centroid": 5.571407348681921,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28995,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28995_005_14SQB_20230817T120639_0712_02",
+      "acquisition_utc": "2023-08-17T12:06:39.389Z",
+      "apparent_solar_hour_at_domain_centroid": 5.571407348681921,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28995,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28995_006_14SQB_20230817T120731_0710_01",
+      "acquisition_utc": "2023-08-17T12:07:31.359Z",
+      "apparent_solar_hour_at_domain_centroid": 5.585853888089972,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 28995,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_28995_006_14SQB_20230817T120731_0712_02",
+      "acquisition_utc": "2023-08-17T12:07:31.359Z",
+      "apparent_solar_hour_at_domain_centroid": 5.585853888089972,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29000,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29000_011_14SPB_20230817T201529_0712_02",
+      "acquisition_utc": "2023-08-17T20:15:29.060Z",
+      "apparent_solar_hour_at_domain_centroid": 13.719820458811151,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29000,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29000_012_14SPA_20230817T201621_0710_01",
+      "acquisition_utc": "2023-08-17T20:16:21.030Z",
+      "apparent_solar_hour_at_domain_centroid": 13.734267031037108,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29000,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29000_012_14SQB_20230817T201621_0710_01",
+      "acquisition_utc": "2023-08-17T20:16:21.030Z",
+      "apparent_solar_hour_at_domain_centroid": 13.734267031037108,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29000,
+      "scene": 12,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29000_012_14SQA_20230817T201621_0710_01",
+      "acquisition_utc": "2023-08-17T20:16:21.030Z",
+      "apparent_solar_hour_at_domain_centroid": 13.734267031037108,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29000,
+      "scene": 12,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29000_012_14SQA_20230817T201621_0712_02",
+      "acquisition_utc": "2023-08-17T20:16:21.030Z",
+      "apparent_solar_hour_at_domain_centroid": 13.734267031037108,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29000,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29000_012_14SQB_20230817T201621_0712_02",
+      "acquisition_utc": "2023-08-17T20:16:21.030Z",
+      "apparent_solar_hour_at_domain_centroid": 13.734267031037108,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29000,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29000_012_14SPA_20230817T201621_0712_02",
+      "acquisition_utc": "2023-08-17T20:16:21.030Z",
+      "apparent_solar_hour_at_domain_centroid": 13.734267031037108,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29000,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29000_012_14SPB_20230817T201621_0712_02",
+      "acquisition_utc": "2023-08-17T20:16:21.030Z",
+      "apparent_solar_hour_at_domain_centroid": 13.734267031037108,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29041,
+      "scene": 7,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29041_007_14SPA_20230820T111952_0710_01",
+      "acquisition_utc": "2023-08-20T11:19:52.360Z",
+      "apparent_solar_hour_at_domain_centroid": 4.802711266815202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29041,
+      "scene": 7,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29041_007_14SQA_20230820T111952_0710_01",
+      "acquisition_utc": "2023-08-20T11:19:52.360Z",
+      "apparent_solar_hour_at_domain_centroid": 4.802711266815202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29041,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29041_007_14SQB_20230820T111952_0710_01",
+      "acquisition_utc": "2023-08-20T11:19:52.360Z",
+      "apparent_solar_hour_at_domain_centroid": 4.802711266815202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29041,
+      "scene": 7,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29041_007_14SPB_20230820T111952_0710_01",
+      "acquisition_utc": "2023-08-20T11:19:52.360Z",
+      "apparent_solar_hour_at_domain_centroid": 4.802711266815202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29041,
+      "scene": 7,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29041_007_14SQA_20230820T111952_0712_02",
+      "acquisition_utc": "2023-08-20T11:19:52.360Z",
+      "apparent_solar_hour_at_domain_centroid": 4.802711266815202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29041,
+      "scene": 7,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29041_007_14SPB_20230820T111952_0712_02",
+      "acquisition_utc": "2023-08-20T11:19:52.360Z",
+      "apparent_solar_hour_at_domain_centroid": 4.802711266815202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29041,
+      "scene": 7,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29041_007_14SPA_20230820T111952_0712_02",
+      "acquisition_utc": "2023-08-20T11:19:52.360Z",
+      "apparent_solar_hour_at_domain_centroid": 4.802711266815202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29041,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29041_007_14SQB_20230820T111952_0712_02",
+      "acquisition_utc": "2023-08-20T11:19:52.360Z",
+      "apparent_solar_hour_at_domain_centroid": 4.802711266815202,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29041,
+      "scene": 8,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29041_008_14SQB_20230820T112044_0710_01",
+      "acquisition_utc": "2023-08-20T11:20:44.330Z",
+      "apparent_solar_hour_at_domain_centroid": 4.81715808617852,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29041,
+      "scene": 8,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29041_008_14SQB_20230820T112044_0712_02",
+      "acquisition_utc": "2023-08-20T11:20:44.330Z",
+      "apparent_solar_hour_at_domain_centroid": 4.81715808617852,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 9,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29061_009_14SQB_20230821T184049_0710_01",
+      "acquisition_utc": "2023-08-21T18:40:49.076Z",
+      "apparent_solar_hour_at_domain_centroid": 12.157160717090662,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 9,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29061_009_14SPB_20230821T184049_0710_01",
+      "acquisition_utc": "2023-08-21T18:40:49.076Z",
+      "apparent_solar_hour_at_domain_centroid": 12.157160717090662,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 9,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29061_009_14SPA_20230821T184049_0710_01",
+      "acquisition_utc": "2023-08-21T18:40:49.076Z",
+      "apparent_solar_hour_at_domain_centroid": 12.157160717090662,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 9,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29061_009_14SPB_20230821T184049_0712_02",
+      "acquisition_utc": "2023-08-21T18:40:49.076Z",
+      "apparent_solar_hour_at_domain_centroid": 12.157160717090662,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 9,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29061_009_14SPA_20230821T184049_0712_02",
+      "acquisition_utc": "2023-08-21T18:40:49.076Z",
+      "apparent_solar_hour_at_domain_centroid": 12.157160717090662,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 9,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29061_009_14SQB_20230821T184049_0712_02",
+      "acquisition_utc": "2023-08-21T18:40:49.076Z",
+      "apparent_solar_hour_at_domain_centroid": 12.157160717090662,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29061_010_14SPB_20230821T184141_0710_01",
+      "acquisition_utc": "2023-08-21T18:41:41.046Z",
+      "apparent_solar_hour_at_domain_centroid": 12.17160765426842,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 10,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29061_010_14SPA_20230821T184141_0710_01",
+      "acquisition_utc": "2023-08-21T18:41:41.046Z",
+      "apparent_solar_hour_at_domain_centroid": 12.17160765426842,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 10,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29061_010_14SQA_20230821T184141_0710_01",
+      "acquisition_utc": "2023-08-21T18:41:41.046Z",
+      "apparent_solar_hour_at_domain_centroid": 12.17160765426842,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 10,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29061_010_14SQB_20230821T184141_0710_01",
+      "acquisition_utc": "2023-08-21T18:41:41.046Z",
+      "apparent_solar_hour_at_domain_centroid": 12.17160765426842,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 10,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29061_010_14SPA_20230821T184141_0712_02",
+      "acquisition_utc": "2023-08-21T18:41:41.046Z",
+      "apparent_solar_hour_at_domain_centroid": 12.17160765426842,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 10,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29061_010_14SQB_20230821T184141_0712_02",
+      "acquisition_utc": "2023-08-21T18:41:41.046Z",
+      "apparent_solar_hour_at_domain_centroid": 12.17160765426842,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29061_010_14SPB_20230821T184141_0712_02",
+      "acquisition_utc": "2023-08-21T18:41:41.046Z",
+      "apparent_solar_hour_at_domain_centroid": 12.17160765426842,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29061,
+      "scene": 10,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29061_010_14SQA_20230821T184141_0712_02",
+      "acquisition_utc": "2023-08-21T18:41:41.046Z",
+      "apparent_solar_hour_at_domain_centroid": 12.17160765426842,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29102,
+      "scene": 6,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29102_006_14SPA_20230824T094444_0710_01",
+      "acquisition_utc": "2023-08-24T09:44:44.004Z",
+      "apparent_solar_hour_at_domain_centroid": 3.2338200021182404,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29102,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29102_006_14SQB_20230824T094444_0710_01",
+      "acquisition_utc": "2023-08-24T09:44:44.004Z",
+      "apparent_solar_hour_at_domain_centroid": 3.2338200021182404,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29102,
+      "scene": 6,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29102_006_14SPB_20230824T094444_0710_01",
+      "acquisition_utc": "2023-08-24T09:44:44.004Z",
+      "apparent_solar_hour_at_domain_centroid": 3.2338200021182404,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29102,
+      "scene": 6,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29102_006_14SQA_20230824T094444_0710_01",
+      "acquisition_utc": "2023-08-24T09:44:44.004Z",
+      "apparent_solar_hour_at_domain_centroid": 3.2338200021182404,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29102,
+      "scene": 6,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29102_006_14SPA_20230824T094444_0712_02",
+      "acquisition_utc": "2023-08-24T09:44:44.004Z",
+      "apparent_solar_hour_at_domain_centroid": 3.2338200021182404,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29102,
+      "scene": 6,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29102_006_14SQA_20230824T094444_0712_02",
+      "acquisition_utc": "2023-08-24T09:44:44.004Z",
+      "apparent_solar_hour_at_domain_centroid": 3.2338200021182404,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29102,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29102_006_14SQB_20230824T094444_0712_02",
+      "acquisition_utc": "2023-08-24T09:44:44.004Z",
+      "apparent_solar_hour_at_domain_centroid": 3.2338200021182404,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29102,
+      "scene": 6,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29102_006_14SPB_20230824T094444_0712_02",
+      "acquisition_utc": "2023-08-24T09:44:44.004Z",
+      "apparent_solar_hour_at_domain_centroid": 3.2338200021182404,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29102,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29102_007_14SQB_20230824T094535_0710_01",
+      "acquisition_utc": "2023-08-24T09:45:35.974Z",
+      "apparent_solar_hour_at_domain_centroid": 3.247989334789193,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29102,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29102_007_14SQB_20230824T094535_0712_02",
+      "acquisition_utc": "2023-08-24T09:45:35.974Z",
+      "apparent_solar_hour_at_domain_centroid": 3.247989334789193,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29117,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29117_005_14SQA_20230825T085640_0712_02",
+      "acquisition_utc": "2023-08-25T08:56:40.246Z",
+      "apparent_solar_hour_at_domain_centroid": 2.4371382014931795,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29163,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29163_003_14SPA_20230828T080749_0712_02",
+      "acquisition_utc": "2023-08-28T08:07:49.363Z",
+      "apparent_solar_hour_at_domain_centroid": 1.6373235827297157,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29168,
+      "scene": 9,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29168_009_14SPA_20230828T161720_0710_01",
+      "acquisition_utc": "2023-08-28T16:17:20.366Z",
+      "apparent_solar_hour_at_domain_centroid": 9.797649256026013,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29168,
+      "scene": 9,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29168_009_14SPA_20230828T161720_0712_02",
+      "acquisition_utc": "2023-08-28T16:17:20.366Z",
+      "apparent_solar_hour_at_domain_centroid": 9.797649256026013,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29224,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29224_004_14SPA_20230901T063046_0710_01",
+      "acquisition_utc": "2023-09-01T06:30:46.193Z",
+      "apparent_solar_hour_at_domain_centroid": 0.040455438167606134,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29224,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29224_004_14SPA_20230901T063046_0712_02",
+      "acquisition_utc": "2023-09-01T06:30:46.193Z",
+      "apparent_solar_hour_at_domain_centroid": 0.040455438167606134,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29224,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29224_005_14SPA_20230901T063138_0710_01",
+      "acquisition_utc": "2023-09-01T06:31:38.162Z",
+      "apparent_solar_hour_at_domain_centroid": 0.05490316640449738,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29224,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29224_005_14SQA_20230901T063138_0710_01",
+      "acquisition_utc": "2023-09-01T06:31:38.162Z",
+      "apparent_solar_hour_at_domain_centroid": 0.05490316640449738,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29224,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29224_005_14SPB_20230901T063138_0710_01",
+      "acquisition_utc": "2023-09-01T06:31:38.162Z",
+      "apparent_solar_hour_at_domain_centroid": 0.05490316640449738,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29224,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29224_005_14SQB_20230901T063138_0710_01",
+      "acquisition_utc": "2023-09-01T06:31:38.162Z",
+      "apparent_solar_hour_at_domain_centroid": 0.05490316640449738,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29224,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29224_005_14SQB_20230901T063138_0712_02",
+      "acquisition_utc": "2023-09-01T06:31:38.162Z",
+      "apparent_solar_hour_at_domain_centroid": 0.05490316640449738,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29224,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29224_005_14SPB_20230901T063138_0712_02",
+      "acquisition_utc": "2023-09-01T06:31:38.162Z",
+      "apparent_solar_hour_at_domain_centroid": 0.05490316640449738,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29224,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29224_005_14SPA_20230901T063138_0712_02",
+      "acquisition_utc": "2023-09-01T06:31:38.162Z",
+      "apparent_solar_hour_at_domain_centroid": 0.05490316640449738,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29224,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29224_005_14SQA_20230901T063138_0712_02",
+      "acquisition_utc": "2023-09-01T06:31:38.162Z",
+      "apparent_solar_hour_at_domain_centroid": 0.05490316640449738,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29229,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29229_011_14SPB_20230901T143951_0710_01",
+      "acquisition_utc": "2023-09-01T14:39:51.383Z",
+      "apparent_solar_hour_at_domain_centroid": 8.193703168096304,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29229,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29229_011_14SPB_20230901T143951_0712_02",
+      "acquisition_utc": "2023-09-01T14:39:51.383Z",
+      "apparent_solar_hour_at_domain_centroid": 8.193703168096304,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29229,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29229_012_14SPA_20230901T144043_0710_01",
+      "acquisition_utc": "2023-09-01T14:40:43.353Z",
+      "apparent_solar_hour_at_domain_centroid": 8.208150916537361,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29229,
+      "scene": 12,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29229_012_14SQA_20230901T144043_0710_01",
+      "acquisition_utc": "2023-09-01T14:40:43.353Z",
+      "apparent_solar_hour_at_domain_centroid": 8.208150916537361,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29229,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29229_012_14SPB_20230901T144043_0710_01",
+      "acquisition_utc": "2023-09-01T14:40:43.353Z",
+      "apparent_solar_hour_at_domain_centroid": 8.208150916537361,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29229,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29229_012_14SPB_20230901T144043_0712_02",
+      "acquisition_utc": "2023-09-01T14:40:43.353Z",
+      "apparent_solar_hour_at_domain_centroid": 8.208150916537361,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29229,
+      "scene": 12,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29229_012_14SQA_20230901T144043_0712_02",
+      "acquisition_utc": "2023-09-01T14:40:43.353Z",
+      "apparent_solar_hour_at_domain_centroid": 8.208150916537361,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29229,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29229_012_14SPA_20230901T144043_0712_02",
+      "acquisition_utc": "2023-09-01T14:40:43.353Z",
+      "apparent_solar_hour_at_domain_centroid": 8.208150916537361,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 11,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29244_011_14SPA_20230902T135123_0710_01",
+      "acquisition_utc": "2023-09-02T13:51:23.970Z",
+      "apparent_solar_hour_at_domain_centroid": 7.391275199482501,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29244_011_14SPB_20230902T135123_0712_02",
+      "acquisition_utc": "2023-09-02T13:51:23.970Z",
+      "apparent_solar_hour_at_domain_centroid": 7.391275199482501,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 11,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29244_011_14SQB_20230902T135123_0712_02",
+      "acquisition_utc": "2023-09-02T13:51:23.970Z",
+      "apparent_solar_hour_at_domain_centroid": 7.391275199482501,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 11,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29244_011_14SPA_20230902T135123_0712_02",
+      "acquisition_utc": "2023-09-02T13:51:23.970Z",
+      "apparent_solar_hour_at_domain_centroid": 7.391275199482501,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29244_012_14SPB_20230902T135215_0710_01",
+      "acquisition_utc": "2023-09-02T13:52:15.940Z",
+      "apparent_solar_hour_at_domain_centroid": 7.405723003319983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29244_012_14SQB_20230902T135215_0710_01",
+      "acquisition_utc": "2023-09-02T13:52:15.940Z",
+      "apparent_solar_hour_at_domain_centroid": 7.405723003319983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 12,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29244_012_14SQA_20230902T135215_0710_01",
+      "acquisition_utc": "2023-09-02T13:52:15.940Z",
+      "apparent_solar_hour_at_domain_centroid": 7.405723003319983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29244_012_14SPA_20230902T135215_0710_01",
+      "acquisition_utc": "2023-09-02T13:52:15.940Z",
+      "apparent_solar_hour_at_domain_centroid": 7.405723003319983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 12,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29244_012_14SQA_20230902T135215_0712_02",
+      "acquisition_utc": "2023-09-02T13:52:15.940Z",
+      "apparent_solar_hour_at_domain_centroid": 7.405723003319983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29244_012_14SPA_20230902T135215_0712_02",
+      "acquisition_utc": "2023-09-02T13:52:15.940Z",
+      "apparent_solar_hour_at_domain_centroid": 7.405723003319983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29244_012_14SQB_20230902T135215_0712_02",
+      "acquisition_utc": "2023-09-02T13:52:15.940Z",
+      "apparent_solar_hour_at_domain_centroid": 7.405723003319983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29244,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29244_012_14SPB_20230902T135215_0712_02",
+      "acquisition_utc": "2023-09-02T13:52:15.940Z",
+      "apparent_solar_hour_at_domain_centroid": 7.405723003319983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29290,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29290_010_14SPB_20230905T130223_0710_01",
+      "acquisition_utc": "2023-09-05T13:02:23.394Z",
+      "apparent_solar_hour_at_domain_centroid": 6.591546142296822,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29290,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29290_010_14SPB_20230905T130223_0712_02",
+      "acquisition_utc": "2023-09-05T13:02:23.394Z",
+      "apparent_solar_hour_at_domain_centroid": 6.591546142296822,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29290,
+      "scene": 11,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29290_011_14SQB_20230905T130315_0710_01",
+      "acquisition_utc": "2023-09-05T13:03:15.363Z",
+      "apparent_solar_hour_at_domain_centroid": 6.605994096184203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29290,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29290_011_14SPB_20230905T130315_0710_01",
+      "acquisition_utc": "2023-09-05T13:03:15.363Z",
+      "apparent_solar_hour_at_domain_centroid": 6.605994096184203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29290,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29290_011_14SPB_20230905T130315_0712_02",
+      "acquisition_utc": "2023-09-05T13:03:15.363Z",
+      "apparent_solar_hour_at_domain_centroid": 6.605994096184203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29290,
+      "scene": 11,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29290_011_14SQB_20230905T130315_0712_02",
+      "acquisition_utc": "2023-09-05T13:03:15.363Z",
+      "apparent_solar_hour_at_domain_centroid": 6.605994096184203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29290,
+      "scene": 11,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29290_011_14SQA_20230905T130315_0712_02",
+      "acquisition_utc": "2023-09-05T13:03:15.363Z",
+      "apparent_solar_hour_at_domain_centroid": 6.605994096184203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29290,
+      "scene": 11,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29290_011_14SPA_20230905T130315_0712_02",
+      "acquisition_utc": "2023-09-05T13:03:15.363Z",
+      "apparent_solar_hour_at_domain_centroid": 6.605994096184203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29305,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29305_011_14SPB_20230906T121342_0710_01",
+      "acquisition_utc": "2023-09-06T12:13:42.009Z",
+      "apparent_solar_hour_at_domain_centroid": 5.785825445411014,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29305,
+      "scene": 11,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29305_011_14SPB_20230906T121342_0712_02",
+      "acquisition_utc": "2023-09-06T12:13:42.009Z",
+      "apparent_solar_hour_at_domain_centroid": 5.785825445411014,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29305,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29305_012_14SPB_20230906T121433_0710_01",
+      "acquisition_utc": "2023-09-06T12:14:33.978Z",
+      "apparent_solar_hour_at_domain_centroid": 5.7999955953558215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29305,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29305_012_14SPA_20230906T121433_0710_01",
+      "acquisition_utc": "2023-09-06T12:14:33.978Z",
+      "apparent_solar_hour_at_domain_centroid": 5.7999955953558215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29305,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29305_012_14SQB_20230906T121433_0710_01",
+      "acquisition_utc": "2023-09-06T12:14:33.978Z",
+      "apparent_solar_hour_at_domain_centroid": 5.7999955953558215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29305,
+      "scene": 12,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29305_012_14SQA_20230906T121433_0712_02",
+      "acquisition_utc": "2023-09-06T12:14:33.978Z",
+      "apparent_solar_hour_at_domain_centroid": 5.7999955953558215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29305,
+      "scene": 12,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29305_012_14SPB_20230906T121433_0712_02",
+      "acquisition_utc": "2023-09-06T12:14:33.978Z",
+      "apparent_solar_hour_at_domain_centroid": 5.7999955953558215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29305,
+      "scene": 12,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29305_012_14SPA_20230906T121433_0712_02",
+      "acquisition_utc": "2023-09-06T12:14:33.978Z",
+      "apparent_solar_hour_at_domain_centroid": 5.7999955953558215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29305,
+      "scene": 12,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29305_012_14SQB_20230906T121433_0712_02",
+      "acquisition_utc": "2023-09-06T12:14:33.978Z",
+      "apparent_solar_hour_at_domain_centroid": 5.7999955953558215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29331,
+      "scene": 7,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29331_007_14SPA_20230908T040435_0710_01",
+      "acquisition_utc": "2023-09-08T04:04:35.552Z",
+      "apparent_solar_hour_at_domain_centroid": 21.643769907552784,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29331,
+      "scene": 7,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29331_007_14SPB_20230908T040435_0710_01",
+      "acquisition_utc": "2023-09-08T04:04:35.552Z",
+      "apparent_solar_hour_at_domain_centroid": 21.643769907552784,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29331,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29331_007_14SQB_20230908T040435_0710_01",
+      "acquisition_utc": "2023-09-08T04:04:35.552Z",
+      "apparent_solar_hour_at_domain_centroid": 21.643769907552784,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29331,
+      "scene": 7,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29331_007_14SPA_20230908T040435_0712_02",
+      "acquisition_utc": "2023-09-08T04:04:35.552Z",
+      "apparent_solar_hour_at_domain_centroid": 21.643769907552784,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29331,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29331_007_14SQB_20230908T040435_0712_02",
+      "acquisition_utc": "2023-09-08T04:04:35.552Z",
+      "apparent_solar_hour_at_domain_centroid": 21.643769907552784,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29331,
+      "scene": 7,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29331_007_14SPB_20230908T040435_0712_02",
+      "acquisition_utc": "2023-09-08T04:04:35.552Z",
+      "apparent_solar_hour_at_domain_centroid": 21.643769907552784,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29331,
+      "scene": 8,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29331_008_14SQB_20230908T040527_0710_01",
+      "acquisition_utc": "2023-09-08T04:05:27.522Z",
+      "apparent_solar_hour_at_domain_centroid": 21.658217967954553,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29331,
+      "scene": 8,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29331_008_14SQB_20230908T040527_0712_02",
+      "acquisition_utc": "2023-09-08T04:05:27.522Z",
+      "apparent_solar_hour_at_domain_centroid": 21.658217967954553,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29346,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29346_005_14SQB_20230909T031623_0710_01",
+      "acquisition_utc": "2023-09-09T03:16:23.701Z",
+      "apparent_solar_hour_at_domain_centroid": 20.846270245292793,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29346,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29346_005_14SPB_20230909T031623_0710_01",
+      "acquisition_utc": "2023-09-09T03:16:23.701Z",
+      "apparent_solar_hour_at_domain_centroid": 20.846270245292793,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29346,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29346_005_14SPA_20230909T031623_0710_01",
+      "acquisition_utc": "2023-09-09T03:16:23.701Z",
+      "apparent_solar_hour_at_domain_centroid": 20.846270245292793,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29346,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29346_005_14SQA_20230909T031623_0710_01",
+      "acquisition_utc": "2023-09-09T03:16:23.701Z",
+      "apparent_solar_hour_at_domain_centroid": 20.846270245292793,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29346,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29346_005_14SQB_20230909T031623_0712_02",
+      "acquisition_utc": "2023-09-09T03:16:23.701Z",
+      "apparent_solar_hour_at_domain_centroid": 20.846270245292793,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29346,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29346_005_14SQA_20230909T031623_0712_02",
+      "acquisition_utc": "2023-09-09T03:16:23.701Z",
+      "apparent_solar_hour_at_domain_centroid": 20.846270245292793,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29346,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29346_005_14SPB_20230909T031623_0712_02",
+      "acquisition_utc": "2023-09-09T03:16:23.701Z",
+      "apparent_solar_hour_at_domain_centroid": 20.846270245292793,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29346,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29346_005_14SPA_20230909T031623_0712_02",
+      "acquisition_utc": "2023-09-09T03:16:23.701Z",
+      "apparent_solar_hour_at_domain_centroid": 20.846270245292793,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29346,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29346_006_14SQB_20230909T031715_0710_01",
+      "acquisition_utc": "2023-09-09T03:17:15.671Z",
+      "apparent_solar_hour_at_domain_centroid": 20.86071833840235,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29346,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29346_006_14SQB_20230909T031715_0712_02",
+      "acquisition_utc": "2023-09-09T03:17:15.671Z",
+      "apparent_solar_hour_at_domain_centroid": 20.86071833840235,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 8,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29351_008_14SPA_20230909T112538_0710_01",
+      "acquisition_utc": "2023-09-09T11:25:38.171Z",
+      "apparent_solar_hour_at_domain_centroid": 5.002499675417088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 8,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29351_008_14SQA_20230909T112538_0710_01",
+      "acquisition_utc": "2023-09-09T11:25:38.171Z",
+      "apparent_solar_hour_at_domain_centroid": 5.002499675417088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 8,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29351_008_14SPB_20230909T112538_0710_01",
+      "acquisition_utc": "2023-09-09T11:25:38.171Z",
+      "apparent_solar_hour_at_domain_centroid": 5.002499675417088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 8,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29351_008_14SQB_20230909T112538_0710_01",
+      "acquisition_utc": "2023-09-09T11:25:38.171Z",
+      "apparent_solar_hour_at_domain_centroid": 5.002499675417088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 8,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29351_008_14SQB_20230909T112538_0712_02",
+      "acquisition_utc": "2023-09-09T11:25:38.171Z",
+      "apparent_solar_hour_at_domain_centroid": 5.002499675417088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 8,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29351_008_14SPB_20230909T112538_0712_02",
+      "acquisition_utc": "2023-09-09T11:25:38.171Z",
+      "apparent_solar_hour_at_domain_centroid": 5.002499675417088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 8,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29351_008_14SPA_20230909T112538_0712_02",
+      "acquisition_utc": "2023-09-09T11:25:38.171Z",
+      "apparent_solar_hour_at_domain_centroid": 5.002499675417088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 8,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29351_008_14SQA_20230909T112538_0712_02",
+      "acquisition_utc": "2023-09-09T11:25:38.171Z",
+      "apparent_solar_hour_at_domain_centroid": 5.002499675417088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 9,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29351_009_14SQA_20230909T112630_0710_01",
+      "acquisition_utc": "2023-09-09T11:26:30.141Z",
+      "apparent_solar_hour_at_domain_centroid": 5.016947779177574,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 9,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29351_009_14SQA_20230909T112630_0712_02",
+      "acquisition_utc": "2023-09-09T11:26:30.141Z",
+      "apparent_solar_hour_at_domain_centroid": 5.016947779177574,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 9,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29351_009_14SPA_20230909T112630_0712_02",
+      "acquisition_utc": "2023-09-09T11:26:30.141Z",
+      "apparent_solar_hour_at_domain_centroid": 5.016947779177574,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29351,
+      "scene": 9,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29351_009_14SQB_20230909T112630_0712_02",
+      "acquisition_utc": "2023-09-09T11:26:30.141Z",
+      "apparent_solar_hour_at_domain_centroid": 5.016947779177574,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29366,
+      "scene": 9,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29366_009_14SPB_20230910T103753_0710_01",
+      "acquisition_utc": "2023-09-10T10:37:53.306Z",
+      "apparent_solar_hour_at_domain_centroid": 4.212567681019511,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29366,
+      "scene": 9,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29366_009_14SQB_20230910T103753_0710_01",
+      "acquisition_utc": "2023-09-10T10:37:53.306Z",
+      "apparent_solar_hour_at_domain_centroid": 4.212567681019511,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29366,
+      "scene": 9,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29366_009_14SQB_20230910T103753_0712_02",
+      "acquisition_utc": "2023-09-10T10:37:53.306Z",
+      "apparent_solar_hour_at_domain_centroid": 4.212567681019511,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29366,
+      "scene": 9,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29366_009_14SPB_20230910T103753_0712_02",
+      "acquisition_utc": "2023-09-10T10:37:53.306Z",
+      "apparent_solar_hour_at_domain_centroid": 4.212567681019511,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29366,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29366_010_14SPB_20230910T103845_0710_01",
+      "acquisition_utc": "2023-09-10T10:38:45.275Z",
+      "apparent_solar_hour_at_domain_centroid": 4.227015812653206,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29366,
+      "scene": 10,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29366_010_14SQA_20230910T103845_0710_01",
+      "acquisition_utc": "2023-09-10T10:38:45.275Z",
+      "apparent_solar_hour_at_domain_centroid": 4.227015812653206,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29366,
+      "scene": 10,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29366_010_14SQB_20230910T103845_0710_01",
+      "acquisition_utc": "2023-09-10T10:38:45.275Z",
+      "apparent_solar_hour_at_domain_centroid": 4.227015812653206,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29366,
+      "scene": 10,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29366_010_14SQA_20230910T103845_0712_02",
+      "acquisition_utc": "2023-09-10T10:38:45.275Z",
+      "apparent_solar_hour_at_domain_centroid": 4.227015812653206,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29366,
+      "scene": 10,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29366_010_14SQB_20230910T103845_0712_02",
+      "acquisition_utc": "2023-09-10T10:38:45.275Z",
+      "apparent_solar_hour_at_domain_centroid": 4.227015812653206,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29366,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29366_010_14SPB_20230910T103845_0712_02",
+      "acquisition_utc": "2023-09-10T10:38:45.275Z",
+      "apparent_solar_hour_at_domain_centroid": 4.227015812653206,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 2,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29407_002_14SQA_20230913T014233_0710_01",
+      "acquisition_utc": "2023-09-13T01:42:33.306Z",
+      "apparent_solar_hour_at_domain_centroid": 19.30658203976739,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 2,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29407_002_14SPA_20230913T014233_0710_01",
+      "acquisition_utc": "2023-09-13T01:42:33.306Z",
+      "apparent_solar_hour_at_domain_centroid": 19.30658203976739,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 2,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29407_002_14SPB_20230913T014233_0712_02",
+      "acquisition_utc": "2023-09-13T01:42:33.306Z",
+      "apparent_solar_hour_at_domain_centroid": 19.30658203976739,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 2,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29407_002_14SQA_20230913T014233_0712_02",
+      "acquisition_utc": "2023-09-13T01:42:33.306Z",
+      "apparent_solar_hour_at_domain_centroid": 19.30658203976739,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 2,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29407_002_14SPA_20230913T014233_0712_02",
+      "acquisition_utc": "2023-09-13T01:42:33.306Z",
+      "apparent_solar_hour_at_domain_centroid": 19.30658203976739,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29407_003_14SPA_20230913T014326_0710_01",
+      "acquisition_utc": "2023-09-13T01:43:26.275Z",
+      "apparent_solar_hour_at_domain_centroid": 19.32130807843266,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29407_003_14SQA_20230913T014326_0710_01",
+      "acquisition_utc": "2023-09-13T01:43:26.275Z",
+      "apparent_solar_hour_at_domain_centroid": 19.32130807843266,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 3,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29407_003_14SQB_20230913T014326_0710_01",
+      "acquisition_utc": "2023-09-13T01:43:26.275Z",
+      "apparent_solar_hour_at_domain_centroid": 19.32130807843266,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 3,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29407_003_14SPB_20230913T014326_0710_01",
+      "acquisition_utc": "2023-09-13T01:43:26.275Z",
+      "apparent_solar_hour_at_domain_centroid": 19.32130807843266,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29407_003_14SQA_20230913T014326_0712_02",
+      "acquisition_utc": "2023-09-13T01:43:26.275Z",
+      "apparent_solar_hour_at_domain_centroid": 19.32130807843266,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 3,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29407_003_14SQB_20230913T014326_0712_02",
+      "acquisition_utc": "2023-09-13T01:43:26.275Z",
+      "apparent_solar_hour_at_domain_centroid": 19.32130807843266,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29407_003_14SPA_20230913T014326_0712_02",
+      "acquisition_utc": "2023-09-13T01:43:26.275Z",
+      "apparent_solar_hour_at_domain_centroid": 19.32130807843266,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29407,
+      "scene": 3,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29407_003_14SPB_20230913T014326_0712_02",
+      "acquisition_utc": "2023-09-13T01:43:26.275Z",
+      "apparent_solar_hour_at_domain_centroid": 19.32130807843266,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29412,
+      "scene": 8,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29412_008_14SPB_20230913T095159_0710_01",
+      "acquisition_utc": "2023-09-13T09:51:59.587Z",
+      "apparent_solar_hour_at_domain_centroid": 3.4659204021378236,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29412,
+      "scene": 8,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29412_008_14SPA_20230913T095159_0710_01",
+      "acquisition_utc": "2023-09-13T09:51:59.587Z",
+      "apparent_solar_hour_at_domain_centroid": 3.4659204021378236,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29412,
+      "scene": 8,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29412_008_14SPA_20230913T095159_0712_02",
+      "acquisition_utc": "2023-09-13T09:51:59.587Z",
+      "apparent_solar_hour_at_domain_centroid": 3.4659204021378236,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29412,
+      "scene": 8,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29412_008_14SPB_20230913T095159_0712_02",
+      "acquisition_utc": "2023-09-13T09:51:59.587Z",
+      "apparent_solar_hour_at_domain_centroid": 3.4659204021378236,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29412,
+      "scene": 9,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29412_009_14SPA_20230913T095251_0710_01",
+      "acquisition_utc": "2023-09-13T09:52:51.558Z",
+      "apparent_solar_hour_at_domain_centroid": 3.4803685964126423,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29412,
+      "scene": 9,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29412_009_14SPA_20230913T095251_0712_02",
+      "acquisition_utc": "2023-09-13T09:52:51.558Z",
+      "apparent_solar_hour_at_domain_centroid": 3.4803685964126423,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29453,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29453_004_14SPA_20230916T005552_0710_01",
+      "acquisition_utc": "2023-09-16T00:55:52.122Z",
+      "apparent_solar_hour_at_domain_centroid": 18.54708126740731,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29453,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29453_004_14SPB_20230916T005552_0710_01",
+      "acquisition_utc": "2023-09-16T00:55:52.122Z",
+      "apparent_solar_hour_at_domain_centroid": 18.54708126740731,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29453,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29453_004_14SPB_20230916T005552_0712_02",
+      "acquisition_utc": "2023-09-16T00:55:52.122Z",
+      "apparent_solar_hour_at_domain_centroid": 18.54708126740731,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29453,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29453_004_14SPA_20230916T005552_0712_02",
+      "acquisition_utc": "2023-09-16T00:55:52.122Z",
+      "apparent_solar_hour_at_domain_centroid": 18.54708126740731,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29453,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29453_005_14SPA_20230916T005644_0710_01",
+      "acquisition_utc": "2023-09-16T00:56:44.092Z",
+      "apparent_solar_hour_at_domain_centroid": 18.56152948761484,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29453,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29453_005_14SPB_20230916T005644_0710_01",
+      "acquisition_utc": "2023-09-16T00:56:44.092Z",
+      "apparent_solar_hour_at_domain_centroid": 18.56152948761484,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29453,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29453_005_14SQB_20230916T005644_0710_01",
+      "acquisition_utc": "2023-09-16T00:56:44.092Z",
+      "apparent_solar_hour_at_domain_centroid": 18.56152948761484,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29453,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29453_005_14SPA_20230916T005644_0712_02",
+      "acquisition_utc": "2023-09-16T00:56:44.092Z",
+      "apparent_solar_hour_at_domain_centroid": 18.56152948761484,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29453,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29453_005_14SQB_20230916T005644_0712_02",
+      "acquisition_utc": "2023-09-16T00:56:44.092Z",
+      "apparent_solar_hour_at_domain_centroid": 18.56152948761484,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29453,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29453_005_14SPB_20230916T005644_0712_02",
+      "acquisition_utc": "2023-09-16T00:56:44.092Z",
+      "apparent_solar_hour_at_domain_centroid": 18.56152948761484,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29473,
+      "scene": 10,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29473_010_14SPA_20230917T081836_0710_01",
+      "acquisition_utc": "2023-09-17T08:18:36.033Z",
+      "apparent_solar_hour_at_domain_centroid": 1.9341764281970326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29473,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29473_010_14SPB_20230917T081836_0710_01",
+      "acquisition_utc": "2023-09-17T08:18:36.033Z",
+      "apparent_solar_hour_at_domain_centroid": 1.9341764281970326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29473,
+      "scene": 10,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29473_010_14SQA_20230917T081836_0710_01",
+      "acquisition_utc": "2023-09-17T08:18:36.033Z",
+      "apparent_solar_hour_at_domain_centroid": 1.9341764281970326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29473,
+      "scene": 10,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29473_010_14SQB_20230917T081836_0710_01",
+      "acquisition_utc": "2023-09-17T08:18:36.033Z",
+      "apparent_solar_hour_at_domain_centroid": 1.9341764281970326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29473,
+      "scene": 10,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29473_010_14SPA_20230917T081836_0712_02",
+      "acquisition_utc": "2023-09-17T08:18:36.033Z",
+      "apparent_solar_hour_at_domain_centroid": 1.9341764281970326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29473,
+      "scene": 10,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29473_010_14SQB_20230917T081836_0712_02",
+      "acquisition_utc": "2023-09-17T08:18:36.033Z",
+      "apparent_solar_hour_at_domain_centroid": 1.9341764281970326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29473,
+      "scene": 10,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29473_010_14SPB_20230917T081836_0712_02",
+      "acquisition_utc": "2023-09-17T08:18:36.033Z",
+      "apparent_solar_hour_at_domain_centroid": 1.9341764281970326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29473,
+      "scene": 10,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29473_010_14SQA_20230917T081836_0712_02",
+      "acquisition_utc": "2023-09-17T08:18:36.033Z",
+      "apparent_solar_hour_at_domain_centroid": 1.9341764281970326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29488,
+      "scene": 10,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29488_010_14SQB_20230918T073052_0710_01",
+      "acquisition_utc": "2023-09-18T07:30:52.338Z",
+      "apparent_solar_hour_at_domain_centroid": 1.1446886126860214,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29488,
+      "scene": 10,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29488_010_14SQA_20230918T073052_0710_01",
+      "acquisition_utc": "2023-09-18T07:30:52.338Z",
+      "apparent_solar_hour_at_domain_centroid": 1.1446886126860214,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29488,
+      "scene": 10,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29488_010_14SQA_20230918T073052_0712_02",
+      "acquisition_utc": "2023-09-18T07:30:52.338Z",
+      "apparent_solar_hour_at_domain_centroid": 1.1446886126860214,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29488,
+      "scene": 10,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29488_010_14SQB_20230918T073052_0712_02",
+      "acquisition_utc": "2023-09-18T07:30:52.338Z",
+      "apparent_solar_hour_at_domain_centroid": 1.1446886126860214,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29514_005_14SQB_20230919T232202_0710_01",
+      "acquisition_utc": "2023-09-19T23:22:02.571Z",
+      "apparent_solar_hour_at_domain_centroid": 17.00786638818079,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29514_005_14SPB_20230919T232202_0710_01",
+      "acquisition_utc": "2023-09-19T23:22:02.571Z",
+      "apparent_solar_hour_at_domain_centroid": 17.00786638818079,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29514_005_14SPA_20230919T232202_0710_01",
+      "acquisition_utc": "2023-09-19T23:22:02.571Z",
+      "apparent_solar_hour_at_domain_centroid": 17.00786638818079,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29514_005_14SPA_20230919T232202_0712_02",
+      "acquisition_utc": "2023-09-19T23:22:02.571Z",
+      "apparent_solar_hour_at_domain_centroid": 17.00786638818079,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29514_005_14SQB_20230919T232202_0712_02",
+      "acquisition_utc": "2023-09-19T23:22:02.571Z",
+      "apparent_solar_hour_at_domain_centroid": 17.00786638818079,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29514_005_14SPB_20230919T232202_0712_02",
+      "acquisition_utc": "2023-09-19T23:22:02.571Z",
+      "apparent_solar_hour_at_domain_centroid": 17.00786638818079,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "scene": 6,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29514_006_14SPB_20230919T232254_0710_01",
+      "acquisition_utc": "2023-09-19T23:22:54.540Z",
+      "apparent_solar_hour_at_domain_centroid": 17.02231459419459,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29514_006_14SQB_20230919T232254_0710_01",
+      "acquisition_utc": "2023-09-19T23:22:54.540Z",
+      "apparent_solar_hour_at_domain_centroid": 17.02231459419459,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "scene": 6,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29514_006_14SPB_20230919T232254_0712_02",
+      "acquisition_utc": "2023-09-19T23:22:54.540Z",
+      "apparent_solar_hour_at_domain_centroid": 17.02231459419459,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29514_006_14SQB_20230919T232254_0712_02",
+      "acquisition_utc": "2023-09-19T23:22:54.540Z",
+      "apparent_solar_hour_at_domain_centroid": 17.02231459419459,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29529_004_14SPB_20230920T223407_0710_01",
+      "acquisition_utc": "2023-09-20T22:34:07.041Z",
+      "apparent_solar_hour_at_domain_centroid": 16.21528713169233,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29529_004_14SQB_20230920T223407_0710_01",
+      "acquisition_utc": "2023-09-20T22:34:07.041Z",
+      "apparent_solar_hour_at_domain_centroid": 16.21528713169233,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29529_004_14SPA_20230920T223407_0710_01",
+      "acquisition_utc": "2023-09-20T22:34:07.041Z",
+      "apparent_solar_hour_at_domain_centroid": 16.21528713169233,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29529_004_14SQA_20230920T223407_0710_01",
+      "acquisition_utc": "2023-09-20T22:34:07.041Z",
+      "apparent_solar_hour_at_domain_centroid": 16.21528713169233,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29529_004_14SPA_20230920T223407_0712_02",
+      "acquisition_utc": "2023-09-20T22:34:07.041Z",
+      "apparent_solar_hour_at_domain_centroid": 16.21528713169233,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 4,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29529_004_14SPB_20230920T223407_0712_02",
+      "acquisition_utc": "2023-09-20T22:34:07.041Z",
+      "apparent_solar_hour_at_domain_centroid": 16.21528713169233,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29529_004_14SQA_20230920T223407_0712_02",
+      "acquisition_utc": "2023-09-20T22:34:07.041Z",
+      "apparent_solar_hour_at_domain_centroid": 16.21528713169233,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29529_004_14SQB_20230920T223407_0712_02",
+      "acquisition_utc": "2023-09-20T22:34:07.041Z",
+      "apparent_solar_hour_at_domain_centroid": 16.21528713169233,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29529_005_14SPA_20230920T223459_0710_01",
+      "acquisition_utc": "2023-09-20T22:34:59.011Z",
+      "apparent_solar_hour_at_domain_centroid": 16.229735324391743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29529_005_14SQA_20230920T223459_0710_01",
+      "acquisition_utc": "2023-09-20T22:34:59.011Z",
+      "apparent_solar_hour_at_domain_centroid": 16.229735324391743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29529_005_14SPB_20230920T223459_0710_01",
+      "acquisition_utc": "2023-09-20T22:34:59.011Z",
+      "apparent_solar_hour_at_domain_centroid": 16.229735324391743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29529_005_14SQB_20230920T223459_0710_01",
+      "acquisition_utc": "2023-09-20T22:34:59.011Z",
+      "apparent_solar_hour_at_domain_centroid": 16.229735324391743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29529_005_14SPA_20230920T223459_0712_02",
+      "acquisition_utc": "2023-09-20T22:34:59.011Z",
+      "apparent_solar_hour_at_domain_centroid": 16.229735324391743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29529_005_14SPB_20230920T223459_0712_02",
+      "acquisition_utc": "2023-09-20T22:34:59.011Z",
+      "apparent_solar_hour_at_domain_centroid": 16.229735324391743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29529_005_14SQB_20230920T223459_0712_02",
+      "acquisition_utc": "2023-09-20T22:34:59.011Z",
+      "apparent_solar_hour_at_domain_centroid": 16.229735324391743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29529_005_14SQA_20230920T223459_0712_02",
+      "acquisition_utc": "2023-09-20T22:34:59.011Z",
+      "apparent_solar_hour_at_domain_centroid": 16.229735324391743,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29549,
+      "scene": 9,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29549_009_14SPB_20230922T055518_0710_01",
+      "acquisition_utc": "2023-09-22T05:55:18.883Z",
+      "apparent_solar_hour_at_domain_centroid": 23.576453701243047,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29549,
+      "scene": 9,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29549_009_14SQB_20230922T055518_0710_01",
+      "acquisition_utc": "2023-09-22T05:55:18.883Z",
+      "apparent_solar_hour_at_domain_centroid": 23.576453701243047,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29549,
+      "scene": 9,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29549_009_14SPB_20230922T055518_0712_02",
+      "acquisition_utc": "2023-09-22T05:55:18.883Z",
+      "apparent_solar_hour_at_domain_centroid": 23.576453701243047,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29549,
+      "scene": 9,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29549_009_14SQB_20230922T055518_0712_02",
+      "acquisition_utc": "2023-09-22T05:55:18.883Z",
+      "apparent_solar_hour_at_domain_centroid": 23.576453701243047,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29575_005_14SPB_20230923T214718_0710_01",
+      "acquisition_utc": "2023-09-23T21:47:18.712Z",
+      "apparent_solar_hour_at_domain_centroid": 15.453344961873889,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29575_005_14SQA_20230923T214718_0710_01",
+      "acquisition_utc": "2023-09-23T21:47:18.712Z",
+      "apparent_solar_hour_at_domain_centroid": 15.453344961873889,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "scene": 5,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29575_005_14SPA_20230923T214718_0712_02",
+      "acquisition_utc": "2023-09-23T21:47:18.712Z",
+      "apparent_solar_hour_at_domain_centroid": 15.453344961873889,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "scene": 5,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29575_005_14SPB_20230923T214718_0712_02",
+      "acquisition_utc": "2023-09-23T21:47:18.712Z",
+      "apparent_solar_hour_at_domain_centroid": 15.453344961873889,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "scene": 5,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29575_005_14SQA_20230923T214718_0712_02",
+      "acquisition_utc": "2023-09-23T21:47:18.712Z",
+      "apparent_solar_hour_at_domain_centroid": 15.453344961873889,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "scene": 5,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29575_005_14SQB_20230923T214718_0712_02",
+      "acquisition_utc": "2023-09-23T21:47:18.712Z",
+      "apparent_solar_hour_at_domain_centroid": 15.453344961873889,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29575_006_14SQB_20230923T214810_0710_01",
+      "acquisition_utc": "2023-09-23T21:48:10.682Z",
+      "apparent_solar_hour_at_domain_centroid": 15.467793089434807,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "scene": 6,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29575_006_14SQB_20230923T214810_0712_02",
+      "acquisition_utc": "2023-09-23T21:48:10.682Z",
+      "apparent_solar_hour_at_domain_centroid": 15.467793089434807,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29590,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29590_003_14SPA_20230924T205912_0710_01",
+      "acquisition_utc": "2023-09-24T20:59:12.564Z",
+      "apparent_solar_hour_at_domain_centroid": 14.657570685101247,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29590,
+      "scene": 3,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29590_003_14SQB_20230924T205912_0710_01",
+      "acquisition_utc": "2023-09-24T20:59:12.564Z",
+      "apparent_solar_hour_at_domain_centroid": 14.657570685101247,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29590,
+      "scene": 3,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29590_003_14SPB_20230924T205912_0712_02",
+      "acquisition_utc": "2023-09-24T20:59:12.564Z",
+      "apparent_solar_hour_at_domain_centroid": 14.657570685101247,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29590,
+      "scene": 3,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29590_003_14SQB_20230924T205912_0712_02",
+      "acquisition_utc": "2023-09-24T20:59:12.564Z",
+      "apparent_solar_hour_at_domain_centroid": 14.657570685101247,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29590,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29590_003_14SPA_20230924T205912_0712_02",
+      "acquisition_utc": "2023-09-24T20:59:12.564Z",
+      "apparent_solar_hour_at_domain_centroid": 14.657570685101247,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29590,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29590_003_14SQA_20230924T205912_0712_02",
+      "acquisition_utc": "2023-09-24T20:59:12.564Z",
+      "apparent_solar_hour_at_domain_centroid": 14.657570685101247,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29590,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29590_004_14SQA_20230924T210004_0710_01",
+      "acquisition_utc": "2023-09-24T21:00:04.534Z",
+      "apparent_solar_hour_at_domain_centroid": 14.672018783561988,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29590,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29590_004_14SQB_20230924T210004_0710_01",
+      "acquisition_utc": "2023-09-24T21:00:04.534Z",
+      "apparent_solar_hour_at_domain_centroid": 14.672018783561988,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29590,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29590_004_14SQA_20230924T210004_0712_02",
+      "acquisition_utc": "2023-09-24T21:00:04.534Z",
+      "apparent_solar_hour_at_domain_centroid": 14.672018783561988,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29590,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29590_004_14SQB_20230924T210004_0712_02",
+      "acquisition_utc": "2023-09-24T21:00:04.534Z",
+      "apparent_solar_hour_at_domain_centroid": 14.672018783561988,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29636,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29636_004_14SPA_20230927T201110_0712_02",
+      "acquisition_utc": "2023-09-27T20:11:10.035Z",
+      "apparent_solar_hour_at_domain_centroid": 13.874762130171653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29636,
+      "scene": 4,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29636_004_14SPA_20230927T201110_0711_01",
+      "acquisition_utc": "2023-09-27T20:11:10.035Z",
+      "apparent_solar_hour_at_domain_centroid": 13.874762130171653,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29651,
+      "scene": 3,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29651_003_14SQB_20230928T192322_0711_01",
+      "acquisition_utc": "2023-09-28T19:23:22.799Z",
+      "apparent_solar_hour_at_domain_centroid": 13.08374791688923,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29651,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29651_003_14SPA_20230928T192322_0711_01",
+      "acquisition_utc": "2023-09-28T19:23:22.799Z",
+      "apparent_solar_hour_at_domain_centroid": 13.08374791688923,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29651,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29651_003_14SQA_20230928T192322_0711_01",
+      "acquisition_utc": "2023-09-28T19:23:22.799Z",
+      "apparent_solar_hour_at_domain_centroid": 13.08374791688923,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29651,
+      "scene": 3,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29651_003_14SQA_20230928T192322_0712_02",
+      "acquisition_utc": "2023-09-28T19:23:22.799Z",
+      "apparent_solar_hour_at_domain_centroid": 13.08374791688923,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29651,
+      "scene": 3,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29651_003_14SQB_20230928T192322_0712_02",
+      "acquisition_utc": "2023-09-28T19:23:22.799Z",
+      "apparent_solar_hour_at_domain_centroid": 13.08374791688923,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29651,
+      "scene": 3,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29651_003_14SPA_20230928T192322_0712_02",
+      "acquisition_utc": "2023-09-28T19:23:22.799Z",
+      "apparent_solar_hour_at_domain_centroid": 13.08374791688923,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29651,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29651_004_14SQA_20230928T192414_0711_01",
+      "acquisition_utc": "2023-09-28T19:24:14.768Z",
+      "apparent_solar_hour_at_domain_centroid": 13.098195857425022,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29651,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29651_004_14SQB_20230928T192414_0711_01",
+      "acquisition_utc": "2023-09-28T19:24:14.768Z",
+      "apparent_solar_hour_at_domain_centroid": 13.098195857425022,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29651,
+      "scene": 4,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29651_004_14SQA_20230928T192414_0712_02",
+      "acquisition_utc": "2023-09-28T19:24:14.768Z",
+      "apparent_solar_hour_at_domain_centroid": 13.098195857425022,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29651,
+      "scene": 4,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29651_004_14SQB_20230928T192414_0712_02",
+      "acquisition_utc": "2023-09-28T19:24:14.768Z",
+      "apparent_solar_hour_at_domain_centroid": 13.098195857425022,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29656,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29656_007_14SQB_20230929T033258_0711_01",
+      "acquisition_utc": "2023-09-29T03:32:58.529Z",
+      "apparent_solar_hour_at_domain_centroid": 21.245718282552925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29656,
+      "scene": 7,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29656_007_14SPA_20230929T033258_0711_01",
+      "acquisition_utc": "2023-09-29T03:32:58.529Z",
+      "apparent_solar_hour_at_domain_centroid": 21.245718282552925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29656,
+      "scene": 7,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29656_007_14SQA_20230929T033258_0711_01",
+      "acquisition_utc": "2023-09-29T03:32:58.529Z",
+      "apparent_solar_hour_at_domain_centroid": 21.245718282552925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29656,
+      "scene": 7,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29656_007_14SPB_20230929T033258_0712_02",
+      "acquisition_utc": "2023-09-29T03:32:58.529Z",
+      "apparent_solar_hour_at_domain_centroid": 21.245718282552925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29656,
+      "scene": 7,
+      "tile": "14SQB",
+      "granule_id": "ECOv002_L2T_LSTE_29656_007_14SQB_20230929T033258_0712_02",
+      "acquisition_utc": "2023-09-29T03:32:58.529Z",
+      "apparent_solar_hour_at_domain_centroid": 21.245718282552925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29656,
+      "scene": 7,
+      "tile": "14SQA",
+      "granule_id": "ECOv002_L2T_LSTE_29656_007_14SQA_20230929T033258_0712_02",
+      "acquisition_utc": "2023-09-29T03:32:58.529Z",
+      "apparent_solar_hour_at_domain_centroid": 21.245718282552925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29656,
+      "scene": 7,
+      "tile": "14SPA",
+      "granule_id": "ECOv002_L2T_LSTE_29656_007_14SPA_20230929T033258_0712_02",
+      "acquisition_utc": "2023-09-29T03:32:58.529Z",
+      "apparent_solar_hour_at_domain_centroid": 21.245718282552925,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "dallas",
+      "orbit": 29656,
+      "scene": 7,
+      "tile": "14SPB",
+      "granule_id": "ECOv002_L2T_LSTE_29656_007_14SPB_20230929T033258_0711_01",
+      "acquisition_utc": "2023-09-29T03:32:58.529Z",
+      "apparent_solar_hour_at_domain_centroid": 21.245718282552925,
+      "cloud_cover_metadata": null
+    }
+  ]
+}

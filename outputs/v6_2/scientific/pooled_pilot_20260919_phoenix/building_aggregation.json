@@ -1,0 +1,5 @@
+{
+  "footprints": 1441610,
+  "method": "center-rasterized_10m_binary_footprints_then_area_average",
+  "limitation": "10m raster approximation_to_exact_vector_area_fraction"
+}

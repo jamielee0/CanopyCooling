@@ -1,0 +1,28 @@
+{
+  "city": "phoenix",
+  "orbit": 27963,
+  "date": "2023-06-11",
+  "n_cells": 516781,
+  "n_blocks": 3232,
+  "linear_rank": 7,
+  "quadratic_rank": 8,
+  "controls_retained": 6,
+  "original_linear_recovered": true,
+  "paired_draws_requested": 2000,
+  "paired_draws_estimable": 2000,
+  "paired_draws_failed": 0,
+  "supported_candidate_pairs": 8,
+  "execution_freeze_sha256": "92a5ed885da6705ab35498b6f269e78987790e6f67f116d807d15f8c2c57e837",
+  "source_sha256": "f0316cbd2288a293a3d8167476347ff4e6bc771ae7350921a728a16f6b182ea9",
+  "effect_status": "SEALED_USER_REQUEST",
+  "elapsed_seconds": 3.49,
+  "output_sha256": {
+    "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_models_SEALED.npz": "15518be463e39f7f58dfc736d99898c72ee9e6f8b12a19c6ad5d17a1d50822d4",
+    "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_finite_contrasts_SEALED.json": "bf1aa4340f58fc6a0428b042924e01e6149e7710caf2501adba1d58d0be3f20a",
+    "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_curves_SEALED.json": "0892b78e5a770956b816ad4fda0da51adca2db095d8d4d43a2587a0be1f6252f",
+    "outputs/v6_2/scientific/quadratic_step5_20261005/phoenix_27963_precision.json": "c33625a71c3c1cdcc03c29ff3c17a54d2c934c6271b391a24b7c124243df04ef",
+    "outputs/v6_2/scientific/quadratic_step5_20261005/phoenix_27963_support.json": "cee9e7268c8b586b3139f00451e4fb8f0ff1a9d3cfbd584ead1fe34086a23909",
+    "outputs/v6_2/scientific/quadratic_step5_20261005/phoenix_27963_resampling.json": "06efa5ef8681248bd035bb5e5b2a91903a807180d293f5de9de2a01db24b4a84",
+    "outputs/v6_2/scientific/quadratic_step5_20261005/phoenix_27963_canopy_histogram.json": "52e68ebe0cc00a81efe211295842ac941aa0e96a074a724c9267bb7c7d57cb7d"
+  }
+}

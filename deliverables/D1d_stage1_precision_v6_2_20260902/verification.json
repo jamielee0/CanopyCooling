@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "memo_pdf_page_count_expected": true,
+    "memo_pdf_present": true,
+    "open_tables_have_no_point_estimate_fields": true,
+    "power_open_rows_48": true,
+    "sealed_pointer_is_symlink": true,
+    "sealed_sha256_matches_manifest": true,
+    "stage_open_rows_13210": true,
+    "two_figure_pngs_present": true,
+    "two_open_tables_present": true
+  },
+  "power_open_rows": 48,
+  "sealed_content_policy": "hashed_only_not_parsed",
+  "sealed_sha256": "146b16f85aa89c486d174121d1e3e781ded685d8940f0dc6037e238b090d6004",
+  "stage_open_rows": 13210,
+  "status": "VERIFIED_D1D_STOP_NO_ESTIMABLE_BLOCK_PASS"
+}

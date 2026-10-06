@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "unique_yaml_keys": true,
+  "unrelated_protocol_fields_unchanged": true,
+  "source_archives_verified": true,
+  "active_document_count": 6,
+  "prior_decisions_preserved": true,
+  "fitting_hold_resolved": true,
+  "effect_release_not_authorized": true,
+  "public_precision_figure_visually_checked": true,
+  "synthetic_template_visually_checked": true,
+  "empirical_effect_figures_visually_checked": false,
+  "documented_manifest_script_sha256": "309a559295824718daf2ef22da187842d22848cc7f52df9aa880dbcfd99e5e31"
+}

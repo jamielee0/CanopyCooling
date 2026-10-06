@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "historical_result_files_preserved": 161,
+  "released_source_copies": 85,
+  "tables_reconciled": {
+    "common_footprint_comparisons.csv": 44,
+    "fixed_registration_comparisons.csv": 48,
+    "available_registration_points.csv": 88,
+    "paired_scale_diagnostics.csv": 32,
+    "reference_sensitivity.csv": 144,
+    "quadratic_all_finite_contrasts.csv": 3874,
+    "quadratic_historical_contrasts.csv": 96,
+    "quadratic_all_curves.csv": 38784,
+    "phoenix_window_comparisons.csv": 56,
+    "joint_window_sensitivities.csv": 40
+  },
+  "followup_known_answer_tests": 4,
+  "followup_point_reconstructions": 15,
+  "followup_joint_draws_requested": 2000,
+  "followup_all_variant_estimable": 1996,
+  "followup_common_nonestimable_joint_draws": 4,
+  "followup_pass_variant_draws_requested": 30000,
+  "followup_pass_variant_draws_estimable": 29980,
+  "no_failed_draw_replacement": true,
+  "common_bare_rank_failures_explained": true,
+  "new_effect_display_authorized": true,
+  "post_disclosure_followup_labelled": true,
+  "formal_scale_agreement": null,
+  "verification_script_sha256": "327aaff73b1842377f1acfb0af0a36b27af4df9d33d9a2128e6419b19119c5fd"
+}

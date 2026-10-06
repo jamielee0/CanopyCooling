@@ -1,0 +1,388 @@
+{
+  "status": "INTERNAL_COMPUTATION_AND_SUPPORT_COMPLETE_EFFECTS_SEALED",
+  "Phoenix_passes": 11,
+  "Atlanta_passes": 5,
+  "year": 2023,
+  "common_cells": 196090,
+  "common_area_km2": 960.841,
+  "common_identity_sha256": "1dbbd7fdd7c00023c97d0858dcc271b27ab5eef1d46cf393878f3bf504487db3",
+  "union_native_cells": 556686,
+  "original_and_common_point_recoveries": 11,
+  "joint_difference_configurations": 22,
+  "joint_requested": 22000,
+  "joint_estimable": 21952,
+  "joint_failed": 48,
+  "fixed_registration_pairs": 24,
+  "available_support_points": 44,
+  "paired_scale_configurations": 32,
+  "paired_scale_estimable": 32,
+  "reference_sensitivity_configurations": 144,
+  "new_mean_model_specifications": 0,
+  "targeted_reconstructions": 22,
+  "raw_thermal_raster_reads": 0,
+  "empirical_time_comparisons": 0,
+  "displayed_new_effects": false,
+  "agreement_ruling": false,
+  "scale_tolerance": null,
+  "common_checks": [
+    {
+      "city": "phoenix",
+      "orbit": "27963",
+      "exact_native_identity": true,
+      "predictor_coordinates_match": true,
+      "original_point_recovered": true,
+      "common_point_recovered": true,
+      "original_cells": 516781,
+      "common_cells": 196090
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28024",
+      "exact_native_identity": true,
+      "predictor_coordinates_match": true,
+      "original_point_recovered": true,
+      "common_point_recovered": true,
+      "original_cells": 519066,
+      "common_cells": 196090
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28085",
+      "exact_native_identity": true,
+      "predictor_coordinates_match": true,
+      "original_point_recovered": true,
+      "common_point_recovered": true,
+      "original_cells": 534786,
+      "common_cells": 196090
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28192",
+      "exact_native_identity": true,
+      "predictor_coordinates_match": true,
+      "original_point_recovered": true,
+      "common_point_recovered": true,
+      "original_cells": 550489,
+      "common_cells": 196090
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28706",
+      "exact_native_identity": true,
+      "predictor_coordinates_match": true,
+      "original_point_recovered": true,
+      "common_point_recovered": true,
+      "original_cells": 556672,
+      "common_cells": 196090
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28828",
+      "exact_native_identity": true,
+      "predictor_coordinates_match": true,
+      "original_point_recovered": true,
+      "common_point_recovered": true,
+      "original_cells": 556673,
+      "common_cells": 196090
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28909",
+      "exact_native_identity": true,
+      "predictor_coordinates_match": true,
+      "original_point_recovered": true,
+      "common_point_recovered": true,
+      "original_cells": 409964,
+      "common_cells": 196090
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28970",
+      "exact_native_identity": true,
+      "predictor_coordinates_match": true,
+      "original_point_recovered": true,
+      "common_point_recovered": true,
+      "original_cells": 446517,
+      "common_cells": 196090
+    },
+    {
+      "city": "phoenix",
+      "orbit": "29092",
+      "exact_native_identity": true,
+      "predictor_coordinates_match": true,
+      "original_point_recovered": true,
+      "common_point_recovered": true,
+      "original_cells": 553858,
+      "common_cells": 196090
+    },
+    {
+      "city": "phoenix",
+      "orbit": "29545",
+      "exact_native_identity": true,
+      "predictor_coordinates_match": true,
+      "original_point_recovered": true,
+      "common_point_recovered": true,
+      "original_cells": 341920,
+      "common_cells": 196090
+    },
+    {
+      "city": "phoenix",
+      "orbit": "29606",
+      "exact_native_identity": true,
+      "predictor_coordinates_match": true,
+      "original_point_recovered": true,
+      "common_point_recovered": true,
+      "original_cells": 556675,
+      "common_cells": 196090
+    }
+  ],
+  "fixed_registration_checks": [
+    {
+      "orbit": "28085",
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 500032,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "28085",
+      "variant": "registration_fixed_support_dx1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 500032,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "28085",
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 500032,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "28085",
+      "variant": "registration_fixed_support_dx0_dy1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 500032,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "28192",
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 514983,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "28192",
+      "variant": "registration_fixed_support_dx1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 514983,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "28192",
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 514983,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "28192",
+      "variant": "registration_fixed_support_dx0_dy1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 514983,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "28970",
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 417544,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "28970",
+      "variant": "registration_fixed_support_dx1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 417544,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "28970",
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 417544,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "28970",
+      "variant": "registration_fixed_support_dx0_dy1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 417544,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29092",
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 518134,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29092",
+      "variant": "registration_fixed_support_dx1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 518134,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29092",
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 518134,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29092",
+      "variant": "registration_fixed_support_dx0_dy1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 518134,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29545",
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 321451,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29545",
+      "variant": "registration_fixed_support_dx1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 321451,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29545",
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 321451,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29545",
+      "variant": "registration_fixed_support_dx0_dy1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 321451,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29606",
+      "variant": "registration_fixed_support_dx-1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 520767,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29606",
+      "variant": "registration_fixed_support_dx1_dy0",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 520767,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29606",
+      "variant": "registration_fixed_support_dx0_dy-1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 520767,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    },
+    {
+      "orbit": "29606",
+      "variant": "registration_fixed_support_dx0_dy1",
+      "blocks_and_predictors_identical": true,
+      "matched_outcomes": true,
+      "seed_algorithm_and_draw_order_verified": true,
+      "cells": 520767,
+      "estimable_draws": 1000,
+      "archived_signed_interval_reconciled": true
+    }
+  ],
+  "public_table_rows": {
+    "spatial_precision_review.csv": 163,
+    "canopy_context_distributions.csv": 231,
+    "footprint_and_reference_support.csv": 16,
+    "inherited_residual_spatial_diagnostics.csv": 20
+  },
+  "retained_predictor_and_coordinate_values_identical_across_common_passes": true
+}

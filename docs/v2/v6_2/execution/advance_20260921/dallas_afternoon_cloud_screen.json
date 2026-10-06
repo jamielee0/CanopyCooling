@@ -1,0 +1,457 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "dallas",
+      "orbit": 27932,
+      "acquisition_utc": "2023-06-09T23:44:38.385Z",
+      "solar_hour": 17.29734071579204,
+      "sample_points": 300,
+      "observed_points": 213,
+      "clear_points": 209,
+      "sample_point_coverage_fraction": 0.71,
+      "clear_fraction_of_observed_points": 0.9812206572769953,
+      "clear_fraction_of_all_sample_points": 0.6966666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "dallas",
+      "orbit": 27993,
+      "acquisition_utc": "2023-06-13T22:04:57.210Z",
+      "solar_hour": 15.622729113225995,
+      "sample_points": 300,
+      "observed_points": 213,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 0.71,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "dallas",
+      "orbit": 28832,
+      "acquisition_utc": "2023-08-07T00:14:25.462Z",
+      "solar_hour": 17.67360746284704,
+      "sample_points": 300,
+      "observed_points": 298,
+      "clear_points": 298,
+      "sample_point_coverage_fraction": 0.9933333333333333,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.9933333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "dallas",
+      "orbit": 28878,
+      "acquisition_utc": "2023-08-09T23:25:48.782Z",
+      "solar_hour": 16.869098827951582,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "dallas",
+      "orbit": 28893,
+      "acquisition_utc": "2023-08-10T22:37:09.595Z",
+      "solar_hour": 16.06047902544869,
+      "sample_points": 300,
+      "observed_points": 132,
+      "clear_points": 132,
+      "sample_point_coverage_fraction": 0.44,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.44,
+      "failed_assets": 0
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "acquisition_utc": "2023-08-13T21:49:57.194Z",
+      "solar_hour": 15.296067442961196,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "acquisition_utc": "2023-09-19T23:22:02.571Z",
+      "solar_hour": 17.00786638818079,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 122,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.4066666666666667,
+      "clear_fraction_of_all_sample_points": 0.4066666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "acquisition_utc": "2023-09-20T22:34:07.041Z",
+      "solar_hour": 16.222511228042038,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "acquisition_utc": "2023-09-23T21:47:18.712Z",
+      "solar_hour": 15.453344961873889,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "dallas",
+      "orbit": 27932,
+      "asset": "ECOv002_L2T_LSTE_27932_013_14SPA_20230609T234438_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27932_013_14SPA_20230609T234438_0711_02/ECOv002_L2T_LSTE_27932_013_14SPA_20230609T234438_0711_02_cloud.tif",
+      "bytes": 25564,
+      "sha256": "5432f78ab4404c1a6d30f41597bb7a242154823a66863ca81a1a44ee153c81bc",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 27932,
+      "asset": "ECOv002_L2T_LSTE_27932_013_14SPB_20230609T234438_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27932_013_14SPB_20230609T234438_0711_02/ECOv002_L2T_LSTE_27932_013_14SPB_20230609T234438_0711_02_cloud.tif",
+      "bytes": 9680,
+      "sha256": "020c984f420d0f4e439116d0285f2bb235ec59543c4c26faa3ec40ce6ceaf0bb",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 27932,
+      "asset": "ECOv002_L2T_LSTE_27932_013_14SQA_20230609T234438_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27932_013_14SQA_20230609T234438_0711_02/ECOv002_L2T_LSTE_27932_013_14SQA_20230609T234438_0711_02_cloud.tif",
+      "bytes": 16103,
+      "sha256": "2e1141e7943df6462bf110fff879f27ecce43e417ca86507fc578e91c96da33c",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_011_14SPA_20230613T220457_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_011_14SPA_20230613T220457_0711_02/ECOv002_L2T_LSTE_27993_011_14SPA_20230613T220457_0711_02_cloud.tif",
+      "bytes": 14917,
+      "sha256": "880f99fcf9f44600401e2ea76bd46989b01ee4f0f9ef66da23b51e4224ee677b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_011_14SPB_20230613T220457_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_011_14SPB_20230613T220457_0711_02/ECOv002_L2T_LSTE_27993_011_14SPB_20230613T220457_0711_02_cloud.tif",
+      "bytes": 7261,
+      "sha256": "d70ce758af8408279d4f02ce0851f5ae493c1e75c4c09e87b6228fb30535f744",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_011_14SQA_20230613T220457_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_011_14SQA_20230613T220457_0711_02/ECOv002_L2T_LSTE_27993_011_14SQA_20230613T220457_0711_02_cloud.tif",
+      "bytes": 21733,
+      "sha256": "cae45b9af3b4beb3d922b367c08dbb22096c79751b9254bf8007babd6b6f527b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28832,
+      "asset": "ECOv002_L2T_LSTE_28832_011_14SPB_20230807T001425_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28832_011_14SPB_20230807T001425_0712_02/ECOv002_L2T_LSTE_28832_011_14SPB_20230807T001425_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "1abe2f44f2b83ec363baac1d5d847dbbc589b385b91f02159930b3be1f71a1f6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28832,
+      "asset": "ECOv002_L2T_LSTE_28832_011_14SQB_20230807T001425_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28832_011_14SQB_20230807T001425_0712_02/ECOv002_L2T_LSTE_28832_011_14SQB_20230807T001425_0712_02_cloud.tif",
+      "bytes": 6245,
+      "sha256": "3af9f1f7c4e9c4c64e9be0a2ff701877c9390f3f35425e8e212c6eb297aeec61",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28878,
+      "asset": "ECOv002_L2T_LSTE_28878_010_14SPA_20230809T232548_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28878_010_14SPA_20230809T232548_0712_02/ECOv002_L2T_LSTE_28878_010_14SPA_20230809T232548_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "47b2ed1a2558b98b84cb685f5c7745e8fe4e84a5d2fb19b1f7562488d8e5a240",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28878,
+      "asset": "ECOv002_L2T_LSTE_28878_010_14SPB_20230809T232548_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28878_010_14SPB_20230809T232548_0712_02/ECOv002_L2T_LSTE_28878_010_14SPB_20230809T232548_0712_02_cloud.tif",
+      "bytes": 10049,
+      "sha256": "aff278988dea685d9b8662111d3e4b2756c874f19d3228bdef2d133dad4d05b5",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28878,
+      "asset": "ECOv002_L2T_LSTE_28878_010_14SQA_20230809T232548_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28878_010_14SQA_20230809T232548_0712_02/ECOv002_L2T_LSTE_28878_010_14SQA_20230809T232548_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "f0304dde08abc152a98a7a9f70b6e9677837d48953d50bc1c76fbee9ddc3f408",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28878,
+      "asset": "ECOv002_L2T_LSTE_28878_010_14SQB_20230809T232548_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28878_010_14SQB_20230809T232548_0712_02/ECOv002_L2T_LSTE_28878_010_14SQB_20230809T232548_0712_02_cloud.tif",
+      "bytes": 11024,
+      "sha256": "63ae7b9ca8e460b4021578dbde6a74b9bee1d35f5f05b920ab786d6db958f234",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28893,
+      "asset": "ECOv002_L2T_LSTE_28893_012_14SQB_20230810T223709_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28893_012_14SQB_20230810T223709_0712_02/ECOv002_L2T_LSTE_28893_012_14SQB_20230810T223709_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "defef3f40a0b21a5af87fb494d22884122e5588b70312992d1d4c3bbe12a5b89",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_005_14SPA_20230813T214957_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_005_14SPA_20230813T214957_0712_02/ECOv002_L2T_LSTE_28939_005_14SPA_20230813T214957_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "47b2ed1a2558b98b84cb685f5c7745e8fe4e84a5d2fb19b1f7562488d8e5a240",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_005_14SPB_20230813T214957_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_005_14SPB_20230813T214957_0712_02/ECOv002_L2T_LSTE_28939_005_14SPB_20230813T214957_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "1abe2f44f2b83ec363baac1d5d847dbbc589b385b91f02159930b3be1f71a1f6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_006_14SPA_20230813T215049_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_006_14SPA_20230813T215049_0712_02/ECOv002_L2T_LSTE_28939_006_14SPA_20230813T215049_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "47b2ed1a2558b98b84cb685f5c7745e8fe4e84a5d2fb19b1f7562488d8e5a240",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_006_14SPB_20230813T215049_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_006_14SPB_20230813T215049_0712_02/ECOv002_L2T_LSTE_28939_006_14SPB_20230813T215049_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "1abe2f44f2b83ec363baac1d5d847dbbc589b385b91f02159930b3be1f71a1f6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_006_14SQA_20230813T215049_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_006_14SQA_20230813T215049_0712_02/ECOv002_L2T_LSTE_28939_006_14SQA_20230813T215049_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "f0304dde08abc152a98a7a9f70b6e9677837d48953d50bc1c76fbee9ddc3f408",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 28939,
+      "asset": "ECOv002_L2T_LSTE_28939_006_14SQB_20230813T215049_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28939_006_14SQB_20230813T215049_0712_02/ECOv002_L2T_LSTE_28939_006_14SQB_20230813T215049_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "defef3f40a0b21a5af87fb494d22884122e5588b70312992d1d4c3bbe12a5b89",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "asset": "ECOv002_L2T_LSTE_29514_005_14SPA_20230919T232202_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29514_005_14SPA_20230919T232202_0712_02/ECOv002_L2T_LSTE_29514_005_14SPA_20230919T232202_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "47b2ed1a2558b98b84cb685f5c7745e8fe4e84a5d2fb19b1f7562488d8e5a240",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "asset": "ECOv002_L2T_LSTE_29514_005_14SPB_20230919T232202_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29514_005_14SPB_20230919T232202_0712_02/ECOv002_L2T_LSTE_29514_005_14SPB_20230919T232202_0712_02_cloud.tif",
+      "bytes": 32866,
+      "sha256": "e14c7d25633a0803695ba73b0f8c1362a2156e39244d2e269e592f079ecb5bad",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "asset": "ECOv002_L2T_LSTE_29514_005_14SQB_20230919T232202_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29514_005_14SQB_20230919T232202_0712_02/ECOv002_L2T_LSTE_29514_005_14SQB_20230919T232202_0712_02_cloud.tif",
+      "bytes": 8465,
+      "sha256": "06e8034dff0b5ccb8aae5fcd62d5447cc0e9b69b8d3e084fd155994ec3061048",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "asset": "ECOv002_L2T_LSTE_29514_006_14SPB_20230919T232254_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29514_006_14SPB_20230919T232254_0712_02/ECOv002_L2T_LSTE_29514_006_14SPB_20230919T232254_0712_02_cloud.tif",
+      "bytes": 11045,
+      "sha256": "e9fd2d5bd4495aa1c69f49426190d4fa6a483bb2a2cf5c55cacf0bf2edf76363",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29514,
+      "asset": "ECOv002_L2T_LSTE_29514_006_14SQB_20230919T232254_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29514_006_14SQB_20230919T232254_0712_02/ECOv002_L2T_LSTE_29514_006_14SQB_20230919T232254_0712_02_cloud.tif",
+      "bytes": 19002,
+      "sha256": "af95bace14e26dc929b433d409bb3ce0613c52fa371b5683dd9ccf17b3b8e8d0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_004_14SPA_20230920T223407_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_004_14SPA_20230920T223407_0712_02/ECOv002_L2T_LSTE_29529_004_14SPA_20230920T223407_0712_02_cloud.tif",
+      "bytes": 20203,
+      "sha256": "bef54ddeb6e3335ab04d9cd681719a153d64e3b8911d6c26156c345d672889f0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_004_14SPB_20230920T223407_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_004_14SPB_20230920T223407_0712_02/ECOv002_L2T_LSTE_29529_004_14SPB_20230920T223407_0712_02_cloud.tif",
+      "bytes": 8219,
+      "sha256": "52d2ef415e28925492e4631d3a8594305e6de166d4a71012d6f17ed8c5fec9cf",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_004_14SQA_20230920T223407_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_004_14SQA_20230920T223407_0712_02/ECOv002_L2T_LSTE_29529_004_14SQA_20230920T223407_0712_02_cloud.tif",
+      "bytes": 8542,
+      "sha256": "2478afea6741533585f97ea4d38e4e70e3247dd5a2d21336642fecc9d959a06d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_004_14SQB_20230920T223407_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_004_14SQB_20230920T223407_0712_02/ECOv002_L2T_LSTE_29529_004_14SQB_20230920T223407_0712_02_cloud.tif",
+      "bytes": 5840,
+      "sha256": "f698191c594d1992c43608dc1140eeb0baab276857974e45db78feb3cbdafacd",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_005_14SPA_20230920T223459_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_005_14SPA_20230920T223459_0712_02/ECOv002_L2T_LSTE_29529_005_14SPA_20230920T223459_0712_02_cloud.tif",
+      "bytes": 5746,
+      "sha256": "58120192a1e8fc8a68e1bc0e8704991d0e275b8f1efee1b4808e08a81389f6dc",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_005_14SPB_20230920T223459_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_005_14SPB_20230920T223459_0712_02/ECOv002_L2T_LSTE_29529_005_14SPB_20230920T223459_0712_02_cloud.tif",
+      "bytes": 5815,
+      "sha256": "0f71d5cafc54e3bb4721134e256f4e7f082eb71f818041780a69998ff558f05b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_005_14SQA_20230920T223459_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_005_14SQA_20230920T223459_0712_02/ECOv002_L2T_LSTE_29529_005_14SQA_20230920T223459_0712_02_cloud.tif",
+      "bytes": 6465,
+      "sha256": "5d35acce32234e97d74971343cffd43c5d73241c6e34b9c9b84c4f29d28f6026",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29529,
+      "asset": "ECOv002_L2T_LSTE_29529_005_14SQB_20230920T223459_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29529_005_14SQB_20230920T223459_0712_02/ECOv002_L2T_LSTE_29529_005_14SQB_20230920T223459_0712_02_cloud.tif",
+      "bytes": 22720,
+      "sha256": "8e734628b29692293eb418be4ff4cc0658113bc3d9a0c74fb97eb2b3532fe61a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_005_14SPA_20230923T214718_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_005_14SPA_20230923T214718_0712_02/ECOv002_L2T_LSTE_29575_005_14SPA_20230923T214718_0712_02_cloud.tif",
+      "bytes": 9003,
+      "sha256": "1f98f4dae56f76c959a57311abc2ebaf0d639b44a16ffe2e5831b119eb2fb98f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_005_14SPB_20230923T214718_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_005_14SPB_20230923T214718_0712_02/ECOv002_L2T_LSTE_29575_005_14SPB_20230923T214718_0712_02_cloud.tif",
+      "bytes": 7066,
+      "sha256": "9708c73da1a0de27d92825c1b70a38ec1d181f794b2baed5fd3bb2bad9750200",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_005_14SQA_20230923T214718_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_005_14SQA_20230923T214718_0712_02/ECOv002_L2T_LSTE_29575_005_14SQA_20230923T214718_0712_02_cloud.tif",
+      "bytes": 6158,
+      "sha256": "7325992c3ce19ad55b3c47525afb0273f342959fc54599b8b0a34c35ff8629be",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_005_14SQB_20230923T214718_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_005_14SQB_20230923T214718_0712_02/ECOv002_L2T_LSTE_29575_005_14SQB_20230923T214718_0712_02_cloud.tif",
+      "bytes": 9177,
+      "sha256": "fe3e18296de770bb2cbe13fbd9c5c0b1011832edf825d0ead76569482a43e954",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "dallas",
+      "orbit": 29575,
+      "asset": "ECOv002_L2T_LSTE_29575_006_14SQB_20230923T214810_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29575_006_14SQB_20230923T214810_0712_02/ECOv002_L2T_LSTE_29575_006_14SQB_20230923T214810_0712_02_cloud.tif",
+      "bytes": 6953,
+      "sha256": "a8af0909c64d62001ed3ff749e4f317c134c81bde5e3c82a12c0cb27b649a3d3",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

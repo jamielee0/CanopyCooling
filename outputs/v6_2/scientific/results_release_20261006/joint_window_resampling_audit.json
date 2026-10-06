@@ -1,0 +1,171 @@
+[
+  {
+    "group_km": 1,
+    "groups": 3246,
+    "physical_union_blocks": 3246,
+    "requested": 1000,
+    "complete_city_draws": 1000,
+    "per_pass_estimable": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "per_pass_failed_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "structural_absent_groups": [
+      14,
+      1,
+      0,
+      482,
+      2,
+      1552,
+      1552,
+      1552,
+      1552,
+      1552,
+      14,
+      1,
+      0,
+      482,
+      2
+    ],
+    "physical_group_identity_sha256": "702e7e0514678ea061f4492aca93df61f6cae4ceff46b04abcf08d076ce1242a",
+    "draw_multiplicity_sha256": "7ec8e665823921c3796a4261624d89568952d2589248f732aa1778b7ed8df985",
+    "variant_order": [
+      "original",
+      "common",
+      "quadratic"
+    ],
+    "orbits_per_variant": [
+      27963,
+      28192,
+      28828,
+      28909,
+      29092
+    ]
+  },
+  {
+    "group_km": 8,
+    "groups": 79,
+    "physical_union_blocks": 3246,
+    "requested": 1000,
+    "complete_city_draws": 996,
+    "per_pass_estimable": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      996,
+      996,
+      996,
+      996,
+      996,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "per_pass_failed_indices": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        17,
+        259,
+        817,
+        884
+      ],
+      [
+        17,
+        259,
+        817,
+        884
+      ],
+      [
+        17,
+        259,
+        817,
+        884
+      ],
+      [
+        17,
+        259,
+        817,
+        884
+      ],
+      [
+        17,
+        259,
+        817,
+        884
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "structural_absent_groups": [
+      0,
+      0,
+      0,
+      4,
+      0,
+      15,
+      15,
+      15,
+      15,
+      15,
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    "physical_group_identity_sha256": "b1b89a45a58a2ea9b24542aed5261f8fed7565538c0a193db7b4d856570d80a5",
+    "draw_multiplicity_sha256": "1b7e6f66d70a9142042402cf7b3c81414798628c4d1667297ce134afaa1c46c9",
+    "variant_order": [
+      "original",
+      "common",
+      "quadratic"
+    ],
+    "orbits_per_variant": [
+      27963,
+      28192,
+      28828,
+      28909,
+      29092
+    ]
+  }
+]

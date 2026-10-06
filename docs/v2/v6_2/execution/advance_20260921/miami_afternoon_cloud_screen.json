@@ -1,0 +1,184 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "miami",
+      "orbit": 27962,
+      "acquisition_utc": "2023-06-11T22:10:00.631Z",
+      "solar_hour": 16.830043314437752,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 153,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.51,
+      "clear_fraction_of_all_sample_points": 0.51,
+      "failed_assets": 0
+    },
+    {
+      "city": "miami",
+      "orbit": 28506,
+      "acquisition_utc": "2023-07-16T23:21:19.860Z",
+      "solar_hour": 17.90759913420573,
+      "sample_points": 300,
+      "observed_points": 172,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 0.5733333333333334,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "miami",
+      "orbit": 28567,
+      "acquisition_utc": "2023-07-20T21:45:04.019Z",
+      "solar_hour": 16.297475230072603,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 212,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.7066666666666667,
+      "clear_fraction_of_all_sample_points": 0.7066666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "miami",
+      "orbit": 28908,
+      "acquisition_utc": "2023-08-11T21:52:54.601Z",
+      "solar_hour": 16.44168211797343,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 235,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.7833333333333333,
+      "clear_fraction_of_all_sample_points": 0.7833333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "miami",
+      "orbit": 29467,
+      "acquisition_utc": "2023-09-16T22:33:14.101Z",
+      "solar_hour": 17.29905665953567,
+      "sample_points": 300,
+      "observed_points": 172,
+      "clear_points": 1,
+      "sample_point_coverage_fraction": 0.5733333333333334,
+      "clear_fraction_of_observed_points": 0.005813953488372093,
+      "clear_fraction_of_all_sample_points": 0.0033333333333333335,
+      "failed_assets": 0
+    },
+    {
+      "city": "miami",
+      "orbit": 29528,
+      "acquisition_utc": "2023-09-20T20:59:13.991Z",
+      "solar_hour": 15.749529095693084,
+      "sample_points": 300,
+      "observed_points": 172,
+      "clear_points": 78,
+      "sample_point_coverage_fraction": 0.5733333333333334,
+      "clear_fraction_of_observed_points": 0.45348837209302323,
+      "clear_fraction_of_all_sample_points": 0.26,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "miami",
+      "orbit": 27962,
+      "asset": "ECOv002_L2T_LSTE_27962_007_17RNJ_20230611T221000_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27962_007_17RNJ_20230611T221000_0711_02/ECOv002_L2T_LSTE_27962_007_17RNJ_20230611T221000_0711_02_cloud.tif",
+      "bytes": 33338,
+      "sha256": "504bb30384661b04803e90fbd07a7082327215a7d212cf16447d69b57c2f33b7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "miami",
+      "orbit": 27962,
+      "asset": "ECOv002_L2T_LSTE_27962_007_17RNK_20230611T221000_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27962_007_17RNK_20230611T221000_0711_02/ECOv002_L2T_LSTE_27962_007_17RNK_20230611T221000_0711_02_cloud.tif",
+      "bytes": 47778,
+      "sha256": "94ca3442dc3e6c185e2e020dc51742b1da471f9bd961b3d0dfb06709ae5fb9aa",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "miami",
+      "orbit": 28506,
+      "asset": "ECOv002_L2T_LSTE_28506_006_17RNJ_20230716T232119_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28506_006_17RNJ_20230716T232119_0712_02/ECOv002_L2T_LSTE_28506_006_17RNJ_20230716T232119_0712_02_cloud.tif",
+      "bytes": 7963,
+      "sha256": "4e986acda7c25072f1962e5a9abbc2d45a9d4df0970473468cf20c2e1948ee6b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "miami",
+      "orbit": 28567,
+      "asset": "ECOv002_L2T_LSTE_28567_005_17RNJ_20230720T214504_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28567_005_17RNJ_20230720T214504_0712_02/ECOv002_L2T_LSTE_28567_005_17RNJ_20230720T214504_0712_02_cloud.tif",
+      "bytes": 15228,
+      "sha256": "76d983051d634447e1c5561fbc035be280aefd894a3ef9a35d45227b81e699fe",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "miami",
+      "orbit": 28567,
+      "asset": "ECOv002_L2T_LSTE_28567_005_17RNK_20230720T214504_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28567_005_17RNK_20230720T214504_0712_02/ECOv002_L2T_LSTE_28567_005_17RNK_20230720T214504_0712_02_cloud.tif",
+      "bytes": 25472,
+      "sha256": "f3eed42eb8b26061414f725807d739be0cee602cbae5effdbb78125a0582efa0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "miami",
+      "orbit": 28567,
+      "asset": "ECOv002_L2T_LSTE_28567_006_17RNK_20230720T214555_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28567_006_17RNK_20230720T214555_0712_02/ECOv002_L2T_LSTE_28567_006_17RNK_20230720T214555_0712_02_cloud.tif",
+      "bytes": 15242,
+      "sha256": "a347e0e3aba4b95b3a914bb24851bd5bd2864d404461095d12818f91d0ba8948",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "miami",
+      "orbit": 28908,
+      "asset": "ECOv002_L2T_LSTE_28908_010_17RNJ_20230811T215254_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28908_010_17RNJ_20230811T215254_0712_02/ECOv002_L2T_LSTE_28908_010_17RNJ_20230811T215254_0712_02_cloud.tif",
+      "bytes": 21676,
+      "sha256": "d9a201c90b255d47245ad74d15503c10ef02949ce9693e72ab7e78d84a94f4b6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "miami",
+      "orbit": 28908,
+      "asset": "ECOv002_L2T_LSTE_28908_010_17RNK_20230811T215254_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28908_010_17RNK_20230811T215254_0712_02/ECOv002_L2T_LSTE_28908_010_17RNK_20230811T215254_0712_02_cloud.tif",
+      "bytes": 35966,
+      "sha256": "8e790ed57a2b7334b9eda822340b880fc8fda91f38138de100bffe1c0fbbde25",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "miami",
+      "orbit": 29467,
+      "asset": "ECOv002_L2T_LSTE_29467_005_17RNJ_20230916T223314_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29467_005_17RNJ_20230916T223314_0712_02/ECOv002_L2T_LSTE_29467_005_17RNJ_20230916T223314_0712_02_cloud.tif",
+      "bytes": 10760,
+      "sha256": "2c5ad3c633727491f16b3ea589fff5887d451cc81db590a74082e16855f179d2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "miami",
+      "orbit": 29467,
+      "asset": "ECOv002_L2T_LSTE_29467_006_17RNJ_20230916T223406_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29467_006_17RNJ_20230916T223406_0712_02/ECOv002_L2T_LSTE_29467_006_17RNJ_20230916T223406_0712_02_cloud.tif",
+      "bytes": 11449,
+      "sha256": "7c3b6dc9443373e71c52fe622db41c3c3a7b823ad85b636158497379de040a60",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "miami",
+      "orbit": 29528,
+      "asset": "ECOv002_L2T_LSTE_29528_006_17RNJ_20230920T205913_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29528_006_17RNJ_20230920T205913_0712_02/ECOv002_L2T_LSTE_29528_006_17RNJ_20230920T205913_0712_02_cloud.tif",
+      "bytes": 13454,
+      "sha256": "b2c2f44fd4dafea1879b7676f965d0213845972c0e7c14e84f6c01bf71636e8f",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

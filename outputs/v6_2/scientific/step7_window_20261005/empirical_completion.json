@@ -1,0 +1,12 @@
+{
+  "status": "FIXED_DATE_INTERNAL_COMPUTATION_COMPLETE",
+  "original_points_recovered": 16,
+  "city_group_configurations": 4,
+  "pass_draws_requested": 32000,
+  "pass_draws_estimable": 32000,
+  "precision_rows": 56,
+  "empirical_Atlanta_contrast": false,
+  "new_effect_display": false,
+  "general_summer_interval": false,
+  "scale_ruling": null
+}

@@ -1,0 +1,14 @@
+city,month,time_arm,independent_acquisition_dates
+atlanta,6,afternoon,1
+atlanta,6,morning,1
+atlanta,6,outside_windows,2
+atlanta,7,afternoon,1
+phoenix,6,afternoon,1
+phoenix,6,morning,1
+phoenix,6,outside_windows,2
+phoenix,7,outside_windows,1
+phoenix,8,afternoon,1
+phoenix,8,morning,2
+phoenix,8,outside_windows,1
+phoenix,9,afternoon,1
+phoenix,9,outside_windows,1

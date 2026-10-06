@@ -1,0 +1,92 @@
+[
+  {
+    "source": "AGENTS.md",
+    "lines": [
+      "",
+      "The user then authorized the provisional Step 4 review. The public-evidence synthesis and decision record are complete in `docs/v2/v6_2/provisional_results_review_step4_20261004.md` and `docs/v2/v6_2/execution/provisional_review_step4_20261004/`. Retain all sixteen original 2023 pass populations and frozen models/controls; the common footprint remains a population sensitivity. A separately requested/frozen predictor-only endpoint/covariate-support and design-rank audit is the recommended next preparation, not an executed audit or quadratic fit. Step 5 fitting, new time inference, numeric simulation-effect calibration and expansion remain held. No sealed files or new raw thermal data were opened, no new empirical comparison was computed, and the effect-dependent Stage 1 decision remains pending under the sealing instruction and unset Reza tolerance."
+    ]
+  },
+  {
+    "source": "docs/v2/v6_2/protocol_v6_2.yml",
+    "lines": [
+      "status: STEP4_PROVISIONAL_REVIEW_COMPLETE_EFFECT_DECISIONS_PENDING_2023_11_PHOENIX_5_ATLANTA",
+      "  current_user_request: 2026-10-04_user_requests_provisional_Step4_review; synthesize_released_temperature_and_public_support_precision_keep_new_effects_sealed_record_provisional_next_analysis_decision",
+      "  current_pre_update_snapshot: docs/v2/v6_2/archive/before_provisional_step4_review_20261004",
+      "  provisional_step4_review_executed: true",
+      "",
+      "results_review_fourth_step_20261004:",
+      "  authority: User requested the provisional Step4 review described in readiness answer",
+      "  status: PROVISIONAL_REVIEW_COMPLETE_EFFECT_DEPENDENT_DECISIONS_PENDING",
+      "  review: docs/v2/v6_2/provisional_results_review_step4_20261004.md",
+      "  decision_record: docs/v2/v6_2/execution/provisional_review_step4_20261004/decision_record.json",
+      "  scope_record: docs/v2/v6_2/execution/provisional_review_step4_20261004/scope.json",
+      "  year: 2023",
+      "  Phoenix_passes: 11",
+      "  Atlanta_passes: 5",
+      "  original_population_baseline: retained_all16",
+      "  mean_model_and_controls: unchanged",
+      "  common_footprint: labelled_population_sensitivity_not_replacement_baseline",
+      "  failed_draws: preserve_all48_no_replacement_or_control_removal",
+      "  public_evidence_only: true",
+      "  public_source_hashes_verified: 14",
+      "  new_fit_or_bootstrap: false",
+      "  new_empirical_time_comparison: false",
+      "  sealed_files_opened: 0",
+      "  raw_thermal_access: false",
+      "  new_effect_display: false",
+      "  formal_date_or_neighbourhood_influence_analysis: not_performed",
+      "  numeric_simulation_effect_range: null",
+      "  new_practical_change_cutoff: null",
+      "  next_preparation: predictor_only_endpoint_covariate_support_and_protected_design_rank_audit",
+      "  next_preparation_status: recommended_not_executed_requires_separate_request_and_freeze",
+      "  Step5_quadratic_fits: held_pending_quantitative_review_supported_endpoints_and_recorded_go_decision",
+      "  new_time_inference: held_pending_supported_definition_conditions_and_actual_design_day_uncertainty",
+      "  full_Stage1_decision: pending_effect_review",
+      "  scale_tolerance: null",
+      "  scale_ruling: not_made",
+      "  further_city_screening: paused_for_results_review",
+      "  further_thermal_expansion: separate_recorded_scope_decision_required",
+      "  professor_approval: not_implied"
+    ]
+  },
+  {
+    "source": "docs/v2/v6_2/pilot_plan_v6_2.md",
+    "lines": [
+      "",
+      "The user-authorized [provisional Step 4 review](provisional_results_review_step4_20261004.md) and decision record are complete. The review reuses the sixteen released temperature estimates/intervals and public support/precision only; no sealed files, raw thermal data, new model or temporal comparison was accessed/computed. Retain all sixteen 2023 pass populations and frozen models/controls, with the common footprint labelled as a population sensitivity. Recommend a separately requested/frozen predictor-only endpoint/covariate-support and design-rank audit as the next preparation. This review does not execute that audit or authorize Step 5 fits. Quantitative spatial/paired-scale interpretation, numeric simulation-effect calibration, new time inference and further study expansion remain pending/held. Reza's tolerance is unset and the explicit sealing instruction remains controlling. Record: `execution/provisional_review_step4_20261004/decision_record.json`. The full effect-based Stage 1 decision is not complete."
+    ]
+  },
+  {
+    "source": "docs/v2/v6_2/decision_log_v6_2.md",
+    "lines": [
+      "",
+      "### 4 October 2026 \u2014 provisional Step 4 evidence review and decision",
+      "",
+      "The user requested Step 4 after being told that the available review was provisional while new effects remained sealed. Synthesize the previously released sixteen 2023 temperature estimates/intervals and public support/precision; preserve the explicit keep-new-effects-sealed reply. Retain eleven Phoenix/five Atlanta full-support pass populations and the frozen mean models/controls. Keep the 196,090-cell common footprint as a labelled population/composition sensitivity; there is no effect-based basis yet for replacing the primary geography or issuing a robustness/scale verdict.",
+      "",
+      "Report released ranges and descriptive date extrema, geography/context shifts, sparse-control rank failures, unverified available-support difference intervals and weather/time limits. Do not treat descriptive extrema as formal date influence or infer named neighbourhood effect drivers from support maps. Preserve all48 non-estimable joint draws without replacement or control removal. No new fit, bootstrap, sealed-file/raw-thermal access, empirical time/window contrast, threshold or numeric simulation-effect range occurred. The original cooling-level ranges and 0.10K SE benchmark supply neither a temporal calibration effect nor Reza tolerance.",
+      "",
+      "Recommend a separately requested/frozen predictor-only canopy endpoint/covariate-support and protected-design rank audit as the next bounded preparation. This review neither executes that audit nor authorizes Step5 model fits. Quadratic fitting, new temporal inference, numeric calibration and study expansion remain held pending applicable quantitative/support/uncertainty review and recorded scope decisions. Reza tolerance remains null; effect-dependent Stage1 conclusions and professor approval remain pending.",
+      "",
+      "Review: `provisional_results_review_step4_20261004.md`; decision/scope/input/verification record: `execution/provisional_review_step4_20261004/`; deliverable: `deliverables/Provisional_Results_Review_2023_v6_2_20261004/README.md`. Fourteen public source identities and the sixteen original city/orbit/run/model keys are reconciled. Active Step3 documents are preserved with checksums under `archive/before_provisional_step4_review_20261004/`. Cross-document, duplicate-key YAML, unchanged scientific settings/earlier step records, source/archive checksums and offline visual checks verify this documentation-only amendment; no scientific pipeline rerun, commit, push or external message is needed or recorded.",
+      ""
+    ]
+  },
+  {
+    "source": "docs/v2/v6_2/README.md",
+    "lines": [
+      "",
+      "The [provisional Step 4 review](provisional_results_review_step4_20261004.md) is complete, with a [decision record](execution/provisional_review_step4_20261004/decision_record.json). It interprets the released sixteen-pass temperature table and public support/precision, preserves the sample/models/controls and keeps the common footprint as a population sensitivity. The next recommended preparation is a separately requested/frozen predictor-only support/design audit. No audit or fit was executed under Step 4. Step 5 model fitting, new time inference, numeric effect calibration and expansion remain held; effect-dependent Stage 1 conclusions are unresolved while new effects remain sealed and Reza's tolerance is pending. Verification and preservation are in `execution/provisional_review_step4_20261004/`."
+    ]
+  },
+  {
+    "source": "docs/v2/v6_2/results_review_and_targeted_analysis_plan_20260930.md",
+    "lines": [
+      "Prepared 30 September 2026 for the user and Prof. Alizadeh; implementation initiated 4 October 2026. Current status: Steps 1\u20132, Step 3 internal/support work and the provisional Step 4 review are complete. Effect-based Stage 1 review and the stronger next-analysis decision remain deferred under the user's sealing instruction.",
+      "",
+      "Subsequent provisional Step 4 update: the user requested the provisional review described in the readiness answer. [The synthesis](provisional_results_review_step4_20261004.md) interprets released temperature results and public geography/support/precision without opening sealed files or computing new contrasts. [The decision record](execution/provisional_review_step4_20261004/decision_record.json) retains the sixteen-pass baseline and frozen models/controls, labels the common footprint as a population sensitivity and recommends a separately bounded predictor-only endpoint/covariate-support/design audit as preparation. Step 5 fitting and a numerical temporal simulation-effect range remain unapproved; no such audit, fit or range selection occurred. Effect-dependent conclusions and later scale/expansion decisions remain pending. This completes the provisional component only.",
+      "",
+      "**Provisional review completed 4 October 2026.** See the synthesis and decision record above. Original temperature/date extrema, represented geography and sparse-control limitations are described; formal date/neighbourhood influence and sealed numerical sensitivities remain unresolved. Retain the baseline/controls and failed-draw accounting. Recommend predictor-only preparation under a separate request/freeze, hold quadratic fits and new time/calibration/expansion decisions, and select no retrospective cutoff or numeric simulation-effect range. The full effect-based Stage 1 decision remains pending under the sealing instruction and unset tolerance."
+    ]
+  }
+]

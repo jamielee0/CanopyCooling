@@ -1,0 +1,22 @@
+{
+  "phoenix": {
+    "pages": 1,
+    "media_box": [
+      0.0,
+      0.0,
+      748.8,
+      597.6
+    ],
+    "title_and_interval_text_present": true
+  },
+  "atlanta": {
+    "pages": 1,
+    "media_box": [
+      0.0,
+      0.0,
+      748.8,
+      597.6
+    ],
+    "title_and_interval_text_present": true
+  }
+}

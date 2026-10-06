@@ -1,0 +1,1885 @@
+{
+  "audit": {
+    "city": "miami",
+    "retrieved_utc": "2026-09-21T17:46:26.919247+00:00",
+    "period_utc": "2023-06-01/2023-09-30",
+    "CMR_bbox_hits": 186,
+    "CMR_rows_received": 186,
+    "pages": 1,
+    "intersecting_granules_before_revision_dedup": 186,
+    "unique_passes": 53,
+    "morning_0930_1130_passes": 5,
+    "afternoon_1500_1800_passes": 6,
+    "afternoon_months": [
+      "06",
+      "07",
+      "08",
+      "09"
+    ],
+    "afternoon_tile_mean_cloud_pct_median": null,
+    "afternoon_passes_with_cloud_metadata": 0,
+    "limitation": "CMR tile cloud metadata is not urban-domain clear fraction; no view-angle, full-domain coverage or usable-cell certification; windows are descriptive summaries, not selection gates."
+  },
+  "granules": [
+    {
+      "city": "miami",
+      "orbit": 27794,
+      "scene": 7,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27794_007_17RNK_20230601T021723_0710_01",
+      "acquisition_utc": "2023-06-01T02:17:23.330Z",
+      "apparent_solar_hour_at_domain_centroid": 20.984971233142886,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27794,
+      "scene": 7,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27794_007_17RNJ_20230601T021723_0710_01",
+      "acquisition_utc": "2023-06-01T02:17:23.330Z",
+      "apparent_solar_hour_at_domain_centroid": 20.984971233142886,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27794,
+      "scene": 7,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27794_007_17RNK_20230601T021723_0711_02",
+      "acquisition_utc": "2023-06-01T02:17:23.333Z",
+      "apparent_solar_hour_at_domain_centroid": 20.984971233142886,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27794,
+      "scene": 7,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27794_007_17RNJ_20230601T021723_0711_02",
+      "acquisition_utc": "2023-06-01T02:17:23.333Z",
+      "apparent_solar_hour_at_domain_centroid": 20.984971233142886,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27840,
+      "scene": 14,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27840_014_17RNK_20230604T012733_0711_01",
+      "acquisition_utc": "2023-06-04T01:27:33.361Z",
+      "apparent_solar_hour_at_domain_centroid": 20.146756176785203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27865,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27865_005_17RNK_20230605T153854_0710_01",
+      "acquisition_utc": "2023-06-05T15:38:54.100Z",
+      "apparent_solar_hour_at_domain_centroid": 10.331442155180577,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27865,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27865_005_17RNJ_20230605T153854_0710_01",
+      "acquisition_utc": "2023-06-05T15:38:54.100Z",
+      "apparent_solar_hour_at_domain_centroid": 10.331442155180577,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27865,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27865_005_17RNJ_20230605T153854_0711_02",
+      "acquisition_utc": "2023-06-05T15:38:54.107Z",
+      "apparent_solar_hour_at_domain_centroid": 10.331442155180577,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27865,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27865_005_17RNK_20230605T153854_0711_02",
+      "acquisition_utc": "2023-06-05T15:38:54.107Z",
+      "apparent_solar_hour_at_domain_centroid": 10.331442155180577,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27865,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27865_006_17RNK_20230605T153946_0710_01",
+      "acquisition_utc": "2023-06-05T15:39:46.070Z",
+      "apparent_solar_hour_at_domain_centroid": 10.34588485942854,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27865,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27865_006_17RNK_20230605T153946_0711_02",
+      "acquisition_utc": "2023-06-05T15:39:46.076Z",
+      "apparent_solar_hour_at_domain_centroid": 10.34588485942854,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27926,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27926_005_17RNK_20230609T135956_0710_01",
+      "acquisition_utc": "2023-06-09T13:59:56.420Z",
+      "apparent_solar_hour_at_domain_centroid": 8.669970573040017,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27926,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27926_005_17RNJ_20230609T135956_0710_01",
+      "acquisition_utc": "2023-06-09T13:59:56.420Z",
+      "apparent_solar_hour_at_domain_centroid": 8.669970573040017,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27926,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27926_005_17RNK_20230609T135956_0711_02",
+      "acquisition_utc": "2023-06-09T13:59:56.426Z",
+      "apparent_solar_hour_at_domain_centroid": 8.669970573040017,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27926,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27926_005_17RNJ_20230609T135956_0711_02",
+      "acquisition_utc": "2023-06-09T13:59:56.426Z",
+      "apparent_solar_hour_at_domain_centroid": 8.669970573040017,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27926,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27926_006_17RNK_20230609T140048_0710_01",
+      "acquisition_utc": "2023-06-09T14:00:48.390Z",
+      "apparent_solar_hour_at_domain_centroid": 8.684413083287165,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27926,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27926_006_17RNK_20230609T140048_0711_02",
+      "acquisition_utc": "2023-06-09T14:00:48.396Z",
+      "apparent_solar_hour_at_domain_centroid": 8.684413083287165,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27962,
+      "scene": 7,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27962_007_17RNK_20230611T221000_0710_01",
+      "acquisition_utc": "2023-06-11T22:10:00.630Z",
+      "apparent_solar_hour_at_domain_centroid": 16.830043314437752,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27962,
+      "scene": 7,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27962_007_17RNJ_20230611T221000_0710_01",
+      "acquisition_utc": "2023-06-11T22:10:00.630Z",
+      "apparent_solar_hour_at_domain_centroid": 16.830043314437752,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27962,
+      "scene": 7,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27962_007_17RNK_20230611T221000_0711_02",
+      "acquisition_utc": "2023-06-11T22:10:00.631Z",
+      "apparent_solar_hour_at_domain_centroid": 16.830043314437752,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27962,
+      "scene": 7,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27962_007_17RNJ_20230611T221000_0711_02",
+      "acquisition_utc": "2023-06-11T22:10:00.631Z",
+      "apparent_solar_hour_at_domain_centroid": 16.830043314437752,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27972,
+      "scene": 3,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27972_003_17RNJ_20230612T130958_0710_01",
+      "acquisition_utc": "2023-06-12T13:09:58.220Z",
+      "apparent_solar_hour_at_domain_centroid": 7.827373073903949,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27972,
+      "scene": 3,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27972_003_17RNK_20230612T130958_0710_01",
+      "acquisition_utc": "2023-06-12T13:09:58.220Z",
+      "apparent_solar_hour_at_domain_centroid": 7.827373073903949,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27972,
+      "scene": 3,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27972_003_17RNJ_20230612T130958_0711_02",
+      "acquisition_utc": "2023-06-12T13:09:58.224Z",
+      "apparent_solar_hour_at_domain_centroid": 7.827373073903949,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27972,
+      "scene": 3,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27972_003_17RNK_20230612T130958_0711_02",
+      "acquisition_utc": "2023-06-12T13:09:58.224Z",
+      "apparent_solar_hour_at_domain_centroid": 7.827373073903949,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27987,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27987_005_17RNK_20230613T122029_0710_01",
+      "acquisition_utc": "2023-06-13T12:20:29.424Z",
+      "apparent_solar_hour_at_domain_centroid": 6.999341933634911,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27987,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27987_005_17RNJ_20230613T122029_0710_01",
+      "acquisition_utc": "2023-06-13T12:20:29.424Z",
+      "apparent_solar_hour_at_domain_centroid": 6.999341933634911,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27987,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27987_005_17RNK_20230613T122029_0711_02",
+      "acquisition_utc": "2023-06-13T12:20:29.424Z",
+      "apparent_solar_hour_at_domain_centroid": 6.999341933634911,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27987,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27987_005_17RNJ_20230613T122029_0711_02",
+      "acquisition_utc": "2023-06-13T12:20:29.424Z",
+      "apparent_solar_hour_at_domain_centroid": 6.999341933634911,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27987,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27987_006_17RNJ_20230613T122121_0710_01",
+      "acquisition_utc": "2023-06-13T12:21:21.394Z",
+      "apparent_solar_hour_at_domain_centroid": 7.0137843008839535,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27987,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27987_006_17RNK_20230613T122121_0710_01",
+      "acquisition_utc": "2023-06-13T12:21:21.394Z",
+      "apparent_solar_hour_at_domain_centroid": 7.0137843008839535,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27987,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_27987_006_17RNJ_20230613T122121_0711_02",
+      "acquisition_utc": "2023-06-13T12:21:21.394Z",
+      "apparent_solar_hour_at_domain_centroid": 7.0137843008839535,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 27987,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_27987_006_17RNK_20230613T122121_0711_02",
+      "acquisition_utc": "2023-06-13T12:21:21.394Z",
+      "apparent_solar_hour_at_domain_centroid": 7.0137843008839535,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28033,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28033_005_17RNJ_20230616T113009_0710_01",
+      "acquisition_utc": "2023-06-16T11:30:09.960Z",
+      "apparent_solar_hour_at_domain_centroid": 6.150028977270287,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28033,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28033_005_17RNK_20230616T113009_0710_01",
+      "acquisition_utc": "2023-06-16T11:30:09.960Z",
+      "apparent_solar_hour_at_domain_centroid": 6.150028977270287,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28033,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28033_005_17RNK_20230616T113009_0711_02",
+      "acquisition_utc": "2023-06-16T11:30:09.960Z",
+      "apparent_solar_hour_at_domain_centroid": 6.150028977270287,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28033,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28033_005_17RNJ_20230616T113009_0711_02",
+      "acquisition_utc": "2023-06-16T11:30:09.960Z",
+      "apparent_solar_hour_at_domain_centroid": 6.150028977270287,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28033,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28033_006_17RNK_20230616T113101_0711_02",
+      "acquisition_utc": "2023-06-16T11:31:01.930Z",
+      "apparent_solar_hour_at_domain_centroid": 6.16447127231459,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28094,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28094_005_17RNJ_20230620T095303_0710_01",
+      "acquisition_utc": "2023-06-20T09:53:03.485Z",
+      "apparent_solar_hour_at_domain_centroid": 4.517467823139321,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28094,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28094_005_17RNK_20230620T095303_0710_01",
+      "acquisition_utc": "2023-06-20T09:53:03.485Z",
+      "apparent_solar_hour_at_domain_centroid": 4.517467823139321,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28094,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28094_005_17RNJ_20230620T095303_0711_02",
+      "acquisition_utc": "2023-06-20T09:53:03.485Z",
+      "apparent_solar_hour_at_domain_centroid": 4.517467823139321,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28094,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28094_005_17RNK_20230620T095303_0711_02",
+      "acquisition_utc": "2023-06-20T09:53:03.485Z",
+      "apparent_solar_hour_at_domain_centroid": 4.517467823139321,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28130,
+      "scene": 13,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28130_013_17RNJ_20230622T180341_0710_01",
+      "acquisition_utc": "2023-06-22T18:03:41.736Z",
+      "apparent_solar_hour_at_domain_centroid": 12.686140867401532,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28130,
+      "scene": 13,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28130_013_17RNJ_20230622T180341_0711_02",
+      "acquisition_utc": "2023-06-22T18:03:41.736Z",
+      "apparent_solar_hour_at_domain_centroid": 12.686140867401532,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28145,
+      "scene": 11,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28145_011_17RNK_20230623T171437_0710_01",
+      "acquisition_utc": "2023-06-23T17:14:37.727Z",
+      "apparent_solar_hour_at_domain_centroid": 11.864841273740415,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28145,
+      "scene": 11,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28145_011_17RNK_20230623T171437_0711_02",
+      "acquisition_utc": "2023-06-23T17:14:37.727Z",
+      "apparent_solar_hour_at_domain_centroid": 11.864841273740415,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28155,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28155_005_17RNJ_20230624T081434_0710_01",
+      "acquisition_utc": "2023-06-24T08:14:34.127Z",
+      "apparent_solar_hour_at_domain_centroid": 2.861735193716377,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28155,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28155_005_17RNJ_20230624T081434_0711_02",
+      "acquisition_utc": "2023-06-24T08:14:34.127Z",
+      "apparent_solar_hour_at_domain_centroid": 2.861735193716377,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28155,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28155_006_17RNJ_20230624T081526_0710_01",
+      "acquisition_utc": "2023-06-24T08:15:26.097Z",
+      "apparent_solar_hour_at_domain_centroid": 2.876177452319971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28155,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28155_006_17RNK_20230624T081526_0710_01",
+      "acquisition_utc": "2023-06-24T08:15:26.097Z",
+      "apparent_solar_hour_at_domain_centroid": 2.876177452319971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28155,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28155_006_17RNJ_20230624T081526_0711_02",
+      "acquisition_utc": "2023-06-24T08:15:26.097Z",
+      "apparent_solar_hour_at_domain_centroid": 2.876177452319971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28155,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28155_006_17RNK_20230624T081526_0711_02",
+      "acquisition_utc": "2023-06-24T08:15:26.097Z",
+      "apparent_solar_hour_at_domain_centroid": 2.876177452319971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28191,
+      "scene": 10,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28191_010_17RNJ_20230626T162534_0711_01",
+      "acquisition_utc": "2023-06-26T16:25:34.980Z",
+      "apparent_solar_hour_at_domain_centroid": 11.036624560344546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28191,
+      "scene": 10,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28191_010_17RNK_20230626T162534_0711_01",
+      "acquisition_utc": "2023-06-26T16:25:34.980Z",
+      "apparent_solar_hour_at_domain_centroid": 11.036624560344546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28216,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28216_005_17RNK_20230628T063637_0710_01",
+      "acquisition_utc": "2023-06-28T06:36:37.993Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2151438155958298,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28216,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28216_005_17RNJ_20230628T063637_0710_01",
+      "acquisition_utc": "2023-06-28T06:36:37.993Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2151438155958298,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28216,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28216_005_17RNK_20230628T063637_0711_02",
+      "acquisition_utc": "2023-06-28T06:36:37.993Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2151438155958298,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28216,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28216_005_17RNJ_20230628T063637_0711_02",
+      "acquisition_utc": "2023-06-28T06:36:37.993Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2151438155958298,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28216,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28216_006_17RNK_20230628T063729_0710_01",
+      "acquisition_utc": "2023-06-28T06:37:29.963Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2295861415324014,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28216,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28216_006_17RNK_20230628T063729_0711_02",
+      "acquisition_utc": "2023-06-28T06:37:29.963Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2295861415324014,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28252,
+      "scene": 7,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28252_007_17RNK_20230630T144649_0710_01",
+      "acquisition_utc": "2023-06-30T14:46:49.043Z",
+      "apparent_solar_hour_at_domain_centroid": 9.37702904547348,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28252,
+      "scene": 7,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28252_007_17RNK_20230630T144649_0711_02",
+      "acquisition_utc": "2023-06-30T14:46:49.043Z",
+      "apparent_solar_hour_at_domain_centroid": 9.37702904547348,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28252,
+      "scene": 7,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28252_007_17RNJ_20230630T144649_0711_02",
+      "acquisition_utc": "2023-06-30T14:46:49.043Z",
+      "apparent_solar_hour_at_domain_centroid": 9.37702904547348,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28277,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28277_006_17RNJ_20230702T045806_0710_01",
+      "acquisition_utc": "2023-07-02T04:58:06.207Z",
+      "apparent_solar_hour_at_domain_centroid": 23.55973307699733,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28277,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28277_006_17RNK_20230702T045806_0710_01",
+      "acquisition_utc": "2023-07-02T04:58:06.207Z",
+      "apparent_solar_hour_at_domain_centroid": 23.55973307699733,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28277,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28277_006_17RNJ_20230702T045806_0711_02",
+      "acquisition_utc": "2023-07-02T04:58:06.207Z",
+      "apparent_solar_hour_at_domain_centroid": 23.55973307699733,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28277,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28277_006_17RNK_20230702T045806_0711_02",
+      "acquisition_utc": "2023-07-02T04:58:06.207Z",
+      "apparent_solar_hour_at_domain_centroid": 23.55973307699733,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28313,
+      "scene": 9,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28313_009_17RNK_20230704T130751_0710_01",
+      "acquisition_utc": "2023-07-04T13:07:51.475Z",
+      "apparent_solar_hour_at_domain_centroid": 7.7146622595486445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28313,
+      "scene": 9,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28313_009_17RNJ_20230704T130751_0710_01",
+      "acquisition_utc": "2023-07-04T13:07:51.475Z",
+      "apparent_solar_hour_at_domain_centroid": 7.7146622595486445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28313,
+      "scene": 9,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28313_009_17RNK_20230704T130751_0712_02",
+      "acquisition_utc": "2023-07-04T13:07:51.475Z",
+      "apparent_solar_hour_at_domain_centroid": 7.7146622595486445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28313,
+      "scene": 9,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28313_009_17RNJ_20230704T130751_0712_02",
+      "acquisition_utc": "2023-07-04T13:07:51.475Z",
+      "apparent_solar_hour_at_domain_centroid": 7.7146622595486445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28323,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28323_005_17RNJ_20230705T040741_0710_01",
+      "acquisition_utc": "2023-07-05T04:07:41.975Z",
+      "apparent_solar_hour_at_domain_centroid": 22.70993122017866,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28323,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28323_005_17RNK_20230705T040741_0710_01",
+      "acquisition_utc": "2023-07-05T04:07:41.975Z",
+      "apparent_solar_hour_at_domain_centroid": 22.70993122017866,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28323,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28323_005_17RNJ_20230705T040741_0712_02",
+      "acquisition_utc": "2023-07-05T04:07:41.975Z",
+      "apparent_solar_hour_at_domain_centroid": 22.70993122017866,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28323,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28323_005_17RNK_20230705T040741_0712_02",
+      "acquisition_utc": "2023-07-05T04:07:41.975Z",
+      "apparent_solar_hour_at_domain_centroid": 22.70993122017866,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28374,
+      "scene": 10,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28374_010_17RNJ_20230708T113214_0710_01",
+      "acquisition_utc": "2023-07-08T11:32:14.787Z",
+      "apparent_solar_hour_at_domain_centroid": 6.109311577087311,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28374,
+      "scene": 10,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28374_010_17RNK_20230708T113214_0712_02",
+      "acquisition_utc": "2023-07-08T11:32:14.787Z",
+      "apparent_solar_hour_at_domain_centroid": 6.109311577087311,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28374,
+      "scene": 10,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28374_010_17RNJ_20230708T113214_0712_02",
+      "acquisition_utc": "2023-07-08T11:32:14.787Z",
+      "apparent_solar_hour_at_domain_centroid": 6.109311577087311,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28399,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28399_005_17RNJ_20230710T014424_0712_01",
+      "acquisition_utc": "2023-07-10T01:44:25.167Z",
+      "apparent_solar_hour_at_domain_centroid": 20.308030784675836,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28435,
+      "scene": 8,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28435_008_17RNJ_20230712T095650_0710_01",
+      "acquisition_utc": "2023-07-12T09:56:50.824Z",
+      "apparent_solar_hour_at_domain_centroid": 4.509091406731624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28435,
+      "scene": 8,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28435_008_17RNK_20230712T095650_0710_01",
+      "acquisition_utc": "2023-07-12T09:56:50.824Z",
+      "apparent_solar_hour_at_domain_centroid": 4.509091406731624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28435,
+      "scene": 8,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28435_008_17RNJ_20230712T095650_0712_02",
+      "acquisition_utc": "2023-07-12T09:56:50.824Z",
+      "apparent_solar_hour_at_domain_centroid": 4.509091406731624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28435,
+      "scene": 8,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28435_008_17RNK_20230712T095650_0712_02",
+      "acquisition_utc": "2023-07-12T09:56:50.824Z",
+      "apparent_solar_hour_at_domain_centroid": 4.509091406731624,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28506,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28506_006_17RNJ_20230716T232119_0710_01",
+      "acquisition_utc": "2023-07-16T23:21:19.860Z",
+      "apparent_solar_hour_at_domain_centroid": 17.90759913420573,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28506,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28506_006_17RNJ_20230716T232119_0712_02",
+      "acquisition_utc": "2023-07-16T23:21:19.860Z",
+      "apparent_solar_hour_at_domain_centroid": 17.90759913420573,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28567,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28567_005_17RNK_20230720T214504_0710_01",
+      "acquisition_utc": "2023-07-20T21:45:04.019Z",
+      "apparent_solar_hour_at_domain_centroid": 16.297475230072603,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28567,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28567_005_17RNJ_20230720T214504_0710_01",
+      "acquisition_utc": "2023-07-20T21:45:04.019Z",
+      "apparent_solar_hour_at_domain_centroid": 16.297475230072603,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28567,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28567_005_17RNK_20230720T214504_0712_02",
+      "acquisition_utc": "2023-07-20T21:45:04.019Z",
+      "apparent_solar_hour_at_domain_centroid": 16.297475230072603,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28567,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28567_005_17RNJ_20230720T214504_0712_02",
+      "acquisition_utc": "2023-07-20T21:45:04.019Z",
+      "apparent_solar_hour_at_domain_centroid": 16.297475230072603,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28567,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28567_006_17RNK_20230720T214555_0710_01",
+      "acquisition_utc": "2023-07-20T21:45:55.989Z",
+      "apparent_solar_hour_at_domain_centroid": 16.311641173815524,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28567,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28567_006_17RNK_20230720T214555_0712_02",
+      "acquisition_utc": "2023-07-20T21:45:55.989Z",
+      "apparent_solar_hour_at_domain_centroid": 16.311641173815524,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28628,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28628_005_17RNJ_20230724T200828_0710_01",
+      "acquisition_utc": "2023-07-24T20:08:28.194Z",
+      "apparent_solar_hour_at_domain_centroid": 14.683864521459753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28628,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28628_005_17RNK_20230724T200828_0710_01",
+      "acquisition_utc": "2023-07-24T20:08:28.194Z",
+      "apparent_solar_hour_at_domain_centroid": 14.683864521459753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28628,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28628_005_17RNJ_20230724T200828_0712_02",
+      "acquisition_utc": "2023-07-24T20:08:28.194Z",
+      "apparent_solar_hour_at_domain_centroid": 14.683864521459753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28628,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28628_005_17RNK_20230724T200828_0712_02",
+      "acquisition_utc": "2023-07-24T20:08:28.194Z",
+      "apparent_solar_hour_at_domain_centroid": 14.683864521459753,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28628,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28628_006_17RNK_20230724T200920_0710_01",
+      "acquisition_utc": "2023-07-24T20:09:20.164Z",
+      "apparent_solar_hour_at_domain_centroid": 14.698308602457278,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28628,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28628_006_17RNK_20230724T200920_0712_02",
+      "acquisition_utc": "2023-07-24T20:09:20.164Z",
+      "apparent_solar_hour_at_domain_centroid": 14.698308602457278,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28725,
+      "scene": 9,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28725_009_17RNJ_20230731T024340_0710_01",
+      "acquisition_utc": "2023-07-31T02:43:40.269Z",
+      "apparent_solar_hour_at_domain_centroid": 21.27004557208085,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28725,
+      "scene": 9,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28725_009_17RNJ_20230731T024340_0712_02",
+      "acquisition_utc": "2023-07-31T02:43:40.269Z",
+      "apparent_solar_hour_at_domain_centroid": 21.27004557208085,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28735,
+      "scene": 3,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28735_003_17RNK_20230731T174341_0710_01",
+      "acquisition_utc": "2023-07-31T17:43:41.394Z",
+      "apparent_solar_hour_at_domain_centroid": 12.270645817812262,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28735,
+      "scene": 3,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28735_003_17RNK_20230731T174341_0712_02",
+      "acquisition_utc": "2023-07-31T17:43:41.394Z",
+      "apparent_solar_hour_at_domain_centroid": 12.270645817812262,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28750,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28750_005_17RNK_20230801T165512_0710_01",
+      "acquisition_utc": "2023-08-01T16:55:12.820Z",
+      "apparent_solar_hour_at_domain_centroid": 11.463223864828118,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28750,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28750_005_17RNJ_20230801T165512_0710_01",
+      "acquisition_utc": "2023-08-01T16:55:12.820Z",
+      "apparent_solar_hour_at_domain_centroid": 11.463223864828118,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28750,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28750_005_17RNJ_20230801T165512_0712_02",
+      "acquisition_utc": "2023-08-01T16:55:12.820Z",
+      "apparent_solar_hour_at_domain_centroid": 11.463223864828118,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28750,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28750_005_17RNK_20230801T165512_0712_02",
+      "acquisition_utc": "2023-08-01T16:55:12.820Z",
+      "apparent_solar_hour_at_domain_centroid": 11.463223864828118,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28750,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28750_006_17RNJ_20230801T165604_0710_01",
+      "acquisition_utc": "2023-08-01T16:56:04.790Z",
+      "apparent_solar_hour_at_domain_centroid": 11.47766875514346,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28750,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28750_006_17RNK_20230801T165604_0710_01",
+      "acquisition_utc": "2023-08-01T16:56:04.790Z",
+      "apparent_solar_hour_at_domain_centroid": 11.47766875514346,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28750,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28750_006_17RNJ_20230801T165604_0712_02",
+      "acquisition_utc": "2023-08-01T16:56:04.790Z",
+      "apparent_solar_hour_at_domain_centroid": 11.47766875514346,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28750,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28750_006_17RNK_20230801T165604_0712_02",
+      "acquisition_utc": "2023-08-01T16:56:04.790Z",
+      "apparent_solar_hour_at_domain_centroid": 11.47766875514346,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28796,
+      "scene": 3,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28796_003_17RNJ_20230804T160659_0710_01",
+      "acquisition_utc": "2023-08-04T16:06:59.714Z",
+      "apparent_solar_hour_at_domain_centroid": 10.662589305559877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28796,
+      "scene": 3,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28796_003_17RNK_20230804T160659_0710_01",
+      "acquisition_utc": "2023-08-04T16:06:59.714Z",
+      "apparent_solar_hour_at_domain_centroid": 10.662589305559877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28796,
+      "scene": 3,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28796_003_17RNJ_20230804T160659_0712_02",
+      "acquisition_utc": "2023-08-04T16:06:59.714Z",
+      "apparent_solar_hour_at_domain_centroid": 10.662589305559877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28796,
+      "scene": 3,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28796_003_17RNK_20230804T160659_0712_02",
+      "acquisition_utc": "2023-08-04T16:06:59.714Z",
+      "apparent_solar_hour_at_domain_centroid": 10.662589305559877,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28811,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28811_006_17RNJ_20230805T151825_0710_01",
+      "acquisition_utc": "2023-08-05T15:18:25.241Z",
+      "apparent_solar_hour_at_domain_centroid": 9.854451857224445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28811,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28811_006_17RNJ_20230805T151825_0712_02",
+      "acquisition_utc": "2023-08-05T15:18:25.241Z",
+      "apparent_solar_hour_at_domain_centroid": 9.854451857224445,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28857,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28857_006_17RNK_20230808T142956_0712_02",
+      "acquisition_utc": "2023-08-08T14:29:56.813Z",
+      "apparent_solar_hour_at_domain_centroid": 9.051444943686537,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28857,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28857_006_17RNJ_20230808T142956_0712_02",
+      "acquisition_utc": "2023-08-08T14:29:56.813Z",
+      "apparent_solar_hour_at_domain_centroid": 9.051444943686537,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28872,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28872_006_17RNJ_20230809T134130_0712_02",
+      "acquisition_utc": "2023-08-09T13:41:30.622Z",
+      "apparent_solar_hour_at_domain_centroid": 8.246203801155055,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28908,
+      "scene": 10,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28908_010_17RNJ_20230811T215254_0710_01",
+      "acquisition_utc": "2023-08-11T21:52:54.601Z",
+      "apparent_solar_hour_at_domain_centroid": 16.44168211797343,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28908,
+      "scene": 10,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28908_010_17RNK_20230811T215254_0710_01",
+      "acquisition_utc": "2023-08-11T21:52:54.601Z",
+      "apparent_solar_hour_at_domain_centroid": 16.44168211797343,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28908,
+      "scene": 10,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28908_010_17RNJ_20230811T215254_0712_02",
+      "acquisition_utc": "2023-08-11T21:52:54.601Z",
+      "apparent_solar_hour_at_domain_centroid": 16.44168211797343,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28908,
+      "scene": 10,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28908_010_17RNK_20230811T215254_0712_02",
+      "acquisition_utc": "2023-08-11T21:52:54.601Z",
+      "apparent_solar_hour_at_domain_centroid": 16.44168211797343,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28918,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28918_005_17RNK_20230812T125321_0712_02",
+      "acquisition_utc": "2023-08-12T12:53:21.351Z",
+      "apparent_solar_hour_at_domain_centroid": 7.450806393053448,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28918,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28918_005_17RNJ_20230812T125321_0712_02",
+      "acquisition_utc": "2023-08-12T12:53:21.351Z",
+      "apparent_solar_hour_at_domain_centroid": 7.450806393053448,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28918,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28918_006_17RNK_20230812T125413_0712_02",
+      "acquisition_utc": "2023-08-12T12:54:13.321Z",
+      "apparent_solar_hour_at_domain_centroid": 7.465252433280747,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28969,
+      "scene": 13,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28969_013_17RNK_20230815T201848_0710_01",
+      "acquisition_utc": "2023-08-15T20:18:48.703Z",
+      "apparent_solar_hour_at_domain_centroid": 14.884677966672394,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28969,
+      "scene": 13,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28969_013_17RNK_20230815T201848_0712_02",
+      "acquisition_utc": "2023-08-15T20:18:48.703Z",
+      "apparent_solar_hour_at_domain_centroid": 14.884677966672394,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28979,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28979_005_17RNJ_20230816T111923_0710_01",
+      "acquisition_utc": "2023-08-16T11:19:23.917Z",
+      "apparent_solar_hour_at_domain_centroid": 5.8964400356123665,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28979,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28979_005_17RNK_20230816T111923_0710_01",
+      "acquisition_utc": "2023-08-16T11:19:23.917Z",
+      "apparent_solar_hour_at_domain_centroid": 5.8964400356123665,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28979,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_28979_005_17RNK_20230816T111923_0712_02",
+      "acquisition_utc": "2023-08-16T11:19:23.917Z",
+      "apparent_solar_hour_at_domain_centroid": 5.8964400356123665,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 28979,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_28979_005_17RNJ_20230816T111923_0712_02",
+      "acquisition_utc": "2023-08-16T11:19:23.917Z",
+      "apparent_solar_hour_at_domain_centroid": 5.8964400356123665,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29030,
+      "scene": 12,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29030_012_17RNK_20230819T184356_0710_01",
+      "acquisition_utc": "2023-08-19T18:43:56.936Z",
+      "apparent_solar_hour_at_domain_centroid": 13.317448944052963,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29030,
+      "scene": 12,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29030_012_17RNJ_20230819T184356_0710_01",
+      "acquisition_utc": "2023-08-19T18:43:56.936Z",
+      "apparent_solar_hour_at_domain_centroid": 13.317448944052963,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29030,
+      "scene": 12,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29030_012_17RNJ_20230819T184356_0712_02",
+      "acquisition_utc": "2023-08-19T18:43:56.936Z",
+      "apparent_solar_hour_at_domain_centroid": 13.317448944052963,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29030,
+      "scene": 12,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29030_012_17RNK_20230819T184356_0712_02",
+      "acquisition_utc": "2023-08-19T18:43:56.936Z",
+      "apparent_solar_hour_at_domain_centroid": 13.317448944052963,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29076,
+      "scene": 13,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29076_013_17RNJ_20230822T175703_0710_01",
+      "acquisition_utc": "2023-08-22T17:57:03.978Z",
+      "apparent_solar_hour_at_domain_centroid": 12.548120054543038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29076,
+      "scene": 13,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29076_013_17RNJ_20230822T175703_0712_02",
+      "acquisition_utc": "2023-08-22T17:57:03.978Z",
+      "apparent_solar_hour_at_domain_centroid": 12.548120054543038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29091,
+      "scene": 11,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29091_011_17RNJ_20230823T170857_0710_01",
+      "acquisition_utc": "2023-08-23T17:08:57.849Z",
+      "apparent_solar_hour_at_domain_centroid": 11.750660099160433,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29091,
+      "scene": 11,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29091_011_17RNK_20230823T170857_0710_01",
+      "acquisition_utc": "2023-08-23T17:08:57.849Z",
+      "apparent_solar_hour_at_domain_centroid": 11.750660099160433,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29091,
+      "scene": 11,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29091_011_17RNJ_20230823T170857_0712_02",
+      "acquisition_utc": "2023-08-23T17:08:57.849Z",
+      "apparent_solar_hour_at_domain_centroid": 11.750660099160433,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29091,
+      "scene": 11,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29091_011_17RNK_20230823T170857_0712_02",
+      "acquisition_utc": "2023-08-23T17:08:57.849Z",
+      "apparent_solar_hour_at_domain_centroid": 11.750660099160433,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29101,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29101_005_17RNJ_20230824T080857_0710_01",
+      "acquisition_utc": "2023-08-24T08:08:57.801Z",
+      "apparent_solar_hour_at_domain_centroid": 2.753450119807062,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29101,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29101_005_17RNJ_20230824T080857_0712_02",
+      "acquisition_utc": "2023-08-24T08:08:57.801Z",
+      "apparent_solar_hour_at_domain_centroid": 2.753450119807062,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29162,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29162_005_17RNK_20230828T063351_0710_01",
+      "acquisition_utc": "2023-08-28T06:33:51.824Z",
+      "apparent_solar_hour_at_domain_centroid": 1.1872040485847053,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29162,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29162_005_17RNK_20230828T063351_0712_02",
+      "acquisition_utc": "2023-08-28T06:33:51.824Z",
+      "apparent_solar_hour_at_domain_centroid": 1.1872040485847053,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29198,
+      "scene": 13,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29198_013_17RNK_20230830T144356_0712_01",
+      "acquisition_utc": "2023-08-30T14:43:56.000Z",
+      "apparent_solar_hour_at_domain_centroid": 9.367316476372215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29198,
+      "scene": 14,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29198_014_17RNJ_20230830T144447_0712_01",
+      "acquisition_utc": "2023-08-30T14:44:47.969Z",
+      "apparent_solar_hour_at_domain_centroid": 9.38148626174446,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29198,
+      "scene": 14,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29198_014_17RNK_20230830T144447_0712_01",
+      "acquisition_utc": "2023-08-30T14:44:47.969Z",
+      "apparent_solar_hour_at_domain_centroid": 9.38148626174446,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29223,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29223_006_17RNK_20230901T045609_0710_01",
+      "acquisition_utc": "2023-09-01T04:56:09.860Z",
+      "apparent_solar_hour_at_domain_centroid": 23.579471831303003,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29223,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29223_006_17RNJ_20230901T045609_0710_01",
+      "acquisition_utc": "2023-09-01T04:56:09.860Z",
+      "apparent_solar_hour_at_domain_centroid": 23.579471831303003,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29223,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29223_006_17RNJ_20230901T045609_0712_02",
+      "acquisition_utc": "2023-09-01T04:56:09.860Z",
+      "apparent_solar_hour_at_domain_centroid": 23.579471831303003,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29223,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29223_006_17RNK_20230901T045609_0712_02",
+      "acquisition_utc": "2023-09-01T04:56:09.860Z",
+      "apparent_solar_hour_at_domain_centroid": 23.579471831303003,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29259,
+      "scene": 10,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29259_010_17RNJ_20230903T130655_0710_01",
+      "acquisition_utc": "2023-09-03T13:06:55.145Z",
+      "apparent_solar_hour_at_domain_centroid": 7.771935194032,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29259,
+      "scene": 10,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29259_010_17RNK_20230903T130655_0712_02",
+      "acquisition_utc": "2023-09-03T13:06:55.145Z",
+      "apparent_solar_hour_at_domain_centroid": 7.771935194032,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29259,
+      "scene": 10,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29259_010_17RNJ_20230903T130655_0712_02",
+      "acquisition_utc": "2023-09-03T13:06:55.145Z",
+      "apparent_solar_hour_at_domain_centroid": 7.771935194032,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29330,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29330_006_17RNK_20230908T022955_0710_01",
+      "acquisition_utc": "2023-09-08T02:29:55.675Z",
+      "apparent_solar_hour_at_domain_centroid": 21.18191640724894,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29330,
+      "scene": 6,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29330_006_17RNK_20230908T022955_0712_02",
+      "acquisition_utc": "2023-09-08T02:29:55.675Z",
+      "apparent_solar_hour_at_domain_centroid": 21.18191640724894,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29345,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29345_005_17RNJ_20230909T014045_0710_01",
+      "acquisition_utc": "2023-09-09T01:40:45.766Z",
+      "apparent_solar_hour_at_domain_centroid": 20.368297980592487,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29345,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29345_005_17RNJ_20230909T014045_0712_02",
+      "acquisition_utc": "2023-09-09T01:40:45.766Z",
+      "apparent_solar_hour_at_domain_centroid": 20.368297980592487,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29391,
+      "scene": 4,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29391_004_17RNJ_20230912T005516_0710_01",
+      "acquisition_utc": "2023-09-12T00:55:16.668Z",
+      "apparent_solar_hour_at_domain_centroid": 19.628435700007124,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29391,
+      "scene": 4,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29391_004_17RNK_20230912T005516_0710_01",
+      "acquisition_utc": "2023-09-12T00:55:16.668Z",
+      "apparent_solar_hour_at_domain_centroid": 19.628435700007124,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29391,
+      "scene": 4,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29391_004_17RNJ_20230912T005516_0712_02",
+      "acquisition_utc": "2023-09-12T00:55:16.668Z",
+      "apparent_solar_hour_at_domain_centroid": 19.628435700007124,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29391,
+      "scene": 4,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29391_004_17RNK_20230912T005516_0712_02",
+      "acquisition_utc": "2023-09-12T00:55:16.668Z",
+      "apparent_solar_hour_at_domain_centroid": 19.628435700007124,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29406,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29406_005_17RNJ_20230913T000713_0710_01",
+      "acquisition_utc": "2023-09-13T00:07:13.088Z",
+      "apparent_solar_hour_at_domain_centroid": 18.83360044595861,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29406,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29406_005_17RNJ_20230913T000713_0712_02",
+      "acquisition_utc": "2023-09-13T00:07:13.088Z",
+      "apparent_solar_hour_at_domain_centroid": 18.83360044595861,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29442,
+      "scene": 10,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29442_010_17RNJ_20230915T082035_0710_01",
+      "acquisition_utc": "2023-09-15T08:20:35.156Z",
+      "apparent_solar_hour_at_domain_centroid": 3.071010899750693,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29442,
+      "scene": 10,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29442_010_17RNK_20230915T082035_0710_01",
+      "acquisition_utc": "2023-09-15T08:20:35.156Z",
+      "apparent_solar_hour_at_domain_centroid": 3.071010899750693,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29442,
+      "scene": 10,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29442_010_17RNJ_20230915T082035_0712_02",
+      "acquisition_utc": "2023-09-15T08:20:35.156Z",
+      "apparent_solar_hour_at_domain_centroid": 3.071010899750693,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29442,
+      "scene": 10,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29442_010_17RNK_20230915T082035_0712_02",
+      "acquisition_utc": "2023-09-15T08:20:35.156Z",
+      "apparent_solar_hour_at_domain_centroid": 3.071010899750693,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29452,
+      "scene": 4,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29452_004_17RNJ_20230915T232123_0710_01",
+      "acquisition_utc": "2023-09-15T23:21:23.872Z",
+      "apparent_solar_hour_at_domain_centroid": 18.088266552726843,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29452,
+      "scene": 4,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29452_004_17RNK_20230915T232123_0710_01",
+      "acquisition_utc": "2023-09-15T23:21:23.872Z",
+      "apparent_solar_hour_at_domain_centroid": 18.088266552726843,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29452,
+      "scene": 4,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29452_004_17RNK_20230915T232123_0712_02",
+      "acquisition_utc": "2023-09-15T23:21:23.872Z",
+      "apparent_solar_hour_at_domain_centroid": 18.088266552726843,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29452,
+      "scene": 4,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29452_004_17RNJ_20230915T232123_0712_02",
+      "acquisition_utc": "2023-09-15T23:21:23.872Z",
+      "apparent_solar_hour_at_domain_centroid": 18.088266552726843,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29467,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29467_005_17RNJ_20230916T223314_0710_01",
+      "acquisition_utc": "2023-09-16T22:33:14.101Z",
+      "apparent_solar_hour_at_domain_centroid": 17.291832548233423,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29467,
+      "scene": 5,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29467_005_17RNJ_20230916T223314_0712_02",
+      "acquisition_utc": "2023-09-16T22:33:14.101Z",
+      "apparent_solar_hour_at_domain_centroid": 17.291832548233423,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29467,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29467_006_17RNJ_20230916T223406_0710_01",
+      "acquisition_utc": "2023-09-16T22:34:06.071Z",
+      "apparent_solar_hour_at_domain_centroid": 17.306280770837915,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29467,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29467_006_17RNJ_20230916T223406_0712_02",
+      "acquisition_utc": "2023-09-16T22:34:06.071Z",
+      "apparent_solar_hour_at_domain_centroid": 17.306280770837915,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29528,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29528_006_17RNJ_20230920T205913_0710_01",
+      "acquisition_utc": "2023-09-20T20:59:13.991Z",
+      "apparent_solar_hour_at_domain_centroid": 15.749529095693084,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29528,
+      "scene": 6,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29528_006_17RNJ_20230920T205913_0712_02",
+      "acquisition_utc": "2023-09-20T20:59:13.991Z",
+      "apparent_solar_hour_at_domain_centroid": 15.749529095693084,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29564,
+      "scene": 7,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29564_007_17RNK_20230923T051131_0710_01",
+      "acquisition_utc": "2023-09-23T05:11:31.395Z",
+      "apparent_solar_hour_at_domain_centroid": 23.969032568376093,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29564,
+      "scene": 7,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29564_007_17RNK_20230923T051131_0712_02",
+      "acquisition_utc": "2023-09-23T05:11:31.395Z",
+      "apparent_solar_hour_at_domain_centroid": 23.969032568376093,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29564,
+      "scene": 7,
+      "tile": "17RNJ",
+      "granule_id": "ECOv002_L2T_LSTE_29564_007_17RNJ_20230923T051131_0712_02",
+      "acquisition_utc": "2023-09-23T05:11:31.395Z",
+      "apparent_solar_hour_at_domain_centroid": 23.969032568376093,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29574,
+      "scene": 4,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29574_004_17RNK_20230923T201151_0710_01",
+      "acquisition_utc": "2023-09-23T20:11:51.410Z",
+      "apparent_solar_hour_at_domain_centroid": 14.9784250084554,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29574,
+      "scene": 4,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29574_004_17RNK_20230923T201151_0712_02",
+      "acquisition_utc": "2023-09-23T20:11:51.410Z",
+      "apparent_solar_hour_at_domain_centroid": 14.9784250084554,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29574,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29574_005_17RNK_20230923T201243_0710_01",
+      "acquisition_utc": "2023-09-23T20:12:43.380Z",
+      "apparent_solar_hour_at_domain_centroid": 14.992873137870339,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "miami",
+      "orbit": 29574,
+      "scene": 5,
+      "tile": "17RNK",
+      "granule_id": "ECOv002_L2T_LSTE_29574_005_17RNK_20230923T201243_0712_02",
+      "acquisition_utc": "2023-09-23T20:12:43.380Z",
+      "apparent_solar_hour_at_domain_centroid": 14.992873137870339,
+      "cloud_cover_metadata": null
+    }
+  ]
+}

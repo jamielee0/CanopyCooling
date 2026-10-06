@@ -1,0 +1,12 @@
+{
+  "city": "atlanta",
+  "passes_reported": 5,
+  "planned_passes": 5,
+  "median_SE_K_per_10pp": 0.005856147874331499,
+  "min_SE_K_per_10pp": 0.0022975879629280344,
+  "max_SE_K_per_10pp": 0.008929117018884858,
+  "passes_at_or_below_0_10_SE_benchmark": 5,
+  "precision_decision": "DESCRIPTIVE_FOR_REVIEW_NO_FOUR_OF_FIVE_GATE",
+  "scale_ruling": "PENDING_REZA_TOLERANCE_AND_COEFFICIENT_RELEASE",
+  "nonestimable_variants": []
+}

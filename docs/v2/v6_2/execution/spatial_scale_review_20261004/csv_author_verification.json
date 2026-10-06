@@ -1,0 +1,34 @@
+{
+  "author": "@oai/artifact-tool",
+  "literalTextPreserved": true,
+  "tables": [
+    {
+      "file": "spatial_precision_review.csv",
+      "rows": 163,
+      "columns": 20,
+      "sha256": "f41215f2b03906afb0f59d731caad18e8bc50aa906b1c5e71945949e6a2b4146",
+      "typedRoundtrip": true
+    },
+    {
+      "file": "canopy_context_distributions.csv",
+      "rows": 231,
+      "columns": 21,
+      "sha256": "51aaecc59d4c3329ad84630e1971e8072d9853865ee1c4c1912502a9835b90cd",
+      "typedRoundtrip": true
+    },
+    {
+      "file": "footprint_and_reference_support.csv",
+      "rows": 16,
+      "columns": 29,
+      "sha256": "58b3ca6d1af2cffd0f71d7ea35e55fb2f9c3d6b988448cef93505b345624f675",
+      "typedRoundtrip": true
+    },
+    {
+      "file": "inherited_residual_spatial_diagnostics.csv",
+      "rows": 20,
+      "columns": 8,
+      "sha256": "f9752087b3f09b3cb0c788f9db3dd42a1fc17c9ad0ca876e4a09eabdf69fbf4c",
+      "typedRoundtrip": true
+    }
+  ]
+}

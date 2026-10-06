@@ -1,0 +1,48 @@
+[
+  {
+    "city": "phoenix",
+    "phase": "production",
+    "label": "SYNTHETIC_DATA",
+    "estimable_day_resamples": 499,
+    "missing_required_month_arm_resamples": 413,
+    "fraction": 0.8276553106212425,
+    "required_month_arms": [
+      [
+        6,
+        "afternoon"
+      ],
+      [
+        6,
+        "morning"
+      ],
+      [
+        8,
+        "afternoon"
+      ],
+      [
+        8,
+        "morning"
+      ]
+    ],
+    "rule": "diagnostic only; no draw removed or target changed"
+  },
+  {
+    "city": "atlanta",
+    "phase": "production",
+    "label": "SYNTHETIC_DATA",
+    "estimable_day_resamples": 497,
+    "missing_required_month_arm_resamples": 293,
+    "fraction": 0.5895372233400402,
+    "required_month_arms": [
+      [
+        6,
+        "afternoon"
+      ],
+      [
+        6,
+        "morning"
+      ]
+    ],
+    "rule": "diagnostic only; no draw removed or target changed"
+  }
+]

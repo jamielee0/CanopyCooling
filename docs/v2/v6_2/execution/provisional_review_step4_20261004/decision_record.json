@@ -1,0 +1,85 @@
+{
+  "record_date_local": "2026-10-04",
+  "protocol_version": "6.2",
+  "plan_step": 4,
+  "status": "PROVISIONAL_REVIEW_COMPLETE_EFFECT_DEPENDENT_DECISIONS_PENDING",
+  "authority": {
+    "request": "ok lets do step 4",
+    "scope": "Provisional review described in the preceding readiness answer",
+    "prior_sealing_reply": "Not yet—keep new effects sealed",
+    "new_effect_display_authorized": false,
+    "professor_approval": "not implied"
+  },
+  "review_document": "docs/v2/v6_2/provisional_results_review_step4_20261004.md",
+  "main_pilot": {
+    "year": 2023,
+    "Phoenix_passes": 11,
+    "Atlanta_passes": 5,
+    "other_year_Phoenix_weight": 0,
+    "passes_removed_or_added": 0
+  },
+  "decisions_now": {
+    "primary_outcome": "temperature canopy-associated mixed-pixel surface cooling",
+    "paired_flux_and_equivalent": "diagnostics, not independent validation; no automatic outcome promotion",
+    "baseline_population": "retain all16 original full-support 2023 pass populations",
+    "common_footprint": "labelled population/composition sensitivity; no replacement of baseline",
+    "mean_models_and_controls": "preserve frozen specifications",
+    "nonestimable_draws": "report all48; no replacement, control removal or rule adjustment to rescue draws",
+    "VPD": "descriptive only",
+    "primary_time_interpretation": "total observation-time pattern including associated solar geometry",
+    "secondary_time_interpretation": "geometry/season standardization only at supported shared references",
+    "numeric_temporal_simulation_effect_range": null,
+    "practical_spatial_change_cutoff": null,
+    "scale_tolerance": null,
+    "robustness_or_scale_agreement_ruling": "not made",
+    "full_Stage1_approval": false
+  },
+  "next_bounded_preparation": {
+    "status": "RECOMMENDED_NOT_EXECUTED",
+    "activity": "predictor-only canopy endpoint/covariate support and protected-design rank audit",
+    "relation_to_plan": "preparatory first part of Step5; not quadratic fitting",
+    "questions": [
+      "support of the historical 2.85%-12.85% pair and nearby pairs separated by ten percentage points",
+      "within-block coverage and endpoint-neighbourhood densities at prospectively recorded diagnostic widths",
+      "overlap of imperviousness, buildings, other controls and relevant month/time settings",
+      "sparse bare-cover information and identifiability of protected raw canopy/canopy-squared terms"
+    ],
+    "separate_user_request_and_execution_freeze_required": true,
+    "outcome_or_effect_access_required_for_this_preparation": false,
+    "new_inclusion_cutoff_adopted": false
+  },
+  "held_activities": {
+    "Step5_quadratic_fits": "pending quantitative spatial/paired-scale review, supported endpoint/design assessment and recorded go decision",
+    "new_empirical_time_inference": "pending supported comparison definition, linked conditions and actual-design independent-day uncertainty calibration",
+    "simulation_effect_range_selection": "pending reviewed effect evidence relevant to intended temporal contrast; no substitution of spatial cooling-level ranges or SE benchmark",
+    "further_city_screening_and_thermal_expansion": "paused; separate post-review scope decision required"
+  },
+  "effect_dependent_questions_pending": [
+    "magnitude and uncertainty of original-to-common cooling changes",
+    "magnitude and uncertainty of fixed-support alignment changes",
+    "interpretation of available-support changes combining alignment and population",
+    "numerical paired-scale departures and reference dependence",
+    "whether a spatial change warrants mechanism diagnosis or prospective population narrowing",
+    "effect-based choice of the next model or temporal calibration range"
+  ],
+  "formal_influence_assessments": {
+    "date_extremes": "descriptive released extrema only; no regression-influence or leave-date-out calculation",
+    "named_neighbourhood_drivers": "not established; geographic retention and aggregate information concentration only"
+  },
+  "display_boundary": {
+    "released_temperature_estimates_and_intervals": "reused within prior release scope",
+    "new_spatial_flux_equivalent_and_time_effects": "remain sealed",
+    "new_coefficient_display": false,
+    "later_release_requirements": "record Reza tolerance and applicable release scope; current explicit sealing instruction remains controlling"
+  },
+  "work_performed_this_step": {
+    "public_evidence_synthesis": true,
+    "new_fit_or_bootstrap": false,
+    "new_temporal_comparison": false,
+    "sealed_files_opened": [],
+    "raw_thermal_access": false,
+    "scientific_rules_changed": false,
+    "simulation_effect_range_selected": false,
+    "commit_push_or_external_message": false
+  }
+}

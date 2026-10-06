@@ -1,0 +1,52 @@
+{
+  "label": "SYNTHETIC_DATA",
+  "purpose": "check double counting when resampling already noisy pass estimates and adding another independent copy of their first-stage noise",
+  "interpretation": "calibration diagnostic, not validation of an empirical time contrast or universal replacement; independent homoscedastic passes in this simulation; normal intervals are diagnostic only",
+  "rows": [
+    {
+      "label": "SYNTHETIC_DATA",
+      "passes": 30,
+      "simulated_datasets": 300,
+      "resamples_each": 500,
+      "measurement_sd_K_per_10pp": 0.1,
+      "additional_between_pass_sd": 0,
+      "true_time_contrast": 0.22,
+      "empirical_sampling_sd": 0.04424982867265021,
+      "inherited_combined_resampling_RMS_SE": 0.07276492067349576,
+      "pairs_only_RMS_SE": 0.04229868872486658,
+      "combined_to_pairs_variance_ratio": 2.959308979063175,
+      "inherited_normal_interval_coverage": 1.0,
+      "pairs_only_normal_interval_coverage": 0.9233333333333333
+    },
+    {
+      "label": "SYNTHETIC_DATA",
+      "passes": 30,
+      "simulated_datasets": 300,
+      "resamples_each": 500,
+      "measurement_sd_K_per_10pp": 0.1,
+      "additional_between_pass_sd": 0.1,
+      "true_time_contrast": 0.22,
+      "empirical_sampling_sd": 0.058735153304325834,
+      "inherited_combined_resampling_RMS_SE": 0.08359495669243086,
+      "pairs_only_RMS_SE": 0.05877315846444519,
+      "combined_to_pairs_variance_ratio": 2.0230289313345153,
+      "inherited_normal_interval_coverage": 0.9933333333333333,
+      "pairs_only_normal_interval_coverage": 0.9466666666666667
+    },
+    {
+      "label": "SYNTHETIC_DATA",
+      "passes": 30,
+      "simulated_datasets": 300,
+      "resamples_each": 500,
+      "measurement_sd_K_per_10pp": 0.1,
+      "additional_between_pass_sd": 0.3,
+      "true_time_contrast": 0.22,
+      "empirical_sampling_sd": 0.12420906116508647,
+      "inherited_combined_resampling_RMS_SE": 0.14267142334650723,
+      "pairs_only_RMS_SE": 0.12931919635997574,
+      "combined_to_pairs_variance_ratio": 1.217160903106503,
+      "inherited_normal_interval_coverage": 0.9666666666666667,
+      "pairs_only_normal_interval_coverage": 0.95
+    }
+  ]
+}

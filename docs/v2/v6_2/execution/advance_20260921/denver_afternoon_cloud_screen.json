@@ -1,0 +1,332 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "denver",
+      "orbit": 27932,
+      "acquisition_utc": "2023-06-09T23:41:25.861Z",
+      "solar_hour": 16.711282892849177,
+      "sample_points": 300,
+      "observed_points": 105,
+      "clear_points": 105,
+      "sample_point_coverage_fraction": 0.35,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.35,
+      "failed_assets": 0
+    },
+    {
+      "city": "denver",
+      "orbit": 27993,
+      "acquisition_utc": "2023-06-13T22:02:21.300Z",
+      "solar_hour": 15.046948092286922,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 26,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.08666666666666667,
+      "clear_fraction_of_all_sample_points": 0.08666666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "denver",
+      "orbit": 28569,
+      "acquisition_utc": "2023-07-21T00:56:47.055Z",
+      "solar_hour": 17.85104007859495,
+      "sample_points": 300,
+      "observed_points": 145,
+      "clear_points": 145,
+      "sample_point_coverage_fraction": 0.48333333333333334,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.48333333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "denver",
+      "orbit": 28599,
+      "acquisition_utc": "2023-07-22T23:21:00.954Z",
+      "solar_hour": 16.245389006112312,
+      "sample_points": 300,
+      "observed_points": 120,
+      "clear_points": 120,
+      "sample_point_coverage_fraction": 0.4,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.4,
+      "failed_assets": 0
+    },
+    {
+      "city": "denver",
+      "orbit": 28893,
+      "acquisition_utc": "2023-08-10T22:34:33.689Z",
+      "solar_hour": 15.48468744937825,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 19,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.06333333333333334,
+      "clear_fraction_of_all_sample_points": 0.06333333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "denver",
+      "orbit": 29545,
+      "acquisition_utc": "2023-09-21T23:22:34.327Z",
+      "solar_hour": 16.511203490843005,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 31,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.10333333333333333,
+      "clear_fraction_of_all_sample_points": 0.10333333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "denver",
+      "orbit": 29591,
+      "acquisition_utc": "2023-09-24T22:35:42.467Z",
+      "solar_hour": 15.748304902093375,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 184,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.6133333333333333,
+      "clear_fraction_of_all_sample_points": 0.6133333333333333,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "denver",
+      "orbit": 27932,
+      "asset": "ECOv002_L2T_LSTE_27932_011_13SDD_20230609T234125_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27932_011_13SDD_20230609T234125_0711_02/ECOv002_L2T_LSTE_27932_011_13SDD_20230609T234125_0711_02_cloud.tif",
+      "bytes": 18041,
+      "sha256": "7b75326209ca115050bad564785f2c82ac5ad9ecbf2387a14ef8503ec6039447",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_008_13SDD_20230613T220221_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_008_13SDD_20230613T220221_0711_02/ECOv002_L2T_LSTE_27993_008_13SDD_20230613T220221_0711_02_cloud.tif",
+      "bytes": 10223,
+      "sha256": "c59c1fb75b6dcf40da6c1f8522f64992be817682cbaf81df9f7c6f36af4fa3f1",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_008_13SED_20230613T220221_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_008_13SED_20230613T220221_0711_02/ECOv002_L2T_LSTE_27993_008_13SED_20230613T220221_0711_02_cloud.tif",
+      "bytes": 10657,
+      "sha256": "4357a47de90f7fe548b63a66958a34ead5e75dbe030384f89bc6702f80f6b9e4",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_008_13TDE_20230613T220221_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_008_13TDE_20230613T220221_0711_02/ECOv002_L2T_LSTE_27993_008_13TDE_20230613T220221_0711_02_cloud.tif",
+      "bytes": 10173,
+      "sha256": "5c669fa273369ffc7c4ec22e9dece83f280d18ef46cf164a8f536d13f291d83a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 27993,
+      "asset": "ECOv002_L2T_LSTE_27993_008_13TEE_20230613T220221_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27993_008_13TEE_20230613T220221_0711_02/ECOv002_L2T_LSTE_27993_008_13TEE_20230613T220221_0711_02_cloud.tif",
+      "bytes": 7111,
+      "sha256": "b819e8b4534ba403340ba5fedca3ee2995bc9498b4f2e96945303602ed222d19",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 28569,
+      "asset": "ECOv002_L2T_LSTE_28569_006_13TDE_20230721T005647_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28569_006_13TDE_20230721T005647_0712_02/ECOv002_L2T_LSTE_28569_006_13TDE_20230721T005647_0712_02_cloud.tif",
+      "bytes": 7660,
+      "sha256": "3437364c2898acddf07ab2c4451c6d6b13ddb61b2e5f602db3eae84bf66656a3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 28569,
+      "asset": "ECOv002_L2T_LSTE_28569_007_13TDE_20230721T005739_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28569_007_13TDE_20230721T005739_0712_02/ECOv002_L2T_LSTE_28569_007_13TDE_20230721T005739_0712_02_cloud.tif",
+      "bytes": 5908,
+      "sha256": "aba6e8c498da292791533cb842763e856faaa09669c21c1692ec532510cb3b12",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 28599,
+      "asset": "ECOv002_L2T_LSTE_28599_006_13SED_20230722T232100_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28599_006_13SED_20230722T232100_0712_01/ECOv002_L2T_LSTE_28599_006_13SED_20230722T232100_0712_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "2b1f92f13696858bcd30d7eaac492efe20f2e12fa7cd756b9272638b6f6dcfd2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 28893,
+      "asset": "ECOv002_L2T_LSTE_28893_009_13SDD_20230810T223433_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28893_009_13SDD_20230810T223433_0712_02/ECOv002_L2T_LSTE_28893_009_13SDD_20230810T223433_0712_02_cloud.tif",
+      "bytes": 10762,
+      "sha256": "7dd29d131a195930b6f09339095525268828a7bf4da58c865f99335a399068d8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 28893,
+      "asset": "ECOv002_L2T_LSTE_28893_009_13SED_20230810T223433_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28893_009_13SED_20230810T223433_0712_02/ECOv002_L2T_LSTE_28893_009_13SED_20230810T223433_0712_02_cloud.tif",
+      "bytes": 16682,
+      "sha256": "8292b69750cedec0cab0ee9aeb2ff7988dec840478af9ab52e9346912b625929",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 28893,
+      "asset": "ECOv002_L2T_LSTE_28893_009_13TDE_20230810T223433_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28893_009_13TDE_20230810T223433_0712_02/ECOv002_L2T_LSTE_28893_009_13TDE_20230810T223433_0712_02_cloud.tif",
+      "bytes": 40492,
+      "sha256": "8e82e478d30aab6509372563eabf057a0a4c1c30e506645016df0271582e9823",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 28893,
+      "asset": "ECOv002_L2T_LSTE_28893_009_13TEE_20230810T223433_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28893_009_13TEE_20230810T223433_0712_02/ECOv002_L2T_LSTE_28893_009_13TEE_20230810T223433_0712_02_cloud.tif",
+      "bytes": 45264,
+      "sha256": "9022383d3665b08dddc6fe6ed9ae6639fde98eaa14ea541d2b6e8fe6cbc5a597",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 28893,
+      "asset": "ECOv002_L2T_LSTE_28893_010_13SED_20230810T223525_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28893_010_13SED_20230810T223525_0712_02/ECOv002_L2T_LSTE_28893_010_13SED_20230810T223525_0712_02_cloud.tif",
+      "bytes": 17456,
+      "sha256": "2c6f36a2eeb6151908d036163376d81aa4a9e2d836f2ba6cd6406273cfb9b33c",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 28893,
+      "asset": "ECOv002_L2T_LSTE_28893_010_13TEE_20230810T223525_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28893_010_13TEE_20230810T223525_0712_02/ECOv002_L2T_LSTE_28893_010_13TEE_20230810T223525_0712_02_cloud.tif",
+      "bytes": 9784,
+      "sha256": "a908f9c598097028ac0c1a6acbeb65a9f767d7459ff13a92fdcb4370e096b5a1",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29545,
+      "asset": "ECOv002_L2T_LSTE_29545_005_13SDD_20230921T232234_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_005_13SDD_20230921T232234_0712_02/ECOv002_L2T_LSTE_29545_005_13SDD_20230921T232234_0712_02_cloud.tif",
+      "bytes": 6032,
+      "sha256": "ad71d331250795b162a6934687683bbe1230107f383c0d7eb2d18cb50b870d9b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29545,
+      "asset": "ECOv002_L2T_LSTE_29545_006_13SDD_20230921T232326_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_006_13SDD_20230921T232326_0712_02/ECOv002_L2T_LSTE_29545_006_13SDD_20230921T232326_0712_02_cloud.tif",
+      "bytes": 36550,
+      "sha256": "d3920fd6c3e532d225027a8eedb73b5ded754564c2ee0305100be6889f7449f2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29545,
+      "asset": "ECOv002_L2T_LSTE_29545_006_13SED_20230921T232326_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_006_13SED_20230921T232326_0712_02/ECOv002_L2T_LSTE_29545_006_13SED_20230921T232326_0712_02_cloud.tif",
+      "bytes": 44474,
+      "sha256": "7d8d74ded1e436c348ffc55b1d44957bb18d9661bdb43eef51beb718b2127eb3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29545,
+      "asset": "ECOv002_L2T_LSTE_29545_006_13TDE_20230921T232326_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_006_13TDE_20230921T232326_0712_02/ECOv002_L2T_LSTE_29545_006_13TDE_20230921T232326_0712_02_cloud.tif",
+      "bytes": 15563,
+      "sha256": "3e7ed222e91056b75563d52c4d7b4df7b105517d392fb00f0e475d6910633f98",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29545,
+      "asset": "ECOv002_L2T_LSTE_29545_006_13TEE_20230921T232326_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_006_13TEE_20230921T232326_0712_02/ECOv002_L2T_LSTE_29545_006_13TEE_20230921T232326_0712_02_cloud.tif",
+      "bytes": 46008,
+      "sha256": "0174b954052b13dae38a9bdcc19c3fb6db21933f6ccc2d33f89cda2fcadbe5b8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29591,
+      "asset": "ECOv002_L2T_LSTE_29591_009_13SDD_20230924T223542_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_009_13SDD_20230924T223542_0712_02/ECOv002_L2T_LSTE_29591_009_13SDD_20230924T223542_0712_02_cloud.tif",
+      "bytes": 24852,
+      "sha256": "7702cd61d3f243e589e3842b9d32a233ddd4da3909e379d55f260beb54b52478",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29591,
+      "asset": "ECOv002_L2T_LSTE_29591_009_13SED_20230924T223542_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_009_13SED_20230924T223542_0712_02/ECOv002_L2T_LSTE_29591_009_13SED_20230924T223542_0712_02_cloud.tif",
+      "bytes": 23482,
+      "sha256": "fb5732dcdc1efa3c8a6ab474deb0b786c00ab53886260bce8acc8b486d8c59fb",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29591,
+      "asset": "ECOv002_L2T_LSTE_29591_009_13TDE_20230924T223542_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_009_13TDE_20230924T223542_0712_02/ECOv002_L2T_LSTE_29591_009_13TDE_20230924T223542_0712_02_cloud.tif",
+      "bytes": 37409,
+      "sha256": "85bbad8a1c57a3bdf8300527269f817acd3e356a3a1bc7fcd28dcce60f157ee0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29591,
+      "asset": "ECOv002_L2T_LSTE_29591_010_13SDD_20230924T223634_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_010_13SDD_20230924T223634_0712_02/ECOv002_L2T_LSTE_29591_010_13SDD_20230924T223634_0712_02_cloud.tif",
+      "bytes": 5958,
+      "sha256": "13b1501946915424e72dc139c1c32c189a607c35c8d1f797055c564f0e2ba042",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29591,
+      "asset": "ECOv002_L2T_LSTE_29591_010_13SED_20230924T223634_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_010_13SED_20230924T223634_0712_02/ECOv002_L2T_LSTE_29591_010_13SED_20230924T223634_0712_02_cloud.tif",
+      "bytes": 6730,
+      "sha256": "2d5efbda189cd41d36fade1b9210c7ed2afd4dd0e3ddc0bc8499f949e1ce462f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29591,
+      "asset": "ECOv002_L2T_LSTE_29591_010_13TDE_20230924T223634_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_010_13TDE_20230924T223634_0712_02/ECOv002_L2T_LSTE_29591_010_13TDE_20230924T223634_0712_02_cloud.tif",
+      "bytes": 40639,
+      "sha256": "a44b4cd131108782f5bb811b17b8d1b6bdca33bc237f27bddaad2c60bdf58cde",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "denver",
+      "orbit": 29591,
+      "asset": "ECOv002_L2T_LSTE_29591_010_13TEE_20230924T223634_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_010_13TEE_20230924T223634_0712_02/ECOv002_L2T_LSTE_29591_010_13TEE_20230924T223634_0712_02_cloud.tif",
+      "bytes": 50181,
+      "sha256": "ac40d957cd7486a6ee4133da53ffd6cb393cd239abd0531bfc51f6792a5d6033",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

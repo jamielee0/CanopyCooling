@@ -1,0 +1,370 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "portland",
+      "orbit": 27825,
+      "acquisition_utc": "2023-06-03T02:06:46.620Z",
+      "solar_hour": 17.975118540594295,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "portland",
+      "orbit": 27871,
+      "acquisition_utc": "2023-06-06T01:16:30.672Z",
+      "solar_hour": 17.129077300201068,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "portland",
+      "orbit": 27886,
+      "acquisition_utc": "2023-06-07T00:27:25.471Z",
+      "solar_hour": 16.308152281512587,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "portland",
+      "orbit": 28585,
+      "acquisition_utc": "2023-07-22T01:43:49.331Z",
+      "solar_hour": 17.447453760105283,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "portland",
+      "orbit": 28616,
+      "acquisition_utc": "2023-07-24T01:43:39.779Z",
+      "solar_hour": 17.44290024017238,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "portland",
+      "orbit": 28631,
+      "acquisition_utc": "2023-07-25T00:54:39.471Z",
+      "solar_hour": 16.640049653991326,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 68,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.22666666666666666,
+      "clear_fraction_of_all_sample_points": 0.22666666666666666,
+      "failed_assets": 0
+    },
+    {
+      "city": "portland",
+      "orbit": 28646,
+      "acquisition_utc": "2023-07-26T00:07:01.664Z",
+      "solar_hour": 15.831241062212074,
+      "sample_points": 300,
+      "observed_points": 294,
+      "clear_points": 294,
+      "sample_point_coverage_fraction": 0.98,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.98,
+      "failed_assets": 0
+    },
+    {
+      "city": "portland",
+      "orbit": 28771,
+      "acquisition_utc": "2023-08-03T01:44:41.074Z",
+      "solar_hour": 17.461260160797824,
+      "sample_points": 300,
+      "observed_points": 294,
+      "clear_points": 294,
+      "sample_point_coverage_fraction": 0.98,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.98,
+      "failed_assets": 0
+    },
+    {
+      "city": "portland",
+      "orbit": 28802,
+      "acquisition_utc": "2023-08-05T01:45:17.621Z",
+      "solar_hour": 17.473581284378383,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 284,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9466666666666667,
+      "clear_fraction_of_all_sample_points": 0.9466666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "portland",
+      "orbit": 29531,
+      "acquisition_utc": "2023-09-21T01:45:21.725Z",
+      "solar_hour": 17.699015010861878,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 235,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.7833333333333333,
+      "clear_fraction_of_all_sample_points": 0.7833333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "portland",
+      "orbit": 29562,
+      "acquisition_utc": "2023-09-23T01:46:46.636Z",
+      "solar_hour": 17.727793257615012,
+      "sample_points": 300,
+      "observed_points": 22,
+      "clear_points": 22,
+      "sample_point_coverage_fraction": 0.07333333333333333,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.07333333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "portland",
+      "orbit": 29577,
+      "acquisition_utc": "2023-09-24T00:58:31.036Z",
+      "solar_hour": 16.929556344426675,
+      "sample_points": 300,
+      "observed_points": 22,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 0.07333333333333333,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "portland",
+      "orbit": 27825,
+      "asset": "ECOv002_L2T_LSTE_27825_001_10TDR_20230603T020646_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27825_001_10TDR_20230603T020646_0711_02/ECOv002_L2T_LSTE_27825_001_10TDR_20230603T020646_0711_02_cloud.tif",
+      "bytes": 6299,
+      "sha256": "24b17757b9ac8f26d3b2323fdab5f67d136ec9d1e8d0bdc509581083962cd452",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 27825,
+      "asset": "ECOv002_L2T_LSTE_27825_001_10TER_20230603T020646_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27825_001_10TER_20230603T020646_0711_02/ECOv002_L2T_LSTE_27825_001_10TER_20230603T020646_0711_02_cloud.tif",
+      "bytes": 5712,
+      "sha256": "0988e95934e40837cef8ffb93e0ade3a20d964067e7927414c2b4daf1872a1d5",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 27871,
+      "asset": "ECOv002_L2T_LSTE_27871_010_10TDR_20230606T011630_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27871_010_10TDR_20230606T011630_0711_02/ECOv002_L2T_LSTE_27871_010_10TDR_20230606T011630_0711_02_cloud.tif",
+      "bytes": 28076,
+      "sha256": "31aa0451b467a1a75093603964ccfbe74c095a22ba21a6f8bf2434b267317c59",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 27871,
+      "asset": "ECOv002_L2T_LSTE_27871_010_10TER_20230606T011630_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27871_010_10TER_20230606T011630_0711_02/ECOv002_L2T_LSTE_27871_010_10TER_20230606T011630_0711_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "9c62e5bb306cfdbd46092e79f9f932393dd4aecf3273102aa7727af5f2d57600",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 27886,
+      "asset": "ECOv002_L2T_LSTE_27886_006_10TDR_20230607T002725_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27886_006_10TDR_20230607T002725_0712_01/ECOv002_L2T_LSTE_27886_006_10TDR_20230607T002725_0712_01_cloud.tif",
+      "bytes": 7179,
+      "sha256": "5737aebfe1a571896d640cf69693b68b67066598e8d103792a2db3f3e4e764b7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 27886,
+      "asset": "ECOv002_L2T_LSTE_27886_006_10TER_20230607T002725_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27886_006_10TER_20230607T002725_0712_01/ECOv002_L2T_LSTE_27886_006_10TER_20230607T002725_0712_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "9c62e5bb306cfdbd46092e79f9f932393dd4aecf3273102aa7727af5f2d57600",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 28585,
+      "asset": "ECOv002_L2T_LSTE_28585_006_10TDR_20230722T014349_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28585_006_10TDR_20230722T014349_0712_02/ECOv002_L2T_LSTE_28585_006_10TDR_20230722T014349_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "88dfa6646f6479d21df3841cfbdfb63981c589b7c0b374f560dfab67fb279ea5",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 28585,
+      "asset": "ECOv002_L2T_LSTE_28585_006_10TER_20230722T014349_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28585_006_10TER_20230722T014349_0712_02/ECOv002_L2T_LSTE_28585_006_10TER_20230722T014349_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "9c62e5bb306cfdbd46092e79f9f932393dd4aecf3273102aa7727af5f2d57600",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 28616,
+      "asset": "ECOv002_L2T_LSTE_28616_005_10TDR_20230724T014339_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28616_005_10TDR_20230724T014339_0712_02/ECOv002_L2T_LSTE_28616_005_10TDR_20230724T014339_0712_02_cloud.tif",
+      "bytes": 7852,
+      "sha256": "4ce69d2902ff239207754d7456034cbd6e1da3c6b7e244de6fdda5a72f145c20",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 28616,
+      "asset": "ECOv002_L2T_LSTE_28616_005_10TER_20230724T014339_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28616_005_10TER_20230724T014339_0712_02/ECOv002_L2T_LSTE_28616_005_10TER_20230724T014339_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "9c62e5bb306cfdbd46092e79f9f932393dd4aecf3273102aa7727af5f2d57600",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 28631,
+      "asset": "ECOv002_L2T_LSTE_28631_005_10TDR_20230725T005439_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28631_005_10TDR_20230725T005439_0712_02/ECOv002_L2T_LSTE_28631_005_10TDR_20230725T005439_0712_02_cloud.tif",
+      "bytes": 8239,
+      "sha256": "468e5ae2b1ad2b1c14dcbf423576312f354b3b8fb480199fd3cb9ed96652bf11",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 28631,
+      "asset": "ECOv002_L2T_LSTE_28631_006_10TDR_20230725T005531_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28631_006_10TDR_20230725T005531_0712_02/ECOv002_L2T_LSTE_28631_006_10TDR_20230725T005531_0712_02_cloud.tif",
+      "bytes": 48314,
+      "sha256": "b470d70783905e080771fb91f82e1812e89c408613e75da3de25413f086c2dad",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 28631,
+      "asset": "ECOv002_L2T_LSTE_28631_006_10TER_20230725T005531_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28631_006_10TER_20230725T005531_0712_02/ECOv002_L2T_LSTE_28631_006_10TER_20230725T005531_0712_02_cloud.tif",
+      "bytes": 59546,
+      "sha256": "1be7b4c58182400b43bbb954e78903aaf0118b5f414a7d8de82f92e303a08cbb",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 28646,
+      "asset": "ECOv002_L2T_LSTE_28646_002_10TER_20230726T000701_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28646_002_10TER_20230726T000701_0712_02/ECOv002_L2T_LSTE_28646_002_10TER_20230726T000701_0712_02_cloud.tif",
+      "bytes": 12545,
+      "sha256": "4132b4d394cb8ce667b5b7481d3370d9057361dd6052776b18845e3cb758c8c6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 28771,
+      "asset": "ECOv002_L2T_LSTE_28771_010_10TER_20230803T014441_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28771_010_10TER_20230803T014441_0712_02/ECOv002_L2T_LSTE_28771_010_10TER_20230803T014441_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "9c62e5bb306cfdbd46092e79f9f932393dd4aecf3273102aa7727af5f2d57600",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 28802,
+      "asset": "ECOv002_L2T_LSTE_28802_010_10TDR_20230805T014517_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28802_010_10TDR_20230805T014517_0712_02/ECOv002_L2T_LSTE_28802_010_10TDR_20230805T014517_0712_02_cloud.tif",
+      "bytes": 14570,
+      "sha256": "b6ad19feeccbe9f166f9fe40bf3add2cab13dae0a558a7a64d69c6f7d5738762",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 28802,
+      "asset": "ECOv002_L2T_LSTE_28802_010_10TER_20230805T014517_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28802_010_10TER_20230805T014517_0712_02/ECOv002_L2T_LSTE_28802_010_10TER_20230805T014517_0712_02_cloud.tif",
+      "bytes": 29580,
+      "sha256": "75fd1086b84fdf5ba2bd11746132c11e8189ef0802a2c4f9c320e8fe7341a355",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 29531,
+      "asset": "ECOv002_L2T_LSTE_29531_006_10TDR_20230921T014521_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29531_006_10TDR_20230921T014521_0712_02/ECOv002_L2T_LSTE_29531_006_10TDR_20230921T014521_0712_02_cloud.tif",
+      "bytes": 36382,
+      "sha256": "98a4ad5e19abfb9a00fe8a6de9db25971e0f85e738f0a88f49bd5457ec1a3892",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 29531,
+      "asset": "ECOv002_L2T_LSTE_29531_006_10TER_20230921T014521_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29531_006_10TER_20230921T014521_0712_02/ECOv002_L2T_LSTE_29531_006_10TER_20230921T014521_0712_02_cloud.tif",
+      "bytes": 5854,
+      "sha256": "65bc98b1f66465234dd92f798b7b0eafd85aa9a640f806c1f12ec0601b9429dc",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 29531,
+      "asset": "ECOv002_L2T_LSTE_29531_007_10TDR_20230921T014613_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29531_007_10TDR_20230921T014613_0712_02/ECOv002_L2T_LSTE_29531_007_10TDR_20230921T014613_0712_02_cloud.tif",
+      "bytes": 28272,
+      "sha256": "ef1dcdab23ffbd4037d1b9e78dec4c232bc22fa82fc9955246997c2a0a82c49b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 29531,
+      "asset": "ECOv002_L2T_LSTE_29531_007_10TER_20230921T014613_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29531_007_10TER_20230921T014613_0712_02/ECOv002_L2T_LSTE_29531_007_10TER_20230921T014613_0712_02_cloud.tif",
+      "bytes": 67109,
+      "sha256": "66373513729cbb2d58f0ec05cc61272a618ceda9cc945cc84fa4813af3e52bb0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 29562,
+      "asset": "ECOv002_L2T_LSTE_29562_007_10TDR_20230923T014646_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29562_007_10TDR_20230923T014646_0712_02/ECOv002_L2T_LSTE_29562_007_10TDR_20230923T014646_0712_02_cloud.tif",
+      "bytes": 9082,
+      "sha256": "c3dc28031998382d465af1f1866492acd996bd8bbcfc3476e6b12a76f2483596",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "portland",
+      "orbit": 29577,
+      "asset": "ECOv002_L2T_LSTE_29577_005_10TDR_20230924T005831_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29577_005_10TDR_20230924T005831_0712_02/ECOv002_L2T_LSTE_29577_005_10TDR_20230924T005831_0712_02_cloud.tif",
+      "bytes": 7245,
+      "sha256": "1dd05dd7413fb91ca8c1fab6feeff6f1786974c240b4923f88455f1c44c7a710",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

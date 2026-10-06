@@ -1,0 +1,11 @@
+{
+  "updated_utc": "2026-09-23T20:44:08.170363+00:00",
+  "repository": "https://github.com/jamielee0/CanopyCooling",
+  "branch": "main",
+  "commit": "d3d1ea53315ae6e6dad8912c02f97da6c2ad358d",
+  "remote_commit_verified": true,
+  "latest_change": "Completed Phoenix registration and common-cell computations; empirical effect comparisons sealed",
+  "report_url": "https://github.com/jamielee0/CanopyCooling/tree/main/review/v6.2-2023-pilot/checks/phoenix_robustness_20260923",
+  "main_pilot": "11 Phoenix and 5 Atlanta, all 2023",
+  "validation": "35 network-free tests passed; 65 paired empirical robustness fits; 65,000 estimable bootstrap draws; 120 review file checksums verified."
+}
