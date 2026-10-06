@@ -1,0 +1,287 @@
+[
+  {
+    "city": "phoenix",
+    "geoid": "69184",
+    "name": "Phoenix--Mesa--Scottsdale, AZ Urban Area",
+    "epsg": 32612,
+    "longitude": -111.96166028567336,
+    "latitude": 33.50162160375075,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -112.46039,
+      33.11814,
+      -111.46917,
+      33.89293
+    ]
+  },
+  {
+    "city": "los_angeles",
+    "geoid": "51445",
+    "name": "Los Angeles--Long Beach--Anaheim, CA Urban Area",
+    "epsg": 32611,
+    "longitude": -118.1235725425828,
+    "latitude": 33.98459661872002,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -118.91591,
+      33.564,
+      -117.44495,
+      34.33349
+    ]
+  },
+  {
+    "city": "atlanta",
+    "geoid": "03817",
+    "name": "Atlanta, GA Urban Area",
+    "epsg": 32616,
+    "longitude": -84.33636429491241,
+    "latitude": 33.83658062184222,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -84.89893,
+      33.27694,
+      -83.78587,
+      34.38598
+    ]
+  },
+  {
+    "city": "minneapolis_st_paul",
+    "geoid": "57628",
+    "name": "Minneapolis--St. Paul, MN Urban Area",
+    "epsg": 32615,
+    "longitude": -93.28390554320124,
+    "latitude": 44.97449046439236,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -93.70678,
+      44.59457,
+      -92.86252,
+      45.36454
+    ]
+  },
+  {
+    "city": "miami",
+    "geoid": "56602",
+    "name": "Miami--Fort Lauderdale, FL Urban Area",
+    "epsg": 32617,
+    "longitude": -80.22803155962931,
+    "latitude": 26.196759690112003,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -80.52613,
+      25.41116,
+      -80.03116,
+      26.99423
+    ]
+  },
+  {
+    "city": "charlotte",
+    "geoid": "15670",
+    "name": "Charlotte, NC--SC Urban Area",
+    "epsg": 32617,
+    "longitude": -80.80721477001738,
+    "latitude": 35.22700786644774,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -81.12465699982953,
+      34.914085000005656,
+      -80.4177699997252,
+      35.722546999727804
+    ]
+  },
+  {
+    "city": "raleigh",
+    "geoid": "73261",
+    "name": "Raleigh, NC Urban Area",
+    "epsg": 32617,
+    "longitude": -78.67759764707945,
+    "latitude": 35.7801951499313,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -78.948460999707,
+      35.50157199973703,
+      -78.4185050002715,
+      36.08486099967884
+    ]
+  },
+  {
+    "city": "washington",
+    "geoid": "92242",
+    "name": "Washington--Arlington, DC--VA--MD Urban Area",
+    "epsg": 32618,
+    "longitude": -77.18202298594026,
+    "latitude": 38.89546246024045,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -77.67975999960743,
+      38.40071999984194,
+      -76.67470800015327,
+      39.3000399999743
+    ]
+  },
+  {
+    "city": "baltimore",
+    "geoid": "04843",
+    "name": "Baltimore, MD Urban Area",
+    "epsg": 32618,
+    "longitude": -76.64281516179189,
+    "latitude": 39.2362535314018,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -77.0015330003463,
+      38.869302999663034,
+      -76.338123000231,
+      39.53077100029794
+    ]
+  },
+  {
+    "city": "philadelphia",
+    "geoid": "69076",
+    "name": "Philadelphia, PA--NJ--DE--MD Urban Area",
+    "epsg": 32618,
+    "longitude": -75.28926184886859,
+    "latitude": 39.987651027512385,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -76.029041999637,
+      39.53882399987679,
+      -74.66321900029942,
+      40.4808270002348
+    ]
+  },
+  {
+    "city": "new_york",
+    "geoid": "63217",
+    "name": "New York--Jersey City--Newark, NY--NJ Urban Area",
+    "epsg": 32618,
+    "longitude": -73.94804714519115,
+    "latitude": 40.71272096228758,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -74.875861999574,
+      39.50821599996485,
+      -72.26625300001906,
+      41.48055599993218
+    ]
+  },
+  {
+    "city": "boston",
+    "geoid": "09271",
+    "name": "Boston, MA--NH Urban Area",
+    "epsg": 32619,
+    "longitude": -71.14243832696341,
+    "latitude": 42.38037213764387,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -71.66762699997967,
+      41.76170100031678,
+      -70.5906529997784,
+      42.9485219997068
+    ]
+  },
+  {
+    "city": "chicago",
+    "geoid": "16264",
+    "name": "Chicago, IL--IN Urban Area",
+    "epsg": 32616,
+    "longitude": -87.90768201577157,
+    "latitude": 41.82939723040111,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -88.65276400003364,
+      41.3453090001586,
+      -87.00934399966967,
+      42.4937880000084
+    ]
+  },
+  {
+    "city": "houston",
+    "geoid": "40429",
+    "name": "Houston, TX Urban Area",
+    "epsg": 32615,
+    "longitude": -95.40204108295423,
+    "latitude": 29.773907917056636,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -95.94410200037818,
+      29.365101999973614,
+      -94.87227699965504,
+      30.2174470000167
+    ]
+  },
+  {
+    "city": "dallas",
+    "geoid": "22042",
+    "name": "Dallas--Fort Worth--Arlington, TX Urban Area",
+    "epsg": 32614,
+    "longitude": -96.97281838544404,
+    "latitude": 32.81211895629158,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -97.61701899966482,
+      32.29955600010325,
+      -96.34045400024436,
+      33.15814399965606
+    ]
+  },
+  {
+    "city": "denver",
+    "geoid": "23527",
+    "name": "Denver--Aurora, CO Urban Area",
+    "epsg": 32613,
+    "longitude": -104.95962769954484,
+    "latitude": 39.73242011478771,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -105.24801499997467,
+      39.4784790001278,
+      -104.65999899995938,
+      40.03310700011846
+    ]
+  },
+  {
+    "city": "sacramento",
+    "geoid": "77068",
+    "name": "Sacramento, CA Urban Area",
+    "epsg": 32610,
+    "longitude": -121.33205948281795,
+    "latitude": 38.63725967537845,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -121.58323099981178,
+      38.36136800013541,
+      -120.88784500003429,
+      38.911900000201385
+    ]
+  },
+  {
+    "city": "portland",
+    "geoid": "71317",
+    "name": "Portland, OR--WA Urban Area",
+    "epsg": 32610,
+    "longitude": -122.64599747038724,
+    "latitude": 45.51566878269709,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -123.15363600035785,
+      45.17036600003953,
+      -122.30616799967147,
+      45.80274499994353
+    ]
+  },
+  {
+    "city": "seattle",
+    "geoid": "80389",
+    "name": "Seattle--Tacoma, WA Urban Area",
+    "epsg": 32610,
+    "longitude": -122.27986601799336,
+    "latitude": 47.463051052739594,
+    "domain_source": "Census TIGERweb urban areas",
+    "bounds": [
+      -122.73168499999592,
+      47.00792199975225,
+      -121.95154899972198,
+      48.035194000096716
+    ]
+  }
+]

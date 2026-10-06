@@ -1,0 +1,23 @@
+{
+  "record_date_local": "2026-10-06",
+  "recorded_utc": "2026-10-06T19:32:46.489030+00:00",
+  "request": "lets not keep it sealed then? Can you do the next steps?",
+  "new_effect_display_authorized": true,
+  "allowed_runs": [
+    "spatial_scale_review_20261004",
+    "quadratic_step5_20261005",
+    "step7_window_20261005"
+  ],
+  "scope": "Current16pass2023 pilot review, figures, summary tables and integrated report",
+  "prior_sealing_instruction_superseded": true,
+  "display_before_tolerance_authorized": true,
+  "scale_tolerance": null,
+  "formal_scale_agreement_ruling": false,
+  "outside_scope": [
+    "other-year results",
+    "old original time-contrast files",
+    "new thermal acquisition",
+    "external sending"
+  ],
+  "full_checksum_inventory": "in progress; compare each opened result against its preexisting completion manifest"
+}

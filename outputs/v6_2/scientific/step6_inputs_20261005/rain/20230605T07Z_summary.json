@@ -1,0 +1,33 @@
+{
+  "time": "2023-06-05T07:00:00+00:00",
+  "rows": [
+    {
+      "city": "atlanta",
+      "timestamp_utc": "2023-06-05T07:00:00+00:00",
+      "n_domain_cells": 6530,
+      "valid_cells": 6530,
+      "complete_domain": true,
+      "mean_mm": 0.0,
+      "missing_cells": 0
+    },
+    {
+      "city": "phoenix",
+      "timestamp_utc": "2023-06-05T07:00:00+00:00",
+      "n_domain_cells": 2817,
+      "valid_cells": 2817,
+      "complete_domain": true,
+      "mean_mm": 0.0,
+      "missing_cells": 0
+    }
+  ],
+  "download": {
+    "url": "https://mtarchive.geol.iastate.edu/2023/06/05/mrms/ncep/MultiSensor_QPE_01H_Pass2/MultiSensor_QPE_01H_Pass2_00.00_20230605-070000.grib2.gz",
+    "status": 200,
+    "bytes": 385184,
+    "sha256": "fbb91773bf5e1292fd16f3d84e632e073bcef1c715480226eaaf1ec24f83c3dd",
+    "retrieved_utc": "2026-10-05T20:23:13.336561+00:00",
+    "etag": "\"5e0a0-5fd5d424e52f2\"",
+    "last_modified": "Mon, 05 Jun 2023 07:57:49 GMT",
+    "byte_range": null
+  }
+}

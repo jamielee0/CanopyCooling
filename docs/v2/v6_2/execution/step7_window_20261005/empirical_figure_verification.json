@@ -1,0 +1,23 @@
+{
+  "sealed_figures": [
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_1km_comparisons_SEALED.png",
+      "sha256": "1c2711543eba645ff00af2c85ed8393aa3eb6a728d8fe50ecfd2215e266429ed",
+      "pixels": [
+        1620,
+        900
+      ],
+      "visually_reviewed": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_8km_comparisons_SEALED.png",
+      "sha256": "dabc5a48510c45fab8cfb127300408517796afac616868e0e18476064190961f",
+      "pixels": [
+        1620,
+        900
+      ],
+      "visually_reviewed": false
+    }
+  ],
+  "effect_visual_review": "DEFERRED_UNDER_SEALING"
+}

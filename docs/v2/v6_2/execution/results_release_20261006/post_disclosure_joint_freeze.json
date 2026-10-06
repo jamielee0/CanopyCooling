@@ -1,0 +1,123 @@
+{
+  "request": "lets not keep it sealed then? Can you do the next steps?",
+  "recorded_utc": "2026-10-06T19:44:38.180666+00:00",
+  "reason": "Released point summaries show time-contrast sensitivity to footprint and model; compute the missing joint uncertainty before final synthesis",
+  "timing": "post-disclosure exploratory follow-up; not blinded or preplanned before effect review",
+  "scope": "existing five dates, original linear/common linear/original quadratic; same six controls and old reference; no new data or model selection",
+  "supersedes_release_scope_no_new_computation_only_for_this_check": true,
+  "new_mean_model_specifications": false,
+  "new_joint_bootstrap": true,
+  "data_link_target": "/Users/jmlee/Documents/Documents - Jamie\u2019s Mac mini/TreeProject/project/data",
+  "native_inputs": [
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet",
+      "sha256": "f0316cbd2288a293a3d8167476347ff4e6bc771ae7350921a728a16f6b182ea9"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_native_cells_SEALED.parquet",
+      "sha256": "47b712521ba258e29b751d5f82fe0f5c9b5f600c2c43af930dfdc91ffe406798"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_native_cells_SEALED.parquet",
+      "sha256": "c99e449075d720f2c06ff4755ba55bd7204a3556ea5a5adef4bfc74795b17bc5"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_native_cells_SEALED.parquet",
+      "sha256": "4cdeb2ceaca6d37d6b1b63ffceefb6134fc7ec07dc576db641af778fd9e6ea58"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_native_cells_SEALED.parquet",
+      "sha256": "cfd98b1f2e726b22fa7500c41f04690c39e7a7ec764b24742e0215034d91f6a2"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_native_cells_SEALED.parquet",
+      "sha256": "b550e55bbb5aeb6ea04fe33d3fad11e3ba4d5bcaae24fe825e1dfa625a2179f4"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_native_cells_SEALED.parquet",
+      "sha256": "f41faa1bec1bcffd7372cf8b96c5e7483d414670ac48c33cdc0bedafaf9c9548"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_native_cells_SEALED.parquet",
+      "sha256": "116793cc2d9c41feb8acdc7b3e23c1452f5bd434d96bfb7858dca1e3e075da26"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_native_cells_SEALED.parquet",
+      "sha256": "d3a46602378ab9b36f589264bfed1c6617f1bccfc961c89fd7a702d6f941405a"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_native_cells_SEALED.parquet",
+      "sha256": "033782207ae1fe2eff6b759f158d7d6205599edd4e37cf96ffb22a2fd9b4d541"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_native_cells_SEALED.parquet",
+      "sha256": "6e9c255eda75c6ddcbadda2e290389ed205d9419b51ac160d787036b12167d44"
+    }
+  ],
+  "selected_orbits": [
+    27963,
+    28192,
+    28828,
+    28909,
+    29092
+  ],
+  "weights": [
+    0.5,
+    -0.5,
+    -0.25,
+    0.5,
+    -0.25
+  ],
+  "common_definition": "exact all-eleven intersection196090 cells, unchanged from Step3",
+  "reference": {
+    "f0": 0.028509538620710373,
+    "f1": 0.12850953862071038,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "rule": "equal_city_average_of_equal_pass_medians; covariance_reference_rows_within_support_blocks",
+    "reference_rows": [
+      241990,
+      257185,
+      278368,
+      278368,
+      206134,
+      184256,
+      195123,
+      182576,
+      96379,
+      81083
+    ],
+    "reference_blocks": [
+      1375,
+      1387,
+      1479,
+      1479,
+      1174,
+      2262,
+      2397,
+      2254,
+      1358,
+      1174
+    ]
+  },
+  "groups_km": [
+    1,
+    8
+  ],
+  "replicates": 1000,
+  "seeds": {
+    "1": 20261707,
+    "8": 20261714
+  },
+  "basis": "quadratic f\u00b2-(f0+f1)f formed from raw squared canopy; algebraically identical finite contrast; all controls protected by full-rank checks",
+  "draw_rule": "same physical-union multiplicities across all dates and all three variants; failures retained without replacement",
+  "new_effect_display_authorized": true,
+  "scale_ruling": null,
+  "code_sha256": {
+    "docs/v2/v6_2/execution/results_release_20261006/joint_followup.py": "e8a8cd8fea852a3b9e5cdaff31161012d15f09d8d2a03d05ad854b5a2f9a00d6",
+    "src/v6_2_advance/released_window_sensitivity.py": "69b1b73b67be11f8d14f6460c39a9f48256475c115f5a8f82017b34587a2cba2",
+    "src/v6_2_advance/window_uncertainty.py": "0b689227316ac93ac645741de0289255156f5ce4d3d4a0513707a8fbd89cefb4",
+    "src/v6_2_advance/spatial_review.py": "7111f6cf7cd881526911de572a61daf384edc4a394641f494d1d9a82b069434d",
+    "tests/v6_2_advance/test_released_window_sensitivity.py": "8a3ba64648fcc96512df5ab0dbc28fcc56eb6e6116499fc2ba5f15d0c6d53e5b"
+  }
+}

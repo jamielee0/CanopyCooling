@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "known_answer_tests": 13,
+  "frozen_inputs_verified": 22,
+  "frozen_code_files_verified": 11,
+  "original_points_recovered": 16,
+  "joint_pass_draws": 32000,
+  "estimable_pass_draws": 32000,
+  "precision_rows": 56,
+  "supported_window_and_influence_configurations": 14,
+  "unsupported_date_deletions": 3,
+  "development_datasets": 21600,
+  "production_datasets": 432000,
+  "production_scenarios": 216,
+  "methods": 6,
+  "oracle_mean_population_coverage": 0.9505810185185184,
+  "spatial_only_mean_realized_date_coverage": 0.9505347222222222,
+  "empirical_Atlanta_contrast": false,
+  "new_effect_display": false,
+  "general_summer_interval": false,
+  "scale_ruling": null,
+  "verification_code_sha256": "9a1417ca6c69aaf65b21af648f0f24170bd68720864fab5f3b1ab777e7fd9e1b"
+}

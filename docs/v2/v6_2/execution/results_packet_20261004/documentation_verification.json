@@ -1,0 +1,21 @@
+{
+  "status": "PASSED",
+  "yaml_parse_and_duplicate_keys": "passed",
+  "unchanged_scientific_specification": true,
+  "allowed_yaml_differences": "status, latest request/snapshot, assembly flag, Step2 completion section only",
+  "six_step1_documents_archived_exactly": true,
+  "archive_hashes_match_step1_manifest": true,
+  "cross_document_step2_and_scope": true,
+  "new_local_links_exist": true,
+  "offline_document_addition_previews": [
+    "docs/v2/v6_2/execution/results_packet_20261004/qa/document_01_page_01.png",
+    "docs/v2/v6_2/execution/results_packet_20261004/qa/document_02_page_01.png",
+    "docs/v2/v6_2/execution/results_packet_20261004/qa/document_03_page_01.png",
+    "docs/v2/v6_2/execution/results_packet_20261004/qa/document_04_page_01.png",
+    "docs/v2/v6_2/execution/results_packet_20261004/qa/document_05_page_01.png",
+    "docs/v2/v6_2/execution/results_packet_20261004/qa/document_06_page_01.png"
+  ],
+  "native_Codex_preview_inspected": false,
+  "offline_document_previews_visually_inspected": true,
+  "visual_result": "All six document addition previews readable; sample, access boundaries, gaps, next step and status consistent"
+}

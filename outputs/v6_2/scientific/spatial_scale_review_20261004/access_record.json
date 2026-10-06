@@ -1,0 +1,969 @@
+{
+  "created_utc": "2026-10-04T19:47:37.246122+00:00",
+  "user_authority": {
+    "request": "yes do the next step",
+    "plan_step": 3,
+    "user_tolerance_reply": "Not yet\u2014keep new effects sealed",
+    "internal_computation_authorized": true,
+    "new_effect_display_authorized": false
+  },
+  "accesses": [
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/precision.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/common_cell_support.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/registration_support.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/matched_support_comparison_validation.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/matched_support_comparison_freeze.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/execution_freeze.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/scientific/scale_diagnostics_20260919/frozen_numeric_references.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/precision.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_atlanta/precision.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_phoenix/precision.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27835_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27835_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27835_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27835_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27835_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27835_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27835_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27896_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27896_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27896_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27896_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27896_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27896_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27896_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27916_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27916_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27916_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27916_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27916_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27916_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27916_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28145_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28145_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28145_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28145_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28145_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28145_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28145_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28598_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28598_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28598_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28598_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28598_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28598_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28598_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/27963_common_cells_all11_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_registration_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_registration_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_registration_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_registration_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28024_common_cells_all11_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_registration_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_registration_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_registration_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_registration_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_common_cells_all11_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_common_cells_all11_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28706_common_cells_all11_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_registration_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_registration_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_registration_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_registration_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28828_common_cells_all11_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_registration_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_registration_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_registration_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_registration_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28909_common_cells_all11_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_registration_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_registration_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_registration_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_registration_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_common_cells_all11_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_common_cells_all11_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_common_cells_all11_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_native_cells_SEALED.parquet",
+      "purpose": "internal_paired_outcome_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_primary_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_common_cells_all11_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_spatial_8km_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/registration_matched_support_comparisons_SEALED.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/28085_baseline_rebuild_validation.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/28192_baseline_rebuild_validation.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/28970_baseline_rebuild_validation.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/29092_baseline_rebuild_validation.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/29545_baseline_rebuild_validation.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/29606_baseline_rebuild_validation.json",
+      "purpose": "record_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "purpose": "internal_sealed_model_and_draw_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_phoenix/residual_spatial_diagnostics.csv",
+      "purpose": "table_read"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_atlanta/residual_spatial_diagnostics.csv",
+      "purpose": "table_read"
+    }
+  ],
+  "public_outputs": "nonthermal support, provenance and precision only",
+  "new_effects": "sealed files; not opened in preview or sent to user",
+  "time_contrast_files_opened": [],
+  "absolute_thermal_access": "cached original T/M/emissivity for paired point/draw reconstruction and fixed-reference diagnostics; no raw raster",
+  "raw_inputs_and_old_models_modified": false
+}

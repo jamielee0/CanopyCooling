@@ -1,0 +1,1346 @@
+[
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.3379081934829742,
+      0.35140952433391703
+    ],
+    "SE": [
+      0.006141813220214071,
+      0.005844186642413591
+    ],
+    "q025": [
+      0.32587464181429204,
+      0.3400853557187048
+    ],
+    "q975": [
+      0.3503866320961465,
+      0.3625614115273308
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.01350133085094285,
+      "SE": 0.0021561825414120024,
+      "q025": -0.017907974253653303,
+      "q975": -0.0095425572831698,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "atlanta",
+    "orbit": "27835",
+    "date": "2023-06-03",
+    "source_run_id": "pooled_pilot_20260919_atlanta",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 2262,
+      "reference_cells": 184256,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.3379081934829742,
+      0.35140952433391703
+    ],
+    "SE": [
+      0.013468850648950339,
+      0.013274122347025219
+    ],
+    "q025": [
+      0.3125679808050734,
+      0.32584330537353734
+    ],
+    "q975": [
+      0.3642200050769309,
+      0.37753867641500843
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.01350133085094285,
+      "SE": 0.004347691351495869,
+      "q025": -0.022155351043528462,
+      "q975": -0.005359890021051951,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "atlanta",
+    "orbit": "27835",
+    "date": "2023-06-03",
+    "source_run_id": "pooled_pilot_20260919_atlanta",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 2262,
+      "reference_cells": 184256,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.22822955145562673,
+      0.2323254178102161
+    ],
+    "SE": [
+      0.0042693772217049725,
+      0.003929215654131528
+    ],
+    "q025": [
+      0.21982997736926582,
+      0.22475373877316257
+    ],
+    "q975": [
+      0.23661842341663947,
+      0.24027788152568236
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.0040958663545893614,
+      "SE": 0.0016588269867963757,
+      "q025": -0.0071883662554552506,
+      "q975": -0.0007361047567385539,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "atlanta",
+    "orbit": "27896",
+    "date": "2023-06-07",
+    "source_run_id": "pooled_pilot_20260919_atlanta",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 2397,
+      "reference_cells": 195123,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.22822955145562673,
+      0.2323254178102161
+    ],
+    "SE": [
+      0.00867924591252313,
+      0.007953041945965113
+    ],
+    "q025": [
+      0.21032723227369818,
+      0.21691356321626926
+    ],
+    "q975": [
+      0.2452854986238697,
+      0.24820583185831993
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.0040958663545893614,
+      "SE": 0.004085209893897531,
+      "q025": -0.012176686002059608,
+      "q975": 0.0034550974351394035,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "atlanta",
+    "orbit": "27896",
+    "date": "2023-06-07",
+    "source_run_id": "pooled_pilot_20260919_atlanta",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 2397,
+      "reference_cells": 195123,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.09739955102293152,
+      0.07825741539738829
+    ],
+    "SE": [
+      0.0022975879629280366,
+      0.001866458504341686
+    ],
+    "q025": [
+      0.09315525225047301,
+      0.07479147676404949
+    ],
+    "q975": [
+      0.10204768170282072,
+      0.08201244203529115
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": 0.019142135625543233,
+      "SE": 0.000893306603219934,
+      "q025": 0.017394320801404215,
+      "q975": 0.020871117896557604,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "atlanta",
+    "orbit": "27916",
+    "date": "2023-06-08",
+    "source_run_id": "pooled_pilot_20260919_atlanta",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 2254,
+      "reference_cells": 182576,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.09739955102293152,
+      0.07825741539738829
+    ],
+    "SE": [
+      0.004845022551326529,
+      0.0039947863883910886
+    ],
+    "q025": [
+      0.08801538007625169,
+      0.07050807373926773
+    ],
+    "q975": [
+      0.10690422929008783,
+      0.08643547375396139
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": 0.019142135625543233,
+      "SE": 0.0014249506759886582,
+      "q025": 0.016363421676874153,
+      "q975": 0.022028011584749686,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "atlanta",
+    "orbit": "27916",
+    "date": "2023-06-08",
+    "source_run_id": "pooled_pilot_20260919_atlanta",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 2254,
+      "reference_cells": 182576,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.22180472456921052,
+      0.21093387538519437
+    ],
+    "SE": [
+      0.008929117018884852,
+      0.008353575461768183
+    ],
+    "q025": [
+      0.20431893557931538,
+      0.19544706798803446
+    ],
+    "q975": [
+      0.2393314874395992,
+      0.22725111499168235
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": 0.010870849184016151,
+      "SE": 0.003516223221622403,
+      "q025": 0.004035436974535898,
+      "q975": 0.01765974654181899,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "atlanta",
+    "orbit": "28145",
+    "date": "2023-06-23",
+    "source_run_id": "pooled_pilot_20260919_atlanta",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1358,
+      "reference_cells": 96379,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.22180472456921052,
+      0.21093387538519437
+    ],
+    "SE": [
+      0.011202615757565029,
+      0.011132493937561988
+    ],
+    "q025": [
+      0.19948643576415737,
+      0.18812509700881036
+    ],
+    "q975": [
+      0.24331360994930742,
+      0.23242214621981533
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": 0.010870849184016151,
+      "SE": 0.00467607109682075,
+      "q025": 0.0020459093911064908,
+      "q975": 0.019620957514516996,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "atlanta",
+    "orbit": "28145",
+    "date": "2023-06-23",
+    "source_run_id": "pooled_pilot_20260919_atlanta",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1358,
+      "reference_cells": 96379,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.16084550509140172,
+      0.13178631126783102
+    ],
+    "SE": [
+      0.005856147874331501,
+      0.006058991684594498
+    ],
+    "q025": [
+      0.14965820467798835,
+      0.12054943085290262
+    ],
+    "q975": [
+      0.17212854925239404,
+      0.14344394657781548
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": 0.029059193823570695,
+      "SE": 0.0021246087436019917,
+      "q025": 0.025124677029695355,
+      "q975": 0.03326345506666319,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "atlanta",
+    "orbit": "28598",
+    "date": "2023-07-22",
+    "source_run_id": "pooled_pilot_20260919_atlanta",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1174,
+      "reference_cells": 81083,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.16084550509140172,
+      0.13178631126783102
+    ],
+    "SE": [
+      0.00879972399130101,
+      0.009312313191459648
+    ],
+    "q025": [
+      0.14462252445379403,
+      0.114876234863074
+    ],
+    "q975": [
+      0.17847494136034117,
+      0.15094632305367953
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": 0.029059193823570695,
+      "SE": 0.002617005966607913,
+      "q025": 0.02389313333120508,
+      "q975": 0.034054123892531395,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "atlanta",
+    "orbit": "28598",
+    "date": "2023-07-22",
+    "source_run_id": "pooled_pilot_20260919_atlanta",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1174,
+      "reference_cells": 81083,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.8927882384070358,
+      0.9897390604974134
+    ],
+    "SE": [
+      0.017323052633300695,
+      0.016613196975874548
+    ],
+    "q025": [
+      0.858841473166384,
+      0.9581854966413943
+    ],
+    "q975": [
+      0.9265509322723752,
+      1.0237184616433666
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.09695082209037764,
+      "SE": 0.008304234754566674,
+      "q025": -0.1126757117928839,
+      "q975": -0.08080936998510518,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "27963",
+    "date": "2023-06-11",
+    "source_run_id": "pooled_pilot_20260919_phoenix",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1375,
+      "reference_cells": 241990,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.8927882384070358,
+      0.9897390604974134
+    ],
+    "SE": [
+      0.03318330643587323,
+      0.03595128962120152
+    ],
+    "q025": [
+      0.8286772127297739,
+      0.9197052500329974
+    ],
+    "q975": [
+      0.957974210277324,
+      1.0621248768283977
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.09695082209037764,
+      "SE": 0.01434421530520458,
+      "q025": -0.12407752962507218,
+      "q975": -0.06810794878960136,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "27963",
+    "date": "2023-06-11",
+    "source_run_id": "pooled_pilot_20260919_phoenix",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1375,
+      "reference_cells": 241990,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.2889166920433581,
+      1.4777414535059847
+    ],
+    "SE": [
+      0.032957491780397606,
+      0.03717003497459007
+    ],
+    "q025": [
+      1.2253448404914187,
+      1.4047395270815741
+    ],
+    "q975": [
+      1.3566533140486812,
+      1.5514680426557832
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.1888247614626266,
+      "SE": 0.009475539417477452,
+      "q025": -0.20570305397643762,
+      "q975": -0.17027500555785471,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28024",
+    "date": "2023-06-15",
+    "source_run_id": "pooled_pilot_20260919_phoenix",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1387,
+      "reference_cells": 257185,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.2889166920433581,
+      1.4777414535059847
+    ],
+    "SE": [
+      0.056141716940858524,
+      0.07363857370642572
+    ],
+    "q025": [
+      1.1799513861562099,
+      1.335704211313822
+    ],
+    "q975": [
+      1.407015808299596,
+      1.6311651999674326
+    ],
+    "estimable": 997,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.1888247614626266,
+      "SE": 0.025438494443300527,
+      "q025": -0.2406438105580688,
+      "q975": -0.1411568590115421,
+      "estimable": 997
+    },
+    "requested": 1000,
+    "failed": 3,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28024",
+    "date": "2023-06-15",
+    "source_run_id": "pooled_pilot_20260919_phoenix",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1387,
+      "reference_cells": 257185,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.3949452738610262,
+      1.5672843298294197
+    ],
+    "SE": [
+      0.03759581047859744,
+      0.043928024839000684
+    ],
+    "q025": [
+      1.3207200044174785,
+      1.4810819473691665
+    ],
+    "q975": [
+      1.4680681189770546,
+      1.650979501039832
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.1723390559683935,
+      "SE": 0.014551218033920012,
+      "q025": -0.20035331996249078,
+      "q975": -0.1437625515049241,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28085",
+    "date": "2023-06-19",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1425,
+      "reference_cells": 264670,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.3949452738610262,
+      1.5672843298294197
+    ],
+    "SE": [
+      0.06599374592205379,
+      0.07716823662770997
+    ],
+    "q025": [
+      1.2701214947199762,
+      1.425887277782253
+    ],
+    "q975": [
+      1.5268285290165506,
+      1.730549144842594
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.1723390559683935,
+      "SE": 0.025863993474866717,
+      "q025": -0.22625340319252824,
+      "q975": -0.12179934709800475,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28085",
+    "date": "2023-06-19",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1425,
+      "reference_cells": 264670,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.2318634831181612,
+      1.5427450190931609
+    ],
+    "SE": [
+      0.03205348458897902,
+      0.037065213545849206
+    ],
+    "q025": [
+      1.1716280926045313,
+      1.469467238080938
+    ],
+    "q975": [
+      1.2974917657187877,
+      1.6146895548639335
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.3108815359749997,
+      "SE": 0.012688383287356586,
+      "q025": -0.3346422800029717,
+      "q975": -0.2859534041454405,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28192",
+    "date": "2023-06-26",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1461,
+      "reference_cells": 273326,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.2318634831181612,
+      1.5427450190931609
+    ],
+    "SE": [
+      0.05033743993575181,
+      0.06662130931965377
+    ],
+    "q025": [
+      1.1336633390484685,
+      1.4175510247912684
+    ],
+    "q975": [
+      1.3291898721449564,
+      1.6753207496844553
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.3108815359749997,
+      "SE": 0.028912193086360005,
+      "q025": -0.3654615484083197,
+      "q975": -0.25427670996871915,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28192",
+    "date": "2023-06-26",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1461,
+      "reference_cells": 273326,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.7052278288787193,
+      2.076970528050424
+    ],
+    "SE": [
+      0.032054986216679245,
+      0.039806422429707645
+    ],
+    "q025": [
+      1.64365791914166,
+      1.9997750634765894
+    ],
+    "q975": [
+      1.7681724233836011,
+      2.154059178239295
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.37174269917170477,
+      "SE": 0.013967984744196329,
+      "q025": -0.39850875468875846,
+      "q975": -0.3433144565430208,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28706",
+    "date": "2023-07-29",
+    "source_run_id": "pooled_pilot_20260919_phoenix",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1479,
+      "reference_cells": 278368,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.7052278288787193,
+      2.076970528050424
+    ],
+    "SE": [
+      0.06308648981032024,
+      0.08722868787684156
+    ],
+    "q025": [
+      1.5853443044603988,
+      1.9130624502865445
+    ],
+    "q975": [
+      1.8376914430190099,
+      2.2534707486174654
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.37174269917170477,
+      "SE": 0.03380973611143942,
+      "q025": -0.4384241784898867,
+      "q975": -0.3045525687525232,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28706",
+    "date": "2023-07-29",
+    "source_run_id": "pooled_pilot_20260919_phoenix",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1479,
+      "reference_cells": 278368,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.4410557503519499,
+      1.759265871738478
+    ],
+    "SE": [
+      0.029201025448838097,
+      0.033102005342376645
+    ],
+    "q025": [
+      1.3829819152587712,
+      1.6951962419467421
+    ],
+    "q975": [
+      1.4985735953182293,
+      1.8213435637192348
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.31821012138652804,
+      "SE": 0.013051139096779412,
+      "q025": -0.3427742511153823,
+      "q975": -0.2924489876270821,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28828",
+    "date": "2023-08-06",
+    "source_run_id": "pooled_pilot_20260919_phoenix",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1479,
+      "reference_cells": 278368,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.4410557503519499,
+      1.759265871738478
+    ],
+    "SE": [
+      0.05286985828400461,
+      0.06923781487765626
+    ],
+    "q025": [
+      1.3356973420765785,
+      1.6188733682247445
+    ],
+    "q975": [
+      1.5465711341977286,
+      1.894861700111798
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.31821012138652804,
+      "SE": 0.02781734062400576,
+      "q025": -0.37317415554524497,
+      "q975": -0.2635296612584462,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28828",
+    "date": "2023-08-06",
+    "source_run_id": "pooled_pilot_20260919_phoenix",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1479,
+      "reference_cells": 278368,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.9276202719112803,
+      0.9416529941082104
+    ],
+    "SE": [
+      0.032154249501868286,
+      0.039379884577611816
+    ],
+    "q025": [
+      0.8654445150049337,
+      0.862506063028755
+    ],
+    "q975": [
+      0.9923644120722165,
+      1.0252176907918127
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.01403272219693008,
+      "SE": 0.013326480908293067,
+      "q025": -0.040698872304984014,
+      "q975": 0.012121840985336191,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28909",
+    "date": "2023-08-11",
+    "source_run_id": "pooled_pilot_20260919_phoenix",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1174,
+      "reference_cells": 206134,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.9276202719112803,
+      0.9416529941082104
+    ],
+    "SE": [
+      0.05543484338075619,
+      0.06741467760992527
+    ],
+    "q025": [
+      0.8230628426165688,
+      0.8145504237958647
+    ],
+    "q975": [
+      1.0350787288236847,
+      1.0749917275904508
+    ],
+    "estimable": 998,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.01403272219693008,
+      "SE": 0.02256725805066106,
+      "q025": -0.05973712723838766,
+      "q975": 0.028404588156795803,
+      "estimable": 998
+    },
+    "requested": 1000,
+    "failed": 2,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28909",
+    "date": "2023-08-11",
+    "source_run_id": "pooled_pilot_20260919_phoenix",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1174,
+      "reference_cells": 206134,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.2563427376870209,
+      1.4865182910211843
+    ],
+    "SE": [
+      0.054155236584696766,
+      0.06805008299678986
+    ],
+    "q025": [
+      1.1388867830146572,
+      1.3421903192657823
+    ],
+    "q975": [
+      1.3555003470978804,
+      1.6134519268853267
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.2301755533341634,
+      "SE": 0.02188356348068648,
+      "q025": -0.2697569705315257,
+      "q975": -0.18590398370024533,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28970",
+    "date": "2023-08-15",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1195,
+      "reference_cells": 208013,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.2563427376870209,
+      1.4865182910211843
+    ],
+    "SE": [
+      0.08151448705813746,
+      0.12327486008341187
+    ],
+    "q025": [
+      1.0968726207249981,
+      1.2488703566175232
+    ],
+    "q975": [
+      1.4133654458669633,
+      1.7322545238507359
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.2301755533341634,
+      "SE": 0.0538743313049419,
+      "q025": -0.3399898934881791,
+      "q975": -0.12424928473949355,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "28970",
+    "date": "2023-08-15",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1195,
+      "reference_cells": 208013,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.035992758168561,
+      1.2139464684451013
+    ],
+    "SE": [
+      0.028581498389279644,
+      0.03178636796786289
+    ],
+    "q025": [
+      0.9797785021622065,
+      1.1537129872808265
+    ],
+    "q975": [
+      1.09068024188496,
+      1.2756803573568376
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.17795371027654028,
+      "SE": 0.011251664746898178,
+      "q025": -0.20041373165969573,
+      "q975": -0.15682429415684726,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "29092",
+    "date": "2023-08-23",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1475,
+      "reference_cells": 276785,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.035992758168561,
+      1.2139464684451013
+    ],
+    "SE": [
+      0.04503224571293098,
+      0.054864394470504244
+    ],
+    "q025": [
+      0.9429076240154214,
+      1.1021185462014287
+    ],
+    "q975": [
+      1.1227087750854283,
+      1.322849095658428
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.17795371027654028,
+      "SE": 0.019364879765092057,
+      "q025": -0.21569651719563546,
+      "q975": -0.13977095093395014,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "29092",
+    "date": "2023-08-23",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1475,
+      "reference_cells": 276785,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.9002491973110409,
+      0.9008582168335693
+    ],
+    "SE": [
+      0.023352708521562085,
+      0.02461696949213715
+    ],
+    "q025": [
+      0.8571282287038066,
+      0.8552854405485704
+    ],
+    "q975": [
+      0.9450449973926929,
+      0.9478815345679606
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.0006090195225283423,
+      "SE": 0.00931556912940674,
+      "q025": -0.018381276997833127,
+      "q975": 0.018474032180904668,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "29545",
+    "date": "2023-09-21",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 880,
+      "reference_cells": 155194,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      0.9002491973110409,
+      0.9008582168335693
+    ],
+    "SE": [
+      0.04426119831669515,
+      0.05073379619387817
+    ],
+    "q025": [
+      0.8105966134957983,
+      0.7996098302039172
+    ],
+    "q975": [
+      0.9815613737441427,
+      0.9919309553720694
+    ],
+    "estimable": 999,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.0006090195225283423,
+      "SE": 0.022386974794552435,
+      "q025": -0.04341175887499558,
+      "q975": 0.04189319466172992,
+      "estimable": 999
+    },
+    "requested": 1000,
+    "failed": 1,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "29545",
+    "date": "2023-09-21",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 880,
+      "reference_cells": 155194,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.1291956960266134,
+      1.2100117938989001
+    ],
+    "SE": [
+      0.021611437708006293,
+      0.024520777720136906
+    ],
+    "q025": [
+      1.087585514091811,
+      1.1635526784030545
+    ],
+    "q975": [
+      1.1715711313726151,
+      1.2581022572435998
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.08081609787228672,
+      "SE": 0.007040794770780734,
+      "q025": -0.09472584592071973,
+      "q975": -0.06757027368198239,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "29606",
+    "date": "2023-09-25",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 1,
+    "reference_support": {
+      "supporting_blocks": 1479,
+      "reference_cells": 278368,
+      "status": "SUPPORTED"
+    }
+  },
+  {
+    "status": "ESTIMABLE",
+    "point": [
+      1.1291956960266134,
+      1.2100117938989001
+    ],
+    "SE": [
+      0.03771252051738193,
+      0.045475137141667406
+    ],
+    "q025": [
+      1.0539314746909587,
+      1.1241692108230965
+    ],
+    "q975": [
+      1.2064005036816827,
+      1.3052054940392566
+    ],
+    "estimable": 1000,
+    "paired_T_minus_equivalent": {
+      "status": "ESTIMABLE",
+      "point": -0.08081609787228672,
+      "SE": 0.016013680952632368,
+      "q025": -0.11385469739494769,
+      "q975": -0.051330925832839026,
+      "estimable": 1000
+    },
+    "requested": 1000,
+    "failed": 0,
+    "reference_K": 314.7740020751953,
+    "reference_emissivity": 0.9473999977111817,
+    "city": "phoenix",
+    "orbit": "29606",
+    "date": "2023-09-25",
+    "source_run_id": "pooled_extension_20260921_phoenix",
+    "group_km": 8,
+    "reference_support": {
+      "supporting_blocks": 1479,
+      "reference_cells": 278368,
+      "status": "SUPPORTED"
+    }
+  }
+]

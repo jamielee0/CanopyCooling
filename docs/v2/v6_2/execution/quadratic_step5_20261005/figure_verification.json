@@ -1,0 +1,390 @@
+{
+  "sealed_figures": [
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27835_1km_comparison_SEALED.png",
+      "sha256": "cb7486c857e18fbec34049e2abe55c454e3195db7fbb90b1bc8b8ea32f36914a",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27835_8km_comparison_SEALED.png",
+      "sha256": "043b97ba9a873ecb20006bee182c12521f4c4726676cc5edb0007a65b5892d24",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27896_1km_comparison_SEALED.png",
+      "sha256": "babce59813b09e7fb6f52b3071ef7921702513f96d26da1c3fed653f40f94c34",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27896_8km_comparison_SEALED.png",
+      "sha256": "f3b0dd4a3a84a7df80133ea0a21a1d442f477bf5392aaef9abf67bb9881f9a2a",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27916_1km_comparison_SEALED.png",
+      "sha256": "a854670e478b51c6364d104fcce5b8760a7a287876c78b6ae8baaa48bf377ecf",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27916_8km_comparison_SEALED.png",
+      "sha256": "217b21ee27afc7a41aadc34bcc8dbb722e3651d770f88f90cbf7388ee7b8e28b",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28145_1km_comparison_SEALED.png",
+      "sha256": "069cfe503e3c06c1a263e590966f92873462d6fd566b534c3262f74acaa43e45",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28145_8km_comparison_SEALED.png",
+      "sha256": "f1da966cc28a520d89363e20970a992296165053e8041b72511038474bfde44e",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_1km_comparison_SEALED.png",
+      "sha256": "a76a5ac8d1cda8c5e3b5683d5b059a6aab48f56ad36795739c3d606d5c262bdb",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_8km_comparison_SEALED.png",
+      "sha256": "1544d3f3fcd19173683da36ef74091c7565c9d15da449350e751397770e5181c",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_1km_comparison_SEALED.png",
+      "sha256": "b991bb164e8e214bd65f454ae2474473ab45781d45332b89176657c78ea3da9e",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_8km_comparison_SEALED.png",
+      "sha256": "3a96d561bca88fd72bb3b8f6e5a6a1453a3400e1bd06f69c65dd03d6721d5362",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28024_1km_comparison_SEALED.png",
+      "sha256": "0d0bb865bd86802517c0a1e3f4901648f5bcf82ed7a61877302cdd64b3dad0c9",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28024_8km_comparison_SEALED.png",
+      "sha256": "983114a3e1fe37648372cf7acbe91c598358cd41ad8900a2c5ffed264937c9cf",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28085_1km_comparison_SEALED.png",
+      "sha256": "d0db792e724e93054850f4731d47d02e01e1317f95defbc37d9e7965d3040cca",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28085_8km_comparison_SEALED.png",
+      "sha256": "d99785c2c8dab09bd0a38d0b31504f19d543d25385ba355ef2402d3b40643deb",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28192_1km_comparison_SEALED.png",
+      "sha256": "215bc6a47c166195740b28a2ee66c38ec38424cf61af16095deb9794d3c6f86f",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28192_8km_comparison_SEALED.png",
+      "sha256": "9c9b2b918449b7aa30270c73c658d67b5b507f61eb9fda4daa41389df68262dd",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28706_1km_comparison_SEALED.png",
+      "sha256": "847d17ab3b3eaf88629e0afd4aac55dd0f24713b845c5263afe3084f89a7051f",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28706_8km_comparison_SEALED.png",
+      "sha256": "344abd138f79b9a836c00d752284b3b5c8b77e03eb4dedd6e74ad2f78844efd5",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28828_1km_comparison_SEALED.png",
+      "sha256": "c694677f6f9d69b40688d4770a9d365e9002eaeec977056e0acf697cd3c340c1",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28828_8km_comparison_SEALED.png",
+      "sha256": "000124a25abc2e4f96afdfc2310a2b505563f147b7e5edbc3d436cdba65deac7",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28909_1km_comparison_SEALED.png",
+      "sha256": "0a1e03d0758749d5b8cf374b1a48d9859c328f459b8eccefba5aa5084b025feb",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28909_8km_comparison_SEALED.png",
+      "sha256": "543f09ad249cfecb94174ad5f3d059a8da9f33229a08a1c496ddf234be0b85d0",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28970_1km_comparison_SEALED.png",
+      "sha256": "504856d4f78c3ac56f11e31ac10f4331db558bec7a8432855745ef24d1daa9f9",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28970_8km_comparison_SEALED.png",
+      "sha256": "ffccfdc1fbaf3843ebe6e4a4ae768e2bb634345c2fb2ff073c469165f5b5a943",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29092_1km_comparison_SEALED.png",
+      "sha256": "5fed58ab7a3051bcc069037e3e6c96686b16884a1211447d73d8f924394723f5",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29092_8km_comparison_SEALED.png",
+      "sha256": "e984f56d3edebcc90abf7189d5fa1f8e169c2daf6a53cf950b16615388343b12",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29545_1km_comparison_SEALED.png",
+      "sha256": "4318fb5dbe774308b2197e2d6a931d123539fd569821874a657d2436457f68ce",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29545_8km_comparison_SEALED.png",
+      "sha256": "cf2870ad6841b0eb890ea061af907cbb401c28e3ad2ce4d1667a4eb6a22a4548",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29606_1km_comparison_SEALED.png",
+      "sha256": "bfe9719471ee760726748d39e9bcf9458daf2e14b3f9fe04615410dcce65ea13",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29606_8km_comparison_SEALED.png",
+      "sha256": "ebb5b9d46ec6cf3cc649172321de9d093713409919e9c54f5e1416b66a0a839d",
+      "pixels": [
+        1620,
+        1260
+      ],
+      "decodes": true,
+      "nonblank": true,
+      "visually_reviewed": false,
+      "effect_status": "SEALED_USER_REQUEST"
+    }
+  ],
+  "public_figure": "outputs/v6_2/scientific/quadratic_step5_20261005/historical_contrast_precision.png",
+  "effect_visual_review": "DEFERRED_UNDER_SEALING"
+}

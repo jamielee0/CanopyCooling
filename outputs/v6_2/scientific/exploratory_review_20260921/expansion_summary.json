@@ -1,0 +1,22 @@
+{
+  "passes": {
+    "atlanta": 5,
+    "phoenix": 11
+  },
+  "phoenix_primary_SE_range": {
+    "min": 0.017323052633300695,
+    "max": 0.054155236584696745
+  },
+  "phoenix_8km_SE_range": {
+    "min": 0.03318330643587326,
+    "max": 0.08151448705813746
+  },
+  "stage1_below_0_10_benchmark_8km": {
+    "atlanta": 5,
+    "phoenix": 11
+  },
+  "new_time_regression_fitted": false,
+  "source_precision_files": [
+    "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/precision.csv"
+  ]
+}

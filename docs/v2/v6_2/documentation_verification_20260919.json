@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "documentation_only",
+  "checks": [
+    "YAML parses",
+    "correct pooled formulas",
+    "removed span and eight-pass gates",
+    "VPD descriptive",
+    "scaling and sealing preserved",
+    "pending choices explicit",
+    "Word cross-document coverage",
+    "original-byte preservation",
+    "source/working checksums"
+  ],
+  "analysis_executed": false,
+  "thermal_or_coefficient_files_read": false
+}

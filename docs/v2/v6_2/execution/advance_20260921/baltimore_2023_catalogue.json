@@ -1,0 +1,1254 @@
+{
+  "audit": {
+    "city": "baltimore",
+    "retrieved_utc": "2026-09-21T17:46:28.160254+00:00",
+    "period_utc": "2023-06-01/2023-09-30",
+    "CMR_bbox_hits": 123,
+    "CMR_rows_received": 123,
+    "pages": 1,
+    "intersecting_granules_before_revision_dedup": 123,
+    "unique_passes": 52,
+    "morning_0930_1130_passes": 3,
+    "afternoon_1500_1800_passes": 7,
+    "afternoon_months": [
+      "06",
+      "07",
+      "09"
+    ],
+    "afternoon_tile_mean_cloud_pct_median": null,
+    "afternoon_passes_with_cloud_metadata": 0,
+    "limitation": "CMR tile cloud metadata is not urban-domain clear fraction; no view-angle, full-domain coverage or usable-cell certification; windows are descriptive summaries, not selection gates."
+  },
+  "granules": [
+    {
+      "city": "baltimore",
+      "orbit": 27835,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27835_007_18SUJ_20230603T171924_0710_01",
+      "acquisition_utc": "2023-06-03T17:19:24.850Z",
+      "apparent_solar_hour_at_domain_centroid": 12.250859758192528,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27835,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27835_007_18SUJ_20230603T171924_0711_02",
+      "acquisition_utc": "2023-06-03T17:19:24.855Z",
+      "apparent_solar_hour_at_domain_centroid": 12.250859758192528,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27835,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27835_008_18SUJ_20230603T172016_0710_01",
+      "acquisition_utc": "2023-06-03T17:20:16.820Z",
+      "apparent_solar_hour_at_domain_centroid": 12.265302575145434,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27835,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27835_008_18SUJ_20230603T172016_0711_02",
+      "acquisition_utc": "2023-06-03T17:20:16.824Z",
+      "apparent_solar_hour_at_domain_centroid": 12.265302575145434,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27839,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27839_009_18SUJ_20230603T234939_0710_01",
+      "acquisition_utc": "2023-06-03T23:49:39.590Z",
+      "apparent_solar_hour_at_domain_centroid": 18.754289872679237,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27839,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27839_009_18SUJ_20230603T234939_0711_02",
+      "acquisition_utc": "2023-06-03T23:49:39.596Z",
+      "apparent_solar_hour_at_domain_centroid": 18.754289872679237,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27885,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27885_009_18SUJ_20230606T225922_0710_01",
+      "acquisition_utc": "2023-06-06T22:59:22.280Z",
+      "apparent_solar_hour_at_domain_centroid": 17.907715155499783,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27885,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27885_009_18SUJ_20230606T225922_0711_02",
+      "acquisition_utc": "2023-06-06T22:59:22.287Z",
+      "apparent_solar_hour_at_domain_centroid": 17.907715155499783,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27885,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27885_010_18SUJ_20230606T230014_0710_01",
+      "acquisition_utc": "2023-06-06T23:00:14.250Z",
+      "apparent_solar_hour_at_domain_centroid": 17.922157789882608,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27885,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27885_010_18SUJ_20230606T230014_0711_02",
+      "acquisition_utc": "2023-06-06T23:00:14.256Z",
+      "apparent_solar_hour_at_domain_centroid": 17.922157789882608,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27896,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27896_007_18SUJ_20230607T154050_0710_01",
+      "acquisition_utc": "2023-06-07T15:40:50.960Z",
+      "apparent_solar_hour_at_domain_centroid": 10.596714298020771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27896,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27896_007_18SUJ_20230607T154050_0711_02",
+      "acquisition_utc": "2023-06-07T15:40:50.967Z",
+      "apparent_solar_hour_at_domain_centroid": 10.596714298020771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27900,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27900_010_18SUJ_20230607T221059_0710_01",
+      "acquisition_utc": "2023-06-07T22:10:59.620Z",
+      "apparent_solar_hour_at_domain_centroid": 17.098380703348237,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27900,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27900_010_18SUJ_20230607T221059_0711_02",
+      "acquisition_utc": "2023-06-07T22:10:59.622Z",
+      "apparent_solar_hour_at_domain_centroid": 17.098380703348237,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27942,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27942_009_18SUJ_20230610T145037_0710_01",
+      "acquisition_utc": "2023-06-10T14:50:37.400Z",
+      "apparent_solar_hour_at_domain_centroid": 9.750343110262312,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27942,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27942_009_18SUJ_20230610T145037_0711_02",
+      "acquisition_utc": "2023-06-10T14:50:37.403Z",
+      "apparent_solar_hour_at_domain_centroid": 9.750343110262312,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27946,
+      "scene": 6,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27946_006_18SUJ_20230610T212009_0710_01",
+      "acquisition_utc": "2023-06-10T21:20:09.440Z",
+      "apparent_solar_hour_at_domain_centroid": 16.24167439001608,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27946,
+      "scene": 6,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27946_006_18SUJ_20230610T212009_0711_02",
+      "acquisition_utc": "2023-06-10T21:20:09.444Z",
+      "apparent_solar_hour_at_domain_centroid": 16.24167439001608,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27946,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27946_007_18SUJ_20230610T212101_0710_01",
+      "acquisition_utc": "2023-06-10T21:21:01.410Z",
+      "apparent_solar_hour_at_domain_centroid": 16.25611684693572,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27946,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27946_007_18SUJ_20230610T212101_0711_02",
+      "acquisition_utc": "2023-06-10T21:21:01.414Z",
+      "apparent_solar_hour_at_domain_centroid": 16.25611684693572,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27961,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27961_010_18SUJ_20230611T203139_0710_01",
+      "acquisition_utc": "2023-06-11T20:31:39.690Z",
+      "apparent_solar_hour_at_domain_centroid": 15.430120814207733,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 27961,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_27961_010_18SUJ_20230611T203139_0711_02",
+      "acquisition_utc": "2023-06-11T20:31:39.699Z",
+      "apparent_solar_hour_at_domain_centroid": 15.430120814207733,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28007,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28007_009_18SUJ_20230614T194129_0710_01",
+      "acquisition_utc": "2023-06-14T19:41:29.688Z",
+      "apparent_solar_hour_at_domain_centroid": 14.583808268098172,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28007,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28007_009_18SUJ_20230614T194129_0711_02",
+      "acquisition_utc": "2023-06-14T19:41:29.688Z",
+      "apparent_solar_hour_at_domain_centroid": 14.583808268098172,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28022,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28022_009_18SUJ_20230615T185203_0710_01",
+      "acquisition_utc": "2023-06-15T18:52:03.248Z",
+      "apparent_solar_hour_at_domain_centroid": 13.756510828181728,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28022,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28022_009_18SUJ_20230615T185203_0711_02",
+      "acquisition_utc": "2023-06-15T18:52:03.248Z",
+      "apparent_solar_hour_at_domain_centroid": 13.756510828181728,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28064,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28064_009_18SUJ_20230618T113245_0710_01",
+      "acquisition_utc": "2023-06-18T11:32:45.806Z",
+      "apparent_solar_hour_at_domain_centroid": 6.4251723379585854,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28064,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28064_009_18SUJ_20230618T113245_0711_02",
+      "acquisition_utc": "2023-06-18T11:32:45.806Z",
+      "apparent_solar_hour_at_domain_centroid": 6.4251723379585854,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28079,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28079_008_18SUJ_20230619T104450_0710_01",
+      "acquisition_utc": "2023-06-19T10:44:50.306Z",
+      "apparent_solar_hour_at_domain_centroid": 5.623050993044152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28079,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28079_008_18SUJ_20230619T104450_0711_02",
+      "acquisition_utc": "2023-06-19T10:44:50.306Z",
+      "apparent_solar_hour_at_domain_centroid": 5.623050993044152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28175,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28175_009_18SUJ_20230625T153622_0710_01",
+      "acquisition_utc": "2023-06-25T15:36:22.791Z",
+      "apparent_solar_hour_at_domain_centroid": 10.45935312362808,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28175,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28175_009_18SUJ_20230625T153622_0711_02",
+      "acquisition_utc": "2023-06-25T15:36:22.791Z",
+      "apparent_solar_hour_at_domain_centroid": 10.45935312362808,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28186,
+      "scene": 6,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28186_006_18SUJ_20230626T081701_0710_01",
+      "acquisition_utc": "2023-06-26T08:17:01.856Z",
+      "apparent_solar_hour_at_domain_centroid": 3.1343541579222287,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28186,
+      "scene": 6,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28186_006_18SUJ_20230626T081701_0711_02",
+      "acquisition_utc": "2023-06-26T08:17:01.856Z",
+      "apparent_solar_hour_at_domain_centroid": 3.1343541579222287,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28247,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28247_010_18SUJ_20230630T063834_0710_01",
+      "acquisition_utc": "2023-06-30T06:38:34.819Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4797024295071808,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28247,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28247_010_18SUJ_20230630T063834_0711_02",
+      "acquisition_utc": "2023-06-30T06:38:34.819Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4797024295071808,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28293,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28293_008_18SUJ_20230703T054831_0710_01",
+      "acquisition_utc": "2023-07-03T05:48:31.622Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6356293651238903,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28293,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28293_008_18SUJ_20230703T054831_0711_02",
+      "acquisition_utc": "2023-07-03T05:48:31.622Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6356293651238903,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28297,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28297_009_18SUJ_20230703T121851_0710_01",
+      "acquisition_utc": "2023-07-03T12:18:51.086Z",
+      "apparent_solar_hour_at_domain_centroid": 7.140307619647692,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28297,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28297_009_18SUJ_20230703T121851_0712_02",
+      "acquisition_utc": "2023-07-03T12:18:51.086Z",
+      "apparent_solar_hour_at_domain_centroid": 7.140307619647692,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28308,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28308_008_18SUJ_20230704T045952_0710_01",
+      "acquisition_utc": "2023-07-04T04:59:52.600Z",
+      "apparent_solar_hour_at_domain_centroid": 23.82169306456342,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28308,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28308_008_18SUJ_20230704T045952_0712_02",
+      "acquisition_utc": "2023-07-04T04:59:52.600Z",
+      "apparent_solar_hour_at_domain_centroid": 23.82169306456342,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28312,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28312_010_18SUJ_20230704T112928_0710_01",
+      "acquisition_utc": "2023-07-04T11:29:28.182Z",
+      "apparent_solar_hour_at_domain_centroid": 6.314169873445481,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28312,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28312_010_18SUJ_20230704T112928_0712_02",
+      "acquisition_utc": "2023-07-04T11:29:28.182Z",
+      "apparent_solar_hour_at_domain_centroid": 6.314169873445481,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28358,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28358_008_18SUJ_20230707T104136_0712_02",
+      "acquisition_utc": "2023-07-07T10:41:36.351Z",
+      "apparent_solar_hour_at_domain_centroid": 5.507392128422466,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28358,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28358_009_18SUJ_20230707T104228_0710_01",
+      "acquisition_utc": "2023-07-07T10:42:28.321Z",
+      "apparent_solar_hour_at_domain_centroid": 5.521834825298812,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28358,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28358_009_18SUJ_20230707T104228_0712_02",
+      "acquisition_utc": "2023-07-07T10:42:28.321Z",
+      "apparent_solar_hour_at_domain_centroid": 5.521834825298812,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28373,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28373_008_18SUJ_20230708T095358_0710_01",
+      "acquisition_utc": "2023-07-08T09:53:58.579Z",
+      "apparent_solar_hour_at_domain_centroid": 4.710739846567789,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28373,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28373_008_18SUJ_20230708T095358_0712_02",
+      "acquisition_utc": "2023-07-08T09:53:58.579Z",
+      "apparent_solar_hour_at_domain_centroid": 4.710739846567789,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28415,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28415_008_18SUJ_20230711T023602_0710_01",
+      "acquisition_utc": "2023-07-11T02:36:02.610Z",
+      "apparent_solar_hour_at_domain_centroid": 21.40464479314454,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28415,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28415_008_18SUJ_20230711T023602_0712_02",
+      "acquisition_utc": "2023-07-11T02:36:02.610Z",
+      "apparent_solar_hour_at_domain_centroid": 21.40464479314454,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28415,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28415_009_18SUJ_20230711T023654_0710_01",
+      "acquisition_utc": "2023-07-11T02:36:54.580Z",
+      "apparent_solar_hour_at_domain_centroid": 21.41908771577313,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28415,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28415_009_18SUJ_20230711T023654_0712_02",
+      "acquisition_utc": "2023-07-11T02:36:54.580Z",
+      "apparent_solar_hour_at_domain_centroid": 21.41908771577313,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28419,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28419_008_18SUJ_20230711T090649_0710_01",
+      "acquisition_utc": "2023-07-11T09:06:49.051Z",
+      "apparent_solar_hour_at_domain_centroid": 3.917018272990391,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28419,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28419_008_18SUJ_20230711T090649_0712_02",
+      "acquisition_utc": "2023-07-11T09:06:49.051Z",
+      "apparent_solar_hour_at_domain_centroid": 3.917018272990391,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28430,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28430_008_18SUJ_20230712T014818_0712_02",
+      "acquisition_utc": "2023-07-12T01:48:18.888Z",
+      "apparent_solar_hour_at_domain_centroid": 20.60669736219314,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28434,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28434_009_18SUJ_20230712T081842_0710_01",
+      "acquisition_utc": "2023-07-12T08:18:42.888Z",
+      "apparent_solar_hour_at_domain_centroid": 3.1127126558136373,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28476,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28476_007_18SUJ_20230715T010029_0710_01",
+      "acquisition_utc": "2023-07-15T01:00:29.119Z",
+      "apparent_solar_hour_at_domain_centroid": 19.80310973117843,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28476,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28476_007_18SUJ_20230715T010029_0712_02",
+      "acquisition_utc": "2023-07-15T01:00:29.119Z",
+      "apparent_solar_hour_at_domain_centroid": 19.80310973117843,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28476,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28476_008_18SUJ_20230715T010121_0710_01",
+      "acquisition_utc": "2023-07-15T01:01:21.089Z",
+      "apparent_solar_hour_at_domain_centroid": 19.817552939858295,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28476,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28476_008_18SUJ_20230715T010121_0712_02",
+      "acquisition_utc": "2023-07-15T01:01:21.089Z",
+      "apparent_solar_hour_at_domain_centroid": 19.817552939858295,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28480,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28480_008_18SUJ_20230715T073108_0710_01",
+      "acquisition_utc": "2023-07-15T07:31:08.657Z",
+      "apparent_solar_hour_at_domain_centroid": 2.3133908184099132,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28480,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28480_008_18SUJ_20230715T073108_0712_02",
+      "acquisition_utc": "2023-07-15T07:31:08.657Z",
+      "apparent_solar_hour_at_domain_centroid": 2.3133908184099132,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28541,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28541_007_18SUJ_20230719T055505_0710_01",
+      "acquisition_utc": "2023-07-19T05:55:05.978Z",
+      "apparent_solar_hour_at_domain_centroid": 0.7056735403943567,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28541,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28541_007_18SUJ_20230719T055505_0712_02",
+      "acquisition_utc": "2023-07-19T05:55:05.978Z",
+      "apparent_solar_hour_at_domain_centroid": 0.7056735403943567,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28598,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28598_007_18SUJ_20230722T214803_0710_01",
+      "acquisition_utc": "2023-07-22T21:48:03.654Z",
+      "apparent_solar_hour_at_domain_centroid": 16.584068529953775,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28598,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28598_007_18SUJ_20230722T214803_0712_02",
+      "acquisition_utc": "2023-07-22T21:48:03.654Z",
+      "apparent_solar_hour_at_domain_centroid": 16.584068529953775,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28598,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28598_008_18SUJ_20230722T214855_0710_01",
+      "acquisition_utc": "2023-07-22T21:48:55.624Z",
+      "apparent_solar_hour_at_domain_centroid": 16.59851242414757,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28598,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28598_008_18SUJ_20230722T214855_0712_02",
+      "acquisition_utc": "2023-07-22T21:48:55.624Z",
+      "apparent_solar_hour_at_domain_centroid": 16.59851242414757,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28644,
+      "scene": 6,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28644_006_18SUJ_20230725T205937_0712_01",
+      "acquisition_utc": "2023-07-25T20:59:37.299Z",
+      "apparent_solar_hour_at_domain_centroid": 15.774841565340937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28644,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28644_007_18SUJ_20230725T210029_0712_01",
+      "acquisition_utc": "2023-07-25T21:00:29.269Z",
+      "apparent_solar_hour_at_domain_centroid": 15.7892857488884,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28720,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28720_007_18SUJ_20230730T183510_0710_01",
+      "acquisition_utc": "2023-07-30T18:35:10.688Z",
+      "apparent_solar_hour_at_domain_centroid": 13.367246919245025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28720,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28720_007_18SUJ_20230730T183510_0712_02",
+      "acquisition_utc": "2023-07-30T18:35:10.688Z",
+      "apparent_solar_hour_at_domain_centroid": 13.367246919245025,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28724,
+      "scene": 17,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28724_017_18SUJ_20230731T010443_0710_01",
+      "acquisition_utc": "2023-07-31T01:04:43.905Z",
+      "apparent_solar_hour_at_domain_centroid": 19.859862051230056,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28724,
+      "scene": 17,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28724_017_18SUJ_20230731T010443_0712_02",
+      "acquisition_utc": "2023-07-31T01:04:43.905Z",
+      "apparent_solar_hour_at_domain_centroid": 19.859862051230056,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28724,
+      "scene": 18,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28724_018_18SUJ_20230731T010535_0710_01",
+      "acquisition_utc": "2023-07-31T01:05:35.875Z",
+      "apparent_solar_hour_at_domain_centroid": 19.874306766068152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28724,
+      "scene": 18,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28724_018_18SUJ_20230731T010535_0712_02",
+      "acquisition_utc": "2023-07-31T01:05:35.875Z",
+      "apparent_solar_hour_at_domain_centroid": 19.874306766068152,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28766,
+      "scene": 6,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28766_006_18SUJ_20230802T174626_0712_02",
+      "acquisition_utc": "2023-08-02T17:46:26.676Z",
+      "apparent_solar_hour_at_domain_centroid": 12.55698904633049,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28766,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28766_007_18SUJ_20230802T174718_0710_01",
+      "acquisition_utc": "2023-08-02T17:47:18.646Z",
+      "apparent_solar_hour_at_domain_centroid": 12.571434046831849,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28766,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28766_007_18SUJ_20230802T174718_0712_02",
+      "acquisition_utc": "2023-08-02T17:47:18.646Z",
+      "apparent_solar_hour_at_domain_centroid": 12.571434046831849,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28770,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28770_009_18SUJ_20230803T001641_0710_01",
+      "acquisition_utc": "2023-08-03T00:16:41.418Z",
+      "apparent_solar_hour_at_domain_centroid": 19.06141259099048,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28770,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28770_009_18SUJ_20230803T001641_0712_02",
+      "acquisition_utc": "2023-08-03T00:16:41.418Z",
+      "apparent_solar_hour_at_domain_centroid": 19.06141259099048,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28781,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28781_008_18SUJ_20230803T165756_0710_01",
+      "acquisition_utc": "2023-08-03T16:57:56.923Z",
+      "apparent_solar_hour_at_domain_centroid": 11.749631231123006,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28781,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28781_008_18SUJ_20230803T165756_0712_02",
+      "acquisition_utc": "2023-08-03T16:57:56.923Z",
+      "apparent_solar_hour_at_domain_centroid": 11.749631231123006,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28781,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28781_009_18SUJ_20230803T165848_0710_01",
+      "acquisition_utc": "2023-08-03T16:58:48.893Z",
+      "apparent_solar_hour_at_domain_centroid": 11.764076334780908,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28781,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28781_009_18SUJ_20230803T165848_0712_02",
+      "acquisition_utc": "2023-08-03T16:58:48.893Z",
+      "apparent_solar_hour_at_domain_centroid": 11.764076334780908,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28949,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28949_007_18SUJ_20230814T125729_0710_01",
+      "acquisition_utc": "2023-08-14T12:57:29.528Z",
+      "apparent_solar_hour_at_domain_centroid": 7.764362646564233,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28949,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28949_007_18SUJ_20230814T125729_0712_02",
+      "acquisition_utc": "2023-08-14T12:57:29.528Z",
+      "apparent_solar_hour_at_domain_centroid": 7.764362646564233,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28949,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28949_008_18SUJ_20230814T125821_0710_01",
+      "acquisition_utc": "2023-08-14T12:58:21.497Z",
+      "apparent_solar_hour_at_domain_centroid": 7.778808891895094,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28949,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28949_008_18SUJ_20230814T125821_0712_02",
+      "acquisition_utc": "2023-08-14T12:58:21.497Z",
+      "apparent_solar_hour_at_domain_centroid": 7.778808891895094,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28964,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28964_009_18SUJ_20230815T121000_0710_01",
+      "acquisition_utc": "2023-08-15T12:10:00.028Z",
+      "apparent_solar_hour_at_domain_centroid": 6.975945613826584,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 28964,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_28964_009_18SUJ_20230815T121000_0712_02",
+      "acquisition_utc": "2023-08-15T12:10:00.028Z",
+      "apparent_solar_hour_at_domain_centroid": 6.975945613826584,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29014,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29014_009_18SUJ_20230818T175347_0712_01",
+      "acquisition_utc": "2023-08-18T17:53:47.847Z",
+      "apparent_solar_hour_at_domain_centroid": 12.716739543687355,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29132,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29132_008_18SUJ_20230826T081248_0710_01",
+      "acquisition_utc": "2023-08-26T08:12:48.251Z",
+      "apparent_solar_hour_at_domain_centroid": 3.065928491472855,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29132,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29132_008_18SUJ_20230826T081248_0712_02",
+      "acquisition_utc": "2023-08-26T08:12:48.251Z",
+      "apparent_solar_hour_at_domain_centroid": 3.065928491472855,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29182,
+      "scene": 5,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29182_005_18SUJ_20230829T135410_0710_01",
+      "acquisition_utc": "2023-08-29T13:54:10.553Z",
+      "apparent_solar_hour_at_domain_centroid": 8.77147947551203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29182,
+      "scene": 5,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29182_005_18SUJ_20230829T135410_0712_02",
+      "acquisition_utc": "2023-08-29T13:54:10.553Z",
+      "apparent_solar_hour_at_domain_centroid": 8.77147947551203,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29197,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29197_009_18SUJ_20230830T130539_0710_01",
+      "acquisition_utc": "2023-08-30T13:05:39.795Z",
+      "apparent_solar_hour_at_domain_centroid": 7.967914994643293,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29197,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29197_009_18SUJ_20230830T130539_0712_02",
+      "acquisition_utc": "2023-08-30T13:05:39.795Z",
+      "apparent_solar_hour_at_domain_centroid": 7.967914994643293,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29197,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29197_010_18SUJ_20230830T130631_0710_01",
+      "acquisition_utc": "2023-08-30T13:06:31.765Z",
+      "apparent_solar_hour_at_domain_centroid": 7.982362614478841,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29197,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29197_010_18SUJ_20230830T130631_0712_02",
+      "acquisition_utc": "2023-08-30T13:06:31.765Z",
+      "apparent_solar_hour_at_domain_centroid": 7.982362614478841,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29243,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29243_007_18SUJ_20230902T121731_0710_01",
+      "acquisition_utc": "2023-09-02T12:17:31.158Z",
+      "apparent_solar_hour_at_domain_centroid": 7.181800653906837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29243,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29243_007_18SUJ_20230902T121731_0712_02",
+      "acquisition_utc": "2023-09-02T12:17:31.158Z",
+      "apparent_solar_hour_at_domain_centroid": 7.181800653906837,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29300,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29300_010_18SUJ_20230906T040921_0710_01",
+      "acquisition_utc": "2023-09-06T04:09:21.461Z",
+      "apparent_solar_hour_at_domain_centroid": 23.066678118674613,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29300,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29300_010_18SUJ_20230906T040921_0712_02",
+      "acquisition_utc": "2023-09-06T04:09:21.461Z",
+      "apparent_solar_hour_at_domain_centroid": 23.066678118674613,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29315,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29315_009_18SUJ_20230907T032045_0712_02",
+      "acquisition_utc": "2023-09-07T03:20:45.801Z",
+      "apparent_solar_hour_at_domain_centroid": 22.262389588455573,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29315,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29315_010_18SUJ_20230907T032137_0710_01",
+      "acquisition_utc": "2023-09-07T03:21:37.771Z",
+      "apparent_solar_hour_at_domain_centroid": 22.27683761010809,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29315,
+      "scene": 10,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29315_010_18SUJ_20230907T032137_0712_02",
+      "acquisition_utc": "2023-09-07T03:21:37.771Z",
+      "apparent_solar_hour_at_domain_centroid": 22.27683761010809,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29365,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29365_008_18SUJ_20230910T090358_0710_01",
+      "acquisition_utc": "2023-09-10T09:03:58.129Z",
+      "apparent_solar_hour_at_domain_centroid": 4.002223984235404,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29365,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29365_008_18SUJ_20230910T090358_0712_02",
+      "acquisition_utc": "2023-09-10T09:03:58.129Z",
+      "apparent_solar_hour_at_domain_centroid": 4.002223984235404,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29376,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29376_009_18SUJ_20230911T014605_0710_01",
+      "acquisition_utc": "2023-09-11T01:46:05.789Z",
+      "apparent_solar_hour_at_domain_centroid": 20.708440414509333,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29376,
+      "scene": 9,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29376_009_18SUJ_20230911T014605_0712_02",
+      "acquisition_utc": "2023-09-11T01:46:05.789Z",
+      "apparent_solar_hour_at_domain_centroid": 20.708440414509333,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29426,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29426_008_18SUJ_20230914T073018_0712_02",
+      "acquisition_utc": "2023-09-14T07:30:18.365Z",
+      "apparent_solar_hour_at_domain_centroid": 2.4654919594972413,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29437,
+      "scene": 6,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29437_006_18SUJ_20230915T001139_0710_01",
+      "acquisition_utc": "2023-09-15T00:11:39.959Z",
+      "apparent_solar_hour_at_domain_centroid": 19.159009385656955,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29437,
+      "scene": 6,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29437_006_18SUJ_20230915T001139_0712_02",
+      "acquisition_utc": "2023-09-15T00:11:39.959Z",
+      "apparent_solar_hour_at_domain_centroid": 19.159009385656955,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29437,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29437_007_18SUJ_20230915T001231_0712_02",
+      "acquisition_utc": "2023-09-15T00:12:31.929Z",
+      "apparent_solar_hour_at_domain_centroid": 19.173457599040752,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29487,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29487_007_18SUJ_20230918T055608_0710_01",
+      "acquisition_utc": "2023-09-18T05:56:08.734Z",
+      "apparent_solar_hour_at_domain_centroid": 0.9207205772503522,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29487,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29487_007_18SUJ_20230918T055608_0712_02",
+      "acquisition_utc": "2023-09-18T05:56:08.734Z",
+      "apparent_solar_hour_at_domain_centroid": 0.9207205772503522,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29502,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29502_007_18SUJ_20230919T050756_0710_01",
+      "acquisition_utc": "2023-09-19T05:07:56.687Z",
+      "apparent_solar_hour_at_domain_centroid": 0.12344610433563523,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29502,
+      "scene": 7,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29502_007_18SUJ_20230919T050756_0712_02",
+      "acquisition_utc": "2023-09-19T05:07:56.687Z",
+      "apparent_solar_hour_at_domain_centroid": 0.12344610433563523,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29605,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29605_008_18SUJ_20230925T201618_0710_01",
+      "acquisition_utc": "2023-09-25T20:16:18.234Z",
+      "apparent_solar_hour_at_domain_centroid": 15.303768519790546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29605,
+      "scene": 8,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29605_008_18SUJ_20230925T201618_0712_02",
+      "acquisition_utc": "2023-09-25T20:16:18.234Z",
+      "apparent_solar_hour_at_domain_centroid": 15.303768519790546,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "baltimore",
+      "orbit": 29681,
+      "scene": 6,
+      "tile": "18SUJ",
+      "granule_id": "ECOv002_L2T_LSTE_29681_006_18SUJ_20230930T175157_0712_02",
+      "acquisition_utc": "2023-09-30T17:51:57.559Z",
+      "apparent_solar_hour_at_domain_centroid": 12.926561456704746,
+      "cloud_cover_metadata": null
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "raleigh",
+      "orbit": 27885,
+      "acquisition_utc": "2023-06-06T23:00:14.256Z",
+      "solar_hour": 17.786505624196767,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 276,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.92,
+      "clear_fraction_of_all_sample_points": 0.92,
+      "failed_assets": 0
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27931,
+      "acquisition_utc": "2023-06-09T22:09:58.326Z",
+      "solar_hour": 16.93945732121152,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 295,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9833333333333333,
+      "clear_fraction_of_all_sample_points": 0.9833333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27946,
+      "acquisition_utc": "2023-06-10T21:21:01.414Z",
+      "solar_hour": 16.12046468124988,
+      "sample_points": 300,
+      "observed_points": 234,
+      "clear_points": 234,
+      "sample_point_coverage_fraction": 0.78,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.78,
+      "failed_assets": 0
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27992,
+      "acquisition_utc": "2023-06-13T20:29:54.708Z",
+      "solar_hour": 15.272915181916732,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 31,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.10333333333333333,
+      "clear_fraction_of_all_sample_points": 0.10333333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28552,
+      "acquisition_utc": "2023-07-19T22:35:48.417Z",
+      "solar_hour": 17.247644863510306,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 7,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.023333333333333334,
+      "clear_fraction_of_all_sample_points": 0.023333333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28598,
+      "acquisition_utc": "2023-07-22T21:47:11.684Z",
+      "solar_hour": 16.433972470131405,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 46,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.15333333333333332,
+      "clear_fraction_of_all_sample_points": 0.15333333333333332,
+      "failed_assets": 0
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28613,
+      "acquisition_utc": "2023-07-23T20:58:44.275Z",
+      "solar_hour": 15.640107056807327,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 298,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9933333333333333,
+      "clear_fraction_of_all_sample_points": 0.9933333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28923,
+      "acquisition_utc": "2023-08-12T21:03:46.872Z",
+      "solar_hour": 15.728692705900162,
+      "sample_points": 300,
+      "observed_points": 144,
+      "clear_points": 144,
+      "sample_point_coverage_fraction": 0.48,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.48,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "raleigh",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_010_17SPV_20230606T230014_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_010_17SPV_20230606T230014_0711_02/ECOv002_L2T_LSTE_27885_010_17SPV_20230606T230014_0711_02_cloud.tif",
+      "bytes": 14027,
+      "sha256": "e62f2752cf1cd8ff637b0796a428651012068e9c7dc3a273ca50b20f6937db52",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_010_17SQA_20230606T230014_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_010_17SQA_20230606T230014_0711_02/ECOv002_L2T_LSTE_27885_010_17SQA_20230606T230014_0711_02_cloud.tif",
+      "bytes": 28568,
+      "sha256": "48f0b21334109ac324338c4685a4c7ff3da108c801fe6d6825e483091db31fd4",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_010_17SQV_20230606T230014_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_010_17SQV_20230606T230014_0711_02/ECOv002_L2T_LSTE_27885_010_17SQV_20230606T230014_0711_02_cloud.tif",
+      "bytes": 23927,
+      "sha256": "4a34d54c526c61f37150b0f23d0b45068df15269c1d559ad819885ae3838fa32",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_010_17SPV_20230609T220958_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_010_17SPV_20230609T220958_0711_02/ECOv002_L2T_LSTE_27931_010_17SPV_20230609T220958_0711_02_cloud.tif",
+      "bytes": 11941,
+      "sha256": "ee232bd610592a1fdf260e27274b875562f0c813ee90bcce14e092f086f9b411",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_010_17SQA_20230609T220958_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_010_17SQA_20230609T220958_0711_02/ECOv002_L2T_LSTE_27931_010_17SQA_20230609T220958_0711_02_cloud.tif",
+      "bytes": 30318,
+      "sha256": "12e3716b914429bd3d091258a0e45c3ca983d87da62cbd48f73fdba9c211155b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_010_17SQV_20230609T220958_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_010_17SQV_20230609T220958_0711_02/ECOv002_L2T_LSTE_27931_010_17SQV_20230609T220958_0711_02_cloud.tif",
+      "bytes": 23306,
+      "sha256": "8c1a4608b42b52fe60b70c16e029f00dbe01cd1eead320662cb1711541395097",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_007_17SQA_20230610T212101_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_007_17SQA_20230610T212101_0711_02/ECOv002_L2T_LSTE_27946_007_17SQA_20230610T212101_0711_02_cloud.tif",
+      "bytes": 5699,
+      "sha256": "8c561f9b9f35455d12ad9923b65d611492bf29401c209fa0c9451883ac1794ec",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_007_17SQV_20230610T212101_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_007_17SQV_20230610T212101_0711_02/ECOv002_L2T_LSTE_27946_007_17SQV_20230610T212101_0711_02_cloud.tif",
+      "bytes": 5688,
+      "sha256": "67c1a26a59972efca6b05bd4cfbb78049ef3dcb3dcdeec1bd1cf22db2ed2582c",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27992,
+      "asset": "ECOv002_L2T_LSTE_27992_009_17SPV_20230613T202954_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27992_009_17SPV_20230613T202954_0711_02/ECOv002_L2T_LSTE_27992_009_17SPV_20230613T202954_0711_02_cloud.tif",
+      "bytes": 6936,
+      "sha256": "16ef8c90d78467aff6811d761c338a10d82d084f06c12d450423e235a950ebe3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27992,
+      "asset": "ECOv002_L2T_LSTE_27992_010_17SPV_20230613T203046_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27992_010_17SPV_20230613T203046_0711_02/ECOv002_L2T_LSTE_27992_010_17SPV_20230613T203046_0711_02_cloud.tif",
+      "bytes": 26997,
+      "sha256": "6983f9a79393c653150b2cd3c50d479c2acff24890553cbc18984b84e9022de1",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27992,
+      "asset": "ECOv002_L2T_LSTE_27992_010_17SQA_20230613T203046_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27992_010_17SQA_20230613T203046_0711_02/ECOv002_L2T_LSTE_27992_010_17SQA_20230613T203046_0711_02_cloud.tif",
+      "bytes": 79514,
+      "sha256": "5af25324b74976bdf20b4f8fd10d41c1c57b268e8174488a1b0baad18b1783d6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 27992,
+      "asset": "ECOv002_L2T_LSTE_27992_010_17SQV_20230613T203046_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27992_010_17SQV_20230613T203046_0711_02/ECOv002_L2T_LSTE_27992_010_17SQV_20230613T203046_0711_02_cloud.tif",
+      "bytes": 66053,
+      "sha256": "4c3b61452d467bb5675e4b981616f75398d51628dee0d1275c64ab8882cf07f9",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28552,
+      "asset": "ECOv002_L2T_LSTE_28552_005_17SPV_20230719T223548_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28552_005_17SPV_20230719T223548_0712_02/ECOv002_L2T_LSTE_28552_005_17SPV_20230719T223548_0712_02_cloud.tif",
+      "bytes": 14715,
+      "sha256": "7878d8f7896f864a54dbdf02edd0d6dac2381ed00be91b7b9d913ee8e9eea465",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28552,
+      "asset": "ECOv002_L2T_LSTE_28552_005_17SQA_20230719T223548_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28552_005_17SQA_20230719T223548_0712_02/ECOv002_L2T_LSTE_28552_005_17SQA_20230719T223548_0712_02_cloud.tif",
+      "bytes": 23901,
+      "sha256": "a2f2bbca89111c503cd3b83bc9aabd58651bb994d8305f03f353f852d5111498",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28552,
+      "asset": "ECOv002_L2T_LSTE_28552_005_17SQV_20230719T223548_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28552_005_17SQV_20230719T223548_0712_02/ECOv002_L2T_LSTE_28552_005_17SQV_20230719T223548_0712_02_cloud.tif",
+      "bytes": 13058,
+      "sha256": "3b90d37a53f663a2b3b1660f47d0d518382de46474cb997ae6dcb3d9968be2d8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_006_17SPV_20230722T214711_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_006_17SPV_20230722T214711_0712_02/ECOv002_L2T_LSTE_28598_006_17SPV_20230722T214711_0712_02_cloud.tif",
+      "bytes": 41851,
+      "sha256": "bef6ef1dc6b2f944d424450fb593fe43ae2742090a37cdb1b0a9b4bb100e2b5f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_006_17SQA_20230722T214711_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_006_17SQA_20230722T214711_0712_02/ECOv002_L2T_LSTE_28598_006_17SQA_20230722T214711_0712_02_cloud.tif",
+      "bytes": 7199,
+      "sha256": "22d50edaec643cea5af57bb854d99d8a71a4416296db9192ce38d7d604d9541f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_006_17SQV_20230722T214711_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_006_17SQV_20230722T214711_0712_02/ECOv002_L2T_LSTE_28598_006_17SQV_20230722T214711_0712_02_cloud.tif",
+      "bytes": 18541,
+      "sha256": "5c82c721c3d83ef34d5f3eb482730508b13243f1c6fc3ebbdbee204127fa8381",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_007_17SQA_20230722T214803_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_007_17SQA_20230722T214803_0712_02/ECOv002_L2T_LSTE_28598_007_17SQA_20230722T214803_0712_02_cloud.tif",
+      "bytes": 21443,
+      "sha256": "27958fc11a95e012241b4a56d994da7bb95a7f0b1f83e83d43676cf59d9d1b3c",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28598,
+      "asset": "ECOv002_L2T_LSTE_28598_007_17SQV_20230722T214803_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28598_007_17SQV_20230722T214803_0712_02/ECOv002_L2T_LSTE_28598_007_17SQV_20230722T214803_0712_02_cloud.tif",
+      "bytes": 10766,
+      "sha256": "edeedbcfa4c5288e9208e71fbf985ec8dd3f0205e8a2f246c7649872cceb3bbf",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28613,
+      "asset": "ECOv002_L2T_LSTE_28613_005_17SPV_20230723T205844_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28613_005_17SPV_20230723T205844_0712_02/ECOv002_L2T_LSTE_28613_005_17SPV_20230723T205844_0712_02_cloud.tif",
+      "bytes": 14438,
+      "sha256": "abbee89e9d066519a9697909ae6e9f6a65558f9a89c5b91829b40465db0880c7",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28613,
+      "asset": "ECOv002_L2T_LSTE_28613_005_17SQV_20230723T205844_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28613_005_17SQV_20230723T205844_0712_02/ECOv002_L2T_LSTE_28613_005_17SQV_20230723T205844_0712_02_cloud.tif",
+      "bytes": 8551,
+      "sha256": "0bee8e81f7836ec792845a4569efbbc344cc22b6efb825e16b1be14da4568bce",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28613,
+      "asset": "ECOv002_L2T_LSTE_28613_006_17SPV_20230723T205936_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28613_006_17SPV_20230723T205936_0712_02/ECOv002_L2T_LSTE_28613_006_17SPV_20230723T205936_0712_02_cloud.tif",
+      "bytes": 9180,
+      "sha256": "0ffd270110632d9baed92810a2dcbfb48f6de95c76ab4787ca8dbd485d5031a3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28613,
+      "asset": "ECOv002_L2T_LSTE_28613_006_17SQA_20230723T205936_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28613_006_17SQA_20230723T205936_0712_02/ECOv002_L2T_LSTE_28613_006_17SQA_20230723T205936_0712_02_cloud.tif",
+      "bytes": 16756,
+      "sha256": "b85cfb8bfb6d5dc2d3e962ac38738148815961681342d9dd3a27e9e334db07b3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28613,
+      "asset": "ECOv002_L2T_LSTE_28613_006_17SQV_20230723T205936_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28613_006_17SQV_20230723T205936_0712_02/ECOv002_L2T_LSTE_28613_006_17SQV_20230723T205936_0712_02_cloud.tif",
+      "bytes": 57262,
+      "sha256": "0c3827ae30fac2b59e1820114946fe8789befe3226159aaa0bc9507c5808f4dc",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "raleigh",
+      "orbit": 28923,
+      "asset": "ECOv002_L2T_LSTE_28923_009_17SPV_20230812T210346_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28923_009_17SPV_20230812T210346_0712_02/ECOv002_L2T_LSTE_28923_009_17SPV_20230812T210346_0712_02_cloud.tif",
+      "bytes": 10269,
+      "sha256": "0bc3956fd5fb03eaac9f74b3596c46d28ddb52e6c5e97587d50728954bbcb84d",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

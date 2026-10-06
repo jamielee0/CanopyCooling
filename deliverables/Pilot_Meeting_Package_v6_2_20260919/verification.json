@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "targeted_tests": 21,
+  "coefficient_release_authorized": false,
+  "tolerance": null,
+  "empirical_effects_inspected": false,
+  "cities": {
+    "phoenix": {
+      "primary_passes": 5,
+      "main_precision_fits": 35,
+      "spatial_stress_fits": 10,
+      "bootstrap_failures": 11,
+      "sealed_files": 50
+    },
+    "atlanta": {
+      "primary_passes": 5,
+      "main_precision_fits": 35,
+      "spatial_stress_fits": 10,
+      "bootstrap_failures": 0,
+      "sealed_files": 50
+    }
+  },
+  "docx_visual_QA_pages": {
+    "proposal": 2,
+    "working_guide": 4,
+    "next_steps": 2,
+    "schedule": 2
+  },
+  "simulation_combinations": 280,
+  "time_support": [
+    {
+      "city": "phoenix",
+      "variant": "total",
+      "status": "COMPUTED_SEALED",
+      "independent_days": 5,
+      "estimable_resamples": 999
+    },
+    {
+      "city": "phoenix",
+      "variant": "total_spatial8km",
+      "status": "COMPUTED_SEALED",
+      "independent_days": 5,
+      "estimable_resamples": 999
+    },
+    {
+      "city": "phoenix",
+      "variant": "geometry_season",
+      "status": "NOT_ESTIMABLE",
+      "reason": "Secondary geometry/season common support absent"
+    },
+    {
+      "city": "atlanta",
+      "variant": "total",
+      "status": "COMPUTED_SEALED",
+      "independent_days": 5,
+      "estimable_resamples": 998
+    },
+    {
+      "city": "atlanta",
+      "variant": "total_spatial8km",
+      "status": "COMPUTED_SEALED",
+      "independent_days": 5,
+      "estimable_resamples": 998
+    },
+    {
+      "city": "atlanta",
+      "variant": "geometry_season",
+      "status": "NOT_ESTIMABLE",
+      "reason": "Secondary geometry/season common support absent"
+    }
+  ],
+  "preserved_historical_result_files": 258,
+  "original_sources_verified": 4,
+  "output_boundary": "PASS: separate empirical precision, sealed effects, synthetic and retired roots"
+}

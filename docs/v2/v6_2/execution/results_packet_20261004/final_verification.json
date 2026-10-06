@@ -1,0 +1,45 @@
+{
+  "status": "COMPLETED_AND_VERIFIED",
+  "rows": 64,
+  "originals": 16,
+  "uncertainty_sensitivities": 48,
+  "columns": 97,
+  "cities": {
+    "phoenix": 11,
+    "atlanta": 5
+  },
+  "plotted_points_in_two_panels_each": 32,
+  "complete_linked_weather": 10,
+  "tests": "14 network-free known-answer/boundary tests passed",
+  "checks": "Exact CSV typed roundtrip, source estimates/SE/intervals, identifiers and leading zeros, signs/units, draw accounting, area, plot-point mapping, all frozen input hashes and data link",
+  "sealed_effect_fields_empty": true,
+  "sealed_files_opened": [],
+  "new_model_fits": 0,
+  "visual_qa": {
+    "phoenix": "passed; both panels, all eleven dates and close-point leader lines",
+    "atlanta": "passed; both panels, all five dates",
+    "table_preview": "passed; 16 identities, values and both interval sizes readable",
+    "scope": "offline PNGs; no claim of native Codex preview"
+  },
+  "csv_sha256": "3b037c2a2bfb85ac67a8c5634dd38e957237ab67c8e04b817d52cf3772cbd48d",
+  "final_code": [
+    {
+      "path": "src/v6_2_advance/results_packet.py",
+      "sha256": "84f8cd3fa6790dd46855e12938503531256452da016c132db4652f5c554707be"
+    },
+    {
+      "path": "src/v6_2_advance/run_results_packet.py",
+      "sha256": "cde47c5c8968539bd9ec1755bdf1a80fb10b7ff1263aed3dfddf0ff3f1e09f7a"
+    },
+    {
+      "path": "tests/v6_2_advance/test_results_packet.py",
+      "sha256": "81912e09c46b4eb1c691be204f916c5af8f6d72b9d6c806ff639ff6c8a52c79b"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/results_packet_20261004/build_results_csv.mjs",
+      "sha256": "4fdebace50a3b11f08fa2d5ad6a619977f0127486c34cc80e4757bda4e0804e6"
+    }
+  ],
+  "documentation_verification": "passed; YAML/scientific-preservation/archive/link checks and six offline visual previews",
+  "pdf_verification": "both single-page exports readable with expected title and interval text"
+}

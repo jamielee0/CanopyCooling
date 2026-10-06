@@ -1,0 +1,1040 @@
+{
+  "recorded_utc": "2026-09-21T21:20:13.667176+00:00",
+  "design": "selection_design.json",
+  "sampling": "Same frozen 300 Phoenix canopy-screen blocks; one point per block; overlap any-cloud veto. All 2023 endpoints and all geometry-supported multiyear endpoint strata, without outcome access.",
+  "limit": "Proxy only: missing observations are not cloudy; not native-cell joint-support certification.",
+  "assets": [
+    {
+      "orbit": 27836,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_27836_004_12SUB_20230603T184936_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27836_004_12SUB_20230603T184936_0711_01/ECOv002_L2T_LSTE_27836_004_12SUB_20230603T184936_0711_01_cloud.tif",
+      "sha256": "0f4b2587330ba60db630ae6a490a6b27cde9a44f0486e6cc91bfbd3d9f2dcbdd",
+      "bytes": 5678,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 27836,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_27836_004_12SVB_20230603T184936_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27836_004_12SVB_20230603T184936_0711_01/ECOv002_L2T_LSTE_27836_004_12SVB_20230603T184936_0711_01_cloud.tif",
+      "sha256": "47f0beda39dd2b9e6d0ee302e6b0872d129fb00ce25d920d6b55824dc0e8bb92",
+      "bytes": 5724,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 27836,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_27836_004_12SVC_20230603T184936_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27836_004_12SVC_20230603T184936_0711_01/ECOv002_L2T_LSTE_27836_004_12SVC_20230603T184936_0711_01_cloud.tif",
+      "sha256": "cd99b5e9d40d62df41f4e5f214aaa60cf290d936563de9b05f6548315b877295",
+      "bytes": 9690,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 27963,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_27963_013_12SUB_20230611T233953_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_013_12SUB_20230611T233953_0711_01/ECOv002_L2T_LSTE_27963_013_12SUB_20230611T233953_0711_01_cloud.tif",
+      "sha256": "61a7616061cfbf2462fed0988fc5f7c79a1f0dd14294121f1773816d7614bf4a",
+      "bytes": 37029,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 27963,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_27963_013_12SUC_20230611T233953_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_013_12SUC_20230611T233953_0711_01/ECOv002_L2T_LSTE_27963_013_12SUC_20230611T233953_0711_01_cloud.tif",
+      "sha256": "dc8786f363c60fbb9f4c07f1995e85744bf29ba7b304b5e0328d5e5b86e3844d",
+      "bytes": 68924,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 27963,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_27963_013_12SVB_20230611T233953_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_013_12SVB_20230611T233953_0711_01/ECOv002_L2T_LSTE_27963_013_12SVB_20230611T233953_0711_01_cloud.tif",
+      "sha256": "54193af48a4b9886c375b80ede6f1145132912611925575f517dabc769a04791",
+      "bytes": 9120,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 27963,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_27963_013_12SVC_20230611T233953_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_013_12SVC_20230611T233953_0711_01/ECOv002_L2T_LSTE_27963_013_12SVC_20230611T233953_0711_01_cloud.tif",
+      "sha256": "396cc1c73e249863cf2f22a2ca7b824f5a69d2ac9631785b14107686be6e76cc",
+      "bytes": 64133,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 27963,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_27963_014_12SUB_20230611T234045_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_014_12SUB_20230611T234045_0711_01/ECOv002_L2T_LSTE_27963_014_12SUB_20230611T234045_0711_01_cloud.tif",
+      "sha256": "c0a6871c697457f7cc4564fbf14c1b5fb560ab525967f01d3627dfc8ebfe5cb4",
+      "bytes": 14978,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 27963,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_27963_014_12SVB_20230611T234045_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_014_12SVB_20230611T234045_0711_01/ECOv002_L2T_LSTE_27963_014_12SVB_20230611T234045_0711_01_cloud.tif",
+      "sha256": "cd7b835d5fb61a9441eb58468e65e39cf3eeb94a2e56da5f6e073e57fa6a2076",
+      "bytes": 47309,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 27963,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_27963_014_12SVC_20230611T234045_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_014_12SVC_20230611T234045_0711_01/ECOv002_L2T_LSTE_27963_014_12SVC_20230611T234045_0711_01_cloud.tif",
+      "sha256": "e8c5ed1041118e703e523ab8385e04e67303576e2d077b16bc73430c44e9c547",
+      "bytes": 48546,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28207,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28207_010_12SVC_20230627T170704_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28207_010_12SVC_20230627T170704_0711_01/ECOv002_L2T_LSTE_28207_010_12SVC_20230627T170704_0711_01_cloud.tif",
+      "sha256": "87566c7502074d73f079e5e580956b4976ea257911e99229019949455ac14a4b",
+      "bytes": 6293,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33496,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33496_005_12SUB_20240602T182710_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33496_005_12SUB_20240602T182710_0711_01/ECOv002_L2T_LSTE_33496_005_12SUB_20240602T182710_0711_01_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33496,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33496_005_12SUC_20240602T182710_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33496_005_12SUC_20240602T182710_0711_01/ECOv002_L2T_LSTE_33496_005_12SUC_20240602T182710_0711_01_cloud.tif",
+      "sha256": "ef0d74046495c69088a8b80fce7e4d9802398a09fbb2e808166bce5f5faa47f2",
+      "bytes": 6312,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33496,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33496_005_12SVB_20240602T182710_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33496_005_12SVB_20240602T182710_0711_01/ECOv002_L2T_LSTE_33496_005_12SVB_20240602T182710_0711_01_cloud.tif",
+      "sha256": "1a17385585ea223762514bbffee4d17ff134337fecf179e6dae4b5b425d52569",
+      "bytes": 5651,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33496,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33496_005_12SVC_20240602T182710_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33496_005_12SVC_20240602T182710_0711_01/ECOv002_L2T_LSTE_33496_005_12SVC_20240602T182710_0711_01_cloud.tif",
+      "sha256": "c72276f6f2108fe204e104bc760aaacccad70492229cabc678073066b90bf9e0",
+      "bytes": 8087,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33496,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33496_006_12SVC_20240602T182802_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33496_006_12SVC_20240602T182802_0711_01/ECOv002_L2T_LSTE_33496_006_12SVC_20240602T182802_0711_01_cloud.tif",
+      "sha256": "1d4459627d8a9675ab12dadd21bb28d082bb0c3e171c8d12ccf24a99402fa5e7",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33623,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33623_014_12SUB_20240610T231550_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33623_014_12SUB_20240610T231550_0711_01/ECOv002_L2T_LSTE_33623_014_12SUB_20240610T231550_0711_01_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33623,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33623_014_12SUC_20240610T231550_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33623_014_12SUC_20240610T231550_0711_01/ECOv002_L2T_LSTE_33623_014_12SUC_20240610T231550_0711_01_cloud.tif",
+      "sha256": "0576ac82c6eb60feddafa111230e3c729b630463e220bc7cd125d4165b2ea9b9",
+      "bytes": 5982,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33623,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33623_014_12SVC_20240610T231550_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33623_014_12SVC_20240610T231550_0711_01/ECOv002_L2T_LSTE_33623_014_12SVC_20240610T231550_0711_01_cloud.tif",
+      "sha256": "1d4459627d8a9675ab12dadd21bb28d082bb0c3e171c8d12ccf24a99402fa5e7",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33623,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33623_015_12SUB_20240610T231642_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33623_015_12SUB_20240610T231642_0711_01/ECOv002_L2T_LSTE_33623_015_12SUB_20240610T231642_0711_01_cloud.tif",
+      "sha256": "b1ee77977787a84c4030672678256ac76ffc418e5ed2e7b37a5aa7d06a37873b",
+      "bytes": 11128,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33623,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33623_015_12SUC_20240610T231642_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33623_015_12SUC_20240610T231642_0711_01/ECOv002_L2T_LSTE_33623_015_12SUC_20240610T231642_0711_01_cloud.tif",
+      "sha256": "5b6c280d7f820465e1401a3972d932c9fc42818a87e4957770b51ecfd8222a7a",
+      "bytes": 7971,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33623,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33623_015_12SVB_20240610T231642_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33623_015_12SVB_20240610T231642_0711_01/ECOv002_L2T_LSTE_33623_015_12SVB_20240610T231642_0711_01_cloud.tif",
+      "sha256": "b1b38c6369ba494a770d15abc4add8e4d8c37035e54454e587730544bed8a5f8",
+      "bytes": 9369,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 33623,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_33623_015_12SVC_20240610T231642_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_33623_015_12SVC_20240610T231642_0711_01/ECOv002_L2T_LSTE_33623_015_12SVC_20240610T231642_0711_01_cloud.tif",
+      "sha256": "954a26d33f82b3a99d04b85dfbceca0f91272823c2fe54e5b2deac3427c75d27",
+      "bytes": 8489,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 27897,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_27897_003_12SVB_20230607T171108_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27897_003_12SVB_20230607T171108_0711_02/ECOv002_L2T_LSTE_27897_003_12SVB_20230607T171108_0711_02_cloud.tif",
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28009,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28009_015_12SUB_20230614T224937_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28009_015_12SUB_20230614T224937_0711_02/ECOv002_L2T_LSTE_28009_015_12SUB_20230614T224937_0711_02_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28146,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28146_011_12SUC_20230623T184459_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28146_011_12SUC_20230623T184459_0711_02/ECOv002_L2T_LSTE_28146_011_12SUC_20230623T184459_0711_02_cloud.tif",
+      "sha256": "1e2ac9a205481f9052828f675349268adf71f59a86d783ba7ea469194c54373d",
+      "bytes": 6247,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28146,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28146_011_12SVB_20230623T184459_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28146_011_12SVB_20230623T184459_0711_02/ECOv002_L2T_LSTE_28146_011_12SVB_20230623T184459_0711_02_cloud.tif",
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28146,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28146_011_12SVC_20230623T184459_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28146_011_12SVC_20230623T184459_0711_02/ECOv002_L2T_LSTE_28146_011_12SVC_20230623T184459_0711_02_cloud.tif",
+      "sha256": "8a475f4fc522a1efdbd8dcb1ffebb3de15a1c85375d6b4d6cca15f6d16ab9f7c",
+      "bytes": 6209,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28146,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28146_012_12SVB_20230623T184551_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28146_012_12SVB_20230623T184551_0711_02/ECOv002_L2T_LSTE_28146_012_12SVB_20230623T184551_0711_02_cloud.tif",
+      "sha256": "8af42b6bbe350f17d43a7deed7941e786676f437e2db050afe70d6056072cc7a",
+      "bytes": 5651,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28146,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28146_012_12SVC_20230623T184551_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28146_012_12SVC_20230623T184551_0711_02/ECOv002_L2T_LSTE_28146_012_12SVC_20230623T184551_0711_02_cloud.tif",
+      "sha256": "0fc5749f9221ba11386eb4936d29e0b9d540bc6fb7087a4dac3b44215bc0ee2b",
+      "bytes": 7653,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28192,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SUB_20230626T175548_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28192_013_12SUB_20230626T175548_0711_02/ECOv002_L2T_LSTE_28192_013_12SUB_20230626T175548_0711_02_cloud.tif",
+      "sha256": "8df9e8e9d4131f30e7ea422a09bc8cb8a5aa1e6646330b8cacdfcdce2f7aebe8",
+      "bytes": 9973,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28192,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SUC_20230626T175548_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28192_013_12SUC_20230626T175548_0711_02/ECOv002_L2T_LSTE_28192_013_12SUC_20230626T175548_0711_02_cloud.tif",
+      "sha256": "52c08d1e6072d5bcf3fe98c9d13f43f9f2ba85e8cf0f429b81685cac9ef47a8a",
+      "bytes": 6311,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28192,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SVB_20230626T175548_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28192_013_12SVB_20230626T175548_0711_02/ECOv002_L2T_LSTE_28192_013_12SVB_20230626T175548_0711_02_cloud.tif",
+      "sha256": "48960137fd3ad2280582aaff9b3991d80bc3cde526a0e0d255f5663a0e0cd239",
+      "bytes": 50711,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28192,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SVC_20230626T175548_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28192_013_12SVC_20230626T175548_0711_02/ECOv002_L2T_LSTE_28192_013_12SVC_20230626T175548_0711_02_cloud.tif",
+      "sha256": "7ebe45f0c8c749885558a4d02795c7b753499d68eb22c914493edbd573dd5400",
+      "bytes": 13921,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28192,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_014_12SVB_20230626T175640_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28192_014_12SVB_20230626T175640_0711_02/ECOv002_L2T_LSTE_28192_014_12SVB_20230626T175640_0711_02_cloud.tif",
+      "sha256": "dc21397a1da185fb0025fa040db78bde48ea86f0a34fbe5bc0969ec14a7e25dc",
+      "bytes": 12879,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 6281,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_06281_009_12SUC_20190815T002338_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_06281_009_12SUC_20190815T002338_0712_01/ECOv002_L2T_LSTE_06281_009_12SUC_20190815T002338_0712_01_cloud.tif",
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 6281,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_06281_010_12SUB_20190815T002430_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_06281_010_12SUB_20190815T002430_0712_01/ECOv002_L2T_LSTE_06281_010_12SUB_20190815T002430_0712_01_cloud.tif",
+      "sha256": "f1858bf3c3ba043036f561b94091046055900062d6514fb2142c7ca923f5ad23",
+      "bytes": 5667,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 6281,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_06281_010_12SUC_20190815T002430_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_06281_010_12SUC_20190815T002430_0712_01/ECOv002_L2T_LSTE_06281_010_12SUC_20190815T002430_0712_01_cloud.tif",
+      "sha256": "53a074b6253bec7e185e37af543888fac27586aa462127de7b77cf091b405252",
+      "bytes": 5659,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 6281,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_06281_010_12SVB_20190815T002430_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_06281_010_12SVB_20190815T002430_0712_01/ECOv002_L2T_LSTE_06281_010_12SVB_20190815T002430_0712_01_cloud.tif",
+      "sha256": "0285c0439379dbcf859c661873e86f459f4c9eb7b40c2d18b377e97e729d2748",
+      "bytes": 5667,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 6281,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_06281_010_12SVC_20190815T002430_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_06281_010_12SVC_20190815T002430_0712_01/ECOv002_L2T_LSTE_06281_010_12SVC_20190815T002430_0712_01_cloud.tif",
+      "sha256": "230b4618b5d90ddbb08a0961193931e64e5f268a2279e90e93ab786950e12d59",
+      "bytes": 10435,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 6510,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_06510_014_12SUB_20190829T183948_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_06510_014_12SUB_20190829T183948_0712_01/ECOv002_L2T_LSTE_06510_014_12SUB_20190829T183948_0712_01_cloud.tif",
+      "sha256": "7baf14e68881d3db57027f3cc62508d1fe604f0e6aab460794de84fd3a93f67a",
+      "bytes": 5934,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 6510,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_06510_014_12SUC_20190829T183948_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_06510_014_12SUC_20190829T183948_0712_01/ECOv002_L2T_LSTE_06510_014_12SUC_20190829T183948_0712_01_cloud.tif",
+      "sha256": "6afe73c51b3ad9bee8c1fe508ad0fe29a9100b414e152839cff53d8bfafc4b8b",
+      "bytes": 5883,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 6510,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_06510_014_12SVB_20190829T183948_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_06510_014_12SVB_20190829T183948_0712_01/ECOv002_L2T_LSTE_06510_014_12SVB_20190829T183948_0712_01_cloud.tif",
+      "sha256": "e837f6016bdf9e43cf24547af482ed904dd2f2da08faa60fde0aee08db5c1537",
+      "bytes": 5787,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 6510,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_06510_014_12SVC_20190829T183948_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_06510_014_12SVC_20190829T183948_0712_01/ECOv002_L2T_LSTE_06510_014_12SVC_20190829T183948_0712_01_cloud.tif",
+      "sha256": "b754ae59bfe872ffa774e5a1b56770007af60cc312be351cb04051aa18913da0",
+      "bytes": 5811,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17524,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17524_004_12SUB_20210808T174943_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17524_004_12SUB_20210808T174943_0712_01/ECOv002_L2T_LSTE_17524_004_12SUB_20210808T174943_0712_01_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17524,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17524_004_12SUC_20210808T174943_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17524_004_12SUC_20210808T174943_0712_01/ECOv002_L2T_LSTE_17524_004_12SUC_20210808T174943_0712_01_cloud.tif",
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17524,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17524_004_12SVB_20210808T174943_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17524_004_12SVB_20210808T174943_0712_01/ECOv002_L2T_LSTE_17524_004_12SVB_20210808T174943_0712_01_cloud.tif",
+      "sha256": "0c82fbd463a2b9684e60aa761dfdb4fecce4480b8ca1059b53e797dabac4ec42",
+      "bytes": 6489,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17524,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17524_004_12SVC_20210808T174943_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17524_004_12SVC_20210808T174943_0712_01/ECOv002_L2T_LSTE_17524_004_12SVC_20210808T174943_0712_01_cloud.tif",
+      "sha256": "1d4459627d8a9675ab12dadd21bb28d082bb0c3e171c8d12ccf24a99402fa5e7",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17524,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17524_005_12SUC_20210808T175035_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17524_005_12SUC_20210808T175035_0712_01/ECOv002_L2T_LSTE_17524_005_12SUC_20210808T175035_0712_01_cloud.tif",
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17524,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17524_005_12SVB_20210808T175035_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17524_005_12SVB_20210808T175035_0712_01/ECOv002_L2T_LSTE_17524_005_12SVB_20210808T175035_0712_01_cloud.tif",
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17524,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17524_005_12SVC_20210808T175035_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17524_005_12SVC_20210808T175035_0712_01/ECOv002_L2T_LSTE_17524_005_12SVC_20210808T175035_0712_01_cloud.tif",
+      "sha256": "1d4459627d8a9675ab12dadd21bb28d082bb0c3e171c8d12ccf24a99402fa5e7",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17544,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17544_016_12SUB_20210810T011148_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17544_016_12SUB_20210810T011148_0712_01/ECOv002_L2T_LSTE_17544_016_12SUB_20210810T011148_0712_01_cloud.tif",
+      "sha256": "95bf92f6a47c43276ea65e056495e1452779e0cf7d4440d33c5c4d4dc55c4973",
+      "bytes": 11881,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17544,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17544_016_12SUC_20210810T011148_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17544_016_12SUC_20210810T011148_0712_01/ECOv002_L2T_LSTE_17544_016_12SUC_20210810T011148_0712_01_cloud.tif",
+      "sha256": "41961397bf80b1b4813304bee8c83d237d6bce9431fc08fcdb8dcc8008d6bdae",
+      "bytes": 28555,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17544,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17544_016_12SVC_20210810T011148_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17544_016_12SVC_20210810T011148_0712_01/ECOv002_L2T_LSTE_17544_016_12SVC_20210810T011148_0712_01_cloud.tif",
+      "sha256": "41b168e3e07ca836f3c8e9dbbde3697bfcd05a9322467a7e0247228531a3b8c7",
+      "bytes": 9992,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17851,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17851_010_12SUB_20210829T173157_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17851_010_12SUB_20210829T173157_0712_01/ECOv002_L2T_LSTE_17851_010_12SUB_20210829T173157_0712_01_cloud.tif",
+      "sha256": "e23ad62cc6f3bf25125fe89925bb08b6a895bb8e36e836d56f15c642b09bbf14",
+      "bytes": 49474,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17851,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17851_010_12SUC_20210829T173157_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17851_010_12SUC_20210829T173157_0712_01/ECOv002_L2T_LSTE_17851_010_12SUC_20210829T173157_0712_01_cloud.tif",
+      "sha256": "8dec7e8a407786965d6cdf23925035c11adeac1d82b1765c5a94e52ea99b41c6",
+      "bytes": 36432,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17851,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17851_010_12SVB_20210829T173157_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17851_010_12SVB_20210829T173157_0712_01/ECOv002_L2T_LSTE_17851_010_12SVB_20210829T173157_0712_01_cloud.tif",
+      "sha256": "6f64289384debb6a039478ebf0ce7aca3cd51aee9148e4ca3f6ca756bec26f04",
+      "bytes": 15689,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17851,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17851_010_12SVC_20210829T173157_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17851_010_12SVC_20210829T173157_0712_01/ECOv002_L2T_LSTE_17851_010_12SVC_20210829T173157_0712_01_cloud.tif",
+      "sha256": "f7923c093174b6001887c141f3b25237ccfbf016371ba8b7c3ebf3065dd8deb4",
+      "bytes": 31906,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 17851,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_17851_011_12SVB_20210829T173249_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_17851_011_12SVB_20210829T173249_0712_01/ECOv002_L2T_LSTE_17851_011_12SVB_20210829T173249_0712_01_cloud.tif",
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28599,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28599_003_12SUB_20230722T231825_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28599_003_12SUB_20230722T231825_0712_01/ECOv002_L2T_LSTE_28599_003_12SUB_20230722T231825_0712_01_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28599,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28599_003_12SVB_20230722T231825_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28599_003_12SVB_20230722T231825_0712_01/ECOv002_L2T_LSTE_28599_003_12SVB_20230722T231825_0712_01_cloud.tif",
+      "sha256": "38154cd1e05d492b4854fa1ca06091f6e13859ff507d18148930123462d78c2d",
+      "bytes": 10827,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28599,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28599_003_12SVC_20230722T231825_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28599_003_12SVC_20230722T231825_0712_01/ECOv002_L2T_LSTE_28599_003_12SVC_20230722T231825_0712_01_cloud.tif",
+      "sha256": "7dc93451da9a1b8257bb2db081d11ef9c7d4912585aa54ad6600e32238fb335e",
+      "bytes": 7663,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29153,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29153_012_12SUB_20230827T170322_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29153_012_12SUB_20230827T170322_0712_01/ECOv002_L2T_LSTE_29153_012_12SUB_20230827T170322_0712_01_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29153,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29153_012_12SUC_20230827T170322_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29153_012_12SUC_20230827T170322_0712_01/ECOv002_L2T_LSTE_29153_012_12SUC_20230827T170322_0712_01_cloud.tif",
+      "sha256": "3b86616b6521b8ffb36ae689c3fbdf0a1834521dd5d28506356b406a77d2e063",
+      "bytes": 15698,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29153,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29153_012_12SVB_20230827T170322_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29153_012_12SVB_20230827T170322_0712_01/ECOv002_L2T_LSTE_29153_012_12SVB_20230827T170322_0712_01_cloud.tif",
+      "sha256": "ce32cb14d331ed6374e12816a7719fe7b68b5696f219313be83008a26555c9e2",
+      "bytes": 20862,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29153,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29153_012_12SVC_20230827T170322_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29153_012_12SVC_20230827T170322_0712_01/ECOv002_L2T_LSTE_29153_012_12SVC_20230827T170322_0712_01_cloud.tif",
+      "sha256": "1de0a61cf05abaf14d8a307fbe13ed921647aae8339caac34419d35daaa422ca",
+      "bytes": 11378,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 23146,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_23146_002_12SUB_20220805T183204_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_23146_002_12SUB_20220805T183204_0712_02/ECOv002_L2T_LSTE_23146_002_12SUB_20220805T183204_0712_02_cloud.tif",
+      "sha256": "619ff6beff4e72403d91f08a3f9ecc535e0703d5330c64c131139a4a1ba5401d",
+      "bytes": 9078,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 23146,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_23146_002_12SUC_20220805T183204_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_23146_002_12SUC_20220805T183204_0712_02/ECOv002_L2T_LSTE_23146_002_12SUC_20220805T183204_0712_02_cloud.tif",
+      "sha256": "e649a36c4d71305510067ac2b9ef7b0c865aee0ec912de4d10812fdea77b231f",
+      "bytes": 5663,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 23146,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_23146_002_12SVB_20220805T183204_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_23146_002_12SVB_20220805T183204_0712_02/ECOv002_L2T_LSTE_23146_002_12SVB_20220805T183204_0712_02_cloud.tif",
+      "sha256": "0190a9a48118d4e28ec661d5a55c79d5f9fc5108375f6e17a36e5365f47fecbd",
+      "bytes": 6492,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 23146,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_23146_002_12SVC_20220805T183204_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_23146_002_12SVC_20220805T183204_0712_02/ECOv002_L2T_LSTE_23146_002_12SVC_20220805T183204_0712_02_cloud.tif",
+      "sha256": "1d4459627d8a9675ab12dadd21bb28d082bb0c3e171c8d12ccf24a99402fa5e7",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 23146,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_23146_003_12SUB_20220805T183256_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_23146_003_12SUB_20220805T183256_0712_02/ECOv002_L2T_LSTE_23146_003_12SUB_20220805T183256_0712_02_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 23146,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_23146_003_12SUC_20220805T183256_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_23146_003_12SUC_20220805T183256_0712_02/ECOv002_L2T_LSTE_23146_003_12SUC_20220805T183256_0712_02_cloud.tif",
+      "sha256": "7a3ca8a48b72b1911dfc8887e5f9765dbca07f4a3869cb88ea9f85dca439f3d2",
+      "bytes": 5990,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 23146,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_23146_003_12SVB_20220805T183256_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_23146_003_12SVB_20220805T183256_0712_02/ECOv002_L2T_LSTE_23146_003_12SVB_20220805T183256_0712_02_cloud.tif",
+      "sha256": "888d4bbd1398a25636b375847133b8db1098adb53d24111d6fd0c58f13652bfd",
+      "bytes": 7423,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 23146,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_23146_003_12SVC_20220805T183256_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_23146_003_12SVC_20220805T183256_0712_02/ECOv002_L2T_LSTE_23146_003_12SVC_20220805T183256_0712_02_cloud.tif",
+      "sha256": "d477149926a6d69d57c450d8b821c2988d8f89b9b50991a8081cc3ad8efe300b",
+      "bytes": 19496,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 23228,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_23228_007_12SUB_20220811T001433_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_23228_007_12SUB_20220811T001433_0712_02/ECOv002_L2T_LSTE_23228_007_12SUB_20220811T001433_0712_02_cloud.tif",
+      "sha256": "0dd6380510bf5ae8ade628d0a5e00cd1fa430e0f6a0b608b5115e39733804f3e",
+      "bytes": 16426,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 23228,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_23228_007_12SVB_20220811T001433_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_23228_007_12SVB_20220811T001433_0712_02/ECOv002_L2T_LSTE_23228_007_12SVB_20220811T001433_0712_02_cloud.tif",
+      "sha256": "8bf14e605586bc55b2cca34f735764db82e11b0f91de2b2d20c3afa4a621e154",
+      "bytes": 29618,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 23228,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_23228_008_12SVB_20220811T001525_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_23228_008_12SVB_20220811T001525_0712_02/ECOv002_L2T_LSTE_23228_008_12SVB_20220811T001525_0712_02_cloud.tif",
+      "sha256": "748bb364b3fd95037d798bee2f9adeb713b6c1fdeb862462d9bf767f37eba14e",
+      "bytes": 14348,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28813,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28813_005_12SUC_20230805T182807_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28813_005_12SUC_20230805T182807_0712_02/ECOv002_L2T_LSTE_28813_005_12SUC_20230805T182807_0712_02_cloud.tif",
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28828,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28828_003_12SUB_20230806T173915_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28828_003_12SUB_20230806T173915_0712_02/ECOv002_L2T_LSTE_28828_003_12SUB_20230806T173915_0712_02_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28828,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28828_003_12SUC_20230806T173915_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28828_003_12SUC_20230806T173915_0712_02/ECOv002_L2T_LSTE_28828_003_12SUC_20230806T173915_0712_02_cloud.tif",
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28828,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28828_003_12SVB_20230806T173915_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28828_003_12SVB_20230806T173915_0712_02/ECOv002_L2T_LSTE_28828_003_12SVB_20230806T173915_0712_02_cloud.tif",
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28828,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28828_004_12SUB_20230806T174007_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28828_004_12SUB_20230806T174007_0712_02/ECOv002_L2T_LSTE_28828_004_12SUB_20230806T174007_0712_02_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28828,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28828_004_12SUC_20230806T174007_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28828_004_12SUC_20230806T174007_0712_02/ECOv002_L2T_LSTE_28828_004_12SUC_20230806T174007_0712_02_cloud.tif",
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28828,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28828_004_12SVB_20230806T174007_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28828_004_12SVB_20230806T174007_0712_02/ECOv002_L2T_LSTE_28828_004_12SVB_20230806T174007_0712_02_cloud.tif",
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28828,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28828_004_12SVC_20230806T174007_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28828_004_12SVC_20230806T174007_0712_02/ECOv002_L2T_LSTE_28828_004_12SVC_20230806T174007_0712_02_cloud.tif",
+      "sha256": "d3417cd93fefb83861a00c0caf30a0394b704c15ea270c020e25c578170ba107",
+      "bytes": 6066,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28909,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28909_012_12SUB_20230811T232247_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28909_012_12SUB_20230811T232247_0712_02/ECOv002_L2T_LSTE_28909_012_12SUB_20230811T232247_0712_02_cloud.tif",
+      "sha256": "61ec23da84c14246568f2abce39bf28b2acea6eb406c44bc7c0d69b0a0a5a3e9",
+      "bytes": 31393,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28909,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28909_012_12SUC_20230811T232247_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28909_012_12SUC_20230811T232247_0712_02/ECOv002_L2T_LSTE_28909_012_12SUC_20230811T232247_0712_02_cloud.tif",
+      "sha256": "6704a41fce77d2079159acffddffec99e615ecf27e85fbe41abe88362de1d77f",
+      "bytes": 20682,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28909,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28909_012_12SVB_20230811T232247_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28909_012_12SVB_20230811T232247_0712_02/ECOv002_L2T_LSTE_28909_012_12SVB_20230811T232247_0712_02_cloud.tif",
+      "sha256": "e90bf8b65c0e58e92085fd4cf8d628214a9359f102fab265c1930a532ac6f88d",
+      "bytes": 28235,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28909,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28909_012_12SVC_20230811T232247_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28909_012_12SVC_20230811T232247_0712_02/ECOv002_L2T_LSTE_28909_012_12SVC_20230811T232247_0712_02_cloud.tif",
+      "sha256": "dfbf5650acadc8a38e59b3c4d6201091cf568a081fdbd6fdbda0699d891c0815",
+      "bytes": 42113,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28955,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28955_014_12SUB_20230814T223640_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28955_014_12SUB_20230814T223640_0712_02/ECOv002_L2T_LSTE_28955_014_12SUB_20230814T223640_0712_02_cloud.tif",
+      "sha256": "12cee02b0a059b0711ae9d08bccfa14b1f88d69a8062cc7fb8f49821113ebd18",
+      "bytes": 38355,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28955,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28955_014_12SUC_20230814T223640_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28955_014_12SUC_20230814T223640_0712_02/ECOv002_L2T_LSTE_28955_014_12SUC_20230814T223640_0712_02_cloud.tif",
+      "sha256": "bf09104c2e85b70b209ada29cdd06028d22bc1813eae4f7a9cf313e3c40c16dc",
+      "bytes": 8496,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28955,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28955_014_12SVB_20230814T223640_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28955_014_12SVB_20230814T223640_0712_02/ECOv002_L2T_LSTE_28955_014_12SVB_20230814T223640_0712_02_cloud.tif",
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28955,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28955_015_12SUB_20230814T223732_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28955_015_12SUB_20230814T223732_0712_02/ECOv002_L2T_LSTE_28955_015_12SUB_20230814T223732_0712_02_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 28955,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28955_015_12SVB_20230814T223732_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28955_015_12SVB_20230814T223732_0712_02/ECOv002_L2T_LSTE_28955_015_12SVB_20230814T223732_0712_02_cloud.tif",
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29092,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SUB_20230823T183859_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29092_011_12SUB_20230823T183859_0712_02/ECOv002_L2T_LSTE_29092_011_12SUB_20230823T183859_0712_02_cloud.tif",
+      "sha256": "7720039b16ad22cd6e50297a85cf5d7b4b8a7e1a76450e91a6c2fb65be996206",
+      "bytes": 5825,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29092,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SUC_20230823T183859_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29092_011_12SUC_20230823T183859_0712_02/ECOv002_L2T_LSTE_29092_011_12SUC_20230823T183859_0712_02_cloud.tif",
+      "sha256": "7f7af886bcdaf70939a120f14286b15020d6fb4f6f823e6b86604a6b38aeefab",
+      "bytes": 29719,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29092,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SVC_20230823T183859_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29092_011_12SVC_20230823T183859_0712_02/ECOv002_L2T_LSTE_29092_011_12SVC_20230823T183859_0712_02_cloud.tif",
+      "sha256": "9ca72edfd2e956d12e39ee1bcf1a56cb3888e7e59d0c25a184af147536ca47cc",
+      "bytes": 14405,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29092,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SUB_20230823T183951_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29092_012_12SUB_20230823T183951_0712_02/ECOv002_L2T_LSTE_29092_012_12SUB_20230823T183951_0712_02_cloud.tif",
+      "sha256": "df983281cbd8c2e20073fb738697798c88f86612471b16eb868f6a187bef5996",
+      "bytes": 6102,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29092,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SUC_20230823T183951_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29092_012_12SUC_20230823T183951_0712_02/ECOv002_L2T_LSTE_29092_012_12SUC_20230823T183951_0712_02_cloud.tif",
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29092,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SVB_20230823T183951_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29092_012_12SVB_20230823T183951_0712_02/ECOv002_L2T_LSTE_29092_012_12SVB_20230823T183951_0712_02_cloud.tif",
+      "sha256": "d13e054586b13beb496755bfdcbe500983c66b5b6618f12704db530a5c19eeb2",
+      "bytes": 26398,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29092,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SVC_20230823T183951_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29092_012_12SVC_20230823T183951_0712_02/ECOv002_L2T_LSTE_29092_012_12SVC_20230823T183951_0712_02_cloud.tif",
+      "sha256": "a92f50c35b1024a8d89dd31a3dba4196dba7a20599813b6b3907abf3d26d8edf",
+      "bytes": 36777,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29138,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29138_014_12SUB_20230826T175123_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29138_014_12SUB_20230826T175123_0712_02/ECOv002_L2T_LSTE_29138_014_12SUB_20230826T175123_0712_02_cloud.tif",
+      "sha256": "8ef3899da7f9d50c2fb917795b06b66c2e67dcb369a8fdc25f4f5007b56bf457",
+      "bytes": 19046,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29138,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29138_014_12SUC_20230826T175123_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29138_014_12SUC_20230826T175123_0712_02/ECOv002_L2T_LSTE_29138_014_12SUC_20230826T175123_0712_02_cloud.tif",
+      "sha256": "57e47a349bc3403ba868832cdfe5387f5497e7846ae0211e3d691a49f2e1d45e",
+      "bytes": 20212,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29138,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29138_014_12SVB_20230826T175123_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29138_014_12SVB_20230826T175123_0712_02/ECOv002_L2T_LSTE_29138_014_12SVB_20230826T175123_0712_02_cloud.tif",
+      "sha256": "83dca00c443e48bb0f9a4d6f7e95a2349d012c54abcafd858e57fd2a4f00f3ce",
+      "bytes": 37501,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29138,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29138_014_12SVC_20230826T175123_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29138_014_12SVC_20230826T175123_0712_02/ECOv002_L2T_LSTE_29138_014_12SVC_20230826T175123_0712_02_cloud.tif",
+      "sha256": "b7e540737f8234dd52df4bcf6181138658f6541d067d2dc0f6f01140e08ca21d",
+      "bytes": 15348,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29138,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29138_015_12SVB_20230826T175215_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29138_015_12SVB_20230826T175215_0712_02/ECOv002_L2T_LSTE_29138_015_12SVB_20230826T175215_0712_02_cloud.tif",
+      "sha256": "998d3e8dd163aad7549c57d475f7a550ff9d8319dd70efb496c58fcc7ff34c0d",
+      "bytes": 32801,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29545,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02/ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02_cloud.tif",
+      "sha256": "a41cee54ed01ea1a611937ebd68fd752e84604ddd4f09fa16592d36b579fc7b1",
+      "bytes": 55107,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29545,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02/ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02_cloud.tif",
+      "sha256": "0b48a054fdf2a771d94bcadc746a6a8199620ce73128b4001d8d5461dfd853f6",
+      "bytes": 51806,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29545,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02/ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02_cloud.tif",
+      "sha256": "35b0588d5b4211405d27f1d33dcfc389096516c80df0ec1e1665303ed56916d1",
+      "bytes": 47894,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29545,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02/ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02_cloud.tif",
+      "sha256": "16aa69638ec03aedbb7cf092a1c29367c248811bc308b86734ed6b6684060904",
+      "bytes": 64058,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29545,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02/ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02_cloud.tif",
+      "sha256": "d63a7ba62ea3a956f1b2f9888a4ea67eadb7fb506c1dfae1c204f65913d23875",
+      "bytes": 43061,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29591,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29591_007_12SUB_20230924T223358_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_007_12SUB_20230924T223358_0712_02/ECOv002_L2T_LSTE_29591_007_12SUB_20230924T223358_0712_02_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29591,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29591_007_12SUC_20230924T223358_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_007_12SUC_20230924T223358_0712_02/ECOv002_L2T_LSTE_29591_007_12SUC_20230924T223358_0712_02_cloud.tif",
+      "sha256": "c9f9529485f4286c0ac5714600b6dcd986df9b118f34059e9d9b8cee269256ff",
+      "bytes": 8664,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 29591,
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29591_007_12SVC_20230924T223358_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_007_12SVC_20230924T223358_0712_02/ECOv002_L2T_LSTE_29591_007_12SVC_20230924T223358_0712_02_cloud.tif",
+      "sha256": "0ac8ebf24502b0ae8b5065f4ae8caba5a8094ebd355ac7e067924418bbe8852c",
+      "bytes": 6067,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40111,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40111_004_12SUB_20250802T175803_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40111_004_12SUB_20250802T175803_0713_01/ECOv002_L2T_LSTE_40111_004_12SUB_20250802T175803_0713_01_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40111,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40111_004_12SUC_20250802T175803_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40111_004_12SUC_20250802T175803_0713_01/ECOv002_L2T_LSTE_40111_004_12SUC_20250802T175803_0713_01_cloud.tif",
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40111,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40111_005_12SUB_20250802T175855_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40111_005_12SUB_20250802T175855_0713_01/ECOv002_L2T_LSTE_40111_005_12SUB_20250802T175855_0713_01_cloud.tif",
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40111,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40111_005_12SUC_20250802T175855_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40111_005_12SUC_20250802T175855_0713_01/ECOv002_L2T_LSTE_40111_005_12SUC_20250802T175855_0713_01_cloud.tif",
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40111,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40111_005_12SVB_20250802T175855_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40111_005_12SVB_20250802T175855_0713_01/ECOv002_L2T_LSTE_40111_005_12SVB_20250802T175855_0713_01_cloud.tif",
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135",
+      "bytes": 5645,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40111,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40111_005_12SVC_20250802T175855_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40111_005_12SVC_20250802T175855_0713_01/ECOv002_L2T_LSTE_40111_005_12SVC_20250802T175855_0713_01_cloud.tif",
+      "sha256": "05265b57e146b1c202eb1e30d10f1aba57ae5a4b409c7fd2bde1c222bd9ba686",
+      "bytes": 7829,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40192,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40192_014_12SUB_20250807T234028_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40192_014_12SUB_20250807T234028_0713_01/ECOv002_L2T_LSTE_40192_014_12SUB_20250807T234028_0713_01_cloud.tif",
+      "sha256": "9c88097457757562633423d3c8cae04c9ee69a01f6345c4e1c0a26bdff287166",
+      "bytes": 6663,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40192,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40192_014_12SUC_20250807T234028_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40192_014_12SUC_20250807T234028_0713_01/ECOv002_L2T_LSTE_40192_014_12SUC_20250807T234028_0713_01_cloud.tif",
+      "sha256": "7ca9e79e37b5a752b2f29e29f75fc5435f2a8dd51dbffe130852c37b07c55439",
+      "bytes": 22016,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40192,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40192_014_12SVB_20250807T234028_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40192_014_12SVB_20250807T234028_0713_01/ECOv002_L2T_LSTE_40192_014_12SVB_20250807T234028_0713_01_cloud.tif",
+      "sha256": "0846fdfd716afd5036fd06a74915b420f1588dfe2a3658d649d14222869ca8d6",
+      "bytes": 14598,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40192,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40192_014_12SVC_20250807T234028_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40192_014_12SVC_20250807T234028_0713_01/ECOv002_L2T_LSTE_40192_014_12SVC_20250807T234028_0713_01_cloud.tif",
+      "sha256": "c1a9eb610f94d348885ae69029abdbfb08a5992ab9e4f184c919bea92b69af1f",
+      "bytes": 28144,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40376,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40376_012_12SUC_20250819T184657_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40376_012_12SUC_20250819T184657_0713_01/ECOv002_L2T_LSTE_40376_012_12SUC_20250819T184657_0713_01_cloud.tif",
+      "sha256": "58081064ccb61dc9b8105409d6e0849fee5b77f1493aa33b73a3015e70f54893",
+      "bytes": 13522,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40376,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40376_013_12SUB_20250819T184749_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40376_013_12SUB_20250819T184749_0713_01/ECOv002_L2T_LSTE_40376_013_12SUB_20250819T184749_0713_01_cloud.tif",
+      "sha256": "4c02bd5ec41b7668509c44d9d47f9097fcee101438fc030a8d7018227489930c",
+      "bytes": 27934,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40376,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40376_013_12SUC_20250819T184749_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40376_013_12SUC_20250819T184749_0713_01/ECOv002_L2T_LSTE_40376_013_12SUC_20250819T184749_0713_01_cloud.tif",
+      "sha256": "cd25643bea01e0188ded094b5fefa309ccb3c1453cb301be7c0b5e701d8f9aef",
+      "bytes": 28109,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40376,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40376_013_12SVB_20250819T184749_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40376_013_12SVB_20250819T184749_0713_01/ECOv002_L2T_LSTE_40376_013_12SVB_20250819T184749_0713_01_cloud.tif",
+      "sha256": "954d2377f9c1ed0c76202b90cef16752453ef5ad0bee353e705044b7a5e9df3e",
+      "bytes": 46165,
+      "status": "VERIFIED_CLOUD_ONLY"
+    },
+    {
+      "orbit": 40376,
+      "path": "data/raw/v2/rebalance_v6_2_20260921/cloud/ECOv002_L2T_LSTE_40376_013_12SVC_20250819T184749_0713_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_40376_013_12SVC_20250819T184749_0713_01/ECOv002_L2T_LSTE_40376_013_12SVC_20250819T184749_0713_01_cloud.tif",
+      "sha256": "fbf8c4e7a0b8d0bd883cebf8654e2ab1984f42258b4b632c7ab04bce4704b14a",
+      "bytes": 10888,
+      "status": "VERIFIED_CLOUD_ONLY"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "author": "@oai/artifact-tool",
+  "tables": [
+    {
+      "file": "endpoint_support.csv",
+      "rows": 720,
+      "columns": 33,
+      "sha256": "a1a7553fe66fbccb59f55d2996fc7cf9b7d16ebed4fb74f43c978efe2eae9821",
+      "typedRoundtrip": true
+    },
+    {
+      "file": "endpoint_covariate_profiles.csv",
+      "rows": 576,
+      "columns": 20,
+      "sha256": "8001f2284599e07d822547e8a1053562f23373e9c5790240aa5526411b7f421e",
+      "typedRoundtrip": true
+    },
+    {
+      "file": "design_diagnostics.csv",
+      "rows": 32,
+      "columns": 22,
+      "sha256": "08046b43aaa18f8ef6475bc3a20a610411b4942deadd4309324ffdd084b80460",
+      "typedRoundtrip": true
+    },
+    {
+      "file": "design_resampling.csv",
+      "rows": 32,
+      "columns": 14,
+      "sha256": "eb64b3d4353a220208cec9a1302a9211e72981ad20d3c78a66c1651d093fe2b4",
+      "typedRoundtrip": true
+    },
+    {
+      "file": "cross_city_context_distances.csv",
+      "rows": 96,
+      "columns": 20,
+      "sha256": "7a02d6e5c9844f9d55e7341e7299480541790b627ed0d5aab431b3773a6b4f11",
+      "typedRoundtrip": true
+    },
+    {
+      "file": "cross_city_reference_profiles.csv",
+      "rows": 72,
+      "columns": 14,
+      "sha256": "122889adfe107f770d0ef2d4398e54494b5fcc691fa698af5cd6e570348e82ce",
+      "typedRoundtrip": true
+    }
+  ],
+  "outcomeValues": false
+}

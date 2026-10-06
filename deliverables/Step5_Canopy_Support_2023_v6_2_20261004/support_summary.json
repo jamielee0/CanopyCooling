@@ -1,0 +1,47 @@
+{
+  "historical_pair": {
+    "phoenix": {
+      "spanning_blocks": [
+        880,
+        1479
+      ],
+      "reference_cell_fraction": [
+        0.4538897987833411,
+        0.5028100028295167
+      ],
+      "lower_fraction": [
+        0.23731235316908428,
+        0.2489333005663908
+      ],
+      "upper_fraction": [
+        0.019621464411423796,
+        0.02498512064473954
+      ]
+    },
+    "atlanta": {
+      "spanning_blocks": [
+        1174,
+        2397
+      ],
+      "reference_cell_fraction": [
+        0.34169848373747336,
+        0.3825048665115395
+      ],
+      "lower_fraction": [
+        0.04096605898168517,
+        0.054184805089920615
+      ],
+      "upper_fraction": [
+        0.03404891799756527,
+        0.03594275455763736
+      ]
+    }
+  },
+  "all16_designs_estimable": true,
+  "all32000_design_draws_estimable": true,
+  "figures_are_nonthermal": true,
+  "candidate_selection_by_outcomes": false,
+  "city_ranking_claim": false,
+  "fit_scope": "pending clarification; current Step4 hold preserved",
+  "outcome_fits": 0
+}

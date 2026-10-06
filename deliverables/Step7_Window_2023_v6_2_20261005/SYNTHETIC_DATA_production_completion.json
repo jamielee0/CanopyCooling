@@ -1,0 +1,13 @@
+{
+  "status": "SYNTHETIC_CALIBRATION_COMPLETE",
+  "phase": "production",
+  "scenarios": 216,
+  "datasets_each": 2000,
+  "simulated_datasets": 432000,
+  "method_rows": 1296,
+  "elapsed_seconds": 2.92,
+  "empirical_effect_means_used": false,
+  "actual_covariance_source": "8km joint spatial precision, treated as known in simulation",
+  "general_summer_interval_authorized": false,
+  "scale_ruling": null
+}

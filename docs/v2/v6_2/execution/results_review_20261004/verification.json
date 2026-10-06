@@ -1,0 +1,47 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "record_date_local": "2026-10-04",
+  "checks": {
+    "yaml_parses_without_duplicate_keys": true,
+    "protocol_version_unchanged": true,
+    "main_pilot_scope_unchanged": true,
+    "estimator_products_geometry_support_time_models_and_completed_scientific_records_unchanged": true,
+    "outcome_promotion_removed": true,
+    "tolerance_still_null": true,
+    "scope_identity_unique_11_Phoenix_5_Atlanta_2023": true,
+    "identity_run_membership_verified": true,
+    "no_new_effect_access_or_display_in_scope": true,
+    "data_link_resolves_and_exists": true,
+    "six_archived_documents_match_original_checksums": true,
+    "two_original_sources_and_preserved_copies_match": true,
+    "cross_document_hierarchy_and_date_consistent": true,
+    "changed_document_visual_review": true
+  },
+  "changed_protocol_top_level_keys": [
+    "authority",
+    "cities",
+    "control_boundary",
+    "next_actions_not_executed",
+    "outcome_hierarchy",
+    "pilot_precision_and_release",
+    "results_review_first_step_20261004",
+    "scale_decision",
+    "status",
+    "updated_on"
+  ],
+  "visual_check_method": "Independent offline PNG rendering of changed-document unified diffs; native Codex preview is not asserted",
+  "visual_review_status": "PASSED",
+  "preview_files": [
+    "docs/v2/v6_2/execution/results_review_20261004/qa/document_01_page_01.png",
+    "docs/v2/v6_2/execution/results_review_20261004/qa/document_02_page_01.png",
+    "docs/v2/v6_2/execution/results_review_20261004/qa/document_02_page_02.png",
+    "docs/v2/v6_2/execution/results_review_20261004/qa/document_02_page_03.png",
+    "docs/v2/v6_2/execution/results_review_20261004/qa/document_03_page_01.png",
+    "docs/v2/v6_2/execution/results_review_20261004/qa/document_03_page_02.png",
+    "docs/v2/v6_2/execution/results_review_20261004/qa/document_04_page_01.png",
+    "docs/v2/v6_2/execution/results_review_20261004/qa/document_05_page_01.png",
+    "docs/v2/v6_2/execution/results_review_20261004/qa/document_06_page_01.png",
+    "docs/v2/v6_2/execution/results_review_20261004/qa/final_completion.png"
+  ],
+  "visual_observations": "All nine changed-document preview pages inspected; text is readable and complete, with no clipping. The completion-status metadata is checked separately."
+}

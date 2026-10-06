@@ -1,0 +1,26 @@
+{
+  "orbit": 29545,
+  "status": "EXACT_MATCH",
+  "cells": 341920,
+  "columns_compared": [
+    "canopy_fraction",
+    "impervious_fraction",
+    "elevation",
+    "low_vegetation_fraction",
+    "bare_fraction",
+    "distance_to_water",
+    "building_fraction",
+    "LST_K",
+    "emissivity",
+    "x",
+    "y",
+    "tile",
+    "native_crs",
+    "native_x",
+    "native_y",
+    "block",
+    "block_2km",
+    "cell_id",
+    "M_W_m2"
+  ]
+}

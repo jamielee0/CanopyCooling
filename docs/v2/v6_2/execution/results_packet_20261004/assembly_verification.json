@@ -1,0 +1,72 @@
+{
+  "status": "PASSED_ASSEMBLY; final CSV roundtrip and visual QA pending",
+  "row_counts": {
+    "original": 16,
+    "sensitivity": 48,
+    "all": 64
+  },
+  "column_count": 97,
+  "checks_passed": [
+    "frozen source hashes",
+    "16 exact city/orbit/run/model identities",
+    "2023 only",
+    "unique composite keys",
+    "acquisition/product manifest joins",
+    "signed units",
+    "all four SE/percentile widths versus independent precision",
+    "draw accounting",
+    "all 16 canonical ownership counts and areas",
+    "predictor support counts and quantiles",
+    "8km group counts",
+    "linked weather and missing bracket cross-check",
+    "complete dictionary coverage",
+    "sealed diagnostic effect fields blank"
+  ],
+  "max_absolute_clock_change_seconds": 0.9429887386595226,
+  "duplicate_identical_hourly_weather_rows": 0,
+  "public_sources_read": [
+    "data/raw/v2/weather/hrrr_exact_acquisition_l1b_geo_D0047_archive_available/hrrr_hourly_domain_summary.csv",
+    "deliverables/Methodology_and_Expansion_v6_2_20260921/descriptive_vpd_temperature.csv",
+    "docs/v2/v6_2/execution/advance_20260921/phoenix_execution_manifest.json",
+    "docs/v2/v6_2/execution/atlanta_execution_manifest.json",
+    "docs/v2/v6_2/execution/nonlinear_association_20260930/numeric_support_freeze.json",
+    "docs/v2/v6_2/execution/phoenix_execution_manifest.json",
+    "outputs/v6_2/scientific/exploratory_review_20260921/pass_gradients_exploratory.csv",
+    "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/28085_native_ownership_audit.csv",
+    "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/28192_native_ownership_audit.csv",
+    "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/28970_native_ownership_audit.csv",
+    "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/29092_native_ownership_audit.csv",
+    "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/29545_native_ownership_audit.csv",
+    "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/29606_native_ownership_audit.csv",
+    "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/precision.csv",
+    "outputs/v6_2/scientific/pooled_pilot_20260919_atlanta/native_ownership_audit.csv",
+    "outputs/v6_2/scientific/pooled_pilot_20260919_atlanta/precision.csv",
+    "outputs/v6_2/scientific/pooled_pilot_20260919_atlanta/spatial_stress_precision.csv",
+    "outputs/v6_2/scientific/pooled_pilot_20260919_phoenix/native_ownership_audit.csv",
+    "outputs/v6_2/scientific/pooled_pilot_20260919_phoenix/precision.csv",
+    "outputs/v6_2/scientific/pooled_pilot_20260919_phoenix/spatial_stress_precision.csv",
+    "outputs/v6_2/scientific/scale_diagnostics_20260919/frozen_numeric_references.json"
+  ],
+  "sealed_files_opened": [],
+  "new_models_fitted": 0,
+  "new_empirical_time_comparisons": 0,
+  "runtime": "urbanv2 Python 3.11 (existing matplotlib/shapely); bundled Node artifact-tool for final CSV",
+  "code_at_execution": [
+    {
+      "path": "src/v6_2_advance/results_packet.py",
+      "sha256": "84f8cd3fa6790dd46855e12938503531256452da016c132db4652f5c554707be"
+    },
+    {
+      "path": "src/v6_2_advance/run_results_packet.py",
+      "sha256": "4f8d448d6595ae97a645e147381ef2f32348d79e10a5d28a0bcfd7c5d5cf9e3d"
+    },
+    {
+      "path": "tests/v6_2_advance/test_results_packet.py",
+      "sha256": "81912e09c46b4eb1c691be204f916c5af8f6d72b9d6c806ff639ff6c8a52c79b"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/results_packet_20261004/build_results_csv.mjs",
+      "sha256": "ee457629502bb2fddf224e79f1f64141178e0eb8ce14897b6c4a74e548b91c33"
+    }
+  ]
+}

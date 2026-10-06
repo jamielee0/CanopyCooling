@@ -1,0 +1,14 @@
+{
+  "phoenix": {
+    "passes": 11,
+    "median_cooling_C_per_1pp": 0.12318634831190292,
+    "min_pass_cooling_C_per_1pp": 0.08927882384055234,
+    "max_pass_cooling_C_per_1pp": 0.1705227828868181
+  },
+  "atlanta": {
+    "passes": 5,
+    "median_cooling_C_per_1pp": 0.02218047245761159,
+    "min_pass_cooling_C_per_1pp": 0.00973995510329285,
+    "max_pass_cooling_C_per_1pp": 0.03379081934826518
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "effect_tables_read": [
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/common_footprint_review_SEALED.json",
+      "sha256": "db22329f9feecae1b44e7f892a79a82290df4aa0f72c71101cc19c4acfe37ad7"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/fixed_registration_review_SEALED.json",
+      "sha256": "85f1f3482e450a9246254f77aff135f8deb139e4967d645e492b1e6d24048f26"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/available_registration_review_SEALED.json",
+      "sha256": "83a0675762567c21a3caca3107627a3ee29c4704928c3a4de497237afb2e2a4c"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/paired_scale_review_SEALED.json",
+      "sha256": "b64454ede5cd1d262af7d783d6717fdb0082f220eb0abbe03fc2a5aab5cf4033"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/reference_sensitivity_review_SEALED.json",
+      "sha256": "7a7816941c693a283f938963f428ded3a19c270bb14423fb1285087e9f54b8c8"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_window_comparisons_SEALED.csv",
+      "sha256": "00354755f1d2249a9989f773e1a306ad9bf294b70ddf3c67549c1cfe6322b5a9"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/finite_contrasts_SEALED.csv",
+      "sha256": "d0f7e6e0e8f2e40c7b74983debb51b6a1b076bee59899aece51f8d4380740335"
+    }
+  ],
+  "new_effect_display": true,
+  "scale_ruling": null
+}

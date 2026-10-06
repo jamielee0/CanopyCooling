@@ -1,0 +1,16 @@
+{
+  "status": "INTERNAL_FITTING_COMPLETE_EFFECT_REVIEW_DEFERRED",
+  "passes": 16,
+  "new_paired_quadratic_models": 16,
+  "reconstructed_paired_linear_models": 16,
+  "cell_pass_observations": 7511083,
+  "paired_configurations": 32,
+  "paired_draws_requested": 32000,
+  "paired_draws_estimable": 32000,
+  "paired_draws_failed": 0,
+  "effect_display": false,
+  "interpretation_and_visual_review": "DEFERRED_SEALED",
+  "scale_ruling": null,
+  "new_time_inference": false,
+  "completed_utc": "2026-10-05T20:03:33.723236+00:00"
+}

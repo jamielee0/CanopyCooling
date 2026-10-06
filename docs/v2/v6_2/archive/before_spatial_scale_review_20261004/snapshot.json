@@ -1,0 +1,36 @@
+{
+  "record_date_local": "2026-10-04",
+  "purpose": "Preserve Step2 current documents before Step3 internal-review completion record",
+  "files": [
+    {
+      "original_path": "AGENTS.md",
+      "archive_path": "docs/v2/v6_2/archive/before_spatial_scale_review_20261004/AGENTS.md",
+      "sha256": "305041bf1a894bfcb276145107b512b5b7ddaddebb50288388747874a70538db"
+    },
+    {
+      "original_path": "docs/v2/v6_2/protocol_v6_2.yml",
+      "archive_path": "docs/v2/v6_2/archive/before_spatial_scale_review_20261004/docs/v2/v6_2/protocol_v6_2.yml",
+      "sha256": "ec0fb606b58b91bda1ae88e4792888c678e23d3edf46b7c891b842f79d9f8092"
+    },
+    {
+      "original_path": "docs/v2/v6_2/pilot_plan_v6_2.md",
+      "archive_path": "docs/v2/v6_2/archive/before_spatial_scale_review_20261004/docs/v2/v6_2/pilot_plan_v6_2.md",
+      "sha256": "9eba30542f5d9dc2c5397060eb82c87e44b392a824c5866f8f19e065b27d3faf"
+    },
+    {
+      "original_path": "docs/v2/v6_2/decision_log_v6_2.md",
+      "archive_path": "docs/v2/v6_2/archive/before_spatial_scale_review_20261004/docs/v2/v6_2/decision_log_v6_2.md",
+      "sha256": "de09571f8847c60cba1634c6503d0397565b4cdff308728b0563e6e81f590a7c"
+    },
+    {
+      "original_path": "docs/v2/v6_2/README.md",
+      "archive_path": "docs/v2/v6_2/archive/before_spatial_scale_review_20261004/docs/v2/v6_2/README.md",
+      "sha256": "2a7b97b852e9fd50f70b7b7853c6948b42098f041eac7cadecc189a968a90b2b"
+    },
+    {
+      "original_path": "docs/v2/v6_2/results_review_and_targeted_analysis_plan_20260930.md",
+      "archive_path": "docs/v2/v6_2/archive/before_spatial_scale_review_20261004/docs/v2/v6_2/results_review_and_targeted_analysis_plan_20260930.md",
+      "sha256": "e693a12008f9186d23a788ce2853646a559c2805f8261f01cd663b7b02ad593f"
+    }
+  ]
+}

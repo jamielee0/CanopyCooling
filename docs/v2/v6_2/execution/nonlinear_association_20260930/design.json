@@ -1,0 +1,23 @@
+{
+  "recorded_date": "2026-09-30",
+  "authorization": "User requested a nonlinear graph showing the association in the underlying observations, rather than the straight-line rescaling.",
+  "status": "exploratory sensitivity alongside unchanged primary v6.2 estimator",
+  "sample": "Exactly the existing 11 Phoenix and 5 Atlanta 2023 paired native-cell frames; no new acquisitions or year expansion.",
+  "outcomes": ["LST_K", "M_W_m2"],
+  "cells_and_controls": "Existing complete paired native-cell frames, unit weights, block intercepts and all six original context terms; no solar-geometry or VPD adjustment added.",
+  "shape": "Restricted cubic regression spline with four knots; linear canopy term plus two nonlinear terms. No monotonicity, sign, curvature, plateau or significance constraint.",
+  "knot_rule": "One knot set per city: arithmetic mean across its passes of the 0.05, 0.35, 0.65 and 0.95 canopy quantiles. Freeze numeric values using canopy alone before fitting; tied knots mean non-estimable, not an outcome-driven alternative.",
+  "plot_domain": "For each city, intersection of pass-specific canopy P05–P95 intervals. All eligible observations, including tails, remain in the fit. This is a display range, not an inclusion gate.",
+  "reference": "Each city's lower display endpoint; label explicitly. All curves and fitted linear comparisons are differences relative to that canopy level.",
+  "display_grid": "201 equally spaced canopy values over the display interval, plus every integer percentage of canopy in that interval.",
+  "bins": "20 equal-width bins over the display interval; preserve empty bins and counts, no minimum-cell or minimum-block gate.",
+  "raw_view": "Per-pass binned observed LST after subtracting that pass's overall mean. Equal-pass means by bin; counts and number of contributing passes are shown in data. This adjusts only pass temperature offsets, not spatial confounding.",
+  "adjusted_view": "Per-pass spline canopy-component differences, with binned partial residuals after fitted block and context adjustment. Equal-pass mean curve; show individual pass curves or their min–max range. This descriptive aggregation is not a time model or season-standardized city comparison.",
+  "spatial_uncertainty": "1000 whole-8km-spatial-group bootstrap draws per pass, seed 20260930; identical draws for both outcomes. Verify each original block is wholly nested in one resampling group. Export per-pass pointwise percentile intervals. Across-pass range is not a confidence interval; do not combine per-pass uncertainty as independent city replicates.",
+  "support": "Record unique physical cell IDs, canopy distributions, bin counts, contributing blocks, and number of blocks spanning the reference and each displayed canopy value. No support gate is selected using outcomes.",
+  "primary_comparison": "Existing disclosed linear LST slopes shown at the same reference and range as a descriptive comparison.",
+  "output_release": "User-requested LST curves and binned observational summaries may be displayed; store full fitted coefficients and bootstrap arrays in a new sealed output directory. Do not open prior sealed time comparisons or robustness effects. Emitted-energy fits retained internally with matched design; no scale-agreement ruling.",
+  "verification": "Network-free known-answer checks for nonlinear basis, linear and curved recovery with block/context confounding, paired resampling, duplicate cells, block nesting, units and reference subtraction; verify existing linear estimates on the same cells.",
+  "method_reference": "https://search.r-project.org/CRAN/refmans/Hmisc/html/rcspline.eval.html",
+  "prior_effect_access": "2023 linear gradients already disclosed; this cannot be called a blinded confirmatory analysis. Numeric nonlinear results have not been inspected before this design record."
+}

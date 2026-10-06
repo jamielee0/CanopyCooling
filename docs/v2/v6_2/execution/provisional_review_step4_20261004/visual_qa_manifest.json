@@ -1,0 +1,21 @@
+{
+  "status": "PASSED_OFFLINE_TEXT_TABLE_REVIEW",
+  "renderer": "PIL basic offline source/text/table layout",
+  "native_Codex_preview_inspected": false,
+  "headless_browser_available": false,
+  "paths": [
+    "docs/v2/v6_2/execution/provisional_review_step4_20261004/qa/review_page_01.png",
+    "docs/v2/v6_2/execution/provisional_review_step4_20261004/qa/review_page_02.png",
+    "docs/v2/v6_2/execution/provisional_review_step4_20261004/qa/review_page_03.png",
+    "docs/v2/v6_2/execution/provisional_review_step4_20261004/qa/review_page_04.png",
+    "docs/v2/v6_2/execution/provisional_review_step4_20261004/qa/deliverable_page_01.png",
+    "docs/v2/v6_2/execution/provisional_review_step4_20261004/qa/document_01_page_01.png",
+    "docs/v2/v6_2/execution/provisional_review_step4_20261004/qa/document_02_page_01.png",
+    "docs/v2/v6_2/execution/provisional_review_step4_20261004/qa/document_03_page_01.png",
+    "docs/v2/v6_2/execution/provisional_review_step4_20261004/qa/document_04_page_01.png",
+    "docs/v2/v6_2/execution/provisional_review_step4_20261004/qa/document_05_page_01.png",
+    "docs/v2/v6_2/execution/provisional_review_step4_20261004/qa/document_06_page_01.png"
+  ],
+  "previews_inspected": 11,
+  "findings": "Four report pages, deliverable overview and six changed-document previews readable; table values and decisions consistent; native Markdown/UI rendering not claimed"
+}

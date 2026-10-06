@@ -1,0 +1,445 @@
+{
+  "request": "lets not keep it sealed then? Can you do the next steps?",
+  "scope_sha256": "57b1498cf3b8deb4b79295fdd6738264946cc6908cae35860ebd1e4450ec2840",
+  "historical_files_verified": 161,
+  "released_copies": [
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/available_registration_review_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/available_registration_review.json",
+      "sha256": "83a0675762567c21a3caca3107627a3ee29c4704928c3a4de497237afb2e2a4c"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/common_footprint_cooling_SEALED.pdf",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/common_footprint_cooling.pdf",
+      "sha256": "55b84b747595933db32e9e5fec412b16c70f6d9bbcafa5697e6ebf0fa801ae44"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/common_footprint_cooling_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/common_footprint_cooling.png",
+      "sha256": "57bb5ea1eb46b7cd826c8d505676c6f3ff3e209aaebbc45b3ef0b7e0ea9b3664"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/common_footprint_review_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/common_footprint_review.json",
+      "sha256": "db22329f9feecae1b44e7f892a79a82290df4aa0f72c71101cc19c4acfe37ad7"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/fixed_registration_review_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/fixed_registration_review.json",
+      "sha256": "85f1f3482e450a9246254f77aff135f8deb139e4967d645e492b1e6d24048f26"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/paired_scale_diagnostic_SEALED.pdf",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/paired_scale_diagnostic.pdf",
+      "sha256": "c0a74226c2d611f544842274406253a96d4dd7999fe399da64518670636312f8"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/paired_scale_diagnostic_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/paired_scale_diagnostic.png",
+      "sha256": "27ffe6c145c7c011334d59ab282d325ba0283cdfd746a5664f29561793198f15"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/paired_scale_review_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/paired_scale_review.json",
+      "sha256": "b64454ede5cd1d262af7d783d6717fdb0082f220eb0abbe03fc2a5aab5cf4033"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/reference_sensitivity_SEALED.pdf",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/reference_sensitivity.pdf",
+      "sha256": "013a0071c1f200f529b39d603075cfde80d7a99d5d106a09334812cf25139851"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/reference_sensitivity_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/reference_sensitivity.png",
+      "sha256": "f87fb89fd6cf340502af90786d6baf93438c6c416e07131d22cdb17f37fae957"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/reference_sensitivity_review_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/reference_sensitivity_review.json",
+      "sha256": "7a7816941c693a283f938963f428ded3a19c270bb14423fb1285087e9f54b8c8"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/registration_available_support_SEALED.pdf",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/registration_available_support.pdf",
+      "sha256": "0d2e018b2def27e8f6547d41335bddc1fc6b3bb7bb34939538d71a7dc98f50b9"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/registration_available_support_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/registration_available_support.png",
+      "sha256": "bbd61bd8668fed597d425e47b13cb0db27eb872698763bec6a6ca5b1b6a41c26"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/registration_fixed_support_SEALED.pdf",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/registration_fixed_support.pdf",
+      "sha256": "9ef187ba37d5fc76a885fbb0cd8e3b58c3f46f3bdaf36f379081a9ea78263a6b"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/registration_fixed_support_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/spatial_scale_review_20261004/registration_fixed_support.png",
+      "sha256": "f3b27b021caf7acd04895eecb2cf8326c876104ed79d8d445cedfe1466cde061"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27835_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27835_1km_comparison.png",
+      "sha256": "cb7486c857e18fbec34049e2abe55c454e3195db7fbb90b1bc8b8ea32f36914a"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27835_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27835_8km_comparison.png",
+      "sha256": "043b97ba9a873ecb20006bee182c12521f4c4726676cc5edb0007a65b5892d24"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27835_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27835_curves.json",
+      "sha256": "ed202cbb1631f987ab0352dc132dc38842d01e8784935683562332d9fee8c035"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27835_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27835_finite_contrasts.json",
+      "sha256": "b34f7b081fe5ddd6bca58bbefe17d298362a1b835356c99a0bcacc5273c95a7e"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27896_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27896_1km_comparison.png",
+      "sha256": "babce59813b09e7fb6f52b3071ef7921702513f96d26da1c3fed653f40f94c34"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27896_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27896_8km_comparison.png",
+      "sha256": "f3b0dd4a3a84a7df80133ea0a21a1d442f477bf5392aaef9abf67bb9881f9a2a"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27896_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27896_curves.json",
+      "sha256": "fb04177d1ff7c72fab021ca5e72c13b81f61e5cee3800abb50f6265602a0a53e"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27896_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27896_finite_contrasts.json",
+      "sha256": "64c3132098acb516dd3f30a1413387105ef34271e785f5b0369697dbc42b6d29"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27916_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27916_1km_comparison.png",
+      "sha256": "a854670e478b51c6364d104fcce5b8760a7a287876c78b6ae8baaa48bf377ecf"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27916_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27916_8km_comparison.png",
+      "sha256": "217b21ee27afc7a41aadc34bcc8dbb722e3651d770f88f90cbf7388ee7b8e28b"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27916_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27916_curves.json",
+      "sha256": "e898ce2c47f112ff5913298034efe3a9e56f7fcff68b2f712ad399e564124ef2"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27916_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_27916_finite_contrasts.json",
+      "sha256": "17eda9866b3cd7462ac386f4891734f4795acff474630d2a99dff6e9b02381a5"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28145_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_28145_1km_comparison.png",
+      "sha256": "069cfe503e3c06c1a263e590966f92873462d6fd566b534c3262f74acaa43e45"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28145_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_28145_8km_comparison.png",
+      "sha256": "f1da966cc28a520d89363e20970a992296165053e8041b72511038474bfde44e"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28145_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_28145_curves.json",
+      "sha256": "9125c0c22a148e13f2d15e3ebffd8f2ccbcd6c76314e8313474bc91fa589e105"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28145_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_28145_finite_contrasts.json",
+      "sha256": "7bd30e939d456d943a9b73be89b3112523a3cbb4d62d532aab6e6ad3518c7178"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_28598_1km_comparison.png",
+      "sha256": "a76a5ac8d1cda8c5e3b5683d5b059a6aab48f56ad36795739c3d606d5c262bdb"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_28598_8km_comparison.png",
+      "sha256": "1544d3f3fcd19173683da36ef74091c7565c9d15da449350e751397770e5181c"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_28598_curves.json",
+      "sha256": "fbab0cf760fb7ccb6d6f3ba9ae9ee5a5f1ea164572bb4b38d658f42ce8170ccf"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/atlanta_28598_finite_contrasts.json",
+      "sha256": "ac84f08a48c1ed660f3584c6802a99dc3019b2d280ab5f2428a78ad38e917dd8"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/curves_SEALED.csv",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/curves.csv",
+      "sha256": "a7a6e4219c56ce8631b9668701dec6eee61d44e559b4290de4283cbb9edfe7bd"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/finite_contrasts_SEALED.csv",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/finite_contrasts.csv",
+      "sha256": "d0f7e6e0e8f2e40c7b74983debb51b6a1b076bee59899aece51f8d4380740335"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_27963_1km_comparison.png",
+      "sha256": "b991bb164e8e214bd65f454ae2474473ab45781d45332b89176657c78ea3da9e"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_27963_8km_comparison.png",
+      "sha256": "3a96d561bca88fd72bb3b8f6e5a6a1453a3400e1bd06f69c65dd03d6721d5362"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_27963_curves.json",
+      "sha256": "0892b78e5a770956b816ad4fda0da51adca2db095d8d4d43a2587a0be1f6252f"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_27963_finite_contrasts.json",
+      "sha256": "bf1aa4340f58fc6a0428b042924e01e6149e7710caf2501adba1d58d0be3f20a"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28024_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28024_1km_comparison.png",
+      "sha256": "0d0bb865bd86802517c0a1e3f4901648f5bcf82ed7a61877302cdd64b3dad0c9"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28024_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28024_8km_comparison.png",
+      "sha256": "983114a3e1fe37648372cf7acbe91c598358cd41ad8900a2c5ffed264937c9cf"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28024_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28024_curves.json",
+      "sha256": "9f16cafaa606357b2aec4f7d108d0edbcc5181de68849c66c80c6f5de68932ad"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28024_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28024_finite_contrasts.json",
+      "sha256": "99193ff3583d85d680f53b387721f4901902275f00f09738a38ef88d102b8c90"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28085_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28085_1km_comparison.png",
+      "sha256": "d0db792e724e93054850f4731d47d02e01e1317f95defbc37d9e7965d3040cca"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28085_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28085_8km_comparison.png",
+      "sha256": "d99785c2c8dab09bd0a38d0b31504f19d543d25385ba355ef2402d3b40643deb"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28085_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28085_curves.json",
+      "sha256": "3f34072439f0a3b5161cabf610a0c73f9380b6767034a827f9bd741637bd6a35"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28085_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28085_finite_contrasts.json",
+      "sha256": "b035730dd574ed22fe338dd475fd78499f6c70cdbeb80660b7ef6df19f6656e4"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28192_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28192_1km_comparison.png",
+      "sha256": "215bc6a47c166195740b28a2ee66c38ec38424cf61af16095deb9794d3c6f86f"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28192_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28192_8km_comparison.png",
+      "sha256": "9c9b2b918449b7aa30270c73c658d67b5b507f61eb9fda4daa41389df68262dd"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28192_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28192_curves.json",
+      "sha256": "083aaa1b41adbb4e4b01818df6a7f7dd9435e4f4b54d9d14692f4281a3309209"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28192_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28192_finite_contrasts.json",
+      "sha256": "e2dfa647b459b80db9fbb85b9a14788cb48e19cb4538c8fe370c62a686ec3fed"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28706_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28706_1km_comparison.png",
+      "sha256": "847d17ab3b3eaf88629e0afd4aac55dd0f24713b845c5263afe3084f89a7051f"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28706_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28706_8km_comparison.png",
+      "sha256": "344abd138f79b9a836c00d752284b3b5c8b77e03eb4dedd6e74ad2f78844efd5"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28706_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28706_curves.json",
+      "sha256": "1dbb2a84a1b0634598955556b7fbda3dfcd740fed077a64dfb351633d5ffeff1"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28706_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28706_finite_contrasts.json",
+      "sha256": "44877e0e9d1c73a5d1309525bc501529a1344067ce840372f1ba177909fb6e62"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28828_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28828_1km_comparison.png",
+      "sha256": "c694677f6f9d69b40688d4770a9d365e9002eaeec977056e0acf697cd3c340c1"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28828_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28828_8km_comparison.png",
+      "sha256": "000124a25abc2e4f96afdfc2310a2b505563f147b7e5edbc3d436cdba65deac7"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28828_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28828_curves.json",
+      "sha256": "dfd89768d206105cbca93604ea00e7875a46a6d90a4281c6d9348296cf4b7183"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28828_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28828_finite_contrasts.json",
+      "sha256": "fda207de259033b1de18f6f9faa7947423c29a93239ceb410f55cdb2ef4e7b5a"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28909_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28909_1km_comparison.png",
+      "sha256": "0a1e03d0758749d5b8cf374b1a48d9859c328f459b8eccefba5aa5084b025feb"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28909_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28909_8km_comparison.png",
+      "sha256": "543f09ad249cfecb94174ad5f3d059a8da9f33229a08a1c496ddf234be0b85d0"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28909_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28909_curves.json",
+      "sha256": "f0b262d09fe89c8c48a99e41a39e10239c0227249a559d9812700dae187b4d8a"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28909_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28909_finite_contrasts.json",
+      "sha256": "8629dc049773f396b90d21b657de0a0381cf0b1a6b1e6ab8d66f3d1d47130acb"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28970_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28970_1km_comparison.png",
+      "sha256": "504856d4f78c3ac56f11e31ac10f4331db558bec7a8432855745ef24d1daa9f9"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28970_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28970_8km_comparison.png",
+      "sha256": "ffccfdc1fbaf3843ebe6e4a4ae768e2bb634345c2fb2ff073c469165f5b5a943"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28970_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28970_curves.json",
+      "sha256": "1153d37ba0b0ac1592c5eef06295216c2d71acbe9861457e924d2d4e2dab4593"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28970_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_28970_finite_contrasts.json",
+      "sha256": "3113b7a04f4e7aed4187b44f73d50389c57914faffece194adc894f1758b79ba"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29092_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29092_1km_comparison.png",
+      "sha256": "5fed58ab7a3051bcc069037e3e6c96686b16884a1211447d73d8f924394723f5"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29092_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29092_8km_comparison.png",
+      "sha256": "e984f56d3edebcc90abf7189d5fa1f8e169c2daf6a53cf950b16615388343b12"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29092_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29092_curves.json",
+      "sha256": "84ab0a76de69b2baca6fad0d926a1b080376cc32796531b952f0d5d8055789e9"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29092_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29092_finite_contrasts.json",
+      "sha256": "00483f0becd1182e1d53e853ff09f4ce7ec5f07bd1e4e7d949be8a4b25705d7a"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29545_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29545_1km_comparison.png",
+      "sha256": "4318fb5dbe774308b2197e2d6a931d123539fd569821874a657d2436457f68ce"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29545_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29545_8km_comparison.png",
+      "sha256": "cf2870ad6841b0eb890ea061af907cbb401c28e3ad2ce4d1667a4eb6a22a4548"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29545_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29545_curves.json",
+      "sha256": "196e808daca893b0f845c678a8827c43606d9a0779617d46b9068e2a93dc836a"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29545_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29545_finite_contrasts.json",
+      "sha256": "54c24924466d491f40d5f96076ffc0e85d02758faddb74f93043fdb737ae9729"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29606_1km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29606_1km_comparison.png",
+      "sha256": "bfe9719471ee760726748d39e9bcf9458daf2e14b3f9fe04615410dcce65ea13"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29606_8km_comparison_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29606_8km_comparison.png",
+      "sha256": "ebb5b9d46ec6cf3cc649172321de9d093713409919e9c54f5e1416b66a0a839d"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29606_curves_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29606_curves.json",
+      "sha256": "30b2c46e89a892e9575a1b654a73fe07665dbafdb1e4757fbbde9ff69659d114"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29606_finite_contrasts_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/quadratic_step5_20261005/phoenix_29606_finite_contrasts.json",
+      "sha256": "defe4c5ecaa62353818399a2172c6cefe07a12fb2adf43319916c6359e393076"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_1km_comparisons_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/step7_window_20261005/phoenix_1km_comparisons.png",
+      "sha256": "1c2711543eba645ff00af2c85ed8393aa3eb6a728d8fe50ecfd2215e266429ed"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_8km_comparisons_SEALED.png",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/step7_window_20261005/phoenix_8km_comparisons.png",
+      "sha256": "dabc5a48510c45fab8cfb127300408517796afac616868e0e18476064190961f"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_window_comparisons_SEALED.csv",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/step7_window_20261005/phoenix_window_comparisons.csv",
+      "sha256": "00354755f1d2249a9989f773e1a306ad9bf294b70ddf3c67549c1cfe6322b5a9"
+    },
+    {
+      "source": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_window_comparisons_SEALED.json",
+      "released_copy": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/released_source_artifacts/step7_window_20261005/phoenix_window_comparisons.json",
+      "sha256": "ec77be7f84d36af650391590dc4a80a854b925dadf87c75a850b02e23e148c91"
+    }
+  ],
+  "raw_model_storage": "Preserved under historical filenames; current2023 access authorized, no other-year release",
+  "post_disclosure_arithmetic": "Frozen weights applied to archived common-footprint and quadratic pass points; no new mean fit or bootstrap; alternative joint time intervals unavailable",
+  "quadratic_contact_sheets": [
+    "docs/v2/v6_2/execution/results_release_20261006/qa/quadratic_contact_01.png",
+    "docs/v2/v6_2/execution/results_release_20261006/qa/quadratic_contact_02.png",
+    "docs/v2/v6_2/execution/results_release_20261006/qa/quadratic_contact_03.png",
+    "docs/v2/v6_2/execution/results_release_20261006/qa/quadratic_contact_04.png",
+    "docs/v2/v6_2/execution/results_release_20261006/qa/quadratic_contact_05.png",
+    "docs/v2/v6_2/execution/results_release_20261006/qa/quadratic_contact_06.png",
+    "docs/v2/v6_2/execution/results_release_20261006/qa/quadratic_contact_07.png",
+    "docs/v2/v6_2/execution/results_release_20261006/qa/quadratic_contact_08.png"
+  ],
+  "formal_scale_ruling": null
+}

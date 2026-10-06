@@ -1,0 +1,36 @@
+{
+  "main_pilot": {
+    "Phoenix": 11,
+    "Atlanta": 5,
+    "year": 2023
+  },
+  "common_cells": 196090,
+  "common_area_km2": 960.841,
+  "retained_fraction_range": [
+    0.3522522117932366,
+    0.5734967243799719
+  ],
+  "reference_support_status": {
+    "SUPPORTED": 16
+  },
+  "joint_difference_intervals": "computed internally using union-block draws; all new effects remain sealed",
+  "fixed_registration": "24 paired differences validated",
+  "available_registration": "44 points, no unsupported paired difference interval",
+  "raw_model_or_time_files_disclosed": false,
+  "scale_ruling": "not made",
+  "tolerance": null,
+  "canopy_medians": {
+    "original": [
+      0.024833221919834614,
+      0.030140208080410957
+    ],
+    "retained_all11": [
+      0.027900987304747105,
+      0.027900987304747105
+    ],
+    "excluded_from_all11": [
+      0.021273035556077957,
+      0.03233961760997772
+    ]
+  }
+}

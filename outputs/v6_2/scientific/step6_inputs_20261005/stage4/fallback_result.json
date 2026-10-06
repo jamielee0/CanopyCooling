@@ -1,0 +1,14 @@
+{
+  "city": "phoenix",
+  "orbit": 28706,
+  "days": 7,
+  "product": "NOAA_Stage_IV",
+  "n_domain_cells": 186,
+  "weights": "inverse squared spherical polar-stereographic scale",
+  "download_failures": [],
+  "status": "COMPLETE_LAST_CLOSED_HOUR_WINDOW",
+  "total_mm": 3.5995267216919142,
+  "complete_cell_fraction": 1.0,
+  "required_hours": 168,
+  "available_hours": 168
+}

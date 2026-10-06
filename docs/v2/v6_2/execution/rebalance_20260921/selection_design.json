@@ -1,0 +1,91 @@
+{
+  "recorded_utc": "2026-09-21T21:19:07.109849+00:00",
+  "user_request": "rebalance passes, potentially adding/removing; bounded Phoenix sampling correction within v6.2",
+  "catalogue_audit": {
+    "city": "phoenix",
+    "version": "002",
+    "query": "all_mission_dates_before_explicit_2019_2025_filter",
+    "pages": 5,
+    "bbox_CMR_hits": 8029,
+    "bbox_rows_received": 8029,
+    "exact_intersection_rows": 8029,
+    "unique_granules": 8029,
+    "study_granules": 7333,
+    "study_unique_orbits": 1547,
+    "first_acquisition": "2018-07-29T08:17:08.955Z",
+    "last_acquisition": "2026-09-17T22:58:19.758Z",
+    "retrieved_utc": "2026-09-19T21:55:23.129226+00:00"
+  },
+  "scope": "2019-2025 local June-September Phoenix C2 catalogue; complete metadata, inherited geometry census, targeted nonthermal cloud screen",
+  "no_new_thermal_values_read": true,
+  "prior_disclosure": "The eleven existing Phoenix gradients were already disclosed. This is an exploratory design amendment, not a globally blinded design.",
+  "time_windows_solar_hours": {
+    "morning": [
+      9.5,
+      11.5
+    ],
+    "middle": [
+      11.5,
+      15.0
+    ],
+    "afternoon": [
+      15.0,
+      18.0
+    ]
+  },
+  "window_rationale": "Reuse previously published metadata-screen morning/afternoon windows. These define comparison support, not new cloud/canopy eligibility thresholds. No claim that window means equal exactly 10:30 and 16:00.",
+  "date_rule": "Phoenix local civil year-month, MST UTC-7; earliest scene time of latest revisions in each physical orbit, centroid apparent solar time. Historical model timestamps unchanged.",
+  "geometry_rule": "Reuse pilot exception p95 absolute view zenith <=25 degrees and >=0.95 geometry coverage with definitive geometry; also report <=15-degree sensitivity. Unresolved is not failed.",
+  "weights": "For S supported year-month strata, each endpoint pass has arm weight 1/(S*n_stratum_arm). Weights sum to one in each arm. All available passes within supported strata retained; no inverse-SE weighting.",
+  "current11_supported_endpoint_orbits": [
+    27963,
+    28192,
+    28828,
+    28909,
+    29092
+  ],
+  "all11_preserved": true,
+  "candidate_orbits": [
+    6281,
+    6510,
+    17524,
+    17544,
+    17851,
+    23146,
+    23228,
+    27963,
+    28192,
+    28828,
+    28909,
+    29092,
+    33496,
+    33623,
+    40111,
+    40192,
+    40376
+  ],
+  "candidate_status": "geometry-screen candidates only; cloud/common-footprint/context support and Stage1 precision must be established before adding to completed sample",
+  "no_cloud_or_canopy_cutoff_added": true,
+  "no_pass_count_target_added": true,
+  "no_new_empirical_time_model_fitted": true,
+  "estimand": "Balanced window comparison is a sampling sensitivity. Exact 10:30-versus-16:00 contrast still needs continuous-time model and interpolation support; retain total solar-geometry-associated time pattern and separate secondary geometry/season standardization.",
+  "limits": [
+    "Calendar-month equality does not balance day of month, weather, view geometry, or native-cell composition.",
+    "No July/September 2023 morning observation can be manufactured by weighting.",
+    "Broader geometry-unresolved orbits remain in the audit, not silently excluded as unsuitable.",
+    "Do not pool morning from one year with afternoon from another as if matched."
+  ],
+  "input_sha256": {
+    "catalogue": "c401f827fac9c4e8df37c0a910ced00d5ade99f9710e0de043c07eb98161599b",
+    "geometry": "d1c9af913a8be89836d9f9d812f1c29f60562d46504346758f8cbf0447a4fade",
+    "cloud": "81585802f0502259d7dab2cbc90586b7338d73f397344b8446103b94ac7005a0",
+    "domain_index": "4284ee047db271a36ed07d82ee5361d70c55da7f08c4b417fb62048c7838cd69"
+  },
+  "source_paths": {
+    "catalogue": "docs/v2/v6_2/execution/catalogue_phoenix_002.json",
+    "geometry": "data/processed/v2/task1/step2_quality_screening_l1b_geo_D0047/geometry_pass_summary.csv",
+    "cloud": "data/processed/v2/task1/step2_quality_screening_l1b_geo_D0047/cloud_pass_summary.csv",
+    "domain_index": "docs/v2/v6_2/execution/advance_20260921/candidate_domain_index.json"
+  },
+  "data_link_target": "/Users/jmlee/Documents/Documents - Jamie\u2019s Mac mini/TreeProject/project/data"
+}

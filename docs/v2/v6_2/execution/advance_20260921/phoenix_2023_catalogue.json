@@ -1,0 +1,5275 @@
+{
+  "audit": {
+    "city": "phoenix",
+    "retrieved_utc": "2026-09-21T17:46:23.940821+00:00",
+    "period_utc": "2023-06-01/2023-09-30",
+    "CMR_bbox_hits": 525,
+    "CMR_rows_received": 525,
+    "pages": 1,
+    "intersecting_granules_before_revision_dedup": 525,
+    "unique_passes": 73,
+    "morning_0930_1130_passes": 10,
+    "afternoon_1500_1800_passes": 7,
+    "afternoon_months": [
+      "06",
+      "07",
+      "08",
+      "09"
+    ],
+    "afternoon_tile_mean_cloud_pct_median": null,
+    "afternoon_passes_with_cloud_metadata": 0,
+    "limitation": "CMR tile cloud metadata is not urban-domain clear fraction; no view-angle, full-domain coverage or usable-cell certification; windows are descriptive summaries, not selection gates."
+  },
+  "granules": [
+    {
+      "city": "phoenix",
+      "orbit": 27821,
+      "scene": 6,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_27821_006_12SUC_20230602T193750_0711_01",
+      "acquisition_utc": "2023-06-02T19:37:50.015Z",
+      "apparent_solar_hour_at_domain_centroid": 12.20589431578327,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27821,
+      "scene": 6,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_27821_006_12SUB_20230602T193750_0711_01",
+      "acquisition_utc": "2023-06-02T19:37:50.015Z",
+      "apparent_solar_hour_at_domain_centroid": 12.20589431578327,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27821,
+      "scene": 6,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_27821_006_12SVB_20230602T193750_0711_01",
+      "acquisition_utc": "2023-06-02T19:37:50.015Z",
+      "apparent_solar_hour_at_domain_centroid": 12.20589431578327,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27821,
+      "scene": 7,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_27821_007_12SVC_20230602T193841_0711_01",
+      "acquisition_utc": "2023-06-02T19:38:41.985Z",
+      "apparent_solar_hour_at_domain_centroid": 12.220059441677769,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27821,
+      "scene": 7,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_27821_007_12SUC_20230602T193841_0711_01",
+      "acquisition_utc": "2023-06-02T19:38:41.985Z",
+      "apparent_solar_hour_at_domain_centroid": 12.220059441677769,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27821,
+      "scene": 7,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_27821_007_12SVB_20230602T193841_0711_01",
+      "acquisition_utc": "2023-06-02T19:38:41.985Z",
+      "apparent_solar_hour_at_domain_centroid": 12.220059441677769,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27821,
+      "scene": 7,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_27821_007_12SUB_20230602T193841_0711_01",
+      "acquisition_utc": "2023-06-02T19:38:41.985Z",
+      "apparent_solar_hour_at_domain_centroid": 12.220059441677769,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27836,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_27836_004_12SUB_20230603T184936_0711_01",
+      "acquisition_utc": "2023-06-03T18:49:36.797Z",
+      "apparent_solar_hour_at_domain_centroid": 11.39943383482834,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27836,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_27836_004_12SVB_20230603T184936_0711_01",
+      "acquisition_utc": "2023-06-03T18:49:36.797Z",
+      "apparent_solar_hour_at_domain_centroid": 11.39943383482834,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27836,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_27836_004_12SVC_20230603T184936_0711_01",
+      "acquisition_utc": "2023-06-03T18:49:36.797Z",
+      "apparent_solar_hour_at_domain_centroid": 11.39943383482834,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27897,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_27897_003_12SVB_20230607T171108_0710_01",
+      "acquisition_utc": "2023-06-07T17:11:08.810Z",
+      "apparent_solar_hour_at_domain_centroid": 9.746932218805249,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27897,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_27897_003_12SVB_20230607T171108_0711_02",
+      "acquisition_utc": "2023-06-07T17:11:08.815Z",
+      "apparent_solar_hour_at_domain_centroid": 9.746932218805249,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27943,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_27943_003_12SUB_20230610T162007_0711_01",
+      "acquisition_utc": "2023-06-10T16:20:07.824Z",
+      "apparent_solar_hour_at_domain_centroid": 8.887215818818248,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27943,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_27943_004_12SVB_20230610T162058_0711_01",
+      "acquisition_utc": "2023-06-10T16:20:58.613Z",
+      "apparent_solar_hour_at_domain_centroid": 8.901380544152255,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27943,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_27943_004_12SUB_20230610T162058_0711_01",
+      "acquisition_utc": "2023-06-10T16:20:58.613Z",
+      "apparent_solar_hour_at_domain_centroid": 8.901380544152255,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27943,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_27943_004_12SVC_20230610T162058_0711_01",
+      "acquisition_utc": "2023-06-10T16:20:58.613Z",
+      "apparent_solar_hour_at_domain_centroid": 8.901380544152255,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27943,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_27943_004_12SUC_20230610T162058_0711_01",
+      "acquisition_utc": "2023-06-10T16:20:58.613Z",
+      "apparent_solar_hour_at_domain_centroid": 8.901380544152255,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "scene": 13,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_27963_013_12SVB_20230611T233953_0711_01",
+      "acquisition_utc": "2023-06-11T23:39:53.676Z",
+      "apparent_solar_hour_at_domain_centroid": 16.2123134211585,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_27963_013_12SUC_20230611T233953_0711_01",
+      "acquisition_utc": "2023-06-11T23:39:53.676Z",
+      "apparent_solar_hour_at_domain_centroid": 16.2123134211585,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "scene": 13,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_27963_013_12SVC_20230611T233953_0711_01",
+      "acquisition_utc": "2023-06-11T23:39:53.676Z",
+      "apparent_solar_hour_at_domain_centroid": 16.2123134211585,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "scene": 13,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_27963_013_12SUB_20230611T233953_0711_01",
+      "acquisition_utc": "2023-06-11T23:39:53.676Z",
+      "apparent_solar_hour_at_domain_centroid": 16.2123134211585,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "scene": 14,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_27963_014_12SVC_20230611T234045_0711_01",
+      "acquisition_utc": "2023-06-11T23:40:45.646Z",
+      "apparent_solar_hour_at_domain_centroid": 16.226755837720944,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_27963_014_12SVB_20230611T234045_0711_01",
+      "acquisition_utc": "2023-06-11T23:40:45.646Z",
+      "apparent_solar_hour_at_domain_centroid": 16.226755837720944,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_27963_014_12SUB_20230611T234045_0711_01",
+      "acquisition_utc": "2023-06-11T23:40:45.646Z",
+      "apparent_solar_hour_at_domain_centroid": 16.226755837720944,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27989,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_27989_005_12SUC_20230613T153007_0710_01",
+      "acquisition_utc": "2023-06-13T15:30:07.261Z",
+      "apparent_solar_hour_at_domain_centroid": 8.043867312044574,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27989,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_27989_005_12SUC_20230613T153007_0711_02",
+      "acquisition_utc": "2023-06-13T15:30:07.261Z",
+      "apparent_solar_hour_at_domain_centroid": 8.043867312044574,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28004,
+      "scene": 1,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28004_001_12SVB_20230614T144107_0710_01",
+      "acquisition_utc": "2023-06-14T14:41:07.988Z",
+      "apparent_solar_hour_at_domain_centroid": 7.223838836813806,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28004,
+      "scene": 1,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28004_001_12SUC_20230614T144107_0710_01",
+      "acquisition_utc": "2023-06-14T14:41:07.988Z",
+      "apparent_solar_hour_at_domain_centroid": 7.223838836813806,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28004,
+      "scene": 1,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28004_001_12SUB_20230614T144107_0710_01",
+      "acquisition_utc": "2023-06-14T14:41:07.988Z",
+      "apparent_solar_hour_at_domain_centroid": 7.223838836813806,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28004,
+      "scene": 1,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28004_001_12SVC_20230614T144107_0710_01",
+      "acquisition_utc": "2023-06-14T14:41:07.988Z",
+      "apparent_solar_hour_at_domain_centroid": 7.223838836813806,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28004,
+      "scene": 1,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28004_001_12SUC_20230614T144107_0711_02",
+      "acquisition_utc": "2023-06-14T14:41:07.988Z",
+      "apparent_solar_hour_at_domain_centroid": 7.223838836813806,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28004,
+      "scene": 1,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28004_001_12SUB_20230614T144107_0711_02",
+      "acquisition_utc": "2023-06-14T14:41:07.988Z",
+      "apparent_solar_hour_at_domain_centroid": 7.223838836813806,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28004,
+      "scene": 1,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28004_001_12SVC_20230614T144107_0711_02",
+      "acquisition_utc": "2023-06-14T14:41:07.988Z",
+      "apparent_solar_hour_at_domain_centroid": 7.223838836813806,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28004,
+      "scene": 1,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28004_001_12SVB_20230614T144107_0711_02",
+      "acquisition_utc": "2023-06-14T14:41:07.988Z",
+      "apparent_solar_hour_at_domain_centroid": 7.223838836813806,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28004,
+      "scene": 2,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28004_002_12SVC_20230614T144159_0710_01",
+      "acquisition_utc": "2023-06-14T14:41:59.958Z",
+      "apparent_solar_hour_at_domain_centroid": 7.238281173685323,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28004,
+      "scene": 2,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28004_002_12SVC_20230614T144159_0711_02",
+      "acquisition_utc": "2023-06-14T14:41:59.958Z",
+      "apparent_solar_hour_at_domain_centroid": 7.238281173685323,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28009,
+      "scene": 15,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28009_015_12SUB_20230614T224937_0710_01",
+      "acquisition_utc": "2023-06-14T22:49:37.759Z",
+      "apparent_solar_hour_at_domain_centroid": 15.364315144234139,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28009,
+      "scene": 15,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28009_015_12SUB_20230614T224937_0711_02",
+      "acquisition_utc": "2023-06-14T22:49:37.759Z",
+      "apparent_solar_hour_at_domain_centroid": 15.364315144234139,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28024,
+      "scene": 12,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28024_012_12SUB_20230615T220038_0710_01",
+      "acquisition_utc": "2023-06-15T22:00:38.485Z",
+      "apparent_solar_hour_at_domain_centroid": 14.54451176503197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28024,
+      "scene": 12,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28024_012_12SUC_20230615T220038_0710_01",
+      "acquisition_utc": "2023-06-15T22:00:38.485Z",
+      "apparent_solar_hour_at_domain_centroid": 14.54451176503197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28024,
+      "scene": 12,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28024_012_12SVB_20230615T220038_0710_01",
+      "acquisition_utc": "2023-06-15T22:00:38.485Z",
+      "apparent_solar_hour_at_domain_centroid": 14.54451176503197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28024,
+      "scene": 12,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28024_012_12SVC_20230615T220038_0710_01",
+      "acquisition_utc": "2023-06-15T22:00:38.485Z",
+      "apparent_solar_hour_at_domain_centroid": 14.54451176503197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28024,
+      "scene": 12,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28024_012_12SUC_20230615T220038_0711_02",
+      "acquisition_utc": "2023-06-15T22:00:38.485Z",
+      "apparent_solar_hour_at_domain_centroid": 14.54451176503197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28024,
+      "scene": 12,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28024_012_12SUB_20230615T220038_0711_02",
+      "acquisition_utc": "2023-06-15T22:00:38.485Z",
+      "apparent_solar_hour_at_domain_centroid": 14.54451176503197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28024,
+      "scene": 12,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28024_012_12SVB_20230615T220038_0711_02",
+      "acquisition_utc": "2023-06-15T22:00:38.485Z",
+      "apparent_solar_hour_at_domain_centroid": 14.54451176503197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28024,
+      "scene": 12,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28024_012_12SVC_20230615T220038_0711_02",
+      "acquisition_utc": "2023-06-15T22:00:38.485Z",
+      "apparent_solar_hour_at_domain_centroid": 14.54451176503197,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28050,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28050_005_12SVC_20230617T135131_0711_01",
+      "acquisition_utc": "2023-06-17T13:51:31.041Z",
+      "apparent_solar_hour_at_domain_centroid": 6.386625185683301,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28050,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28050_005_12SUC_20230617T135131_0711_01",
+      "acquisition_utc": "2023-06-17T13:51:31.041Z",
+      "apparent_solar_hour_at_domain_centroid": 6.386625185683301,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28050,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28050_005_12SUB_20230617T135131_0711_01",
+      "acquisition_utc": "2023-06-17T13:51:31.041Z",
+      "apparent_solar_hour_at_domain_centroid": 6.386625185683301,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28065,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28065_003_12SUC_20230618T130255_0710_01",
+      "acquisition_utc": "2023-06-18T13:02:55.386Z",
+      "apparent_solar_hour_at_domain_centroid": 5.573133573368469,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28065,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28065_003_12SUB_20230618T130255_0710_01",
+      "acquisition_utc": "2023-06-18T13:02:55.386Z",
+      "apparent_solar_hour_at_domain_centroid": 5.573133573368469,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28065,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28065_003_12SVB_20230618T130255_0710_01",
+      "acquisition_utc": "2023-06-18T13:02:55.386Z",
+      "apparent_solar_hour_at_domain_centroid": 5.573133573368469,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28065,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28065_003_12SVC_20230618T130255_0711_02",
+      "acquisition_utc": "2023-06-18T13:02:55.386Z",
+      "apparent_solar_hour_at_domain_centroid": 5.573133573368469,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28065,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28065_003_12SUB_20230618T130255_0711_02",
+      "acquisition_utc": "2023-06-18T13:02:55.386Z",
+      "apparent_solar_hour_at_domain_centroid": 5.573133573368469,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28065,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28065_003_12SVB_20230618T130255_0711_02",
+      "acquisition_utc": "2023-06-18T13:02:55.386Z",
+      "apparent_solar_hour_at_domain_centroid": 5.573133573368469,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28065,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28065_003_12SUC_20230618T130255_0711_02",
+      "acquisition_utc": "2023-06-18T13:02:55.386Z",
+      "apparent_solar_hour_at_domain_centroid": 5.573133573368469,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28065,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28065_004_12SVC_20230618T130347_0710_01",
+      "acquisition_utc": "2023-06-18T13:03:47.356Z",
+      "apparent_solar_hour_at_domain_centroid": 5.58757583683472,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28065,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28065_004_12SVC_20230618T130347_0711_02",
+      "acquisition_utc": "2023-06-18T13:03:47.356Z",
+      "apparent_solar_hour_at_domain_centroid": 5.58757583683472,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28070,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28070_014_12SVB_20230618T211141_0710_01",
+      "acquisition_utc": "2023-06-18T21:11:41.690Z",
+      "apparent_solar_hour_at_domain_centroid": 13.718013634532937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28070,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28070_014_12SUC_20230618T211141_0710_01",
+      "acquisition_utc": "2023-06-18T21:11:41.690Z",
+      "apparent_solar_hour_at_domain_centroid": 13.718013634532937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28070,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28070_014_12SUB_20230618T211141_0710_01",
+      "acquisition_utc": "2023-06-18T21:11:41.690Z",
+      "apparent_solar_hour_at_domain_centroid": 13.718013634532937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28070,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28070_014_12SUB_20230618T211141_0711_02",
+      "acquisition_utc": "2023-06-18T21:11:41.690Z",
+      "apparent_solar_hour_at_domain_centroid": 13.718013634532937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28070,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28070_014_12SUC_20230618T211141_0711_02",
+      "acquisition_utc": "2023-06-18T21:11:41.690Z",
+      "apparent_solar_hour_at_domain_centroid": 13.718013634532937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28070,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28070_014_12SVB_20230618T211141_0711_02",
+      "acquisition_utc": "2023-06-18T21:11:41.690Z",
+      "apparent_solar_hour_at_domain_centroid": 13.718013634532937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28085_004_12SUB_20230619T202232_0710_01",
+      "acquisition_utc": "2023-06-19T20:22:32.959Z",
+      "apparent_solar_hour_at_domain_centroid": 12.895333880896406,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28085_004_12SUC_20230619T202232_0710_01",
+      "acquisition_utc": "2023-06-19T20:22:32.959Z",
+      "apparent_solar_hour_at_domain_centroid": 12.895333880896406,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28085_004_12SUB_20230619T202232_0711_02",
+      "acquisition_utc": "2023-06-19T20:22:32.959Z",
+      "apparent_solar_hour_at_domain_centroid": 12.895333880896406,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28085_004_12SUC_20230619T202232_0711_02",
+      "acquisition_utc": "2023-06-19T20:22:32.959Z",
+      "apparent_solar_hour_at_domain_centroid": 12.895333880896406,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28085_005_12SUC_20230619T202324_0710_01",
+      "acquisition_utc": "2023-06-19T20:23:24.929Z",
+      "apparent_solar_hour_at_domain_centroid": 12.9097761324379,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28085_005_12SUB_20230619T202324_0710_01",
+      "acquisition_utc": "2023-06-19T20:23:24.929Z",
+      "apparent_solar_hour_at_domain_centroid": 12.9097761324379,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28085_005_12SVC_20230619T202324_0710_01",
+      "acquisition_utc": "2023-06-19T20:23:24.929Z",
+      "apparent_solar_hour_at_domain_centroid": 12.9097761324379,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28085_005_12SVB_20230619T202324_0710_01",
+      "acquisition_utc": "2023-06-19T20:23:24.929Z",
+      "apparent_solar_hour_at_domain_centroid": 12.9097761324379,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28085_005_12SUC_20230619T202324_0711_02",
+      "acquisition_utc": "2023-06-19T20:23:24.929Z",
+      "apparent_solar_hour_at_domain_centroid": 12.9097761324379,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28085_005_12SVB_20230619T202324_0711_02",
+      "acquisition_utc": "2023-06-19T20:23:24.929Z",
+      "apparent_solar_hour_at_domain_centroid": 12.9097761324379,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28085_005_12SVC_20230619T202324_0711_02",
+      "acquisition_utc": "2023-06-19T20:23:24.929Z",
+      "apparent_solar_hour_at_domain_centroid": 12.9097761324379,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28085,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28085_005_12SUB_20230619T202324_0711_02",
+      "acquisition_utc": "2023-06-19T20:23:24.929Z",
+      "apparent_solar_hour_at_domain_centroid": 12.9097761324379,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28111,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28111_005_12SUB_20230621T121406_0710_01",
+      "acquisition_utc": "2023-06-21T12:14:06.842Z",
+      "apparent_solar_hour_at_domain_centroid": 4.748716258306771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28111,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28111_005_12SUC_20230621T121406_0710_01",
+      "acquisition_utc": "2023-06-21T12:14:06.842Z",
+      "apparent_solar_hour_at_domain_centroid": 4.748716258306771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28111,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28111_005_12SVB_20230621T121406_0710_01",
+      "acquisition_utc": "2023-06-21T12:14:06.842Z",
+      "apparent_solar_hour_at_domain_centroid": 4.748716258306771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28111,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28111_005_12SVC_20230621T121406_0710_01",
+      "acquisition_utc": "2023-06-21T12:14:06.842Z",
+      "apparent_solar_hour_at_domain_centroid": 4.748716258306771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28111,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28111_005_12SUB_20230621T121406_0711_02",
+      "acquisition_utc": "2023-06-21T12:14:06.842Z",
+      "apparent_solar_hour_at_domain_centroid": 4.748716258306771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28111,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28111_005_12SUC_20230621T121406_0711_02",
+      "acquisition_utc": "2023-06-21T12:14:06.842Z",
+      "apparent_solar_hour_at_domain_centroid": 4.748716258306771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28111,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28111_005_12SVC_20230621T121406_0711_02",
+      "acquisition_utc": "2023-06-21T12:14:06.842Z",
+      "apparent_solar_hour_at_domain_centroid": 4.748716258306771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28111,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28111_005_12SVB_20230621T121406_0711_02",
+      "acquisition_utc": "2023-06-21T12:14:06.842Z",
+      "apparent_solar_hour_at_domain_centroid": 4.748716258306771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28126,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28126_004_12SUB_20230622T112500_0710_01",
+      "acquisition_utc": "2023-06-22T11:25:00.472Z",
+      "apparent_solar_hour_at_domain_centroid": 3.926854241211479,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28126,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28126_004_12SVB_20230622T112500_0710_01",
+      "acquisition_utc": "2023-06-22T11:25:00.472Z",
+      "apparent_solar_hour_at_domain_centroid": 3.926854241211479,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28126,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28126_004_12SUB_20230622T112500_0711_02",
+      "acquisition_utc": "2023-06-22T11:25:00.472Z",
+      "apparent_solar_hour_at_domain_centroid": 3.926854241211479,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28126,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28126_004_12SVB_20230622T112500_0711_02",
+      "acquisition_utc": "2023-06-22T11:25:00.472Z",
+      "apparent_solar_hour_at_domain_centroid": 3.926854241211479,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28126,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28126_005_12SVC_20230622T112552_0710_01",
+      "acquisition_utc": "2023-06-22T11:25:52.441Z",
+      "apparent_solar_hour_at_domain_centroid": 3.9412964878019157,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28126,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28126_005_12SVB_20230622T112552_0710_01",
+      "acquisition_utc": "2023-06-22T11:25:52.441Z",
+      "apparent_solar_hour_at_domain_centroid": 3.9412964878019157,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28126,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28126_005_12SVC_20230622T112552_0711_02",
+      "acquisition_utc": "2023-06-22T11:25:52.441Z",
+      "apparent_solar_hour_at_domain_centroid": 3.9412964878019157,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28126,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28126_005_12SVB_20230622T112552_0711_02",
+      "acquisition_utc": "2023-06-22T11:25:52.441Z",
+      "apparent_solar_hour_at_domain_centroid": 3.9412964878019157,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28131,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28131_014_12SUC_20230622T193326_0710_01",
+      "acquisition_utc": "2023-06-22T19:33:26.512Z",
+      "apparent_solar_hour_at_domain_centroid": 12.066171460639344,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28131,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28131_014_12SUC_20230622T193326_0711_02",
+      "acquisition_utc": "2023-06-22T19:33:26.512Z",
+      "apparent_solar_hour_at_domain_centroid": 12.066171460639344,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28131,
+      "scene": 15,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28131_015_12SUC_20230622T193418_0710_01",
+      "acquisition_utc": "2023-06-22T19:34:18.482Z",
+      "apparent_solar_hour_at_domain_centroid": 12.080613708451592,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28131,
+      "scene": 15,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28131_015_12SUB_20230622T193418_0710_01",
+      "acquisition_utc": "2023-06-22T19:34:18.482Z",
+      "apparent_solar_hour_at_domain_centroid": 12.080613708451592,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28131,
+      "scene": 15,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28131_015_12SVB_20230622T193418_0710_01",
+      "acquisition_utc": "2023-06-22T19:34:18.482Z",
+      "apparent_solar_hour_at_domain_centroid": 12.080613708451592,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28131,
+      "scene": 15,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28131_015_12SVC_20230622T193418_0710_01",
+      "acquisition_utc": "2023-06-22T19:34:18.482Z",
+      "apparent_solar_hour_at_domain_centroid": 12.080613708451592,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28131,
+      "scene": 15,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28131_015_12SUC_20230622T193418_0711_02",
+      "acquisition_utc": "2023-06-22T19:34:18.482Z",
+      "apparent_solar_hour_at_domain_centroid": 12.080613708451592,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28131,
+      "scene": 15,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28131_015_12SUB_20230622T193418_0711_02",
+      "acquisition_utc": "2023-06-22T19:34:18.482Z",
+      "apparent_solar_hour_at_domain_centroid": 12.080613708451592,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28131,
+      "scene": 15,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28131_015_12SVC_20230622T193418_0711_02",
+      "acquisition_utc": "2023-06-22T19:34:18.482Z",
+      "apparent_solar_hour_at_domain_centroid": 12.080613708451592,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28131,
+      "scene": 15,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28131_015_12SVB_20230622T193418_0711_02",
+      "acquisition_utc": "2023-06-22T19:34:18.482Z",
+      "apparent_solar_hour_at_domain_centroid": 12.080613708451592,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28146,
+      "scene": 11,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28146_011_12SUC_20230623T184459_0710_01",
+      "acquisition_utc": "2023-06-23T18:44:59.118Z",
+      "apparent_solar_hour_at_domain_centroid": 11.255148676284723,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28146,
+      "scene": 11,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28146_011_12SVC_20230623T184459_0710_01",
+      "acquisition_utc": "2023-06-23T18:44:59.118Z",
+      "apparent_solar_hour_at_domain_centroid": 11.255148676284723,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28146,
+      "scene": 11,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28146_011_12SVB_20230623T184459_0710_01",
+      "acquisition_utc": "2023-06-23T18:44:59.118Z",
+      "apparent_solar_hour_at_domain_centroid": 11.255148676284723,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28146,
+      "scene": 11,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28146_011_12SVB_20230623T184459_0711_02",
+      "acquisition_utc": "2023-06-23T18:44:59.118Z",
+      "apparent_solar_hour_at_domain_centroid": 11.255148676284723,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28146,
+      "scene": 11,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28146_011_12SVC_20230623T184459_0711_02",
+      "acquisition_utc": "2023-06-23T18:44:59.118Z",
+      "apparent_solar_hour_at_domain_centroid": 11.255148676284723,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28146,
+      "scene": 11,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28146_011_12SUC_20230623T184459_0711_02",
+      "acquisition_utc": "2023-06-23T18:44:59.118Z",
+      "apparent_solar_hour_at_domain_centroid": 11.255148676284723,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28146,
+      "scene": 12,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28146_012_12SVB_20230623T184551_0710_01",
+      "acquisition_utc": "2023-06-23T18:45:51.088Z",
+      "apparent_solar_hour_at_domain_centroid": 11.269590929913827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28146,
+      "scene": 12,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28146_012_12SVC_20230623T184551_0710_01",
+      "acquisition_utc": "2023-06-23T18:45:51.088Z",
+      "apparent_solar_hour_at_domain_centroid": 11.269590929913827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28146,
+      "scene": 12,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28146_012_12SVC_20230623T184551_0711_02",
+      "acquisition_utc": "2023-06-23T18:45:51.088Z",
+      "apparent_solar_hour_at_domain_centroid": 11.269590929913827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28146,
+      "scene": 12,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28146_012_12SVB_20230623T184551_0711_02",
+      "acquisition_utc": "2023-06-23T18:45:51.088Z",
+      "apparent_solar_hour_at_domain_centroid": 11.269590929913827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28172,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28172_004_12SUB_20230625T103602_0710_01",
+      "acquisition_utc": "2023-06-25T10:36:02.277Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0999603244030354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28172,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28172_004_12SUC_20230625T103602_0710_01",
+      "acquisition_utc": "2023-06-25T10:36:02.277Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0999603244030354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28172,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28172_004_12SVB_20230625T103602_0710_01",
+      "acquisition_utc": "2023-06-25T10:36:02.277Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0999603244030354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28172,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28172_004_12SVC_20230625T103602_0710_01",
+      "acquisition_utc": "2023-06-25T10:36:02.277Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0999603244030354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28172,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28172_004_12SVC_20230625T103602_0711_02",
+      "acquisition_utc": "2023-06-25T10:36:02.277Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0999603244030354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28172,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28172_004_12SUB_20230625T103602_0711_02",
+      "acquisition_utc": "2023-06-25T10:36:02.277Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0999603244030354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28172,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28172_004_12SVB_20230625T103602_0711_02",
+      "acquisition_utc": "2023-06-25T10:36:02.277Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0999603244030354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28172,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28172_004_12SUC_20230625T103602_0711_02",
+      "acquisition_utc": "2023-06-25T10:36:02.277Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0999603244030354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28187,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28187_004_12SVB_20230626T094659_0711_01",
+      "acquisition_utc": "2023-06-26T09:46:59.624Z",
+      "apparent_solar_hour_at_domain_centroid": 2.278984898124535,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28192,
+      "scene": 13,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28192_013_12SVC_20230626T175548_0710_01",
+      "acquisition_utc": "2023-06-26T17:55:48.103Z",
+      "apparent_solar_hour_at_domain_centroid": 10.424714143569977,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28192,
+      "scene": 13,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28192_013_12SVB_20230626T175548_0710_01",
+      "acquisition_utc": "2023-06-26T17:55:48.103Z",
+      "apparent_solar_hour_at_domain_centroid": 10.424714143569977,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28192,
+      "scene": 13,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28192_013_12SUB_20230626T175548_0710_01",
+      "acquisition_utc": "2023-06-26T17:55:48.103Z",
+      "apparent_solar_hour_at_domain_centroid": 10.424714143569977,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28192,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28192_013_12SUC_20230626T175548_0710_01",
+      "acquisition_utc": "2023-06-26T17:55:48.103Z",
+      "apparent_solar_hour_at_domain_centroid": 10.424714143569977,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28192,
+      "scene": 13,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28192_013_12SVC_20230626T175548_0711_02",
+      "acquisition_utc": "2023-06-26T17:55:48.103Z",
+      "apparent_solar_hour_at_domain_centroid": 10.424714143569977,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28192,
+      "scene": 13,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28192_013_12SUB_20230626T175548_0711_02",
+      "acquisition_utc": "2023-06-26T17:55:48.103Z",
+      "apparent_solar_hour_at_domain_centroid": 10.424714143569977,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28192,
+      "scene": 13,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28192_013_12SVB_20230626T175548_0711_02",
+      "acquisition_utc": "2023-06-26T17:55:48.103Z",
+      "apparent_solar_hour_at_domain_centroid": 10.424714143569977,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28192,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28192_013_12SUC_20230626T175548_0711_02",
+      "acquisition_utc": "2023-06-26T17:55:48.103Z",
+      "apparent_solar_hour_at_domain_centroid": 10.424714143569977,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28192,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28192_014_12SVB_20230626T175640_0710_01",
+      "acquisition_utc": "2023-06-26T17:56:40.073Z",
+      "apparent_solar_hour_at_domain_centroid": 10.439156436595656,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28192,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28192_014_12SVB_20230626T175640_0711_02",
+      "acquisition_utc": "2023-06-26T17:56:40.073Z",
+      "apparent_solar_hour_at_domain_centroid": 10.439156436595656,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28207,
+      "scene": 10,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28207_010_12SVC_20230627T170704_0711_01",
+      "acquisition_utc": "2023-06-27T17:07:04.166Z",
+      "apparent_solar_hour_at_domain_centroid": 9.609053669994276,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28233_004_12SVC_20230629T085708_0710_01",
+      "acquisition_utc": "2023-06-29T08:57:08.263Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4376751953399005,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28233_004_12SUC_20230629T085708_0710_01",
+      "acquisition_utc": "2023-06-29T08:57:08.263Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4376751953399005,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28233_004_12SUB_20230629T085708_0710_01",
+      "acquisition_utc": "2023-06-29T08:57:08.263Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4376751953399005,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28233_004_12SVB_20230629T085708_0710_01",
+      "acquisition_utc": "2023-06-29T08:57:08.263Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4376751953399005,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28233_004_12SVB_20230629T085708_0711_02",
+      "acquisition_utc": "2023-06-29T08:57:08.263Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4376751953399005,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28233_004_12SUC_20230629T085708_0711_02",
+      "acquisition_utc": "2023-06-29T08:57:08.263Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4376751953399005,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28233_004_12SVC_20230629T085708_0711_02",
+      "acquisition_utc": "2023-06-29T08:57:08.263Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4376751953399005,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28233_004_12SUB_20230629T085708_0711_02",
+      "acquisition_utc": "2023-06-29T08:57:08.263Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4376751953399005,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28233_005_12SUC_20230629T085800_0710_01",
+      "acquisition_utc": "2023-06-29T08:58:00.233Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4521175501476589,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28233_005_12SVB_20230629T085800_0710_01",
+      "acquisition_utc": "2023-06-29T08:58:00.233Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4521175501476589,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28233_005_12SVC_20230629T085800_0710_01",
+      "acquisition_utc": "2023-06-29T08:58:00.233Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4521175501476589,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28233_005_12SVB_20230629T085800_0711_02",
+      "acquisition_utc": "2023-06-29T08:58:00.233Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4521175501476589,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28233_005_12SVC_20230629T085800_0711_02",
+      "acquisition_utc": "2023-06-29T08:58:00.233Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4521175501476589,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28233,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28233_005_12SUC_20230629T085800_0711_02",
+      "acquisition_utc": "2023-06-29T08:58:00.233Z",
+      "apparent_solar_hour_at_domain_centroid": 1.4521175501476589,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28253,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28253_014_12SUC_20230630T161717_0710_01",
+      "acquisition_utc": "2023-06-30T16:17:17.520Z",
+      "apparent_solar_hour_at_domain_centroid": 8.769017514091102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28253,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28253_014_12SUB_20230630T161717_0710_01",
+      "acquisition_utc": "2023-06-30T16:17:17.520Z",
+      "apparent_solar_hour_at_domain_centroid": 8.769017514091102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28253,
+      "scene": 14,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28253_014_12SVC_20230630T161717_0710_01",
+      "acquisition_utc": "2023-06-30T16:17:17.520Z",
+      "apparent_solar_hour_at_domain_centroid": 8.769017514091102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28253,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28253_014_12SVB_20230630T161717_0710_01",
+      "acquisition_utc": "2023-06-30T16:17:17.520Z",
+      "apparent_solar_hour_at_domain_centroid": 8.769017514091102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28253,
+      "scene": 14,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28253_014_12SVC_20230630T161717_0711_02",
+      "acquisition_utc": "2023-06-30T16:17:17.520Z",
+      "apparent_solar_hour_at_domain_centroid": 8.769017514091102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28253,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28253_014_12SVB_20230630T161717_0711_02",
+      "acquisition_utc": "2023-06-30T16:17:17.520Z",
+      "apparent_solar_hour_at_domain_centroid": 8.769017514091102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28253,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28253_014_12SUB_20230630T161717_0711_02",
+      "acquisition_utc": "2023-06-30T16:17:17.520Z",
+      "apparent_solar_hour_at_domain_centroid": 8.769017514091102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28253,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28253_014_12SUC_20230630T161717_0711_02",
+      "acquisition_utc": "2023-06-30T16:17:17.520Z",
+      "apparent_solar_hour_at_domain_centroid": 8.769017514091102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28279,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28279_005_12SUC_20230702T080736_0710_01",
+      "acquisition_utc": "2023-07-02T08:07:36.953Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6020554653622378,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28279,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28279_005_12SUC_20230702T080736_0711_02",
+      "acquisition_utc": "2023-07-02T08:07:36.953Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6020554653622378,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28314,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28314_014_12SUC_20230704T143804_0710_01",
+      "acquisition_utc": "2023-07-04T14:38:04.599Z",
+      "apparent_solar_hour_at_domain_centroid": 7.102500909667267,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28314,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28314_014_12SUB_20230704T143804_0710_01",
+      "acquisition_utc": "2023-07-04T14:38:04.599Z",
+      "apparent_solar_hour_at_domain_centroid": 7.102500909667267,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28314,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28314_014_12SVB_20230704T143804_0710_01",
+      "acquisition_utc": "2023-07-04T14:38:04.599Z",
+      "apparent_solar_hour_at_domain_centroid": 7.102500909667267,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28314,
+      "scene": 14,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28314_014_12SVC_20230704T143804_0710_01",
+      "acquisition_utc": "2023-07-04T14:38:04.599Z",
+      "apparent_solar_hour_at_domain_centroid": 7.102500909667267,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28314,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28314_014_12SUC_20230704T143804_0712_02",
+      "acquisition_utc": "2023-07-04T14:38:04.599Z",
+      "apparent_solar_hour_at_domain_centroid": 7.102500909667267,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28314,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28314_014_12SUB_20230704T143804_0712_02",
+      "acquisition_utc": "2023-07-04T14:38:04.599Z",
+      "apparent_solar_hour_at_domain_centroid": 7.102500909667267,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28314,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28314_014_12SVB_20230704T143804_0712_02",
+      "acquisition_utc": "2023-07-04T14:38:04.599Z",
+      "apparent_solar_hour_at_domain_centroid": 7.102500909667267,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28314,
+      "scene": 14,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28314_014_12SVC_20230704T143804_0712_02",
+      "acquisition_utc": "2023-07-04T14:38:04.599Z",
+      "apparent_solar_hour_at_domain_centroid": 7.102500909667267,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28340,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28340_005_12SUC_20230706T062947_0712_02",
+      "acquisition_utc": "2023-07-06T06:29:47.915Z",
+      "apparent_solar_hour_at_domain_centroid": 22.959332149378383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28340,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28340_005_12SVC_20230706T062947_0712_01",
+      "acquisition_utc": "2023-07-06T06:29:47.915Z",
+      "apparent_solar_hour_at_domain_centroid": 22.959332149378383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28340,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28340_005_12SUB_20230706T062947_0712_01",
+      "acquisition_utc": "2023-07-06T06:29:47.915Z",
+      "apparent_solar_hour_at_domain_centroid": 22.959332149378383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28340,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28340_005_12SUC_20230706T062947_0712_01",
+      "acquisition_utc": "2023-07-06T06:29:47.915Z",
+      "apparent_solar_hour_at_domain_centroid": 22.959332149378383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28340,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28340_005_12SUB_20230706T062947_0712_02",
+      "acquisition_utc": "2023-07-06T06:29:47.915Z",
+      "apparent_solar_hour_at_domain_centroid": 22.959332149378383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28340,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28340_005_12SVC_20230706T062947_0712_02",
+      "acquisition_utc": "2023-07-06T06:29:47.915Z",
+      "apparent_solar_hour_at_domain_centroid": 22.959332149378383,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28360,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28360_014_12SUB_20230707T135025_0710_01",
+      "acquisition_utc": "2023-07-07T13:50:25.580Z",
+      "apparent_solar_hour_at_domain_centroid": 6.2993669605086735,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28360,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28360_014_12SUB_20230707T135025_0712_02",
+      "acquisition_utc": "2023-07-07T13:50:25.580Z",
+      "apparent_solar_hour_at_domain_centroid": 6.2993669605086735,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28375,
+      "scene": 12,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28375_012_12SUC_20230708T130156_0710_01",
+      "acquisition_utc": "2023-07-08T13:01:56.020Z",
+      "apparent_solar_hour_at_domain_centroid": 5.488561812899971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28375,
+      "scene": 12,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28375_012_12SUC_20230708T130156_0712_02",
+      "acquisition_utc": "2023-07-08T13:01:56.020Z",
+      "apparent_solar_hour_at_domain_centroid": 5.488561812899971,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28375,
+      "scene": 13,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28375_013_12SUB_20230708T130247_0710_01",
+      "acquisition_utc": "2023-07-08T13:02:47.990Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5027268276792904,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28375,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28375_013_12SUC_20230708T130247_0710_01",
+      "acquisition_utc": "2023-07-08T13:02:47.990Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5027268276792904,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28375,
+      "scene": 13,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28375_013_12SVB_20230708T130247_0710_01",
+      "acquisition_utc": "2023-07-08T13:02:47.990Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5027268276792904,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28375,
+      "scene": 13,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28375_013_12SVC_20230708T130247_0710_01",
+      "acquisition_utc": "2023-07-08T13:02:47.990Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5027268276792904,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28375,
+      "scene": 13,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28375_013_12SVC_20230708T130247_0712_02",
+      "acquisition_utc": "2023-07-08T13:02:47.990Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5027268276792904,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28375,
+      "scene": 13,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28375_013_12SUB_20230708T130247_0712_02",
+      "acquisition_utc": "2023-07-08T13:02:47.990Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5027268276792904,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28375,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28375_013_12SUC_20230708T130247_0712_02",
+      "acquisition_utc": "2023-07-08T13:02:47.990Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5027268276792904,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28375,
+      "scene": 13,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28375_013_12SVB_20230708T130247_0712_02",
+      "acquisition_utc": "2023-07-08T13:02:47.990Z",
+      "apparent_solar_hour_at_domain_centroid": 5.5027268276792904,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28401,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28401_003_12SUB_20230710T045405_0710_01",
+      "acquisition_utc": "2023-07-10T04:54:05.350Z",
+      "apparent_solar_hour_at_domain_centroid": 21.353219644816036,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28401,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28401_003_12SUC_20230710T045405_0710_01",
+      "acquisition_utc": "2023-07-10T04:54:05.350Z",
+      "apparent_solar_hour_at_domain_centroid": 21.353219644816036,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28401,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28401_003_12SVC_20230710T045405_0710_01",
+      "acquisition_utc": "2023-07-10T04:54:05.350Z",
+      "apparent_solar_hour_at_domain_centroid": 21.353219644816036,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28401,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28401_003_12SUB_20230710T045405_0712_02",
+      "acquisition_utc": "2023-07-10T04:54:05.350Z",
+      "apparent_solar_hour_at_domain_centroid": 21.353219644816036,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28401,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28401_003_12SUC_20230710T045405_0712_02",
+      "acquisition_utc": "2023-07-10T04:54:05.350Z",
+      "apparent_solar_hour_at_domain_centroid": 21.353219644816036,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28401,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28401_003_12SVC_20230710T045405_0712_02",
+      "acquisition_utc": "2023-07-10T04:54:05.350Z",
+      "apparent_solar_hour_at_domain_centroid": 21.353219644816036,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28401,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28401_004_12SUC_20230710T045457_0710_01",
+      "acquisition_utc": "2023-07-10T04:54:57.320Z",
+      "apparent_solar_hour_at_domain_centroid": 21.36766250791787,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28401,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28401_004_12SVC_20230710T045457_0710_01",
+      "acquisition_utc": "2023-07-10T04:54:57.320Z",
+      "apparent_solar_hour_at_domain_centroid": 21.36766250791787,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28401,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28401_004_12SVC_20230710T045457_0712_02",
+      "acquisition_utc": "2023-07-10T04:54:57.320Z",
+      "apparent_solar_hour_at_domain_centroid": 21.36766250791787,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28401,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28401_004_12SUC_20230710T045457_0712_02",
+      "acquisition_utc": "2023-07-10T04:54:57.320Z",
+      "apparent_solar_hour_at_domain_centroid": 21.36766250791787,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28436,
+      "scene": 13,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28436_013_12SUB_20230712T112721_0710_01",
+      "acquisition_utc": "2023-07-12T11:27:21.662Z",
+      "apparent_solar_hour_at_domain_centroid": 3.901977979605088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28436,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28436_013_12SUC_20230712T112721_0710_01",
+      "acquisition_utc": "2023-07-12T11:27:21.662Z",
+      "apparent_solar_hour_at_domain_centroid": 3.901977979605088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28436,
+      "scene": 13,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28436_013_12SVB_20230712T112721_0710_01",
+      "acquisition_utc": "2023-07-12T11:27:21.662Z",
+      "apparent_solar_hour_at_domain_centroid": 3.901977979605088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28436,
+      "scene": 13,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28436_013_12SVC_20230712T112721_0710_01",
+      "acquisition_utc": "2023-07-12T11:27:21.662Z",
+      "apparent_solar_hour_at_domain_centroid": 3.901977979605088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28436,
+      "scene": 13,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28436_013_12SUB_20230712T112721_0712_02",
+      "acquisition_utc": "2023-07-12T11:27:21.662Z",
+      "apparent_solar_hour_at_domain_centroid": 3.901977979605088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28436,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28436_013_12SUC_20230712T112721_0712_02",
+      "acquisition_utc": "2023-07-12T11:27:21.662Z",
+      "apparent_solar_hour_at_domain_centroid": 3.901977979605088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28436,
+      "scene": 13,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28436_013_12SVB_20230712T112721_0712_02",
+      "acquisition_utc": "2023-07-12T11:27:21.662Z",
+      "apparent_solar_hour_at_domain_centroid": 3.901977979605088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28436,
+      "scene": 13,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28436_013_12SVC_20230712T112721_0712_02",
+      "acquisition_utc": "2023-07-12T11:27:21.662Z",
+      "apparent_solar_hour_at_domain_centroid": 3.901977979605088,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28462,
+      "scene": 6,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28462_006_12SVB_20230714T031854_0710_01",
+      "acquisition_utc": "2023-07-14T03:18:54.311Z",
+      "apparent_solar_hour_at_domain_centroid": 19.75737287297926,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28462,
+      "scene": 6,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28462_006_12SVC_20230714T031854_0710_01",
+      "acquisition_utc": "2023-07-14T03:18:54.311Z",
+      "apparent_solar_hour_at_domain_centroid": 19.75737287297926,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28462,
+      "scene": 6,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28462_006_12SUB_20230714T031854_0710_01",
+      "acquisition_utc": "2023-07-14T03:18:54.311Z",
+      "apparent_solar_hour_at_domain_centroid": 19.75737287297926,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28462,
+      "scene": 6,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28462_006_12SUC_20230714T031854_0710_01",
+      "acquisition_utc": "2023-07-14T03:18:54.311Z",
+      "apparent_solar_hour_at_domain_centroid": 19.75737287297926,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28462,
+      "scene": 6,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28462_006_12SVB_20230714T031854_0712_02",
+      "acquisition_utc": "2023-07-14T03:18:54.311Z",
+      "apparent_solar_hour_at_domain_centroid": 19.75737287297926,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28462,
+      "scene": 6,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28462_006_12SUC_20230714T031854_0712_02",
+      "acquisition_utc": "2023-07-14T03:18:54.311Z",
+      "apparent_solar_hour_at_domain_centroid": 19.75737287297926,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28462,
+      "scene": 6,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28462_006_12SUB_20230714T031854_0712_02",
+      "acquisition_utc": "2023-07-14T03:18:54.311Z",
+      "apparent_solar_hour_at_domain_centroid": 19.75737287297926,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28462,
+      "scene": 6,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28462_006_12SVC_20230714T031854_0712_02",
+      "acquisition_utc": "2023-07-14T03:18:54.311Z",
+      "apparent_solar_hour_at_domain_centroid": 19.75737287297926,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28482,
+      "scene": 9,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28482_009_12SUC_20230715T103922_0710_01",
+      "acquisition_utc": "2023-07-15T10:39:22.447Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0957606997329274,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28482,
+      "scene": 9,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28482_009_12SUB_20230715T103922_0710_01",
+      "acquisition_utc": "2023-07-15T10:39:22.447Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0957606997329274,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28482,
+      "scene": 9,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28482_009_12SUB_20230715T103922_0712_02",
+      "acquisition_utc": "2023-07-15T10:39:22.447Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0957606997329274,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28482,
+      "scene": 9,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28482_009_12SUC_20230715T103922_0712_02",
+      "acquisition_utc": "2023-07-15T10:39:22.447Z",
+      "apparent_solar_hour_at_domain_centroid": 3.0957606997329274,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28523_003_12SUB_20230718T014232_0710_01",
+      "acquisition_utc": "2023-07-18T01:42:32.681Z",
+      "apparent_solar_hour_at_domain_centroid": 18.143747689648393,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28523_003_12SVB_20230718T014232_0710_01",
+      "acquisition_utc": "2023-07-18T01:42:32.681Z",
+      "apparent_solar_hour_at_domain_centroid": 18.143747689648393,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28523_003_12SUC_20230718T014232_0710_01",
+      "acquisition_utc": "2023-07-18T01:42:32.681Z",
+      "apparent_solar_hour_at_domain_centroid": 18.143747689648393,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28523_003_12SUC_20230718T014232_0712_02",
+      "acquisition_utc": "2023-07-18T01:42:32.681Z",
+      "apparent_solar_hour_at_domain_centroid": 18.143747689648393,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28523_003_12SUB_20230718T014232_0712_02",
+      "acquisition_utc": "2023-07-18T01:42:32.681Z",
+      "apparent_solar_hour_at_domain_centroid": 18.143747689648393,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28523_003_12SVB_20230718T014232_0712_02",
+      "acquisition_utc": "2023-07-18T01:42:32.681Z",
+      "apparent_solar_hour_at_domain_centroid": 18.143747689648393,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28523_004_12SUB_20230718T014324_0710_01",
+      "acquisition_utc": "2023-07-18T01:43:24.651Z",
+      "apparent_solar_hour_at_domain_centroid": 18.15819114611004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28523_004_12SUC_20230718T014324_0710_01",
+      "acquisition_utc": "2023-07-18T01:43:24.651Z",
+      "apparent_solar_hour_at_domain_centroid": 18.15819114611004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28523_004_12SVC_20230718T014324_0710_01",
+      "acquisition_utc": "2023-07-18T01:43:24.651Z",
+      "apparent_solar_hour_at_domain_centroid": 18.15819114611004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28523_004_12SVB_20230718T014324_0710_01",
+      "acquisition_utc": "2023-07-18T01:43:24.651Z",
+      "apparent_solar_hour_at_domain_centroid": 18.15819114611004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28523_004_12SUB_20230718T014324_0712_02",
+      "acquisition_utc": "2023-07-18T01:43:24.651Z",
+      "apparent_solar_hour_at_domain_centroid": 18.15819114611004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28523_004_12SVB_20230718T014324_0712_02",
+      "acquisition_utc": "2023-07-18T01:43:24.651Z",
+      "apparent_solar_hour_at_domain_centroid": 18.15819114611004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28523_004_12SUC_20230718T014324_0712_02",
+      "acquisition_utc": "2023-07-18T01:43:24.651Z",
+      "apparent_solar_hour_at_domain_centroid": 18.15819114611004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28523,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28523_004_12SVC_20230718T014324_0712_02",
+      "acquisition_utc": "2023-07-18T01:43:24.651Z",
+      "apparent_solar_hour_at_domain_centroid": 18.15819114611004,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28558,
+      "scene": 11,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28558_011_12SUC_20230720T081449_0710_01",
+      "acquisition_utc": "2023-07-20T08:14:49.027Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6784464074634249,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28558,
+      "scene": 11,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28558_011_12SVC_20230720T081449_0710_01",
+      "acquisition_utc": "2023-07-20T08:14:49.027Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6784464074634249,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28558,
+      "scene": 11,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28558_011_12SUC_20230720T081449_0712_02",
+      "acquisition_utc": "2023-07-20T08:14:49.027Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6784464074634249,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28558,
+      "scene": 11,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28558_011_12SVC_20230720T081449_0712_02",
+      "acquisition_utc": "2023-07-20T08:14:49.027Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6784464074634249,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28599,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28599_003_12SVC_20230722T231825_0712_01",
+      "acquisition_utc": "2023-07-22T23:18:25.045Z",
+      "apparent_solar_hour_at_domain_centroid": 15.735532900341568,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28599,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28599_003_12SUB_20230722T231825_0712_01",
+      "acquisition_utc": "2023-07-22T23:18:25.045Z",
+      "apparent_solar_hour_at_domain_centroid": 15.735532900341568,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28599,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28599_003_12SVB_20230722T231825_0712_01",
+      "acquisition_utc": "2023-07-22T23:18:25.045Z",
+      "apparent_solar_hour_at_domain_centroid": 15.735532900341568,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28619,
+      "scene": 8,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28619_008_12SVB_20230724T063910_0710_01",
+      "acquisition_utc": "2023-07-24T06:39:10.913Z",
+      "apparent_solar_hour_at_domain_centroid": 23.08032106998945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28619,
+      "scene": 8,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28619_008_12SVC_20230724T063910_0710_01",
+      "acquisition_utc": "2023-07-24T06:39:10.913Z",
+      "apparent_solar_hour_at_domain_centroid": 23.08032106998945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28619,
+      "scene": 8,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28619_008_12SVC_20230724T063910_0712_02",
+      "acquisition_utc": "2023-07-24T06:39:10.913Z",
+      "apparent_solar_hour_at_domain_centroid": 23.08032106998945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28619,
+      "scene": 8,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28619_008_12SVB_20230724T063910_0712_02",
+      "acquisition_utc": "2023-07-24T06:39:10.913Z",
+      "apparent_solar_hour_at_domain_centroid": 23.08032106998945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28660,
+      "scene": 1,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28660_001_12SVB_20230726T214136_0710_01",
+      "acquisition_utc": "2023-07-26T21:41:36.005Z",
+      "apparent_solar_hour_at_domain_centroid": 14.119616124824903,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28660,
+      "scene": 1,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28660_001_12SVB_20230726T214136_0712_02",
+      "acquisition_utc": "2023-07-26T21:41:36.005Z",
+      "apparent_solar_hour_at_domain_centroid": 14.119616124824903,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28706_004_12SUB_20230729T205303_0710_01",
+      "acquisition_utc": "2023-07-29T20:53:03.783Z",
+      "apparent_solar_hour_at_domain_centroid": 13.310420459086167,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28706_004_12SUC_20230729T205303_0710_01",
+      "acquisition_utc": "2023-07-29T20:53:03.783Z",
+      "apparent_solar_hour_at_domain_centroid": 13.310420459086167,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28706_004_12SVB_20230729T205303_0710_01",
+      "acquisition_utc": "2023-07-29T20:53:03.783Z",
+      "apparent_solar_hour_at_domain_centroid": 13.310420459086167,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28706_004_12SVC_20230729T205303_0710_01",
+      "acquisition_utc": "2023-07-29T20:53:03.783Z",
+      "apparent_solar_hour_at_domain_centroid": 13.310420459086167,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28706_004_12SVB_20230729T205303_0712_02",
+      "acquisition_utc": "2023-07-29T20:53:03.783Z",
+      "apparent_solar_hour_at_domain_centroid": 13.310420459086167,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28706_004_12SUC_20230729T205303_0712_02",
+      "acquisition_utc": "2023-07-29T20:53:03.783Z",
+      "apparent_solar_hour_at_domain_centroid": 13.310420459086167,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28706_004_12SVC_20230729T205303_0712_02",
+      "acquisition_utc": "2023-07-29T20:53:03.783Z",
+      "apparent_solar_hour_at_domain_centroid": 13.310420459086167,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28706_004_12SUB_20230729T205303_0712_02",
+      "acquisition_utc": "2023-07-29T20:53:03.783Z",
+      "apparent_solar_hour_at_domain_centroid": 13.310420459086167,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28706_005_12SVB_20230729T205355_0710_01",
+      "acquisition_utc": "2023-07-29T20:53:55.753Z",
+      "apparent_solar_hour_at_domain_centroid": 13.32486505089011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28706_005_12SUB_20230729T205355_0710_01",
+      "acquisition_utc": "2023-07-29T20:53:55.753Z",
+      "apparent_solar_hour_at_domain_centroid": 13.32486505089011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28706_005_12SUC_20230729T205355_0710_01",
+      "acquisition_utc": "2023-07-29T20:53:55.753Z",
+      "apparent_solar_hour_at_domain_centroid": 13.32486505089011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28706_005_12SVC_20230729T205355_0710_01",
+      "acquisition_utc": "2023-07-29T20:53:55.753Z",
+      "apparent_solar_hour_at_domain_centroid": 13.32486505089011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28706_005_12SUC_20230729T205355_0712_02",
+      "acquisition_utc": "2023-07-29T20:53:55.753Z",
+      "apparent_solar_hour_at_domain_centroid": 13.32486505089011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28706_005_12SVB_20230729T205355_0712_02",
+      "acquisition_utc": "2023-07-29T20:53:55.753Z",
+      "apparent_solar_hour_at_domain_centroid": 13.32486505089011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28706_005_12SVC_20230729T205355_0712_02",
+      "acquisition_utc": "2023-07-29T20:53:55.753Z",
+      "apparent_solar_hour_at_domain_centroid": 13.32486505089011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28706,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28706_005_12SUB_20230729T205355_0712_02",
+      "acquisition_utc": "2023-07-29T20:53:55.753Z",
+      "apparent_solar_hour_at_domain_centroid": 13.32486505089011,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28813,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28813_005_12SUC_20230805T182807_0710_01",
+      "acquisition_utc": "2023-08-05T18:28:07.802Z",
+      "apparent_solar_hour_at_domain_centroid": 10.900734327526038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28813,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28813_005_12SUC_20230805T182807_0712_02",
+      "acquisition_utc": "2023-08-05T18:28:07.802Z",
+      "apparent_solar_hour_at_domain_centroid": 10.900734327526038,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28828_003_12SUC_20230806T173915_0710_01",
+      "acquisition_utc": "2023-08-06T17:39:15.616Z",
+      "apparent_solar_hour_at_domain_centroid": 10.087785214226944,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28828_003_12SUB_20230806T173915_0710_01",
+      "acquisition_utc": "2023-08-06T17:39:15.616Z",
+      "apparent_solar_hour_at_domain_centroid": 10.087785214226944,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28828_003_12SVB_20230806T173915_0710_01",
+      "acquisition_utc": "2023-08-06T17:39:15.616Z",
+      "apparent_solar_hour_at_domain_centroid": 10.087785214226944,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28828_003_12SUB_20230806T173915_0712_02",
+      "acquisition_utc": "2023-08-06T17:39:15.616Z",
+      "apparent_solar_hour_at_domain_centroid": 10.087785214226944,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28828_003_12SVB_20230806T173915_0712_02",
+      "acquisition_utc": "2023-08-06T17:39:15.616Z",
+      "apparent_solar_hour_at_domain_centroid": 10.087785214226944,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28828_003_12SUC_20230806T173915_0712_02",
+      "acquisition_utc": "2023-08-06T17:39:15.616Z",
+      "apparent_solar_hour_at_domain_centroid": 10.087785214226944,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28828_004_12SUB_20230806T174007_0710_01",
+      "acquisition_utc": "2023-08-06T17:40:07.586Z",
+      "apparent_solar_hour_at_domain_centroid": 10.102230641951701,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28828_004_12SUC_20230806T174007_0710_01",
+      "acquisition_utc": "2023-08-06T17:40:07.586Z",
+      "apparent_solar_hour_at_domain_centroid": 10.102230641951701,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28828_004_12SVB_20230806T174007_0710_01",
+      "acquisition_utc": "2023-08-06T17:40:07.586Z",
+      "apparent_solar_hour_at_domain_centroid": 10.102230641951701,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28828_004_12SVC_20230806T174007_0710_01",
+      "acquisition_utc": "2023-08-06T17:40:07.586Z",
+      "apparent_solar_hour_at_domain_centroid": 10.102230641951701,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28828_004_12SUC_20230806T174007_0712_02",
+      "acquisition_utc": "2023-08-06T17:40:07.586Z",
+      "apparent_solar_hour_at_domain_centroid": 10.102230641951701,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28828_004_12SUB_20230806T174007_0712_02",
+      "acquisition_utc": "2023-08-06T17:40:07.586Z",
+      "apparent_solar_hour_at_domain_centroid": 10.102230641951701,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28828_004_12SVB_20230806T174007_0712_02",
+      "acquisition_utc": "2023-08-06T17:40:07.586Z",
+      "apparent_solar_hour_at_domain_centroid": 10.102230641951701,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28828,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28828_004_12SVC_20230806T174007_0712_02",
+      "acquisition_utc": "2023-08-06T17:40:07.586Z",
+      "apparent_solar_hour_at_domain_centroid": 10.102230641951701,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28874,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28874_004_12SUB_20230809T165035_0712_02",
+      "acquisition_utc": "2023-08-09T16:50:35.390Z",
+      "apparent_solar_hour_at_domain_centroid": 9.28229931464131,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28874,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28874_005_12SUB_20230809T165127_0710_01",
+      "acquisition_utc": "2023-08-09T16:51:27.359Z",
+      "apparent_solar_hour_at_domain_centroid": 9.296745058030517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28874,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28874_005_12SUC_20230809T165127_0712_02",
+      "acquisition_utc": "2023-08-09T16:51:27.359Z",
+      "apparent_solar_hour_at_domain_centroid": 9.296745058030517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28874,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28874_005_12SUB_20230809T165127_0712_02",
+      "acquisition_utc": "2023-08-09T16:51:27.359Z",
+      "apparent_solar_hour_at_domain_centroid": 9.296745058030517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28874,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28874_005_12SVC_20230809T165127_0712_02",
+      "acquisition_utc": "2023-08-09T16:51:27.359Z",
+      "apparent_solar_hour_at_domain_centroid": 9.296745058030517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28889,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28889_003_12SUB_20230810T160235_0710_01",
+      "acquisition_utc": "2023-08-10T16:02:35.185Z",
+      "apparent_solar_hour_at_domain_centroid": 8.484467488647256,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28889,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28889_003_12SUC_20230810T160235_0710_01",
+      "acquisition_utc": "2023-08-10T16:02:35.185Z",
+      "apparent_solar_hour_at_domain_centroid": 8.484467488647256,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28889,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28889_003_12SVC_20230810T160235_0710_01",
+      "acquisition_utc": "2023-08-10T16:02:35.185Z",
+      "apparent_solar_hour_at_domain_centroid": 8.484467488647256,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28889,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28889_003_12SVB_20230810T160235_0710_01",
+      "acquisition_utc": "2023-08-10T16:02:35.185Z",
+      "apparent_solar_hour_at_domain_centroid": 8.484467488647256,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28889,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28889_003_12SUC_20230810T160235_0712_02",
+      "acquisition_utc": "2023-08-10T16:02:35.185Z",
+      "apparent_solar_hour_at_domain_centroid": 8.484467488647256,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28889,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28889_003_12SUB_20230810T160235_0712_02",
+      "acquisition_utc": "2023-08-10T16:02:35.185Z",
+      "apparent_solar_hour_at_domain_centroid": 8.484467488647256,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28889,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28889_003_12SVC_20230810T160235_0712_02",
+      "acquisition_utc": "2023-08-10T16:02:35.185Z",
+      "apparent_solar_hour_at_domain_centroid": 8.484467488647256,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28889,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28889_003_12SVB_20230810T160235_0712_02",
+      "acquisition_utc": "2023-08-10T16:02:35.185Z",
+      "apparent_solar_hour_at_domain_centroid": 8.484467488647256,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28889,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28889_004_12SVC_20230810T160327_0710_01",
+      "acquisition_utc": "2023-08-10T16:03:27.154Z",
+      "apparent_solar_hour_at_domain_centroid": 8.498913333940095,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28889,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28889_004_12SVC_20230810T160327_0712_02",
+      "acquisition_utc": "2023-08-10T16:03:27.154Z",
+      "apparent_solar_hour_at_domain_centroid": 8.498913333940095,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "scene": 12,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28909_012_12SVC_20230811T232247_0710_01",
+      "acquisition_utc": "2023-08-11T23:22:47.462Z",
+      "apparent_solar_hour_at_domain_centroid": 15.824321529453327,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "scene": 12,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28909_012_12SVB_20230811T232247_0710_01",
+      "acquisition_utc": "2023-08-11T23:22:47.462Z",
+      "apparent_solar_hour_at_domain_centroid": 15.824321529453327,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "scene": 12,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28909_012_12SUC_20230811T232247_0710_01",
+      "acquisition_utc": "2023-08-11T23:22:47.462Z",
+      "apparent_solar_hour_at_domain_centroid": 15.824321529453327,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "scene": 12,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28909_012_12SUB_20230811T232247_0710_01",
+      "acquisition_utc": "2023-08-11T23:22:47.462Z",
+      "apparent_solar_hour_at_domain_centroid": 15.824321529453327,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "scene": 12,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28909_012_12SUC_20230811T232247_0712_02",
+      "acquisition_utc": "2023-08-11T23:22:47.462Z",
+      "apparent_solar_hour_at_domain_centroid": 15.824321529453327,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "scene": 12,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28909_012_12SVB_20230811T232247_0712_02",
+      "acquisition_utc": "2023-08-11T23:22:47.462Z",
+      "apparent_solar_hour_at_domain_centroid": 15.824321529453327,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "scene": 12,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28909_012_12SUB_20230811T232247_0712_02",
+      "acquisition_utc": "2023-08-11T23:22:47.462Z",
+      "apparent_solar_hour_at_domain_centroid": 15.824321529453327,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "scene": 12,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28909_012_12SVC_20230811T232247_0712_02",
+      "acquisition_utc": "2023-08-11T23:22:47.462Z",
+      "apparent_solar_hour_at_domain_centroid": 15.824321529453327,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28935,
+      "scene": 1,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28935_001_12SUB_20230813T151506_0712_01",
+      "acquisition_utc": "2023-08-13T15:15:06.063Z",
+      "apparent_solar_hour_at_domain_centroid": 7.700746896647107,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28935,
+      "scene": 1,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28935_001_12SUC_20230813T151506_0712_01",
+      "acquisition_utc": "2023-08-13T15:15:06.063Z",
+      "apparent_solar_hour_at_domain_centroid": 7.700746896647107,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28935,
+      "scene": 2,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28935_002_12SVC_20230813T151558_0712_01",
+      "acquisition_utc": "2023-08-13T15:15:58.033Z",
+      "apparent_solar_hour_at_domain_centroid": 7.7151930499174215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28935,
+      "scene": 2,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28935_002_12SUB_20230813T151558_0712_01",
+      "acquisition_utc": "2023-08-13T15:15:58.033Z",
+      "apparent_solar_hour_at_domain_centroid": 7.7151930499174215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28935,
+      "scene": 2,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28935_002_12SUC_20230813T151558_0712_01",
+      "acquisition_utc": "2023-08-13T15:15:58.033Z",
+      "apparent_solar_hour_at_domain_centroid": 7.7151930499174215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28950,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28950_003_12SUC_20230814T142745_0710_01",
+      "acquisition_utc": "2023-08-14T14:27:45.015Z",
+      "apparent_solar_hour_at_domain_centroid": 6.914405312566528,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28950,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28950_003_12SUB_20230814T142745_0710_01",
+      "acquisition_utc": "2023-08-14T14:27:45.015Z",
+      "apparent_solar_hour_at_domain_centroid": 6.914405312566528,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28950,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28950_003_12SVB_20230814T142745_0710_01",
+      "acquisition_utc": "2023-08-14T14:27:45.015Z",
+      "apparent_solar_hour_at_domain_centroid": 6.914405312566528,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28950,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28950_003_12SVC_20230814T142745_0710_01",
+      "acquisition_utc": "2023-08-14T14:27:45.015Z",
+      "apparent_solar_hour_at_domain_centroid": 6.914405312566528,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28950,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28950_003_12SVC_20230814T142745_0712_02",
+      "acquisition_utc": "2023-08-14T14:27:45.015Z",
+      "apparent_solar_hour_at_domain_centroid": 6.914405312566528,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28950,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28950_003_12SUC_20230814T142745_0712_02",
+      "acquisition_utc": "2023-08-14T14:27:45.015Z",
+      "apparent_solar_hour_at_domain_centroid": 6.914405312566528,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28950,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28950_003_12SUB_20230814T142745_0712_02",
+      "acquisition_utc": "2023-08-14T14:27:45.015Z",
+      "apparent_solar_hour_at_domain_centroid": 6.914405312566528,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28950,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28950_003_12SVB_20230814T142745_0712_02",
+      "acquisition_utc": "2023-08-14T14:27:45.015Z",
+      "apparent_solar_hour_at_domain_centroid": 6.914405312566528,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28950,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28950_004_12SVC_20230814T142836_0710_01",
+      "acquisition_utc": "2023-08-14T14:28:36.985Z",
+      "apparent_solar_hour_at_domain_centroid": 6.928573751708411,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28950,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28950_004_12SVC_20230814T142836_0712_02",
+      "acquisition_utc": "2023-08-14T14:28:36.985Z",
+      "apparent_solar_hour_at_domain_centroid": 6.928573751708411,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28955_014_12SVB_20230814T223640_0710_01",
+      "acquisition_utc": "2023-08-14T22:36:40.591Z",
+      "apparent_solar_hour_at_domain_centroid": 15.064045602031111,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28955_014_12SUB_20230814T223640_0710_01",
+      "acquisition_utc": "2023-08-14T22:36:40.591Z",
+      "apparent_solar_hour_at_domain_centroid": 15.064045602031111,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28955_014_12SUC_20230814T223640_0710_01",
+      "acquisition_utc": "2023-08-14T22:36:40.591Z",
+      "apparent_solar_hour_at_domain_centroid": 15.064045602031111,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28955_014_12SVB_20230814T223640_0712_02",
+      "acquisition_utc": "2023-08-14T22:36:40.591Z",
+      "apparent_solar_hour_at_domain_centroid": 15.064045602031111,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28955_014_12SUC_20230814T223640_0712_02",
+      "acquisition_utc": "2023-08-14T22:36:40.591Z",
+      "apparent_solar_hour_at_domain_centroid": 15.064045602031111,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28955_014_12SUB_20230814T223640_0712_02",
+      "acquisition_utc": "2023-08-14T22:36:40.591Z",
+      "apparent_solar_hour_at_domain_centroid": 15.064045602031111,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "scene": 15,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28955_015_12SVB_20230814T223732_0710_01",
+      "acquisition_utc": "2023-08-14T22:37:32.561Z",
+      "apparent_solar_hour_at_domain_centroid": 15.078491887979215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "scene": 15,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28955_015_12SUB_20230814T223732_0710_01",
+      "acquisition_utc": "2023-08-14T22:37:32.561Z",
+      "apparent_solar_hour_at_domain_centroid": 15.078491887979215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "scene": 15,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28955_015_12SVB_20230814T223732_0712_02",
+      "acquisition_utc": "2023-08-14T22:37:32.561Z",
+      "apparent_solar_hour_at_domain_centroid": 15.078491887979215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "scene": 15,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28955_015_12SUB_20230814T223732_0712_02",
+      "acquisition_utc": "2023-08-14T22:37:32.561Z",
+      "apparent_solar_hour_at_domain_centroid": 15.078491887979215,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28970,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28970_005_12SUC_20230815T214828_0710_01",
+      "acquisition_utc": "2023-08-15T21:48:28.574Z",
+      "apparent_solar_hour_at_domain_centroid": 14.263747371500628,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28970,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28970_005_12SUB_20230815T214828_0712_02",
+      "acquisition_utc": "2023-08-15T21:48:28.574Z",
+      "apparent_solar_hour_at_domain_centroid": 14.263747371500628,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28970,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28970_005_12SUC_20230815T214828_0712_02",
+      "acquisition_utc": "2023-08-15T21:48:28.574Z",
+      "apparent_solar_hour_at_domain_centroid": 14.263747371500628,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28970,
+      "scene": 6,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28970_006_12SUB_20230815T214920_0710_01",
+      "acquisition_utc": "2023-08-15T21:49:20.544Z",
+      "apparent_solar_hour_at_domain_centroid": 14.278193754174307,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28970,
+      "scene": 6,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28970_006_12SVB_20230815T214920_0710_01",
+      "acquisition_utc": "2023-08-15T21:49:20.544Z",
+      "apparent_solar_hour_at_domain_centroid": 14.278193754174307,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28970,
+      "scene": 6,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28970_006_12SUC_20230815T214920_0710_01",
+      "acquisition_utc": "2023-08-15T21:49:20.544Z",
+      "apparent_solar_hour_at_domain_centroid": 14.278193754174307,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28970,
+      "scene": 6,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28970_006_12SVC_20230815T214920_0710_01",
+      "acquisition_utc": "2023-08-15T21:49:20.544Z",
+      "apparent_solar_hour_at_domain_centroid": 14.278193754174307,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28970,
+      "scene": 6,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28970_006_12SVC_20230815T214920_0712_02",
+      "acquisition_utc": "2023-08-15T21:49:20.544Z",
+      "apparent_solar_hour_at_domain_centroid": 14.278193754174307,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28970,
+      "scene": 6,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28970_006_12SUB_20230815T214920_0712_02",
+      "acquisition_utc": "2023-08-15T21:49:20.544Z",
+      "apparent_solar_hour_at_domain_centroid": 14.278193754174307,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28970,
+      "scene": 6,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28970_006_12SUC_20230815T214920_0712_02",
+      "acquisition_utc": "2023-08-15T21:49:20.544Z",
+      "apparent_solar_hour_at_domain_centroid": 14.278193754174307,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28970,
+      "scene": 6,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28970_006_12SVB_20230815T214920_0712_02",
+      "acquisition_utc": "2023-08-15T21:49:20.544Z",
+      "apparent_solar_hour_at_domain_centroid": 14.278193754174307,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28996,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28996_004_12SUB_20230817T134037_0710_01",
+      "acquisition_utc": "2023-08-17T13:40:37.928Z",
+      "apparent_solar_hour_at_domain_centroid": 6.1384898152069995,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28996,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28996_004_12SUB_20230817T134037_0712_02",
+      "acquisition_utc": "2023-08-17T13:40:37.928Z",
+      "apparent_solar_hour_at_domain_centroid": 6.1384898152069995,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28996,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28996_005_12SVB_20230817T134129_0710_01",
+      "acquisition_utc": "2023-08-17T13:41:29.898Z",
+      "apparent_solar_hour_at_domain_centroid": 6.1529363609383205,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28996,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28996_005_12SUB_20230817T134129_0710_01",
+      "acquisition_utc": "2023-08-17T13:41:29.898Z",
+      "apparent_solar_hour_at_domain_centroid": 6.1529363609383205,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28996,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28996_005_12SUC_20230817T134129_0710_01",
+      "acquisition_utc": "2023-08-17T13:41:29.898Z",
+      "apparent_solar_hour_at_domain_centroid": 6.1529363609383205,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28996,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_28996_005_12SUB_20230817T134129_0712_02",
+      "acquisition_utc": "2023-08-17T13:41:29.898Z",
+      "apparent_solar_hour_at_domain_centroid": 6.1529363609383205,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28996,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_28996_005_12SUC_20230817T134129_0712_02",
+      "acquisition_utc": "2023-08-17T13:41:29.898Z",
+      "apparent_solar_hour_at_domain_centroid": 6.1529363609383205,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28996,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_28996_005_12SVB_20230817T134129_0712_02",
+      "acquisition_utc": "2023-08-17T13:41:29.898Z",
+      "apparent_solar_hour_at_domain_centroid": 6.1529363609383205,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28996,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_28996_005_12SVC_20230817T134129_0712_02",
+      "acquisition_utc": "2023-08-17T13:41:29.898Z",
+      "apparent_solar_hour_at_domain_centroid": 6.1529363609383205,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29011,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29011_004_12SVB_20230818T125302_0710_01",
+      "acquisition_utc": "2023-08-18T12:53:02.706Z",
+      "apparent_solar_hour_at_domain_centroid": 5.348885022516471,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29011,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29011_004_12SUB_20230818T125302_0710_01",
+      "acquisition_utc": "2023-08-18T12:53:02.706Z",
+      "apparent_solar_hour_at_domain_centroid": 5.348885022516471,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29011,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29011_004_12SUB_20230818T125302_0712_02",
+      "acquisition_utc": "2023-08-18T12:53:02.706Z",
+      "apparent_solar_hour_at_domain_centroid": 5.348885022516471,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29011,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29011_004_12SVB_20230818T125302_0712_02",
+      "acquisition_utc": "2023-08-18T12:53:02.706Z",
+      "apparent_solar_hour_at_domain_centroid": 5.348885022516471,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29011,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29011_005_12SVC_20230818T125354_0710_01",
+      "acquisition_utc": "2023-08-18T12:53:54.676Z",
+      "apparent_solar_hour_at_domain_centroid": 5.363331661106945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29011,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29011_005_12SVB_20230818T125354_0710_01",
+      "acquisition_utc": "2023-08-18T12:53:54.676Z",
+      "apparent_solar_hour_at_domain_centroid": 5.363331661106945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29011,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29011_005_12SVB_20230818T125354_0712_02",
+      "acquisition_utc": "2023-08-18T12:53:54.676Z",
+      "apparent_solar_hour_at_domain_centroid": 5.363331661106945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29011,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29011_005_12SVC_20230818T125354_0712_02",
+      "acquisition_utc": "2023-08-18T12:53:54.676Z",
+      "apparent_solar_hour_at_domain_centroid": 5.363331661106945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29016,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29016_013_12SUC_20230818T210218_0710_01",
+      "acquisition_utc": "2023-08-18T21:02:18.359Z",
+      "apparent_solar_hour_at_domain_centroid": 13.504577241347073,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29016,
+      "scene": 13,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29016_013_12SUB_20230818T210218_0710_01",
+      "acquisition_utc": "2023-08-18T21:02:18.359Z",
+      "apparent_solar_hour_at_domain_centroid": 13.504577241347073,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29016,
+      "scene": 13,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29016_013_12SVB_20230818T210218_0710_01",
+      "acquisition_utc": "2023-08-18T21:02:18.359Z",
+      "apparent_solar_hour_at_domain_centroid": 13.504577241347073,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29016,
+      "scene": 13,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29016_013_12SUB_20230818T210218_0712_02",
+      "acquisition_utc": "2023-08-18T21:02:18.359Z",
+      "apparent_solar_hour_at_domain_centroid": 13.504577241347073,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29016,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29016_013_12SUC_20230818T210218_0712_02",
+      "acquisition_utc": "2023-08-18T21:02:18.359Z",
+      "apparent_solar_hour_at_domain_centroid": 13.504577241347073,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29016,
+      "scene": 13,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29016_013_12SVB_20230818T210218_0712_02",
+      "acquisition_utc": "2023-08-18T21:02:18.359Z",
+      "apparent_solar_hour_at_domain_centroid": 13.504577241347073,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29057,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29057_004_12SUB_20230821T120547_0710_01",
+      "acquisition_utc": "2023-08-21T12:05:47.318Z",
+      "apparent_solar_hour_at_domain_centroid": 4.572885071803736,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29057,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29057_004_12SUB_20230821T120547_0712_02",
+      "acquisition_utc": "2023-08-21T12:05:47.318Z",
+      "apparent_solar_hour_at_domain_centroid": 4.572885071803736,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29057,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29057_005_12SVC_20230821T120639_0710_01",
+      "acquisition_utc": "2023-08-21T12:06:39.288Z",
+      "apparent_solar_hour_at_domain_centroid": 4.587331984535983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29057,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29057_005_12SUC_20230821T120639_0712_02",
+      "acquisition_utc": "2023-08-21T12:06:39.288Z",
+      "apparent_solar_hour_at_domain_centroid": 4.587331984535983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29057,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29057_005_12SVC_20230821T120639_0712_02",
+      "acquisition_utc": "2023-08-21T12:06:39.288Z",
+      "apparent_solar_hour_at_domain_centroid": 4.587331984535983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29057,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29057_005_12SUB_20230821T120639_0712_02",
+      "acquisition_utc": "2023-08-21T12:06:39.288Z",
+      "apparent_solar_hour_at_domain_centroid": 4.587331984535983,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29072,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29072_003_12SUB_20230822T111804_0710_01",
+      "acquisition_utc": "2023-08-22T11:18:04.995Z",
+      "apparent_solar_hour_at_domain_centroid": 3.781641400612113,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29072,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29072_003_12SUB_20230822T111804_0712_02",
+      "acquisition_utc": "2023-08-22T11:18:04.995Z",
+      "apparent_solar_hour_at_domain_centroid": 3.781641400612113,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29072,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29072_004_12SVC_20230822T111855_0710_01",
+      "acquisition_utc": "2023-08-22T11:18:55.784Z",
+      "apparent_solar_hour_at_domain_centroid": 3.7958105718829493,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29072,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29072_004_12SVB_20230822T111855_0710_01",
+      "acquisition_utc": "2023-08-22T11:18:55.784Z",
+      "apparent_solar_hour_at_domain_centroid": 3.7958105718829493,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29072,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29072_004_12SVC_20230822T111855_0712_02",
+      "acquisition_utc": "2023-08-22T11:18:55.784Z",
+      "apparent_solar_hour_at_domain_centroid": 3.7958105718829493,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29072,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29072_004_12SVB_20230822T111855_0712_02",
+      "acquisition_utc": "2023-08-22T11:18:55.784Z",
+      "apparent_solar_hour_at_domain_centroid": 3.7958105718829493,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29077,
+      "scene": 13,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29077_013_12SUB_20230822T192701_0710_01",
+      "acquisition_utc": "2023-08-22T19:27:01.747Z",
+      "apparent_solar_hour_at_domain_centroid": 11.932257125495472,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29077,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29077_013_12SUC_20230822T192701_0710_01",
+      "acquisition_utc": "2023-08-22T19:27:01.747Z",
+      "apparent_solar_hour_at_domain_centroid": 11.932257125495472,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29077,
+      "scene": 13,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29077_013_12SUB_20230822T192701_0712_02",
+      "acquisition_utc": "2023-08-22T19:27:01.747Z",
+      "apparent_solar_hour_at_domain_centroid": 11.932257125495472,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29077,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29077_013_12SUC_20230822T192701_0712_02",
+      "acquisition_utc": "2023-08-22T19:27:01.747Z",
+      "apparent_solar_hour_at_domain_centroid": 11.932257125495472,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29077,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29077_014_12SUC_20230822T192753_0710_01",
+      "acquisition_utc": "2023-08-22T19:27:53.717Z",
+      "apparent_solar_hour_at_domain_centroid": 11.946704153162,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29077,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29077_014_12SVB_20230822T192753_0710_01",
+      "acquisition_utc": "2023-08-22T19:27:53.717Z",
+      "apparent_solar_hour_at_domain_centroid": 11.946704153162,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29077,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29077_014_12SUB_20230822T192753_0710_01",
+      "acquisition_utc": "2023-08-22T19:27:53.717Z",
+      "apparent_solar_hour_at_domain_centroid": 11.946704153162,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29077,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29077_014_12SUC_20230822T192753_0712_02",
+      "acquisition_utc": "2023-08-22T19:27:53.717Z",
+      "apparent_solar_hour_at_domain_centroid": 11.946704153162,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29077,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29077_014_12SVB_20230822T192753_0712_02",
+      "acquisition_utc": "2023-08-22T19:27:53.717Z",
+      "apparent_solar_hour_at_domain_centroid": 11.946704153162,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29077,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29077_014_12SUB_20230822T192753_0712_02",
+      "acquisition_utc": "2023-08-22T19:27:53.717Z",
+      "apparent_solar_hour_at_domain_centroid": 11.946704153162,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 11,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29092_011_12SUB_20230823T183859_0710_01",
+      "acquisition_utc": "2023-08-23T18:38:59.162Z",
+      "apparent_solar_hour_at_domain_centroid": 11.135917061966273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 11,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29092_011_12SUC_20230823T183859_0710_01",
+      "acquisition_utc": "2023-08-23T18:38:59.162Z",
+      "apparent_solar_hour_at_domain_centroid": 11.135917061966273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 11,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29092_011_12SVC_20230823T183859_0710_01",
+      "acquisition_utc": "2023-08-23T18:38:59.162Z",
+      "apparent_solar_hour_at_domain_centroid": 11.135917061966273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 11,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29092_011_12SUB_20230823T183859_0712_02",
+      "acquisition_utc": "2023-08-23T18:38:59.162Z",
+      "apparent_solar_hour_at_domain_centroid": 11.135917061966273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 11,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29092_011_12SUC_20230823T183859_0712_02",
+      "acquisition_utc": "2023-08-23T18:38:59.162Z",
+      "apparent_solar_hour_at_domain_centroid": 11.135917061966273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 11,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29092_011_12SVC_20230823T183859_0712_02",
+      "acquisition_utc": "2023-08-23T18:38:59.162Z",
+      "apparent_solar_hour_at_domain_centroid": 11.135917061966273,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 12,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29092_012_12SUC_20230823T183951_0710_01",
+      "acquisition_utc": "2023-08-23T18:39:51.131Z",
+      "apparent_solar_hour_at_domain_centroid": 11.150364172176593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 12,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29092_012_12SVC_20230823T183951_0710_01",
+      "acquisition_utc": "2023-08-23T18:39:51.131Z",
+      "apparent_solar_hour_at_domain_centroid": 11.150364172176593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 12,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29092_012_12SUB_20230823T183951_0710_01",
+      "acquisition_utc": "2023-08-23T18:39:51.131Z",
+      "apparent_solar_hour_at_domain_centroid": 11.150364172176593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 12,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29092_012_12SUB_20230823T183951_0712_02",
+      "acquisition_utc": "2023-08-23T18:39:51.131Z",
+      "apparent_solar_hour_at_domain_centroid": 11.150364172176593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 12,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29092_012_12SVB_20230823T183951_0712_02",
+      "acquisition_utc": "2023-08-23T18:39:51.131Z",
+      "apparent_solar_hour_at_domain_centroid": 11.150364172176593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 12,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29092_012_12SVC_20230823T183951_0712_02",
+      "acquisition_utc": "2023-08-23T18:39:51.131Z",
+      "apparent_solar_hour_at_domain_centroid": 11.150364172176593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29092,
+      "scene": 12,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29092_012_12SUC_20230823T183951_0712_02",
+      "acquisition_utc": "2023-08-23T18:39:51.131Z",
+      "apparent_solar_hour_at_domain_centroid": 11.150364172176593,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29133,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29133_004_12SUB_20230826T094244_0710_01",
+      "acquisition_utc": "2023-08-26T09:42:44.657Z",
+      "apparent_solar_hour_at_domain_centroid": 2.2105261531806697,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29133,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29133_004_12SVC_20230826T094244_0710_01",
+      "acquisition_utc": "2023-08-26T09:42:44.657Z",
+      "apparent_solar_hour_at_domain_centroid": 2.2105261531806697,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29133,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29133_004_12SVB_20230826T094244_0710_01",
+      "acquisition_utc": "2023-08-26T09:42:44.657Z",
+      "apparent_solar_hour_at_domain_centroid": 2.2105261531806697,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29133,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29133_004_12SUB_20230826T094244_0712_02",
+      "acquisition_utc": "2023-08-26T09:42:44.657Z",
+      "apparent_solar_hour_at_domain_centroid": 2.2105261531806697,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29133,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29133_004_12SVC_20230826T094244_0712_02",
+      "acquisition_utc": "2023-08-26T09:42:44.657Z",
+      "apparent_solar_hour_at_domain_centroid": 2.2105261531806697,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29133,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29133_004_12SVB_20230826T094244_0712_02",
+      "acquisition_utc": "2023-08-26T09:42:44.657Z",
+      "apparent_solar_hour_at_domain_centroid": 2.2105261531806697,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29138,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29138_014_12SUB_20230826T175123_0710_01",
+      "acquisition_utc": "2023-08-26T17:51:23.875Z",
+      "apparent_solar_hour_at_domain_centroid": 10.356323183555102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29138,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29138_014_12SUC_20230826T175123_0710_01",
+      "acquisition_utc": "2023-08-26T17:51:23.875Z",
+      "apparent_solar_hour_at_domain_centroid": 10.356323183555102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29138,
+      "scene": 14,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29138_014_12SVC_20230826T175123_0710_01",
+      "acquisition_utc": "2023-08-26T17:51:23.875Z",
+      "apparent_solar_hour_at_domain_centroid": 10.356323183555102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29138,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29138_014_12SVB_20230826T175123_0710_01",
+      "acquisition_utc": "2023-08-26T17:51:23.875Z",
+      "apparent_solar_hour_at_domain_centroid": 10.356323183555102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29138,
+      "scene": 14,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29138_014_12SVC_20230826T175123_0712_02",
+      "acquisition_utc": "2023-08-26T17:51:23.875Z",
+      "apparent_solar_hour_at_domain_centroid": 10.356323183555102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29138,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29138_014_12SUB_20230826T175123_0712_02",
+      "acquisition_utc": "2023-08-26T17:51:23.875Z",
+      "apparent_solar_hour_at_domain_centroid": 10.356323183555102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29138,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29138_014_12SUC_20230826T175123_0712_02",
+      "acquisition_utc": "2023-08-26T17:51:23.875Z",
+      "apparent_solar_hour_at_domain_centroid": 10.356323183555102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29138,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29138_014_12SVB_20230826T175123_0712_02",
+      "acquisition_utc": "2023-08-26T17:51:23.875Z",
+      "apparent_solar_hour_at_domain_centroid": 10.356323183555102,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29138,
+      "scene": 15,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29138_015_12SVB_20230826T175215_0712_02",
+      "acquisition_utc": "2023-08-26T17:52:15.845Z",
+      "apparent_solar_hour_at_domain_centroid": 10.370770532681568,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29153,
+      "scene": 12,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29153_012_12SVB_20230827T170322_0712_01",
+      "acquisition_utc": "2023-08-27T17:03:22.476Z",
+      "apparent_solar_hour_at_domain_centroid": 9.560769486179339,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29153,
+      "scene": 12,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29153_012_12SUB_20230827T170322_0712_01",
+      "acquisition_utc": "2023-08-27T17:03:22.476Z",
+      "apparent_solar_hour_at_domain_centroid": 9.560769486179339,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29153,
+      "scene": 12,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29153_012_12SVC_20230827T170322_0712_01",
+      "acquisition_utc": "2023-08-27T17:03:22.476Z",
+      "apparent_solar_hour_at_domain_centroid": 9.560769486179339,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29153,
+      "scene": 12,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29153_012_12SUC_20230827T170322_0712_01",
+      "acquisition_utc": "2023-08-27T17:03:22.476Z",
+      "apparent_solar_hour_at_domain_centroid": 9.560769486179339,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29194,
+      "scene": 1,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29194_001_12SVB_20230830T080555_0710_01",
+      "acquisition_utc": "2023-08-30T08:05:55.896Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6166739409428293,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29194,
+      "scene": 1,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29194_001_12SVB_20230830T080555_0712_02",
+      "acquisition_utc": "2023-08-30T08:05:55.896Z",
+      "apparent_solar_hour_at_domain_centroid": 0.6166739409428293,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29199,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29199_013_12SUC_20230830T161406_0710_01",
+      "acquisition_utc": "2023-08-30T16:14:06.578Z",
+      "apparent_solar_hour_at_domain_centroid": 8.75485004371199,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29199,
+      "scene": 13,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29199_013_12SUC_20230830T161406_0712_02",
+      "acquisition_utc": "2023-08-30T16:14:06.578Z",
+      "apparent_solar_hour_at_domain_centroid": 8.75485004371199,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29199,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29199_014_12SUC_20230830T161458_0710_01",
+      "acquisition_utc": "2023-08-30T16:14:58.548Z",
+      "apparent_solar_hour_at_domain_centroid": 8.76929767209786,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29199,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29199_014_12SUB_20230830T161458_0710_01",
+      "acquisition_utc": "2023-08-30T16:14:58.548Z",
+      "apparent_solar_hour_at_domain_centroid": 8.76929767209786,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29199,
+      "scene": 14,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29199_014_12SVC_20230830T161458_0710_01",
+      "acquisition_utc": "2023-08-30T16:14:58.548Z",
+      "apparent_solar_hour_at_domain_centroid": 8.76929767209786,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29199,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29199_014_12SUB_20230830T161458_0712_02",
+      "acquisition_utc": "2023-08-30T16:14:58.548Z",
+      "apparent_solar_hour_at_domain_centroid": 8.76929767209786,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29199,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29199_014_12SVB_20230830T161458_0712_02",
+      "acquisition_utc": "2023-08-30T16:14:58.548Z",
+      "apparent_solar_hour_at_domain_centroid": 8.76929767209786,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29199,
+      "scene": 14,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29199_014_12SVC_20230830T161458_0712_02",
+      "acquisition_utc": "2023-08-30T16:14:58.548Z",
+      "apparent_solar_hour_at_domain_centroid": 8.76929767209786,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29199,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29199_014_12SUC_20230830T161458_0712_02",
+      "acquisition_utc": "2023-08-30T16:14:58.548Z",
+      "apparent_solar_hour_at_domain_centroid": 8.76929767209786,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29255,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29255_005_12SVB_20230903T062908_0710_01",
+      "acquisition_utc": "2023-09-03T06:29:08.036Z",
+      "apparent_solar_hour_at_domain_centroid": 23.02507512883463,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29275,
+      "scene": 10,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29275_010_12SVC_20230904T134831_0710_01",
+      "acquisition_utc": "2023-09-04T13:48:31.417Z",
+      "apparent_solar_hour_at_domain_centroid": 6.355570870460018,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29275,
+      "scene": 10,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29275_010_12SVC_20230904T134831_0712_02",
+      "acquisition_utc": "2023-09-04T13:48:31.417Z",
+      "apparent_solar_hour_at_domain_centroid": 6.355570870460018,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29275,
+      "scene": 11,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29275_011_12SVC_20230904T134923_0710_01",
+      "acquisition_utc": "2023-09-04T13:49:23.387Z",
+      "apparent_solar_hour_at_domain_centroid": 6.370018778765368,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29275,
+      "scene": 11,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29275_011_12SVC_20230904T134923_0712_02",
+      "acquisition_utc": "2023-09-04T13:49:23.387Z",
+      "apparent_solar_hour_at_domain_centroid": 6.370018778765368,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29301,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29301_005_12SVB_20230906T053939_0710_01",
+      "acquisition_utc": "2023-09-06T05:39:39.309Z",
+      "apparent_solar_hour_at_domain_centroid": 22.21745714181496,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29301,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29301_005_12SVC_20230906T053939_0710_01",
+      "acquisition_utc": "2023-09-06T05:39:39.309Z",
+      "apparent_solar_hour_at_domain_centroid": 22.21745714181496,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29301,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29301_005_12SUC_20230906T053939_0710_01",
+      "acquisition_utc": "2023-09-06T05:39:39.309Z",
+      "apparent_solar_hour_at_domain_centroid": 22.21745714181496,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29301,
+      "scene": 5,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29301_005_12SUB_20230906T053939_0712_02",
+      "acquisition_utc": "2023-09-06T05:39:39.309Z",
+      "apparent_solar_hour_at_domain_centroid": 22.21745714181496,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29301,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29301_005_12SVC_20230906T053939_0712_02",
+      "acquisition_utc": "2023-09-06T05:39:39.309Z",
+      "apparent_solar_hour_at_domain_centroid": 22.21745714181496,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29301,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29301_005_12SUC_20230906T053939_0712_02",
+      "acquisition_utc": "2023-09-06T05:39:39.309Z",
+      "apparent_solar_hour_at_domain_centroid": 22.21745714181496,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29301,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29301_005_12SVB_20230906T053939_0712_02",
+      "acquisition_utc": "2023-09-06T05:39:39.309Z",
+      "apparent_solar_hour_at_domain_centroid": 22.21745714181496,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29301,
+      "scene": 6,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29301_006_12SVC_20230906T054031_0710_01",
+      "acquisition_utc": "2023-09-06T05:40:31.279Z",
+      "apparent_solar_hour_at_domain_centroid": 22.231905126248616,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29301,
+      "scene": 6,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29301_006_12SVC_20230906T054031_0712_02",
+      "acquisition_utc": "2023-09-06T05:40:31.279Z",
+      "apparent_solar_hour_at_domain_centroid": 22.231905126248616,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29321,
+      "scene": 16,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29321_016_12SUC_20230907T125948_0710_01",
+      "acquisition_utc": "2023-09-07T12:59:48.770Z",
+      "apparent_solar_hour_at_domain_centroid": 5.561028538433838,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29321,
+      "scene": 16,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29321_016_12SVB_20230907T125948_0710_01",
+      "acquisition_utc": "2023-09-07T12:59:48.770Z",
+      "apparent_solar_hour_at_domain_centroid": 5.561028538433838,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29321,
+      "scene": 16,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29321_016_12SUB_20230907T125948_0710_01",
+      "acquisition_utc": "2023-09-07T12:59:48.770Z",
+      "apparent_solar_hour_at_domain_centroid": 5.561028538433838,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29321,
+      "scene": 16,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29321_016_12SVC_20230907T125948_0710_01",
+      "acquisition_utc": "2023-09-07T12:59:48.770Z",
+      "apparent_solar_hour_at_domain_centroid": 5.561028538433838,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29321,
+      "scene": 16,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29321_016_12SVC_20230907T125948_0712_02",
+      "acquisition_utc": "2023-09-07T12:59:48.770Z",
+      "apparent_solar_hour_at_domain_centroid": 5.561028538433838,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29321,
+      "scene": 16,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29321_016_12SUB_20230907T125948_0712_02",
+      "acquisition_utc": "2023-09-07T12:59:48.770Z",
+      "apparent_solar_hour_at_domain_centroid": 5.561028538433838,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29321,
+      "scene": 16,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29321_016_12SVB_20230907T125948_0712_02",
+      "acquisition_utc": "2023-09-07T12:59:48.770Z",
+      "apparent_solar_hour_at_domain_centroid": 5.561028538433838,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29321,
+      "scene": 16,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29321_016_12SUC_20230907T125948_0712_02",
+      "acquisition_utc": "2023-09-07T12:59:48.770Z",
+      "apparent_solar_hour_at_domain_centroid": 5.561028538433838,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29347,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29347_005_12SUC_20230909T045050_0710_01",
+      "acquisition_utc": "2023-09-09T04:50:50.769Z",
+      "apparent_solar_hour_at_domain_centroid": 21.421578532632587,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29347,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29347_005_12SUC_20230909T045050_0712_02",
+      "acquisition_utc": "2023-09-09T04:50:50.769Z",
+      "apparent_solar_hour_at_domain_centroid": 21.421578532632587,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29362,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29362_004_12SUB_20230910T040318_0711_01",
+      "acquisition_utc": "2023-09-10T04:03:18.896Z",
+      "apparent_solar_hour_at_domain_centroid": 20.635245638002154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29362,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29362_004_12SUC_20230910T040318_0711_01",
+      "acquisition_utc": "2023-09-10T04:03:18.896Z",
+      "apparent_solar_hour_at_domain_centroid": 20.635245638002154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29362,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29362_004_12SVC_20230910T040318_0711_01",
+      "acquisition_utc": "2023-09-10T04:03:18.896Z",
+      "apparent_solar_hour_at_domain_centroid": 20.635245638002154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29362,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29362_004_12SVB_20230910T040318_0712_02",
+      "acquisition_utc": "2023-09-10T04:03:18.896Z",
+      "apparent_solar_hour_at_domain_centroid": 20.635245638002154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29362,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29362_004_12SUB_20230910T040318_0712_02",
+      "acquisition_utc": "2023-09-10T04:03:18.896Z",
+      "apparent_solar_hour_at_domain_centroid": 20.635245638002154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29362,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29362_004_12SUC_20230910T040318_0712_02",
+      "acquisition_utc": "2023-09-10T04:03:18.896Z",
+      "apparent_solar_hour_at_domain_centroid": 20.635245638002154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29362,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29362_004_12SVC_20230910T040318_0712_02",
+      "acquisition_utc": "2023-09-10T04:03:18.896Z",
+      "apparent_solar_hour_at_domain_centroid": 20.635245638002154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29362,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29362_004_12SVB_20230910T040318_0711_01",
+      "acquisition_utc": "2023-09-10T04:03:18.896Z",
+      "apparent_solar_hour_at_domain_centroid": 20.635245638002154,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29362,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29362_005_12SVC_20230910T040410_0712_02",
+      "acquisition_utc": "2023-09-10T04:04:10.865Z",
+      "apparent_solar_hour_at_domain_centroid": 20.649693762103976,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29362,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29362_005_12SVC_20230910T040410_0711_01",
+      "acquisition_utc": "2023-09-10T04:04:10.865Z",
+      "apparent_solar_hour_at_domain_centroid": 20.649693762103976,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29382,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29382_014_12SUB_20230911T112515_0710_01",
+      "acquisition_utc": "2023-09-11T11:25:15.666Z",
+      "apparent_solar_hour_at_domain_centroid": 4.009106608917561,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29382,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29382_014_12SUC_20230911T112515_0710_01",
+      "acquisition_utc": "2023-09-11T11:25:15.666Z",
+      "apparent_solar_hour_at_domain_centroid": 4.009106608917561,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29382,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29382_014_12SVB_20230911T112515_0710_01",
+      "acquisition_utc": "2023-09-11T11:25:15.666Z",
+      "apparent_solar_hour_at_domain_centroid": 4.009106608917561,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29382,
+      "scene": 14,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29382_014_12SVC_20230911T112515_0710_01",
+      "acquisition_utc": "2023-09-11T11:25:15.666Z",
+      "apparent_solar_hour_at_domain_centroid": 4.009106608917561,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29382,
+      "scene": 14,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29382_014_12SVB_20230911T112515_0712_02",
+      "acquisition_utc": "2023-09-11T11:25:15.666Z",
+      "apparent_solar_hour_at_domain_centroid": 4.009106608917561,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29382,
+      "scene": 14,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29382_014_12SVC_20230911T112515_0712_02",
+      "acquisition_utc": "2023-09-11T11:25:15.666Z",
+      "apparent_solar_hour_at_domain_centroid": 4.009106608917561,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29382,
+      "scene": 14,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29382_014_12SUB_20230911T112515_0712_02",
+      "acquisition_utc": "2023-09-11T11:25:15.666Z",
+      "apparent_solar_hour_at_domain_centroid": 4.009106608917561,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29382,
+      "scene": 14,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29382_014_12SUC_20230911T112515_0712_02",
+      "acquisition_utc": "2023-09-11T11:25:15.666Z",
+      "apparent_solar_hour_at_domain_centroid": 4.009106608917561,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29423_004_12SVB_20230914T022923_0710_01",
+      "acquisition_utc": "2023-09-14T02:29:23.777Z",
+      "apparent_solar_hour_at_domain_centroid": 19.094318766215416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29423_004_12SUB_20230914T022923_0710_01",
+      "acquisition_utc": "2023-09-14T02:29:23.777Z",
+      "apparent_solar_hour_at_domain_centroid": 19.094318766215416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29423_004_12SUC_20230914T022923_0710_01",
+      "acquisition_utc": "2023-09-14T02:29:23.777Z",
+      "apparent_solar_hour_at_domain_centroid": 19.094318766215416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29423_004_12SVC_20230914T022923_0710_01",
+      "acquisition_utc": "2023-09-14T02:29:23.777Z",
+      "apparent_solar_hour_at_domain_centroid": 19.094318766215416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 4,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29423_004_12SVB_20230914T022923_0712_02",
+      "acquisition_utc": "2023-09-14T02:29:23.777Z",
+      "apparent_solar_hour_at_domain_centroid": 19.094318766215416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29423_004_12SVC_20230914T022923_0712_02",
+      "acquisition_utc": "2023-09-14T02:29:23.777Z",
+      "apparent_solar_hour_at_domain_centroid": 19.094318766215416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 4,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29423_004_12SUB_20230914T022923_0712_02",
+      "acquisition_utc": "2023-09-14T02:29:23.777Z",
+      "apparent_solar_hour_at_domain_centroid": 19.094318766215416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 4,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29423_004_12SUC_20230914T022923_0712_02",
+      "acquisition_utc": "2023-09-14T02:29:23.777Z",
+      "apparent_solar_hour_at_domain_centroid": 19.094318766215416,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29423_005_12SVC_20230914T023015_0710_01",
+      "acquisition_utc": "2023-09-14T02:30:15.746Z",
+      "apparent_solar_hour_at_domain_centroid": 19.108766970046144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29423_005_12SUC_20230914T023015_0710_01",
+      "acquisition_utc": "2023-09-14T02:30:15.746Z",
+      "apparent_solar_hour_at_domain_centroid": 19.108766970046144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29423_005_12SVB_20230914T023015_0710_01",
+      "acquisition_utc": "2023-09-14T02:30:15.746Z",
+      "apparent_solar_hour_at_domain_centroid": 19.108766970046144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 5,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29423_005_12SVC_20230914T023015_0712_02",
+      "acquisition_utc": "2023-09-14T02:30:15.746Z",
+      "apparent_solar_hour_at_domain_centroid": 19.108766970046144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 5,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29423_005_12SUC_20230914T023015_0712_02",
+      "acquisition_utc": "2023-09-14T02:30:15.746Z",
+      "apparent_solar_hour_at_domain_centroid": 19.108766970046144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29423,
+      "scene": 5,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29423_005_12SVB_20230914T023015_0712_02",
+      "acquisition_utc": "2023-09-14T02:30:15.746Z",
+      "apparent_solar_hour_at_domain_centroid": 19.108766970046144,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29443,
+      "scene": 12,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29443_012_12SUB_20230915T095015_0710_01",
+      "acquisition_utc": "2023-09-15T09:50:15.210Z",
+      "apparent_solar_hour_at_domain_centroid": 2.450270341387781,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29443,
+      "scene": 12,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29443_012_12SUC_20230915T095015_0710_01",
+      "acquisition_utc": "2023-09-15T09:50:15.210Z",
+      "apparent_solar_hour_at_domain_centroid": 2.450270341387781,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29443,
+      "scene": 12,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29443_012_12SVC_20230915T095015_0710_01",
+      "acquisition_utc": "2023-09-15T09:50:15.210Z",
+      "apparent_solar_hour_at_domain_centroid": 2.450270341387781,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29443,
+      "scene": 12,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29443_012_12SVC_20230915T095015_0712_02",
+      "acquisition_utc": "2023-09-15T09:50:15.210Z",
+      "apparent_solar_hour_at_domain_centroid": 2.450270341387781,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29443,
+      "scene": 12,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29443_012_12SUC_20230915T095015_0712_02",
+      "acquisition_utc": "2023-09-15T09:50:15.210Z",
+      "apparent_solar_hour_at_domain_centroid": 2.450270341387781,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29443,
+      "scene": 12,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29443_012_12SUB_20230915T095015_0712_02",
+      "acquisition_utc": "2023-09-15T09:50:15.210Z",
+      "apparent_solar_hour_at_domain_centroid": 2.450270341387781,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0710_01",
+      "acquisition_utc": "2023-09-21T23:20:50.387Z",
+      "apparent_solar_hour_at_domain_centroid": 16.001056795909463,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0710_01",
+      "acquisition_utc": "2023-09-21T23:20:50.387Z",
+      "apparent_solar_hour_at_domain_centroid": 16.001056795909463,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0710_01",
+      "acquisition_utc": "2023-09-21T23:20:50.387Z",
+      "apparent_solar_hour_at_domain_centroid": 16.001056795909463,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0710_01",
+      "acquisition_utc": "2023-09-21T23:20:50.387Z",
+      "apparent_solar_hour_at_domain_centroid": 16.001056795909463,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02",
+      "acquisition_utc": "2023-09-21T23:20:50.387Z",
+      "apparent_solar_hour_at_domain_centroid": 16.001056795909463,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02",
+      "acquisition_utc": "2023-09-21T23:20:50.387Z",
+      "apparent_solar_hour_at_domain_centroid": 16.001056795909463,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02",
+      "acquisition_utc": "2023-09-21T23:20:50.387Z",
+      "apparent_solar_hour_at_domain_centroid": 16.001056795909463,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02",
+      "acquisition_utc": "2023-09-21T23:20:50.387Z",
+      "apparent_solar_hour_at_domain_centroid": 16.001056795909463,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "scene": 4,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02",
+      "acquisition_utc": "2023-09-21T23:21:42.357Z",
+      "apparent_solar_hour_at_domain_centroid": 16.015504970096544,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29591,
+      "scene": 7,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29591_007_12SUB_20230924T223358_0710_01",
+      "acquisition_utc": "2023-09-24T22:33:58.528Z",
+      "apparent_solar_hour_at_domain_centroid": 15.238158440725586,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29591,
+      "scene": 7,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29591_007_12SUC_20230924T223358_0710_01",
+      "acquisition_utc": "2023-09-24T22:33:58.528Z",
+      "apparent_solar_hour_at_domain_centroid": 15.238158440725586,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29591,
+      "scene": 7,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29591_007_12SVC_20230924T223358_0710_01",
+      "acquisition_utc": "2023-09-24T22:33:58.528Z",
+      "apparent_solar_hour_at_domain_centroid": 15.238158440725586,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29591,
+      "scene": 7,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29591_007_12SUC_20230924T223358_0712_02",
+      "acquisition_utc": "2023-09-24T22:33:58.528Z",
+      "apparent_solar_hour_at_domain_centroid": 15.238158440725586,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29591,
+      "scene": 7,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29591_007_12SUB_20230924T223358_0712_02",
+      "acquisition_utc": "2023-09-24T22:33:58.528Z",
+      "apparent_solar_hour_at_domain_centroid": 15.238158440725586,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29591,
+      "scene": 7,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29591_007_12SVC_20230924T223358_0712_02",
+      "acquisition_utc": "2023-09-24T22:33:58.528Z",
+      "apparent_solar_hour_at_domain_centroid": 15.238158440725586,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SUB_20230925T214542_0710_01",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SUC_20230925T214542_0710_01",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SVB_20230925T214542_0710_01",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SVC_20230925T214542_0710_01",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SUC_20230925T214542_0712_02",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SUB_20230925T214542_0712_02",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SVB_20230925T214542_0712_02",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SVC_20230925T214542_0712_02",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SUC_20230925T214542_0712_03",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SUB_20230925T214542_0712_03",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SVC_20230925T214542_0712_03",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29606,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29606_003_12SVB_20230925T214542_0712_03",
+      "acquisition_utc": "2023-09-25T21:45:42.930Z",
+      "apparent_solar_hour_at_domain_centroid": 14.439552243409853,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29652,
+      "scene": 1,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29652_001_12SUB_20230928T205726_0711_01",
+      "acquisition_utc": "2023-09-28T20:57:26.243Z",
+      "apparent_solar_hour_at_domain_centroid": 13.652648859023937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29652,
+      "scene": 1,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29652_001_12SUC_20230928T205726_0711_01",
+      "acquisition_utc": "2023-09-28T20:57:26.243Z",
+      "apparent_solar_hour_at_domain_centroid": 13.652648859023937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29652,
+      "scene": 1,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29652_001_12SUC_20230928T205726_0712_02",
+      "acquisition_utc": "2023-09-28T20:57:26.243Z",
+      "apparent_solar_hour_at_domain_centroid": 13.652648859023937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29652,
+      "scene": 1,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29652_001_12SUB_20230928T205726_0712_02",
+      "acquisition_utc": "2023-09-28T20:57:26.243Z",
+      "apparent_solar_hour_at_domain_centroid": 13.652648859023937,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29652,
+      "scene": 2,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29652_002_12SUB_20230928T205818_0711_01",
+      "acquisition_utc": "2023-09-28T20:58:18.213Z",
+      "apparent_solar_hour_at_domain_centroid": 13.667096796407511,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29652,
+      "scene": 2,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29652_002_12SUC_20230928T205818_0711_01",
+      "acquisition_utc": "2023-09-28T20:58:18.213Z",
+      "apparent_solar_hour_at_domain_centroid": 13.667096796407511,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29652,
+      "scene": 2,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29652_002_12SVC_20230928T205818_0712_02",
+      "acquisition_utc": "2023-09-28T20:58:18.213Z",
+      "apparent_solar_hour_at_domain_centroid": 13.667096796407511,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29652,
+      "scene": 2,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29652_002_12SUB_20230928T205818_0712_02",
+      "acquisition_utc": "2023-09-28T20:58:18.213Z",
+      "apparent_solar_hour_at_domain_centroid": 13.667096796407511,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29652,
+      "scene": 2,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29652_002_12SUC_20230928T205818_0712_02",
+      "acquisition_utc": "2023-09-28T20:58:18.213Z",
+      "apparent_solar_hour_at_domain_centroid": 13.667096796407511,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29652,
+      "scene": 2,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29652_002_12SVC_20230928T205818_0711_01",
+      "acquisition_utc": "2023-09-28T20:58:18.213Z",
+      "apparent_solar_hour_at_domain_centroid": 13.667096796407511,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29667,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29667_003_12SUC_20230929T200950_0711_01",
+      "acquisition_utc": "2023-09-29T20:09:50.826Z",
+      "apparent_solar_hour_at_domain_centroid": 12.864888774360669,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29667,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29667_003_12SUB_20230929T200950_0711_01",
+      "acquisition_utc": "2023-09-29T20:09:50.826Z",
+      "apparent_solar_hour_at_domain_centroid": 12.864888774360669,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29667,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29667_003_12SVC_20230929T200950_0711_01",
+      "acquisition_utc": "2023-09-29T20:09:50.826Z",
+      "apparent_solar_hour_at_domain_centroid": 12.864888774360669,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29667,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29667_003_12SVB_20230929T200950_0711_01",
+      "acquisition_utc": "2023-09-29T20:09:50.826Z",
+      "apparent_solar_hour_at_domain_centroid": 12.864888774360669,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29667,
+      "scene": 3,
+      "tile": "12SVB",
+      "granule_id": "ECOv002_L2T_LSTE_29667_003_12SVB_20230929T200950_0712_02",
+      "acquisition_utc": "2023-09-29T20:09:50.826Z",
+      "apparent_solar_hour_at_domain_centroid": 12.864888774360669,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29667,
+      "scene": 3,
+      "tile": "12SUC",
+      "granule_id": "ECOv002_L2T_LSTE_29667_003_12SUC_20230929T200950_0712_02",
+      "acquisition_utc": "2023-09-29T20:09:50.826Z",
+      "apparent_solar_hour_at_domain_centroid": 12.864888774360669,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29667,
+      "scene": 3,
+      "tile": "12SVC",
+      "granule_id": "ECOv002_L2T_LSTE_29667_003_12SVC_20230929T200950_0712_02",
+      "acquisition_utc": "2023-09-29T20:09:50.826Z",
+      "apparent_solar_hour_at_domain_centroid": 12.864888774360669,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29667,
+      "scene": 3,
+      "tile": "12SUB",
+      "granule_id": "ECOv002_L2T_LSTE_29667_003_12SUB_20230929T200950_0712_02",
+      "acquisition_utc": "2023-09-29T20:09:50.826Z",
+      "apparent_solar_hour_at_domain_centroid": 12.864888774360669,
+      "cloud_cover_metadata": null
+    }
+  ]
+}

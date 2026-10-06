@@ -1,0 +1,62 @@
+[
+  {
+    "dropped_orbit": 27963,
+    "date": "2023-06-11",
+    "status": "UNSUPPORTED_EMPTY_MONTH_ARM",
+    "missing_month_arms": [
+      [
+        6,
+        "afternoon"
+      ]
+    ],
+    "remaining_weights": {}
+  },
+  {
+    "dropped_orbit": 28192,
+    "date": "2023-06-26",
+    "status": "UNSUPPORTED_EMPTY_MONTH_ARM",
+    "missing_month_arms": [
+      [
+        6,
+        "morning"
+      ]
+    ],
+    "remaining_weights": {}
+  },
+  {
+    "dropped_orbit": 28828,
+    "date": "2023-08-06",
+    "status": "SUPPORTED_SCHEDULE_ONLY",
+    "missing_month_arms": [],
+    "remaining_weights": {
+      "27963": 0.5,
+      "28192": -0.5,
+      "28909": 0.5,
+      "29092": -0.5
+    }
+  },
+  {
+    "dropped_orbit": 28909,
+    "date": "2023-08-11",
+    "status": "UNSUPPORTED_EMPTY_MONTH_ARM",
+    "missing_month_arms": [
+      [
+        8,
+        "afternoon"
+      ]
+    ],
+    "remaining_weights": {}
+  },
+  {
+    "dropped_orbit": 29092,
+    "date": "2023-08-23",
+    "status": "SUPPORTED_SCHEDULE_ONLY",
+    "missing_month_arms": [],
+    "remaining_weights": {
+      "27963": 0.5,
+      "28192": -0.5,
+      "28909": 0.5,
+      "28828": -0.5
+    }
+  }
+]

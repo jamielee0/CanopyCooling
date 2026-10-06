@@ -1,0 +1,11 @@
+{
+  "added_before_residual_or_4km_8km_result_access": true,
+  "why": "1km_and_2km_are_not_assumed_independent; inspect_neighbor_residuals_and_report_larger_group_precision",
+  "stress_group_km": [
+    4,
+    8
+  ],
+  "bootstrap_replicates": 1000,
+  "seed": 20260919,
+  "no_support_or_precision_exclusion_gate": true
+}

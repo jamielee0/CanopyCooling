@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/jamielee0/CanopyCooling",
+  "branch": "main",
+  "previous_github_head": "d3d1ea53315ae6e6dad8912c02f97da6c2ad358d",
+  "preserved_local_head": "05ce27941a5dc3c5e0634a27b6a089fa27909499",
+  "local_working_snapshot_commit": "bc08921063f074d63e59a255f3db1a6e6bc8f43b",
+  "local_working_snapshot_branch": "archive/local-v6.2-working-20261006",
+  "original_local_refs": [
+    "refs/heads/main 6f05084d9fb740b97f849a6843bed7caa834969c",
+    "refs/heads/temporal-ndmi-supply e32ff06aad83f1c8fe87473bf5c95e9e12f155e2",
+    "refs/heads/v6.2 05ce27941a5dc3c5e0634a27b6a089fa27909499",
+    "refs/tags/v2-inherited-pre-v6.2 897d4976cd1627b16d7599b4a7c925eb899d630f"
+  ],
+  "existing_published_review_tree_unchanged": true,
+  "current_workspace_files_staged": 3759,
+  "excluded_categories": [
+    "raw downloads and arrays",
+    "download caches and environments",
+    "private model storage",
+    "credentials",
+    "personal correspondence and original private source material",
+    "machine-local symlinks",
+    "temporary files"
+  ],
+  "credential_scan_flags": 0,
+  "historical_objects_scanned": 596,
+  "original_git_worktree_modified_by_sync": false,
+  "current_readme_and_gitignore_updated_for_publication": true,
+  "current_scientific_results_changed": false,
+  "status": "PREPARED_FOR_PUSH"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASSED",
+  "yaml_parse_and_duplicate_keys": "passed",
+  "unchanged_scientific_settings_and_old_step_records": true,
+  "allowed_differences": "status, latest authority/snapshot, internal-analysis flags, new Step3 section only",
+  "six_Step2_documents_preserved_exactly": true,
+  "archived_hashes_match_Step2_completion": true,
+  "sample_and_sealing_consistent": true,
+  "draw_and_rank_audit_counts_consistent": true,
+  "new_local_links_exist": true,
+  "offline_previews": [
+    "docs/v2/v6_2/execution/spatial_scale_review_20261004/qa/document_01_page_01.png",
+    "docs/v2/v6_2/execution/spatial_scale_review_20261004/qa/document_02_page_01.png",
+    "docs/v2/v6_2/execution/spatial_scale_review_20261004/qa/document_02_page_02.png",
+    "docs/v2/v6_2/execution/spatial_scale_review_20261004/qa/document_03_page_01.png",
+    "docs/v2/v6_2/execution/spatial_scale_review_20261004/qa/document_04_page_01.png",
+    "docs/v2/v6_2/execution/spatial_scale_review_20261004/qa/document_05_page_01.png",
+    "docs/v2/v6_2/execution/spatial_scale_review_20261004/qa/document_06_page_01.png"
+  ],
+  "native_Codex_preview_inspected": false,
+  "offline_previews_visually_inspected": true,
+  "visual_result": "All seven addition previews readable and consistent with sample, sealing, non-estimability and deferred review"
+}

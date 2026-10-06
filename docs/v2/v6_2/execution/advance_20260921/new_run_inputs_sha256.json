@@ -1,0 +1,898 @@
+{
+  "selected_orbits": [
+    28085,
+    28192,
+    28970,
+    29092,
+    29545,
+    29606
+  ],
+  "paths": [
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_004_12SUB_20230619T202232_0711_02_LST.tif",
+      "bytes": 25214,
+      "sha256": "9eec09b45c8bba263efb5c61d19a4bf1d781d467d8befe369c67fa5329b0328c"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_004_12SUB_20230619T202232_0711_02_QC.tif",
+      "bytes": 9604,
+      "sha256": "726b0e47ccf55c90d0f03f9db88121afef9c25ae26868bf01764292b21c9afa4"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_004_12SUB_20230619T202232_0711_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_004_12SUB_20230619T202232_0711_02_water.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_004_12SUC_20230619T202232_0711_02_LST.tif",
+      "bytes": 1858836,
+      "sha256": "a509d5e8a0968174edbf4d979e645b65aaa65c59870ae499994b3108cfefaab8"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_004_12SUC_20230619T202232_0711_02_QC.tif",
+      "bytes": 169549,
+      "sha256": "075616eb6a82d3e47d7076ac599e47d10a161e2a5ef04218594e396871000906"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_004_12SUC_20230619T202232_0711_02_cloud.tif",
+      "bytes": 12970,
+      "sha256": "5795c1c15e1014a2cae9ef12eabc720e58c41a1d63fb12414abb432c27f268f5"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_004_12SUC_20230619T202232_0711_02_water.tif",
+      "bytes": 5674,
+      "sha256": "95583052827d23d1cf5911b7f51e2274aab4060fb7ffbdcfb0f20d1d479cbc14"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SUB_20230619T202324_0711_02_LST.tif",
+      "bytes": 1127838,
+      "sha256": "73d5ba460b29a9efb855e64ee6c3621d462cb0ab3be1b16a6ca1d381169063f8"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SUB_20230619T202324_0711_02_QC.tif",
+      "bytes": 194166,
+      "sha256": "daf21d78ee068bb35d951cef15e0b909a08c5cc0bf617b38c800f09cdc25298e"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SUB_20230619T202324_0711_02_cloud.tif",
+      "bytes": 18261,
+      "sha256": "ec5012978025cd46d04d77ed294320cfec95ceaaae5b477caadfcbca227033f4"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SUB_20230619T202324_0711_02_water.tif",
+      "bytes": 5829,
+      "sha256": "580b8d85b628e7b49bfffc46760c2457c4d4c5602d524d9c7c9006abacf49b38"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SUC_20230619T202324_0711_02_LST.tif",
+      "bytes": 1686771,
+      "sha256": "0485ccf15514c878ee9a1bb0052466ba96a3eb6ad81fdf247887c7d8bbc95c87"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SUC_20230619T202324_0711_02_QC.tif",
+      "bytes": 168448,
+      "sha256": "67c0b6afd6f3772cd3c0bd1501ace039f03ee56edbb8fe8a1ba3eeb174ffc6c5"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SUC_20230619T202324_0711_02_cloud.tif",
+      "bytes": 13649,
+      "sha256": "29a947b905bef1ccd829b068148d8f1e460bc261617e9dc7b5e678f31b024e30"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SUC_20230619T202324_0711_02_water.tif",
+      "bytes": 6794,
+      "sha256": "54ec16844600b5b9bfac5acf21a2d5629a16d8e5a6bcca163da69bde16ddc894"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SVB_20230619T202324_0711_02_LST.tif",
+      "bytes": 3453776,
+      "sha256": "22596884afb4286ca591513541cc87f6d3e7bd2eb845f54504893bad9cfcbbe9"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SVB_20230619T202324_0711_02_QC.tif",
+      "bytes": 363548,
+      "sha256": "2cd78e66cf6ab4693b31a892e233984639ced803c16976fc9bc70cb31b24d3a4"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SVB_20230619T202324_0711_02_cloud.tif",
+      "bytes": 21937,
+      "sha256": "12061ebef877ce572645c9ee98856a4d445b31a6e9baeaf4500abd6c02c34eb6"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SVB_20230619T202324_0711_02_water.tif",
+      "bytes": 5841,
+      "sha256": "60f45522f73370a76036880685657b47ac89bd791c6194ff6001455f46a98bcb"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SVC_20230619T202324_0711_02_LST.tif",
+      "bytes": 3620025,
+      "sha256": "997c054bd42222a739b595be5d94b62cdbc2baf2aeb1f191a4764305f8f1c8b3"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SVC_20230619T202324_0711_02_QC.tif",
+      "bytes": 304206,
+      "sha256": "2b7b5c6ad07c906cb0326b0cba5d2ff57656e22f0bdcf6bcd1f3cd651658d6a8"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SVC_20230619T202324_0711_02_cloud.tif",
+      "bytes": 16740,
+      "sha256": "f80a566b6a8789e5ee3ba485e63bba6fde86914993759d72ef7697341cee1cb9"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28085_005_12SVC_20230619T202324_0711_02_water.tif",
+      "bytes": 7987,
+      "sha256": "e1b8f01f6af6e8281cec82142baa4e6fcac069d9d5f41b5173e481f6d083131d"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SUB_20230626T175548_0711_02_LST.tif",
+      "bytes": 3716364,
+      "sha256": "35b867bbfeff4ee5851327a6d171e86bebbec3ecbfd9a3f4adde40ab3fc862ca"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SUB_20230626T175548_0711_02_QC.tif",
+      "bytes": 361883,
+      "sha256": "7d5d8303352ede6f7f534b24d5813467b981665623812ddaf6db6d20d293e882"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SUB_20230626T175548_0711_02_cloud.tif",
+      "bytes": 9973,
+      "sha256": "8df9e8e9d4131f30e7ea422a09bc8cb8a5aa1e6646330b8cacdfcdce2f7aebe8"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SUB_20230626T175548_0711_02_water.tif",
+      "bytes": 5888,
+      "sha256": "a263a0f0dc49df36b8623f3c49cbf9e2abc09175736af36018af4ad59490c41a"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SUC_20230626T175548_0711_02_LST.tif",
+      "bytes": 3632046,
+      "sha256": "80ee1135efbfb7159072aaefa2e7cd1f57dd781238c84ff595046d30896c12e3"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SUC_20230626T175548_0711_02_QC.tif",
+      "bytes": 201851,
+      "sha256": "d23e0c7a13967175607067db8c766f277b54d6f427e8cc6f3b155edd985005f5"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SUC_20230626T175548_0711_02_cloud.tif",
+      "bytes": 6311,
+      "sha256": "52c08d1e6072d5bcf3fe98c9d13f43f9f2ba85e8cf0f429b81685cac9ef47a8a"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SUC_20230626T175548_0711_02_water.tif",
+      "bytes": 6884,
+      "sha256": "8dd3335962f34a5c6f190e35c55c05bce27643fe3c408928a9a277b4798fd346"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SVB_20230626T175548_0711_02_LST.tif",
+      "bytes": 3114595,
+      "sha256": "820425f2b12620a446a9cbaedc966f11c7701dd206c62e887bc1fd1a57ce71ae"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SVB_20230626T175548_0711_02_QC.tif",
+      "bytes": 461756,
+      "sha256": "5cf7b65fe3b5bbd8847b417137813d703bf9a28a3aa800866feb2fda55272a96"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SVB_20230626T175548_0711_02_cloud.tif",
+      "bytes": 50711,
+      "sha256": "48960137fd3ad2280582aaff9b3991d80bc3cde526a0e0d255f5663a0e0cd239"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SVB_20230626T175548_0711_02_water.tif",
+      "bytes": 5836,
+      "sha256": "603f45e42472e2404988be11f673c953c57aea052432d8c0ba38c8c0b03aeda5"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SVC_20230626T175548_0711_02_LST.tif",
+      "bytes": 2826148,
+      "sha256": "32c41f6344d25f0f2934e0de5a53c7899a02c4961738dd452594fc13e8868d66"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SVC_20230626T175548_0711_02_QC.tif",
+      "bytes": 215397,
+      "sha256": "c7f7bd68f75adcef1db3558518ff54d635af72d73d410b7d8f559fb977030dd6"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SVC_20230626T175548_0711_02_cloud.tif",
+      "bytes": 13921,
+      "sha256": "7ebe45f0c8c749885558a4d02795c7b753499d68eb22c914493edbd573dd5400"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_013_12SVC_20230626T175548_0711_02_water.tif",
+      "bytes": 7990,
+      "sha256": "365baf21b340ffa4d44e851b883eee43186f2648cde2f94c20a251c62a028654"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_014_12SVB_20230626T175640_0711_02_LST.tif",
+      "bytes": 270987,
+      "sha256": "d955f3c03e1afaa658f77cb9f434cc8abeeab997b77097501e52b16f9760ffe4"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_014_12SVB_20230626T175640_0711_02_QC.tif",
+      "bytes": 62418,
+      "sha256": "15af1a6ac273d70335d4a9b65d7206cb5f747753ba2ba94589dc802e21ca0ba3"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_014_12SVB_20230626T175640_0711_02_cloud.tif",
+      "bytes": 12879,
+      "sha256": "dc21397a1da185fb0025fa040db78bde48ea86f0a34fbe5bc0969ec14a7e25dc"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28192_014_12SVB_20230626T175640_0711_02_water.tif",
+      "bytes": 5645,
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_005_12SUB_20230815T214828_0712_02_LST.tif",
+      "bytes": 27345,
+      "sha256": "62269b597d471304b33c451809206da5e94acf0f911cb2dfeacb78ee7e7bb8ea"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_005_12SUB_20230815T214828_0712_02_QC.tif",
+      "bytes": 10074,
+      "sha256": "7a2d6a2ac85c7c2d6f1fc643ec4c41652613643edd204fa208273b68ad1c089e"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_005_12SUB_20230815T214828_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_005_12SUB_20230815T214828_0712_02_water.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_005_12SUC_20230815T214828_0712_02_LST.tif",
+      "bytes": 1091711,
+      "sha256": "e4fede070452f2f66007cc23914022683e49b01107e02e3f3e1158d7ac5cd3d1"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_005_12SUC_20230815T214828_0712_02_QC.tif",
+      "bytes": 162716,
+      "sha256": "35c0837005531f24d719c20e1de033e4e4dca5420bc657c0a77916639f0c5941"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_005_12SUC_20230815T214828_0712_02_cloud.tif",
+      "bytes": 19559,
+      "sha256": "41b7f35593e5a316754e818c031ebe94390a2ea845f7faea94a7d8ed79ff39b4"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_005_12SUC_20230815T214828_0712_02_water.tif",
+      "bytes": 5669,
+      "sha256": "a94a2982ae38fe269131afc0df37a96ee67456a670a8e00cfe8b1d997e4f93de"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SUB_20230815T214920_0712_02_LST.tif",
+      "bytes": 1937179,
+      "sha256": "2340cc7540e9025ced3a3cad15b69296491e820efcd81dddfa02fbece5588737"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SUB_20230815T214920_0712_02_QC.tif",
+      "bytes": 289783,
+      "sha256": "f99ac57d1c03e9298a7fae68acfad9e2d2addfd80edff12ea35f175f81c4d649"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SUB_20230815T214920_0712_02_cloud.tif",
+      "bytes": 27584,
+      "sha256": "b3ea02052e7f87053f4882da8356b9f6f35cfdf8586209cd4cc5ad65cc6de9b9"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SUB_20230815T214920_0712_02_water.tif",
+      "bytes": 5854,
+      "sha256": "611828cc83513c8e15739ced808bff3c4ee9432aca5ae0d26d540b4cd9b44ec9"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SUC_20230815T214920_0712_02_LST.tif",
+      "bytes": 2402503,
+      "sha256": "1c8aaf5e9d6ad5b1a31844b15bd7844c6653b864d1b0af43c5651ac7fb58e70b"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SUC_20230815T214920_0712_02_QC.tif",
+      "bytes": 250560,
+      "sha256": "d05641e15e16b3068a78a3cf33cde2ff046a32324eb3c41859aafab2fa46a436"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SUC_20230815T214920_0712_02_cloud.tif",
+      "bytes": 22318,
+      "sha256": "2a353ffaa7f557f9b8653a63ae11513c5a9e8d38b1fc028d4ba3f8ea09467914"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SUC_20230815T214920_0712_02_water.tif",
+      "bytes": 6831,
+      "sha256": "1a272028ab7429036e8794d7f6e61429ef72c8ea024fce0ea4c159c051f1a55f"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SVB_20230815T214920_0712_02_LST.tif",
+      "bytes": 2188697,
+      "sha256": "78a7241614dcb7ef68a938229cef0c304ab85ab25a926113b6c748283ecbac7a"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SVB_20230815T214920_0712_02_QC.tif",
+      "bytes": 558084,
+      "sha256": "12da886e31ba400ed07f601c2fa226466f982f1f5d738c2d895b41802e7c2988"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SVB_20230815T214920_0712_02_cloud.tif",
+      "bytes": 64315,
+      "sha256": "5214f96da3cb5c34cabdb950a12b464b2f9b78c7052d625d6bc43291523bbd88"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SVB_20230815T214920_0712_02_water.tif",
+      "bytes": 5840,
+      "sha256": "e72de6e4d8216d8e49f545ce6070b3f0484a278af8d88c39f4a4337d951ff4ad"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SVC_20230815T214920_0712_02_LST.tif",
+      "bytes": 3136958,
+      "sha256": "d2adb7135ff8353e0b663ee3fcb8b08b57d697d6441fa0bc0612e4d31d6c0be9"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SVC_20230815T214920_0712_02_QC.tif",
+      "bytes": 494523,
+      "sha256": "8f860b27d30c2aaab0ff65b00524ead67fc20e7a0ddcae4c9069808f84fdd81e"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SVC_20230815T214920_0712_02_cloud.tif",
+      "bytes": 43709,
+      "sha256": "f02bc0d5acfc4c1b778e244f615207a70d5a6e11bb128e966fae6669726b1bf0"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_28970_006_12SVC_20230815T214920_0712_02_water.tif",
+      "bytes": 8026,
+      "sha256": "9b59051c54c4f1662f3efd001a8015143852dc7c4dbd7e2d728f07567fe6d76d"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SUB_20230823T183859_0712_02_LST.tif",
+      "bytes": 229530,
+      "sha256": "757004f5478b8c8bdcc6c1ff8110bd15e3cb9f7150aae45737c9b834d23994f7"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SUB_20230823T183859_0712_02_QC.tif",
+      "bytes": 32066,
+      "sha256": "3793d775a24b37a2f5f213b0234934051c79007e69e41e9b35aed68de09cf2b5"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SUB_20230823T183859_0712_02_cloud.tif",
+      "bytes": 5825,
+      "sha256": "7720039b16ad22cd6e50297a85cf5d7b4b8a7e1a76450e91a6c2fb65be996206"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SUB_20230823T183859_0712_02_water.tif",
+      "bytes": 5679,
+      "sha256": "009bfbe934bc0478f3ad1c4fb1402968ef976f725278f6ccf42325a5a8975a8f"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SUC_20230823T183859_0712_02_LST.tif",
+      "bytes": 3047980,
+      "sha256": "64b9ddf6ac7fa27821afde6e5b0259b326dd9a455cc26f17b9b0c04048981778"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SUC_20230823T183859_0712_02_QC.tif",
+      "bytes": 310681,
+      "sha256": "8e61bcbf3f5da450616b6c717c7f2e9732a1de2face6dafa49b4a65d3f7a03d1"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SUC_20230823T183859_0712_02_cloud.tif",
+      "bytes": 29719,
+      "sha256": "7f7af886bcdaf70939a120f14286b15020d6fb4f6f823e6b86604a6b38aeefab"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SUC_20230823T183859_0712_02_water.tif",
+      "bytes": 6722,
+      "sha256": "ce47bdaebae0073151ac9c7995c6361ca7dea292f4282746bb33d79bf42dc1f4"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SVC_20230823T183859_0712_02_LST.tif",
+      "bytes": 789176,
+      "sha256": "2843f8f3d495eebc5af07a913b3bcd63ae234d0583c18610bf20a0cb882fb398"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SVC_20230823T183859_0712_02_QC.tif",
+      "bytes": 99983,
+      "sha256": "02e3172cef2ec4b5c3bddbea9f6c5d55d7d53f159be60434c6604f37735b52a4"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SVC_20230823T183859_0712_02_cloud.tif",
+      "bytes": 14405,
+      "sha256": "9ca72edfd2e956d12e39ee1bcf1a56cb3888e7e59d0c25a184af147536ca47cc"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_011_12SVC_20230823T183859_0712_02_water.tif",
+      "bytes": 5725,
+      "sha256": "39acdc97d01fde21ee846bcbd040629f5812a1c6d69cefe5175fa2065d772ed8"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SUB_20230823T183951_0712_02_LST.tif",
+      "bytes": 597129,
+      "sha256": "46af69a702017c627418f0f6319dbb3e4791e9237f2eedf8a354d53214f8d930"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SUB_20230823T183951_0712_02_QC.tif",
+      "bytes": 76478,
+      "sha256": "24e9191f7018d530a2996ad398f5e95941a4447ec2e46f6b55dec16726f68bdf"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SUB_20230823T183951_0712_02_cloud.tif",
+      "bytes": 6102,
+      "sha256": "df983281cbd8c2e20073fb738697798c88f86612471b16eb868f6a187bef5996"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SUB_20230823T183951_0712_02_water.tif",
+      "bytes": 5704,
+      "sha256": "25e5321741353ab478440c8e1109febdc2287f8c8d7a622aa5de996535f32d70"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SUC_20230823T183951_0712_02_LST.tif",
+      "bytes": 247730,
+      "sha256": "3bac3df70035b1366c3224b84cf6ddca66defbb875f52de55125f8c560269d61"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SUC_20230823T183951_0712_02_QC.tif",
+      "bytes": 34175,
+      "sha256": "2a0e5e8abbe6547251dd1e9c552ca2abb9dd033df4ada7f6a173c7a297214541"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SUC_20230823T183951_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SUC_20230823T183951_0712_02_water.tif",
+      "bytes": 5670,
+      "sha256": "1a2470362fa3c0eae679b333e890b8040bd920da8019feb81a05097e9907e9f5"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SVB_20230823T183951_0712_02_LST.tif",
+      "bytes": 2478039,
+      "sha256": "b65be1e61e60c92f8226a47a1cacd2be7e2e3eff7d555205646c4f71fd971296"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SVB_20230823T183951_0712_02_QC.tif",
+      "bytes": 407091,
+      "sha256": "7114b10c4d7d10a31372bce629d713512ad4d7bcdc56faf32186879ffe1bb0b8"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SVB_20230823T183951_0712_02_cloud.tif",
+      "bytes": 26398,
+      "sha256": "d13e054586b13beb496755bfdcbe500983c66b5b6618f12704db530a5c19eeb2"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SVB_20230823T183951_0712_02_water.tif",
+      "bytes": 5845,
+      "sha256": "c7ebe6e30686514d63c4f1a355cfb6b2d4000705ba799b62323a657ea399c7d9"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SVC_20230823T183951_0712_02_LST.tif",
+      "bytes": 1712748,
+      "sha256": "e8e5d8a2d7193799f53488bb90d437c9a8014060ab38398e773f731e551a3fa6"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SVC_20230823T183951_0712_02_QC.tif",
+      "bytes": 380603,
+      "sha256": "3e54ed2fb9a9a958b9067209c25627fd058e561e35766a26eed7860a6e20bee8"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SVC_20230823T183951_0712_02_cloud.tif",
+      "bytes": 36777,
+      "sha256": "a92f50c35b1024a8d89dd31a3dba4196dba7a20599813b6b3907abf3d26d8edf"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29092_012_12SVC_20230823T183951_0712_02_water.tif",
+      "bytes": 8060,
+      "sha256": "1215d35667bb19867e72fb91b715e324cf57877641c6702cf6910b202d3802cf"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02_LST.tif",
+      "bytes": 1938694,
+      "sha256": "8ca5c2028cdcd20a9afba50e252573f284d4f2c1a4befc3957d46420b561ff5b"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02_QC.tif",
+      "bytes": 520847,
+      "sha256": "dfcc6238414eb7107f2e5f5f19261d8be25e955341f6a669cdb912dbf8365fa7"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02_cloud.tif",
+      "bytes": 55107,
+      "sha256": "a41cee54ed01ea1a611937ebd68fd752e84604ddd4f09fa16592d36b579fc7b1"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02_water.tif",
+      "bytes": 5908,
+      "sha256": "9927524391e408f284713843ff4734abce8d1e7dbec6f4dfc6dcc7f85974d210"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02_LST.tif",
+      "bytes": 3035031,
+      "sha256": "13b8ce9938988b9fc7e3b6886d7dac9c9c0a8aded244e4bb08f52256050ea708"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02_QC.tif",
+      "bytes": 309210,
+      "sha256": "4bae609e1254cbd80c2e47f388a3749b594bf7d2d5ece8bd80087f6a87e8fc1c"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02_cloud.tif",
+      "bytes": 51806,
+      "sha256": "0b48a054fdf2a771d94bcadc746a6a8199620ce73128b4001d8d5461dfd853f6"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02_water.tif",
+      "bytes": 6817,
+      "sha256": "1bce1548269cf144749f12e7fec4f627b70ff22d853fd2e7808c5c87f07f42e0"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02_LST.tif",
+      "bytes": 986007,
+      "sha256": "c47b34fda49f8ffea2699c92f603c255ce7ec3fe37aec777bb861b3781d29a57"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02_QC.tif",
+      "bytes": 600725,
+      "sha256": "2a7f2262e4856069089e743c3d4e2c18004938f3a12a91416b519bc43dff03e0"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02_cloud.tif",
+      "bytes": 47894,
+      "sha256": "35b0588d5b4211405d27f1d33dcfc389096516c80df0ec1e1665303ed56916d1"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02_water.tif",
+      "bytes": 5840,
+      "sha256": "811c72911b51ea1b818562578039493cde83465de49e264c4a6479a8b0f1452d"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02_LST.tif",
+      "bytes": 1387603,
+      "sha256": "7d7b8099ad577a934a5fdb2337b9d5d9993eeaa42ea88d6db639cc11c8dba8ff"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02_QC.tif",
+      "bytes": 314062,
+      "sha256": "4cdead327d936697ef30e501bc0c6388612c3987e28a2117a65fda1ad20cedd6"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02_cloud.tif",
+      "bytes": 64058,
+      "sha256": "16aa69638ec03aedbb7cf092a1c29367c248811bc308b86734ed6b6684060904"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02_water.tif",
+      "bytes": 8016,
+      "sha256": "1b88228e94a8b9480a58130dcb792fa6209a5ca49daffbdc9066043c2e709189"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02_LST.tif",
+      "bytes": 359771,
+      "sha256": "088ae464796f505dccd23e39d11db39c93d0599be5dd19a17ed4712330fdc997"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02_QC.tif",
+      "bytes": 126958,
+      "sha256": "d7a5fcce170b628e9582bf56dca67c7e5404f938de86276f749a71849d828fd6"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02_cloud.tif",
+      "bytes": 43061,
+      "sha256": "d63a7ba62ea3a956f1b2f9888a4ea67eadb7fb506c1dfae1c204f65913d23875"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02_water.tif",
+      "bytes": 5683,
+      "sha256": "532b061c031f45083c924ceddd58ca86d20e3c0c7a574edec8e2cd6dd9ea8b7c"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SUB_20230925T214542_0712_03_LST.tif",
+      "bytes": 3602107,
+      "sha256": "c0a0de85e0e8813a18ea1e829352d2f5a681bd25349d23b15d7ce86a5428bb44"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SUB_20230925T214542_0712_03_QC.tif",
+      "bytes": 378992,
+      "sha256": "a098ffcd01d0caf8df5464733a2d01151c626e44d18846ccbf650bd1fbd6b776"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SUB_20230925T214542_0712_03_cloud.tif",
+      "bytes": 5665,
+      "sha256": "08dd089b0b0a0e0fe64476e6590a08cdf6a8ac108d7b0e0d248e0177d7c847f8"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SUB_20230925T214542_0712_03_water.tif",
+      "bytes": 5881,
+      "sha256": "86003c5ebd0735fc3b86c473d08cef228b463ce2a7fe72e63c532aa198c2cdcf"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SUC_20230925T214542_0712_03_LST.tif",
+      "bytes": 2679796,
+      "sha256": "e11ac305f901fbbb211455a82e2bee650b176325898d4f51fa172b86bb4ec926"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SUC_20230925T214542_0712_03_QC.tif",
+      "bytes": 198690,
+      "sha256": "c15ad7ac0fa7579e95d0794a508e59b25201863e83ac20a702c61c353519f862"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SUC_20230925T214542_0712_03_cloud.tif",
+      "bytes": 6294,
+      "sha256": "e73ae8bcf1a2c588f486242cda8a10a3e3d24eaf225b1cf10f5baf7a94b32b6c"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SUC_20230925T214542_0712_03_water.tif",
+      "bytes": 6828,
+      "sha256": "0add56e7edf87a70263a283d7cdf7ec4960564da7b06c55eb1c3683388d151de"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SVB_20230925T214542_0712_03_LST.tif",
+      "bytes": 3520035,
+      "sha256": "7403b9d893864c7039f5c85a878ddc053a55e89501b716c11f7eb6adeed19eb0"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SVB_20230925T214542_0712_03_QC.tif",
+      "bytes": 305241,
+      "sha256": "5851f27b8e2f2236fcb613613898fccbc156eb8c2657cdb9d74f29a6b1bb7b29"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SVB_20230925T214542_0712_03_cloud.tif",
+      "bytes": 5665,
+      "sha256": "c32045edebfbd3e7b29ea9be7a193086e991a12065b21e06ac3b64b215ae8e2f"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SVB_20230925T214542_0712_03_water.tif",
+      "bytes": 5822,
+      "sha256": "ae0a8287a2db89c0afd5c45cdc3bf6c85c7440aeb8ee683d94291606949e5815"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SVC_20230925T214542_0712_03_LST.tif",
+      "bytes": 3331599,
+      "sha256": "ed48e5ce4124f1b405db9f1aa98a634aedb6fedf74bb03ac058e4b4fd84cc91b"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SVC_20230925T214542_0712_03_QC.tif",
+      "bytes": 237825,
+      "sha256": "e6756559ddee2315671e33f85fe396e84dc2d21221ff4465bac9b68299c09d1d"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SVC_20230925T214542_0712_03_cloud.tif",
+      "bytes": 9517,
+      "sha256": "4f3aa0facdb89df95d4eaedc0c4ead24ece3afcee30d1d67984cbd9210799520"
+    },
+    {
+      "path": "data/raw/ecostress_lst/ECOv002_L2T_LSTE_29606_003_12SVC_20230925T214542_0712_03_water.tif",
+      "bytes": 8042,
+      "sha256": "3b6bd275a51d3657edceefe937c7121a0014bd97d1633820f6b40881acfc9a43"
+    },
+    {
+      "path": "data/raw/footprints/ms_buildings_phoenix_bbox_4326.parquet",
+      "bytes": 155959570,
+      "sha256": "5c7f6ca3bd0d0af0be5d1680fe4d01cee9345ce554ba4cd44a94ede7e43e8567"
+    },
+    {
+      "path": "data/raw/landcover/nlcd_impervious_2021_30m.tif",
+      "bytes": 4066778,
+      "sha256": "5f440a49e726647edf66b3db74355c7593fb2f4fb843007155248de9c7b9bf0f"
+    },
+    {
+      "path": "data/raw/landcover/nlcd_landcover_class_2021_30m.tif",
+      "bytes": 2070202,
+      "sha256": "22fe867cc2074a2fe0286f4fcdb03a8b4b14694c0a0947115a24131c82b4dd1c"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28085_004_12SUB_20230619T202232_0711_02_EmisWB.tif",
+      "bytes": 22019,
+      "sha256": "8211778b3c9a8914ab5393226086394c599ccdd60c3861639afd6fc26f5894ac"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28085_004_12SUC_20230619T202232_0711_02_EmisWB.tif",
+      "bytes": 963741,
+      "sha256": "873c162d20815f162b04cfd34feeeaee99b1428337dfecabe8597d85294a22f0"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28085_005_12SUB_20230619T202324_0711_02_EmisWB.tif",
+      "bytes": 628041,
+      "sha256": "a58f761a26ccebee7e0a96f94d6f2e339a851d7394d7b68acca27d9abb703f09"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28085_005_12SUC_20230619T202324_0711_02_EmisWB.tif",
+      "bytes": 899294,
+      "sha256": "b05efae9664975363a7e5906e82bef4a57646c01f095342f792dca4f4b1ae0e0"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28085_005_12SVB_20230619T202324_0711_02_EmisWB.tif",
+      "bytes": 1810108,
+      "sha256": "f4811b71ca7d5efce3f79881bfa0cf4670777660fdf418d55514353a65c384aa"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28085_005_12SVC_20230619T202324_0711_02_EmisWB.tif",
+      "bytes": 1862006,
+      "sha256": "31eafbdf6ff0d2edb69d0562ea88afb606f9eea0ce0edc72e41db858bfe1fa75"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28192_013_12SUB_20230626T175548_0711_02_EmisWB.tif",
+      "bytes": 1975197,
+      "sha256": "1ade540d14dc6d4693d97413ea80a2e22468ef99048b7fb3913ec18831312031"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28192_013_12SUC_20230626T175548_0711_02_EmisWB.tif",
+      "bytes": 1917975,
+      "sha256": "dced0469a5c98cae7a941a144bfb8ec71bc6c5e00da2f2a2171d521dd0afc88e"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28192_013_12SVB_20230626T175548_0711_02_EmisWB.tif",
+      "bytes": 1695246,
+      "sha256": "4e536a188167950bb1c1e19c1fae9560c2a088a27d45d8de4f1305d4a3b82970"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28192_013_12SVC_20230626T175548_0711_02_EmisWB.tif",
+      "bytes": 1517332,
+      "sha256": "9a9ede63206c776b75a2b7dc83f85914ad38b349706748aa2e00874802ea8eb2"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28192_014_12SVB_20230626T175640_0711_02_EmisWB.tif",
+      "bytes": 160725,
+      "sha256": "4459d8e0283615e4d8f576d89953fd2e9e9919946b0cbe74d383326fc309ffb1"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28970_005_12SUB_20230815T214828_0712_02_EmisWB.tif",
+      "bytes": 23867,
+      "sha256": "f448153292d06f656e8641e5849d81e552b0081f0aab3895c01a3326c77f0e2f"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28970_005_12SUC_20230815T214828_0712_02_EmisWB.tif",
+      "bytes": 595623,
+      "sha256": "79ce1e8805b8057810475fa81586890ef977b770c5943f1652dc88399f180391"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28970_006_12SUB_20230815T214920_0712_02_EmisWB.tif",
+      "bytes": 1059236,
+      "sha256": "7b54ed9f7e4c0cb32cca059a03648a072be0c22bba2aefb00c8f9b71a7b30c1f"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28970_006_12SUC_20230815T214920_0712_02_EmisWB.tif",
+      "bytes": 1311394,
+      "sha256": "9b2f429465a5b633b7695b7f19eab7c8773c826989b28a08552f7a94e3a624e4"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28970_006_12SVB_20230815T214920_0712_02_EmisWB.tif",
+      "bytes": 1239072,
+      "sha256": "f417f63a7c23a6534736b9cc78925691456f236612d8cbf8b32c8de7bbb19e3b"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_28970_006_12SVC_20230815T214920_0712_02_EmisWB.tif",
+      "bytes": 1720104,
+      "sha256": "553c5972dbb4d3bde1b462f57184b965ee4bb16cbf6305230b8d946b32247757"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29092_011_12SUB_20230823T183859_0712_02_EmisWB.tif",
+      "bytes": 135232,
+      "sha256": "d4758852f5de40ead90be11d15eb6b203626467ad098d4f39949cd3582946971"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29092_011_12SUC_20230823T183859_0712_02_EmisWB.tif",
+      "bytes": 1632530,
+      "sha256": "8636fcccab55820102ddb5de068fce844f1644f6fcc4a89251ffbe5c25db888b"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29092_011_12SVC_20230823T183859_0712_02_EmisWB.tif",
+      "bytes": 436309,
+      "sha256": "b5b188588061d950a1681e3f9fd9f4c2d26cda06606d0356cc3244ee89d48806"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29092_012_12SUB_20230823T183951_0712_02_EmisWB.tif",
+      "bytes": 345152,
+      "sha256": "721eeb1d97b9a0bef03e7c5b89eb3484735986a20460eadacd7d339a29d5a45d"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29092_012_12SUC_20230823T183951_0712_02_EmisWB.tif",
+      "bytes": 151272,
+      "sha256": "0092aaaeb3f199137c39066598faa1ce78890d65d297031a6146f8f2dc65ee2d"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29092_012_12SVB_20230823T183951_0712_02_EmisWB.tif",
+      "bytes": 1369893,
+      "sha256": "9084b4bc840bb617090d6b7e98567862811fa4d7a275856a7b22971443421e98"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29092_012_12SVC_20230823T183951_0712_02_EmisWB.tif",
+      "bytes": 951177,
+      "sha256": "13154444eb256e33a8772c205cafdcc190d0a1632cd53fcc08a099681046b512"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02_EmisWB.tif",
+      "bytes": 1053048,
+      "sha256": "fde5e2609c5e431f32d69604b8eeacb4a7b14fbc94715c6c2f333bc4cf9f5bed"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02_EmisWB.tif",
+      "bytes": 1714318,
+      "sha256": "5f19b0c0dde0c4b849746f3f8a9b0be2d0a9ef04e250073b83235cb94c4e8aca"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02_EmisWB.tif",
+      "bytes": 549007,
+      "sha256": "df399557ce0edef808b9b478a6247c1b2f76eaca94ba3778dda690dc668f7bea"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02_EmisWB.tif",
+      "bytes": 764197,
+      "sha256": "137e57b904949154e7c96f262835ed9a667e9696c436011daffedf7658f03d2c"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02_EmisWB.tif",
+      "bytes": 212279,
+      "sha256": "08c3d95e7707361a3811134701d9919e70ee1e6cfad00d319461fb73de9598a0"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29606_003_12SUB_20230925T214542_0712_03_EmisWB.tif",
+      "bytes": 1827650,
+      "sha256": "c06688dcc29a6520f9cebff70e64856d80d5053e87ef1858f4aa4951ec13a4d0"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29606_003_12SUC_20230925T214542_0712_03_EmisWB.tif",
+      "bytes": 1370643,
+      "sha256": "ae08c2d364c6f29c31b14c330b11396bb9c287687ea578939197b9d6653c5ede"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29606_003_12SVB_20230925T214542_0712_03_EmisWB.tif",
+      "bytes": 1726717,
+      "sha256": "a26f627788ef2d13bf328673266cc950c2e854f2031f2955cab6466941c21ba3"
+    },
+    {
+      "path": "data/raw/v2/advance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_29606_003_12SVC_20230925T214542_0712_03_EmisWB.tif",
+      "bytes": 1611215,
+      "sha256": "4c1001519ded958115f42bfbcd593fc4590388da5cca456bcba0d775bcb3e8eb"
+    },
+    {
+      "path": "data/raw/v2/context/annual_nlcd_c1_1_2024/phoenix_annual_nlcd_c1_1_2024_land_cover.tif",
+      "bytes": 11949443,
+      "sha256": "1afd90c8490d0dd49335d6556cfbdb69aa05ce9754602f1fa71e6863b960ee30"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2019_native30m.tif",
+      "bytes": 11720336,
+      "sha256": "4c60122b64eb9c22edb826d3d7186328814a723d4aac4a7c092737431cd5e014"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2020_native30m.tif",
+      "bytes": 11716750,
+      "sha256": "cb8bafc6f4e31212de116a30105dc389ff988e4755c9e1711b7f2c3addcd9f86"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2021_native30m.tif",
+      "bytes": 11719190,
+      "sha256": "7f96132b390ca7ae4646d9fb127637c3b4f273546033aadf5fc95cea285c117d"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2022_native30m.tif",
+      "bytes": 11692804,
+      "sha256": "9459ffa6fe1b9c3dcc784e3ef22fe6f0f45412c9b4886c030564574bb7064da5"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2023_native30m.tif",
+      "bytes": 11662505,
+      "sha256": "09fd5da75516a4e5037d320939420a66760e64baac30caa8808ca8dc3db673a3"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2024_native30m.tif",
+      "bytes": 11612320,
+      "sha256": "b58679582628b9af20475188e42df1734ea526b65346df4ff9f27da0879b21d4"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2025_native30m.tif",
+      "bytes": 11562716,
+      "sha256": "358680e90059e8cf0794591f9c5dbb0d38f8e32cb8b5073a0a46dce1c5b73736"
+    },
+    {
+      "path": "data/raw/v2/usgs_3dep_10m/drive_exports/usgs_3dep_10m_phoenix_frozen_census_domain.tif",
+      "bytes": 158372549,
+      "sha256": "78e3459589e07e3c393a6a68b7803a9895cb8bd635129b624e4ecf7ac5c892b1"
+    }
+  ],
+  "cloud_assets_manifest": "candidate_cloud_assets.json"
+}

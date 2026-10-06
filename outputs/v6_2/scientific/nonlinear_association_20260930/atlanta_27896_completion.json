@@ -1,0 +1,18 @@
+{
+  "city": "atlanta",
+  "orbit": 27896,
+  "date": "2023-06-07",
+  "n_cells": 510119,
+  "n_blocks": 7557,
+  "resampling_groups": 164,
+  "design_rank": 9,
+  "bootstrap_requested": 1000,
+  "bootstrap_estimable": 1000,
+  "bootstrap_failed": 0,
+  "original_linear_gradient_reproduced": true,
+  "source_sha256": "9611ce9360762851904fe1a8b5585013c814939d36d7cd3264ba9658d08ec664",
+  "minimum_spanning_blocks_on_grid": 1960,
+  "plot_reference_canopy": 0.038939791917800906,
+  "plot_upper_canopy": 0.8569015741348266,
+  "status": "estimated; LST curve release authorized"
+}

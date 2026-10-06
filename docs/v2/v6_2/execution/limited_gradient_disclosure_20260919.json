@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-09-20T00:44:01.029956+00:00",
+  "authorization": "User explicitly requested to see the ten gradients here for now after being informed that this overrides the prior sealing instruction.",
+  "scope": "Display the ten existing city-pass LST gradients in this conversation; preserve existing precision-review package and Word documents.",
+  "file_read": "outputs/v6_2/sealed_coefficients/scale_diagnostics_20260919/pass_contrasts_SEALED.csv",
+  "access_disclosure": "Assistant read the ten pass-level temperature, emitted-energy and temperature-equivalent coefficients in that CSV. Display is limited to LST gradients and previously public precision.",
+  "time_contrast_file_opened": false,
+  "scale_agreement_ruling_made": false,
+  "tolerance_at_disclosure": null,
+  "consequence": "The user and assistant are no longer blind to these pass-level effects. A subsequently selected tolerance must not be described as frozen before all effect access.",
+  "full_city_scaling_authorized": false,
+  "precision_package_preserved_as_pre_disclosure_snapshot": true
+}

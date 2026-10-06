@@ -1,0 +1,305 @@
+{
+  "created_utc": "2026-10-04T16:38:22.910285+00:00",
+  "record_date_local": "2026-10-04",
+  "authority": {
+    "request": "ok, do the next part",
+    "authorized_step": 2,
+    "plan": "docs/v2/v6_2/results_review_and_targeted_analysis_plan_20260930.md"
+  },
+  "status": "FROZEN_BEFORE_ASSEMBLY",
+  "data_link_target": "/Users/jmlee/Documents/Documents - Jamie\u2019s Mac mini/TreeProject/project/data",
+  "original_identities": [
+    {
+      "city": "atlanta",
+      "orbit": "27835",
+      "date": "2023-06-03",
+      "run_id": "pooled_pilot_20260919_atlanta",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "atlanta",
+      "orbit": "27896",
+      "date": "2023-06-07",
+      "run_id": "pooled_pilot_20260919_atlanta",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "atlanta",
+      "orbit": "27916",
+      "date": "2023-06-08",
+      "run_id": "pooled_pilot_20260919_atlanta",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "atlanta",
+      "orbit": "28145",
+      "date": "2023-06-23",
+      "run_id": "pooled_pilot_20260919_atlanta",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "atlanta",
+      "orbit": "28598",
+      "date": "2023-07-22",
+      "run_id": "pooled_pilot_20260919_atlanta",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "27963",
+      "date": "2023-06-11",
+      "run_id": "pooled_pilot_20260919_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28024",
+      "date": "2023-06-15",
+      "run_id": "pooled_pilot_20260919_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28085",
+      "date": "2023-06-19",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28192",
+      "date": "2023-06-26",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28706",
+      "date": "2023-07-29",
+      "run_id": "pooled_pilot_20260919_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28828",
+      "date": "2023-08-06",
+      "run_id": "pooled_pilot_20260919_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28909",
+      "date": "2023-08-11",
+      "run_id": "pooled_pilot_20260919_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28970",
+      "date": "2023-08-15",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "29092",
+      "date": "2023-08-23",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "29545",
+      "date": "2023-09-21",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "29606",
+      "date": "2023-09-25",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    }
+  ],
+  "cities": {
+    "phoenix": {
+      "longitude_deg": -111.96165997880368,
+      "latitude_deg": 33.50162218748549,
+      "longitude_rule": "centroid_of_frozen_WGS84_domain_geometry",
+      "longitude_source": "docs/v2/v6_2/execution/phoenix_execution_manifest.json",
+      "analysis_crs": "EPSG:32612",
+      "civil_timezone": "America/Phoenix"
+    },
+    "atlanta": {
+      "longitude_deg": -84.3363639197298,
+      "latitude_deg": 33.836579805269885,
+      "longitude_rule": "centroid_of_frozen_WGS84_domain_geometry",
+      "longitude_source": "docs/v2/v6_2/execution/atlanta_execution_manifest.json",
+      "analysis_crs": "EPSG:32616",
+      "civil_timezone": "America/New_York"
+    }
+  },
+  "design": {
+    "original_rows": 16,
+    "uncertainty_sensitivity_rows": 48,
+    "spatial_group_sizes_km": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "new_models": 0,
+    "new_time_comparisons": 0,
+    "new_thermal_reads": 0,
+    "sealed_model_access": false,
+    "new_effect_release": false,
+    "rainfall_retrieval": false,
+    "VPD": "descriptive only",
+    "flux_effect_fields": "blank; SEALED_NOT_RELEASED",
+    "clock": "fractional UTC hour + east-positive longitude/15 + harmonic equation of time/60; modulo 24",
+    "equation_of_time": "repository audit harmonic formula, gamma with 365/366-day year; subsecond precision retained",
+    "area": "sum of unique selected whole 70m native footprints; not city-clipped area or domain coverage fraction",
+    "plots": "all original passes, separate city figures, 1km and 8km percentile panels; no fitted curve"
+  },
+  "inputs": [
+    {
+      "path": "data/raw/v2/weather/hrrr_exact_acquisition_l1b_geo_D0047_archive_available/hrrr_hourly_domain_summary.csv",
+      "bytes": 157017,
+      "sha256": "b36f4d16d83055922b8e8a4d80c8bb75df3237417a4f03d018a64c633c39f0d1"
+    },
+    {
+      "path": "deliverables/Methodology_and_Expansion_v6_2_20260921/descriptive_vpd_temperature.csv",
+      "bytes": 3202,
+      "sha256": "15e981e5f941783346ecb7494254ccc092b2e75ec6a26519026c7066a96d614d"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/advance_20260921/phoenix_execution_manifest.json",
+      "bytes": 140995,
+      "sha256": "381a252d86e01d2a125596d32d2355047fca949cfb9b9c0948c04ea64ca42dbc"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/atlanta_execution_manifest.json",
+      "bytes": 405306,
+      "sha256": "7d0484124316e584cc927cc9e5c6782c1d473f8a725613745998f31bb388f449"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/limited_gradient_disclosure_20260919.json",
+      "bytes": 1081,
+      "sha256": "91e94b99ac56c96098a1f9ab44c2361b58a18f6080c4b5359caeeaa700ff58ec"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/nonlinear_association_20260930/numeric_support_freeze.json",
+      "bytes": 16556,
+      "sha256": "d1e04d87ad30e261a489fa649b557aa17a2dd5f53b811bc64d3417b4b8897cf5"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/phoenix_execution_manifest.json",
+      "bytes": 139446,
+      "sha256": "e776f517f07b5c526214b1152e07b530501c08a2b26e75913bbbe8e69994bcc8"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/results_review_20261004/scope.json",
+      "bytes": 9004,
+      "sha256": "eb7ada197a2f7b8e7f2ecffca2e250128b2b9b2d5d37385b95a2fcaa57eb8cbd"
+    },
+    {
+      "path": "outputs/v6_2/scientific/exploratory_review_20260921/gradient_disclosure.json",
+      "bytes": 649,
+      "sha256": "fd08dceb8160b80bbbb559843ba5301ba819be7b5f131f137db0fa4a6d5873c9"
+    },
+    {
+      "path": "outputs/v6_2/scientific/exploratory_review_20260921/pass_gradients_exploratory.csv",
+      "bytes": 14900,
+      "sha256": "bb7bef594662ae0462cabe459dd84ea54fb709482d2761e4cc6e15b3c72c9d71"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/28085_native_ownership_audit.csv",
+      "bytes": 604,
+      "sha256": "bab33452a9de4aa8dbd2e0fd9c2401e6e92a12024a69d7939576f9727230c0fa"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/28192_native_ownership_audit.csv",
+      "bytes": 604,
+      "sha256": "a85751609f253e2c4f0a56e26cbcdfb1ad6c997c1a1bde38bb444ac0e36e8050"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/28970_native_ownership_audit.csv",
+      "bytes": 604,
+      "sha256": "c24cc6a24a54f49746778a1311e53a957a7c1c772980855ec9016230073af38a"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/29092_native_ownership_audit.csv",
+      "bytes": 604,
+      "sha256": "69702b206b177d435af5459d106feda6de47f4188abc2cb13c0859523b84f399"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/29545_native_ownership_audit.csv",
+      "bytes": 601,
+      "sha256": "9ccec64c8badbfcdb44c7152bee3e44dc0d465ef425877e661c07e3b65ad6781"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/29606_native_ownership_audit.csv",
+      "bytes": 604,
+      "sha256": "fe3f1a0956512bc4ba41ace6c39f13f0a4112cced81dd386cb2164eeef6a7698"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/precision.csv",
+      "bytes": 11441,
+      "sha256": "49eb6199dc3897316431e9a7780020037524bef8d78af57445d382f8d4be1503"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_atlanta/native_ownership_audit.csv",
+      "bytes": 4441,
+      "sha256": "3300e1b66314ccba7a4331da18687802fa316a3906f397d5e58899292c286a34"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_atlanta/precision.csv",
+      "bytes": 16435,
+      "sha256": "b8889f08f82f8d48bc0522bc74fce0836cc6016eee8deac4046336dc7723b1f8"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_atlanta/spatial_stress_precision.csv",
+      "bytes": 4326,
+      "sha256": "16ee7666f32117bca257cfca1a760f94caab0bcfc5b8ad16bdeb64320fae2342"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_phoenix/native_ownership_audit.csv",
+      "bytes": 2398,
+      "sha256": "5ba8acf17cdd7ed3fd174ab95e0a5cc32d7ecd1cad5de1f24f86cbda9f078520"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_phoenix/precision.csv",
+      "bytes": 16555,
+      "sha256": "acab91b304fe0092e95909d6fa3ff11bcf7ab7757e50fc6baa31be098619202d"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_phoenix/spatial_stress_precision.csv",
+      "bytes": 4264,
+      "sha256": "7fd48009feeb405f5e7a11c8bc9635303f42311df86a33de0cbedee3ce56af88"
+    },
+    {
+      "path": "outputs/v6_2/scientific/scale_diagnostics_20260919/frozen_numeric_references.json",
+      "bytes": 519,
+      "sha256": "735e26b5bfc38bf987c19d4adc4e5742bb92c0321b8925743ba443745dbd2ecd"
+    }
+  ],
+  "code_at_freeze": [
+    {
+      "path": "src/v6_2_advance/results_packet.py",
+      "sha256": "e4c83a3bb22c35ebb638622fc40a45aea187a7b46a54593555acbecca766433c"
+    },
+    {
+      "path": "src/v6_2_advance/run_results_packet.py",
+      "sha256": "9abf5a4a04ed29987bf9ed959bc847484a0745c4143a9a54ec69b6d369f5931a"
+    },
+    {
+      "path": "tests/v6_2_advance/test_results_packet.py",
+      "sha256": "a5c7745c85033f5474272ab3fe896f35b5e5ddf07a823e9aab74679dc5247483"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/results_packet_20261004/build_results_csv.mjs",
+      "sha256": "f482dee7f60cbfb23747d8e94a07e1fd41f81a0c1f4d464ccc99a536ff264dd8"
+    }
+  ]
+}

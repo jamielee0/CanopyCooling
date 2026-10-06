@@ -1,0 +1,973 @@
+{
+  "selected_orbits": [
+    6281,
+    6510,
+    33496,
+    33623,
+    40111,
+    40192,
+    40376
+  ],
+  "paths": [
+    {
+      "path": "data/raw/footprints/ms_buildings_phoenix_bbox_4326.parquet",
+      "bytes": 155959570,
+      "sha256": "5c7f6ca3bd0d0af0be5d1680fe4d01cee9345ce554ba4cd44a94ede7e43e8567"
+    },
+    {
+      "path": "data/raw/landcover/nlcd_impervious_2021_30m.tif",
+      "bytes": 4066778,
+      "sha256": "5f440a49e726647edf66b3db74355c7593fb2f4fb843007155248de9c7b9bf0f"
+    },
+    {
+      "path": "data/raw/landcover/nlcd_landcover_class_2021_30m.tif",
+      "bytes": 2070202,
+      "sha256": "22fe867cc2074a2fe0286f4fcdb03a8b4b14694c0a0947115a24131c82b4dd1c"
+    },
+    {
+      "path": "data/raw/v2/context/annual_nlcd_c1_1_2024/phoenix_annual_nlcd_c1_1_2024_land_cover.tif",
+      "bytes": 11949443,
+      "sha256": "1afd90c8490d0dd49335d6556cfbdb69aa05ce9754602f1fa71e6863b960ee30"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_06281_009_12SUC_20190815T002338_0712_01_EmisWB.tif",
+      "bytes": 439422,
+      "sha256": "de8f3684d94434b20b61e0aa55a22bd2e1413f77ce7209fad64286a0316760dc"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_06281_010_12SUB_20190815T002430_0712_01_EmisWB.tif",
+      "bytes": 1794866,
+      "sha256": "006cd4c402054e70d5e994c51c330d3f550564000505f83bde80fc8bea7d8a3b"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_06281_010_12SUC_20190815T002430_0712_01_EmisWB.tif",
+      "bytes": 1488827,
+      "sha256": "4b68d7999b49b45f0f595a9626c171e44141983270681aab71694f9e2ad62f30"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_06281_010_12SVB_20190815T002430_0712_01_EmisWB.tif",
+      "bytes": 1817908,
+      "sha256": "00abc86b22b768e958901d437ba19e9f63fc38dc7bda489d41ab06d8aea101e1"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_06281_010_12SVC_20190815T002430_0712_01_EmisWB.tif",
+      "bytes": 1941340,
+      "sha256": "d59f7c949d92ed369d154c8e481e13578b5444741538d1e82d4b8bacc40676cb"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_06510_014_12SUB_20190829T183948_0712_01_EmisWB.tif",
+      "bytes": 2280270,
+      "sha256": "e9f6be78a2791924008633b612bd3e0e8a341c833bb6d6e69e63dc6e1d148799"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_06510_014_12SUC_20190829T183948_0712_01_EmisWB.tif",
+      "bytes": 2279403,
+      "sha256": "4e45d3fa09c16d8feb8fe587fe8df31be1c850b2a4c6486718a92edfbc891d28"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_06510_014_12SVB_20190829T183948_0712_01_EmisWB.tif",
+      "bytes": 2268529,
+      "sha256": "e1408cbfd1900ffebabfa5cc459ec49e732785270a27db4a888cab0e72254782"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_06510_014_12SVC_20190829T183948_0712_01_EmisWB.tif",
+      "bytes": 2235992,
+      "sha256": "ce14e7ce1eaff314df8a7dd46b57e4261357fb6e70b1c2013e4fd51f1609be22"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33496_005_12SUB_20240602T182710_0711_01_EmisWB.tif",
+      "bytes": 1946082,
+      "sha256": "eb78a9b283ecedba2e05435629e8bd28a24ce705392360310fd08149f2c5fca8"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33496_005_12SUC_20240602T182710_0711_01_EmisWB.tif",
+      "bytes": 1895193,
+      "sha256": "6bae9ffa9fd95006d567f0f462b803bae93a4472fed0b00223fbda957193bb77"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33496_005_12SVB_20240602T182710_0711_01_EmisWB.tif",
+      "bytes": 1810331,
+      "sha256": "36239d6f94ad4f9c3eb72a9d69e2e552cdf13e85f6fd25818faa223104a39787"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33496_005_12SVC_20240602T182710_0711_01_EmisWB.tif",
+      "bytes": 1834090,
+      "sha256": "d396dadac22246cb26fe1e8d21880a79a289699a47a2829a5eb7518c20a24c96"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33496_006_12SVC_20240602T182802_0711_01_EmisWB.tif",
+      "bytes": 66345,
+      "sha256": "f6db9aec01ccdbacba98e6a76b1955c8b1be4e1e46954c893ff14ce79bf8109f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33623_014_12SUB_20240610T231550_0711_01_EmisWB.tif",
+      "bytes": 79224,
+      "sha256": "c7ecc7f4356d876eb1d59e7a21934c7ea02e98ae17805128a58adcf1acc8cc80"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33623_014_12SUC_20240610T231550_0711_01_EmisWB.tif",
+      "bytes": 1073262,
+      "sha256": "05ff30a0dfd03c0d15f97b1c661fe97f2601f5d393d9f8131f327f147b30d4a6"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33623_014_12SVC_20240610T231550_0711_01_EmisWB.tif",
+      "bytes": 26907,
+      "sha256": "465118618b899967af800367fd2e057e144cdf7747e28ec01d6af200d309b639"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33623_015_12SUB_20240610T231642_0711_01_EmisWB.tif",
+      "bytes": 1853728,
+      "sha256": "6c58f980a834c218f6f5f4e42ac96c6531e2ac7e7b478d221b6baaa4a5c3c56a"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33623_015_12SUC_20240610T231642_0711_01_EmisWB.tif",
+      "bytes": 877973,
+      "sha256": "7798c4b90efbbd42ff3296bba7d8876dbb3efa980ed32c0f5755d5e041c4b407"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33623_015_12SVB_20240610T231642_0711_01_EmisWB.tif",
+      "bytes": 1712577,
+      "sha256": "c4f3f19e86ad35ad6352f5d19543c1f546ae1f3c0f86809dc869603a5754f581"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_33623_015_12SVC_20240610T231642_0711_01_EmisWB.tif",
+      "bytes": 1131029,
+      "sha256": "d4fe1ccea3dd0e978b0c6ced7b5e91cde0e6e5e5fb246243f545934a2595cb73"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40111_004_12SUB_20250802T175803_0713_01_EmisWB.tif",
+      "bytes": 1135304,
+      "sha256": "030a0e54141e67ebea4203ff0fa78a5e7ddd89368d4046d9cb432e1e0563a0f2"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40111_004_12SUC_20250802T175803_0713_01_EmisWB.tif",
+      "bytes": 54956,
+      "sha256": "c984d3ead87caf61f999a00701ec44447214f469881e88aec28cd0977920b39d"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40111_005_12SUB_20250802T175855_0713_01_EmisWB.tif",
+      "bytes": 886155,
+      "sha256": "20e751bbd3b13558340f1fc9ae19c1aa9fb0c84a4dfbc9438f7c5a69ee57cf8c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40111_005_12SUC_20250802T175855_0713_01_EmisWB.tif",
+      "bytes": 1813601,
+      "sha256": "db931e2e8a84e909d5748138d4170d5eb7fd66e6c0026471da31a5dbd6cb85d8"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40111_005_12SVB_20250802T175855_0713_01_EmisWB.tif",
+      "bytes": 1351026,
+      "sha256": "7cffdc85047996e35e5ce5008c6edce9b7de9cc56ee70fa4c3bcf0812b582b5b"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40111_005_12SVC_20250802T175855_0713_01_EmisWB.tif",
+      "bytes": 1897163,
+      "sha256": "d637af478090d74cc3ec66f0604db97e591c2c729eeb3c07db02eb853b52ad2a"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40192_014_12SUB_20250807T234028_0713_01_EmisWB.tif",
+      "bytes": 1902992,
+      "sha256": "22809348a6166ab65f8bf8427d8a034e7531a7e31d6a86cf5fd6814cfc0eb3f2"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40192_014_12SUC_20250807T234028_0713_01_EmisWB.tif",
+      "bytes": 1764081,
+      "sha256": "35a4b3c3c97d5e2b28094ae8ede7b751afe5423f1ea16cfaf688b8942c89f3b6"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40192_014_12SVB_20250807T234028_0713_01_EmisWB.tif",
+      "bytes": 1936690,
+      "sha256": "bbe2b75b83cbcead7ca4e3d0d7cd35f00ade8592117d17c8ba444d9540f052c5"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40192_014_12SVC_20250807T234028_0713_01_EmisWB.tif",
+      "bytes": 1823665,
+      "sha256": "de0594288e1cc3a01a75a1442ec155e159cd68d0c9a21fe16aa1f54a72e1a5e4"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40376_012_12SUC_20250819T184657_0713_01_EmisWB.tif",
+      "bytes": 81888,
+      "sha256": "38b1edc6aa4ac68c4bf59754458e9f9b33a56a5cbeb6f34654d07b655c1b2a6d"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40376_013_12SUB_20250819T184749_0713_01_EmisWB.tif",
+      "bytes": 575677,
+      "sha256": "980687f71197e9eccdb98892752a80f2f7d6ff673bdfe16f5dd6ae8df70b128a"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40376_013_12SUC_20250819T184749_0713_01_EmisWB.tif",
+      "bytes": 861677,
+      "sha256": "55767d862108c1dc68ec768b3851b226cc4e36a780f8c3dc524a41d790039565"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40376_013_12SVB_20250819T184749_0713_01_EmisWB.tif",
+      "bytes": 1492814,
+      "sha256": "eb7a2700c122e579d65465cb5d63eabd43894f73e591bcdfe078949725c74815"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/emissivity/ECOv002_L2T_LSTE_40376_013_12SVC_20250819T184749_0713_01_EmisWB.tif",
+      "bytes": 1878979,
+      "sha256": "8f968df816d8e4718407ea45a9152def204d853bda3953f5a94e3c97d41d573c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_009_12SUC_20190815T002338_0712_01_LST.tif",
+      "bytes": 822402,
+      "sha256": "50b5d26f3f424e1d189ac2192c26409fdcc624247482e41c21cd12e0be622fac"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_009_12SUC_20190815T002338_0712_01_QC.tif",
+      "bytes": 111516,
+      "sha256": "29b77d104b55b8ef78e104b9f3e895e509f570f6f072ccd823af8a75795e3a2f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_009_12SUC_20190815T002338_0712_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_009_12SUC_20190815T002338_0712_01_water.tif",
+      "bytes": 5645,
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SUB_20190815T002430_0712_01_LST.tif",
+      "bytes": 3354214,
+      "sha256": "918fd956f4bba5fc276609819ec36826410c9efe70492b565b33730a8523bf18"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SUB_20190815T002430_0712_01_QC.tif",
+      "bytes": 411785,
+      "sha256": "3515bd75a4838be7867280b15cc6798fc89ee2ed85a44bba9823ac79f8ff3c7c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SUB_20190815T002430_0712_01_cloud.tif",
+      "bytes": 5667,
+      "sha256": "f1858bf3c3ba043036f561b94091046055900062d6514fb2142c7ca923f5ad23"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SUB_20190815T002430_0712_01_water.tif",
+      "bytes": 5888,
+      "sha256": "2e1e8d68bc1dcada858a5d939ab66644c6e5bb4be2e28c7658d26ad693acdf08"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SUC_20190815T002430_0712_01_LST.tif",
+      "bytes": 2753473,
+      "sha256": "5be6f9c059235b6e9d5176a48b5409df030853fcc4f97c234e56c54e3be9debe"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SUC_20190815T002430_0712_01_QC.tif",
+      "bytes": 391813,
+      "sha256": "3a6d37e89bc5e6e2f66424263cb4d0046158aefe856b3e5f7ed67074f05797c3"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SUC_20190815T002430_0712_01_cloud.tif",
+      "bytes": 5659,
+      "sha256": "53a074b6253bec7e185e37af543888fac27586aa462127de7b77cf091b405252"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SUC_20190815T002430_0712_01_water.tif",
+      "bytes": 6853,
+      "sha256": "fb2ae049397cd668078dcb798fe994a842d6fde7d3103f6eb4216d1a14cc185c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SVB_20190815T002430_0712_01_LST.tif",
+      "bytes": 3419364,
+      "sha256": "05b9eb32c8d09cc05c8e8c965cc95702656a8fe4578f13137116e9370e7210e3"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SVB_20190815T002430_0712_01_QC.tif",
+      "bytes": 473044,
+      "sha256": "6ca47cb6b8c7cbd25717b5a75640a6c3f215e9249a8224f0406dbb40b7f8ecc7"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SVB_20190815T002430_0712_01_cloud.tif",
+      "bytes": 5667,
+      "sha256": "0285c0439379dbcf859c661873e86f459f4c9eb7b40c2d18b377e97e729d2748"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SVB_20190815T002430_0712_01_water.tif",
+      "bytes": 5819,
+      "sha256": "bb57000c4141caf23d1947bc5360d7bcc391316dc392c8e38d5dc1210dbe6e91"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SVC_20190815T002430_0712_01_LST.tif",
+      "bytes": 3618852,
+      "sha256": "555f5a07d716e51f1065c274d090e90480ef5f1feb1749ced4f81f049e9c70d4"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SVC_20190815T002430_0712_01_QC.tif",
+      "bytes": 513855,
+      "sha256": "b70d9bb8107b098ba74e111c8398d593291683c2ba414c7a6133a21eafba3eae"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SVC_20190815T002430_0712_01_cloud.tif",
+      "bytes": 10435,
+      "sha256": "230b4618b5d90ddbb08a0961193931e64e5f268a2279e90e93ab786950e12d59"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06281_010_12SVC_20190815T002430_0712_01_water.tif",
+      "bytes": 7959,
+      "sha256": "afcac0ec06107a1299006aafd27dc81851ed5264924477db45e7f2a851498fae"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SUB_20190829T183948_0712_01_LST.tif",
+      "bytes": 3911142,
+      "sha256": "f4fdd8b55ba65a8103becf295c86629e6ae05be04bc67ed63a9626a2b3e5e433"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SUB_20190829T183948_0712_01_QC.tif",
+      "bytes": 482806,
+      "sha256": "1ff8de2d147bbfadf151e96420de297e00ebeccd7fd8d159b5aa718d8f6c0843"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SUB_20190829T183948_0712_01_cloud.tif",
+      "bytes": 5934,
+      "sha256": "7baf14e68881d3db57027f3cc62508d1fe604f0e6aab460794de84fd3a93f67a"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SUB_20190829T183948_0712_01_water.tif",
+      "bytes": 5889,
+      "sha256": "0cf7e4ea2eafa98573beb08c71a0af98762ac171fc8a9c537f0a0cd6df94a1fc"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SUC_20190829T183948_0712_01_LST.tif",
+      "bytes": 3856881,
+      "sha256": "ffe424ea0dcd3d9af20e5b233577a40651b3a00b53f9c24531257a9c5090061f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SUC_20190829T183948_0712_01_QC.tif",
+      "bytes": 447896,
+      "sha256": "8bde5160803f623a94781a15808fe4a8fbed34b3f48747a5b3da17afcd71cc75"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SUC_20190829T183948_0712_01_cloud.tif",
+      "bytes": 5883,
+      "sha256": "6afe73c51b3ad9bee8c1fe508ad0fe29a9100b414e152839cff53d8bfafc4b8b"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SUC_20190829T183948_0712_01_water.tif",
+      "bytes": 6856,
+      "sha256": "cede3e81189b51763161d965ad74878c2affaccd20a1aaed817fdb8de4e70951"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SVB_20190829T183948_0712_01_LST.tif",
+      "bytes": 3863566,
+      "sha256": "f9fa15adfa23818a5a5c3879804c91b91e3e0534a3c085093a567632c23399dd"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SVB_20190829T183948_0712_01_QC.tif",
+      "bytes": 543060,
+      "sha256": "2b81156913945a5a517b497d1f011f29c9e819f63308bd2a3f6082ea640c0aa8"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SVB_20190829T183948_0712_01_cloud.tif",
+      "bytes": 5787,
+      "sha256": "e837f6016bdf9e43cf24547af482ed904dd2f2da08faa60fde0aee08db5c1537"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SVB_20190829T183948_0712_01_water.tif",
+      "bytes": 5850,
+      "sha256": "f044d16bde385fc0866bad5d965574727174338a5179001a4bfd1f40d8845429"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SVC_20190829T183948_0712_01_LST.tif",
+      "bytes": 3804831,
+      "sha256": "68f975cd4a13f98559381a99117e0eb9bb5b46cbff4a6a26ca1246f63099018b"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SVC_20190829T183948_0712_01_QC.tif",
+      "bytes": 448048,
+      "sha256": "fd632f82aeb9259613cf83f56a095702f30056e35df5a165b5f61b47ebff8d2f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SVC_20190829T183948_0712_01_cloud.tif",
+      "bytes": 5811,
+      "sha256": "b754ae59bfe872ffa774e5a1b56770007af60cc312be351cb04051aa18913da0"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_06510_014_12SVC_20190829T183948_0712_01_water.tif",
+      "bytes": 8036,
+      "sha256": "64a56c20b7add66ef560c0bb702bfdc0f1b9637aa36bd8ecb6386a588cbf384f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SUB_20240602T182710_0711_01_LST.tif",
+      "bytes": 3692725,
+      "sha256": "4600b02209115c6418256a7c4131acc1741ccce5c3e781375c797122d589e861"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SUB_20240602T182710_0711_01_QC.tif",
+      "bytes": 326994,
+      "sha256": "eb2419aaf3c6680920521608c3d14e993dcb3874fdb2f90610917b5699a204fe"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SUB_20240602T182710_0711_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SUB_20240602T182710_0711_01_water.tif",
+      "bytes": 5892,
+      "sha256": "8222ba874b16fc23fc3cb1b7e563e87fe440cafbfd9154b672f13f5e1573b2e4"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SUC_20240602T182710_0711_01_LST.tif",
+      "bytes": 3501173,
+      "sha256": "e68cd010035643d7ac72909272ea055e85c343ca0613e41ea866e6a6db47415f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SUC_20240602T182710_0711_01_QC.tif",
+      "bytes": 265184,
+      "sha256": "eab1a27a3869a867c77e37a7084a13b6c1961ede1198114d1d0a339fb209869c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SUC_20240602T182710_0711_01_cloud.tif",
+      "bytes": 6312,
+      "sha256": "ef0d74046495c69088a8b80fce7e4d9802398a09fbb2e808166bce5f5faa47f2"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SUC_20240602T182710_0711_01_water.tif",
+      "bytes": 6852,
+      "sha256": "1f223aff534eb667e9efc14cbec14bf132e30d6b4d34e07e838c2df3ca831f6c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SVB_20240602T182710_0711_01_LST.tif",
+      "bytes": 3640483,
+      "sha256": "88e38ec30a8184101ad6de5a28b7e389ecd439cb7083584282773b796db1960f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SVB_20240602T182710_0711_01_QC.tif",
+      "bytes": 238365,
+      "sha256": "e39b47194fa11e3b8287af3a62f97553acbd32d03444860f778b5b943e3a436a"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SVB_20240602T182710_0711_01_cloud.tif",
+      "bytes": 5651,
+      "sha256": "1a17385585ea223762514bbffee4d17ff134337fecf179e6dae4b5b425d52569"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SVB_20240602T182710_0711_01_water.tif",
+      "bytes": 5839,
+      "sha256": "e3dcd07dbe53bd73a977ae8db5c0fa6dd3dd2f949b9c6b3af725ee4870f956d6"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SVC_20240602T182710_0711_01_LST.tif",
+      "bytes": 3613933,
+      "sha256": "a1894a7c64efdddd0e7476840d4339643d1fafef80fa3ae00ccf1c996dbc89df"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SVC_20240602T182710_0711_01_QC.tif",
+      "bytes": 230235,
+      "sha256": "ef66425c6e3120861307ad31049767d8db09ca99240dd56be067cd1ccb6b25b5"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SVC_20240602T182710_0711_01_cloud.tif",
+      "bytes": 8087,
+      "sha256": "c72276f6f2108fe204e104bc760aaacccad70492229cabc678073066b90bf9e0"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_005_12SVC_20240602T182710_0711_01_water.tif",
+      "bytes": 8009,
+      "sha256": "170a07d0e820cfb6a714e80207200cdc13d5c9533e0b2c182537a31efe8956fa"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_006_12SVC_20240602T182802_0711_01_LST.tif",
+      "bytes": 107555,
+      "sha256": "1dc9b6b4f350e8209a392d5881c519e33aab8d25af8bd739a5e6fd3b385711dc"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_006_12SVC_20240602T182802_0711_01_QC.tif",
+      "bytes": 16503,
+      "sha256": "901dbc72705f6f8d96a23ec1b17b8825c7158bebf6a445490a0dcaf67db5a57d"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_006_12SVC_20240602T182802_0711_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "1d4459627d8a9675ab12dadd21bb28d082bb0c3e171c8d12ccf24a99402fa5e7"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33496_006_12SVC_20240602T182802_0711_01_water.tif",
+      "bytes": 5688,
+      "sha256": "20390f5b0844bd93c645843bbfba299f1f4cf59949856c4e78c7622e9ab92177"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SUB_20240610T231550_0711_01_LST.tif",
+      "bytes": 130901,
+      "sha256": "7883007f7c515a91d05acf7c2a979acfb3b0be58d1aa1ad084d5190ec52561ab"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SUB_20240610T231550_0711_01_QC.tif",
+      "bytes": 15161,
+      "sha256": "b4cd1bf0e4e669222affa53eff94cbabb170f761ea642f58ab3c598260bab41c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SUB_20240610T231550_0711_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SUB_20240610T231550_0711_01_water.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SUC_20240610T231550_0711_01_LST.tif",
+      "bytes": 2064169,
+      "sha256": "1fe22e3c66ad983c84e4dc8a1182943d2a95e707fe579697882c1936dea7652a"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SUC_20240610T231550_0711_01_QC.tif",
+      "bytes": 99425,
+      "sha256": "0cda9c6d5d5e6eff20c78159cd74e0ca8e0f608a05e7057ab87657f6968495fb"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SUC_20240610T231550_0711_01_cloud.tif",
+      "bytes": 5982,
+      "sha256": "0576ac82c6eb60feddafa111230e3c729b630463e220bc7cd125d4165b2ea9b9"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SUC_20240610T231550_0711_01_water.tif",
+      "bytes": 5668,
+      "sha256": "c8a942ac272a520439f9193d36e91b2d7a8de7024c6f4506a8756ad7bf446077"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SVC_20240610T231550_0711_01_LST.tif",
+      "bytes": 34146,
+      "sha256": "9d3569f935367f556ea237a4ef95459119d501917fdbe51eb2c4f3e5a96c1e17"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SVC_20240610T231550_0711_01_QC.tif",
+      "bytes": 9734,
+      "sha256": "9a7e7426d35285b098ca2f8c68946d98c2254eb6ca88eb150f63ee719d450cc6"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SVC_20240610T231550_0711_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "1d4459627d8a9675ab12dadd21bb28d082bb0c3e171c8d12ccf24a99402fa5e7"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_014_12SVC_20240610T231550_0711_01_water.tif",
+      "bytes": 5645,
+      "sha256": "1d4459627d8a9675ab12dadd21bb28d082bb0c3e171c8d12ccf24a99402fa5e7"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SUB_20240610T231642_0711_01_LST.tif",
+      "bytes": 3580971,
+      "sha256": "7b2bda1606c1645e87746699b8601808af5afda91d13feb4851f17ac62b66cfc"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SUB_20240610T231642_0711_01_QC.tif",
+      "bytes": 275960,
+      "sha256": "9e8cbb2cb25f542a025e217aa4c84d12e991a594da3c107c921a9b3ea4b13eb2"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SUB_20240610T231642_0711_01_cloud.tif",
+      "bytes": 11128,
+      "sha256": "b1ee77977787a84c4030672678256ac76ffc418e5ed2e7b37a5aa7d06a37873b"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SUB_20240610T231642_0711_01_water.tif",
+      "bytes": 5894,
+      "sha256": "05601ba6c1ed1a338f2b2e12e7eeb6aa7fbd902db1a4fd7d40d9aba46b9c1deb"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SUC_20240610T231642_0711_01_LST.tif",
+      "bytes": 1672114,
+      "sha256": "a4f4dd73a745eb6e89e6f230e96911173161e155b71ba0244964583a99dc7c52"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SUC_20240610T231642_0711_01_QC.tif",
+      "bytes": 119684,
+      "sha256": "5066ada505aba74c948e3cdb76ca28ca849a142d2a1f719e5ef05191c536f231"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SUC_20240610T231642_0711_01_cloud.tif",
+      "bytes": 7971,
+      "sha256": "5b6c280d7f820465e1401a3972d932c9fc42818a87e4957770b51ecfd8222a7a"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SUC_20240610T231642_0711_01_water.tif",
+      "bytes": 6836,
+      "sha256": "fb318fa5a21396c59e9ed680a1fea06fddcfc5109829617db5bede4d9ebbb7f0"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SVB_20240610T231642_0711_01_LST.tif",
+      "bytes": 3469725,
+      "sha256": "595665be0bfafe26ab8ecf418298529aa34ad590e24d65847c45ccf695e7f2ef"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SVB_20240610T231642_0711_01_QC.tif",
+      "bytes": 207660,
+      "sha256": "675efc0be62a37d3b6f40c892d39194823a1e289587a11fe06da68af8975d660"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SVB_20240610T231642_0711_01_cloud.tif",
+      "bytes": 9369,
+      "sha256": "b1b38c6369ba494a770d15abc4add8e4d8c37035e54454e587730544bed8a5f8"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SVB_20240610T231642_0711_01_water.tif",
+      "bytes": 5832,
+      "sha256": "3433e896204c71fbd66210e559258d962ae4588ee57faa7c388f38e834753f04"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SVC_20240610T231642_0711_01_LST.tif",
+      "bytes": 2198194,
+      "sha256": "3ad9663e5a5fb846808614b7adc8e554b6505abf0e690f317b9b776c0d6ab443"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SVC_20240610T231642_0711_01_QC.tif",
+      "bytes": 139731,
+      "sha256": "9be2bd230e19272f1933f5496832bad72abb5635ec9f806b616ef6bea922a21a"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SVC_20240610T231642_0711_01_cloud.tif",
+      "bytes": 8489,
+      "sha256": "954a26d33f82b3a99d04b85dfbceca0f91272823c2fe54e5b2deac3427c75d27"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_33623_015_12SVC_20240610T231642_0711_01_water.tif",
+      "bytes": 7938,
+      "sha256": "17db001218bd4ba57cf79e82d71d829ee6bd178cfa0fe1e023b2e4b129c62f15"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_004_12SUB_20250802T175803_0713_01_LST.tif",
+      "bytes": 2137376,
+      "sha256": "bb8ec626d5896e22bd1b4771a039dd793577b204030ebc4a71be1d2ab61c0ecb"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_004_12SUB_20250802T175803_0713_01_QC.tif",
+      "bytes": 215955,
+      "sha256": "b1897cbb85670776ca8171b8541a507530ae4d6b05bd1e6c0fdd875e27b74069"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_004_12SUB_20250802T175803_0713_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_004_12SUB_20250802T175803_0713_01_water.tif",
+      "bytes": 5716,
+      "sha256": "01350f933c1d181cba1ded3ef9eb3d9f3c40dfc7a4c6dcebc6f77a141b6c922a"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_004_12SUC_20250802T175803_0713_01_LST.tif",
+      "bytes": 88525,
+      "sha256": "a5198f8274af8776c32ee9486343572f110eeea5d77daddc90b2271c8a4816f0"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_004_12SUC_20250802T175803_0713_01_QC.tif",
+      "bytes": 15680,
+      "sha256": "54b57253713e861abe21933ed68345a83d7055786920ab88a1e3423c4062926f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_004_12SUC_20250802T175803_0713_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_004_12SUC_20250802T175803_0713_01_water.tif",
+      "bytes": 5645,
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SUB_20250802T175855_0713_01_LST.tif",
+      "bytes": 1650599,
+      "sha256": "4e0345b68de95caafe12ac6e6ab3e96a512986418824bafbf71a0a8a08084a2e"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SUB_20250802T175855_0713_01_QC.tif",
+      "bytes": 226846,
+      "sha256": "aebcb01719e5180e0f6393e19fb6b9e77bb3016ca93ebff44b1429726e94aefa"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SUB_20250802T175855_0713_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SUB_20250802T175855_0713_01_water.tif",
+      "bytes": 5839,
+      "sha256": "91fee5f6617dcd848894b94fb996a986b91349d1c3094dbed5d4befc22b13b5b"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SUC_20250802T175855_0713_01_LST.tif",
+      "bytes": 3554126,
+      "sha256": "b487e9b5449969c9863142da646114a5b3cfd9a4fe8e7450ef615bd0871f5a51"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SUC_20250802T175855_0713_01_QC.tif",
+      "bytes": 311828,
+      "sha256": "eeb3c6c74c6f324cd051778ff0327bf795b15b0fdea7d40f5d2637d6a85c3483"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SUC_20250802T175855_0713_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SUC_20250802T175855_0713_01_water.tif",
+      "bytes": 6852,
+      "sha256": "e45e032352da0fec78c16f18ddc11f8a079bbb9e7acbc3ba8bd0aa3c63b5a1d9"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SVB_20250802T175855_0713_01_LST.tif",
+      "bytes": 2633239,
+      "sha256": "6872b7f49da7e0cc20bafd2cdd5636becc9b66d3cc5b132dfc5b5e684b323199"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SVB_20250802T175855_0713_01_QC.tif",
+      "bytes": 309498,
+      "sha256": "886d4ef7abb1f448d6844ba5de0f5983511aadb1f8427dee44c9eef51a0b1c3f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SVB_20250802T175855_0713_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SVB_20250802T175855_0713_01_water.tif",
+      "bytes": 5832,
+      "sha256": "1d75687d824eceea443932579a5632bfba0bdf7ab9370dbc9fc5a321d265683c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SVC_20250802T175855_0713_01_LST.tif",
+      "bytes": 3687068,
+      "sha256": "a4ae817f0dab5d959d4a97d64a97523f450bc3d2271b03ab2125d12aa116bb2c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SVC_20250802T175855_0713_01_QC.tif",
+      "bytes": 333928,
+      "sha256": "b83dd5890b7a990765a831be5336cbb6ea0945da96268e5a1e44718a43ba8820"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SVC_20250802T175855_0713_01_cloud.tif",
+      "bytes": 7829,
+      "sha256": "05265b57e146b1c202eb1e30d10f1aba57ae5a4b409c7fd2bde1c222bd9ba686"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40111_005_12SVC_20250802T175855_0713_01_water.tif",
+      "bytes": 8027,
+      "sha256": "35f9c0acc92d818e754ed58bcf6852319b633401070b2b525006f3648e13c89c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SUB_20250807T234028_0713_01_LST.tif",
+      "bytes": 3606622,
+      "sha256": "baefedb718e2299ba178fc6c4114e8d62fe7eebc4d32c27d9d503f4064bcd74a"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SUB_20250807T234028_0713_01_QC.tif",
+      "bytes": 411054,
+      "sha256": "91f84d795f208e630eb4a23058d52f3096bcd1773a9f8a0bf5dce4d56cc8040c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SUB_20250807T234028_0713_01_cloud.tif",
+      "bytes": 6663,
+      "sha256": "9c88097457757562633423d3c8cae04c9ee69a01f6345c4e1c0a26bdff287166"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SUB_20250807T234028_0713_01_water.tif",
+      "bytes": 5890,
+      "sha256": "55b43bb3397e1d6a6ce4a69cd502cd5d9b5029fc00c45709029426123b58ad33"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SUC_20250807T234028_0713_01_LST.tif",
+      "bytes": 3456033,
+      "sha256": "ac1bc3a3257b11cc903c9bdcaa72962d3422049f831f23713ecf760d67397999"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SUC_20250807T234028_0713_01_QC.tif",
+      "bytes": 446388,
+      "sha256": "9d7a5e637a9c6929f49be06ababb132a279d8240b42997e8238e37f9f3ee6ba1"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SUC_20250807T234028_0713_01_cloud.tif",
+      "bytes": 22016,
+      "sha256": "7ca9e79e37b5a752b2f29e29f75fc5435f2a8dd51dbffe130852c37b07c55439"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SUC_20250807T234028_0713_01_water.tif",
+      "bytes": 6837,
+      "sha256": "da18262f1dd994561fed6cbcb4664d7334e2aaa8cd6bf55e6d16937081878b2c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SVB_20250807T234028_0713_01_LST.tif",
+      "bytes": 3564746,
+      "sha256": "064b2ceeef25ee30e98d0bf0f082d3692edd86dde5d4bfa86374c71251c60130"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SVB_20250807T234028_0713_01_QC.tif",
+      "bytes": 435310,
+      "sha256": "694ae8ac63febddb20d4247da32cc1b2eb6d2ea3223b03df788a7ee644835f0e"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SVB_20250807T234028_0713_01_cloud.tif",
+      "bytes": 14598,
+      "sha256": "0846fdfd716afd5036fd06a74915b420f1588dfe2a3658d649d14222869ca8d6"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SVB_20250807T234028_0713_01_water.tif",
+      "bytes": 5832,
+      "sha256": "a999df3127be9b4cc23a3094c91ea46888e900d772a52b72afb4c4e7eda43566"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SVC_20250807T234028_0713_01_LST.tif",
+      "bytes": 3462436,
+      "sha256": "cf68f3ca562fc8b41186e94dfc7cfbeceaa5bb2a2d5e8c3173d56b1ca3219dda"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SVC_20250807T234028_0713_01_QC.tif",
+      "bytes": 399901,
+      "sha256": "b1cc3174549a0c158d48e7d3b9965aa5b012af242105e59f87e98da4fa3f57a4"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SVC_20250807T234028_0713_01_cloud.tif",
+      "bytes": 28144,
+      "sha256": "c1a9eb610f94d348885ae69029abdbfb08a5992ab9e4f184c919bea92b69af1f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40192_014_12SVC_20250807T234028_0713_01_water.tif",
+      "bytes": 8025,
+      "sha256": "4e28f2b816624e2ce576a474a955fc929d9f97bee01f07c0f687aaaa321ab487"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_012_12SUC_20250819T184657_0713_01_LST.tif",
+      "bytes": 115388,
+      "sha256": "7efa431db4d53382564b1c2a7f00bd8d907b78600211a484a89bbdb72aa24d71"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_012_12SUC_20250819T184657_0713_01_QC.tif",
+      "bytes": 68863,
+      "sha256": "37446ef4e74bffad143ef1f94a4ad7524d971ca96c764731769a5e716bd3bdd7"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_012_12SUC_20250819T184657_0713_01_cloud.tif",
+      "bytes": 13522,
+      "sha256": "58081064ccb61dc9b8105409d6e0849fee5b77f1493aa33b73a3015e70f54893"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_012_12SUC_20250819T184657_0713_01_water.tif",
+      "bytes": 5645,
+      "sha256": "fcd2a2dbc28b8aa3a1eae2e80e10f26196a820b1b8fdf92ba8e7096da4cef08f"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SUB_20250819T184749_0713_01_LST.tif",
+      "bytes": 1028099,
+      "sha256": "b8aa506841c36f740f3877875c5792495deba6db9ca33118e3b271aba72940bb"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SUB_20250819T184749_0713_01_QC.tif",
+      "bytes": 253130,
+      "sha256": "6f58e4d8f53d9258090a5ae30e1d4e9b714d44e260c0bcd7a0e12372f64dee43"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SUB_20250819T184749_0713_01_cloud.tif",
+      "bytes": 27934,
+      "sha256": "4c02bd5ec41b7668509c44d9d47f9097fcee101438fc030a8d7018227489930c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SUB_20250819T184749_0713_01_water.tif",
+      "bytes": 5838,
+      "sha256": "6321f43480f893a0aa7b0021cab065fabad4ffdff6e9ee9967bab37e776ea1b4"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SUC_20250819T184749_0713_01_LST.tif",
+      "bytes": 1606410,
+      "sha256": "2825bd93c80a998d6f79a792a5411983adb5dabfaf4003e02e04a85adc98a9fa"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SUC_20250819T184749_0713_01_QC.tif",
+      "bytes": 386359,
+      "sha256": "fc63c0ed28a5d48d74f04feb496640ecea326ca25d93d2a4521f0a03d859c542"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SUC_20250819T184749_0713_01_cloud.tif",
+      "bytes": 28109,
+      "sha256": "cd25643bea01e0188ded094b5fefa309ccb3c1453cb301be7c0b5e701d8f9aef"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SUC_20250819T184749_0713_01_water.tif",
+      "bytes": 6845,
+      "sha256": "8c10814e9920e1fd9974779bb6fa6e59a03a1dd0ab2aa39e50a23007c12258e3"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SVB_20250819T184749_0713_01_LST.tif",
+      "bytes": 2857750,
+      "sha256": "6a043317407d47550cc5d8fc943c1e80a0623bfb9b9c7876659b44e1333a2001"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SVB_20250819T184749_0713_01_QC.tif",
+      "bytes": 452363,
+      "sha256": "d3b173892aa8f595dc8a9b118f03ee8d290d2d0d24a25dde9b38ff4c5073c341"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SVB_20250819T184749_0713_01_cloud.tif",
+      "bytes": 46165,
+      "sha256": "954d2377f9c1ed0c76202b90cef16752453ef5ad0bee353e705044b7a5e9df3e"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SVB_20250819T184749_0713_01_water.tif",
+      "bytes": 5839,
+      "sha256": "88e8eb4c94cc2d7833bfbcc4f5a6f6a368c8e11cfd18f497bbcd6fd29de96047"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SVC_20250819T184749_0713_01_LST.tif",
+      "bytes": 3736111,
+      "sha256": "55ee1e9105dc9228a243d3d9f9c33db5bbd45746d757bd630f2eda22f261ca0c"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SVC_20250819T184749_0713_01_QC.tif",
+      "bytes": 313583,
+      "sha256": "c502d2edf9c01fcf2651ad04eadaae044bd26fbcb2a3907506b1192372fc65e8"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SVC_20250819T184749_0713_01_cloud.tif",
+      "bytes": 10888,
+      "sha256": "fbf8c4e7a0b8d0bd883cebf8654e2ab1984f42258b4b632c7ab04bce4704b14a"
+    },
+    {
+      "path": "data/raw/v2/rebalance_v6_2_20260921/thermal/ECOv002_L2T_LSTE_40376_013_12SVC_20250819T184749_0713_01_water.tif",
+      "bytes": 8034,
+      "sha256": "e1b4289be18196833b0db056858f58ed6b5994a6e81e24b6f2f32ba19b896fe8"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2019_native30m.tif",
+      "bytes": 11720336,
+      "sha256": "4c60122b64eb9c22edb826d3d7186328814a723d4aac4a7c092737431cd5e014"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2020_native30m.tif",
+      "bytes": 11716750,
+      "sha256": "cb8bafc6f4e31212de116a30105dc389ff988e4755c9e1711b7f2c3addcd9f86"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2021_native30m.tif",
+      "bytes": 11719190,
+      "sha256": "7f96132b390ca7ae4646d9fb127637c3b4f273546033aadf5fc95cea285c117d"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2022_native30m.tif",
+      "bytes": 11692804,
+      "sha256": "9459ffa6fe1b9c3dcc784e3ef22fe6f0f45412c9b4886c030564574bb7064da5"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2023_native30m.tif",
+      "bytes": 11662505,
+      "sha256": "09fd5da75516a4e5037d320939420a66760e64baac30caa8808ca8dc3db673a3"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2024_native30m.tif",
+      "bytes": 11612320,
+      "sha256": "b58679582628b9af20475188e42df1734ea526b65346df4ff9f27da0879b21d4"
+    },
+    {
+      "path": "data/raw/v2/science_tcc_v2025_6/drive_exports/science_tcc_v2025-6_phoenix_2025_native30m.tif",
+      "bytes": 11562716,
+      "sha256": "358680e90059e8cf0794591f9c5dbb0d38f8e32cb8b5073a0a46dce1c5b73736"
+    },
+    {
+      "path": "data/raw/v2/usgs_3dep_10m/drive_exports/usgs_3dep_10m_phoenix_frozen_census_domain.tif",
+      "bytes": 158372549,
+      "sha256": "78e3459589e07e3c393a6a68b7803a9895cb8bd635129b624e4ecf7ac5c892b1"
+    }
+  ]
+}

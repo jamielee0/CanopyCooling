@@ -1,0 +1,151 @@
+[study]
+study_id = "urban_tree_cooling_v2"
+domain_vintage = "2020 Census Urban Areas"
+domain_service = "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Urban/MapServer/0"
+domain_analysis_topology_rule = "GEOS make_valid on the checksum-verified source geometry; retain polygonal components"
+ecostress_mgrs_partition_rule = "Clip each ~109.8 km quality-layer COG to its canonical 100 km MGRS core and canonical six-degree UTM zone before counting domain pixel centers"
+weather_start_year = 2018
+weather_end_year = 2025
+summer_start = "06-01"
+summer_end = "09-30"
+antecedent_windows_days = [30, 60]
+clear_sky_source = "ECMWF/ERA5/HOURLY total_cloud_cover at approximately 14:00 local solar time"
+clear_sky_max_cloud_fraction = 0.25
+corner_min_days = 10
+corner_min_share_each = 0.03
+max_abs_spearman = 0.80
+holdout_status = "UNSELECTED"
+holdout_city = ""
+
+[weather]
+step1_daily_source = "IDAHO_EPSCOR/GRIDMET"
+step1_clear_sky_source = "ECMWF/ERA5/HOURLY total_cloud_cover"
+clear_sky_target_local_solar_hour = 14.0
+clear_sky_hour_selection = "nearest UTC hour to target local solar hour"
+step2_hourly_primary = "HRRR"
+step2_hourly_adapter = "herbie-data public cloud archive"
+step2_hourly_vpd_interpolation = "linear in UTC between bracketing hourly analyses"
+step2_hourly_max_bracket_gap_hours = 3.0
+step2_hourly_sensitivity = "ERA5-Land"
+
+[ecostress]
+short_name = "ECO_L2T_LSTE"
+catalogue_version = "002"
+catalogue_concept_id = "C2076090826-LPCLOUD"
+candidate_version = "003"
+candidate_concept_id = "C3998139651-LPCLOUD"
+primary_version_reason = "Collection 3 exists in CMR but returned no searchable granules in the 2025 Phoenix audit window on 2026-08-01; use complete Collection 2 for Task 1 catalogue feasibility and re-audit before Step 4."
+daytime_start_hour = 10.0
+daytime_end_hour = 18.0
+time_strata_hours = [10.0, 12.0, 14.0, 16.0, 18.0]
+civil_twilight_solar_elevation_deg = -6.0
+near_nadir_max_view_zenith_deg = 20.0
+near_nadir_pass_statistic = "95th percentile absolute view zenith across valid frozen-domain pixels"
+near_nadir_minimum_view_coverage_fraction = 0.95
+cloud_survival_tolerance_percentage_points = 10.0
+cloud_primary_month = "2023-07"
+cloud_validation_month = "2022-07"
+cloud_expansion_sequence = ["2021-07", "2024-07", "2020-07", "2025-07", "2019-07", "2018-07"]
+cloud_expansion_rule = "If either reference city fails the initial July 2023 versus July 2022 tolerance, expand both cities together with July 2021/2024, then July 2020/2025, then July 2019/2018. After each complete stage, require every included city-month to be within 0.10 of that city's pooled leave-one-month-out estimate."
+cloud_dry_reference_city = "phoenix"
+cloud_humid_reference_city = "miami"
+cloud_reference_by_city = { phoenix = "phoenix", los_angeles = "phoenix", atlanta = "miami", minneapolis_st_paul = "miami", miami = "miami" }
+cloud_remediation_strategy = "exhaustive quality-layer census of every frozen pre-cloud candidate; no city/month/year extrapolation"
+cloud_remediation_decision_id = "D0033"
+cloud_remediation_expected_candidate_count = 107
+cloud_remediation_planning_count_rule = "floor(sum(clear_domain_fraction)) across the complete 107-candidate census"
+cloud_remediation_missing_candidate_rule = "fail incomplete; never drop or impute a missing candidate"
+geolocation_source = "ECO_L1B_GEO.002 L1GEOMetadata/GeolocationAccuracyQA"
+obstruction_source = "LP DAAC obst_all_sort.txt plus per-granule FieldOfViewObstruction"
+view_zenith_source = "ECO_L2T_LSTE.002 view_zenith COG clipped to frozen domain"
+cloud_source = "ECO_L2T_LSTE.002 cloud COG clipped to frozen domain"
+geometry_remediation_decision_id = "D0035"
+geometry_remediation_collection_concept_id = "C2076087338-LPCLOUD"
+geometry_remediation_expected_metadata_candidates = 942
+geometry_remediation_expected_city_scene_references = 1404
+geometry_remediation_expected_unique_l1b_scene_assets = 1370
+geometry_remediation_source = "ECO_L1B_GEO.002 /Geolocation/latitude, /Geolocation/longitude, and /Geolocation/view_zenith; latest build and revision per orbit/scene"
+geometry_remediation_target_grid = "canonical 70 m MGRS/UTM target-cell centers intersecting the frozen analysis domain"
+geometry_remediation_resampling = "nearest-neighbour from full-resolution L1B GEO swath pixels with 210 m radius of influence"
+geometry_remediation_overlap_rule = "retain the largest absolute finite L1B view zenith at multiply covered target cells"
+geometry_remediation_locator_stride = 32
+geometry_remediation_locator_margin_pixels = 64
+geometry_remediation_boundary_rule = "expand the full-resolution hyperslab until every subset edge is outside the frozen-domain 210 m search buffer; fail closed if this cannot be verified"
+geometry_remediation_minimum_view_coverage_fraction = 0.95
+geometry_remediation_max_view_zenith_p95_deg = 20.0
+geometry_remediation_missing_candidate_rule = "all 942 metadata candidates require a definitive geometry status; unresolved geometry fails the remediation"
+geometry_remediation_cloud_rule = "after geometry sealing, measure the official cloud layer for every passing candidate with no city/month/year extrapolation; every passing candidate requires a finite directly observed fraction"
+geometry_remediation_planning_count_rule = "floor(sum(clear_domain_fraction)) across the complete L1B-geometry candidate census"
+
+[simulation]
+seed = 20260801
+alpha = 0.05
+target_power = 0.80
+effect_sizes_k = [0.75, 1.50, 2.25]
+primary_effect_size_k = 1.50
+rows_per_pass = 24
+matched_sets_per_pass = 6
+pass_sd_k = 0.80
+matched_set_sd_k = 0.50
+row_sd_k = 1.50
+planning_pass_counts = [50, 100, 200, 400, 800]
+full_power_replicates = 200
+full_coverage_replicates = 60
+full_bootstrap_replicates = 120
+preliminary_power_replicates = 80
+preliminary_coverage_replicates = 10
+preliminary_bootstrap_replicates = 40
+large_n_max_abs_bias_k = 0.20
+null_rate_max = 0.10
+block_bootstrap_coverage_min = 0.90
+naive_coverage_gap_min = 0.10
+
+[[cities]]
+slug = "phoenix"
+label = "Phoenix"
+urban_area_geoid = "69184"
+urban_area_name = "Phoenix--Mesa--Scottsdale, AZ Urban Area"
+area_land_km2 = 2876.309892
+centroid_lat = 33.5014810
+centroid_lon = -111.9611870
+climate_role = "hot arid"
+
+[[cities]]
+slug = "los_angeles"
+label = "Los Angeles"
+urban_area_geoid = "51445"
+urban_area_name = "Los Angeles--Long Beach--Anaheim, CA Urban Area"
+area_land_km2 = 4242.653439
+centroid_lat = 33.9845493
+centroid_lon = -118.1231631
+climate_role = "Mediterranean"
+
+[[cities]]
+slug = "atlanta"
+label = "Atlanta"
+urban_area_geoid = "03817"
+urban_area_name = "Atlanta, GA Urban Area"
+area_land_km2 = 6612.798105
+centroid_lat = 33.8362691
+centroid_lon = -84.3365018
+climate_role = "humid subtropical"
+
+[[cities]]
+slug = "minneapolis_st_paul"
+label = "Minneapolis-Saint Paul"
+urban_area_geoid = "57628"
+urban_area_name = "Minneapolis--St. Paul, MN Urban Area"
+area_land_km2 = 2628.482929
+centroid_lat = 44.9742269
+centroid_lon = -93.2837529
+climate_role = "cold continental"
+
+[[cities]]
+slug = "miami"
+label = "Miami"
+urban_area_geoid = "56602"
+urban_area_name = "Miami--Fort Lauderdale, FL Urban Area"
+area_land_km2 = 3223.012183
+centroid_lat = 26.1955769
+centroid_lon = -80.2284942
+climate_role = "tropical humid"

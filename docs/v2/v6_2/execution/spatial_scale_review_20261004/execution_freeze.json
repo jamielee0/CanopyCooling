@@ -1,0 +1,1169 @@
+{
+  "created_utc": "2026-10-04T19:34:38.829173+00:00",
+  "record_date_local": "2026-10-04",
+  "authority": {
+    "request": "yes do the next step",
+    "plan_step": 3,
+    "user_tolerance_reply": "Not yet\u2014keep new effects sealed",
+    "internal_computation_authorized": true,
+    "new_effect_display_authorized": false
+  },
+  "status": "FROZEN_BEFORE_NEW_COMPARISONS",
+  "passes": [
+    {
+      "city": "atlanta",
+      "orbit": "27835",
+      "date": "2023-06-03",
+      "run_id": "pooled_pilot_20260919_atlanta",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "atlanta",
+      "orbit": "27896",
+      "date": "2023-06-07",
+      "run_id": "pooled_pilot_20260919_atlanta",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "atlanta",
+      "orbit": "27916",
+      "date": "2023-06-08",
+      "run_id": "pooled_pilot_20260919_atlanta",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "atlanta",
+      "orbit": "28145",
+      "date": "2023-06-23",
+      "run_id": "pooled_pilot_20260919_atlanta",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "atlanta",
+      "orbit": "28598",
+      "date": "2023-07-22",
+      "run_id": "pooled_pilot_20260919_atlanta",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "27963",
+      "date": "2023-06-11",
+      "run_id": "pooled_pilot_20260919_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28024",
+      "date": "2023-06-15",
+      "run_id": "pooled_pilot_20260919_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28085",
+      "date": "2023-06-19",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28192",
+      "date": "2023-06-26",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28706",
+      "date": "2023-07-29",
+      "run_id": "pooled_pilot_20260919_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28828",
+      "date": "2023-08-06",
+      "run_id": "pooled_pilot_20260919_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28909",
+      "date": "2023-08-11",
+      "run_id": "pooled_pilot_20260919_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "28970",
+      "date": "2023-08-15",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "29092",
+      "date": "2023-08-23",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "29545",
+      "date": "2023-09-21",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    },
+    {
+      "city": "phoenix",
+      "orbit": "29606",
+      "date": "2023-09-25",
+      "run_id": "pooled_extension_20260921_phoenix",
+      "variant": "paired_primary"
+    }
+  ],
+  "data_link_target": "/Users/jmlee/Documents/Documents - Jamie\u2019s Mac mini/TreeProject/project/data",
+  "design": {
+    "Phoenix_common_cell_passes": 11,
+    "paired_scale_passes": 16,
+    "joint_spatial_groups_km": [
+      1,
+      8
+    ],
+    "replicates_per_configuration": 1000,
+    "seed_rule": "20261004 + integer orbit; fresh identical multiplicities applied to original/common; fixed seed for each group-size sensitivity",
+    "multiplicity_universe": "union of original/common physical occupied blocks or 8km groups; common missing blocks contribute zero",
+    "mean_models": "unchanged archived canopy/context designs; reconstruct original/common point estimates before bootstrap",
+    "point_recovery_absolute_numerical_tolerance": 1e-08,
+    "numerical_tolerance_is_not_scientific_agreement_margin": true,
+    "reference": "hold historical September19 f0/f1/Tref/emissivity fixed; audit block support for all16 without reselection",
+    "paired_scale_uncertainty": "same archived T/M draws; exact fourth-root transform in each valid draw; report nonpositive anchor/nonestimability",
+    "reference_sensitivities": {
+      "temperature_offsets_K": [
+        -10,
+        0,
+        10
+      ],
+      "emissivity_offsets": [
+        -0.01,
+        0,
+        0.01
+      ],
+      "upper_emissivity_cap": 0.999
+    },
+    "registration_fixed_support": "validate existing24 differences by identical physical block labels, outcomes, complete-case counts, seeds, algorithm and actual array summaries",
+    "registration_available_support": "44 Phoenix shifted-minus-original points; separate constituent intervals only; no unsupported paired difference interval",
+    "predictor_distributions": "cell-weighted original/retained/excluded, all7 predictor variables; min/max and P1,5,10,25,50,75,90,95,99 plus mean/SD",
+    "map": "native cell centres of union of11 original footprints and their exact intersection; no interpolated LST",
+    "support_threshold": null,
+    "empirical_time_comparisons": 0,
+    "new_thermal_raster_reads": 0,
+    "scale_tolerance": null,
+    "scale_ruling": "not made; historical promotion rule excluded"
+  },
+  "inputs": [
+    {
+      "path": "deliverables/Results_Review_2023_v6_2_20261004/pass_results_long.csv",
+      "sha256": "3b037c2a2bfb85ac67a8c5634dd38e957237ab67c8e04b817d52cf3772cbd48d",
+      "bytes": 131461,
+      "role": "public_record"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/advance_20260921/phoenix_execution_manifest.json",
+      "sha256": "381a252d86e01d2a125596d32d2355047fca949cfb9b9c0948c04ea64ca42dbc",
+      "bytes": 140995,
+      "role": "public_record"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/atlanta_execution_manifest.json",
+      "sha256": "7d0484124316e584cc927cc9e5c6782c1d473f8a725613745998f31bb388f449",
+      "bytes": 405306,
+      "role": "public_record"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/nonlinear_association_20260930/numeric_support_freeze.json",
+      "sha256": "d1e04d87ad30e261a489fa649b557aa17a2dd5f53b811bc64d3417b4b8897cf5",
+      "bytes": 16556,
+      "role": "public_record"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/phoenix_execution_manifest.json",
+      "sha256": "e776f517f07b5c526214b1152e07b530501c08a2b26e75913bbbe8e69994bcc8",
+      "bytes": 139446,
+      "role": "public_record"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/results_review_20261004/scope.json",
+      "sha256": "eb7ada197a2f7b8e7f2ecffca2e250128b2b9b2d5d37385b95a2fcaa57eb8cbd",
+      "bytes": 9004,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/28085_baseline_rebuild_validation.json",
+      "sha256": "80d08f4f1d76736b2324fd35f98683c8523e4cdd2991e235fa246a0be00ad5c4",
+      "bytes": 434,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/28192_baseline_rebuild_validation.json",
+      "sha256": "770b2105a3102bdd7e7721d25cbe0330527f259ba8d3246c190e35b5d29bb361",
+      "bytes": 434,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/28970_baseline_rebuild_validation.json",
+      "sha256": "01735874ee9e8f1d489388e5ce25905c612da7daee5960414c30f06810de0b05",
+      "bytes": 434,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/29092_baseline_rebuild_validation.json",
+      "sha256": "fe64bc6d5dcd5837d8d26d7a68e773f64859e75a425713c1a0e5cfe0ff6a444a",
+      "bytes": 434,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/29545_baseline_rebuild_validation.json",
+      "sha256": "d3ef62055889ee7cfa67d6b253c0c7142a8c179337c53bbc17215ead2f48b176",
+      "bytes": 434,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/29606_baseline_rebuild_validation.json",
+      "sha256": "2d8738fcb5f78eef0ce72c4d78d31f1846a73c919afd5dee921f641eac041247",
+      "bytes": 434,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/common_cell_retention.csv",
+      "sha256": "7dce29bf1c074c0a3e7e9f1265263d3a92a104c42533cf43ccd55ddb3df9f56c",
+      "bytes": 485,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/common_cell_support.json",
+      "sha256": "78240b4f5fc67095b19b52f46533fcd7b5752c5c128613434aa620012446e886",
+      "bytes": 284,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/completion.json",
+      "sha256": "813532ab99e25ad60d498a90049e26d258711be71a0c2dc11ed63cb8da2e8b6a",
+      "bytes": 469,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/execution_freeze.json",
+      "sha256": "40193689b4d0c646da2f35d6c48a208e4b36d45517404acbe1df5cc2a1c4e07c",
+      "bytes": 4844,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/matched_support_comparison_freeze.json",
+      "sha256": "f50fca4e7ecd2a71397f29aca5dce15d3fd0a6000dffcf59106b494a8085d49c",
+      "bytes": 4227,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/matched_support_comparison_validation.json",
+      "sha256": "51032be272be8aad39683bd2936e7b5128143ef8e73a5b7975597be2efe6d825",
+      "bytes": 4991,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/precision.csv",
+      "sha256": "320ec527d16d5201d62c5f087cd751c80f695687a98e814bdfed31081067c676",
+      "bytes": 27792,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/phoenix_robustness_20260923/registration_support.csv",
+      "sha256": "7792ac0cc4d265e515aa6d6b6e490fa0d5e7142ffa8cf2d180fb39eeef9fa113",
+      "bytes": 1397,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_extension_20260921_phoenix/precision.csv",
+      "sha256": "49eb6199dc3897316431e9a7780020037524bef8d78af57445d382f8d4be1503",
+      "bytes": 11441,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_atlanta/precision.csv",
+      "sha256": "b8889f08f82f8d48bc0522bc74fce0836cc6016eee8deac4046336dc7723b1f8",
+      "bytes": 16435,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_atlanta/residual_spatial_diagnostics.csv",
+      "sha256": "77007baecf24fee720d68898be31419f6ae7831966a95050450f033363a0c53a",
+      "bytes": 1330,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_phoenix/precision.csv",
+      "sha256": "acab91b304fe0092e95909d6fa3ff11bcf7ab7757e50fc6baa31be098619202d",
+      "bytes": 16555,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/pooled_pilot_20260919_phoenix/residual_spatial_diagnostics.csv",
+      "sha256": "a8e9bfbc075d4b8885f2849c6459c236e5d9387ef88c09bc53bef34acb73cf15",
+      "bytes": 1329,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/scientific/scale_diagnostics_20260919/frozen_numeric_references.json",
+      "sha256": "735e26b5bfc38bf987c19d4adc4e5742bb92c0321b8925743ba443745dbd2ecd",
+      "bytes": 519,
+      "role": "public_record"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/27963_common_cells_all11_SEALED.npz",
+      "sha256": "2db561c0352d2b9de3b518504feae978fea5c8f85957031a99ee1295c2a68799",
+      "bytes": 202596,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28024_common_cells_all11_SEALED.npz",
+      "sha256": "382300bf3e7035154a6b7838a7ed03217caf7a11c22e662f55559dee7e95edb6",
+      "bytes": 202949,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_common_cells_all11_SEALED.npz",
+      "sha256": "1911bc5247b7339cb69c0fc3cd81f3ab8e791c8a666d680f0d8c89912d4e72bb",
+      "bytes": 203105,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_dx-1_dy0_SEALED.npz",
+      "sha256": "7f7e20f485c02cd558dd30db83b991717702d54a628ea5704726fdc47150f052",
+      "bytes": 286177,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_dx0_dy-1_SEALED.npz",
+      "sha256": "ed4093b52430fa0d1e41ae290ef560b6c8015758a98fa545013185ff8d11e409",
+      "bytes": 286153,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_dx0_dy1_SEALED.npz",
+      "sha256": "4e3458d1e5778041f917adb5454bf7c5119285097a5fff06830502bd98dbe61a",
+      "bytes": 286177,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_dx1_dy0_SEALED.npz",
+      "sha256": "d1711823b58070136cea5e7af3ba78312b964cb50f11279a6f89b3f93b077713",
+      "bytes": 286569,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "sha256": "24014cfa37b3031dde6e85349c0be76554733a30e6d391144f4be7956a93af02",
+      "bytes": 286238,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "sha256": "4a0980d73c9967e836309bc7e89bf754a17e89fd91781ed2b7153bde9458295c",
+      "bytes": 286330,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "sha256": "f774af3811879ceea838905a449cb4c0fb14f25196707399f928f83d6f0f83a2",
+      "bytes": 286221,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "sha256": "656db90e13786e8252183785d82c7bc113edc0f6eb29fd9b6f236c3ca5a98af7",
+      "bytes": 286260,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28085_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "sha256": "c8c6f9168a05226bb005aebcc2e2add4d52e65f978ba96fbdc1b8a40a8fb1638",
+      "bytes": 286450,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_common_cells_all11_SEALED.npz",
+      "sha256": "5a6b83cea85557ae931460eafcb64239e9c0b5ffcad6c91bdc4e57fdfe71d429",
+      "bytes": 202584,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_dx-1_dy0_SEALED.npz",
+      "sha256": "5de4a0948c1d61bab2ef7581d54763229cd58069dc60fda0925bb655bce11a6f",
+      "bytes": 288700,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_dx0_dy-1_SEALED.npz",
+      "sha256": "0b46c301ee8b78e86f6b590c12121203bd4be2d5ecb1ceee35a7222073ddcbfc",
+      "bytes": 288505,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_dx0_dy1_SEALED.npz",
+      "sha256": "d680b84c54fd85c827e014532e74eb68ca032d93dfba3b9338bcb3768036c627",
+      "bytes": 288463,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_dx1_dy0_SEALED.npz",
+      "sha256": "4b8778a4e862266bd00884a6268beeb3c7878ce555d621ac3eada3a9fff46a2c",
+      "bytes": 288957,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "sha256": "a66cbb794318e85cf11b83fc2c1bbb817bde96704f41e7db6e4a3366effdfe54",
+      "bytes": 288635,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "sha256": "ced222ab66f3800cab75dba552e700e77d3108acf9e31e19825a02dec6aa354c",
+      "bytes": 288782,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "sha256": "d7a62291afc73cf3e4b1454f3944072d13a153be606d95b7f5edc5f8139d8308",
+      "bytes": 288705,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "sha256": "bc8f923ab9feb94827968919514c0b6dea76a27d7ef5315b61b4db56adb37e90",
+      "bytes": 288724,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28192_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "sha256": "4a9d66e4cfc5786fe6cd9801cc972b53abc8fae08222e84a1c46442037322d5d",
+      "bytes": 288950,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28706_common_cells_all11_SEALED.npz",
+      "sha256": "7cd9496d5a129c4af8a19f6a39265ce07fb106b2898b32b15db05bd20f9182af",
+      "bytes": 203000,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28828_common_cells_all11_SEALED.npz",
+      "sha256": "9aba74b723d40d8b1969f6140b784364f5b687d6b2cb37593d0c943bf9ca1a5b",
+      "bytes": 202742,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28909_common_cells_all11_SEALED.npz",
+      "sha256": "1c459349267d0890dd279bd6cda1c6902a2292621e80fb02f5ab5641cd46e3aa",
+      "bytes": 203489,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_common_cells_all11_SEALED.npz",
+      "sha256": "afe3789340bb88184519f2e7da6ad1028d0d7f2c359f92db44c88ec1ca24a39e",
+      "bytes": 203558,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_dx-1_dy0_SEALED.npz",
+      "sha256": "e5c7f1909e455ae24db89a513aa151555401663e9ce21837d50a652bf9133535",
+      "bytes": 275735,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_dx0_dy-1_SEALED.npz",
+      "sha256": "f9355d6b934e314f2446cb0e71fdd4df1e5cdf6dd9b7ca5b33da09965dee5037",
+      "bytes": 275392,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_dx0_dy1_SEALED.npz",
+      "sha256": "bce0df0e9030c1cee1f9ed29a2eb7871cd079a12a367fb46559a0cf9f379cd9e",
+      "bytes": 275390,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_dx1_dy0_SEALED.npz",
+      "sha256": "7d92e870b7ebc05349a1e97d295ddf48ccbfd84da4912d5b6233b7ffe819f4e9",
+      "bytes": 275911,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "sha256": "44dadd5a1d14c7b8419688e92268528ca15997fe927418c7a2682b77709b8b39",
+      "bytes": 274684,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "sha256": "306662453ae2a3d69100d91ae3b812cebb1c833b2b9eea4307b84aa2ac485fe0",
+      "bytes": 274866,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "sha256": "55205f2380b25f1c167d13151fa37dbf6b31cb4bfc3eba38c3583c68ba42ee8b",
+      "bytes": 274682,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "sha256": "06ea07f20d9c1cb17a5d97cb642c4a5c97fade7fd4d509e3136a02c682956a89",
+      "bytes": 274722,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/28970_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "sha256": "f107a9fc67b3aa2e0886d88566cc0273e38ef1b5751d53eefe9f9654b2b66bb4",
+      "bytes": 274989,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_common_cells_all11_SEALED.npz",
+      "sha256": "b7fc535f3b6da685ff253f225d09c89987bd9be41427d8ce1a8bb48b3cf22626",
+      "bytes": 203058,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_dx-1_dy0_SEALED.npz",
+      "sha256": "27c751431b240f9f49be448fb658088e7aae7dc0958fb97bc99e792e5ed23bdd",
+      "bytes": 288764,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_dx0_dy-1_SEALED.npz",
+      "sha256": "a156e55deac01f6d1409457c9c8cb2dda772e2f46713f40568276e2c06071028",
+      "bytes": 288585,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_dx0_dy1_SEALED.npz",
+      "sha256": "8f801c65203122be4ff6387942c67019d444de060bf3bbbe658f53777390b64a",
+      "bytes": 288673,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_dx1_dy0_SEALED.npz",
+      "sha256": "86babba1671ffe9cec67b86f686f41ef046c3c9152c23fe0a61864a73c80cd45",
+      "bytes": 289155,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "sha256": "44e3628954277c8e6b64709b66aeb46d234b9c9b0301793c715137a34ef0482c",
+      "bytes": 288859,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "sha256": "28b0ff3927be997ae2b846365dafe10dc69d5c6d626b204a893ccdc59b170b03",
+      "bytes": 288976,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "sha256": "c0dd03144b8ab847a666de0675dde8f05c9410022c2f67975302a9d5a04774ee",
+      "bytes": 288868,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "sha256": "a52b77b428fe874508e5249fbaabfc411478bf74a83676a5dcd93d3d5d81cad5",
+      "bytes": 288908,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29092_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "sha256": "cc50646748945ee7b70f7a337470567789d40c2b3e6df7277a42df1e75db635e",
+      "bytes": 289095,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_common_cells_all11_SEALED.npz",
+      "sha256": "0fa535d6a9f1e67ed6ec6f622450a70aeab4a4649fc5012d316445495c406ca5",
+      "bytes": 203122,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_dx-1_dy0_SEALED.npz",
+      "sha256": "914a46db8f0bac8e9d19f95eff486a2ec8b5b127251a052ca3593a745590822b",
+      "bytes": 235206,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_dx0_dy-1_SEALED.npz",
+      "sha256": "9f28ae5187a103129e17216cf5719e10f9ed686fd887bb45c5cfb4efd6342f84",
+      "bytes": 234817,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_dx0_dy1_SEALED.npz",
+      "sha256": "e574ff2ebabcd1cbcc4df7da83b7cb43e3b79ecf2af0292179606708517fa185",
+      "bytes": 235208,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_dx1_dy0_SEALED.npz",
+      "sha256": "48a78f16f98aa7a68bcf57db345e113c302c0446d17ad4c3fd8dc12ed73f1542",
+      "bytes": 235304,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "sha256": "89b81f3eb2f5108b47da180549d5101528c69838a062f9b18b9606fc5e868af0",
+      "bytes": 234721,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "sha256": "564c396901e649e4afe1e83652d723e57d074ce427d8ec876b7dc3d886ed32b7",
+      "bytes": 234577,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "sha256": "ff49e15d699b2fd9024b5955a9883dc1c5548f99b96661ba74272369ae431dc1",
+      "bytes": 234595,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "sha256": "e69cfede01fe9a7ad7961f034559748da5499724ec74c566d3d0289c476fac8b",
+      "bytes": 234787,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29545_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "sha256": "5bcbae1aab7f4342db939395739f734cb5a56a4983be523ed1127a7cef0761b1",
+      "bytes": 234881,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_common_cells_all11_SEALED.npz",
+      "sha256": "89dd6916ac717d08a234fe775dfeaf8994cb6486f5f2a5c2b1137ac2d116dd6e",
+      "bytes": 202617,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_dx-1_dy0_SEALED.npz",
+      "sha256": "3ce2190c0b0cba2d0c53e78af21af09a4b7d48581ecb125b80a1d1ed9df837f5",
+      "bytes": 288268,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_dx0_dy-1_SEALED.npz",
+      "sha256": "b25b2e280e49edd2eb26396067bf301ccc00f0f5a16d19a8a92f1c9f41d6bb64",
+      "bytes": 288130,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_dx0_dy1_SEALED.npz",
+      "sha256": "62e656d084b5298ffaabe02d98cde6bd54dbb7bb11b02773853de28c74502271",
+      "bytes": 288112,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_dx1_dy0_SEALED.npz",
+      "sha256": "0dad894af5a5e4c7da8f434a140f7deec4092bced4dc9a794379b18a323eb2db",
+      "bytes": 288594,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_fixed_support_dx-1_dy0_SEALED.npz",
+      "sha256": "6b4a258266e0deba23ed5e6a0f7314fe3e21e84858297b237af9025f471e42ee",
+      "bytes": 288443,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_fixed_support_dx0_dy-1_SEALED.npz",
+      "sha256": "ff9749f84982f9c65e59603dd8da48b86a26352cb4a85518502921402523f788",
+      "bytes": 288519,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_fixed_support_dx0_dy0_SEALED.npz",
+      "sha256": "9af3d923c291042e0a3b55c72896efe428e257d2288414c96a877660b7dc01c1",
+      "bytes": 288464,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_fixed_support_dx0_dy1_SEALED.npz",
+      "sha256": "84f714bc17a114fabdee5077174b7a63d28d2bfe103f64b87ee7ec2218fea256",
+      "bytes": 288501,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/29606_registration_fixed_support_dx1_dy0_SEALED.npz",
+      "sha256": "6fd569d843ee4c56717c2c6055501b0e4a7b302eca1c0d7b4bcc402105cbf45e",
+      "bytes": 288655,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/phoenix_robustness_20260923/registration_matched_support_comparisons_SEALED.json",
+      "sha256": "113085420971c95dee49047e42277a4cb0de60e1351f881283cacdfcd7e25bc6",
+      "bytes": 13621,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_native_cells_SEALED.parquet",
+      "sha256": "c99e449075d720f2c06ff4755ba55bd7204a3556ea5a5adef4bfc74795b17bc5",
+      "bytes": 14295686,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_primary_SEALED.npz",
+      "sha256": "85a22a18dcc31af88813eae23b48cb15465064185ba34b2dc01adbecee57af70",
+      "bytes": 286598,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_spatial_8km_SEALED.npz",
+      "sha256": "7b41a46dd5cd3e8412a90c8690ac17b8c92782a9a410ddec2f87418d04d5c8d9",
+      "bytes": 286701,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_native_cells_SEALED.parquet",
+      "sha256": "4cdeb2ceaca6d37d6b1b63ffceefb6134fc7ec07dc576db641af778fd9e6ea58",
+      "bytes": 14446960,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_primary_SEALED.npz",
+      "sha256": "3afa45c4419327748df5fe9e6d6c0b2defdfead45656914bad4bbfa5395b98e4",
+      "bytes": 288982,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_spatial_8km_SEALED.npz",
+      "sha256": "183a3bf6728a845fff498ef487813fcd6b7a4c75006d6a1a46a134d1c0658205",
+      "bytes": 289096,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_native_cells_SEALED.parquet",
+      "sha256": "116793cc2d9c41feb8acdc7b3e23c1452f5bd434d96bfb7858dca1e3e075da26",
+      "bytes": 12466825,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_primary_SEALED.npz",
+      "sha256": "21317a656c1c2e4923ecacd24ae4357ad3362a53a59c6436d19187c532af1624",
+      "bytes": 276098,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_spatial_8km_SEALED.npz",
+      "sha256": "1986394e2ced9ba3884126deea810598400cb68a623f13e88f7847694314be4f",
+      "bytes": 276132,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_native_cells_SEALED.parquet",
+      "sha256": "d3a46602378ab9b36f589264bfed1c6617f1bccfc961c89fd7a702d6f941405a",
+      "bytes": 14626192,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_primary_SEALED.npz",
+      "sha256": "905a81d8ef8658b2d02e4aaa2fd3b6708fcbc23c3e289916917cf0f35f496077",
+      "bytes": 289072,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_spatial_8km_SEALED.npz",
+      "sha256": "ac4cf861e53945dc8ea7dddcac0dd1ac7d0a9480014d1cf5dc94d5b86f166bbc",
+      "bytes": 289162,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_native_cells_SEALED.parquet",
+      "sha256": "033782207ae1fe2eff6b759f158d7d6205599edd4e37cf96ffb22a2fd9b4d541",
+      "bytes": 9474032,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_primary_SEALED.npz",
+      "sha256": "02411030aff4aa00dd113b716e860c491f6a8f59eb2c54dfdec1e4bf3d4a1057",
+      "bytes": 235334,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_spatial_8km_SEALED.npz",
+      "sha256": "d09210cb527d027734c7c666d16d7eac45d3f8553c4c1e2c0995764499409abe",
+      "bytes": 235400,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_native_cells_SEALED.parquet",
+      "sha256": "6e9c255eda75c6ddcbadda2e290389ed205d9419b51ac160d787036b12167d44",
+      "bytes": 14344484,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_primary_SEALED.npz",
+      "sha256": "b72769e6c0f3f667cd5274abdee9d2aa9bf2b2110b45998f1358466a9a1d0714",
+      "bytes": 288683,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_spatial_8km_SEALED.npz",
+      "sha256": "46a30104608013e67a4aaa8bd08371261ccfeaddc0e121da382f8ce4f0e8baf2",
+      "bytes": 288773,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27835_paired_native_cells_SEALED.parquet",
+      "sha256": "2600d51837fa9a3e046a1a9e787838a0ccc50bb323b381e546d9aedce4b526f4",
+      "bytes": 16746964,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27835_paired_primary_SEALED.npz",
+      "sha256": "af173d7f3b54a6f9bac5ad05cd5f03e2b08647c23cdb0dcc434e030f553eb482",
+      "bytes": 494499,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27835_spatial_8km_SEALED.npz",
+      "sha256": "c71e742856982590b020489c5b932160554366e2fe5d9dfa693a58e1cb1d9a50",
+      "bytes": 108856,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27896_paired_native_cells_SEALED.parquet",
+      "sha256": "9611ce9360762851904fe1a8b5585013c814939d36d7cd3264ba9658d08ec664",
+      "bytes": 17433392,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27896_paired_primary_SEALED.npz",
+      "sha256": "c905eef9be159bcf34cd2810af95b56ac36df90f2ea4fc50e7a79ba4ebea9978",
+      "bytes": 507461,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27896_spatial_8km_SEALED.npz",
+      "sha256": "eed12ca018701b3091269750cbd1e1a52f1e7b28b52c4bdfc105f413076dff88",
+      "bytes": 108719,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27916_paired_native_cells_SEALED.parquet",
+      "sha256": "1e96787a993abdc929b1c7eb2b4bc39d0e502532eb653f4eac4e8da6e757c80c",
+      "bytes": 16341413,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27916_paired_primary_SEALED.npz",
+      "sha256": "4906683fe10ff2a545c8c9f45d86a45f5e922345254e2f5309f01221d0602e90",
+      "bytes": 488086,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27916_spatial_8km_SEALED.npz",
+      "sha256": "c5f928df9bfd6f8f1b0dd88e40041cf56511a18de7dec21f4716bde4cd2cf211",
+      "bytes": 109132,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28145_paired_native_cells_SEALED.parquet",
+      "sha256": "7f5bdaf4645997c3a9e2dcb959b83a9db64a3ab5365b46cd25f09be20011cf06",
+      "bytes": 9806316,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28145_paired_primary_SEALED.npz",
+      "sha256": "62f86376dae7a7f27940a0294690cd931ef34ca1702a64314ef9b560935ea1ed",
+      "bytes": 364759,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28145_spatial_8km_SEALED.npz",
+      "sha256": "65a34c1ffe57d2667dd317be7510cfd562cde20c7038c51727b3808be39e78e5",
+      "bytes": 109149,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28598_paired_native_cells_SEALED.parquet",
+      "sha256": "1800ff20c9087dd62e46460f1cceda3ae00033739f1b06bd736a0e5779a034d2",
+      "bytes": 9114279,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28598_paired_primary_SEALED.npz",
+      "sha256": "586906d9713133642d77dcac640fd2b102f88aa64862c107753b0e9c17861c91",
+      "bytes": 357097,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28598_spatial_8km_SEALED.npz",
+      "sha256": "192b369cdf550cddd63198b2ad1939d5b82177b262b4e743f9262d0f73585d5d",
+      "bytes": 109279,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet",
+      "sha256": "f0316cbd2288a293a3d8167476347ff4e6bc771ae7350921a728a16f6b182ea9",
+      "bytes": 13477642,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_primary_SEALED.npz",
+      "sha256": "83950760556113cfbe0bd4250bc5ccc213cfbf1986930344f0c64aa239ba89c6",
+      "bytes": 288318,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_registration_dx-1_dy0_SEALED.npz",
+      "sha256": "73840da91d52bd1a4f4c2fdf62dc5ca1e3fc481438158ca6418a29f80ea070d2",
+      "bytes": 287835,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_registration_dx0_dy-1_SEALED.npz",
+      "sha256": "ef6607b5cd2c25947a8a3509e46641c3b0f9dec5b7ff789fedb22d07a43b34ea",
+      "bytes": 287765,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_registration_dx0_dy1_SEALED.npz",
+      "sha256": "84c4d96dce73242a5ff2c1e492b9b14f801f725b33f432e9c6678404f9e38328",
+      "bytes": 287872,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_registration_dx1_dy0_SEALED.npz",
+      "sha256": "9bc8144e0c9284c8841f605aa1f644e8dffaa88b8538c0724e89cda2f9e0b1db",
+      "bytes": 288155,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_spatial_8km_SEALED.npz",
+      "sha256": "4fc7437f624a4b15478230447aafb8be26b2d96449878be5556bda2a0010ebe6",
+      "bytes": 109178,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_native_cells_SEALED.parquet",
+      "sha256": "47b712521ba258e29b751d5f82fe0f5c9b5f600c2c43af930dfdc91ffe406798",
+      "bytes": 13655821,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_primary_SEALED.npz",
+      "sha256": "1195818ecf346ac945059f6a3bf6d800dcd0454bd054e9410db7c0e0e31f7649",
+      "bytes": 280661,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_registration_dx-1_dy0_SEALED.npz",
+      "sha256": "0f36331ae438c7bd63a6d66d4d63500cb0ee8f83e556578792fcb05c7dbd2085",
+      "bytes": 280403,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_registration_dx0_dy-1_SEALED.npz",
+      "sha256": "1442fcf5f14e7d23df6d435a0bdb688846701dde0f08bd15f93f2129b70d08d6",
+      "bytes": 280269,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_registration_dx0_dy1_SEALED.npz",
+      "sha256": "cb8ae9bc44e6a1f77dd6b469292e57710f0ffd43b1d33c87aa62d8879977b15d",
+      "bytes": 280052,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_registration_dx1_dy0_SEALED.npz",
+      "sha256": "ed32ffab7a6ec249c4fb4456ee0c61218451876704e97bdd0f2ea5dbb8272944",
+      "bytes": 280642,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_spatial_8km_SEALED.npz",
+      "sha256": "73712953e3478deb222f33846846c8c47744876e7ac96b260a5ec7858c8f7a2d",
+      "bytes": 109021,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_native_cells_SEALED.parquet",
+      "sha256": "cfd98b1f2e726b22fa7500c41f04690c39e7a7ec764b24742e0215034d91f6a2",
+      "bytes": 14663224,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_primary_SEALED.npz",
+      "sha256": "88370c62f57ed8915615e6c193c90a14d11adce883e9b1ec767c6be1620af0c0",
+      "bytes": 289071,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_registration_dx-1_dy0_SEALED.npz",
+      "sha256": "b428fba48ad17caeb19c66f47cb04d195fc3c0f38a92b892e491630b88f920e5",
+      "bytes": 288779,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_registration_dx0_dy-1_SEALED.npz",
+      "sha256": "51c86b63e467ae77eed46f8fba44fa3dd1ab9dadeb28ff4d681cd33a3bec84b6",
+      "bytes": 288639,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_registration_dx0_dy1_SEALED.npz",
+      "sha256": "a14bbdb53fb82cc1941d97b8c2e6a90f4466d49b885076369c163a4db973d569",
+      "bytes": 288664,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_registration_dx1_dy0_SEALED.npz",
+      "sha256": "4549f536ed55484a288044158c52c61c6896a6c23149ccf0260b74d298c66eb2",
+      "bytes": 289036,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_spatial_8km_SEALED.npz",
+      "sha256": "408335903e46f9c9c52e096da28a7796438d23322fc11d44df81a859b0feeab4",
+      "bytes": 109265,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_native_cells_SEALED.parquet",
+      "sha256": "b550e55bbb5aeb6ea04fe33d3fad11e3ba4d5bcaae24fe825e1dfa625a2179f4",
+      "bytes": 14625060,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_primary_SEALED.npz",
+      "sha256": "ad27d67eb9f53408c507b8bd09fd280e46bf0f2ce061d1b79fb7838024cc28fe",
+      "bytes": 288862,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_registration_dx-1_dy0_SEALED.npz",
+      "sha256": "c0358ca245be15f12f9ca6c4d96fdcce5658cbb67d318edb52c052f8d6de5841",
+      "bytes": 288470,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_registration_dx0_dy-1_SEALED.npz",
+      "sha256": "686f1c584f5ed4d92ea58aa117c67c860c082594b67bcc94b078cacff6f7a420",
+      "bytes": 288457,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_registration_dx0_dy1_SEALED.npz",
+      "sha256": "515e2b3740bb87361992111d8973247fcbc797a9cbcae47274abd52d4444fc43",
+      "bytes": 288392,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_registration_dx1_dy0_SEALED.npz",
+      "sha256": "23f058f541c4e36c2211c4749cc6fd94e3eb9437d2e592a3d19865e51f179355",
+      "bytes": 288742,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_spatial_8km_SEALED.npz",
+      "sha256": "9b8d22f53e0e3d1bd2bff74e35f367c352884266ec81d272bac376554bbd5c38",
+      "bytes": 109341,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_native_cells_SEALED.parquet",
+      "sha256": "f41faa1bec1bcffd7372cf8b96c5e7483d414670ac48c33cdc0bedafaf9c9548",
+      "bytes": 11474541,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_primary_SEALED.npz",
+      "sha256": "4c0f694677232cebba59c590195d26520db73ec54e3fa3d919a196e3a2de1266",
+      "bytes": 263198,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_registration_dx-1_dy0_SEALED.npz",
+      "sha256": "77ee6650c13e9817c4431c5cd8e4aab3899fc3dedf6950cc19d8404d4ea357cf",
+      "bytes": 262692,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_registration_dx0_dy-1_SEALED.npz",
+      "sha256": "5b88479890636a0c6a495542ee92b4af0d6118cc8fbea63f6b26a3470156fe47",
+      "bytes": 262739,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_registration_dx0_dy1_SEALED.npz",
+      "sha256": "dee0157437a52871ac69b52d93873a1bc1ac31e536e6be7d2cf407925b9def5e",
+      "bytes": 262682,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_registration_dx1_dy0_SEALED.npz",
+      "sha256": "b136d9e5a1bde5f2515ce63fb8aa262dfbbb65893d75cb32ca4c7964bf1df0d2",
+      "bytes": 263073,
+      "role": "sealed_input"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_spatial_8km_SEALED.npz",
+      "sha256": "60d5694c48c737fa727bd8a845b9a802fa39896c55b46316a116674eb603f9f9",
+      "bytes": 109141,
+      "role": "sealed_input"
+    }
+  ],
+  "code_at_freeze": [
+    {
+      "path": "src/v6_2_advance/spatial_review.py",
+      "sha256": "58165109320d54658c2a1fbd09098b13bf21a34b755c14efa22b5e2d0e724938"
+    },
+    {
+      "path": "src/v6_2_advance/run_spatial_review.py",
+      "sha256": "9090261c8b1837afc6fcb9e03ba905d53137b0cb88cc44ab803f478ea5c2eed2"
+    },
+    {
+      "path": "src/v6_2_advance/plot_spatial_review.py",
+      "sha256": "e642c87ebb820f994299ae9ab0ef7f0f136aa76222d74cb8585bb5d6d19be21d"
+    },
+    {
+      "path": "tests/v6_2_advance/test_spatial_review.py",
+      "sha256": "9c97ad5dc958e77f4039de20c6ed40ec2da7c939a3e25608406328af1cda8063"
+    },
+    {
+      "path": "src/urban_cooling_v2/pooled_city_pass.py",
+      "sha256": "0434337b39c76dcdbba3fcb9695869aff8c483784e8521274fdb9b2869942d22"
+    },
+    {
+      "path": "src/urban_cooling_v2/pilot_scale.py",
+      "sha256": "22da21c6b499883ea59de501b6d32f7cd0beb5a13b1673c8dbddd08e6bf5edd2"
+    },
+    {
+      "path": "src/v6_2_advance/run_robustness_completion.py",
+      "sha256": "85f432ae72d4f3c31db9c64dee693b873f20e8bbe16f93259bd02aecbc680bbc"
+    },
+    {
+      "path": "src/v6_2_advance/finish_robustness_comparisons.py",
+      "sha256": "eac0abe60e40ba6632b0979ab008e024346daf132e98c4252ea20aa1f5a72eaa"
+    },
+    {
+      "path": "src/urban_cooling_v2/v6_2_output_boundary.py",
+      "sha256": "16ffab193ed2fd3b14cb81148e029ee8e835cef0f43971dbbd6f7f5cc672906c"
+    },
+    {
+      "path": "docs/v2/v6_2/execution/spatial_scale_review_20261004/build_public_tables.mjs",
+      "sha256": "a791b54158fbd337cd09a6466b9ffbd7ff3bc6642f80c1fdef84ea21a97f0bf1"
+    }
+  ]
+}

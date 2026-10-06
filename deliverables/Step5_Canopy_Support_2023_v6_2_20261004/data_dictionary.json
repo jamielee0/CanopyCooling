@@ -1,0 +1,506 @@
+{
+  "endpoint_support.csv": [
+    {
+      "column": "city",
+      "meaning": "Frozen city identifier"
+    },
+    {
+      "column": "orbit",
+      "meaning": "Acquisition orbit as identifier text"
+    },
+    {
+      "column": "date",
+      "meaning": "2023 acquisition date"
+    },
+    {
+      "column": "month",
+      "meaning": "Calendar month"
+    },
+    {
+      "column": "apparent_solar_hour",
+      "meaning": "UTC/longitude/equation-of-time clock from the unchanged Step2 convention"
+    },
+    {
+      "column": "source_run_id",
+      "meaning": "Original paired native-cell run"
+    },
+    {
+      "column": "pair_id",
+      "meaning": "All15 prospectively recorded candidate contrasts, never selected by effects"
+    },
+    {
+      "column": "n_original_cells",
+      "meaning": "All unique original paired native cells"
+    },
+    {
+      "column": "n_original_blocks",
+      "meaning": "All occupied original 1km blocks"
+    },
+    {
+      "column": "f0",
+      "meaning": "Lower raw-canopy endpoint, fraction"
+    },
+    {
+      "column": "f1",
+      "meaning": "Upper raw-canopy endpoint, f0+0.10"
+    },
+    {
+      "column": "halfwidth_fraction",
+      "meaning": "Descriptive endpoint halfwidth in canopy fraction; no inclusion threshold"
+    },
+    {
+      "column": "spanning_blocks",
+      "meaning": "Blocks with observed min canopy \u2264f0 and max \u2265f1"
+    },
+    {
+      "column": "reference_cells",
+      "meaning": "All original cells in spanning blocks; models are not restricted here"
+    },
+    {
+      "column": "reference_whole_native_area_km2",
+      "meaning": "reference_cells\u00d70.0049 km\u00b2, whole native footprints in native UTM projection; not city-clipped area"
+    },
+    {
+      "column": "reference_cell_fraction",
+      "meaning": "Reference cells / original cells"
+    },
+    {
+      "column": "endpoint_status",
+      "meaning": "BLOCK_SPANNED or NO_BLOCK_SPANS_BOTH_ENDPOINTS; neighbourhood proximity alone is insufficient"
+    },
+    {
+      "column": "lower_band_lo",
+      "meaning": "Lower endpoint: clipped lower edge of closed endpoint neighbourhood"
+    },
+    {
+      "column": "lower_band_hi",
+      "meaning": "Lower endpoint: clipped upper edge of closed endpoint neighbourhood"
+    },
+    {
+      "column": "lower_cells",
+      "meaning": "Lower endpoint: all original cells in neighbourhood"
+    },
+    {
+      "column": "lower_blocks",
+      "meaning": "Lower endpoint: blocks represented by neighbourhood cells"
+    },
+    {
+      "column": "lower_cells_in_reference",
+      "meaning": "Lower endpoint: neighbourhood cells in exact-spanning reference blocks"
+    },
+    {
+      "column": "lower_fraction",
+      "meaning": "Lower endpoint: neighbourhood cells / original cells"
+    },
+    {
+      "column": "lower_density_per_fraction",
+      "meaning": "Lower endpoint: neighbourhood fraction divided by actual clipped band width"
+    },
+    {
+      "column": "upper_band_lo",
+      "meaning": "Upper endpoint: clipped lower edge of closed endpoint neighbourhood"
+    },
+    {
+      "column": "upper_band_hi",
+      "meaning": "Upper endpoint: clipped upper edge of closed endpoint neighbourhood"
+    },
+    {
+      "column": "upper_cells",
+      "meaning": "Upper endpoint: all original cells in neighbourhood"
+    },
+    {
+      "column": "upper_blocks",
+      "meaning": "Upper endpoint: blocks represented by neighbourhood cells"
+    },
+    {
+      "column": "upper_cells_in_reference",
+      "meaning": "Upper endpoint: neighbourhood cells in exact-spanning reference blocks"
+    },
+    {
+      "column": "upper_fraction",
+      "meaning": "Upper endpoint: neighbourhood cells / original cells"
+    },
+    {
+      "column": "upper_density_per_fraction",
+      "meaning": "Upper endpoint: neighbourhood fraction divided by actual clipped band width"
+    },
+    {
+      "column": "blocks_with_both_neighbourhoods",
+      "meaning": "Blocks containing at least one observation in each endpoint neighbourhood; may differ from exact spanning blocks"
+    },
+    {
+      "column": "cells_in_both_neighbourhoods",
+      "meaning": "Cells counted in both closed bands when they touch; explicitly reported to avoid treating counts as disjoint"
+    }
+  ],
+  "endpoint_covariate_profiles.csv": [
+    {
+      "column": "city",
+      "meaning": "Frozen city identifier"
+    },
+    {
+      "column": "orbit",
+      "meaning": "Acquisition orbit as identifier text"
+    },
+    {
+      "column": "date",
+      "meaning": "2023 acquisition date"
+    },
+    {
+      "column": "month",
+      "meaning": "Calendar month"
+    },
+    {
+      "column": "apparent_solar_hour",
+      "meaning": "UTC/longitude/equation-of-time clock from the unchanged Step2 convention"
+    },
+    {
+      "column": "source_run_id",
+      "meaning": "Original paired native-cell run"
+    },
+    {
+      "column": "halfwidth_fraction",
+      "meaning": "Descriptive endpoint halfwidth in canopy fraction; no inclusion threshold"
+    },
+    {
+      "column": "endpoint",
+      "meaning": "Lower or upper endpoint of historical contrast"
+    },
+    {
+      "column": "variable",
+      "meaning": "One of six unchanged context controls"
+    },
+    {
+      "column": "unit",
+      "meaning": "Fraction or m as appropriate to control"
+    },
+    {
+      "column": "n",
+      "meaning": "Number of cell values entering distribution; zero is preserved"
+    },
+    {
+      "column": "min",
+      "meaning": "min of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p05",
+      "meaning": "p05 of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p25",
+      "meaning": "p25 of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "median",
+      "meaning": "median of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p75",
+      "meaning": "p75 of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p95",
+      "meaning": "p95 of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "max",
+      "meaning": "max of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "mean",
+      "meaning": "mean of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "sd",
+      "meaning": "sd of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    }
+  ],
+  "design_diagnostics.csv": [
+    {
+      "column": "city",
+      "meaning": "Frozen city identifier"
+    },
+    {
+      "column": "orbit",
+      "meaning": "Acquisition orbit as identifier text"
+    },
+    {
+      "column": "date",
+      "meaning": "2023 acquisition date"
+    },
+    {
+      "column": "month",
+      "meaning": "Calendar month"
+    },
+    {
+      "column": "apparent_solar_hour",
+      "meaning": "UTC/longitude/equation-of-time clock from the unchanged Step2 convention"
+    },
+    {
+      "column": "source_run_id",
+      "meaning": "Original paired native-cell run"
+    },
+    {
+      "column": "model",
+      "meaning": "Linear (f) or protected quadratic (f,f\u00b2) predictor design; no outcome fit"
+    },
+    {
+      "column": "status",
+      "meaning": "Design estimability or descriptive-distance availability, not an effect/overlap acceptance verdict"
+    },
+    {
+      "column": "n_cells",
+      "meaning": "All original paired native observations used by design"
+    },
+    {
+      "column": "n_blocks",
+      "meaning": "Original occupied 1km intercept blocks"
+    },
+    {
+      "column": "n_parameters",
+      "meaning": "Retained slope/context columns excluding block intercepts"
+    },
+    {
+      "column": "rank",
+      "meaning": "Rank of column-normalized block-centered design at frozen tolerance 1e-10"
+    },
+    {
+      "column": "residual_dof",
+      "meaning": "n_cells \u2212 n_blocks \u2212 n_parameters"
+    },
+    {
+      "column": "protected_terms",
+      "meaning": "Mandatory canopy basis columns; one linear, two quadratic"
+    },
+    {
+      "column": "removed_context_terms",
+      "meaning": "JSON array of context dependencies removed before canopy rank check under inherited rule; no protected canopy term removed"
+    },
+    {
+      "column": "scaled_design_condition",
+      "meaning": "Largest / smallest singular value of column-normalized within-block design; descriptive numerical conditioning"
+    },
+    {
+      "column": "scaled_design_smallest_singular",
+      "meaning": "Smallest singular value of that normalized design"
+    },
+    {
+      "column": "partial_canopy_term",
+      "meaning": "raw_f for linear or raw_f_squared for quadratic"
+    },
+    {
+      "column": "partial_canopy_information",
+      "meaning": "Sum squared residual of designated canopy term after all other retained columns; fraction\u00b2 for f or fraction\u2074 for f\u00b2; no outcome information"
+    },
+    {
+      "column": "partial_canopy_effective_information_blocks",
+      "meaning": "Inverse sum squared block shares of partial canopy information; not independent days"
+    },
+    {
+      "column": "maximum_partial_canopy_information_share",
+      "meaning": "Largest block share of partial canopy information"
+    },
+    {
+      "column": "top_five_partial_canopy_information_share",
+      "meaning": "Sum of five largest such shares"
+    }
+  ],
+  "design_resampling.csv": [
+    {
+      "column": "city",
+      "meaning": "Frozen city identifier"
+    },
+    {
+      "column": "orbit",
+      "meaning": "Acquisition orbit as identifier text"
+    },
+    {
+      "column": "date",
+      "meaning": "2023 acquisition date"
+    },
+    {
+      "column": "month",
+      "meaning": "Calendar month"
+    },
+    {
+      "column": "apparent_solar_hour",
+      "meaning": "UTC/longitude/equation-of-time clock from the unchanged Step2 convention"
+    },
+    {
+      "column": "source_run_id",
+      "meaning": "Original paired native-cell run"
+    },
+    {
+      "column": "group_km",
+      "meaning": "1km or8km whole physical resampling groups, retaining original 1km intercepts"
+    },
+    {
+      "column": "groups",
+      "meaning": "Number of occupied physical resampling groups"
+    },
+    {
+      "column": "requested",
+      "meaning": "1000 design-only multinomial draws per pass/group configuration"
+    },
+    {
+      "column": "linear_estimable",
+      "meaning": "Draws whose frozen linear Gram matrix retains full rank at 1e-10"
+    },
+    {
+      "column": "quadratic_estimable",
+      "meaning": "Draws whose frozen quadratic Gram matrix retains full rank at 1e-10"
+    },
+    {
+      "column": "paired_estimable",
+      "meaning": "Draws estimable in both designs using identical physical multiplicities"
+    },
+    {
+      "column": "paired_failed",
+      "meaning": "Requested minus paired_estimable; no replacement"
+    },
+    {
+      "column": "draw_multiplicity_sha256",
+      "meaning": "Hash of exact ordered int64 multiplicity vectors for reproducibility"
+    }
+  ],
+  "cross_city_context_distances.csv": [
+    {
+      "column": "city",
+      "meaning": "Frozen city identifier"
+    },
+    {
+      "column": "orbit",
+      "meaning": "Acquisition orbit as identifier text"
+    },
+    {
+      "column": "date",
+      "meaning": "2023 acquisition date"
+    },
+    {
+      "column": "month",
+      "meaning": "Calendar month"
+    },
+    {
+      "column": "apparent_solar_hour",
+      "meaning": "UTC/longitude/equation-of-time clock from the unchanged Step2 convention"
+    },
+    {
+      "column": "source_run_id",
+      "meaning": "Original paired native-cell run"
+    },
+    {
+      "column": "endpoint",
+      "meaning": "Lower or upper endpoint of historical contrast"
+    },
+    {
+      "column": "halfwidth_fraction",
+      "meaning": "Descriptive endpoint halfwidth in canopy fraction; no inclusion threshold"
+    },
+    {
+      "column": "query_cells",
+      "meaning": "Up to2000 uniformly sampled cells per pass/endpoint/width, without replacement"
+    },
+    {
+      "column": "other_city_reference_cells",
+      "meaning": "Equal-size other-city reference pool, deduplicated by physical cell_id; max5000"
+    },
+    {
+      "column": "status",
+      "meaning": "Design estimability or descriptive-distance availability, not an effect/overlap acceptance verdict"
+    },
+    {
+      "column": "min",
+      "meaning": "min of dimensionless standardized six-control Euclidean distance; SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p05",
+      "meaning": "p05 of dimensionless standardized six-control Euclidean distance; SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p25",
+      "meaning": "p25 of dimensionless standardized six-control Euclidean distance; SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "median",
+      "meaning": "median of dimensionless standardized six-control Euclidean distance; SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p75",
+      "meaning": "p75 of dimensionless standardized six-control Euclidean distance; SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p95",
+      "meaning": "p95 of dimensionless standardized six-control Euclidean distance; SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "max",
+      "meaning": "max of dimensionless standardized six-control Euclidean distance; SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "mean",
+      "meaning": "mean of dimensionless standardized six-control Euclidean distance; SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "sd",
+      "meaning": "sd of dimensionless standardized six-control Euclidean distance; SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    }
+  ],
+  "cross_city_reference_profiles.csv": [
+    {
+      "column": "city",
+      "meaning": "Frozen city identifier"
+    },
+    {
+      "column": "endpoint",
+      "meaning": "Lower or upper endpoint of historical contrast"
+    },
+    {
+      "column": "halfwidth_fraction",
+      "meaning": "Descriptive endpoint halfwidth in canopy fraction; no inclusion threshold"
+    },
+    {
+      "column": "variable",
+      "meaning": "One of six unchanged context controls"
+    },
+    {
+      "column": "n",
+      "meaning": "Number of cell values entering distribution; zero is preserved"
+    },
+    {
+      "column": "min",
+      "meaning": "min of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p05",
+      "meaning": "p05 of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p25",
+      "meaning": "p25 of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "median",
+      "meaning": "median of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p75",
+      "meaning": "p75 of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "p95",
+      "meaning": "p95 of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "max",
+      "meaning": "max of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "mean",
+      "meaning": "mean of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    },
+    {
+      "column": "sd",
+      "meaning": "sd of the named control's units (fraction; elevation/distance_to_water in m); SD uses ddof=1; quantiles use existing numeric convention; empty support is blank, not zero"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+.netrc
+*.pem
+*.key
+*.npz
+*.parquet
+*.tif
+*.tiff
+data/
+outputs/

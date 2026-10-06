@@ -1,0 +1,482 @@
+{
+  "missing_encoding": "empty CSV cell is missing/not applicable, never zero",
+  "new_effect_values": "withheld at user's explicit request",
+  "tables": {
+    "spatial_precision_review.csv": [
+      {
+        "column": "city",
+        "unit": "identifier or ISO date",
+        "definition": "Frozen pilot city",
+        "missing": "never missing"
+      },
+      {
+        "column": "orbit",
+        "unit": "identifier or ISO date",
+        "definition": "Acquisition orbit, identifier text",
+        "missing": "never missing"
+      },
+      {
+        "column": "date",
+        "unit": "identifier or ISO date",
+        "definition": "Acquisition date in 2023, YYYY-MM-DD",
+        "missing": "never missing"
+      },
+      {
+        "column": "kind",
+        "unit": "category",
+        "definition": "Constituent original/common/registration precision, fresh joint common-minus-original difference, or validated archived fixed-support difference",
+        "missing": "never missing"
+      },
+      {
+        "column": "variant",
+        "unit": "label",
+        "definition": "Explicit fit or uncertainty configuration; do not treat variants as independent acquisitions",
+        "missing": "never missing"
+      },
+      {
+        "column": "source_run_id",
+        "unit": "identifier or ISO date",
+        "definition": "Original cached frame/model run identity",
+        "missing": "never missing"
+      },
+      {
+        "column": "group_km",
+        "unit": "km",
+        "definition": "Whole spatial-group side length; mean models retain 1km block intercepts",
+        "missing": "never missing"
+      },
+      {
+        "column": "n_cells",
+        "unit": "cells",
+        "definition": "Constituent fit sample; for joint difference, common sample size\u2014original size is in support table",
+        "missing": "never missing"
+      },
+      {
+        "column": "n_blocks",
+        "unit": "blocks",
+        "definition": "Constituent fit blocks; for joint difference, common 1km blocks",
+        "missing": "never missing"
+      },
+      {
+        "column": "groups",
+        "unit": "groups",
+        "definition": "Resampling groups; joint differences use union of occupied original/common physical groups",
+        "missing": "never missing"
+      },
+      {
+        "column": "bootstrap_requested",
+        "unit": "draws",
+        "definition": "Requested existing or fresh resampling draws",
+        "missing": "never missing"
+      },
+      {
+        "column": "bootstrap_estimable",
+        "unit": "draws",
+        "definition": "Draws estimable jointly in both model spaces and, for joint difference, both populations",
+        "missing": "never missing"
+      },
+      {
+        "column": "bootstrap_failed",
+        "unit": "draws",
+        "definition": "Requested minus estimable draws; no pass selection to rescue nonestimability",
+        "missing": "never missing"
+      },
+      {
+        "column": "T_SE_K_per_10pp",
+        "unit": "K/+10pp",
+        "definition": "Sample SD of temperature cooling or specified paired cooling-difference draws",
+        "missing": "precision blank only if NOT_ESTIMABLE; never substitute zero"
+      },
+      {
+        "column": "T_width95_K_per_10pp",
+        "unit": "K/+10pp",
+        "definition": "95% percentile interval width; no point or endpoints disclosed",
+        "missing": "precision blank only if NOT_ESTIMABLE; never substitute zero"
+      },
+      {
+        "column": "M_SE_W_m2_per_10pp",
+        "unit": "W/m\u00b2/+10pp",
+        "definition": "Sample SD of matched emitted-flux change/difference draws; precision only",
+        "missing": "precision blank only if NOT_ESTIMABLE; never substitute zero"
+      },
+      {
+        "column": "M_width95_W_m2_per_10pp",
+        "unit": "W/m\u00b2/+10pp",
+        "definition": "Matched flux 95% interval width; point and endpoints remain sealed",
+        "missing": "precision blank only if NOT_ESTIMABLE; never substitute zero"
+      },
+      {
+        "column": "interval_method",
+        "unit": "method",
+        "definition": "Existing constituent/matched or new joint whole-block percentile bootstrap; labelled explicitly",
+        "missing": "never missing"
+      },
+      {
+        "column": "pairing_status",
+        "unit": "status",
+        "definition": "What is proven about physical sample and draw correspondence; constituent intervals do not establish difference intervals",
+        "missing": "never missing"
+      },
+      {
+        "column": "effect_status",
+        "unit": "status",
+        "definition": "SEALED_USER_REQUEST on every precision row",
+        "missing": "never missing"
+      }
+    ],
+    "canopy_context_distributions.csv": [
+      {
+        "column": "city",
+        "unit": "identifier or ISO date",
+        "definition": "Frozen pilot city",
+        "missing": "never missing"
+      },
+      {
+        "column": "orbit",
+        "unit": "identifier or ISO date",
+        "definition": "Acquisition orbit, identifier text",
+        "missing": "never missing"
+      },
+      {
+        "column": "date",
+        "unit": "identifier or ISO date",
+        "definition": "Acquisition date in 2023, YYYY-MM-DD",
+        "missing": "never missing"
+      },
+      {
+        "column": "source_run_id",
+        "unit": "identifier or ISO date",
+        "definition": "Original cached frame/model run identity",
+        "missing": "never missing"
+      },
+      {
+        "column": "population",
+        "unit": "field name, unit, population or count",
+        "definition": "original / retained_all11 / excluded_from_all11; no support cutoff",
+        "missing": "never missing"
+      },
+      {
+        "column": "variable",
+        "unit": "field name, unit, population or count",
+        "definition": "One of canopy_fraction and six frozen controls",
+        "missing": "never missing"
+      },
+      {
+        "column": "unit",
+        "unit": "field name, unit, population or count",
+        "definition": "fraction or m",
+        "missing": "never missing"
+      },
+      {
+        "column": "n",
+        "unit": "field name, unit, population or count",
+        "definition": "Number of unique native-cell observations contributing to the predictor distribution",
+        "missing": "never missing"
+      },
+      {
+        "column": "mean",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted predictor mean",
+        "missing": "blank for empty population; SD also blank if fewer than two cells"
+      },
+      {
+        "column": "sd",
+        "unit": "same unit as variable",
+        "definition": "Sample SD of predictor values, ddof=1",
+        "missing": "blank for empty population; SD also blank if fewer than two cells"
+      },
+      {
+        "column": "q00",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted quantile at probability 0; q00=min, q100=max",
+        "missing": "blank only for an empty population"
+      },
+      {
+        "column": "q01",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted quantile at probability 0.01; q00=min, q100=max",
+        "missing": "blank only for an empty population"
+      },
+      {
+        "column": "q05",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted quantile at probability 0.05; q00=min, q100=max",
+        "missing": "blank only for an empty population"
+      },
+      {
+        "column": "q10",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted quantile at probability 0.1; q00=min, q100=max",
+        "missing": "blank only for an empty population"
+      },
+      {
+        "column": "q25",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted quantile at probability 0.25; q00=min, q100=max",
+        "missing": "blank only for an empty population"
+      },
+      {
+        "column": "q50",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted quantile at probability 0.5; q00=min, q100=max",
+        "missing": "blank only for an empty population"
+      },
+      {
+        "column": "q75",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted quantile at probability 0.75; q00=min, q100=max",
+        "missing": "blank only for an empty population"
+      },
+      {
+        "column": "q90",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted quantile at probability 0.9; q00=min, q100=max",
+        "missing": "blank only for an empty population"
+      },
+      {
+        "column": "q95",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted quantile at probability 0.95; q00=min, q100=max",
+        "missing": "blank only for an empty population"
+      },
+      {
+        "column": "q99",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted quantile at probability 0.99; q00=min, q100=max",
+        "missing": "blank only for an empty population"
+      },
+      {
+        "column": "q100",
+        "unit": "same unit as variable",
+        "definition": "Cell-weighted quantile at probability 1; q00=min, q100=max",
+        "missing": "blank only for an empty population"
+      }
+    ],
+    "footprint_and_reference_support.csv": [
+      {
+        "column": "city",
+        "unit": "identifier or ISO date",
+        "definition": "Frozen pilot city",
+        "missing": "never missing"
+      },
+      {
+        "column": "orbit",
+        "unit": "identifier or ISO date",
+        "definition": "Acquisition orbit, identifier text",
+        "missing": "never missing"
+      },
+      {
+        "column": "date",
+        "unit": "identifier or ISO date",
+        "definition": "Acquisition date in 2023, YYYY-MM-DD",
+        "missing": "never missing"
+      },
+      {
+        "column": "source_run_id",
+        "unit": "identifier or ISO date",
+        "definition": "Original cached frame/model run identity",
+        "missing": "never missing"
+      },
+      {
+        "column": "original_cells",
+        "unit": "cells",
+        "definition": "Original retained paired native-cell population for the pass",
+        "missing": "never missing"
+      },
+      {
+        "column": "original_blocks",
+        "unit": "blocks",
+        "definition": "Occupied original 1km intercept blocks",
+        "missing": "never missing"
+      },
+      {
+        "column": "reference_f0",
+        "unit": "canopy fraction",
+        "definition": "Historical fixed lower endpoint; not reselected to optimize results",
+        "missing": "never missing"
+      },
+      {
+        "column": "reference_f1",
+        "unit": "canopy fraction",
+        "definition": "Historical f0+0.10 endpoint",
+        "missing": "never missing"
+      },
+      {
+        "column": "reference_cells",
+        "unit": "cells",
+        "definition": "All original cells in blocks whose observed canopy min/max cover both frozen endpoints",
+        "missing": "never missing"
+      },
+      {
+        "column": "reference_supporting_blocks",
+        "unit": "blocks",
+        "definition": "Number of blocks whose observed raw canopy range covers both endpoints",
+        "missing": "never missing"
+      },
+      {
+        "column": "reference_status",
+        "unit": "status",
+        "definition": "SUPPORTED or NOT_SUPPORTED_NO_REFERENCE_BLOCKS; no minimum replacement count",
+        "missing": "never missing"
+      },
+      {
+        "column": "common_all11_cells",
+        "unit": "cells",
+        "definition": "Exact unique native-cell intersection over all11 Phoenix passes",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "common_all11_blocks",
+        "unit": "blocks",
+        "definition": "Occupied original 1km block identities in the common sample",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "common_all11_area_km2",
+        "unit": "km\u00b2",
+        "definition": "Sum of common unique whole 70m cells in Phoenix UTM12: cells\u00d70.0049; not city-clipped area",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "common_all11_retained_fraction",
+        "unit": "fraction",
+        "definition": "Common cells divided by this pass's original cells",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "excluded_cells",
+        "unit": "cells",
+        "definition": "Original cells outside the all11 intersection; original minus common",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "common_scope",
+        "unit": "status",
+        "definition": "Phoenix intersection only; Atlanta fields marked NOT_APPLICABLE_PHOENIX_INTERSECTION",
+        "missing": "never missing"
+      },
+      {
+        "column": "original_maximum_block_information_share",
+        "unit": "fraction",
+        "definition": "original population: Largest residualized canopy-information share of a block",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "original_top_five_block_information_share",
+        "unit": "fraction",
+        "definition": "original population: Sum of the five largest residualized block-information shares",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "original_effective_information_blocks",
+        "unit": "effective blocks",
+        "definition": "original population: Inverse sum of squared residualized information shares; not actual independent blocks",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "original_maximum_slope_design_leverage",
+        "unit": "fraction",
+        "definition": "original population: Published maximum single-cell slope-design leverage",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "original_within_block_canopy_variance",
+        "unit": "fraction\u00b2",
+        "definition": "original population: Block-demeaned canopy Sxx divided by cell count",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "original_residualized_canopy_Sxx",
+        "unit": "fraction\u00b2",
+        "definition": "original population: Canopy information after block intercepts and context adjustment",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "common_maximum_block_information_share",
+        "unit": "fraction",
+        "definition": "common population: Largest residualized canopy-information share of a block",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "common_top_five_block_information_share",
+        "unit": "fraction",
+        "definition": "common population: Sum of the five largest residualized block-information shares",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "common_effective_information_blocks",
+        "unit": "effective blocks",
+        "definition": "common population: Inverse sum of squared residualized information shares; not actual independent blocks",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "common_maximum_slope_design_leverage",
+        "unit": "fraction",
+        "definition": "common population: Published maximum single-cell slope-design leverage",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "common_within_block_canopy_variance",
+        "unit": "fraction\u00b2",
+        "definition": "common population: Block-demeaned canopy Sxx divided by cell count",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      },
+      {
+        "column": "common_residualized_canopy_Sxx",
+        "unit": "fraction\u00b2",
+        "definition": "common population: Canopy information after block intercepts and context adjustment",
+        "missing": "common fields blank for Atlanta: NOT_APPLICABLE_PHOENIX_INTERSECTION"
+      }
+    ],
+    "inherited_residual_spatial_diagnostics.csv": [
+      {
+        "column": "city",
+        "unit": "identifier or ISO date",
+        "definition": "Frozen pilot city",
+        "missing": "never missing"
+      },
+      {
+        "column": "orbit",
+        "unit": "identifier or ISO date",
+        "definition": "Acquisition orbit, identifier text",
+        "missing": "never missing"
+      },
+      {
+        "column": "boundary_km",
+        "unit": "km",
+        "definition": "Historical 1km/2km group-boundary residual-neighbor diagnostic",
+        "missing": "never missing"
+      },
+      {
+        "column": "cross_boundary_neighbor_pairs",
+        "unit": "pairs",
+        "definition": "Historical cardinal native-neighbor pairs crossing the specified group boundary",
+        "missing": "never missing"
+      },
+      {
+        "column": "interpretation",
+        "unit": "text",
+        "definition": "Historical diagnostic warning: correlation is neither a p-value nor an effect sign",
+        "missing": "never missing"
+      },
+      {
+        "column": "LST_K_residual_cross_boundary_correlation",
+        "unit": "correlation",
+        "definition": "Inherited temperature residual correlation across neighboring cells at group boundaries",
+        "missing": "never missing"
+      },
+      {
+        "column": "M_W_m2_residual_cross_boundary_correlation",
+        "unit": "correlation",
+        "definition": "Inherited emitted-flux residual neighbor correlation",
+        "missing": "never missing"
+      },
+      {
+        "column": "source",
+        "unit": "identifier or ISO date",
+        "definition": "Historical source table path",
+        "missing": "never missing"
+      }
+    ]
+  }
+}

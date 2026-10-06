@@ -1,0 +1,573 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27839,
+      "acquisition_utc": "2023-06-03T23:45:19.748Z",
+      "solar_hour": 17.58711264502146,
+      "sample_points": 300,
+      "observed_points": 115,
+      "clear_points": 115,
+      "sample_point_coverage_fraction": 0.38333333333333336,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.38333333333333336,
+      "failed_assets": 0
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27870,
+      "acquisition_utc": "2023-06-05T23:44:47.783Z",
+      "solar_hour": 17.558125289155218,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 72,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.24,
+      "clear_fraction_of_all_sample_points": 0.24,
+      "failed_assets": 0
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27885,
+      "acquisition_utc": "2023-06-06T22:55:54.408Z",
+      "solar_hour": 16.74053859223138,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 211,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.7033333333333334,
+      "clear_fraction_of_all_sample_points": 0.7033333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27900,
+      "acquisition_utc": "2023-06-07T22:07:31.743Z",
+      "solar_hour": 15.93120433318268,
+      "sample_points": 300,
+      "observed_points": 98,
+      "clear_points": 98,
+      "sample_point_coverage_fraction": 0.32666666666666666,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.32666666666666666,
+      "failed_assets": 0
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27931,
+      "acquisition_utc": "2023-06-09T22:05:38.477Z",
+      "solar_hour": 15.907933478015972,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27946,
+      "acquisition_utc": "2023-06-10T21:16:41.565Z",
+      "solar_hour": 15.088940993690295,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 15,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.05,
+      "clear_fraction_of_all_sample_points": 0.05,
+      "failed_assets": 0
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28630,
+      "acquisition_utc": "2023-07-24T23:23:20.207Z",
+      "solar_hour": 17.061170470179,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 300,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 1.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28660,
+      "acquisition_utc": "2023-07-26T21:46:04.122Z",
+      "solar_hour": 15.453687694854908,
+      "sample_points": 300,
+      "observed_points": 254,
+      "clear_points": 254,
+      "sample_point_coverage_fraction": 0.8466666666666667,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.8466666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28770,
+      "acquisition_utc": "2023-08-03T00:13:13.539Z",
+      "solar_hour": 17.89422644858793,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 94,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.31333333333333335,
+      "clear_fraction_of_all_sample_points": 0.31333333333333335,
+      "failed_assets": 0
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28785,
+      "acquisition_utc": "2023-08-03T23:24:59.142Z",
+      "solar_hour": 17.09135934270509,
+      "sample_points": 300,
+      "observed_points": 98,
+      "clear_points": 98,
+      "sample_point_coverage_fraction": 0.32666666666666666,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.32666666666666666,
+      "failed_assets": 0
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 29606,
+      "acquisition_utc": "2023-09-25T21:50:11.047Z",
+      "solar_hour": 15.773924897648149,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27839,
+      "asset": "ECOv002_L2T_LSTE_27839_004_15TVL_20230603T234519_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27839_004_15TVL_20230603T234519_0711_02/ECOv002_L2T_LSTE_27839_004_15TVL_20230603T234519_0711_02_cloud.tif",
+      "bytes": 9222,
+      "sha256": "d932ca3e117c3c73507cd26d36a53762a3f22311bcc898b3656679191ebab025",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27839,
+      "asset": "ECOv002_L2T_LSTE_27839_005_15TVL_20230603T234611_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27839_005_15TVL_20230603T234611_0711_02/ECOv002_L2T_LSTE_27839_005_15TVL_20230603T234611_0711_02_cloud.tif",
+      "bytes": 6405,
+      "sha256": "eccbf7f6ace6e4ef09697300414ea0ef80995c82a6d252899d153a64ce781848",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27839,
+      "asset": "ECOv002_L2T_LSTE_27839_005_15TWK_20230603T234611_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27839_005_15TWK_20230603T234611_0711_02/ECOv002_L2T_LSTE_27839_005_15TWK_20230603T234611_0711_02_cloud.tif",
+      "bytes": 10389,
+      "sha256": "f0c4072a3c6807d9d1853822c4a44ca74dceecc1756835a225d5482cea7ce988",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27839,
+      "asset": "ECOv002_L2T_LSTE_27839_005_15TWL_20230603T234611_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27839_005_15TWL_20230603T234611_0711_02/ECOv002_L2T_LSTE_27839_005_15TWL_20230603T234611_0711_02_cloud.tif",
+      "bytes": 21255,
+      "sha256": "be7e63bc6e3e1077c2e974fa8fcaba3a88dca7450c394a520d989405c069a2f2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27870,
+      "asset": "ECOv002_L2T_LSTE_27870_004_15TVK_20230605T234447_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27870_004_15TVK_20230605T234447_0711_02/ECOv002_L2T_LSTE_27870_004_15TVK_20230605T234447_0711_02_cloud.tif",
+      "bytes": 11787,
+      "sha256": "d2a5d180bcdfdb056f0ec07638ba6a3f211f57a1457ff75dc8994f0737f6e470",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27870,
+      "asset": "ECOv002_L2T_LSTE_27870_004_15TVL_20230605T234447_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27870_004_15TVL_20230605T234447_0711_02/ECOv002_L2T_LSTE_27870_004_15TVL_20230605T234447_0711_02_cloud.tif",
+      "bytes": 9422,
+      "sha256": "8d0000af90f434e8eefbb4f94f40b42b4302797b84d37d19609ca541d2162d28",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_005_15TVK_20230606T225554_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_005_15TVK_20230606T225554_0711_02/ECOv002_L2T_LSTE_27885_005_15TVK_20230606T225554_0711_02_cloud.tif",
+      "bytes": 46090,
+      "sha256": "53cd9a127416025c0e5ba2f27a7528da7b9732ae27e1aa912272ec451d9e1a8a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_005_15TVL_20230606T225554_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_005_15TVL_20230606T225554_0711_02/ECOv002_L2T_LSTE_27885_005_15TVL_20230606T225554_0711_02_cloud.tif",
+      "bytes": 46485,
+      "sha256": "d0e19e379166e8ecf2c621757c9b88f02472eb6e3a3c63532bfad028e6dd3c73",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_005_15TWK_20230606T225554_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_005_15TWK_20230606T225554_0711_02/ECOv002_L2T_LSTE_27885_005_15TWK_20230606T225554_0711_02_cloud.tif",
+      "bytes": 29137,
+      "sha256": "f83cfe63f2bfa7b371d26be6058bd85c13c8b41793df9026b6c54ee5488b54fe",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_005_15TWL_20230606T225554_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_005_15TWL_20230606T225554_0711_02/ECOv002_L2T_LSTE_27885_005_15TWL_20230606T225554_0711_02_cloud.tif",
+      "bytes": 33480,
+      "sha256": "bc64aef44086c174713b458ce9318108cad41725bf6f4b863bff690be5d71e99",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_006_15TWK_20230606T225646_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_006_15TWK_20230606T225646_0711_02/ECOv002_L2T_LSTE_27885_006_15TWK_20230606T225646_0711_02_cloud.tif",
+      "bytes": 50176,
+      "sha256": "788400a9b676761a1bed33b8cdac69e2f1a97bae4890e1b0188cf61ff74f3244",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27885,
+      "asset": "ECOv002_L2T_LSTE_27885_006_15TWL_20230606T225646_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27885_006_15TWL_20230606T225646_0711_02/ECOv002_L2T_LSTE_27885_006_15TWL_20230606T225646_0711_02_cloud.tif",
+      "bytes": 10027,
+      "sha256": "00e0fd22a44bc7f5fd68aba3558a97ea2183fadc7e7e3610df5bc20ec4770ae5",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_006_15TVL_20230607T220731_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_006_15TVL_20230607T220731_0711_02/ECOv002_L2T_LSTE_27900_006_15TVL_20230607T220731_0711_02_cloud.tif",
+      "bytes": 13847,
+      "sha256": "9c9d241d512b91a13d644ad2a719f9ca662787ef80b049b4f298ac8000042d21",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27900,
+      "asset": "ECOv002_L2T_LSTE_27900_006_15TWL_20230607T220731_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27900_006_15TWL_20230607T220731_0711_02/ECOv002_L2T_LSTE_27900_006_15TWL_20230607T220731_0711_02_cloud.tif",
+      "bytes": 50947,
+      "sha256": "b7e43e54cf8e7bd4cd2dd96a8b6d8ba2f1ada8a8abccc73e83db83d6ed8bb4f2",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_005_15TVK_20230609T220538_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_005_15TVK_20230609T220538_0711_02/ECOv002_L2T_LSTE_27931_005_15TVK_20230609T220538_0711_02_cloud.tif",
+      "bytes": 6899,
+      "sha256": "8bba6f6f2fd8b4d228836f87ec21ace9ddcd5709f473954cbf23c1adc4208356",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_005_15TVL_20230609T220538_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_005_15TVL_20230609T220538_0711_02/ECOv002_L2T_LSTE_27931_005_15TVL_20230609T220538_0711_02_cloud.tif",
+      "bytes": 21062,
+      "sha256": "03348596d95224d96dbec02b3fdbd8939a16d881668591ce8bd1bda39fafa21c",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_006_15TVK_20230609T220630_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_006_15TVK_20230609T220630_0711_02/ECOv002_L2T_LSTE_27931_006_15TVK_20230609T220630_0711_02_cloud.tif",
+      "bytes": 6156,
+      "sha256": "5026826bd6086c656489f2eca3504e80d39fc8ef96598228d8f82956139c2a3b",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_006_15TVL_20230609T220630_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_006_15TVL_20230609T220630_0711_02/ECOv002_L2T_LSTE_27931_006_15TVL_20230609T220630_0711_02_cloud.tif",
+      "bytes": 11305,
+      "sha256": "cb45b88baca92bc587e219e53a7269d256e9e181c79ac01fd1f8fb932aecbce3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_006_15TWK_20230609T220630_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_006_15TWK_20230609T220630_0711_02/ECOv002_L2T_LSTE_27931_006_15TWK_20230609T220630_0711_02_cloud.tif",
+      "bytes": 10053,
+      "sha256": "a464f920b8b3a8513ac55a6778794696b641822e28f9315243dd37a1b1afd62d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27931,
+      "asset": "ECOv002_L2T_LSTE_27931_006_15TWL_20230609T220630_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27931_006_15TWL_20230609T220630_0711_02/ECOv002_L2T_LSTE_27931_006_15TWL_20230609T220630_0711_02_cloud.tif",
+      "bytes": 14921,
+      "sha256": "0e680a6063ee70bae2e6c67e780757195ac52f758078901daf76ba122b86fa43",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_002_15TVK_20230610T211641_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_002_15TVK_20230610T211641_0711_02/ECOv002_L2T_LSTE_27946_002_15TVK_20230610T211641_0711_02_cloud.tif",
+      "bytes": 19965,
+      "sha256": "329bf599327b440ba33d1a440c865655b1e6c90dbc7651ad563f51175a637b59",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_002_15TVL_20230610T211641_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_002_15TVL_20230610T211641_0711_02/ECOv002_L2T_LSTE_27946_002_15TVL_20230610T211641_0711_02_cloud.tif",
+      "bytes": 83478,
+      "sha256": "d3a69c6f872a8f762239d47df882ac82f32b1850ace6510242549b415a4e170f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_002_15TWL_20230610T211641_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_002_15TWL_20230610T211641_0711_02/ECOv002_L2T_LSTE_27946_002_15TWL_20230610T211641_0711_02_cloud.tif",
+      "bytes": 14815,
+      "sha256": "eb1555586c268ea4111797e81167f2ca7838f5acc2af1679fe5ef022455b45d8",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_003_15TVK_20230610T211733_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_003_15TVK_20230610T211733_0711_02/ECOv002_L2T_LSTE_27946_003_15TVK_20230610T211733_0711_02_cloud.tif",
+      "bytes": 20903,
+      "sha256": "df5da5991e5d60186b4803edf0b0f9cd020d76233f8baa77b5629ee4632178ef",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_003_15TVL_20230610T211733_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_003_15TVL_20230610T211733_0711_02/ECOv002_L2T_LSTE_27946_003_15TVL_20230610T211733_0711_02_cloud.tif",
+      "bytes": 7754,
+      "sha256": "77cd49be01d38fec78ce9e5fc118310edbb10c010d436829a34c38e6ffea0558",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_003_15TWK_20230610T211733_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_003_15TWK_20230610T211733_0711_02/ECOv002_L2T_LSTE_27946_003_15TWK_20230610T211733_0711_02_cloud.tif",
+      "bytes": 27846,
+      "sha256": "d7fcbed1ba3532634af1e23e83c47990df668ef680832d373a3d49c18ebac76e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 27946,
+      "asset": "ECOv002_L2T_LSTE_27946_003_15TWL_20230610T211733_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27946_003_15TWL_20230610T211733_0711_02/ECOv002_L2T_LSTE_27946_003_15TWL_20230610T211733_0711_02_cloud.tif",
+      "bytes": 44701,
+      "sha256": "197496ae73f99921c49f8ead4775980edd87ce75884fc36efcfe26f1e3fdbdcc",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28630,
+      "asset": "ECOv002_L2T_LSTE_28630_006_15TVK_20230724T232320_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28630_006_15TVK_20230724T232320_0712_02/ECOv002_L2T_LSTE_28630_006_15TVK_20230724T232320_0712_02_cloud.tif",
+      "bytes": 6378,
+      "sha256": "0e982c64cb98191dac33dd6eea1bc6a22dfaaadd3acad30b718277218b5b916d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28630,
+      "asset": "ECOv002_L2T_LSTE_28630_006_15TVL_20230724T232320_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28630_006_15TVL_20230724T232320_0712_02/ECOv002_L2T_LSTE_28630_006_15TVL_20230724T232320_0712_02_cloud.tif",
+      "bytes": 25679,
+      "sha256": "22b8ae3bc99ec34c1ab38dfa96ca39eb17e554cae4bd44cdf6d56703fbd350c1",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28630,
+      "asset": "ECOv002_L2T_LSTE_28630_006_15TWL_20230724T232320_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28630_006_15TWL_20230724T232320_0712_02/ECOv002_L2T_LSTE_28630_006_15TWL_20230724T232320_0712_02_cloud.tif",
+      "bytes": 19303,
+      "sha256": "d7192f3a640fd48820f5fbf866cb2a2cc5689d7569e593bcfd88e9b56ec76862",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28630,
+      "asset": "ECOv002_L2T_LSTE_28630_007_15TWL_20230724T232412_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28630_007_15TWL_20230724T232412_0712_02/ECOv002_L2T_LSTE_28630_007_15TWL_20230724T232412_0712_02_cloud.tif",
+      "bytes": 5724,
+      "sha256": "ab789519aade1ea6b5a3e4b612db2c5a096c67e59a8b2959c12dcfdef4f1f6de",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28660,
+      "asset": "ECOv002_L2T_LSTE_28660_004_15TVK_20230726T214604_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28660_004_15TVK_20230726T214604_0712_02/ECOv002_L2T_LSTE_28660_004_15TVK_20230726T214604_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "b52ac402f82ac9bfc2bffc858d37f518bccb3175916482316ccaf461a952cf34",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28660,
+      "asset": "ECOv002_L2T_LSTE_28660_005_15TVK_20230726T214656_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28660_005_15TVK_20230726T214656_0712_02/ECOv002_L2T_LSTE_28660_005_15TVK_20230726T214656_0712_02_cloud.tif",
+      "bytes": 5775,
+      "sha256": "54a52dd90ee8dd70a48369608a11d83a8ec65b3701cc66b3ba814dca51cb8361",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28660,
+      "asset": "ECOv002_L2T_LSTE_28660_005_15TWK_20230726T214656_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28660_005_15TWK_20230726T214656_0712_02/ECOv002_L2T_LSTE_28660_005_15TWK_20230726T214656_0712_02_cloud.tif",
+      "bytes": 37165,
+      "sha256": "5e19564e06f1fd0d9f6fcfceb40c9a688cebcf60cb5556ada6b8ed1f3d69c094",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28660,
+      "asset": "ECOv002_L2T_LSTE_28660_005_15TWL_20230726T214656_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28660_005_15TWL_20230726T214656_0712_02/ECOv002_L2T_LSTE_28660_005_15TWL_20230726T214656_0712_02_cloud.tif",
+      "bytes": 13697,
+      "sha256": "d920bc55207d65d9f53c20077f8d82c2cf716f0e736b04204367b6c574e89f03",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28770,
+      "asset": "ECOv002_L2T_LSTE_28770_005_15TVK_20230803T001313_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28770_005_15TVK_20230803T001313_0712_02/ECOv002_L2T_LSTE_28770_005_15TVK_20230803T001313_0712_02_cloud.tif",
+      "bytes": 25230,
+      "sha256": "dd651e7fe1be12911a57b116c34f9d1eb995e98ac1c239efc875e7dd722fea72",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28770,
+      "asset": "ECOv002_L2T_LSTE_28770_005_15TVL_20230803T001313_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28770_005_15TVL_20230803T001313_0712_02/ECOv002_L2T_LSTE_28770_005_15TVL_20230803T001313_0712_02_cloud.tif",
+      "bytes": 29178,
+      "sha256": "63cbe2d8c14f7e2fa75063e66e9c0434b28572654bd6165595caaff7b470928f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28770,
+      "asset": "ECOv002_L2T_LSTE_28770_005_15TWK_20230803T001313_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28770_005_15TWK_20230803T001313_0712_02/ECOv002_L2T_LSTE_28770_005_15TWK_20230803T001313_0712_02_cloud.tif",
+      "bytes": 27802,
+      "sha256": "30219eca9f6fedebb7fc9677e158fb180642a286fa0570112346ed7aac120960",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28770,
+      "asset": "ECOv002_L2T_LSTE_28770_005_15TWL_20230803T001313_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28770_005_15TWL_20230803T001313_0712_02/ECOv002_L2T_LSTE_28770_005_15TWL_20230803T001313_0712_02_cloud.tif",
+      "bytes": 9377,
+      "sha256": "bdfed9e42a65fa1d3f0806baaeedb99fc5a4ae1243b2ec0fe0b044326e10852a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28770,
+      "asset": "ECOv002_L2T_LSTE_28770_006_15TWK_20230803T001405_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28770_006_15TWK_20230803T001405_0712_02/ECOv002_L2T_LSTE_28770_006_15TWK_20230803T001405_0712_02_cloud.tif",
+      "bytes": 6906,
+      "sha256": "6104323b41852d6664f3e9c13f238a859fb1b4bb475db085270267c30b05327d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28785,
+      "asset": "ECOv002_L2T_LSTE_28785_005_15TVL_20230803T232459_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28785_005_15TVL_20230803T232459_0712_02/ECOv002_L2T_LSTE_28785_005_15TVL_20230803T232459_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "4d93f3f6473e2aca5b42bc005e37955938db3ce71fbda9f3987c709a459bccbf",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 28785,
+      "asset": "ECOv002_L2T_LSTE_28785_005_15TWL_20230803T232459_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28785_005_15TWL_20230803T232459_0712_02/ECOv002_L2T_LSTE_28785_005_15TWL_20230803T232459_0712_02_cloud.tif",
+      "bytes": 8703,
+      "sha256": "bd910f2c65681d9149a8f6e6343771b1a1da267370e809917f382bdb546b73ca",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 29606,
+      "asset": "ECOv002_L2T_LSTE_29606_007_15TVK_20230925T215011_0712_03_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29606_007_15TVK_20230925T215011_0712_03/ECOv002_L2T_LSTE_29606_007_15TVK_20230925T215011_0712_03_cloud.tif",
+      "bytes": 8413,
+      "sha256": "a907cc06970dbf097ceeda67410c0508bb22d1810b927d275357bd5cf07323bf",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 29606,
+      "asset": "ECOv002_L2T_LSTE_29606_008_15TVK_20230925T215103_0712_03_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29606_008_15TVK_20230925T215103_0712_03/ECOv002_L2T_LSTE_29606_008_15TVK_20230925T215103_0712_03_cloud.tif",
+      "bytes": 10822,
+      "sha256": "b40797fd1b47da2baa82242506b4113b2c76c52cc5ea92ef81519d20cace8ea9",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 29606,
+      "asset": "ECOv002_L2T_LSTE_29606_008_15TVL_20230925T215103_0712_03_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29606_008_15TVL_20230925T215103_0712_03/ECOv002_L2T_LSTE_29606_008_15TVL_20230925T215103_0712_03_cloud.tif",
+      "bytes": 10952,
+      "sha256": "786296cfeba3a3d77778a00cbfa2849ce2190da79ee588b3c755959673e5c99c",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 29606,
+      "asset": "ECOv002_L2T_LSTE_29606_008_15TWK_20230925T215103_0712_03_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29606_008_15TWK_20230925T215103_0712_03/ECOv002_L2T_LSTE_29606_008_15TWK_20230925T215103_0712_03_cloud.tif",
+      "bytes": 12985,
+      "sha256": "faab6f7b93f430c7a114c4e99065e6229a0ca4ae5860e94e6d3c584767eab36f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "minneapolis_st_paul",
+      "orbit": 29606,
+      "asset": "ECOv002_L2T_LSTE_29606_008_15TWL_20230925T215103_0712_03_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29606_008_15TWL_20230925T215103_0712_03/ECOv002_L2T_LSTE_29606_008_15TWL_20230925T215103_0712_03_cloud.tif",
+      "bytes": 11054,
+      "sha256": "a5d2b1621d6b9e1b246782f194e5938ede3ff826f2277e1aa0e299b47cf151d5",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

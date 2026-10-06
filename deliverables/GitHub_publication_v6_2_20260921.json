@@ -1,0 +1,15 @@
+{
+  "published_utc": "2026-09-21T22:08:46.023743+00:00",
+  "repository": "https://github.com/jamielee0/CanopyCooling",
+  "branch": "main",
+  "commit": "2f5d00d819d8e8bff7a92a115fccd72b1d997998",
+  "remote_commit_verified": true,
+  "review_url": "https://github.com/jamielee0/CanopyCooling/tree/main/review/v6.2-2023-pilot",
+  "main_pilot": "11 Phoenix and 5 Atlanta, all 2023",
+  "local_package": "deliverables/Professor_Review_2023_v6_2_20260921",
+  "git_checkout_used": "/private/tmp/CanopyCooling-review-20260921",
+  "publication_boundary": "Precision, support, synthetic results, code, plans and citations. No empirical point estimates, raw outcome cells, credentials or correspondence. Other-year exploration separated.",
+  "validation": "32 tests passed; 98 package file checksums verified; remote and local commit agree.",
+  "last_update_utc": "2026-09-21T23:12:53.480737+00:00",
+  "last_change": "Review documentation addresses Prof. Alizadeh."
+}

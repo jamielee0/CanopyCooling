@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "new_effects_released": true,
+  "scope_sha256": "57b1498cf3b8deb4b79295fdd6738264946cc6908cae35860ebd1e4450ec2840",
+  "followup_scope_sha256": "f9109cc373273bc5bbf18e6ecb4c1a2ac381f1ce5498670781c349cb23ce0b93",
+  "scientific_review": {
+    "status": "CURRENT2023_EXPLORATORY_RESULTS_RELEASED_AND_REVIEWED",
+    "effect_review_complete": true,
+    "previous_display_hold_superseded": true,
+    "scale_tolerance": null,
+    "formal_scale_agreement": null,
+    "later_margin_requires_prior_access_disclosure": true,
+    "baseline_retained": true,
+    "primary_outcome": "temperature",
+    "general_summer_interval": false,
+    "finding": "negative selected-date Phoenix contrast persists in original/common/quadratic checks; magnitude sensitive to population/model/alignment",
+    "next_priorities": [
+      "define_intended_population_and_investigate_alignment_composition_mechanisms",
+      "record_post_disclosure_scale_margin_before_formal_agreement_ruling",
+      "prospectively_scope_additional_independent_date_metadata_audit_before_acquisition_or_city_year_expansion"
+    ],
+    "expansion_authorized": false,
+    "external_sending": false,
+    "report": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/README.md"
+  },
+  "source_artifacts": "Original filenames/permissions retained for provenance; current2023 review access is authorized",
+  "no_external_message": true
+}

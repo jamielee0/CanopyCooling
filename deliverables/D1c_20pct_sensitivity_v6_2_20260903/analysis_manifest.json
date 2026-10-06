@@ -1,0 +1,97 @@
+{
+  "decision_id": "V6.2-D020",
+  "status": "NONBINDING_POST_SUPPORT_SENSITIVITY_COMPLETE",
+  "requested_minimum_matched_pair_share": 0.2,
+  "controlling_minimum_matched_pair_share": 0.7,
+  "controlling_decision_preserved": "V6.2-D019",
+  "ruling": "DEMOTE_TO_EXPLORATORY_CONFIRMATORY_SUPPORT_RULE_FAILED",
+  "interpretation": "Lowering the share cutoff to 20% does not change the result because each city-window must pass every nonzero year-sensor stratum, and all four panels retain zero-share strata; Los Angeles also retains frozen 25% acquisition-reuse failures.",
+  "panels": {
+    "los_angeles__provisional_primary": {
+      "city": "Los Angeles",
+      "season_window": "provisional_primary",
+      "nonzero_strata": 14,
+      "share_failure_count": 7,
+      "reuse_failure_count": 2,
+      "all_nonzero_strata_pass": false,
+      "share_failure_strata": [
+        "2020 HLSL30.002 (0/3=0.0%)",
+        "2020 HLSS30.002 (0/3=0.0%)",
+        "2021 HLSS30.002 (0/5=0.0%)",
+        "2022 HLSL30.002 (0/2=0.0%)",
+        "2023 HLSS30.002 (0/5=0.0%)",
+        "2024 HLSL30.002 (0/1=0.0%)",
+        "2024 HLSS30.002 (0/1=0.0%)"
+      ],
+      "reuse_failure_strata": [
+        "2023 HLSL30.002 (2 shared; limit 1)",
+        "2025 HLSL30.002 (2 shared; limit 1)"
+      ]
+    },
+    "los_angeles__sensitivity": {
+      "city": "Los Angeles",
+      "season_window": "sensitivity",
+      "nonzero_strata": 8,
+      "share_failure_count": 4,
+      "reuse_failure_count": 1,
+      "all_nonzero_strata_pass": false,
+      "share_failure_strata": [
+        "2019 HLSL30.002 (0/2=0.0%)",
+        "2021 HLSS30.002 (0/2=0.0%)",
+        "2023 HLSS30.002 (0/2=0.0%)",
+        "2025 HLSS30.002 (0/2=0.0%)"
+      ],
+      "reuse_failure_strata": [
+        "2025 HLSL30.002 (2 shared; limit 1)"
+      ]
+    },
+    "phoenix__provisional_primary": {
+      "city": "Phoenix",
+      "season_window": "provisional_primary",
+      "nonzero_strata": 6,
+      "share_failure_count": 3,
+      "reuse_failure_count": 0,
+      "all_nonzero_strata_pass": false,
+      "share_failure_strata": [
+        "2019 HLSL30.002 (0/2=0.0%)",
+        "2023 HLSL30.002 (0/2=0.0%)",
+        "2024 HLSL30.002 (0/1=0.0%)"
+      ],
+      "reuse_failure_strata": []
+    },
+    "phoenix__sensitivity": {
+      "city": "Phoenix",
+      "season_window": "sensitivity",
+      "nonzero_strata": 14,
+      "share_failure_count": 6,
+      "reuse_failure_count": 0,
+      "all_nonzero_strata_pass": false,
+      "share_failure_strata": [
+        "2020 HLSL30.002 (0/1=0.0%)",
+        "2021 HLSL30.002 (0/3=0.0%)",
+        "2021 HLSS30.002 (0/3=0.0%)",
+        "2023 HLSL30.002 (0/3=0.0%)",
+        "2024 HLSL30.002 (0/1=0.0%)",
+        "2025 HLSL30.002 (0/2=0.0%)"
+      ],
+      "reuse_failure_strata": []
+    }
+  },
+  "checks": {
+    "source_required_grid_rows_56": true,
+    "minimum_share_exactly_0_20": true,
+    "original_0_70_ruling_not_replaced": true,
+    "same_stratum_and_reuse_rules_retained": true,
+    "thermal_or_lst_values_opened": false,
+    "reflectance_or_optical_index_opened": false,
+    "new_v6_2_coefficients_viewed": false,
+    "gate_A_authorized": false
+  },
+  "input_sha256": {
+    "deliverables/D1c_fmask_reassessment_v6_2_20260902/tables/d1c_leadlag.csv": "3687a94d14decfbf187e2bb72a948ef00f9bd1c7ef738aeac1e240464b016351"
+  },
+  "implementation_sha256": {
+    "src/run_v6_2_d1c_20pct_sensitivity.py": "0913e569d35dd6fd10a059b0b78b980fb5982a7c0847dbcebd7b9324cf2fac46",
+    "src/urban_cooling_v2/lead_lag_feasibility.py": "7a9039faf5c6b68e282d2b8627b684ba8cb8a735b27b161f4b032b7022e0db97"
+  }
+}

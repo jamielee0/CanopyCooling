@@ -1,0 +1,350 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "acquisition_utc": "2023-06-11T23:39:53.676Z",
+      "solar_hour": 16.2123134211585,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 278,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9266666666666666,
+      "clear_fraction_of_all_sample_points": 0.9266666666666666,
+      "failed_assets": 0
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28009,
+      "acquisition_utc": "2023-06-14T22:49:37.759Z",
+      "solar_hour": 15.36431514423414,
+      "sample_points": 300,
+      "observed_points": 16,
+      "clear_points": 16,
+      "sample_point_coverage_fraction": 0.05333333333333334,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.05333333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28599,
+      "acquisition_utc": "2023-07-22T23:18:25.045Z",
+      "solar_hour": 15.735532900341568,
+      "sample_points": 300,
+      "observed_points": 211,
+      "clear_points": 211,
+      "sample_point_coverage_fraction": 0.7033333333333334,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.7033333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "acquisition_utc": "2023-08-11T23:22:47.462Z",
+      "solar_hour": 15.824321529453329,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 214,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.7133333333333334,
+      "clear_fraction_of_all_sample_points": 0.7133333333333334,
+      "failed_assets": 0
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "acquisition_utc": "2023-08-14T22:36:40.591Z",
+      "solar_hour": 15.064045602031111,
+      "sample_points": 300,
+      "observed_points": 240,
+      "clear_points": 240,
+      "sample_point_coverage_fraction": 0.8,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.8,
+      "failed_assets": 0
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "acquisition_utc": "2023-09-21T23:20:50.387Z",
+      "solar_hour": 16.001056795909463,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 180,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.6,
+      "clear_fraction_of_all_sample_points": 0.6,
+      "failed_assets": 0
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29591,
+      "acquisition_utc": "2023-09-24T22:33:58.528Z",
+      "solar_hour": 15.238158440725586,
+      "sample_points": 300,
+      "observed_points": 236,
+      "clear_points": 236,
+      "sample_point_coverage_fraction": 0.7866666666666666,
+      "clear_fraction_of_observed_points": 1.0,
+      "clear_fraction_of_all_sample_points": 0.7866666666666666,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "asset": "ECOv002_L2T_LSTE_27963_013_12SUB_20230611T233953_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_013_12SUB_20230611T233953_0711_01/ECOv002_L2T_LSTE_27963_013_12SUB_20230611T233953_0711_01_cloud.tif",
+      "bytes": 37029,
+      "sha256": "61a7616061cfbf2462fed0988fc5f7c79a1f0dd14294121f1773816d7614bf4a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "asset": "ECOv002_L2T_LSTE_27963_013_12SUC_20230611T233953_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_013_12SUC_20230611T233953_0711_01/ECOv002_L2T_LSTE_27963_013_12SUC_20230611T233953_0711_01_cloud.tif",
+      "bytes": 68924,
+      "sha256": "dc8786f363c60fbb9f4c07f1995e85744bf29ba7b304b5e0328d5e5b86e3844d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "asset": "ECOv002_L2T_LSTE_27963_013_12SVB_20230611T233953_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_013_12SVB_20230611T233953_0711_01/ECOv002_L2T_LSTE_27963_013_12SVB_20230611T233953_0711_01_cloud.tif",
+      "bytes": 9120,
+      "sha256": "54193af48a4b9886c375b80ede6f1145132912611925575f517dabc769a04791",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "asset": "ECOv002_L2T_LSTE_27963_013_12SVC_20230611T233953_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_013_12SVC_20230611T233953_0711_01/ECOv002_L2T_LSTE_27963_013_12SVC_20230611T233953_0711_01_cloud.tif",
+      "bytes": 64133,
+      "sha256": "396cc1c73e249863cf2f22a2ca7b824f5a69d2ac9631785b14107686be6e76cc",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "asset": "ECOv002_L2T_LSTE_27963_014_12SUB_20230611T234045_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_014_12SUB_20230611T234045_0711_01/ECOv002_L2T_LSTE_27963_014_12SUB_20230611T234045_0711_01_cloud.tif",
+      "bytes": 14978,
+      "sha256": "c0a6871c697457f7cc4564fbf14c1b5fb560ab525967f01d3627dfc8ebfe5cb4",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "asset": "ECOv002_L2T_LSTE_27963_014_12SVB_20230611T234045_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_014_12SVB_20230611T234045_0711_01/ECOv002_L2T_LSTE_27963_014_12SVB_20230611T234045_0711_01_cloud.tif",
+      "bytes": 47309,
+      "sha256": "cd7b835d5fb61a9441eb58468e65e39cf3eeb94a2e56da5f6e073e57fa6a2076",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 27963,
+      "asset": "ECOv002_L2T_LSTE_27963_014_12SVC_20230611T234045_0711_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27963_014_12SVC_20230611T234045_0711_01/ECOv002_L2T_LSTE_27963_014_12SVC_20230611T234045_0711_01_cloud.tif",
+      "bytes": 48546,
+      "sha256": "e8c5ed1041118e703e523ab8385e04e67303576e2d077b16bc73430c44e9c547",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28009,
+      "asset": "ECOv002_L2T_LSTE_28009_015_12SUB_20230614T224937_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28009_015_12SUB_20230614T224937_0711_02/ECOv002_L2T_LSTE_28009_015_12SUB_20230614T224937_0711_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28599,
+      "asset": "ECOv002_L2T_LSTE_28599_003_12SUB_20230722T231825_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28599_003_12SUB_20230722T231825_0712_01/ECOv002_L2T_LSTE_28599_003_12SUB_20230722T231825_0712_01_cloud.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28599,
+      "asset": "ECOv002_L2T_LSTE_28599_003_12SVB_20230722T231825_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28599_003_12SVB_20230722T231825_0712_01/ECOv002_L2T_LSTE_28599_003_12SVB_20230722T231825_0712_01_cloud.tif",
+      "bytes": 10827,
+      "sha256": "38154cd1e05d492b4854fa1ca06091f6e13859ff507d18148930123462d78c2d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28599,
+      "asset": "ECOv002_L2T_LSTE_28599_003_12SVC_20230722T231825_0712_01_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28599_003_12SVC_20230722T231825_0712_01/ECOv002_L2T_LSTE_28599_003_12SVC_20230722T231825_0712_01_cloud.tif",
+      "bytes": 7663,
+      "sha256": "7dc93451da9a1b8257bb2db081d11ef9c7d4912585aa54ad6600e32238fb335e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "asset": "ECOv002_L2T_LSTE_28909_012_12SUB_20230811T232247_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28909_012_12SUB_20230811T232247_0712_02/ECOv002_L2T_LSTE_28909_012_12SUB_20230811T232247_0712_02_cloud.tif",
+      "bytes": 31393,
+      "sha256": "61ec23da84c14246568f2abce39bf28b2acea6eb406c44bc7c0d69b0a0a5a3e9",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "asset": "ECOv002_L2T_LSTE_28909_012_12SUC_20230811T232247_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28909_012_12SUC_20230811T232247_0712_02/ECOv002_L2T_LSTE_28909_012_12SUC_20230811T232247_0712_02_cloud.tif",
+      "bytes": 20682,
+      "sha256": "6704a41fce77d2079159acffddffec99e615ecf27e85fbe41abe88362de1d77f",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "asset": "ECOv002_L2T_LSTE_28909_012_12SVB_20230811T232247_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28909_012_12SVB_20230811T232247_0712_02/ECOv002_L2T_LSTE_28909_012_12SVB_20230811T232247_0712_02_cloud.tif",
+      "bytes": 28235,
+      "sha256": "e90bf8b65c0e58e92085fd4cf8d628214a9359f102fab265c1930a532ac6f88d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28909,
+      "asset": "ECOv002_L2T_LSTE_28909_012_12SVC_20230811T232247_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28909_012_12SVC_20230811T232247_0712_02/ECOv002_L2T_LSTE_28909_012_12SVC_20230811T232247_0712_02_cloud.tif",
+      "bytes": 42113,
+      "sha256": "dfbf5650acadc8a38e59b3c4d6201091cf568a081fdbd6fdbda0699d891c0815",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "asset": "ECOv002_L2T_LSTE_28955_014_12SUB_20230814T223640_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28955_014_12SUB_20230814T223640_0712_02/ECOv002_L2T_LSTE_28955_014_12SUB_20230814T223640_0712_02_cloud.tif",
+      "bytes": 38355,
+      "sha256": "12cee02b0a059b0711ae9d08bccfa14b1f88d69a8062cc7fb8f49821113ebd18",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "asset": "ECOv002_L2T_LSTE_28955_014_12SUC_20230814T223640_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28955_014_12SUC_20230814T223640_0712_02/ECOv002_L2T_LSTE_28955_014_12SUC_20230814T223640_0712_02_cloud.tif",
+      "bytes": 8496,
+      "sha256": "bf09104c2e85b70b209ada29cdd06028d22bc1813eae4f7a9cf313e3c40c16dc",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "asset": "ECOv002_L2T_LSTE_28955_014_12SVB_20230814T223640_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28955_014_12SVB_20230814T223640_0712_02/ECOv002_L2T_LSTE_28955_014_12SVB_20230814T223640_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "asset": "ECOv002_L2T_LSTE_28955_015_12SUB_20230814T223732_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28955_015_12SUB_20230814T223732_0712_02/ECOv002_L2T_LSTE_28955_015_12SUB_20230814T223732_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 28955,
+      "asset": "ECOv002_L2T_LSTE_28955_015_12SVB_20230814T223732_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28955_015_12SVB_20230814T223732_0712_02/ECOv002_L2T_LSTE_28955_015_12SVB_20230814T223732_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "5330bdd59b721b9812d2cfacc468382dac52d2fcd60ace86d0589db82a6d4135",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "asset": "ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02/ECOv002_L2T_LSTE_29545_003_12SUB_20230921T232050_0712_02_cloud.tif",
+      "bytes": 55107,
+      "sha256": "a41cee54ed01ea1a611937ebd68fd752e84604ddd4f09fa16592d36b579fc7b1",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "asset": "ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02/ECOv002_L2T_LSTE_29545_003_12SUC_20230921T232050_0712_02_cloud.tif",
+      "bytes": 51806,
+      "sha256": "0b48a054fdf2a771d94bcadc746a6a8199620ce73128b4001d8d5461dfd853f6",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "asset": "ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02/ECOv002_L2T_LSTE_29545_003_12SVB_20230921T232050_0712_02_cloud.tif",
+      "bytes": 47894,
+      "sha256": "35b0588d5b4211405d27f1d33dcfc389096516c80df0ec1e1665303ed56916d1",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "asset": "ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02/ECOv002_L2T_LSTE_29545_003_12SVC_20230921T232050_0712_02_cloud.tif",
+      "bytes": 64058,
+      "sha256": "16aa69638ec03aedbb7cf092a1c29367c248811bc308b86734ed6b6684060904",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29545,
+      "asset": "ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02/ECOv002_L2T_LSTE_29545_004_12SVC_20230921T232142_0712_02_cloud.tif",
+      "bytes": 43061,
+      "sha256": "d63a7ba62ea3a956f1b2f9888a4ea67eadb7fb506c1dfae1c204f65913d23875",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29591,
+      "asset": "ECOv002_L2T_LSTE_29591_007_12SUB_20230924T223358_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_007_12SUB_20230924T223358_0712_02/ECOv002_L2T_LSTE_29591_007_12SUB_20230924T223358_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "12926d44db3ee3fcbab890cac674f9849409445af7a5d5599a008ed2ac1cc1ca",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29591,
+      "asset": "ECOv002_L2T_LSTE_29591_007_12SUC_20230924T223358_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_007_12SUC_20230924T223358_0712_02/ECOv002_L2T_LSTE_29591_007_12SUC_20230924T223358_0712_02_cloud.tif",
+      "bytes": 8664,
+      "sha256": "c9f9529485f4286c0ac5714600b6dcd986df9b118f34059e9d9b8cee269256ff",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "phoenix",
+      "orbit": 29591,
+      "asset": "ECOv002_L2T_LSTE_29591_007_12SVC_20230924T223358_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29591_007_12SVC_20230924T223358_0712_02/ECOv002_L2T_LSTE_29591_007_12SVC_20230924T223358_0712_02_cloud.tif",
+      "bytes": 6067,
+      "sha256": "0ac8ebf24502b0ae8b5065f4ae8caba5a8094ebd355ac7e067924418bbe8852c",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

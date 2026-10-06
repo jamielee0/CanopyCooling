@@ -1,0 +1,16 @@
+{
+  "requested": 1873,
+  "completed": 1872,
+  "failures": [
+    {
+      "job": {
+        "time": "2023-07-24T15:00:00+00:00",
+        "cities": [
+          "phoenix"
+        ]
+      },
+      "error_type": "HTTPError",
+      "message": "404 Client Error: Not Found for url: https://mtarchive.geol.iastate.edu/2023/07/24/mrms/ncep/MultiSensor_QPE_01H_Pass2/MultiSensor_QPE_01H_Pass2_00.00_20230724-150000.grib2.gz"
+    }
+  ]
+}

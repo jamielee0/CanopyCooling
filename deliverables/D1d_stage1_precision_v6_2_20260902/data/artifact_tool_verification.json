@@ -1,0 +1,19 @@
+{
+  "stageTable": {
+    "rows": 13210,
+    "columns": 19,
+    "roundTripVerified": true,
+    "inspected": true,
+    "rendered": true
+  },
+  "powerTable": {
+    "rows": 48,
+    "columns": 11,
+    "roundTripVerified": true,
+    "inspected": true,
+    "rendered": true
+  },
+  "pointEstimateFieldsAbsent": true,
+  "allStageRowsFailFrozenSpan": true,
+  "requiredCountsRemainBlankWhenSigmaNotEstimable": true
+}

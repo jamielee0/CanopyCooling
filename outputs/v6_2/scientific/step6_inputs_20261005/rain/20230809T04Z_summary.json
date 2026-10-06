@@ -1,0 +1,24 @@
+{
+  "time": "2023-08-09T04:00:00+00:00",
+  "rows": [
+    {
+      "city": "phoenix",
+      "timestamp_utc": "2023-08-09T04:00:00+00:00",
+      "n_domain_cells": 2817,
+      "valid_cells": 2817,
+      "complete_domain": true,
+      "mean_mm": 0.0018821528270499457,
+      "missing_cells": 0
+    }
+  ],
+  "download": {
+    "url": "https://mtarchive.geol.iastate.edu/2023/08/09/mrms/ncep/MultiSensor_QPE_01H_Pass2/MultiSensor_QPE_01H_Pass2_00.00_20230809-040000.grib2.gz",
+    "status": 200,
+    "bytes": 707136,
+    "sha256": "418422e48d48921eb8695912d6cf05ca5d21ddd2fe52bd8dc60d59f81e4f36df",
+    "retrieved_utc": "2026-10-05T20:31:22.028812+00:00",
+    "etag": "\"aca40-60276537ab374\"",
+    "last_modified": "Wed, 09 Aug 2023 04:58:10 GMT",
+    "byte_range": null
+  }
+}

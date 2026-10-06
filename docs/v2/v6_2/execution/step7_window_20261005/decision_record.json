@@ -1,0 +1,14 @@
+{
+  "status": "COMPUTATION_COMPLETE_EFFECT_REVIEW_SEALED_NO_GENERAL_SUMMER_INTERVAL",
+  "authorized_computations_complete": true,
+  "effect_review_complete": false,
+  "retain": "original linear models,16pass2023 baseline, frozen Phoenix weights",
+  "new_effect_display": false,
+  "general_summer_interval_adopted": false,
+  "reason": "sparse independent dates, observed condition differences and undercoverage/support loss in frozen synthetic stress scenarios",
+  "automatic_method_promotion": false,
+  "empirical_Atlanta_contrast": false,
+  "scale_ruling": null,
+  "expansion": false,
+  "next_proposal": "deliverables/Step7_Window_2023_v6_2_20261005/next_observation_proposal.md"
+}

@@ -1,0 +1,3975 @@
+{
+  "audit": {
+    "city": "los_angeles",
+    "retrieved_utc": "2026-09-21T17:46:24.858775+00:00",
+    "period_utc": "2023-06-01/2023-09-30",
+    "CMR_bbox_hits": 533,
+    "CMR_rows_received": 533,
+    "pages": 1,
+    "intersecting_granules_before_revision_dedup": 395,
+    "unique_passes": 72,
+    "morning_0930_1130_passes": 7,
+    "afternoon_1500_1800_passes": 8,
+    "afternoon_months": [
+      "06",
+      "07",
+      "08",
+      "09"
+    ],
+    "afternoon_tile_mean_cloud_pct_median": null,
+    "afternoon_passes_with_cloud_metadata": 0,
+    "limitation": "CMR tile cloud metadata is not urban-domain clear fraction; no view-angle, full-domain coverage or usable-cell certification; windows are descriptive summaries, not selection gates."
+  },
+  "granules": [
+    {
+      "city": "los_angeles",
+      "orbit": 27806,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_27806_005_11SLT_20230601T202619_0710_01",
+      "acquisition_utc": "2023-06-01T20:26:19.770Z",
+      "apparent_solar_hour_at_domain_centroid": 12.60562786490604,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27806,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_27806_005_11SMT_20230601T202619_0710_01",
+      "acquisition_utc": "2023-06-01T20:26:19.770Z",
+      "apparent_solar_hour_at_domain_centroid": 12.60562786490604,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27806,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27806_005_11SLU_20230601T202619_0710_01",
+      "acquisition_utc": "2023-06-01T20:26:19.770Z",
+      "apparent_solar_hour_at_domain_centroid": 12.60562786490604,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27806,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27806_005_11SLU_20230601T202619_0711_02",
+      "acquisition_utc": "2023-06-01T20:26:19.773Z",
+      "apparent_solar_hour_at_domain_centroid": 12.60562786490604,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27806,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_27806_005_11SLT_20230601T202619_0711_02",
+      "acquisition_utc": "2023-06-01T20:26:19.773Z",
+      "apparent_solar_hour_at_domain_centroid": 12.60562786490604,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27806,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_27806_005_11SMT_20230601T202619_0711_02",
+      "acquisition_utc": "2023-06-01T20:26:19.773Z",
+      "apparent_solar_hour_at_domain_centroid": 12.60562786490604,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27821,
+      "scene": 6,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_27821_006_11SMT_20230602T193750_0711_01",
+      "acquisition_utc": "2023-06-02T19:37:50.015Z",
+      "apparent_solar_hour_at_domain_centroid": 11.795100165322639,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27867,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_27867_005_11SLT_20230605T184743_0710_01",
+      "acquisition_utc": "2023-06-05T18:47:43.330Z",
+      "apparent_solar_hour_at_domain_centroid": 10.951637284893636,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27867,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_27867_005_11SMT_20230605T184743_0710_01",
+      "acquisition_utc": "2023-06-05T18:47:43.330Z",
+      "apparent_solar_hour_at_domain_centroid": 10.951637284893636,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27867,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27867_005_11SLU_20230605T184743_0710_01",
+      "acquisition_utc": "2023-06-05T18:47:43.330Z",
+      "apparent_solar_hour_at_domain_centroid": 10.951637284893636,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27867,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_27867_005_11SLT_20230605T184743_0711_02",
+      "acquisition_utc": "2023-06-05T18:47:43.333Z",
+      "apparent_solar_hour_at_domain_centroid": 10.951637284893636,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27867,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_27867_005_11SMT_20230605T184743_0711_02",
+      "acquisition_utc": "2023-06-05T18:47:43.333Z",
+      "apparent_solar_hour_at_domain_centroid": 10.951637284893636,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27867,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27867_005_11SLU_20230605T184743_0711_02",
+      "acquisition_utc": "2023-06-05T18:47:43.333Z",
+      "apparent_solar_hour_at_domain_centroid": 10.951637284893636,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27902,
+      "scene": 9,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27902_009_11SLU_20230608T011747_0710_01",
+      "acquisition_utc": "2023-06-08T01:17:47.370Z",
+      "apparent_solar_hour_at_domain_centroid": 17.44592899735625,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27902,
+      "scene": 9,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27902_009_11SLU_20230608T011747_0711_02",
+      "acquisition_utc": "2023-06-08T01:17:47.375Z",
+      "apparent_solar_hour_at_domain_centroid": 17.44592899735625,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27948,
+      "scene": 16,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_27948_016_11SLT_20230611T002810_0710_01",
+      "acquisition_utc": "2023-06-11T00:28:10.420Z",
+      "apparent_solar_hour_at_domain_centroid": 16.60946995470217,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27948,
+      "scene": 16,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27948_016_11SLU_20230611T002810_0710_01",
+      "acquisition_utc": "2023-06-11T00:28:10.420Z",
+      "apparent_solar_hour_at_domain_centroid": 16.60946995470217,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27948,
+      "scene": 16,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_27948_016_11SMT_20230611T002810_0710_01",
+      "acquisition_utc": "2023-06-11T00:28:10.420Z",
+      "apparent_solar_hour_at_domain_centroid": 16.60946995470217,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27948,
+      "scene": 16,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27948_016_11SLU_20230611T002810_0711_02",
+      "acquisition_utc": "2023-06-11T00:28:10.428Z",
+      "apparent_solar_hour_at_domain_centroid": 16.60946995470217,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27948,
+      "scene": 16,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_27948_016_11SLT_20230611T002810_0711_02",
+      "acquisition_utc": "2023-06-11T00:28:10.428Z",
+      "apparent_solar_hour_at_domain_centroid": 16.60946995470217,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27948,
+      "scene": 16,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_27948_016_11SMT_20230611T002810_0711_02",
+      "acquisition_utc": "2023-06-11T00:28:10.428Z",
+      "apparent_solar_hour_at_domain_centroid": 16.60946995470217,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27974,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_27974_004_11SLT_20230612T161839_0710_01",
+      "acquisition_utc": "2023-06-12T16:18:39.360Z",
+      "apparent_solar_hour_at_domain_centroid": 8.445279780663824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27974,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27974_004_11SLU_20230612T161839_0710_01",
+      "acquisition_utc": "2023-06-12T16:18:39.360Z",
+      "apparent_solar_hour_at_domain_centroid": 8.445279780663824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27974,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_27974_004_11SLT_20230612T161839_0711_02",
+      "acquisition_utc": "2023-06-12T16:18:39.366Z",
+      "apparent_solar_hour_at_domain_centroid": 8.445279780663824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27974,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27974_004_11SLU_20230612T161839_0711_02",
+      "acquisition_utc": "2023-06-12T16:18:39.366Z",
+      "apparent_solar_hour_at_domain_centroid": 8.445279780663824,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27989,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_27989_004_11SLT_20230613T152915_0710_01",
+      "acquisition_utc": "2023-06-13T15:29:15.291Z",
+      "apparent_solar_hour_at_domain_centroid": 7.618630798185919,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27989,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27989_004_11SLU_20230613T152915_0710_01",
+      "acquisition_utc": "2023-06-13T15:29:15.291Z",
+      "apparent_solar_hour_at_domain_centroid": 7.618630798185919,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27989,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_27989_004_11SMT_20230613T152915_0710_01",
+      "acquisition_utc": "2023-06-13T15:29:15.291Z",
+      "apparent_solar_hour_at_domain_centroid": 7.618630798185919,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27989,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27989_004_11SLU_20230613T152915_0711_02",
+      "acquisition_utc": "2023-06-13T15:29:15.291Z",
+      "apparent_solar_hour_at_domain_centroid": 7.618630798185919,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27989,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_27989_004_11SMT_20230613T152915_0711_02",
+      "acquisition_utc": "2023-06-13T15:29:15.291Z",
+      "apparent_solar_hour_at_domain_centroid": 7.618630798185919,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27989,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_27989_004_11SLT_20230613T152915_0711_02",
+      "acquisition_utc": "2023-06-13T15:29:15.291Z",
+      "apparent_solar_hour_at_domain_centroid": 7.618630798185919,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27989,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_27989_005_11SMT_20230613T153007_0710_01",
+      "acquisition_utc": "2023-06-13T15:30:07.261Z",
+      "apparent_solar_hour_at_domain_centroid": 7.633073161583943,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27989,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27989_005_11SLU_20230613T153007_0710_01",
+      "acquisition_utc": "2023-06-13T15:30:07.261Z",
+      "apparent_solar_hour_at_domain_centroid": 7.633073161583943,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27989,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_27989_005_11SLU_20230613T153007_0711_02",
+      "acquisition_utc": "2023-06-13T15:30:07.261Z",
+      "apparent_solar_hour_at_domain_centroid": 7.633073161583943,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 27989,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_27989_005_11SMT_20230613T153007_0711_02",
+      "acquisition_utc": "2023-06-13T15:30:07.261Z",
+      "apparent_solar_hour_at_domain_centroid": 7.633073161583943,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28009,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28009_013_11SLU_20230614T224753_0710_01",
+      "acquisition_utc": "2023-06-14T22:47:53.819Z",
+      "apparent_solar_hour_at_domain_centroid": 14.924636337037064,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28009,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28009_013_11SLU_20230614T224753_0711_02",
+      "acquisition_utc": "2023-06-14T22:47:53.819Z",
+      "apparent_solar_hour_at_domain_centroid": 14.924636337037064,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28009,
+      "scene": 14,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28009_014_11SLT_20230614T224845_0710_01",
+      "acquisition_utc": "2023-06-14T22:48:45.789Z",
+      "apparent_solar_hour_at_domain_centroid": 14.939078665412667,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28009,
+      "scene": 14,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28009_014_11SLU_20230614T224845_0710_01",
+      "acquisition_utc": "2023-06-14T22:48:45.789Z",
+      "apparent_solar_hour_at_domain_centroid": 14.939078665412667,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28009,
+      "scene": 14,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28009_014_11SMT_20230614T224845_0710_01",
+      "acquisition_utc": "2023-06-14T22:48:45.789Z",
+      "apparent_solar_hour_at_domain_centroid": 14.939078665412667,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28009,
+      "scene": 14,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28009_014_11SMT_20230614T224845_0711_02",
+      "acquisition_utc": "2023-06-14T22:48:45.789Z",
+      "apparent_solar_hour_at_domain_centroid": 14.939078665412667,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28009,
+      "scene": 14,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28009_014_11SLU_20230614T224845_0711_02",
+      "acquisition_utc": "2023-06-14T22:48:45.789Z",
+      "apparent_solar_hour_at_domain_centroid": 14.939078665412667,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28009,
+      "scene": 14,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28009_014_11SLT_20230614T224845_0711_02",
+      "acquisition_utc": "2023-06-14T22:48:45.789Z",
+      "apparent_solar_hour_at_domain_centroid": 14.939078665412667,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28050,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28050_004_11SLT_20230617T135039_0711_01",
+      "acquisition_utc": "2023-06-17T13:50:39.072Z",
+      "apparent_solar_hour_at_domain_centroid": 5.961388758898577,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28050,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28050_004_11SMT_20230617T135039_0711_01",
+      "acquisition_utc": "2023-06-17T13:50:39.072Z",
+      "apparent_solar_hour_at_domain_centroid": 5.961388758898577,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28070,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28070_012_11SLT_20230618T210957_0710_01",
+      "acquisition_utc": "2023-06-18T21:09:57.750Z",
+      "apparent_solar_hour_at_domain_centroid": 13.278334964526923,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28070,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28070_012_11SLU_20230618T210957_0710_01",
+      "acquisition_utc": "2023-06-18T21:09:57.750Z",
+      "apparent_solar_hour_at_domain_centroid": 13.278334964526923,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28070,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28070_012_11SLT_20230618T210957_0711_02",
+      "acquisition_utc": "2023-06-18T21:09:57.750Z",
+      "apparent_solar_hour_at_domain_centroid": 13.278334964526923,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28070,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28070_012_11SLU_20230618T210957_0711_02",
+      "acquisition_utc": "2023-06-18T21:09:57.750Z",
+      "apparent_solar_hour_at_domain_centroid": 13.278334964526923,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28070,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28070_013_11SLT_20230618T211049_0710_01",
+      "acquisition_utc": "2023-06-18T21:10:49.720Z",
+      "apparent_solar_hour_at_domain_centroid": 13.292777224302712,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28070,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28070_013_11SLU_20230618T211049_0710_01",
+      "acquisition_utc": "2023-06-18T21:10:49.720Z",
+      "apparent_solar_hour_at_domain_centroid": 13.292777224302712,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28070,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28070_013_11SMT_20230618T211049_0710_01",
+      "acquisition_utc": "2023-06-18T21:10:49.720Z",
+      "apparent_solar_hour_at_domain_centroid": 13.292777224302712,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28070,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28070_013_11SLU_20230618T211049_0711_02",
+      "acquisition_utc": "2023-06-18T21:10:49.720Z",
+      "apparent_solar_hour_at_domain_centroid": 13.292777224302712,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28070,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28070_013_11SLT_20230618T211049_0711_02",
+      "acquisition_utc": "2023-06-18T21:10:49.720Z",
+      "apparent_solar_hour_at_domain_centroid": 13.292777224302712,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28070,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28070_013_11SMT_20230618T211049_0711_02",
+      "acquisition_utc": "2023-06-18T21:10:49.720Z",
+      "apparent_solar_hour_at_domain_centroid": 13.292777224302712,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28096,
+      "scene": 1,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28096_001_11SLU_20230620T130159_0710_01",
+      "acquisition_utc": "2023-06-20T13:01:59.799Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139508497120795,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28096,
+      "scene": 1,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28096_001_11SMT_20230620T130159_0710_01",
+      "acquisition_utc": "2023-06-20T13:01:59.799Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139508497120795,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28096,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28096_001_11SLT_20230620T130159_0711_02",
+      "acquisition_utc": "2023-06-20T13:01:59.799Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139508497120795,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28096,
+      "scene": 1,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28096_001_11SMT_20230620T130159_0711_02",
+      "acquisition_utc": "2023-06-20T13:01:59.799Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139508497120795,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28096,
+      "scene": 1,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28096_001_11SLU_20230620T130159_0711_02",
+      "acquisition_utc": "2023-06-20T13:01:59.799Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139508497120795,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28096,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28096_001_11SLT_20230620T130159_0710_01",
+      "acquisition_utc": "2023-06-20T13:01:59.799Z",
+      "apparent_solar_hour_at_domain_centroid": 5.139508497120795,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28111,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28111_004_11SMT_20230621T121314_0710_01",
+      "acquisition_utc": "2023-06-21T12:13:14.872Z",
+      "apparent_solar_hour_at_domain_centroid": 4.323479862400808,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28111,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28111_004_11SMT_20230621T121314_0711_02",
+      "acquisition_utc": "2023-06-21T12:13:14.872Z",
+      "apparent_solar_hour_at_domain_centroid": 4.323479862400808,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28116,
+      "scene": 17,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28116_017_11SLU_20230621T202103_0710_01",
+      "acquisition_utc": "2023-06-21T20:21:03.117Z",
+      "apparent_solar_hour_at_domain_centroid": 12.452519881950872,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28116,
+      "scene": 17,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28116_017_11SLT_20230621T202103_0710_01",
+      "acquisition_utc": "2023-06-21T20:21:03.117Z",
+      "apparent_solar_hour_at_domain_centroid": 12.452519881950872,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28116,
+      "scene": 17,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28116_017_11SLU_20230621T202103_0711_02",
+      "acquisition_utc": "2023-06-21T20:21:03.117Z",
+      "apparent_solar_hour_at_domain_centroid": 12.452519881950872,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28116,
+      "scene": 17,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28116_017_11SLT_20230621T202103_0711_02",
+      "acquisition_utc": "2023-06-21T20:21:03.117Z",
+      "apparent_solar_hour_at_domain_centroid": 12.452519881950872,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28116,
+      "scene": 18,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28116_018_11SLU_20230621T202153_0710_01",
+      "acquisition_utc": "2023-06-21T20:21:53.905Z",
+      "apparent_solar_hour_at_domain_centroid": 12.466406656424974,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28116,
+      "scene": 18,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28116_018_11SLT_20230621T202153_0710_01",
+      "acquisition_utc": "2023-06-21T20:21:53.905Z",
+      "apparent_solar_hour_at_domain_centroid": 12.466406656424974,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28116,
+      "scene": 18,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28116_018_11SMT_20230621T202153_0710_01",
+      "acquisition_utc": "2023-06-21T20:21:53.905Z",
+      "apparent_solar_hour_at_domain_centroid": 12.466406656424974,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28116,
+      "scene": 18,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28116_018_11SMT_20230621T202153_0711_02",
+      "acquisition_utc": "2023-06-21T20:21:53.905Z",
+      "apparent_solar_hour_at_domain_centroid": 12.466406656424974,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28116,
+      "scene": 18,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28116_018_11SLT_20230621T202153_0711_02",
+      "acquisition_utc": "2023-06-21T20:21:53.905Z",
+      "apparent_solar_hour_at_domain_centroid": 12.466406656424974,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28116,
+      "scene": 18,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28116_018_11SLU_20230621T202153_0711_02",
+      "acquisition_utc": "2023-06-21T20:21:53.905Z",
+      "apparent_solar_hour_at_domain_centroid": 12.466406656424974,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28131,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28131_013_11SMT_20230622T193234_0710_01",
+      "acquisition_utc": "2023-06-22T19:32:34.543Z",
+      "apparent_solar_hour_at_domain_centroid": 11.640935062369008,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28131,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28131_013_11SLT_20230622T193234_0710_01",
+      "acquisition_utc": "2023-06-22T19:32:34.543Z",
+      "apparent_solar_hour_at_domain_centroid": 11.640935062369008,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28131,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28131_013_11SLU_20230622T193234_0710_01",
+      "acquisition_utc": "2023-06-22T19:32:34.543Z",
+      "apparent_solar_hour_at_domain_centroid": 11.640935062369008,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28131,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28131_013_11SLU_20230622T193234_0711_02",
+      "acquisition_utc": "2023-06-22T19:32:34.543Z",
+      "apparent_solar_hour_at_domain_centroid": 11.640935062369008,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28131,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28131_013_11SMT_20230622T193234_0711_02",
+      "acquisition_utc": "2023-06-22T19:32:34.543Z",
+      "apparent_solar_hour_at_domain_centroid": 11.640935062369008,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28131,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28131_013_11SLT_20230622T193234_0711_02",
+      "acquisition_utc": "2023-06-22T19:32:34.543Z",
+      "apparent_solar_hour_at_domain_centroid": 11.640935062369008,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28131,
+      "scene": 14,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28131_014_11SLT_20230622T193326_0710_01",
+      "acquisition_utc": "2023-06-22T19:33:26.512Z",
+      "apparent_solar_hour_at_domain_centroid": 11.655377310178713,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28131,
+      "scene": 14,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28131_014_11SMT_20230622T193326_0710_01",
+      "acquisition_utc": "2023-06-22T19:33:26.512Z",
+      "apparent_solar_hour_at_domain_centroid": 11.655377310178713,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28131,
+      "scene": 14,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28131_014_11SMT_20230622T193326_0711_02",
+      "acquisition_utc": "2023-06-22T19:33:26.512Z",
+      "apparent_solar_hour_at_domain_centroid": 11.655377310178713,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28131,
+      "scene": 14,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28131_014_11SLT_20230622T193326_0711_02",
+      "acquisition_utc": "2023-06-22T19:33:26.512Z",
+      "apparent_solar_hour_at_domain_centroid": 11.655377310178713,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28157,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28157_004_11SLT_20230624T112358_0710_01",
+      "acquisition_utc": "2023-06-24T11:23:58.969Z",
+      "apparent_solar_hour_at_domain_centroid": 3.491554914991809,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28157,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28157_004_11SLU_20230624T112358_0710_01",
+      "acquisition_utc": "2023-06-24T11:23:58.969Z",
+      "apparent_solar_hour_at_domain_centroid": 3.491554914991809,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28157,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28157_004_11SMT_20230624T112358_0710_01",
+      "acquisition_utc": "2023-06-24T11:23:58.969Z",
+      "apparent_solar_hour_at_domain_centroid": 3.491554914991809,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28157,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28157_004_11SLT_20230624T112358_0711_02",
+      "acquisition_utc": "2023-06-24T11:23:58.969Z",
+      "apparent_solar_hour_at_domain_centroid": 3.491554914991809,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28157,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28157_004_11SMT_20230624T112358_0711_02",
+      "acquisition_utc": "2023-06-24T11:23:58.969Z",
+      "apparent_solar_hour_at_domain_centroid": 3.491554914991809,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28157,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28157_004_11SLU_20230624T112358_0711_02",
+      "acquisition_utc": "2023-06-24T11:23:58.969Z",
+      "apparent_solar_hour_at_domain_centroid": 3.491554914991809,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28192,
+      "scene": 11,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28192_011_11SLU_20230626T175404_0710_01",
+      "acquisition_utc": "2023-06-26T17:54:04.164Z",
+      "apparent_solar_hour_at_domain_centroid": 9.985035407091827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28192,
+      "scene": 11,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28192_011_11SLU_20230626T175404_0711_02",
+      "acquisition_utc": "2023-06-26T17:54:04.164Z",
+      "apparent_solar_hour_at_domain_centroid": 9.985035407091827,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28192,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28192_012_11SLT_20230626T175456_0710_01",
+      "acquisition_utc": "2023-06-26T17:54:56.134Z",
+      "apparent_solar_hour_at_domain_centroid": 9.999477700094946,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28192,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28192_012_11SLU_20230626T175456_0710_01",
+      "acquisition_utc": "2023-06-26T17:54:56.134Z",
+      "apparent_solar_hour_at_domain_centroid": 9.999477700094946,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28192,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28192_012_11SMT_20230626T175456_0710_01",
+      "acquisition_utc": "2023-06-26T17:54:56.134Z",
+      "apparent_solar_hour_at_domain_centroid": 9.999477700094946,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28192,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28192_012_11SLU_20230626T175456_0711_02",
+      "acquisition_utc": "2023-06-26T17:54:56.134Z",
+      "apparent_solar_hour_at_domain_centroid": 9.999477700094946,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28192,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28192_012_11SLT_20230626T175456_0711_02",
+      "acquisition_utc": "2023-06-26T17:54:56.134Z",
+      "apparent_solar_hour_at_domain_centroid": 9.999477700094946,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28192,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28192_012_11SMT_20230626T175456_0711_02",
+      "acquisition_utc": "2023-06-26T17:54:56.134Z",
+      "apparent_solar_hour_at_domain_centroid": 9.999477700094946,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28218,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28218_004_11SLT_20230628T094538_0711_01",
+      "acquisition_utc": "2023-06-28T09:45:38.031Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8385905048286795,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28218,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28218_004_11SLU_20230628T094538_0711_01",
+      "acquisition_utc": "2023-06-28T09:45:38.031Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8385905048286795,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28218,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28218_004_11SMT_20230628T094538_0711_01",
+      "acquisition_utc": "2023-06-28T09:45:38.031Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8385905048286795,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28238,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28238_012_11SLU_20230629T170416_0710_01",
+      "acquisition_utc": "2023-06-29T17:04:16.344Z",
+      "apparent_solar_hour_at_domain_centroid": 9.144598120027988,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28238,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28238_012_11SLU_20230629T170416_0711_02",
+      "acquisition_utc": "2023-06-29T17:04:16.344Z",
+      "apparent_solar_hour_at_domain_centroid": 9.144598120027988,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28253,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28253_012_11SLU_20230630T161533_0710_01",
+      "acquisition_utc": "2023-06-30T16:15:33.581Z",
+      "apparent_solar_hour_at_domain_centroid": 8.329338574100714,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28253,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28253_012_11SLU_20230630T161533_0711_02",
+      "acquisition_utc": "2023-06-30T16:15:33.581Z",
+      "apparent_solar_hour_at_domain_centroid": 8.329338574100714,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28253,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28253_013_11SMT_20230630T161625_0710_01",
+      "acquisition_utc": "2023-06-30T16:16:25.550Z",
+      "apparent_solar_hour_at_domain_centroid": 8.343780968855672,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28253,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28253_013_11SMT_20230630T161625_0711_02",
+      "acquisition_utc": "2023-06-30T16:16:25.550Z",
+      "apparent_solar_hour_at_domain_centroid": 8.343780968855672,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28264,
+      "scene": 3,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28264_003_11SLT_20230701T085534_0710_01",
+      "acquisition_utc": "2023-07-01T08:55:34.839Z",
+      "apparent_solar_hour_at_domain_centroid": 0.9939314723829819,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28264,
+      "scene": 3,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28264_003_11SLU_20230701T085534_0710_01",
+      "acquisition_utc": "2023-07-01T08:55:34.839Z",
+      "apparent_solar_hour_at_domain_centroid": 0.9939314723829819,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28264,
+      "scene": 3,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28264_003_11SLT_20230701T085534_0711_02",
+      "acquisition_utc": "2023-07-01T08:55:34.839Z",
+      "apparent_solar_hour_at_domain_centroid": 0.9939314723829819,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28264,
+      "scene": 3,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28264_003_11SLU_20230701T085534_0711_02",
+      "acquisition_utc": "2023-07-01T08:55:34.839Z",
+      "apparent_solar_hour_at_domain_centroid": 0.9939314723829819,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28279,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28279_004_11SLU_20230702T080644_0710_01",
+      "acquisition_utc": "2023-07-02T08:06:44.983Z",
+      "apparent_solar_hour_at_domain_centroid": 0.17681886055747606,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28279,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28279_004_11SLT_20230702T080644_0710_01",
+      "acquisition_utc": "2023-07-02T08:06:44.983Z",
+      "apparent_solar_hour_at_domain_centroid": 0.17681886055747606,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28279,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28279_004_11SMT_20230702T080644_0710_01",
+      "acquisition_utc": "2023-07-02T08:06:44.983Z",
+      "apparent_solar_hour_at_domain_centroid": 0.17681886055747606,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28279,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28279_004_11SMT_20230702T080644_0711_02",
+      "acquisition_utc": "2023-07-02T08:06:44.983Z",
+      "apparent_solar_hour_at_domain_centroid": 0.17681886055747606,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28279,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28279_004_11SLU_20230702T080644_0711_02",
+      "acquisition_utc": "2023-07-02T08:06:44.983Z",
+      "apparent_solar_hour_at_domain_centroid": 0.17681886055747606,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28279,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28279_004_11SLT_20230702T080644_0711_02",
+      "acquisition_utc": "2023-07-02T08:06:44.983Z",
+      "apparent_solar_hour_at_domain_centroid": 0.17681886055747606,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28299,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28299_013_11SLT_20230703T152551_0710_01",
+      "acquisition_utc": "2023-07-03T15:25:51.831Z",
+      "apparent_solar_hour_at_domain_centroid": 7.491172012577945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28299,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28299_013_11SLU_20230703T152551_0710_01",
+      "acquisition_utc": "2023-07-03T15:25:51.831Z",
+      "apparent_solar_hour_at_domain_centroid": 7.491172012577945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28299,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28299_013_11SMT_20230703T152551_0710_01",
+      "acquisition_utc": "2023-07-03T15:25:51.831Z",
+      "apparent_solar_hour_at_domain_centroid": 7.491172012577945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28299,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28299_013_11SLU_20230703T152551_0711_02",
+      "acquisition_utc": "2023-07-03T15:25:51.831Z",
+      "apparent_solar_hour_at_domain_centroid": 7.491172012577945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28299,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28299_013_11SMT_20230703T152551_0711_02",
+      "acquisition_utc": "2023-07-03T15:25:51.831Z",
+      "apparent_solar_hour_at_domain_centroid": 7.491172012577945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28299,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28299_013_11SLT_20230703T152551_0711_02",
+      "acquisition_utc": "2023-07-03T15:25:51.831Z",
+      "apparent_solar_hour_at_domain_centroid": 7.491172012577945,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28325,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28325_005_11SLT_20230705T071642_0710_01",
+      "acquisition_utc": "2023-07-05T07:16:42.016Z",
+      "apparent_solar_hour_at_domain_centroid": 23.333433254306016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28325,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28325_005_11SLU_20230705T071642_0710_01",
+      "acquisition_utc": "2023-07-05T07:16:42.016Z",
+      "apparent_solar_hour_at_domain_centroid": 23.333433254306016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28325,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28325_005_11SMT_20230705T071642_0710_01",
+      "acquisition_utc": "2023-07-05T07:16:42.016Z",
+      "apparent_solar_hour_at_domain_centroid": 23.333433254306016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28325,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28325_005_11SLU_20230705T071642_0712_02",
+      "acquisition_utc": "2023-07-05T07:16:42.016Z",
+      "apparent_solar_hour_at_domain_centroid": 23.333433254306016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28325,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28325_005_11SMT_20230705T071642_0712_02",
+      "acquisition_utc": "2023-07-05T07:16:42.016Z",
+      "apparent_solar_hour_at_domain_centroid": 23.333433254306016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28325,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28325_005_11SLT_20230705T071642_0712_02",
+      "acquisition_utc": "2023-07-05T07:16:42.016Z",
+      "apparent_solar_hour_at_domain_centroid": 23.333433254306016,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28340,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28340_004_11SLT_20230706T062855_0712_01",
+      "acquisition_utc": "2023-07-06T06:28:55.945Z",
+      "apparent_solar_hour_at_domain_centroid": 22.53409536555338,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28340,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28340_004_11SLU_20230706T062855_0712_01",
+      "acquisition_utc": "2023-07-06T06:28:55.945Z",
+      "apparent_solar_hour_at_domain_centroid": 22.53409536555338,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28340,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28340_004_11SLT_20230706T062855_0712_02",
+      "acquisition_utc": "2023-07-06T06:28:55.945Z",
+      "apparent_solar_hour_at_domain_centroid": 22.53409536555338,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28340,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28340_004_11SMT_20230706T062855_0712_01",
+      "acquisition_utc": "2023-07-06T06:28:55.945Z",
+      "apparent_solar_hour_at_domain_centroid": 22.53409536555338,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28340,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28340_004_11SLU_20230706T062855_0712_02",
+      "acquisition_utc": "2023-07-06T06:28:55.945Z",
+      "apparent_solar_hour_at_domain_centroid": 22.53409536555338,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28340,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28340_004_11SMT_20230706T062855_0712_02",
+      "acquisition_utc": "2023-07-06T06:28:55.945Z",
+      "apparent_solar_hour_at_domain_centroid": 22.53409536555338,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28360,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28360_013_11SLU_20230707T134933_0710_01",
+      "acquisition_utc": "2023-07-07T13:49:33.610Z",
+      "apparent_solar_hour_at_domain_centroid": 5.874130105844721,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28360,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28360_013_11SLT_20230707T134933_0710_01",
+      "acquisition_utc": "2023-07-07T13:49:33.610Z",
+      "apparent_solar_hour_at_domain_centroid": 5.874130105844721,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28360,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28360_013_11SMT_20230707T134933_0710_01",
+      "acquisition_utc": "2023-07-07T13:49:33.610Z",
+      "apparent_solar_hour_at_domain_centroid": 5.874130105844721,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28360,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28360_013_11SLT_20230707T134933_0712_02",
+      "acquisition_utc": "2023-07-07T13:49:33.610Z",
+      "apparent_solar_hour_at_domain_centroid": 5.874130105844721,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28360,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28360_013_11SMT_20230707T134933_0712_02",
+      "acquisition_utc": "2023-07-07T13:49:33.610Z",
+      "apparent_solar_hour_at_domain_centroid": 5.874130105844721,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28360,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28360_013_11SLU_20230707T134933_0712_02",
+      "acquisition_utc": "2023-07-07T13:49:33.610Z",
+      "apparent_solar_hour_at_domain_centroid": 5.874130105844721,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28386,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28386_004_11SLT_20230709T054140_0710_01",
+      "acquisition_utc": "2023-07-09T05:41:40.587Z",
+      "apparent_solar_hour_at_domain_centroid": 21.738071059447456,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28386,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28386_004_11SMT_20230709T054140_0710_01",
+      "acquisition_utc": "2023-07-09T05:41:40.587Z",
+      "apparent_solar_hour_at_domain_centroid": 21.738071059447456,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28386,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28386_004_11SLU_20230709T054140_0710_01",
+      "acquisition_utc": "2023-07-09T05:41:40.587Z",
+      "apparent_solar_hour_at_domain_centroid": 21.738071059447456,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28386,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28386_004_11SLT_20230709T054140_0712_02",
+      "acquisition_utc": "2023-07-09T05:41:40.587Z",
+      "apparent_solar_hour_at_domain_centroid": 21.738071059447456,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28386,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28386_004_11SLU_20230709T054140_0712_02",
+      "acquisition_utc": "2023-07-09T05:41:40.587Z",
+      "apparent_solar_hour_at_domain_centroid": 21.738071059447456,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28386,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28386_004_11SMT_20230709T054140_0712_02",
+      "acquisition_utc": "2023-07-09T05:41:40.587Z",
+      "apparent_solar_hour_at_domain_centroid": 21.738071059447456,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28401,
+      "scene": 2,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28401_002_11SLT_20230710T045313_0710_01",
+      "acquisition_utc": "2023-07-10T04:53:13.380Z",
+      "apparent_solar_hour_at_domain_centroid": 20.927982631292384,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28401,
+      "scene": 2,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28401_002_11SMT_20230710T045313_0710_01",
+      "acquisition_utc": "2023-07-10T04:53:13.380Z",
+      "apparent_solar_hour_at_domain_centroid": 20.927982631292384,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28401,
+      "scene": 2,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28401_002_11SMT_20230710T045313_0712_02",
+      "acquisition_utc": "2023-07-10T04:53:13.380Z",
+      "apparent_solar_hour_at_domain_centroid": 20.927982631292384,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28401,
+      "scene": 2,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28401_002_11SLT_20230710T045313_0712_02",
+      "acquisition_utc": "2023-07-10T04:53:13.380Z",
+      "apparent_solar_hour_at_domain_centroid": 20.927982631292384,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28401,
+      "scene": 3,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28401_003_11SLT_20230710T045405_0710_01",
+      "acquisition_utc": "2023-07-10T04:54:05.350Z",
+      "apparent_solar_hour_at_domain_centroid": 20.942425494355405,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28401,
+      "scene": 3,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28401_003_11SLT_20230710T045405_0712_02",
+      "acquisition_utc": "2023-07-10T04:54:05.350Z",
+      "apparent_solar_hour_at_domain_centroid": 20.942425494355405,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28401,
+      "scene": 3,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28401_003_11SMT_20230710T045405_0712_02",
+      "acquisition_utc": "2023-07-10T04:54:05.350Z",
+      "apparent_solar_hour_at_domain_centroid": 20.942425494355405,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28421,
+      "scene": 9,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28421_009_11SLT_20230711T121350_0710_01",
+      "acquisition_utc": "2023-07-11T12:13:50.973Z",
+      "apparent_solar_hour_at_domain_centroid": 4.268255408424562,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28421,
+      "scene": 9,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28421_009_11SLU_20230711T121350_0710_01",
+      "acquisition_utc": "2023-07-11T12:13:50.973Z",
+      "apparent_solar_hour_at_domain_centroid": 4.268255408424562,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28421,
+      "scene": 9,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28421_009_11SMT_20230711T121350_0710_01",
+      "acquisition_utc": "2023-07-11T12:13:50.973Z",
+      "apparent_solar_hour_at_domain_centroid": 4.268255408424562,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28421,
+      "scene": 9,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28421_009_11SLU_20230711T121350_0712_02",
+      "acquisition_utc": "2023-07-11T12:13:50.973Z",
+      "apparent_solar_hour_at_domain_centroid": 4.268255408424562,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28421,
+      "scene": 9,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28421_009_11SLT_20230711T121350_0712_02",
+      "acquisition_utc": "2023-07-11T12:13:50.973Z",
+      "apparent_solar_hour_at_domain_centroid": 4.268255408424562,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28421,
+      "scene": 9,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28421_009_11SMT_20230711T121350_0712_02",
+      "acquisition_utc": "2023-07-11T12:13:50.973Z",
+      "apparent_solar_hour_at_domain_centroid": 4.268255408424562,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28421,
+      "scene": 10,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28421_010_11SLT_20230711T121442_0710_01",
+      "acquisition_utc": "2023-07-11T12:14:42.942Z",
+      "apparent_solar_hour_at_domain_centroid": 4.2826983582418565,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28421,
+      "scene": 10,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28421_010_11SMT_20230711T121442_0710_01",
+      "acquisition_utc": "2023-07-11T12:14:42.942Z",
+      "apparent_solar_hour_at_domain_centroid": 4.2826983582418565,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28421,
+      "scene": 10,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28421_010_11SLT_20230711T121442_0712_02",
+      "acquisition_utc": "2023-07-11T12:14:42.942Z",
+      "apparent_solar_hour_at_domain_centroid": 4.2826983582418565,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28421,
+      "scene": 10,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28421_010_11SMT_20230711T121442_0712_02",
+      "acquisition_utc": "2023-07-11T12:14:42.942Z",
+      "apparent_solar_hour_at_domain_centroid": 4.2826983582418565,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28447,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28447_004_11SLU_20230713T040614_0710_01",
+      "acquisition_utc": "2023-07-13T04:06:14.409Z",
+      "apparent_solar_hour_at_domain_centroid": 20.137623176256085,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28447,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28447_004_11SLT_20230713T040614_0710_01",
+      "acquisition_utc": "2023-07-13T04:06:14.409Z",
+      "apparent_solar_hour_at_domain_centroid": 20.137623176256085,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28447,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28447_004_11SMT_20230713T040614_0710_01",
+      "acquisition_utc": "2023-07-13T04:06:14.409Z",
+      "apparent_solar_hour_at_domain_centroid": 20.137623176256085,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28447,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28447_004_11SLU_20230713T040614_0712_02",
+      "acquisition_utc": "2023-07-13T04:06:14.409Z",
+      "apparent_solar_hour_at_domain_centroid": 20.137623176256085,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28447,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28447_004_11SLT_20230713T040614_0712_02",
+      "acquisition_utc": "2023-07-13T04:06:14.409Z",
+      "apparent_solar_hour_at_domain_centroid": 20.137623176256085,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28447,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28447_004_11SMT_20230713T040614_0712_02",
+      "acquisition_utc": "2023-07-13T04:06:14.409Z",
+      "apparent_solar_hour_at_domain_centroid": 20.137623176256085,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28462,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28462_005_11SLT_20230714T031802_0710_01",
+      "acquisition_utc": "2023-07-14T03:18:02.341Z",
+      "apparent_solar_hour_at_domain_centroid": 19.332135583352493,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28462,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28462_005_11SMT_20230714T031802_0710_01",
+      "acquisition_utc": "2023-07-14T03:18:02.341Z",
+      "apparent_solar_hour_at_domain_centroid": 19.332135583352493,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28462,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28462_005_11SMT_20230714T031802_0712_02",
+      "acquisition_utc": "2023-07-14T03:18:02.341Z",
+      "apparent_solar_hour_at_domain_centroid": 19.332135583352493,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28462,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28462_005_11SLT_20230714T031802_0712_02",
+      "acquisition_utc": "2023-07-14T03:18:02.341Z",
+      "apparent_solar_hour_at_domain_centroid": 19.332135583352493,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28523,
+      "scene": 3,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28523_003_11SMT_20230718T014232_0710_01",
+      "acquisition_utc": "2023-07-18T01:42:32.681Z",
+      "apparent_solar_hour_at_domain_centroid": 17.732953539187765,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28523,
+      "scene": 3,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28523_003_11SMT_20230718T014232_0712_02",
+      "acquisition_utc": "2023-07-18T01:42:32.681Z",
+      "apparent_solar_hour_at_domain_centroid": 17.732953539187765,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28528,
+      "scene": 15,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28528_015_11SLU_20230718T095015_0710_01",
+      "acquisition_utc": "2023-07-18T09:50:15.024Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8610168120295258,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28528,
+      "scene": 15,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28528_015_11SLT_20230718T095015_0710_01",
+      "acquisition_utc": "2023-07-18T09:50:15.024Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8610168120295258,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28528,
+      "scene": 15,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28528_015_11SLT_20230718T095015_0712_02",
+      "acquisition_utc": "2023-07-18T09:50:15.024Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8610168120295258,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28528,
+      "scene": 15,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28528_015_11SLU_20230718T095015_0712_02",
+      "acquisition_utc": "2023-07-18T09:50:15.024Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8610168120295258,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28528,
+      "scene": 16,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28528_016_11SMT_20230718T095105_0710_01",
+      "acquisition_utc": "2023-07-18T09:51:05.813Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8749047788728306,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28528,
+      "scene": 16,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28528_016_11SLT_20230718T095105_0710_01",
+      "acquisition_utc": "2023-07-18T09:51:05.813Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8749047788728306,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28528,
+      "scene": 16,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28528_016_11SMT_20230718T095105_0712_02",
+      "acquisition_utc": "2023-07-18T09:51:05.813Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8749047788728306,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28528,
+      "scene": 16,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28528_016_11SLT_20230718T095105_0712_02",
+      "acquisition_utc": "2023-07-18T09:51:05.813Z",
+      "apparent_solar_hour_at_domain_centroid": 1.8749047788728306,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28569,
+      "scene": 3,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28569_003_11SLT_20230721T005411_0710_01",
+      "acquisition_utc": "2023-07-21T00:54:11.146Z",
+      "apparent_solar_hour_at_domain_centroid": 16.92289073767847,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28569,
+      "scene": 3,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28569_003_11SLU_20230721T005411_0710_01",
+      "acquisition_utc": "2023-07-21T00:54:11.146Z",
+      "apparent_solar_hour_at_domain_centroid": 16.92289073767847,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28569,
+      "scene": 3,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28569_003_11SMT_20230721T005411_0710_01",
+      "acquisition_utc": "2023-07-21T00:54:11.146Z",
+      "apparent_solar_hour_at_domain_centroid": 16.92289073767847,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28569,
+      "scene": 3,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28569_003_11SLT_20230721T005411_0712_02",
+      "acquisition_utc": "2023-07-21T00:54:11.146Z",
+      "apparent_solar_hour_at_domain_centroid": 16.92289073767847,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28569,
+      "scene": 3,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28569_003_11SMT_20230721T005411_0712_02",
+      "acquisition_utc": "2023-07-21T00:54:11.146Z",
+      "apparent_solar_hour_at_domain_centroid": 16.92289073767847,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28569,
+      "scene": 3,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28569_003_11SLU_20230721T005411_0712_02",
+      "acquisition_utc": "2023-07-21T00:54:11.146Z",
+      "apparent_solar_hour_at_domain_centroid": 16.92289073767847,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28630,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28630_001_11SLT_20230724T231732_0710_01",
+      "acquisition_utc": "2023-07-24T23:17:32.954Z",
+      "apparent_solar_hour_at_domain_centroid": 15.30852834828483,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28630,
+      "scene": 1,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28630_001_11SLU_20230724T231732_0710_01",
+      "acquisition_utc": "2023-07-24T23:17:32.954Z",
+      "apparent_solar_hour_at_domain_centroid": 15.30852834828483,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28630,
+      "scene": 1,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28630_001_11SMT_20230724T231732_0710_01",
+      "acquisition_utc": "2023-07-24T23:17:32.954Z",
+      "apparent_solar_hour_at_domain_centroid": 15.30852834828483,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28630,
+      "scene": 1,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28630_001_11SMT_20230724T231732_0712_02",
+      "acquisition_utc": "2023-07-24T23:17:32.954Z",
+      "apparent_solar_hour_at_domain_centroid": 15.30852834828483,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28630,
+      "scene": 1,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28630_001_11SLU_20230724T231732_0712_02",
+      "acquisition_utc": "2023-07-24T23:17:32.954Z",
+      "apparent_solar_hour_at_domain_centroid": 15.30852834828483,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28630,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28630_001_11SLT_20230724T231732_0712_02",
+      "acquisition_utc": "2023-07-24T23:17:32.954Z",
+      "apparent_solar_hour_at_domain_centroid": 15.30852834828483,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28650,
+      "scene": 7,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28650_007_11SLT_20230726T063732_0710_01",
+      "acquisition_utc": "2023-07-26T06:37:32.754Z",
+      "apparent_solar_hour_at_domain_centroid": 22.641241565370525,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28650,
+      "scene": 7,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28650_007_11SLU_20230726T063732_0710_01",
+      "acquisition_utc": "2023-07-26T06:37:32.754Z",
+      "apparent_solar_hour_at_domain_centroid": 22.641241565370525,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28650,
+      "scene": 7,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28650_007_11SMT_20230726T063732_0710_01",
+      "acquisition_utc": "2023-07-26T06:37:32.754Z",
+      "apparent_solar_hour_at_domain_centroid": 22.641241565370525,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28650,
+      "scene": 7,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28650_007_11SLT_20230726T063732_0712_02",
+      "acquisition_utc": "2023-07-26T06:37:32.754Z",
+      "apparent_solar_hour_at_domain_centroid": 22.641241565370525,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28650,
+      "scene": 7,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28650_007_11SLU_20230726T063732_0712_02",
+      "acquisition_utc": "2023-07-26T06:37:32.754Z",
+      "apparent_solar_hour_at_domain_centroid": 22.641241565370525,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28650,
+      "scene": 7,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28650_007_11SMT_20230726T063732_0712_02",
+      "acquisition_utc": "2023-07-26T06:37:32.754Z",
+      "apparent_solar_hour_at_domain_centroid": 22.641241565370525,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28650,
+      "scene": 8,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28650_008_11SMT_20230726T063824_0710_01",
+      "acquisition_utc": "2023-07-26T06:38:24.724Z",
+      "apparent_solar_hour_at_domain_centroid": 22.655685789067157,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28650,
+      "scene": 8,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28650_008_11SMT_20230726T063824_0712_02",
+      "acquisition_utc": "2023-07-26T06:38:24.724Z",
+      "apparent_solar_hour_at_domain_centroid": 22.655685789067157,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28676,
+      "scene": 1,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28676_001_11SLU_20230727T222908_0710_01",
+      "acquisition_utc": "2023-07-27T22:29:08.977Z",
+      "apparent_solar_hour_at_domain_centroid": 14.500863801449771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28676,
+      "scene": 1,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28676_001_11SLU_20230727T222908_0712_02",
+      "acquisition_utc": "2023-07-27T22:29:08.977Z",
+      "apparent_solar_hour_at_domain_centroid": 14.500863801449771,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28691,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28691_004_11SLT_20230728T214058_0710_01",
+      "acquisition_utc": "2023-07-28T21:40:58.112Z",
+      "apparent_solar_hour_at_domain_centroid": 13.698081491603517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28691,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28691_004_11SLU_20230728T214058_0710_01",
+      "acquisition_utc": "2023-07-28T21:40:58.112Z",
+      "apparent_solar_hour_at_domain_centroid": 13.698081491603517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28691,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28691_004_11SMT_20230728T214058_0710_01",
+      "acquisition_utc": "2023-07-28T21:40:58.112Z",
+      "apparent_solar_hour_at_domain_centroid": 13.698081491603517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28691,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28691_004_11SLU_20230728T214058_0712_02",
+      "acquisition_utc": "2023-07-28T21:40:58.112Z",
+      "apparent_solar_hour_at_domain_centroid": 13.698081491603517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28691,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28691_004_11SMT_20230728T214058_0712_02",
+      "acquisition_utc": "2023-07-28T21:40:58.112Z",
+      "apparent_solar_hour_at_domain_centroid": 13.698081491603517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28691,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28691_004_11SLT_20230728T214058_0712_02",
+      "acquisition_utc": "2023-07-28T21:40:58.112Z",
+      "apparent_solar_hour_at_domain_centroid": 13.698081491603517,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28711,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28711_012_11SLT_20230730T050130_0710_01",
+      "acquisition_utc": "2023-07-30T05:01:30.004Z",
+      "apparent_solar_hour_at_domain_centroid": 21.040552649880823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28711,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28711_012_11SLU_20230730T050130_0710_01",
+      "acquisition_utc": "2023-07-30T05:01:30.004Z",
+      "apparent_solar_hour_at_domain_centroid": 21.040552649880823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28711,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28711_012_11SMT_20230730T050130_0710_01",
+      "acquisition_utc": "2023-07-30T05:01:30.004Z",
+      "apparent_solar_hour_at_domain_centroid": 21.040552649880823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28711,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28711_012_11SLT_20230730T050130_0712_02",
+      "acquisition_utc": "2023-07-30T05:01:30.004Z",
+      "apparent_solar_hour_at_domain_centroid": 21.040552649880823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28711,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28711_012_11SMT_20230730T050130_0712_02",
+      "acquisition_utc": "2023-07-30T05:01:30.004Z",
+      "apparent_solar_hour_at_domain_centroid": 21.040552649880823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28711,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28711_012_11SLU_20230730T050130_0712_02",
+      "acquisition_utc": "2023-07-30T05:01:30.004Z",
+      "apparent_solar_hour_at_domain_centroid": 21.040552649880823,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28737,
+      "scene": 3,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28737_003_11SLU_20230731T205217_0710_01",
+      "acquisition_utc": "2023-07-31T20:52:17.811Z",
+      "apparent_solar_hour_at_domain_centroid": 12.887686006753292,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28737,
+      "scene": 3,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28737_003_11SLU_20230731T205217_0712_02",
+      "acquisition_utc": "2023-07-31T20:52:17.811Z",
+      "apparent_solar_hour_at_domain_centroid": 12.887686006753292,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28737,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28737_004_11SLU_20230731T205309_0710_01",
+      "acquisition_utc": "2023-07-31T20:53:09.781Z",
+      "apparent_solar_hour_at_domain_centroid": 12.902130808560223,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28737,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28737_004_11SLU_20230731T205309_0712_02",
+      "acquisition_utc": "2023-07-31T20:53:09.781Z",
+      "apparent_solar_hour_at_domain_centroid": 12.902130808560223,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28772,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28772_012_11SMT_20230803T032457_0712_01",
+      "acquisition_utc": "2023-08-03T03:24:57.573Z",
+      "apparent_solar_hour_at_domain_centroid": 19.433935122993297,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28772,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28772_012_11SLT_20230803T032457_0712_01",
+      "acquisition_utc": "2023-08-03T03:24:57.573Z",
+      "apparent_solar_hour_at_domain_centroid": 19.433935122993297,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28798,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28798_001_11SLT_20230804T191545_0710_01",
+      "acquisition_utc": "2023-08-04T19:15:45.398Z",
+      "apparent_solar_hour_at_domain_centroid": 11.282498593289086,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28798,
+      "scene": 1,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28798_001_11SLU_20230804T191545_0710_01",
+      "acquisition_utc": "2023-08-04T19:15:45.398Z",
+      "apparent_solar_hour_at_domain_centroid": 11.282498593289086,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28798,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28798_001_11SLT_20230804T191545_0712_02",
+      "acquisition_utc": "2023-08-04T19:15:45.398Z",
+      "apparent_solar_hour_at_domain_centroid": 11.282498593289086,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28798,
+      "scene": 1,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28798_001_11SLU_20230804T191545_0712_02",
+      "acquisition_utc": "2023-08-04T19:15:45.398Z",
+      "apparent_solar_hour_at_domain_centroid": 11.282498593289086,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28813,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28813_004_11SLT_20230805T182715_0710_01",
+      "acquisition_utc": "2023-08-05T18:27:15.832Z",
+      "apparent_solar_hour_at_domain_centroid": 10.475494852759097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28813,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28813_004_11SLU_20230805T182715_0710_01",
+      "acquisition_utc": "2023-08-05T18:27:15.832Z",
+      "apparent_solar_hour_at_domain_centroid": 10.475494852759097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28813,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28813_004_11SMT_20230805T182715_0710_01",
+      "acquisition_utc": "2023-08-05T18:27:15.832Z",
+      "apparent_solar_hour_at_domain_centroid": 10.475494852759097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28813,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28813_004_11SLT_20230805T182715_0712_02",
+      "acquisition_utc": "2023-08-05T18:27:15.832Z",
+      "apparent_solar_hour_at_domain_centroid": 10.475494852759097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28813,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28813_004_11SLU_20230805T182715_0712_02",
+      "acquisition_utc": "2023-08-05T18:27:15.832Z",
+      "apparent_solar_hour_at_domain_centroid": 10.475494852759097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28813,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28813_004_11SMT_20230805T182715_0712_02",
+      "acquisition_utc": "2023-08-05T18:27:15.832Z",
+      "apparent_solar_hour_at_domain_centroid": 10.475494852759097,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28833,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28833_013_11SLU_20230807T014701_0712_02",
+      "acquisition_utc": "2023-08-07T01:47:01.503Z",
+      "apparent_solar_hour_at_domain_centroid": 17.8069990762762,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28833,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28833_013_11SMT_20230807T014701_0712_02",
+      "acquisition_utc": "2023-08-07T01:47:01.503Z",
+      "apparent_solar_hour_at_domain_centroid": 17.8069990762762,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28833,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28833_013_11SLT_20230807T014701_0712_02",
+      "acquisition_utc": "2023-08-07T01:47:01.503Z",
+      "apparent_solar_hour_at_domain_centroid": 17.8069990762762,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28833,
+      "scene": 14,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28833_014_11SLT_20230807T014752_0712_02",
+      "acquisition_utc": "2023-08-07T01:47:52.292Z",
+      "apparent_solar_hour_at_domain_centroid": 17.821166742818733,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28833,
+      "scene": 14,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28833_014_11SMT_20230807T014752_0712_02",
+      "acquisition_utc": "2023-08-07T01:47:52.292Z",
+      "apparent_solar_hour_at_domain_centroid": 17.821166742818733,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28859,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28859_005_11SLT_20230808T173811_0712_02",
+      "acquisition_utc": "2023-08-08T17:38:11.790Z",
+      "apparent_solar_hour_at_domain_centroid": 9.662833911879956,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28859,
+      "scene": 6,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28859_006_11SLT_20230808T173903_0712_02",
+      "acquisition_utc": "2023-08-08T17:39:03.759Z",
+      "apparent_solar_hour_at_domain_centroid": 9.677279552774527,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28859,
+      "scene": 6,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28859_006_11SMT_20230808T173903_0712_02",
+      "acquisition_utc": "2023-08-08T17:39:03.759Z",
+      "apparent_solar_hour_at_domain_centroid": 9.677279552774527,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28859,
+      "scene": 6,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28859_006_11SLU_20230808T173903_0712_02",
+      "acquisition_utc": "2023-08-08T17:39:03.759Z",
+      "apparent_solar_hour_at_domain_centroid": 9.677279552774527,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28874,
+      "scene": 3,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28874_003_11SLT_20230809T164943_0712_02",
+      "acquisition_utc": "2023-08-09T16:49:43.420Z",
+      "apparent_solar_hour_at_domain_centroid": 8.85705942085511,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28874,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28874_004_11SLU_20230809T165035_0710_01",
+      "acquisition_utc": "2023-08-09T16:50:35.390Z",
+      "apparent_solar_hour_at_domain_centroid": 8.871505164180679,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28874,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28874_004_11SMT_20230809T165035_0712_02",
+      "acquisition_utc": "2023-08-09T16:50:35.390Z",
+      "apparent_solar_hour_at_domain_centroid": 8.871505164180679,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28874,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28874_004_11SLU_20230809T165035_0712_02",
+      "acquisition_utc": "2023-08-09T16:50:35.390Z",
+      "apparent_solar_hour_at_domain_centroid": 8.871505164180679,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28874,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28874_004_11SLT_20230809T165035_0712_02",
+      "acquisition_utc": "2023-08-09T16:50:35.390Z",
+      "apparent_solar_hour_at_domain_centroid": 8.871505164180679,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28935,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28935_001_11SLT_20230813T151506_0712_01",
+      "acquisition_utc": "2023-08-13T15:15:06.063Z",
+      "apparent_solar_hour_at_domain_centroid": 7.2899527461864775,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28935,
+      "scene": 1,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28935_001_11SMT_20230813T151506_0712_01",
+      "acquisition_utc": "2023-08-13T15:15:06.063Z",
+      "apparent_solar_hour_at_domain_centroid": 7.2899527461864775,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28955,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28955_013_11SLU_20230814T223548_0710_01",
+      "acquisition_utc": "2023-08-14T22:35:48.621Z",
+      "apparent_solar_hour_at_domain_centroid": 14.638805165682989,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28955,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28955_013_11SLT_20230814T223548_0710_01",
+      "acquisition_utc": "2023-08-14T22:35:48.621Z",
+      "apparent_solar_hour_at_domain_centroid": 14.638805165682989,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28955,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28955_013_11SMT_20230814T223548_0710_01",
+      "acquisition_utc": "2023-08-14T22:35:48.621Z",
+      "apparent_solar_hour_at_domain_centroid": 14.638805165682989,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28955,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28955_013_11SLT_20230814T223548_0712_02",
+      "acquisition_utc": "2023-08-14T22:35:48.621Z",
+      "apparent_solar_hour_at_domain_centroid": 14.638805165682989,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28955,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28955_013_11SMT_20230814T223548_0712_02",
+      "acquisition_utc": "2023-08-14T22:35:48.621Z",
+      "apparent_solar_hour_at_domain_centroid": 14.638805165682989,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28955,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28955_013_11SLU_20230814T223548_0712_02",
+      "acquisition_utc": "2023-08-14T22:35:48.621Z",
+      "apparent_solar_hour_at_domain_centroid": 14.638805165682989,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28981,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28981_004_11SLU_20230816T142827_0710_01",
+      "acquisition_utc": "2023-08-16T14:28:27.502Z",
+      "apparent_solar_hour_at_domain_centroid": 6.521618145854641,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28981,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28981_004_11SLT_20230816T142827_0710_01",
+      "acquisition_utc": "2023-08-16T14:28:27.502Z",
+      "apparent_solar_hour_at_domain_centroid": 6.521618145854641,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28981,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28981_004_11SMT_20230816T142827_0710_01",
+      "acquisition_utc": "2023-08-16T14:28:27.502Z",
+      "apparent_solar_hour_at_domain_centroid": 6.521618145854641,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28981,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28981_004_11SLT_20230816T142827_0712_02",
+      "acquisition_utc": "2023-08-16T14:28:27.502Z",
+      "apparent_solar_hour_at_domain_centroid": 6.521618145854641,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28981,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_28981_004_11SLU_20230816T142827_0712_02",
+      "acquisition_utc": "2023-08-16T14:28:27.502Z",
+      "apparent_solar_hour_at_domain_centroid": 6.521618145854641,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28981,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28981_004_11SMT_20230816T142827_0712_02",
+      "acquisition_utc": "2023-08-16T14:28:27.502Z",
+      "apparent_solar_hour_at_domain_centroid": 6.521618145854641,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28996,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28996_004_11SMT_20230817T134037_0710_01",
+      "acquisition_utc": "2023-08-17T13:40:37.928Z",
+      "apparent_solar_hour_at_domain_centroid": 5.72769566474637,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28996,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_28996_004_11SLT_20230817T134037_0712_02",
+      "acquisition_utc": "2023-08-17T13:40:37.928Z",
+      "apparent_solar_hour_at_domain_centroid": 5.72769566474637,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 28996,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_28996_004_11SMT_20230817T134037_0712_02",
+      "acquisition_utc": "2023-08-17T13:40:37.928Z",
+      "apparent_solar_hour_at_domain_centroid": 5.72769566474637,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29016,
+      "scene": 11,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29016_011_11SLU_20230818T210034_0710_01",
+      "acquisition_utc": "2023-08-18T21:00:34.420Z",
+      "apparent_solar_hour_at_domain_centroid": 13.064889749392,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29016,
+      "scene": 11,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29016_011_11SLU_20230818T210034_0712_02",
+      "acquisition_utc": "2023-08-18T21:00:34.420Z",
+      "apparent_solar_hour_at_domain_centroid": 13.064889749392,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29016,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29016_012_11SLU_20230818T210126_0710_01",
+      "acquisition_utc": "2023-08-18T21:01:26.390Z",
+      "apparent_solar_hour_at_domain_centroid": 13.079336420110755,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29016,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29016_012_11SMT_20230818T210126_0710_01",
+      "acquisition_utc": "2023-08-18T21:01:26.390Z",
+      "apparent_solar_hour_at_domain_centroid": 13.079336420110755,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29016,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29016_012_11SLT_20230818T210126_0710_01",
+      "acquisition_utc": "2023-08-18T21:01:26.390Z",
+      "apparent_solar_hour_at_domain_centroid": 13.079336420110755,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29016,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29016_012_11SLT_20230818T210126_0712_02",
+      "acquisition_utc": "2023-08-18T21:01:26.390Z",
+      "apparent_solar_hour_at_domain_centroid": 13.079336420110755,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29016,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29016_012_11SLU_20230818T210126_0712_02",
+      "acquisition_utc": "2023-08-18T21:01:26.390Z",
+      "apparent_solar_hour_at_domain_centroid": 13.079336420110755,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29016,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29016_012_11SMT_20230818T210126_0712_02",
+      "acquisition_utc": "2023-08-18T21:01:26.390Z",
+      "apparent_solar_hour_at_domain_centroid": 13.079336420110755,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29057,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29057_004_11SMT_20230821T120547_0710_01",
+      "acquisition_utc": "2023-08-21T12:05:47.318Z",
+      "apparent_solar_hour_at_domain_centroid": 4.162090921343106,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29057,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29057_004_11SMT_20230821T120547_0712_02",
+      "acquisition_utc": "2023-08-21T12:05:47.318Z",
+      "apparent_solar_hour_at_domain_centroid": 4.162090921343106,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29077,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29077_012_11SLT_20230822T192609_0710_01",
+      "acquisition_utc": "2023-08-22T19:26:09.777Z",
+      "apparent_solar_hour_at_domain_centroid": 11.507015947420381,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29077,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29077_012_11SMT_20230822T192609_0710_01",
+      "acquisition_utc": "2023-08-22T19:26:09.777Z",
+      "apparent_solar_hour_at_domain_centroid": 11.507015947420381,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29077,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29077_012_11SLU_20230822T192609_0710_01",
+      "acquisition_utc": "2023-08-22T19:26:09.777Z",
+      "apparent_solar_hour_at_domain_centroid": 11.507015947420381,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29077,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29077_012_11SLU_20230822T192609_0712_02",
+      "acquisition_utc": "2023-08-22T19:26:09.777Z",
+      "apparent_solar_hour_at_domain_centroid": 11.507015947420381,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29077,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29077_012_11SLT_20230822T192609_0712_02",
+      "acquisition_utc": "2023-08-22T19:26:09.777Z",
+      "apparent_solar_hour_at_domain_centroid": 11.507015947420381,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29077,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29077_012_11SMT_20230822T192609_0712_02",
+      "acquisition_utc": "2023-08-22T19:26:09.777Z",
+      "apparent_solar_hour_at_domain_centroid": 11.507015947420381,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29077,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29077_013_11SMT_20230822T192701_0710_01",
+      "acquisition_utc": "2023-08-22T19:27:01.747Z",
+      "apparent_solar_hour_at_domain_centroid": 11.52146297503484,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29077,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29077_013_11SMT_20230822T192701_0712_02",
+      "acquisition_utc": "2023-08-22T19:27:01.747Z",
+      "apparent_solar_hour_at_domain_centroid": 11.52146297503484,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29103,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29103_004_11SLT_20230824T111827_0710_01",
+      "acquisition_utc": "2023-08-24T11:18:27.370Z",
+      "apparent_solar_hour_at_domain_centroid": 3.386008397701326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29103,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29103_004_11SLU_20230824T111827_0710_01",
+      "acquisition_utc": "2023-08-24T11:18:27.370Z",
+      "apparent_solar_hour_at_domain_centroid": 3.386008397701326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29103,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29103_004_11SMT_20230824T111827_0710_01",
+      "acquisition_utc": "2023-08-24T11:18:27.370Z",
+      "apparent_solar_hour_at_domain_centroid": 3.386008397701326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29103,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29103_004_11SLT_20230824T111827_0712_02",
+      "acquisition_utc": "2023-08-24T11:18:27.370Z",
+      "apparent_solar_hour_at_domain_centroid": 3.386008397701326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29103,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29103_004_11SLU_20230824T111827_0712_02",
+      "acquisition_utc": "2023-08-24T11:18:27.370Z",
+      "apparent_solar_hour_at_domain_centroid": 3.386008397701326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29103,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29103_004_11SMT_20230824T111827_0712_02",
+      "acquisition_utc": "2023-08-24T11:18:27.370Z",
+      "apparent_solar_hour_at_domain_centroid": 3.386008397701326,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29123,
+      "scene": 18,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29123_018_11SMT_20230825T183849_0710_01",
+      "acquisition_utc": "2023-08-25T18:38:49.657Z",
+      "apparent_solar_hour_at_domain_centroid": 10.731477581964354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29123,
+      "scene": 18,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29123_018_11SLU_20230825T183849_0710_01",
+      "acquisition_utc": "2023-08-25T18:38:49.657Z",
+      "apparent_solar_hour_at_domain_centroid": 10.731477581964354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29123,
+      "scene": 18,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29123_018_11SLU_20230825T183849_0712_02",
+      "acquisition_utc": "2023-08-25T18:38:49.657Z",
+      "apparent_solar_hour_at_domain_centroid": 10.731477581964354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29123,
+      "scene": 18,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29123_018_11SLT_20230825T183849_0712_02",
+      "acquisition_utc": "2023-08-25T18:38:49.657Z",
+      "apparent_solar_hour_at_domain_centroid": 10.731477581964354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29123,
+      "scene": 18,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29123_018_11SMT_20230825T183849_0712_02",
+      "acquisition_utc": "2023-08-25T18:38:49.657Z",
+      "apparent_solar_hour_at_domain_centroid": 10.731477581964354,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29138,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29138_012_11SLU_20230826T174939_0710_01",
+      "acquisition_utc": "2023-08-26T17:49:39.936Z",
+      "apparent_solar_hour_at_domain_centroid": 9.916634334979912,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29138,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29138_012_11SLU_20230826T174939_0712_02",
+      "acquisition_utc": "2023-08-26T17:49:39.936Z",
+      "apparent_solar_hour_at_domain_centroid": 9.916634334979912,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29138,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29138_013_11SLT_20230826T175031_0710_01",
+      "acquisition_utc": "2023-08-26T17:50:31.906Z",
+      "apparent_solar_hour_at_domain_centroid": 9.931081684014126,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29138,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29138_013_11SMT_20230826T175031_0710_01",
+      "acquisition_utc": "2023-08-26T17:50:31.906Z",
+      "apparent_solar_hour_at_domain_centroid": 9.931081684014126,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29138,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29138_013_11SLU_20230826T175031_0710_01",
+      "acquisition_utc": "2023-08-26T17:50:31.906Z",
+      "apparent_solar_hour_at_domain_centroid": 9.931081684014126,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29138,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29138_013_11SLU_20230826T175031_0712_02",
+      "acquisition_utc": "2023-08-26T17:50:31.906Z",
+      "apparent_solar_hour_at_domain_centroid": 9.931081684014126,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29138,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29138_013_11SLT_20230826T175031_0712_02",
+      "acquisition_utc": "2023-08-26T17:50:31.906Z",
+      "apparent_solar_hour_at_domain_centroid": 9.931081684014126,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29138,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29138_013_11SMT_20230826T175031_0712_02",
+      "acquisition_utc": "2023-08-26T17:50:31.906Z",
+      "apparent_solar_hour_at_domain_centroid": 9.931081684014126,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29184,
+      "scene": 14,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29184_014_11SLT_20230829T170138_0710_01",
+      "acquisition_utc": "2023-08-29T17:01:38.463Z",
+      "apparent_solar_hour_at_domain_centroid": 9.13121390469776,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29184,
+      "scene": 14,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29184_014_11SLT_20230829T170138_0712_02",
+      "acquisition_utc": "2023-08-29T17:01:38.463Z",
+      "apparent_solar_hour_at_domain_centroid": 9.13121390469776,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29184,
+      "scene": 14,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29184_014_11SLU_20230829T170138_0712_02",
+      "acquisition_utc": "2023-08-29T17:01:38.463Z",
+      "apparent_solar_hour_at_domain_centroid": 9.13121390469776,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29184,
+      "scene": 15,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29184_015_11SLU_20230829T170230_0710_01",
+      "acquisition_utc": "2023-08-29T17:02:30.433Z",
+      "apparent_solar_hour_at_domain_centroid": 9.145661468658224,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29184,
+      "scene": 15,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29184_015_11SLT_20230829T170230_0710_01",
+      "acquisition_utc": "2023-08-29T17:02:30.433Z",
+      "apparent_solar_hour_at_domain_centroid": 9.145661468658224,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29184,
+      "scene": 15,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29184_015_11SMT_20230829T170230_0710_01",
+      "acquisition_utc": "2023-08-29T17:02:30.433Z",
+      "apparent_solar_hour_at_domain_centroid": 9.145661468658224,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29184,
+      "scene": 15,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29184_015_11SLU_20230829T170230_0712_02",
+      "acquisition_utc": "2023-08-29T17:02:30.433Z",
+      "apparent_solar_hour_at_domain_centroid": 9.145661468658224,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29184,
+      "scene": 15,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29184_015_11SMT_20230829T170230_0712_02",
+      "acquisition_utc": "2023-08-29T17:02:30.433Z",
+      "apparent_solar_hour_at_domain_centroid": 9.145661468658224,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29184,
+      "scene": 15,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29184_015_11SLT_20230829T170230_0712_02",
+      "acquisition_utc": "2023-08-29T17:02:30.433Z",
+      "apparent_solar_hour_at_domain_centroid": 9.145661468658224,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29199,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29199_012_11SLU_20230830T161314_0710_01",
+      "acquisition_utc": "2023-08-30T16:13:14.608Z",
+      "apparent_solar_hour_at_domain_centroid": 8.329608264904689,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29199,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29199_012_11SLT_20230830T161314_0710_01",
+      "acquisition_utc": "2023-08-30T16:13:14.608Z",
+      "apparent_solar_hour_at_domain_centroid": 8.329608264904689,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29199,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29199_012_11SMT_20230830T161314_0710_01",
+      "acquisition_utc": "2023-08-30T16:13:14.608Z",
+      "apparent_solar_hour_at_domain_centroid": 8.329608264904689,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29199,
+      "scene": 12,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29199_012_11SLT_20230830T161314_0712_02",
+      "acquisition_utc": "2023-08-30T16:13:14.608Z",
+      "apparent_solar_hour_at_domain_centroid": 8.329608264904689,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29199,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29199_012_11SLU_20230830T161314_0712_02",
+      "acquisition_utc": "2023-08-30T16:13:14.608Z",
+      "apparent_solar_hour_at_domain_centroid": 8.329608264904689,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29199,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29199_012_11SMT_20230830T161314_0712_02",
+      "acquisition_utc": "2023-08-30T16:13:14.608Z",
+      "apparent_solar_hour_at_domain_centroid": 8.329608264904689,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29199,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29199_013_11SMT_20230830T161406_0710_01",
+      "acquisition_utc": "2023-08-30T16:14:06.578Z",
+      "apparent_solar_hour_at_domain_centroid": 8.344055893251358,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29199,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29199_013_11SMT_20230830T161406_0712_02",
+      "acquisition_utc": "2023-08-30T16:14:06.578Z",
+      "apparent_solar_hour_at_domain_centroid": 8.344055893251358,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29225,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29225_001_11SLT_20230901T080500_0712_01",
+      "acquisition_utc": "2023-09-01T08:05:00.265Z",
+      "apparent_solar_hour_at_domain_centroid": 0.20131797725561618,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29225,
+      "scene": 1,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29225_001_11SLU_20230901T080500_0712_01",
+      "acquisition_utc": "2023-09-01T08:05:00.265Z",
+      "apparent_solar_hour_at_domain_centroid": 0.20131797725561618,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29225,
+      "scene": 1,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29225_001_11SMT_20230901T080500_0712_01",
+      "acquisition_utc": "2023-09-01T08:05:00.265Z",
+      "apparent_solar_hour_at_domain_centroid": 0.20131797725561618,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29245,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29245_012_11SLU_20230902T152405_0710_01",
+      "acquisition_utc": "2023-09-02T15:24:05.914Z",
+      "apparent_solar_hour_at_domain_centroid": 7.526584437945263,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29245,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29245_013_11SLU_20230902T152457_0710_01",
+      "acquisition_utc": "2023-09-02T15:24:57.884Z",
+      "apparent_solar_hour_at_domain_centroid": 7.541032245362027,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29245,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29245_013_11SMT_20230902T152457_0710_01",
+      "acquisition_utc": "2023-09-02T15:24:57.884Z",
+      "apparent_solar_hour_at_domain_centroid": 7.541032245362027,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29245,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29245_013_11SLT_20230902T152457_0710_01",
+      "acquisition_utc": "2023-09-02T15:24:57.884Z",
+      "apparent_solar_hour_at_domain_centroid": 7.541032245362027,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29245,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29245_013_11SMT_20230902T152457_0712_02",
+      "acquisition_utc": "2023-09-02T15:24:57.884Z",
+      "apparent_solar_hour_at_domain_centroid": 7.541032245362027,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29245,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29245_013_11SLT_20230902T152457_0712_02",
+      "acquisition_utc": "2023-09-02T15:24:57.884Z",
+      "apparent_solar_hour_at_domain_centroid": 7.541032245362027,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29245,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29245_013_11SLU_20230902T152457_0712_02",
+      "acquisition_utc": "2023-09-02T15:24:57.884Z",
+      "apparent_solar_hour_at_domain_centroid": 7.541032245362027,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29271,
+      "scene": 3,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29271_003_11SLU_20230904T071555_0710_01",
+      "acquisition_utc": "2023-09-04T07:15:55.124Z",
+      "apparent_solar_hour_at_domain_centroid": 23.399877298360934,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29271,
+      "scene": 3,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29271_003_11SLU_20230904T071555_0712_02",
+      "acquisition_utc": "2023-09-04T07:15:55.124Z",
+      "apparent_solar_hour_at_domain_centroid": 23.399877298360934,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29286,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29286_004_11SLT_20230905T062657_0712_01",
+      "acquisition_utc": "2023-09-05T06:26:57.017Z",
+      "apparent_solar_hour_at_domain_centroid": 22.58934192732654,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29286,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29286_004_11SMT_20230905T062657_0712_01",
+      "acquisition_utc": "2023-09-05T06:26:57.017Z",
+      "apparent_solar_hour_at_domain_centroid": 22.58934192732654,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29286,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29286_004_11SLU_20230905T062657_0712_01",
+      "acquisition_utc": "2023-09-05T06:26:57.017Z",
+      "apparent_solar_hour_at_domain_centroid": 22.58934192732654,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29286,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29286_005_11SLT_20230905T062747_0712_01",
+      "acquisition_utc": "2023-09-05T06:27:47.806Z",
+      "apparent_solar_hour_at_domain_centroid": 22.60323417857207,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29286,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29286_005_11SMT_20230905T062747_0712_01",
+      "acquisition_utc": "2023-09-05T06:27:47.806Z",
+      "apparent_solar_hour_at_domain_centroid": 22.60323417857207,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29286,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29286_005_11SLU_20230905T062747_0712_01",
+      "acquisition_utc": "2023-09-05T06:27:47.806Z",
+      "apparent_solar_hour_at_domain_centroid": 22.60323417857207,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29306,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29306_012_11SLU_20230906T134633_0710_01",
+      "acquisition_utc": "2023-09-06T13:46:33.222Z",
+      "apparent_solar_hour_at_domain_centroid": 5.923655808132934,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29306,
+      "scene": 12,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29306_012_11SLU_20230906T134633_0712_02",
+      "acquisition_utc": "2023-09-06T13:46:33.222Z",
+      "apparent_solar_hour_at_domain_centroid": 5.923655808132934,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29306,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29306_013_11SLU_20230906T134725_0710_01",
+      "acquisition_utc": "2023-09-06T13:47:25.191Z",
+      "apparent_solar_hour_at_domain_centroid": 5.938103806846069,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29306,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29306_013_11SMT_20230906T134725_0710_01",
+      "acquisition_utc": "2023-09-06T13:47:25.191Z",
+      "apparent_solar_hour_at_domain_centroid": 5.938103806846069,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29306,
+      "scene": 13,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29306_013_11SMT_20230906T134725_0712_02",
+      "acquisition_utc": "2023-09-06T13:47:25.191Z",
+      "apparent_solar_hour_at_domain_centroid": 5.938103806846069,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29306,
+      "scene": 13,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29306_013_11SLT_20230906T134725_0712_02",
+      "acquisition_utc": "2023-09-06T13:47:25.191Z",
+      "apparent_solar_hour_at_domain_centroid": 5.938103806846069,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29306,
+      "scene": 13,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29306_013_11SLU_20230906T134725_0712_02",
+      "acquisition_utc": "2023-09-06T13:47:25.191Z",
+      "apparent_solar_hour_at_domain_centroid": 5.938103806846069,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29332,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29332_005_11SLT_20230908T053820_0710_01",
+      "acquisition_utc": "2023-09-08T05:38:20.098Z",
+      "apparent_solar_hour_at_domain_centroid": 21.79661090380542,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29332,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29332_005_11SLU_20230908T053820_0710_01",
+      "acquisition_utc": "2023-09-08T05:38:20.098Z",
+      "apparent_solar_hour_at_domain_centroid": 21.79661090380542,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29332,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29332_005_11SLT_20230908T053820_0712_02",
+      "acquisition_utc": "2023-09-08T05:38:20.098Z",
+      "apparent_solar_hour_at_domain_centroid": 21.79661090380542,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29332,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29332_005_11SLU_20230908T053820_0712_02",
+      "acquisition_utc": "2023-09-08T05:38:20.098Z",
+      "apparent_solar_hour_at_domain_centroid": 21.79661090380542,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29347,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29347_004_11SLT_20230909T044958_0710_01",
+      "acquisition_utc": "2023-09-09T04:49:58.799Z",
+      "apparent_solar_hour_at_domain_centroid": 20.99633628699086,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29347,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29347_004_11SLU_20230909T044958_0710_01",
+      "acquisition_utc": "2023-09-09T04:49:58.799Z",
+      "apparent_solar_hour_at_domain_centroid": 20.99633628699086,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29347,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29347_004_11SMT_20230909T044958_0710_01",
+      "acquisition_utc": "2023-09-09T04:49:58.799Z",
+      "apparent_solar_hour_at_domain_centroid": 20.99633628699086,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29347,
+      "scene": 4,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29347_004_11SLU_20230909T044958_0712_02",
+      "acquisition_utc": "2023-09-09T04:49:58.799Z",
+      "apparent_solar_hour_at_domain_centroid": 20.99633628699086,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29347,
+      "scene": 4,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29347_004_11SMT_20230909T044958_0712_02",
+      "acquisition_utc": "2023-09-09T04:49:58.799Z",
+      "apparent_solar_hour_at_domain_centroid": 20.99633628699086,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29347,
+      "scene": 4,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29347_004_11SLT_20230909T044958_0712_02",
+      "acquisition_utc": "2023-09-09T04:49:58.799Z",
+      "apparent_solar_hour_at_domain_centroid": 20.99633628699086,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29367,
+      "scene": 11,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29367_011_11SMT_20230910T121109_0710_01",
+      "acquisition_utc": "2023-09-10T12:11:09.505Z",
+      "apparent_solar_hour_at_domain_centroid": 4.357358739384277,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29367,
+      "scene": 11,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29367_011_11SLU_20230910T121109_0710_01",
+      "acquisition_utc": "2023-09-10T12:11:09.505Z",
+      "apparent_solar_hour_at_domain_centroid": 4.357358739384277,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29367,
+      "scene": 11,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29367_011_11SMT_20230910T121109_0712_02",
+      "acquisition_utc": "2023-09-10T12:11:09.505Z",
+      "apparent_solar_hour_at_domain_centroid": 4.357358739384277,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29367,
+      "scene": 11,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29367_011_11SLU_20230910T121109_0712_02",
+      "acquisition_utc": "2023-09-10T12:11:09.505Z",
+      "apparent_solar_hour_at_domain_centroid": 4.357358739384277,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29367,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29367_012_11SMT_20230910T121201_0710_01",
+      "acquisition_utc": "2023-09-10T12:12:01.475Z",
+      "apparent_solar_hour_at_domain_centroid": 4.37180687275556,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29367,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29367_012_11SMT_20230910T121201_0712_02",
+      "acquisition_utc": "2023-09-10T12:12:01.475Z",
+      "apparent_solar_hour_at_domain_centroid": 4.37180687275556,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29454,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29454_005_11SLT_20230916T023020_0710_01",
+      "acquisition_utc": "2023-09-16T02:30:20.373Z",
+      "apparent_solar_hour_at_domain_centroid": 18.711887008549706,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29454,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29454_005_11SLU_20230916T023020_0710_01",
+      "acquisition_utc": "2023-09-16T02:30:20.373Z",
+      "apparent_solar_hour_at_domain_centroid": 18.711887008549706,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29454,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29454_005_11SLT_20230916T023020_0712_02",
+      "acquisition_utc": "2023-09-16T02:30:20.373Z",
+      "apparent_solar_hour_at_domain_centroid": 18.711887008549706,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29454,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29454_005_11SLU_20230916T023020_0712_02",
+      "acquisition_utc": "2023-09-16T02:30:20.373Z",
+      "apparent_solar_hour_at_domain_centroid": 18.711887008549706,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29489,
+      "scene": 11,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29489_011_11SLU_20230918T090318_0710_01",
+      "acquisition_utc": "2023-09-18T09:03:18.929Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2755965324828062,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29489,
+      "scene": 11,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29489_011_11SLT_20230918T090318_0710_01",
+      "acquisition_utc": "2023-09-18T09:03:18.929Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2755965324828062,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29489,
+      "scene": 11,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29489_011_11SMT_20230918T090318_0710_01",
+      "acquisition_utc": "2023-09-18T09:03:18.929Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2755965324828062,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29489,
+      "scene": 11,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29489_011_11SMT_20230918T090318_0712_02",
+      "acquisition_utc": "2023-09-18T09:03:18.929Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2755965324828062,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29489,
+      "scene": 11,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29489_011_11SLU_20230918T090318_0712_02",
+      "acquisition_utc": "2023-09-18T09:03:18.929Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2755965324828062,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29489,
+      "scene": 11,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29489_011_11SLT_20230918T090318_0712_02",
+      "acquisition_utc": "2023-09-18T09:03:18.929Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2755965324828062,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29489,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29489_012_11SMT_20230918T090410_0710_01",
+      "acquisition_utc": "2023-09-18T09:04:10.898Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2900447519805156,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29489,
+      "scene": 12,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29489_012_11SMT_20230918T090410_0712_02",
+      "acquisition_utc": "2023-09-18T09:04:10.898Z",
+      "apparent_solar_hour_at_domain_centroid": 1.2900447519805156,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29515,
+      "scene": 3,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29515_003_11SLT_20230920T005556_0710_01",
+      "acquisition_utc": "2023-09-20T00:55:56.564Z",
+      "apparent_solar_hour_at_domain_centroid": 17.16322362112742,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29515,
+      "scene": 3,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29515_003_11SLU_20230920T005556_0710_01",
+      "acquisition_utc": "2023-09-20T00:55:56.564Z",
+      "apparent_solar_hour_at_domain_centroid": 17.16322362112742,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29515,
+      "scene": 3,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29515_003_11SLT_20230920T005556_0712_02",
+      "acquisition_utc": "2023-09-20T00:55:56.564Z",
+      "apparent_solar_hour_at_domain_centroid": 17.16322362112742,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29515,
+      "scene": 3,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29515_003_11SLU_20230920T005556_0712_02",
+      "acquisition_utc": "2023-09-20T00:55:56.564Z",
+      "apparent_solar_hour_at_domain_centroid": 17.16322362112742,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29576,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29576_005_11SLT_20230923T232104_0710_01",
+      "acquisition_utc": "2023-09-23T23:21:04.439Z",
+      "apparent_solar_hour_at_domain_centroid": 15.606470848973022,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29576,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29576_005_11SLU_20230923T232104_0710_01",
+      "acquisition_utc": "2023-09-23T23:21:04.439Z",
+      "apparent_solar_hour_at_domain_centroid": 15.606470848973022,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29576,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29576_005_11SMT_20230923T232104_0710_01",
+      "acquisition_utc": "2023-09-23T23:21:04.439Z",
+      "apparent_solar_hour_at_domain_centroid": 15.606470848973022,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29576,
+      "scene": 5,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29576_005_11SMT_20230923T232104_0712_02",
+      "acquisition_utc": "2023-09-23T23:21:04.439Z",
+      "apparent_solar_hour_at_domain_centroid": 15.606470848973022,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29576,
+      "scene": 5,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29576_005_11SLU_20230923T232104_0712_02",
+      "acquisition_utc": "2023-09-23T23:21:04.439Z",
+      "apparent_solar_hour_at_domain_centroid": 15.606470848973022,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29576,
+      "scene": 5,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29576_005_11SLT_20230923T232104_0712_02",
+      "acquisition_utc": "2023-09-23T23:21:04.439Z",
+      "apparent_solar_hour_at_domain_centroid": 15.606470848973022,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29591,
+      "scene": 6,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29591_006_11SLT_20230924T223306_0710_01",
+      "acquisition_utc": "2023-09-24T22:33:06.558Z",
+      "apparent_solar_hour_at_domain_centroid": 14.812916193906245,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29591,
+      "scene": 6,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29591_006_11SMT_20230924T223306_0710_01",
+      "acquisition_utc": "2023-09-24T22:33:06.558Z",
+      "apparent_solar_hour_at_domain_centroid": 14.812916193906245,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29591,
+      "scene": 6,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29591_006_11SLU_20230924T223306_0712_02",
+      "acquisition_utc": "2023-09-24T22:33:06.558Z",
+      "apparent_solar_hour_at_domain_centroid": 14.812916193906245,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29591,
+      "scene": 6,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29591_006_11SLT_20230924T223306_0712_02",
+      "acquisition_utc": "2023-09-24T22:33:06.558Z",
+      "apparent_solar_hour_at_domain_centroid": 14.812916193906245,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29591,
+      "scene": 6,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29591_006_11SMT_20230924T223306_0712_02",
+      "acquisition_utc": "2023-09-24T22:33:06.558Z",
+      "apparent_solar_hour_at_domain_centroid": 14.812916193906245,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29611,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29611_001_11SLT_20230926T055350_0710_01",
+      "acquisition_utc": "2023-09-26T05:53:50.249Z",
+      "apparent_solar_hour_at_domain_centroid": 22.166348295757885,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29611,
+      "scene": 1,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29611_001_11SMT_20230926T055350_0710_01",
+      "acquisition_utc": "2023-09-26T05:53:50.249Z",
+      "apparent_solar_hour_at_domain_centroid": 22.166348295757885,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29611,
+      "scene": 1,
+      "tile": "11SLU",
+      "granule_id": "ECOv002_L2T_LSTE_29611_001_11SLU_20230926T055350_0712_02",
+      "acquisition_utc": "2023-09-26T05:53:50.249Z",
+      "apparent_solar_hour_at_domain_centroid": 22.166348295757885,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29611,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29611_001_11SLT_20230926T055350_0712_02",
+      "acquisition_utc": "2023-09-26T05:53:50.249Z",
+      "apparent_solar_hour_at_domain_centroid": 22.166348295757885,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29611,
+      "scene": 1,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29611_001_11SMT_20230926T055350_0712_02",
+      "acquisition_utc": "2023-09-26T05:53:50.249Z",
+      "apparent_solar_hour_at_domain_centroid": 22.166348295757885,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29652,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29652_001_11SLT_20230928T205726_0711_01",
+      "acquisition_utc": "2023-09-28T20:57:26.243Z",
+      "apparent_solar_hour_at_domain_centroid": 13.241854708563306,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29652,
+      "scene": 1,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29652_001_11SMT_20230928T205726_0711_01",
+      "acquisition_utc": "2023-09-28T20:57:26.243Z",
+      "apparent_solar_hour_at_domain_centroid": 13.241854708563306,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29652,
+      "scene": 1,
+      "tile": "11SMT",
+      "granule_id": "ECOv002_L2T_LSTE_29652_001_11SMT_20230928T205726_0712_02",
+      "acquisition_utc": "2023-09-28T20:57:26.243Z",
+      "apparent_solar_hour_at_domain_centroid": 13.241854708563306,
+      "cloud_cover_metadata": null
+    },
+    {
+      "city": "los_angeles",
+      "orbit": 29652,
+      "scene": 1,
+      "tile": "11SLT",
+      "granule_id": "ECOv002_L2T_LSTE_29652_001_11SLT_20230928T205726_0712_02",
+      "acquisition_utc": "2023-09-28T20:57:26.243Z",
+      "apparent_solar_hour_at_domain_centroid": 13.241854708563306,
+      "cloud_cover_metadata": null
+    }
+  ]
+}

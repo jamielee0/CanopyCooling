@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-21T17:43:43.572539+00:00",
+  "manifest_sha256": "381a252d86e01d2a125596d32d2355047fca949cfb9b9c0948c04ea64ca42dbc",
+  "code_sha256": {
+    "src/v6_2_advance/run_extension.py": "72d18f2668ce7a8ed91c1ca73468231dfea9bf5fd45afbe09d40d88233a75e18",
+    "src/urban_cooling_v2/pooled_city_pass.py": "0434337b39c76dcdbba3fcb9695869aff8c483784e8521274fdb9b2869942d22",
+    "src/urban_cooling_v2/pilot_native.py": "91bf31447363aedb06abc99b7e8774c32930281393f779e9bf379126e92df21c"
+  },
+  "prior_effect_access": "original ten gradients disclosed 20260919",
+  "analysis_status": "exploratory_extension",
+  "new_time_model": "none; plot first",
+  "original_pilot": "unchanged"
+}

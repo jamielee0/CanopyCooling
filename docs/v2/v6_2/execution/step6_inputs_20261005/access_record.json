@@ -1,0 +1,14 @@
+{
+  "previously_released_pass_table_header_probe_rows_parsed": 1,
+  "previously_released_effect_fields_used_or_displayed": false,
+  "subsequent_pass_table_columns_explicitly_non_effect": true,
+  "new_or_sealed_effect_files_opened": false,
+  "raw_satellite_thermal_arrays_opened": false,
+  "cached_geometry_arrays_nonthermal": true,
+  "new_data": [
+    "HRRR meteorology",
+    "MRMS precipitation",
+    "Stage IV precipitation"
+  ],
+  "new_coefficient_display": false
+}

@@ -1,0 +1,328 @@
+{
+  "frame_accesses": [
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27835_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27896_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/27916_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28145_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_atlanta/28598_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_native_cells_SEALED.parquet",
+      "columns": [
+        "cell_id",
+        "block",
+        "canopy_fraction",
+        "impervious_fraction",
+        "low_vegetation_fraction",
+        "bare_fraction",
+        "building_fraction",
+        "elevation",
+        "distance_to_water",
+        "x",
+        "y",
+        "native_crs",
+        "native_x",
+        "native_y"
+      ],
+      "outcome_columns_read": false
+    }
+  ],
+  "decoded_outcomes": false,
+  "model_files_opened": [],
+  "new_effect_display": false,
+  "source_inputs_modified": false
+}

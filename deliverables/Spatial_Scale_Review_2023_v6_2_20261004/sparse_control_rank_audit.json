@@ -1,0 +1,354 @@
+{
+  "status": "OUTCOME_BLIND_RANK_AUDIT_COMPLETE",
+  "common_cells": 196090,
+  "common_identity_sha256": "1dbbd7fdd7c00023c97d0858dcc271b27ab5eef1d46cf393878f3bf504487db3",
+  "common_cells_with_positive_bare_fraction": 54,
+  "common_blocks_with_within_block_bare_variation": 10,
+  "information_groups_8km": 5,
+  "checks": [
+    {
+      "orbit": "27963",
+      "date": "2023-06-11",
+      "group_km": 1,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 10,
+      "draws_without_common_bare_information": 0,
+      "reported_joint_nonestimable_draws": 0,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "300d058932e9740a87c2b678cd95e01894ca2dda6dc841b0028ed69281512222"
+    },
+    {
+      "orbit": "27963",
+      "date": "2023-06-11",
+      "group_km": 8,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 5,
+      "draws_without_common_bare_information": 4,
+      "reported_joint_nonestimable_draws": 4,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "fefcd778e82d08c30dbfc1c189da2e48df44abecfac2e172d348d162badeac2e"
+    },
+    {
+      "orbit": "28024",
+      "date": "2023-06-15",
+      "group_km": 1,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 10,
+      "draws_without_common_bare_information": 0,
+      "reported_joint_nonestimable_draws": 0,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "60ebb246f928811ee96bd5d667e202390d0178a1c47e68917bd3593f3fc12ec2"
+    },
+    {
+      "orbit": "28024",
+      "date": "2023-06-15",
+      "group_km": 8,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 5,
+      "draws_without_common_bare_information": 1,
+      "reported_joint_nonestimable_draws": 1,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "a9342496918e385aff259b6520068f64b9751c1a49da87b7bf3113cb4fb6ed0a"
+    },
+    {
+      "orbit": "28085",
+      "date": "2023-06-19",
+      "group_km": 1,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 10,
+      "draws_without_common_bare_information": 0,
+      "reported_joint_nonestimable_draws": 0,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "b17336f78005dd757a6772bb176ed7081ce1c2010ffadbf6d5c7e0085769517a"
+    },
+    {
+      "orbit": "28085",
+      "date": "2023-06-19",
+      "group_km": 8,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 5,
+      "draws_without_common_bare_information": 5,
+      "reported_joint_nonestimable_draws": 5,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "d398b56c7eff5b2e7636b55db8f54e63dc3d873115a1c87a0f24fe76f6b5e898"
+    },
+    {
+      "orbit": "28192",
+      "date": "2023-06-26",
+      "group_km": 1,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 10,
+      "draws_without_common_bare_information": 0,
+      "reported_joint_nonestimable_draws": 0,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "c18829b0d0a8f53c3d7fc2853e89d7f6bdf7cb4053378a744f035c2a7d37fe18"
+    },
+    {
+      "orbit": "28192",
+      "date": "2023-06-26",
+      "group_km": 8,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 5,
+      "draws_without_common_bare_information": 9,
+      "reported_joint_nonestimable_draws": 9,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "a9bc142636ed37c4253ec8b0f4f5de456af78352a14ddf9811a05ba8f60bf7f3"
+    },
+    {
+      "orbit": "28706",
+      "date": "2023-07-29",
+      "group_km": 1,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 10,
+      "draws_without_common_bare_information": 0,
+      "reported_joint_nonestimable_draws": 0,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "cfc76cb1d08055df1833d17ee65630b840434ec6864707521751eba9404b9a9e"
+    },
+    {
+      "orbit": "28706",
+      "date": "2023-07-29",
+      "group_km": 8,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 5,
+      "draws_without_common_bare_information": 2,
+      "reported_joint_nonestimable_draws": 2,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "2c6b5156e6e5c2d6f9a43feee236498f55a294eb3ec433256346cc14bd1273ed"
+    },
+    {
+      "orbit": "28828",
+      "date": "2023-08-06",
+      "group_km": 1,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 10,
+      "draws_without_common_bare_information": 0,
+      "reported_joint_nonestimable_draws": 0,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "c56075507f53beac77ca14095925ed3a85c1727f11c0293b96b5c774c9493792"
+    },
+    {
+      "orbit": "28828",
+      "date": "2023-08-06",
+      "group_km": 8,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 5,
+      "draws_without_common_bare_information": 1,
+      "reported_joint_nonestimable_draws": 1,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "3bf11cff9ee401da79163e3c0899ff0bb580e89cfab016cfbc0f31d14dc81f2b"
+    },
+    {
+      "orbit": "28909",
+      "date": "2023-08-11",
+      "group_km": 1,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 10,
+      "draws_without_common_bare_information": 0,
+      "reported_joint_nonestimable_draws": 0,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "c2bf4ec05e500b7b800d5baa07c5c3624cc9c7c140646974e13a48593bfa7435"
+    },
+    {
+      "orbit": "28909",
+      "date": "2023-08-11",
+      "group_km": 8,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 5,
+      "draws_without_common_bare_information": 4,
+      "reported_joint_nonestimable_draws": 4,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "25e00536d02e368b294aba2ae946e1c9da123afbf8f49b42ee528616e362f70b"
+    },
+    {
+      "orbit": "28970",
+      "date": "2023-08-15",
+      "group_km": 1,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 10,
+      "draws_without_common_bare_information": 1,
+      "reported_joint_nonestimable_draws": 1,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "f59b27dbaae5cb498b55a4ad29124732e75883423886e23fae123f85c058dc33"
+    },
+    {
+      "orbit": "28970",
+      "date": "2023-08-15",
+      "group_km": 8,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 5,
+      "draws_without_common_bare_information": 4,
+      "reported_joint_nonestimable_draws": 4,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "c55828b99d71d703602bbc92fdcbe378ba16fe1994743bd4ce6001dfcd7b2ba0"
+    },
+    {
+      "orbit": "29092",
+      "date": "2023-08-23",
+      "group_km": 1,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 10,
+      "draws_without_common_bare_information": 0,
+      "reported_joint_nonestimable_draws": 0,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "fe64939dbd8d90038f21b2bf97c1df255a35b4bf6335015912bc0e8b603c6a7e"
+    },
+    {
+      "orbit": "29092",
+      "date": "2023-08-23",
+      "group_km": 8,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 5,
+      "draws_without_common_bare_information": 10,
+      "reported_joint_nonestimable_draws": 10,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "9271219ec2160943ccd3581c3910fd6ee04129487da079abb3f7905396037270"
+    },
+    {
+      "orbit": "29545",
+      "date": "2023-09-21",
+      "group_km": 1,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 10,
+      "draws_without_common_bare_information": 0,
+      "reported_joint_nonestimable_draws": 0,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "9830c261abe9d04ee4cf0cdb8f6c32d1606b72931e566eb38918b8cbc6f48ae5"
+    },
+    {
+      "orbit": "29545",
+      "date": "2023-09-21",
+      "group_km": 8,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 5,
+      "draws_without_common_bare_information": 4,
+      "reported_joint_nonestimable_draws": 4,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "3893fa378431a62f3de4b437320823c42b11f957f8f6459a59d63ddc725ca267"
+    },
+    {
+      "orbit": "29606",
+      "date": "2023-09-25",
+      "group_km": 1,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 10,
+      "draws_without_common_bare_information": 0,
+      "reported_joint_nonestimable_draws": 0,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "798cdbaf1582fff1fbae81d0562e4e5ddfaee6ce7092231b6d084bcf43a7dfe8"
+    },
+    {
+      "orbit": "29606",
+      "date": "2023-09-25",
+      "group_km": 8,
+      "bare_informative_common_blocks": 10,
+      "bare_informative_groups": 5,
+      "draws_without_common_bare_information": 3,
+      "reported_joint_nonestimable_draws": 3,
+      "mismatch_count": 0,
+      "private_validity_file_sha256": "d04819c30bf1de81178dca55de4d6480be47eb35ce3143baa067ee0697a917f0"
+    }
+  ],
+  "reported_joint_nonestimable_draws": 48,
+  "draws_without_common_bare_information": 48,
+  "all_failures_exactly_match_absence_of_common_bare_variation": true,
+  "new_fits": 0,
+  "new_draws_replaced": 0,
+  "coefficient_or_effect_values_read": false,
+  "outcome_columns_read": false,
+  "source_predictor_accesses": [
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/27963_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28024_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28085_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28192_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28706_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28828_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_pilot_20260919_phoenix/28909_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/28970_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29092_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29545_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/pooled_extension_20260921_phoenix/29606_paired_native_cells_SEALED.parquet",
+      "purpose": "predictor_only_columns"
+    }
+  ],
+  "interpretation": "A retained confounder can be unidentified in a spatial resample; record non-estimability rather than dropping it after seeing the draw. This is not an effect-size or stability verdict."
+}

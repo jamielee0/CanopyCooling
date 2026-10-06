@@ -1,0 +1,24 @@
+[
+  {
+    "requested": 499,
+    "estimable": 499,
+    "rank_failed": 0,
+    "target_outside_resampled_time_range": 232,
+    "city": "phoenix",
+    "phase": "production",
+    "independent_dates": 11,
+    "moment_residual_df": 6,
+    "resampled_month_arms": "stratified window retains singleton arms; unrestricted day-slope bank can omit target support"
+  },
+  {
+    "requested": 499,
+    "estimable": 497,
+    "rank_failed": 2,
+    "target_outside_resampled_time_range": 293,
+    "city": "atlanta",
+    "phase": "production",
+    "independent_dates": 5,
+    "moment_residual_df": 2,
+    "resampled_month_arms": "stratified window retains singleton arms; unrestricted day-slope bank can omit target support"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "folder": "Urban_Tree_Cooling_v6_2_pilot_20260919",
+  "exports": [
+    {
+      "name": "science_tcc_v2025-6_atlanta_2019_native30m",
+      "task_id": "NODBD4PBAKD4MBAMQUWIKHTC",
+      "state": "RUNNING"
+    },
+    {
+      "name": "science_tcc_v2025-6_atlanta_2020_native30m",
+      "task_id": "AK7XXBNRQ5CJO3G3Z5ZR33JU",
+      "state": "RUNNING"
+    },
+    {
+      "name": "science_tcc_v2025-6_atlanta_2021_native30m",
+      "task_id": "Q7OVAR5EESZELQ3Q2M2U7IXL",
+      "state": "RUNNING"
+    },
+    {
+      "name": "science_tcc_v2025-6_atlanta_2022_native30m",
+      "task_id": "G27DHA2F7B6PVI7IDX2T6GLR",
+      "state": "READY"
+    },
+    {
+      "name": "science_tcc_v2025-6_atlanta_2023_native30m",
+      "task_id": "XBWE2RRJHLFESQNDZZULOXDK",
+      "state": "READY"
+    },
+    {
+      "name": "science_tcc_v2025-6_atlanta_2024_native30m",
+      "task_id": "A2OERJHIMJY4JQ3MNKQRXTMA",
+      "state": "READY"
+    },
+    {
+      "name": "science_tcc_v2025-6_atlanta_2025_native30m",
+      "task_id": "HFNZJHAVBEJZ3VALVJVLXTOT",
+      "state": "READY"
+    },
+    {
+      "name": "atlanta_nlcd_2021_impervious_and_validity",
+      "task_id": "6SZTHYMAAF54IQ64463WPIXW",
+      "state": "READY"
+    },
+    {
+      "name": "usgs_3dep_10m_atlanta_frozen_census_domain",
+      "task_id": "LEGSZ7C2ITBM7XPFZFDEBNVE",
+      "state": "READY"
+    }
+  ],
+  "thermal_data": false
+}

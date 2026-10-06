@@ -1,0 +1,279 @@
+{
+  "design": "cloud_screen_design.json",
+  "passes": [
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "acquisition_utc": "2023-06-09T20:32:37.632Z",
+      "solar_hour": 15.83396249895704,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 2,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.006666666666666667,
+      "clear_fraction_of_all_sample_points": 0.006666666666666667,
+      "failed_assets": 0
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "acquisition_utc": "2023-07-26T20:12:43.199Z",
+      "solar_hour": 15.359525177300396,
+      "sample_points": 300,
+      "observed_points": 300,
+      "clear_points": 295,
+      "sample_point_coverage_fraction": 1.0,
+      "clear_fraction_of_observed_points": 0.9833333333333333,
+      "clear_fraction_of_all_sample_points": 0.9833333333333333,
+      "failed_assets": 0
+    },
+    {
+      "city": "boston",
+      "orbit": 28800,
+      "acquisition_utc": "2023-08-04T22:40:26.800Z",
+      "solar_hour": 17.82614825531105,
+      "sample_points": 300,
+      "observed_points": 165,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 0.55,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "acquisition_utc": "2023-08-05T21:51:18.075Z",
+      "solar_hour": 17.023058074516715,
+      "sample_points": 300,
+      "observed_points": 277,
+      "clear_points": 237,
+      "sample_point_coverage_fraction": 0.9233333333333333,
+      "clear_fraction_of_observed_points": 0.855595667870036,
+      "clear_fraction_of_all_sample_points": 0.79,
+      "failed_assets": 0
+    },
+    {
+      "city": "boston",
+      "orbit": 29605,
+      "acquisition_utc": "2023-09-25T20:17:10.204Z",
+      "solar_hour": 15.684908374157482,
+      "sample_points": 300,
+      "observed_points": 168,
+      "clear_points": 0,
+      "sample_point_coverage_fraction": 0.56,
+      "clear_fraction_of_observed_points": 0.0,
+      "clear_fraction_of_all_sample_points": 0.0,
+      "failed_assets": 0
+    }
+  ],
+  "assets": [
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "asset": "ECOv002_L2T_LSTE_27930_008_18TYN_20230609T203237_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27930_008_18TYN_20230609T203237_0711_02/ECOv002_L2T_LSTE_27930_008_18TYN_20230609T203237_0711_02_cloud.tif",
+      "bytes": 6460,
+      "sha256": "e419f9efaac89cb22e4f4f2f49326bf005cdbd6cf4f63e6ef2c6fbae06a3c3fe",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "asset": "ECOv002_L2T_LSTE_27930_009_18TYM_20230609T203329_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27930_009_18TYM_20230609T203329_0711_02/ECOv002_L2T_LSTE_27930_009_18TYM_20230609T203329_0711_02_cloud.tif",
+      "bytes": 8876,
+      "sha256": "f05ff2448ea1af69617e0bec2746f64cd54e9c03c7794a2127a3d54ec6e73e3a",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "asset": "ECOv002_L2T_LSTE_27930_009_18TYN_20230609T203329_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27930_009_18TYN_20230609T203329_0711_02/ECOv002_L2T_LSTE_27930_009_18TYN_20230609T203329_0711_02_cloud.tif",
+      "bytes": 21704,
+      "sha256": "88a28d34e7512f096231d935d50ed884457061869027637c74c0e26e7b8da1d4",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "asset": "ECOv002_L2T_LSTE_27930_009_19TCG_20230609T203329_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27930_009_19TCG_20230609T203329_0711_02/ECOv002_L2T_LSTE_27930_009_19TCG_20230609T203329_0711_02_cloud.tif",
+      "bytes": 26986,
+      "sha256": "64342b618dbe651a5576fbafea671c91883aed9671a3cd240522f6d33d7b39fa",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 27930,
+      "asset": "ECOv002_L2T_LSTE_27930_009_19TCH_20230609T203329_0711_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_27930_009_19TCH_20230609T203329_0711_02/ECOv002_L2T_LSTE_27930_009_19TCH_20230609T203329_0711_02_cloud.tif",
+      "bytes": 23763,
+      "sha256": "c85c3b4afb17a0461f99b5062027891bc8fd4af593cc32483bc13a89c303846e",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_18TYM_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_18TYM_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_18TYM_20230726T201243_0712_02_cloud.tif",
+      "bytes": 17612,
+      "sha256": "99ed0e4309b688a06682ab45fe1bb6d201842b0be6adcba45180041c70bc459d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_18TYN_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_18TYN_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_18TYN_20230726T201243_0712_02_cloud.tif",
+      "bytes": 48214,
+      "sha256": "8e4c9fa26be761b05093d491afe78ce84e473c1c92b3cca1048157f9381c5179",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_19TBG_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_19TBG_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_19TBG_20230726T201243_0712_02_cloud.tif",
+      "bytes": 17666,
+      "sha256": "d41dbf70f8b4456d261ad9bd9777b066520bc7b087de902679c7dd7031228e63",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_19TCG_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_19TCG_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_19TCG_20230726T201243_0712_02_cloud.tif",
+      "bytes": 7885,
+      "sha256": "d729b8c51f40bb298eb733aeb75c8c6f3e6ea1730eabb26c4f65374a45e09691",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_008_19TCH_20230726T201243_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_008_19TCH_20230726T201243_0712_02/ECOv002_L2T_LSTE_28659_008_19TCH_20230726T201243_0712_02_cloud.tif",
+      "bytes": 7742,
+      "sha256": "c56cbe3d8d40f63b04c6bee1a582af0d65090dc75dbac2a67b60f2818b311d62",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_009_18TYN_20230726T201335_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_009_18TYN_20230726T201335_0712_02/ECOv002_L2T_LSTE_28659_009_18TYN_20230726T201335_0712_02_cloud.tif",
+      "bytes": 9822,
+      "sha256": "277d05ddcea8c0210b8c960a37f762575c78d112777ffa5c3c16b9ce4d511c85",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_009_19TCG_20230726T201335_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_009_19TCG_20230726T201335_0712_02/ECOv002_L2T_LSTE_28659_009_19TCG_20230726T201335_0712_02_cloud.tif",
+      "bytes": 6093,
+      "sha256": "b3c89ce59d7feb200ab92211e0f5c33a48364249837fda222926524c5ec09fa4",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28659,
+      "asset": "ECOv002_L2T_LSTE_28659_009_19TCH_20230726T201335_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28659_009_19TCH_20230726T201335_0712_02/ECOv002_L2T_LSTE_28659_009_19TCH_20230726T201335_0712_02_cloud.tif",
+      "bytes": 20736,
+      "sha256": "fdb7444af04be73defad7b02932d38b75fe3a229e989d4841eba5b9be2a07d08",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28800,
+      "asset": "ECOv002_L2T_LSTE_28800_009_18TYM_20230804T224026_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28800_009_18TYM_20230804T224026_0712_02/ECOv002_L2T_LSTE_28800_009_18TYM_20230804T224026_0712_02_cloud.tif",
+      "bytes": 9179,
+      "sha256": "76a20cd0b1dda029bd473afdc8a31996e5a63ade7ba9045028b1ec8d94e28483",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28800,
+      "asset": "ECOv002_L2T_LSTE_28800_009_19TBG_20230804T224026_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28800_009_19TBG_20230804T224026_0712_02/ECOv002_L2T_LSTE_28800_009_19TBG_20230804T224026_0712_02_cloud.tif",
+      "bytes": 9450,
+      "sha256": "30d1b2ac7c49edbf0116acb915acb92036eec11668ec8e11cb3663f7af244563",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28800,
+      "asset": "ECOv002_L2T_LSTE_28800_009_19TCG_20230804T224026_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28800_009_19TCG_20230804T224026_0712_02/ECOv002_L2T_LSTE_28800_009_19TCG_20230804T224026_0712_02_cloud.tif",
+      "bytes": 7050,
+      "sha256": "c58a65f1e147ccf53c5f7f86734b99d1ec634f70a0161468b9c1787a53fe6296",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "asset": "ECOv002_L2T_LSTE_28815_008_18TYN_20230805T215118_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28815_008_18TYN_20230805T215118_0712_02/ECOv002_L2T_LSTE_28815_008_18TYN_20230805T215118_0712_02_cloud.tif",
+      "bytes": 6266,
+      "sha256": "b7cf995656bcddd1f2d96f13fcb44c717110003d5cefe1e4b8ab491e8d3f9d33",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "asset": "ECOv002_L2T_LSTE_28815_008_19TCH_20230805T215118_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28815_008_19TCH_20230805T215118_0712_02/ECOv002_L2T_LSTE_28815_008_19TCH_20230805T215118_0712_02_cloud.tif",
+      "bytes": 5645,
+      "sha256": "76dfce35b5e27c0d69857ae6d8f315d851240d3f7dc7d1802b64ec84e37a7bf0",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "asset": "ECOv002_L2T_LSTE_28815_009_18TYN_20230805T215210_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28815_009_18TYN_20230805T215210_0712_02/ECOv002_L2T_LSTE_28815_009_18TYN_20230805T215210_0712_02_cloud.tif",
+      "bytes": 7608,
+      "sha256": "637db75e5606ab751fa484fe00d857c5c4b44547f59b5e9012e32d17f4548d8d",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "asset": "ECOv002_L2T_LSTE_28815_009_19TCG_20230805T215210_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28815_009_19TCG_20230805T215210_0712_02/ECOv002_L2T_LSTE_28815_009_19TCG_20230805T215210_0712_02_cloud.tif",
+      "bytes": 12355,
+      "sha256": "7ad71bfa01626865a4ffc0a6938898185f71fe31dc716f3bd26e0c48b3566500",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 28815,
+      "asset": "ECOv002_L2T_LSTE_28815_009_19TCH_20230805T215210_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_28815_009_19TCH_20230805T215210_0712_02/ECOv002_L2T_LSTE_28815_009_19TCH_20230805T215210_0712_02_cloud.tif",
+      "bytes": 44148,
+      "sha256": "c3a09d294074ac5bca41eea2488ad68101eac592cea2c99aa109fad43e5f7ec3",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 29605,
+      "asset": "ECOv002_L2T_LSTE_29605_009_18TYN_20230925T201710_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29605_009_18TYN_20230925T201710_0712_02/ECOv002_L2T_LSTE_29605_009_18TYN_20230925T201710_0712_02_cloud.tif",
+      "bytes": 12971,
+      "sha256": "dbbb7f940d50eb05d2cd52c7d44a16be814442f8cc785143fe07d6f0aab88707",
+      "status": "VERIFIED_RASTER"
+    },
+    {
+      "city": "boston",
+      "orbit": 29605,
+      "asset": "ECOv002_L2T_LSTE_29605_009_19TCH_20230925T201710_0712_02_cloud.tif",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ECO_L2T_LSTE.002/ECOv002_L2T_LSTE_29605_009_19TCH_20230925T201710_0712_02/ECOv002_L2T_LSTE_29605_009_19TCH_20230925T201710_0712_02_cloud.tif",
+      "bytes": 9814,
+      "sha256": "1f1df7ee96c041ed3dbbdc4df5cf701437b7f860b45fc725f0ee054628eb38c6",
+      "status": "VERIFIED_RASTER"
+    }
+  ]
+}

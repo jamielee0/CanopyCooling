@@ -1,0 +1,12 @@
+{
+  "trigger": "48 reported non-estimable joint draws; very sparse nonthermal bare-cover distribution",
+  "method": "identify common blocks with max(bare)>min(bare); reconstruct original frozen multinomial multiplicities and test exact absence of those block/group contributions",
+  "note": "zero is mathematical absence/constant control, not an inclusion cutoff; no new fit, draw replacement or rule change",
+  "code_sha256": "800eff0b8a072ebc37fab0dcb22df1265e03ff1558d1eaee55d76e7e5703d971",
+  "source_freeze_sha256": "fc7d6360f9c73bb964cdadaceff2f23b4e29690233bb2887769fef216bd0df61",
+  "empirical_effect_arrays_read": false,
+  "private_members_read": [
+    "valid"
+  ],
+  "outcome_columns_read": false
+}

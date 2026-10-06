@@ -1,0 +1,5 @@
+{
+  "path": "/Users/jmlee/Documents/TreeProject/src/v6_2_advance/summarize_step6_rainfall.py",
+  "sha256": "c05ad4236a4f846405fd1cd20776bcec5c8cadf7c15ba41b18408179bb29f452",
+  "policy": "retain primary missing total and report only prospectively frozen whole-window fallback separately"
+}

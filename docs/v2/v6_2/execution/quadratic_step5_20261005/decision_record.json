@@ -1,0 +1,29 @@
+{
+  "status": "INTERNAL_FITTING_COMPLETE_EFFECT_REVIEW_DEFERRED",
+  "fitting_scope_question": "RESOLVED_BY_EXPLICIT_USER_CONTINUATION",
+  "fitting_hold_superseded": true,
+  "authorized_computation_complete": true,
+  "full_effect_review_complete": false,
+  "effects": "SEALED_USER_REQUEST",
+  "scientific_curvature_conclusion": null,
+  "model_replacement": false,
+  "scale_ruling": null,
+  "new_time_inference": false,
+  "expansion": false,
+  "completion": {
+    "status": "INTERNAL_FITTING_COMPLETE_EFFECT_REVIEW_DEFERRED",
+    "passes": 16,
+    "new_paired_quadratic_models": 16,
+    "reconstructed_paired_linear_models": 16,
+    "cell_pass_observations": 7511083,
+    "paired_configurations": 32,
+    "paired_draws_requested": 32000,
+    "paired_draws_estimable": 32000,
+    "paired_draws_failed": 0,
+    "effect_display": false,
+    "interpretation_and_visual_review": "DEFERRED_SEALED",
+    "scale_ruling": null,
+    "new_time_inference": false,
+    "completed_utc": "2026-10-05T20:03:33.723236+00:00"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-05T01:49:19.481644+00:00",
+  "record_date_local": "2026-10-04",
+  "status": "FROZEN_BEFORE_PROVISIONAL_REVIEW",
+  "authority": {
+    "request": "ok lets do step 4",
+    "interpretation": "Provisional Step4 review as discussed; preserve explicit keep-new-effects-sealed reply",
+    "plan_step": 4,
+    "new_effect_display": false
+  },
+  "main_pilot": {
+    "year": 2023,
+    "Phoenix_passes": 11,
+    "Atlanta_passes": 5,
+    "other_year_weight": 0
+  },
+  "work_kind": "documentation/review of existing released evidence",
+  "limits": {
+    "new_fit": false,
+    "new_bootstrap": false,
+    "new_temporal_comparison": false,
+    "new_model_or_control_rule": false,
+    "sealed_model_or_effect_file_access": false,
+    "raw_thermal_access": false,
+    "simulation_effect_range_selected": false,
+    "scale_tolerance": null,
+    "agreement_ruling": false,
+    "new_city_or_thermal_expansion": false
+  },
+  "data_link_target": "/Users/jmlee/Documents/Documents - Jamie\u2019s Mac mini/TreeProject/project/data",
+  "review_document": "docs/v2/v6_2/provisional_results_review_step4_20261004.md",
+  "archive": "docs/v2/v6_2/archive/before_provisional_step4_review_20261004"
+}

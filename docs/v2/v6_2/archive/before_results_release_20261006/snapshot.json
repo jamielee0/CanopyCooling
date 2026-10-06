@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "a2ac34fabd329e12e4468e3b411642f5331f388b27b0bcfb60b3348d33fad0ba"
+    },
+    {
+      "path": "docs/v2/v6_2/protocol_v6_2.yml",
+      "sha256": "14a40dbed1813352a1105fa6d0461a0a24d44b954df4db179e96db8b0d23cadb"
+    },
+    {
+      "path": "docs/v2/v6_2/pilot_plan_v6_2.md",
+      "sha256": "efc3f7578e28e32945dbce6e8945b059058b48cf6ed358d5e258e21767fa27c9"
+    },
+    {
+      "path": "docs/v2/v6_2/decision_log_v6_2.md",
+      "sha256": "5f39ae0b0395ad250f094756b7e4dbbad5ffdcc6d00bc0aa5490881a3e7f35ce"
+    },
+    {
+      "path": "docs/v2/v6_2/prior_thermal_access.md",
+      "sha256": "cabb905039fd2505b246c349d9651e5c7de9dfd321127401677f86e920495a45"
+    },
+    {
+      "path": "docs/v2/v6_2/results_review_and_targeted_analysis_plan_20260930.md",
+      "sha256": "9987ff5294ab105077c9fa53d3a30f2136820bd98eae5f0f4e437e1acf166cd3"
+    }
+  ]
+}

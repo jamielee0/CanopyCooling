@@ -1,0 +1,34 @@
+{
+  "label": "SYNTHETIC_DATA",
+  "interpretation": "A mechanism demonstration, not evidence that the actual city response follows this chosen curve. Same temperature-space response in both cities; no T-fourth-power transformation. Shows why harmonizing contrast endpoints alone does not harmonize globally fitted linear slopes.",
+  "rows": [
+    {
+      "label": "SYNTHETIC_DATA",
+      "city_support_only": "phoenix",
+      "source_orbit_support_only": 27963,
+      "observed_thermal_outcomes_used": false,
+      "cells": 516781,
+      "common_curve": "T=305+0.1*sin(block_index)-5*f+2*f^2",
+      "linear_gradient_K_per_10pp": -0.4758587164819084,
+      "quadratic_standardized_gradient_K_per_10pp": -0.4685961845184635,
+      "known_standardized_gradient_K_per_10pp": -0.46859618455171587,
+      "reference_f0": 0.028509538620710373,
+      "reference_f1": 0.12850953862071038,
+      "canopy_median": 0.026659294962882996
+    },
+    {
+      "label": "SYNTHETIC_DATA",
+      "city_support_only": "atlanta",
+      "source_orbit_support_only": 27835,
+      "observed_thermal_outcomes_used": false,
+      "cells": 485177,
+      "common_curve": "T=305+0.1*sin(block_index)-5*f+2*f^2",
+      "linear_gradient_K_per_10pp": -0.30190449395039953,
+      "quadratic_standardized_gradient_K_per_10pp": -0.4685961845368176,
+      "known_standardized_gradient_K_per_10pp": -0.46859618455171587,
+      "reference_f0": 0.028509538620710373,
+      "reference_f1": 0.12850953862071038,
+      "canopy_median": 0.3309252858161926
+    }
+  ]
+}

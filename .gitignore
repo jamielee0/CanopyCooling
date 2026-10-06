@@ -1,17 +1,97 @@
-# Never publish local data, credentials or generated caches
-.DS_Store
-__pycache__/
-*.py[cod]
+# ===========================================================================
+# Canopy protocol .gitignore
+# Git tracks ONLY code, config, and small text manifests.
+# Downloaded data and credentials are never committed.
+# ===========================================================================
+
+# ---- data directories: ignore contents, keep the README placeholders ----
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/README.md
+!data/interim/README.md
+!data/processed/README.md
+# (data/manifest.csv lives directly under data/ and IS tracked.)
+
+# ---- large rasters / arrays / EO files (anywhere in the tree) ----
+*.tif
+*.tiff
+*.nc
+*.nc4
+*.cdf
+*.hdf
+*.hdf5
+*.h5
+*.he5
+*.grib
+*.grib2
+*.grb
+*.zarr/
+*.vrt
+*.img
+*.jp2
+*.bil
+*.bsq
+*.dat
+*.npy
+*.npz
+*.parquet
+*.feather
+
+# ---- credentials / secrets (never commit) ----
 .env
 .env.*
 .netrc
+_netrc
+.cdsapirc
 *.pem
 *.key
-credentials*
-data/
-outputs/
-*.tif
-*.tiff
-*.parquet
-*.npz
-*.npy
+*.p12
+*.pfx
+secrets.*
+*secret*
+*credential*
+service-account*.json
+.config/earthengine/
+
+# ---- python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- os / editor cruft ----
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# ---- generated figures (regenerated from code; not committed) ----
+figures/*
+!figures/README.md
+
+# ---- GitHub publication: preserve locally, exclude from the public repository ----
+**/node_modules/
+**/cache/
+outputs/v6_2/sealed_coefficients/
+**/sealed/
+*_SEALED.csv
+*_SEALED.json
+*_SEALED.png
+*_SEALED.pdf
+*.grib2.gz
+*.grib.gz
+*.grb.gz
+**/references/sources/
+**/*email*.txt
+**/*transcript*.txt
+tmp/
+.git-preservation/

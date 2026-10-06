@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-21T21:27:43.599187+00:00",
+  "manifest_sha256": "03afeca2e163fe1bc3b0f5787cb4d647026431bc97fee8d38fa2a25af8baa5d8",
+  "code_sha256": {
+    "src/v6_2_rebalance/run_extension.py": "6f7dbe498586d12c86c18570a5530cd4c8a6f8b360307e0d191c431c648dfd93",
+    "src/urban_cooling_v2/pooled_city_pass.py": "0434337b39c76dcdbba3fcb9695869aff8c483784e8521274fdb9b2869942d22",
+    "src/urban_cooling_v2/pilot_native.py": "91bf31447363aedb06abc99b7e8774c32930281393f779e9bf379126e92df21c"
+  },
+  "prior_effect_access": "original ten and six added Phoenix gradients already disclosed; no new rebalancing pass gradients released",
+  "analysis_status": "exploratory_rebalanced_extension_new_gradients_sealed",
+  "new_time_model": "none; plot first",
+  "original_pilot": "unchanged"
+}

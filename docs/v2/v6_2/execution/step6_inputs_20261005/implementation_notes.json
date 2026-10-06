@@ -1,0 +1,9 @@
+{
+  "repairs": [
+    "ecCodes element lookup requires list, not ndarray; approved source-hash amendment applied to both manifest lists",
+    "Final count accessed pandas product column with brackets to avoid method-name collision; existing numerical CSV values unchanged",
+    "Public figure layout and Stage IV hatching/labels corrected during visual QA"
+  ],
+  "science_settings_changed": false,
+  "source_availability": "MRMS single-hour absence retained; protocol Stage IV fallback computed for entire seven-day window"
+}

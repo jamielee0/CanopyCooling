@@ -1,0 +1,835 @@
+{
+  "created_utc": "2026-10-06T19:32:45.994096+00:00",
+  "record_date_local": "2026-10-06",
+  "request": "lets not keep it sealed then? Can you do the next steps?",
+  "authorization": "Display and interpret the newly computed current2023 pilot effects and figures; assemble integrated final pilot synthesis",
+  "supersedes": "prior keep-new-effects-sealed instruction and requirement to set scale tolerance before this exploratory disclosure",
+  "main_sample": {
+    "year": 2023,
+    "Phoenix_passes": 11,
+    "Atlanta_passes": 5
+  },
+  "allowed_source_runs": [
+    "spatial_scale_review_20261004",
+    "quadratic_step5_20261005",
+    "step7_window_20261005"
+  ],
+  "new_effect_display_authorized": true,
+  "formal_scale_agreement_ruling_authorized": false,
+  "scale_tolerance_K_per_10pp": null,
+  "temperature_remains_primary": true,
+  "later_margin_disclosure": "Any later margin is chosen after this effect access; do not call it blinded or preregistered relative to these results",
+  "old_original_time_contrast_files_included": false,
+  "other_year_results_included": false,
+  "new_fits_or_expansion": false,
+  "external_sending": false,
+  "data_link_target": "/Users/jmlee/Documents/Documents - Jamie\u2019s Mac mini/TreeProject/project/data",
+  "inputs": [
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/27963_joint_original_common_1km_SEALED.npz",
+      "sha256": "300d058932e9740a87c2b678cd95e01894ca2dda6dc841b0028ed69281512222",
+      "bytes": 45623
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/27963_joint_original_common_8km_SEALED.npz",
+      "sha256": "fefcd778e82d08c30dbfc1c189da2e48df44abecfac2e172d348d162badeac2e",
+      "bytes": 45803
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28024_joint_original_common_1km_SEALED.npz",
+      "sha256": "60ebb246f928811ee96bd5d667e202390d0178a1c47e68917bd3593f3fc12ec2",
+      "bytes": 45691
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28024_joint_original_common_8km_SEALED.npz",
+      "sha256": "a9342496918e385aff259b6520068f64b9751c1a49da87b7bf3113cb4fb6ed0a",
+      "bytes": 46167
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28085_joint_original_common_1km_SEALED.npz",
+      "sha256": "b17336f78005dd757a6772bb176ed7081ce1c2010ffadbf6d5c7e0085769517a",
+      "bytes": 45867
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28085_joint_original_common_8km_SEALED.npz",
+      "sha256": "d398b56c7eff5b2e7636b55db8f54e63dc3d873115a1c87a0f24fe76f6b5e898",
+      "bytes": 45986
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28192_joint_original_common_1km_SEALED.npz",
+      "sha256": "c18829b0d0a8f53c3d7fc2853e89d7f6bdf7cb4053378a744f035c2a7d37fe18",
+      "bytes": 45957
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28192_joint_original_common_8km_SEALED.npz",
+      "sha256": "a9bc142636ed37c4253ec8b0f4f5de456af78352a14ddf9811a05ba8f60bf7f3",
+      "bytes": 45900
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28706_joint_original_common_1km_SEALED.npz",
+      "sha256": "cfc76cb1d08055df1833d17ee65630b840434ec6864707521751eba9404b9a9e",
+      "bytes": 45695
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28706_joint_original_common_8km_SEALED.npz",
+      "sha256": "2c6b5156e6e5c2d6f9a43feee236498f55a294eb3ec433256346cc14bd1273ed",
+      "bytes": 46171
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28828_joint_original_common_1km_SEALED.npz",
+      "sha256": "c56075507f53beac77ca14095925ed3a85c1727f11c0293b96b5c774c9493792",
+      "bytes": 45657
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28828_joint_original_common_8km_SEALED.npz",
+      "sha256": "3bf11cff9ee401da79163e3c0899ff0bb580e89cfab016cfbc0f31d14dc81f2b",
+      "bytes": 46209
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28909_joint_original_common_1km_SEALED.npz",
+      "sha256": "c2bf4ec05e500b7b800d5baa07c5c3624cc9c7c140646974e13a48593bfa7435",
+      "bytes": 45898
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28909_joint_original_common_8km_SEALED.npz",
+      "sha256": "25e00536d02e368b294aba2ae946e1c9da123afbf8f49b42ee528616e362f70b",
+      "bytes": 46043
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28970_joint_original_common_1km_SEALED.npz",
+      "sha256": "f59b27dbaae5cb498b55a4ad29124732e75883423886e23fae123f85c058dc33",
+      "bytes": 46029
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/28970_joint_original_common_8km_SEALED.npz",
+      "sha256": "c55828b99d71d703602bbc92fdcbe378ba16fe1994743bd4ce6001dfcd7b2ba0",
+      "bytes": 46072
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/29092_joint_original_common_1km_SEALED.npz",
+      "sha256": "fe64939dbd8d90038f21b2bf97c1df255a35b4bf6335015912bc0e8b603c6a7e",
+      "bytes": 45916
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/29092_joint_original_common_8km_SEALED.npz",
+      "sha256": "9271219ec2160943ccd3581c3910fd6ee04129487da079abb3f7905396037270",
+      "bytes": 45907
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/29545_joint_original_common_1km_SEALED.npz",
+      "sha256": "9830c261abe9d04ee4cf0cdb8f6c32d1606b72931e566eb38918b8cbc6f48ae5",
+      "bytes": 45753
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/29545_joint_original_common_8km_SEALED.npz",
+      "sha256": "3893fa378431a62f3de4b437320823c42b11f957f8f6459a59d63ddc725ca267",
+      "bytes": 45957
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/29606_joint_original_common_1km_SEALED.npz",
+      "sha256": "798cdbaf1582fff1fbae81d0562e4e5ddfaee6ce7092231b6d084bcf43a7dfe8",
+      "bytes": 45729
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/29606_joint_original_common_8km_SEALED.npz",
+      "sha256": "d04819c30bf1de81178dca55de4d6480be47eb35ce3143baa067ee0697a917f0",
+      "bytes": 45991
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/atlanta_27835_paired_scale_1km_SEALED.npz",
+      "sha256": "939b9fc620b5602a41e24d023e7efbc7d0d4e5efc6c3bffb0a20c292200db411",
+      "bytes": 21290
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/atlanta_27835_paired_scale_8km_SEALED.npz",
+      "sha256": "7754ac66697373b0686df35d1f871b22ce58b0c3e1bcc29994af406919d0d6b2",
+      "bytes": 21643
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/atlanta_27896_paired_scale_1km_SEALED.npz",
+      "sha256": "58a6aa142135b9f902af6730ca9c710902417fe73329f938b163f3735c56da85",
+      "bytes": 21311
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/atlanta_27896_paired_scale_8km_SEALED.npz",
+      "sha256": "517ff0c926173c8fd67637779cca963968918054612c3cadff2b20170e2e35f7",
+      "bytes": 21730
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/atlanta_27916_paired_scale_1km_SEALED.npz",
+      "sha256": "d4d6ccb91a1ca5151d318b2c11ca96797083260f70d85b8147407096e4de9f5d",
+      "bytes": 21329
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/atlanta_27916_paired_scale_8km_SEALED.npz",
+      "sha256": "cf9ef03e85d7cefe26d391700b63049c60c44c41991127b7428647a5d10957c2",
+      "bytes": 21553
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/atlanta_28145_paired_scale_1km_SEALED.npz",
+      "sha256": "06b03691084d72fba54f9fe6e1b81d9e74a91e4f3105f17c5b1be2d3d31f43f4",
+      "bytes": 21614
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/atlanta_28145_paired_scale_8km_SEALED.npz",
+      "sha256": "41c018a50dcbbbff777742be8dc009e5aaf00ad4c825f7bb390deee3f24141e6",
+      "bytes": 21783
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/atlanta_28598_paired_scale_1km_SEALED.npz",
+      "sha256": "0fd53ba181b2902cb7214f286eef826430a4739e1c28ca56958a3d2cad4b15c2",
+      "bytes": 21535
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/atlanta_28598_paired_scale_8km_SEALED.npz",
+      "sha256": "477f1f03ad58dc8ef46f78b7767db70ad4a769af69589d6fd3e2ca8dadce3c75",
+      "bytes": 21664
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/available_registration_review_SEALED.json",
+      "sha256": "83a0675762567c21a3caca3107627a3ee29c4704928c3a4de497237afb2e2a4c",
+      "bytes": 50692
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/common_footprint_cooling_SEALED.pdf",
+      "sha256": "55b84b747595933db32e9e5fec412b16c70f6d9bbcafa5697e6ebf0fa801ae44",
+      "bytes": 36355
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/common_footprint_cooling_SEALED.png",
+      "sha256": "57bb5ea1eb46b7cd826c8d505676c6f3ff3e209aaebbc45b3ef0b7e0ea9b3664",
+      "bytes": 153694
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/common_footprint_review_SEALED.json",
+      "sha256": "db22329f9feecae1b44e7f892a79a82290df4aa0f72c71101cc19c4acfe37ad7",
+      "bytes": 37817
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/fixed_registration_review_SEALED.json",
+      "sha256": "85f1f3482e450a9246254f77aff135f8deb139e4967d645e492b1e6d24048f26",
+      "bytes": 12353
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/paired_scale_diagnostic_SEALED.pdf",
+      "sha256": "c0a74226c2d611f544842274406253a96d4dd7999fe399da64518670636312f8",
+      "bytes": 41979
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/paired_scale_diagnostic_SEALED.png",
+      "sha256": "27ffe6c145c7c011334d59ab282d325ba0283cdfd746a5664f29561793198f15",
+      "bytes": 307345
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/paired_scale_review_SEALED.json",
+      "sha256": "b64454ede5cd1d262af7d783d6717fdb0082f220eb0abbe03fc2a5aab5cf4033",
+      "bytes": 31547
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_27963_paired_scale_1km_SEALED.npz",
+      "sha256": "ccd5ec0dc80eb6e15dcbd49c9eb0a4024b07dcf7cfab606fc5aaea0d38416c16",
+      "bytes": 21451
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_27963_paired_scale_8km_SEALED.npz",
+      "sha256": "300c6c19e4f6351a0cd3ffff9fabab67cfae59e647dfdffa9def4543a9bcf079",
+      "bytes": 21784
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28024_paired_scale_1km_SEALED.npz",
+      "sha256": "3deb47d607a8f88d202ddb93a84d05b8a2727c0e4035cc3ee6db4ec1f956d189",
+      "bytes": 21529
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28024_paired_scale_8km_SEALED.npz",
+      "sha256": "f3f8aee1267e5cb346dad594a1f01f87f48be25c034947eb4350936aac28d177",
+      "bytes": 21857
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28085_paired_scale_1km_SEALED.npz",
+      "sha256": "160ec0f0bbeab08c4e91c4b225279c453715f3d54f3b4fbbfa3d5431e2c9a670",
+      "bytes": 21635
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28085_paired_scale_8km_SEALED.npz",
+      "sha256": "577fef7813161d83f69e001cffa2fcbb2b0d246059ea6cc34de02e8024fa3bc1",
+      "bytes": 21927
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28192_paired_scale_1km_SEALED.npz",
+      "sha256": "5660024c81f8f077bb53c290cfcf25c91b0ec2924cbfc70484f7c564ecd183ea",
+      "bytes": 21583
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28192_paired_scale_8km_SEALED.npz",
+      "sha256": "47bbdb26bbe1a0d09727a51986da6a4ab02ff48118d0274d7bf8c48e0d9cc6ec",
+      "bytes": 21850
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28706_paired_scale_1km_SEALED.npz",
+      "sha256": "aeca7128c0732e22eb618ac170314a2a9442c55a0d65fb91c3960c37116940b7",
+      "bytes": 21554
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28706_paired_scale_8km_SEALED.npz",
+      "sha256": "1b53bac4ac95937d30745d43f05c83bd58a4141f7a089e6c7812cf74854038d9",
+      "bytes": 21991
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28828_paired_scale_1km_SEALED.npz",
+      "sha256": "63e5a0ca0e986961f3fc9e30fc25fb9d88a5f2560ac10e81fe875e0cb689bcb0",
+      "bytes": 21541
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28828_paired_scale_8km_SEALED.npz",
+      "sha256": "aa2223b9675af72ceef517556e6f8e5c78c9184753a1a8f88f056bd471d648b2",
+      "bytes": 21868
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28909_paired_scale_1km_SEALED.npz",
+      "sha256": "d309c8bf206bdea3bf05afc5314bc6415b9192ffd6991d211b8a5657aba9bcfa",
+      "bytes": 21864
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28909_paired_scale_8km_SEALED.npz",
+      "sha256": "2f83dc85a41044be08251eb97c68da575debac441cd7b5ebc21663837a3a053f",
+      "bytes": 22119
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28970_paired_scale_1km_SEALED.npz",
+      "sha256": "eaa6c7ca5da5616f6337e5fb2b21730a8293724127b4f697f0eaa8d0ed29099e",
+      "bytes": 21864
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_28970_paired_scale_8km_SEALED.npz",
+      "sha256": "8466153184cd8cf705c4d1b265fe0b65bc02c8e5e76386d732a019eddd4e237c",
+      "bytes": 22148
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_29092_paired_scale_1km_SEALED.npz",
+      "sha256": "8a879b266a235709c23be4f11334986a89d6876afcedd10e7fe66ea29a8c7e5d",
+      "bytes": 21580
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_29092_paired_scale_8km_SEALED.npz",
+      "sha256": "2a29293102c11fd2ded6712646007c011eba01bd83bdb8a069c1356b28562b79",
+      "bytes": 21837
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_29545_paired_scale_1km_SEALED.npz",
+      "sha256": "caeae100fb8e87864a9d694958a05243b605c1eca046dbca95d38f5f81ecb5f6",
+      "bytes": 21686
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_29545_paired_scale_8km_SEALED.npz",
+      "sha256": "98720645a92ca8263edac038cdfcda65d6fc12d64cca290ad229e2e0925f9e94",
+      "bytes": 22086
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_29606_paired_scale_1km_SEALED.npz",
+      "sha256": "34e2ffee6a90af1214f846197a1ca3ecb84aea2032b183ad4558eec926207692",
+      "bytes": 21336
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/phoenix_29606_paired_scale_8km_SEALED.npz",
+      "sha256": "75e4054d0e1d7f678741a3fcf3601b5eee5c89d1dbe7467de1dc6672b98e3b36",
+      "bytes": 21667
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/reference_sensitivity_SEALED.pdf",
+      "sha256": "013a0071c1f200f529b39d603075cfde80d7a99d5d106a09334812cf25139851",
+      "bytes": 29794
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/reference_sensitivity_SEALED.png",
+      "sha256": "f87fb89fd6cf340502af90786d6baf93438c6c416e07131d22cdb17f37fae957",
+      "bytes": 104478
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/reference_sensitivity_review_SEALED.json",
+      "sha256": "7a7816941c693a283f938963f428ded3a19c270bb14423fb1285087e9f54b8c8",
+      "bytes": 121822
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/registration_available_support_SEALED.pdf",
+      "sha256": "0d2e018b2def27e8f6547d41335bddc1fc6b3bb7bb34939538d71a7dc98f50b9",
+      "bytes": 36032
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/registration_available_support_SEALED.png",
+      "sha256": "bbd61bd8668fed597d425e47b13cb0db27eb872698763bec6a6ca5b1b6a41c26",
+      "bytes": 202481
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/registration_fixed_support_SEALED.pdf",
+      "sha256": "9ef187ba37d5fc76a885fbb0cd8e3b58c3f46f3bdaf36f379081a9ea78263a6b",
+      "bytes": 33152
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/spatial_scale_review_20261004/registration_fixed_support_SEALED.png",
+      "sha256": "f3b27b021caf7acd04895eecb2cf8326c876104ed79d8d445cedfe1466cde061",
+      "bytes": 128439
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27835_1km_comparison_SEALED.png",
+      "sha256": "cb7486c857e18fbec34049e2abe55c454e3195db7fbb90b1bc8b8ea32f36914a",
+      "bytes": 164979
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27835_8km_comparison_SEALED.png",
+      "sha256": "043b97ba9a873ecb20006bee182c12521f4c4726676cc5edb0007a65b5892d24",
+      "bytes": 176250
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27835_curves_SEALED.json",
+      "sha256": "ed202cbb1631f987ab0352dc132dc38842d01e8784935683562332d9fee8c035",
+      "bytes": 1292720
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27835_finite_contrasts_SEALED.json",
+      "sha256": "b34f7b081fe5ddd6bca58bbefe17d298362a1b835356c99a0bcacc5273c95a7e",
+      "bytes": 177750
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27835_models_SEALED.npz",
+      "sha256": "0237f356b1599c2dce9843b929bd1494db20672fd431613173853eea8f281eb2",
+      "bytes": 1282433
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27896_1km_comparison_SEALED.png",
+      "sha256": "babce59813b09e7fb6f52b3071ef7921702513f96d26da1c3fed653f40f94c34",
+      "bytes": 177297
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27896_8km_comparison_SEALED.png",
+      "sha256": "f3b0dd4a3a84a7df80133ea0a21a1d442f477bf5392aaef9abf67bb9881f9a2a",
+      "bytes": 177780
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27896_curves_SEALED.json",
+      "sha256": "fb04177d1ff7c72fab021ca5e72c13b81f61e5cee3800abb50f6265602a0a53e",
+      "bytes": 1293070
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27896_finite_contrasts_SEALED.json",
+      "sha256": "64c3132098acb516dd3f30a1413387105ef34271e785f5b0369697dbc42b6d29",
+      "bytes": 177965
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27896_models_SEALED.npz",
+      "sha256": "814eaee19ad2ec075f1d01a79513538ba7212c1e447c6b44f3807734978abc56",
+      "bytes": 1308742
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27916_1km_comparison_SEALED.png",
+      "sha256": "a854670e478b51c6364d104fcce5b8760a7a287876c78b6ae8baaa48bf377ecf",
+      "bytes": 179101
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27916_8km_comparison_SEALED.png",
+      "sha256": "217b21ee27afc7a41aadc34bcc8dbb722e3651d770f88f90cbf7388ee7b8e28b",
+      "bytes": 181768
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27916_curves_SEALED.json",
+      "sha256": "e898ce2c47f112ff5913298034efe3a9e56f7fcff68b2f712ad399e564124ef2",
+      "bytes": 1292223
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27916_finite_contrasts_SEALED.json",
+      "sha256": "17eda9866b3cd7462ac386f4891734f4795acff474630d2a99dff6e9b02381a5",
+      "bytes": 178005
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_27916_models_SEALED.npz",
+      "sha256": "6903275eb2a6f785d79a608658b41ae041354eb01d36ea954e3faa31d01476bf",
+      "bytes": 1268302
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28145_1km_comparison_SEALED.png",
+      "sha256": "069cfe503e3c06c1a263e590966f92873462d6fd566b534c3262f74acaa43e45",
+      "bytes": 184455
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28145_8km_comparison_SEALED.png",
+      "sha256": "f1da966cc28a520d89363e20970a992296165053e8041b72511038474bfde44e",
+      "bytes": 170750
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28145_curves_SEALED.json",
+      "sha256": "9125c0c22a148e13f2d15e3ebffd8f2ccbcd6c76314e8313474bc91fa589e105",
+      "bytes": 1289848
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28145_finite_contrasts_SEALED.json",
+      "sha256": "7bd30e939d456d943a9b73be89b3112523a3cbb4d62d532aab6e6ad3518c7178",
+      "bytes": 177639
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28145_models_SEALED.npz",
+      "sha256": "758ce798b834e881ddc0b886bed2a180ad899967f9d3ddc0b1c7adc2f691b61b",
+      "bytes": 1008442
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_1km_comparison_SEALED.png",
+      "sha256": "a76a5ac8d1cda8c5e3b5683d5b059a6aab48f56ad36795739c3d606d5c262bdb",
+      "bytes": 180985
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_8km_comparison_SEALED.png",
+      "sha256": "1544d3f3fcd19173683da36ef74091c7565c9d15da449350e751397770e5181c",
+      "bytes": 179073
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_curves_SEALED.json",
+      "sha256": "fbab0cf760fb7ccb6d6f3ba9ae9ee5a5f1ea164572bb4b38d658f42ce8170ccf",
+      "bytes": 1289544
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_finite_contrasts_SEALED.json",
+      "sha256": "ac84f08a48c1ed660f3584c6802a99dc3019b2d280ab5f2428a78ad38e917dd8",
+      "bytes": 177544
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/atlanta_28598_models_SEALED.npz",
+      "sha256": "db68d7c0f104f4934ada96d284737d40c2553134c71c4e28082d34a350989805",
+      "bytes": 992535
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/curves_SEALED.csv",
+      "sha256": "a7a6e4219c56ce8631b9668701dec6eee61d44e559b4290de4283cbb9edfe7bd",
+      "bytes": 8724230
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/finite_contrasts_SEALED.csv",
+      "sha256": "d0f7e6e0e8f2e40c7b74983debb51b6a1b076bee59899aece51f8d4380740335",
+      "bytes": 903370
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_1km_comparison_SEALED.png",
+      "sha256": "b991bb164e8e214bd65f454ae2474473ab45781d45332b89176657c78ea3da9e",
+      "bytes": 169756
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_8km_comparison_SEALED.png",
+      "sha256": "3a96d561bca88fd72bb3b8f6e5a6a1453a3400e1bd06f69c65dd03d6721d5362",
+      "bytes": 170470
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_curves_SEALED.json",
+      "sha256": "0892b78e5a770956b816ad4fda0da51adca2db095d8d4d43a2587a0be1f6252f",
+      "bytes": 1299860
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_finite_contrasts_SEALED.json",
+      "sha256": "bf1aa4340f58fc6a0428b042924e01e6149e7710caf2501adba1d58d0be3f20a",
+      "bytes": 104459
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_27963_models_SEALED.npz",
+      "sha256": "15518be463e39f7f58dfc736d99898c72ee9e6f8b12a19c6ad5d17a1d50822d4",
+      "bytes": 843875
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28024_1km_comparison_SEALED.png",
+      "sha256": "0d0bb865bd86802517c0a1e3f4901648f5bcf82ed7a61877302cdd64b3dad0c9",
+      "bytes": 175207
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28024_8km_comparison_SEALED.png",
+      "sha256": "983114a3e1fe37648372cf7acbe91c598358cd41ad8900a2c5ffed264937c9cf",
+      "bytes": 175605
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28024_curves_SEALED.json",
+      "sha256": "9f16cafaa606357b2aec4f7d108d0edbcc5181de68849c66c80c6f5de68932ad",
+      "bytes": 1299276
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28024_finite_contrasts_SEALED.json",
+      "sha256": "99193ff3583d85d680f53b387721f4901902275f00f09738a38ef88d102b8c90",
+      "bytes": 104281
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28024_models_SEALED.npz",
+      "sha256": "51e98c297c285706dc4a61d423a8d7d839c2be10fb15306bc897f611641b4b0b",
+      "bytes": 827875
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28085_1km_comparison_SEALED.png",
+      "sha256": "d0db792e724e93054850f4731d47d02e01e1317f95defbc37d9e7965d3040cca",
+      "bytes": 180538
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28085_8km_comparison_SEALED.png",
+      "sha256": "d99785c2c8dab09bd0a38d0b31504f19d543d25385ba355ef2402d3b40643deb",
+      "bytes": 171019
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28085_curves_SEALED.json",
+      "sha256": "3f34072439f0a3b5161cabf610a0c73f9380b6767034a827f9bd741637bd6a35",
+      "bytes": 1297879
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28085_finite_contrasts_SEALED.json",
+      "sha256": "b035730dd574ed22fe338dd475fd78499f6c70cdbeb80660b7ef6df19f6656e4",
+      "bytes": 104197
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28085_models_SEALED.npz",
+      "sha256": "5626d9f411e8c628d657a866ddc4dc9ddf57f4f560e1991fd6b8a8569168fdc9",
+      "bytes": 840093
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28192_1km_comparison_SEALED.png",
+      "sha256": "215bc6a47c166195740b28a2ee66c38ec38424cf61af16095deb9794d3c6f86f",
+      "bytes": 178523
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28192_8km_comparison_SEALED.png",
+      "sha256": "9c9b2b918449b7aa30270c73c658d67b5b507f61eb9fda4daa41389df68262dd",
+      "bytes": 173207
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28192_curves_SEALED.json",
+      "sha256": "083aaa1b41adbb4e4b01818df6a7f7dd9435e4f4b54d9d14692f4281a3309209",
+      "bytes": 1298574
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28192_finite_contrasts_SEALED.json",
+      "sha256": "e2dfa647b459b80db9fbb85b9a14788cb48e19cb4538c8fe370c62a686ec3fed",
+      "bytes": 104204
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28192_models_SEALED.npz",
+      "sha256": "1f70256f3c531ed062f4b8fdfb0fc2b27e596ba526b82619f9d616cf1a76f313",
+      "bytes": 845395
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28706_1km_comparison_SEALED.png",
+      "sha256": "847d17ab3b3eaf88629e0afd4aac55dd0f24713b845c5263afe3084f89a7051f",
+      "bytes": 178278
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28706_8km_comparison_SEALED.png",
+      "sha256": "344abd138f79b9a836c00d752284b3b5c8b77e03eb4dedd6e74ad2f78844efd5",
+      "bytes": 179156
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28706_curves_SEALED.json",
+      "sha256": "1dbb2a84a1b0634598955556b7fbda3dfcd740fed077a64dfb351633d5ffeff1",
+      "bytes": 1297981
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28706_finite_contrasts_SEALED.json",
+      "sha256": "44877e0e9d1c73a5d1309525bc501529a1344067ce840372f1ba177909fb6e62",
+      "bytes": 104161
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28706_models_SEALED.npz",
+      "sha256": "c51b3eb6ca5143e6fef9c5d55899ac6db7b33d16d04ea854d1541c5c1c2caa1e",
+      "bytes": 845510
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28828_1km_comparison_SEALED.png",
+      "sha256": "c694677f6f9d69b40688d4770a9d365e9002eaeec977056e0acf697cd3c340c1",
+      "bytes": 174752
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28828_8km_comparison_SEALED.png",
+      "sha256": "000124a25abc2e4f96afdfc2310a2b505563f147b7e5edbc3d436cdba65deac7",
+      "bytes": 177813
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28828_curves_SEALED.json",
+      "sha256": "dfd89768d206105cbca93604ea00e7875a46a6d90a4281c6d9348296cf4b7183",
+      "bytes": 1298340
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28828_finite_contrasts_SEALED.json",
+      "sha256": "fda207de259033b1de18f6f9faa7947423c29a93239ceb410f55cdb2ef4e7b5a",
+      "bytes": 104166
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28828_models_SEALED.npz",
+      "sha256": "2c236cebea387b83cad240f21422853e6039f430cfedfc6e7cd295d300a11700",
+      "bytes": 845039
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28909_1km_comparison_SEALED.png",
+      "sha256": "0a1e03d0758749d5b8cf374b1a48d9859c328f459b8eccefba5aa5084b025feb",
+      "bytes": 169578
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28909_8km_comparison_SEALED.png",
+      "sha256": "543f09ad249cfecb94174ad5f3d059a8da9f33229a08a1c496ddf234be0b85d0",
+      "bytes": 177357
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28909_curves_SEALED.json",
+      "sha256": "f0b262d09fe89c8c48a99e41a39e10239c0227249a559d9812700dae187b4d8a",
+      "bytes": 1299908
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28909_finite_contrasts_SEALED.json",
+      "sha256": "8629dc049773f396b90d21b657de0a0381cf0b1a6b1e6ab8d66f3d1d47130acb",
+      "bytes": 104364
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28909_models_SEALED.npz",
+      "sha256": "3b13b087b355638c248987daf33e18be5a13bd27584b6b3cd5b58db22ef03adb",
+      "bytes": 791335
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28970_1km_comparison_SEALED.png",
+      "sha256": "504856d4f78c3ac56f11e31ac10f4331db558bec7a8432855745ef24d1daa9f9",
+      "bytes": 176133
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28970_8km_comparison_SEALED.png",
+      "sha256": "ffccfdc1fbaf3843ebe6e4a4ae768e2bb634345c2fb2ff073c469165f5b5a943",
+      "bytes": 170506
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28970_curves_SEALED.json",
+      "sha256": "1153d37ba0b0ac1592c5eef06295216c2d71acbe9861457e924d2d4e2dab4593",
+      "bytes": 1297621
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28970_finite_contrasts_SEALED.json",
+      "sha256": "3113b7a04f4e7aed4187b44f73d50389c57914faffece194adc894f1758b79ba",
+      "bytes": 104182
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_28970_models_SEALED.npz",
+      "sha256": "b978b3151694d121d9e91cdc8f35097e0d9d957460b4e612218d38da0f8ab552",
+      "bytes": 818660
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29092_1km_comparison_SEALED.png",
+      "sha256": "5fed58ab7a3051bcc069037e3e6c96686b16884a1211447d73d8f924394723f5",
+      "bytes": 176943
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29092_8km_comparison_SEALED.png",
+      "sha256": "e984f56d3edebcc90abf7189d5fa1f8e169c2daf6a53cf950b16615388343b12",
+      "bytes": 174486
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29092_curves_SEALED.json",
+      "sha256": "84ab0a76de69b2baca6fad0d926a1b080376cc32796531b952f0d5d8055789e9",
+      "bytes": 1299428
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29092_finite_contrasts_SEALED.json",
+      "sha256": "00483f0becd1182e1d53e853ff09f4ce7ec5f07bd1e4e7d949be8a4b25705d7a",
+      "bytes": 104167
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29092_models_SEALED.npz",
+      "sha256": "63e2cdc1650b3af0526f1bfe9be3f058b7303813952701da98a6fc534db04711",
+      "bytes": 845558
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29545_1km_comparison_SEALED.png",
+      "sha256": "4318fb5dbe774308b2197e2d6a931d123539fd569821874a657d2436457f68ce",
+      "bytes": 161087
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29545_8km_comparison_SEALED.png",
+      "sha256": "cf2870ad6841b0eb890ea061af907cbb401c28e3ad2ce4d1667a4eb6a22a4548",
+      "bytes": 166788
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29545_curves_SEALED.json",
+      "sha256": "196e808daca893b0f845c678a8827c43606d9a0779617d46b9068e2a93dc836a",
+      "bytes": 1300568
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29545_finite_contrasts_SEALED.json",
+      "sha256": "54c24924466d491f40d5f96076ffc0e85d02758faddb74f93043fdb737ae9729",
+      "bytes": 104440
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29545_models_SEALED.npz",
+      "sha256": "5278e4fd9736e8bfb07926e81d5fa64a87f66f282e322f932f78fc9e2a53f6c0",
+      "bytes": 732891
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29606_1km_comparison_SEALED.png",
+      "sha256": "bfe9719471ee760726748d39e9bcf9458daf2e14b3f9fe04615410dcce65ea13",
+      "bytes": 170306
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29606_8km_comparison_SEALED.png",
+      "sha256": "ebb5b9d46ec6cf3cc649172321de9d093713409919e9c54f5e1416b66a0a839d",
+      "bytes": 171127
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29606_curves_SEALED.json",
+      "sha256": "30b2c46e89a892e9575a1b654a73fe07665dbafdb1e4757fbbde9ff69659d114",
+      "bytes": 1300332
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29606_finite_contrasts_SEALED.json",
+      "sha256": "defe4c5ecaa62353818399a2172c6cefe07a12fb2adf43319916c6359e393076",
+      "bytes": 104286
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/quadratic_step5_20261005/phoenix_29606_models_SEALED.npz",
+      "sha256": "5fdbe47ccfff99a6c1975a4e759e88e6e62e8e927cfe8cc2d8d67cc2d3f0ce70",
+      "bytes": 844717
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/atlanta_1km_joint_SEALED.npz",
+      "sha256": "905b6719b8ada3c086c1f8782d53146beea244eab3ed653f36bae9aca8d03ff1",
+      "bytes": 76099
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/atlanta_8km_joint_SEALED.npz",
+      "sha256": "12898ce86f3c211de26ac286cce5923a27db905a8ac39bd9c550d8117116080f",
+      "bytes": 76407
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_1km_comparisons_SEALED.png",
+      "sha256": "1c2711543eba645ff00af2c85ed8393aa3eb6a728d8fe50ecfd2215e266429ed",
+      "bytes": 70807
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_1km_joint_SEALED.npz",
+      "sha256": "4e7852a7e729391dbd85f28a06bd2c7d6795b65d4b4333a2a229ea6f3f5b70c7",
+      "bytes": 168039
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_1km_window_draws_SEALED.npz",
+      "sha256": "8a2a19a048911f79d4e817c1bd6d019b3258ef9f880ae584eb9cbb4fe6a6c2f9",
+      "bytes": 205738
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_8km_comparisons_SEALED.png",
+      "sha256": "dabc5a48510c45fab8cfb127300408517796afac616868e0e18476064190961f",
+      "bytes": 71264
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_8km_joint_SEALED.npz",
+      "sha256": "afa998dbcfa54165f5efdfd853128fb93c39d5266584b1c90691b9f207426c8a",
+      "bytes": 168478
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_8km_window_draws_SEALED.npz",
+      "sha256": "da29c64322566c9caeaa5b4c60abacac9bf7a53c6f0274e10a578136fecf8fb9",
+      "bytes": 207643
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_window_comparisons_SEALED.csv",
+      "sha256": "00354755f1d2249a9989f773e1a306ad9bf294b70ddf3c67549c1cfe6322b5a9",
+      "bytes": 9102
+    },
+    {
+      "path": "outputs/v6_2/sealed_coefficients/step7_window_20261005/phoenix_window_comparisons_SEALED.json",
+      "sha256": "ec77be7f84d36af650391590dc4a80a854b925dadf87c75a850b02e23e148c91",
+      "bytes": 20107
+    }
+  ],
+  "status": "AUTHORIZED_BEFORE_EFFECT_ACCESS"
+}

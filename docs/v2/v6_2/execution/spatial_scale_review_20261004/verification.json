@@ -1,0 +1,54 @@
+{
+  "status": "INTERNAL_STEP3_AND_PUBLIC_SUPPORT_VERIFIED_EFFECT_REVIEW_DEFERRED",
+  "tests": 20,
+  "public_tables": [
+    {
+      "file": "spatial_precision_review.csv",
+      "rows": 163,
+      "typed_roundtrip": "exact",
+      "new_effect_fields": false
+    },
+    {
+      "file": "canopy_context_distributions.csv",
+      "rows": 231,
+      "typed_roundtrip": "exact",
+      "new_effect_fields": false
+    },
+    {
+      "file": "footprint_and_reference_support.csv",
+      "rows": 16,
+      "typed_roundtrip": "exact",
+      "new_effect_fields": false
+    },
+    {
+      "file": "inherited_residual_spatial_diagnostics.csv",
+      "rows": 20,
+      "typed_roundtrip": "exact",
+      "new_effect_fields": false
+    }
+  ],
+  "frozen_source_hashes": 160,
+  "frozen_inputs_unchanged": true,
+  "initial_code_preserved": true,
+  "recorded_repairs_verified": true,
+  "scientific_design_unchanged": true,
+  "native_common_identity_and_areas": true,
+  "targeted_point_recoveries": 11,
+  "joint_draw_accounting": 22000,
+  "fixed_registration_pairing_validated": 24,
+  "available_support_difference_intervals": "unavailable; no inferred pairing",
+  "paired_scale_configurations": 32,
+  "all_new_effects_sealed": true,
+  "sealed_file_count": 69,
+  "file_permissions_and_public_export_boundary": true,
+  "empirical_time_files_opened": 0,
+  "scientific_agreement_ruling": false,
+  "scale_tolerance": null,
+  "sparse_control_audit": "all48 failed draws exactly lack common bare-cover variation; 54 positive cells/10 blocks/5 coarse groups; predictors and validity masks only",
+  "public_visual_qa": "three figure families and four table previews passed; map footer repaired",
+  "sealed_effect_visual_qa": "deferred at user request; metadata/nonblank/permission checks only",
+  "documentation_verification": "duplicate-key YAML, unchanged scientific settings/old records, archive hashes, new links and all seven document previews passed",
+  "public_PDF_verification": "all three figures are single-page exports with expected title text",
+  "joint_estimable_draws": 21952,
+  "joint_nonestimable_draws": 48
+}

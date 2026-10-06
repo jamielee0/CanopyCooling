@@ -1,0 +1,391 @@
+{
+  "created_utc": "2026-10-04T16:41:32.333594+00:00",
+  "scope": "16 original acquisitions; sensitivities repeat the same gaps",
+  "fields": [
+    {
+      "field": "air_temperature_K,VPD_kPa",
+      "status": "MISSING_BRACKETING_HOURLY_RECORDS",
+      "affected_count": 6,
+      "acquisitions": [
+        {
+          "city": "atlanta",
+          "orbit": "28145",
+          "local_date": "2023-06-23"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28085",
+          "local_date": "2023-06-19"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28192",
+          "local_date": "2023-06-26"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29092",
+          "local_date": "2023-08-23"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29545",
+          "local_date": "2023-09-21"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29606",
+          "local_date": "2023-09-25"
+        }
+      ]
+    },
+    {
+      "field": "rainfall_prior_1d_mm,rainfall_prior_3d_mm,rainfall_prior_7d_mm",
+      "status": "NOT_ACQUIRED",
+      "affected_count": 16,
+      "acquisitions": [
+        {
+          "city": "atlanta",
+          "orbit": "27835",
+          "local_date": "2023-06-03"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "27896",
+          "local_date": "2023-06-07"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "27916",
+          "local_date": "2023-06-08"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "28145",
+          "local_date": "2023-06-23"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "28598",
+          "local_date": "2023-07-22"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "27963",
+          "local_date": "2023-06-11"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28024",
+          "local_date": "2023-06-15"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28085",
+          "local_date": "2023-06-19"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28192",
+          "local_date": "2023-06-26"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28706",
+          "local_date": "2023-07-29"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28828",
+          "local_date": "2023-08-06"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28909",
+          "local_date": "2023-08-11"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28970",
+          "local_date": "2023-08-15"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29092",
+          "local_date": "2023-08-23"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29545",
+          "local_date": "2023-09-21"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29606",
+          "local_date": "2023-09-25"
+        }
+      ]
+    },
+    {
+      "field": "cell_level_geometry_coverage",
+      "status": "NOT_QUANTIFIED_IN_REUSED_SOURCES",
+      "affected_count": 16,
+      "acquisitions": [
+        {
+          "city": "atlanta",
+          "orbit": "27835",
+          "local_date": "2023-06-03"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "27896",
+          "local_date": "2023-06-07"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "27916",
+          "local_date": "2023-06-08"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "28145",
+          "local_date": "2023-06-23"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "28598",
+          "local_date": "2023-07-22"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "27963",
+          "local_date": "2023-06-11"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28024",
+          "local_date": "2023-06-15"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28085",
+          "local_date": "2023-06-19"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28192",
+          "local_date": "2023-06-26"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28706",
+          "local_date": "2023-07-29"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28828",
+          "local_date": "2023-08-06"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28909",
+          "local_date": "2023-08-11"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28970",
+          "local_date": "2023-08-15"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29092",
+          "local_date": "2023-08-23"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29545",
+          "local_date": "2023-09-21"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29606",
+          "local_date": "2023-09-25"
+        }
+      ]
+    },
+    {
+      "field": "view_azimuth_completeness",
+      "status": "UNRESOLVED_FROZEN_PILOT_EXCEPTION",
+      "affected_count": 16,
+      "acquisitions": [
+        {
+          "city": "atlanta",
+          "orbit": "27835",
+          "local_date": "2023-06-03"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "27896",
+          "local_date": "2023-06-07"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "27916",
+          "local_date": "2023-06-08"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "28145",
+          "local_date": "2023-06-23"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "28598",
+          "local_date": "2023-07-22"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "27963",
+          "local_date": "2023-06-11"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28024",
+          "local_date": "2023-06-15"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28085",
+          "local_date": "2023-06-19"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28192",
+          "local_date": "2023-06-26"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28706",
+          "local_date": "2023-07-29"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28828",
+          "local_date": "2023-08-06"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28909",
+          "local_date": "2023-08-11"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28970",
+          "local_date": "2023-08-15"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29092",
+          "local_date": "2023-08-23"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29545",
+          "local_date": "2023-09-21"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29606",
+          "local_date": "2023-09-25"
+        }
+      ]
+    },
+    {
+      "field": "flux_and_temperature_equivalent_effects",
+      "status": "SEALED_NOT_RELEASED",
+      "affected_count": 16,
+      "acquisitions": [
+        {
+          "city": "atlanta",
+          "orbit": "27835",
+          "local_date": "2023-06-03"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "27896",
+          "local_date": "2023-06-07"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "27916",
+          "local_date": "2023-06-08"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "28145",
+          "local_date": "2023-06-23"
+        },
+        {
+          "city": "atlanta",
+          "orbit": "28598",
+          "local_date": "2023-07-22"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "27963",
+          "local_date": "2023-06-11"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28024",
+          "local_date": "2023-06-15"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28085",
+          "local_date": "2023-06-19"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28192",
+          "local_date": "2023-06-26"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28706",
+          "local_date": "2023-07-29"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28828",
+          "local_date": "2023-08-06"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28909",
+          "local_date": "2023-08-11"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "28970",
+          "local_date": "2023-08-15"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29092",
+          "local_date": "2023-08-23"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29545",
+          "local_date": "2023-09-21"
+        },
+        {
+          "city": "phoenix",
+          "orbit": "29606",
+          "local_date": "2023-09-25"
+        }
+      ]
+    }
+  ]
+}

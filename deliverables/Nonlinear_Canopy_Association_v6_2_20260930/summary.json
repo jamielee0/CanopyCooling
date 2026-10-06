@@ -1,0 +1,18 @@
+{
+  "phoenix": {
+    "reference_canopy_percent": 0.31363328569568,
+    "upper_canopy_percent": 10.79195342957973,
+    "mean_cooling_at_upper_C": 1.2140905113975315,
+    "linear_cooling_at_upper_C": 1.257798301187714,
+    "maximum_absolute_curve_linear_difference_C": 0.1011754508342782,
+    "minimum_blocks_spanning_reference_and_target": 923
+  },
+  "atlanta": {
+    "reference_canopy_percent": 3.89397919178009,
+    "upper_canopy_percent": 85.69015741348267,
+    "mean_cooling_at_upper_C": 2.0720090196804244,
+    "linear_cooling_at_upper_C": 1.7114828260234964,
+    "maximum_absolute_curve_linear_difference_C": 0.44291443298766897,
+    "minimum_blocks_spanning_reference_and_target": 825
+  }
+}
