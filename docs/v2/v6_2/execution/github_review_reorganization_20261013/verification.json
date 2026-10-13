@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-13",
+  "source_files_preserved": 3884,
+  "archived_original_paths_verified": 677,
+  "unchanged_canonical_release_verified": true,
+  "copied_source_artifacts_verified": 88,
+  "task_folders": 6,
+  "required_figure_folders": 4,
+  "labelled_deliverables": 27,
+  "curve_figures": 16,
+  "local_links_verified": 222,
+  "broken_links": 0,
+  "active_yaml_parsed": true,
+  "active_protocol_bytes_unchanged": true,
+  "joined_original_pass_rows": 16,
+  "headline_reconciliation_K_per_10pp": -0.32498961353810085,
+  "joined_units_checked": true,
+  "metadata_plot_rows_checked": 16,
+  "new_plot_visually_reviewed": true,
+  "powerpoint_included": false,
+  "credential_scan_flags": 0,
+  "review_manifest_entries": 112,
+  "new_model_fit_or_thermal_acquisition": false,
+  "publication_gaps_labelled": [
+    "Task5 final acquisition selection",
+    "Task6 full manuscript",
+    "Figure1 final two-city modeled-footprint maps",
+    "Figure3 joint whole-window fixed-support-registration interval",
+    "independent supported replication unavailable"
+  ]
+}

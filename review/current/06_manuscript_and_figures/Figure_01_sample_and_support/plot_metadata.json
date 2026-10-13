@@ -1,0 +1,11 @@
+{
+  "source": "deliverables/Pilot_Results_Review_2023_v6_2_20261006/pilot_pass_summary.csv",
+  "rows": 16,
+  "phoenix_rows": 11,
+  "atlanta_rows": 5,
+  "phoenix_at_or_below_15deg": 3,
+  "phoenix_morning_at_or_below_15deg": 0,
+  "no_effect_columns_used": true,
+  "no_new_inclusion_cutoff": true,
+  "no_model_fit": true
+}

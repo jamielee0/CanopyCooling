@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-13",
+  "scope": "GitHub_review_reorganization_only",
+  "base_commit": "35f670d693013b889219c1e22c139f6f3f7151af",
+  "review_directory": "review/current",
+  "archive_directory": "archive/previous_packages",
+  "preserved_snapshot_tag": "before-review-reorganization-20261013",
+  "tasks": [
+    {
+      "task": 1,
+      "folder": "01_existing_results",
+      "title": "Task 1. Assemble existing results",
+      "status": "Pilot assembly complete"
+    },
+    {
+      "task": 2,
+      "folder": "02_spatial_robustness",
+      "title": "Task 2. Assess spatial robustness",
+      "status": "Review complete, limitations retained"
+    },
+    {
+      "task": 3,
+      "folder": "03_observation_time",
+      "title": "Task 3. Evaluate observation-time differences",
+      "status": "Fixed-date assessment complete"
+    },
+    {
+      "task": 4,
+      "folder": "04_canopy_nonlinearity",
+      "title": "Task 4. Assess canopy response nonlinearity",
+      "status": "Sixteen quadratic fits and review complete"
+    },
+    {
+      "task": 5,
+      "folder": "05_additional_observations",
+      "title": "Task 5. Select targeted additional observations",
+      "status": "Proposal, final selection pending"
+    },
+    {
+      "task": 6,
+      "folder": "06_manuscript_and_figures",
+      "title": "Task 6. Prepare manuscript and figures",
+      "status": "Methods/captions and figures available, manuscript partial"
+    }
+  ],
+  "prior_tracked_files_preserved": 3884,
+  "prior_paths_relocated": 677,
+  "byte_identical_review_copies": 88,
+  "historical_packages_modified_in_place": false,
+  "new_scientific_fit_or_acquisition": false,
+  "local_original_research_directories_relocated": false,
+  "public_release_directory_unchanged": true
+}
