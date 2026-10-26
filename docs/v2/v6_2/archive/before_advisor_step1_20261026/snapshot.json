@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-26",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "e7ad41e84f45024fe9522976097a50af42367022031810153d307025f352f3f6"
+    },
+    {
+      "path": "docs/v2/v6_2/protocol_v6_2.yml",
+      "sha256": "20343c3b1ddcf17c98ac1da26739a1cd7dc7e55a9c7c1b547c6b120023c27d73"
+    },
+    {
+      "path": "docs/v2/v6_2/pilot_plan_v6_2.md",
+      "sha256": "ad0fdf8b8f033e9abd281c99884c374d7613160b50310af490161ae531bcfd5d"
+    },
+    {
+      "path": "docs/v2/v6_2/decision_log_v6_2.md",
+      "sha256": "1d0721729df71fd7dead0329a498f04fc897f4b595416aaf938fadae8952455d"
+    },
+    {
+      "path": "docs/v2/v6_2/prior_thermal_access.md",
+      "sha256": "c60818158d3fe908e198127b6184e3e13b1324973cb2f23b2c4d5fd8ff037333"
+    },
+    {
+      "path": "src/v6_2_advance/run_step6_inputs.py",
+      "sha256": "cf7e6f80a58806ea044326dd47942adaa5db6506d26febc79d0f3f543fd7d534"
+    }
+  ]
+}

@@ -28,7 +28,12 @@ HOURLY="data/raw/v2/weather/hrrr_exact_acquisition_l1b_geo_D0047_archive_availab
 GEODOM="data/raw/v2/domains/census_urban_areas.geojson"
 CODE=["src/v6_2_advance/step6_inputs.py","src/v6_2_advance/run_step6_inputs.py","tests/v6_2_advance/test_step6_inputs.py"]
 ACTIVE=["AGENTS.md",*["docs/v2/v6_2/"+p for p in ("protocol_v6_2.yml","pilot_plan_v6_2.md","decision_log_v6_2.md","prior_thermal_access.md","results_review_and_targeted_analysis_plan_20260930.md")]]
-FIELDS={"t2m":("TMP","2 m above ground"),"d2m":("DPT","2 m above ground"),"u10":("UGRD","10 m above ground"),"v10":("VGRD","10 m above ground")}
+# The October 26 advisor-input runner reuses this registry. Historical Step 6
+# outputs and its source freeze remain unchanged; reproduce that run from its
+# archived source rather than silently changing the frozen four-field run.
+FIELDS={"t2m":("TMP","2 m above ground"),"d2m":("DPT","2 m above ground"),"u10":("UGRD","10 m above ground"),"v10":("VGRD","10 m above ground"),"dswrf":("DSWRF","surface")}
+FIELD_SHORT_NAMES={"t2m":"2t","d2m":"2d","u10":"10u","v10":"10v","dswrf":"sdswrf"}
+FIELD_UNITS={"t2m":"K","d2m":"K","u10":"m s**-1","v10":"m s**-1","dswrf":"W m**-2"}
 
 
 def sha(path):
@@ -169,11 +174,11 @@ def weather_job(job,polygons):
   p=dest(f"cache/hrrr/{key}_{product}_{name}.grib2");metas.append(download(base,p,span))
   h=ec.codes_new_from_message(p.read_bytes())
   try:
-   expected_name={"t2m":"2t","d2m":"2d","u10":"10u","v10":"10v"}[name]
+   expected_name=FIELD_SHORT_NAMES[name]
    if ec.codes_get(h,"shortName")!=expected_name or ec.codes_get(h,"forecastTime")!=0:raise ValueError("HRRR variable/forecast mismatch")
    if int(ec.codes_get(h,"validityDate"))!=int(t.strftime("%Y%m%d")) or int(ec.codes_get(h,"validityTime"))!=t.hour*100:raise ValueError("HRRR validity mismatch")
    unit=ec.codes_get(h,"units")
-   if unit != ("K" if name in ("t2m","d2m") else "m s**-1"):raise ValueError("HRRR units mismatch")
+   if unit != FIELD_UNITS[name]:raise ValueError("HRRR units mismatch")
    arrays[name]=ec.codes_get_values(h)
    if lat is None:
     lat=ec.codes_get_array(h,"latitudes");lon=(ec.codes_get_array(h,"longitudes")+180)%360-180

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "figures": [
+    "phoenix_shortwave",
+    "atlanta_shortwave",
+    "phoenix_sun_elevation",
+    "atlanta_sun_elevation"
+  ],
+  "checks": "All observations/intervals visible; legends, units, sample sizes and OLS SE/residual annotations readable; separate population panels; descriptive Atlanta caption; no clipped content."
+}

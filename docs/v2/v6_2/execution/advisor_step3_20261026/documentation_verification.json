@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "unique_yaml_keys": true,
+  "historical_protocol_settings_unchanged_except_explicit_release_scope": true,
+  "original_main2023_pilot_unchanged": true,
+  "pre_step3_documents_archived_and_historical_text_preserved": true,
+  "prior_step1_step2_package_code_test_hashes_verified": 29,
+  "local_report_links_valid": true,
+  "prediction_checkout_clean_at_recorded_commit": true
+}

@@ -108,3 +108,18 @@ Under the latest continuation, code decoded the sixteen original cached paired n
 ### 6 October 2026 — explicit exploratory release and post-disclosure follow-up
 
 The user explicitly lifted the current2023 sealing instruction. Authorization was recorded before opening numerical effects. The assistant read and interpreted the Step3 spatial/paired-scale/reference summaries, Step5 quadratic finite contrasts and curves, and Step7 fixed-date/monthly/deletion effects, and visually reviewed all39 corresponding PNG figures. Historical source artifacts retain checksums and private filenames; released copies and current labels distinguish provenance from the new display permission. The initial inventory hashed161 result files without decoding all model arrays. A subsequent recorded follow-up read only existing2023 Phoenix native frames, reconstructed old linear/common/quadratic models and computed matched sensitivity intervals. Its common-mask rank diagnosis used predictor-only data. It is explicitly post-disclosure. No new raw thermal rasters, other-year results or old original time-contrast files were opened, and no external communication occurred. The tolerance remains unset; any later margin is chosen after effect access and cannot be presented as globally blinded or pre-disclosure.
+
+
+### 26 October 2026 — advisor Section 7 Step 1 inputs
+
+The new pass table copies only the already released sixteen 2023 result rows and adds nonthermal inputs. Seven other-year metadata rows were read from the selection and public support tables; their cooling estimates, model arrays and native thermal values were not opened. LST filenames were listed only to reconcile source-scene membership; raster bytes were not read or hashed. ECO_L1B_GEO.002 metadata and HRRR meteorology/radiation are the new inputs accessed. No new fit or outcome disclosure occurred. The other-year access boundary remains the dated, committed Step 3 prediction note followed by separately authorized execution. Full records: `execution/advisor_step1_20261026/`.
+
+
+### 26 October 2026 — advisor Step 2 pass models
+
+New exploratory pass-level coefficients and figures were computed and displayed using only the already released sixteen 2023 cooling estimates and eleven released Phoenix common-footprint temperature estimates. All six models were specified and hashed before execution. The seven other-year estimates and native thermal fields were not opened; the public Step 1 table contains blank other-year outcomes. No new Stage 1 fit or raw thermal access occurred. Step 3 prediction and outcome-access boundaries remain in force. Record: `execution/advisor_step2_20261026/`.
+
+
+### 26 October 2026 — seven other-year Phoenix temperature estimates opened after prediction commit
+
+Prediction record commit: `d33734b1fdf88860f827d680ba57900c965b0519` (2026-10-26T16:41:45-04:00). First outcome-access record: `2026-10-26T20:41:52.293538+00:00`. The user's explicit Step 3 request authorizes the prescribed sequence. Exact archived primary temperature canopy coefficients and 8 km temperature draws for orbits 6281, 6510, 33496, 33623, 40111, 40192 and 40376 were read only after verifying the committed prediction bundle. Their cooling points, spatial intervals, observed/predicted comparisons and the eighteen-pass pass-level refit are now displayed in the Step 3 packet. Native-cell arrays and raw thermal rasters were not read; no new Stage 1 fit or energy diagnostic was performed. Original model files and all pre-access prediction bytes remain unchanged. This does not make the broader research history globally outcome-blind. Record: `execution/advisor_step3_20261026/`.

@@ -1,0 +1,8 @@
+{
+  "source": "src/v6_2_advance/run_step6_inputs.py",
+  "pre_change_sha256": "cf7e6f80a58806ea044326dd47942adaa5db6506d26febc79d0f3f543fd7d534",
+  "matches_prior_execution_records": [
+    "docs/v2/v6_2/execution/step6_inputs_20261005/implementation_repair.json"
+  ],
+  "note": "Prior source snapshot reconciled to the historical implementation checksum after the asynchronous archive completed during the registry edit."
+}

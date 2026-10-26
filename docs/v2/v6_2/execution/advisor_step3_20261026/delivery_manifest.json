@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE_VERIFIED",
+  "files": {
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/refit_inputs_18.csv": "750925ff229c7aabaef360e2ff8c77d1e64a111c34c8384c66b1870d7867184d",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/comparison_summary.json": "9e3bad3ab57ad1d9cfe949b85e0cd428e70b67b88478d6553287bf5479cd5149",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/refit_coefficients.csv": "b3841850bd882f69b6fe7358abca2a8fdee6b63cb8e59fac9ebd9e57e753cb88",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/README.md": "c2226f742b69a16a630a5c5a7d5386af34c7173b34090ac573c78ffa67fda027",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/observed_vs_predicted_7.csv": "bdf5a67346c8a66c0269bf26d8788cc4bbb6447fe2760fa8abe8ae239dea9750",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/observed_vs_predicted.pdf": "2bc4c9315372a7e654c18fc9d276fe2e023c8e207d73cea53b15dd423c9fd3f4",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/observed_vs_predicted.png": "95236321522a0d0a5a568da8fb4a5c3314b2012b9d3efe33db5b0a9c8e293eca",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/prediction_commit_receipt.json": "5fee3f5bbf707974e707322d18211e545b3ff420b46dd5f7a15121c2749107ad",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/refit_fitted_values.csv": "159e8c9c8a0b7c7d8577049d2b3553114aced33d675a3cf1759750168be5d83f",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/refit_diagnostics.json": "6d0cf44a22e4caf3181a3c840d295670574429b0c90a8acd2d7acbe0960935fa",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/completion.json": "ed2043cd5546417e30079b52ba738f3bba11c648e2348f539e939b69566066e9",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/training_11.csv": "de576e0fabe18027d00feb99607bfe51ff95a81ce226583871c49a350ba0896d",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/predictions_7.csv": "481089b4bc8530d4ef7471c4cf4bf7cd485b7e85d4ce7d7073f0a080a5fa6543",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/training_model.json": "5827af9724b2c3a602a3e46720b52dbbcd56b5197757264fdafdfabcc9cc4659",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/prediction_note_20261026.md": "ba3730db390bf98fe32da0473872d6254c0de443d6fa0330c7719816570ac46a",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/target_inputs_7.csv": "17c0e8ca71b341deeb2bcf4d3e85b53c0cff74a5a899ddb9cfa2f1a87ef80092",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/reproduce_predictions.py": "3e86e54b5b8397b08028901a2e974215529ff5cd7c42c20b2f6059350dd79f44",
+    "AGENTS.md": "d5c236d26801b0d6d9a55684fc57c484f095006a5e17cef94ca2454b3ef86def",
+    "docs/v2/v6_2/protocol_v6_2.yml": "d6c5100fa30285dbfe42b202aa7dd7bfb67479cd8ca2d31878741b04866f5047",
+    "docs/v2/v6_2/pilot_plan_v6_2.md": "6d4fcb3a8675626f1ad90c0d16dabcf8c8c62aeeb7d0bdb05dad359a48909814",
+    "docs/v2/v6_2/decision_log_v6_2.md": "838e5590b16efd0ee9e7d37c80dfb55c600a5065624a1615ac4fbd7b575b5e60",
+    "docs/v2/v6_2/prior_thermal_access.md": "b93656a6311f797e8ce4e2306f8d73f207a4c25491d2c08e8d24fa7c29b16f5e",
+    "src/v6_2_advance/advisor_step3_prediction.py": "2f111e55d493d90edf91854d30d14a34169d3b69b948e83ab3fa40a5ec4e8c11",
+    "src/v6_2_advance/run_advisor_step3.py": "ebf8a56236b403a25e9e0ae5541153caeb9fac161c19caa40d356aae527c30af",
+    "src/v6_2_advance/verify_advisor_step3.py": "d5f6021a5480fc96cadae91195d12f4a0791cdfd7d6658a4eb28ae78d3874a86",
+    "tests/v6_2_advance/test_advisor_step3_prediction.py": "5bcd2f07281453ecf30f686eb069daa94f931595e9300da074c55ed7530b0d0c"
+  }
+}

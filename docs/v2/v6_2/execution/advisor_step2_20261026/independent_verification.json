@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "models_reconstructed_by_QR": 6,
+  "coefficient_and_SE_rows_verified": 18,
+  "ratio_groups_verified": 6,
+  "source_rows_reconciled": 27,
+  "max_coefficient_SE_or_CI_difference": 7.216449660063518e-16,
+  "only_16_released_2023_passes": true,
+  "other_year_outcomes_unopened": true,
+  "verifier_sha256": "6c3149bfd1cf1114e52d59219841b993cab8dfda72c5174a714800cc42eb1dfd"
+}

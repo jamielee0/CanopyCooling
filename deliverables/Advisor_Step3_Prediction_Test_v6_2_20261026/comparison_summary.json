@@ -1,0 +1,22 @@
+{
+  "prediction_commit": "d33734b1fdf88860f827d680ba57900c965b0519",
+  "held_out_passes": 7,
+  "inside_PI": 7,
+  "afternoon_passes": 3,
+  "afternoon_inside_PI": 3,
+  "morning_inside_PI": 4,
+  "mean_error_observed_minus_predicted": 0.03752753576713847,
+  "RMSE": 0.18755740056718742,
+  "after_noon": {
+    "term": "after_noon",
+    "estimate": 0.20164104125745966,
+    "standard_error": 0.1041296684585404,
+    "ci95_low": -0.0203060932577864,
+    "ci95_high": 0.4235881757727057,
+    "n_passes": 18,
+    "df_resid": 15,
+    "units": "K/+10pp"
+  },
+  "new_stage1_fits": 0,
+  "step4_started": false
+}

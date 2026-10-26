@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-26",
+  "user_request": "push with a proper summary organized for professor review",
+  "repository": "https://github.com/jamielee0/CanopyCooling",
+  "target_branch": "main",
+  "base_remote_commit": "e0e7b11a90a1de419747977574b713b846b55361",
+  "preserved_prediction_commit": "d33734b1fdf88860f827d680ba57900c965b0519",
+  "review_page": "review/current/advisor_steps_1_3_20261026/README.md",
+  "publication_scope": "Steps1\u20133 released deliverables, implementation/tests, execution/provenance and current documentation; new readable landing pages; preserve all previous tracked files and prediction commit",
+  "new_scientific_work": false,
+  "step4_started": false,
+  "external_email_sending": false,
+  "excluded": "raw data, GRIB/array/model caches, credentials, personal correspondence, nested Git checkout"
+}

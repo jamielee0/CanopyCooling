@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "figure": "observed_vs_predicted.png",
+  "checks": "All seven points and orbit labels readable; full prediction/spatial intervals visible; axis units and equal aspect correct; one-to-one line and distinct morning/afternoon markers; uncertainty sources stated separately."
+}

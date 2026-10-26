@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE_VERIFIED",
+  "files": {
+    "deliverables/Advisor_Step1_Inputs_23Passes_v6_2_20261026/DATA_DICTIONARY.md": "769404f46f877f0953f68e812788af224b176c8831ece8261a2b2661d35062c0",
+    "deliverables/Advisor_Step1_Inputs_23Passes_v6_2_20261026/README.md": "09989e15a265a8fa5c435ab44cc2c25b427347d380242dd13849ebe85a0057d9",
+    "deliverables/Advisor_Step1_Inputs_23Passes_v6_2_20261026/pass_inputs_23.csv": "228305607c7334af05ca04e20f861603ca9e3708f050e3bcad31768a0e3e5f47",
+    "deliverables/Advisor_Step1_Inputs_23Passes_v6_2_20261026/scene_geolocation_provenance.json": "100aad2509186524c6d05204c0f872e18c6a210a290da788fb0f10206085acac",
+    "deliverables/Advisor_Step1_Inputs_23Passes_v6_2_20261026/completion.json": "035574f76b412c341d78341fa83fc9b470cc603b760f6540b591b9999f991be6",
+    "src/v6_2_advance/advisor_step1_inputs.py": "2baa5409a0f0c68eab64470c45d67a9ce927de30d3c72ac14474c9428adc6d70",
+    "src/v6_2_advance/run_advisor_step1.py": "12731a5c9e90584f99e021c9db66c0f8a962f89a7497e6f92126c8401b79b993",
+    "src/v6_2_advance/verify_advisor_step1.py": "c44a85a85b2e8ececbe5a1d508ea73b599f74d185b3ec068904f6ff172b0c25b",
+    "src/v6_2_advance/run_step6_inputs.py": "1ecdc5a5ce4acf1b71856f9437f0ae399c1c15852994ac33a98b9c6fabfabeee",
+    "tests/v6_2_advance/test_advisor_step1_inputs.py": "71f4eba92d81b779a52b62c338ebb7945892f9b8222af6b569ee362950e3e851",
+    "AGENTS.md": "068e8c87cc14ff695b0483a10ca79363c3cb82fc342f7d2e398539e03e3349f1",
+    "docs/v2/v6_2/protocol_v6_2.yml": "8383406ae75610774ebc525fd088bc0a4823070a85018e01c19bf2b6041ab784",
+    "docs/v2/v6_2/pilot_plan_v6_2.md": "ad1187de5d86a68227339c5aac7d349486afc150f8136516ffbaace7c1695d48",
+    "docs/v2/v6_2/decision_log_v6_2.md": "f514cea1fbbaaed35821e105de2d55fa80f43c5482acae82836a6a79daa382d0",
+    "docs/v2/v6_2/prior_thermal_access.md": "410a89db4bd7b273ea57c93bb4721974ada20b8cd07a3de23f17c7d02b90fa68"
+  },
+  "verification_records": [
+    "independent_verification.json",
+    "test_results.json",
+    "documentation_verification.json",
+    "visual_verification.json"
+  ],
+  "fits": 0,
+  "committed": false,
+  "pushed": false,
+  "sent_externally": false
+}

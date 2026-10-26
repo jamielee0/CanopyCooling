@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "prediction_commit": "d33734b1fdf88860f827d680ba57900c965b0519",
+  "prediction_commit_precedes_outcome_access": true,
+  "committed_prediction_bytes_unchanged": true,
+  "archived_estimate_hashes_unchanged": 14,
+  "heldout_observed_points_and_errors_reconciled": 7,
+  "refit_coefficients_SEs_intervals_residuals_reconstructed_by_QR": true,
+  "original_11_training_rows_preserved": true,
+  "all18_unique_dates": true,
+  "raw_thermal_cells_read": false,
+  "verifier_sha256": "d5f6021a5480fc96cadae91195d12f4a0791cdfd7d6658a4eb28ae78d3874a86"
+}

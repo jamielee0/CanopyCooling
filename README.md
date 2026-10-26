@@ -1,33 +1,26 @@
 # Urban canopy cooling with ECOSTRESS
 
-## Review for Prof. Alizadeh
+## Latest review for Prof. Alizadeh — 26 October 2026
 
-**[Open the current six-task review folder](review/current/README.md)**
+**[Start here: advisor Steps 1–3, summary and deliverables](review/current/advisor_steps_1_3_20261026/README.md)** · **[Figures](review/current/advisor_steps_1_3_20261026/FIGURES.md)**
 
-This folder contains the new evidence since the September review, arranged in the same order as “Research Next Steps for Urban Tree Cooling”. It includes the released tables and figures, all sixteen quadratic curve plots, and the four requested scientific figure groups.
+The requested geolocation/radiation inputs, city-specific pass models and seven-pass prediction test are complete. After accounting for shortwave, a clear afternoon cooling deficit is no longer evident in the specified models. All seven previously unopened Phoenix estimates fall within their committed individual 95% prediction intervals. The eighteen-pass after-noon estimate is +0.202 K/+10pp (95% interval −0.020 to +0.424).
 
-| Task | Review material | Status |
-| --- | --- | --- |
-| 1. Existing results | [Sixteen-pass table and city plots](review/current/01_existing_results/README.md) | Pilot assembly complete |
-| 2. Spatial robustness | [Footprint, registration and paired scales](review/current/02_spatial_robustness/README.md) | Review complete, limitations retained |
-| 3. Observation time | [Fixed-date contrasts, conditions and calibration](review/current/03_observation_time/README.md) | Fixed-date assessment complete |
-| 4. Canopy nonlinearity | [Quadratic curves, finite contrasts and support](review/current/04_canopy_nonlinearity/README.md) | Sixteen fits and review complete |
-| 5. Additional observations | [Targeted proposal](review/current/05_additional_observations/README.md) | Final selection pending |
-| 6. Manuscript and figures | [Methods/captions and required Figures 1–4](review/current/06_manuscript_and_figures/README.md) | Manuscript partial |
+| Step | Completed output |
+|---|---|
+| 1. Inputs | [23-pass table](deliverables/Advisor_Step1_Inputs_23Passes_v6_2_20261026/pass_inputs_23.csv), exact scene geolocation flags, HRRR shortwave/weather and sun elevation |
+| 2. Models | [2023 models and figures](deliverables/Advisor_Step2_Models_2023_v6_2_20261026/README.md), including sun-elevation and common-footprint repeats |
+| 3. Prediction test | [Dated committed predictions, observed comparison and eighteen-pass refit](deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/README.md) |
 
-Read [what changed since September](review/current/CHANGES_SINCE_SEPTEMBER.md) and [decisions for the review](review/current/DECISIONS_FOR_REVIEW.md).
+The prediction record is preserved in commit [`d33734b`](https://github.com/jamielee0/CanopyCooling/commit/d33734b1fdf88860f827d680ba57900c965b0519), before outcome access. The original sixteen-pass 2023 pilot is unchanged; the additional Phoenix years are an extension check. Small samples, limited radiation overlap, image alignment and canopy/context-vintage limitations prevent a causal or general-summer conclusion.
 
-## Current scientific position
-
-The main pilot contains eleven Phoenix and five Atlanta passes, all from 2023. The selected Phoenix dates show weaker afternoon canopy-associated cooling under the original, common-footprint and quadratic checks. The magnitude changes substantially with population and model. The pilot does not establish a general summer or causal time effect, a city ranking or practical temperature–energy agreement.
-
-The latest completed scientific synthesis is dated 6 October 2026. The six-task review directory was assembled 13 October using existing released results. No new model fit or acquisition occurred during this reorganization.
+**Steps 1–3 are ready for review before Step 4.** Step 4 has not started; further synthetic calibration, temperature–energy agreement and quadratic work remain stopped.
 
 ## History and reproducibility
 
-- [Earlier packages and original-path map](archive/README.md)
-- [Unchanged October 6 scientific release](deliverables/Pilot_Results_Review_2023_v6_2_20261006/README.md)
+- [Earlier six-task review](review/current/README.md#earlier-six-task-review), [checklist](review/current/DELIVERABLES_INDEX.md), and [archived packages](archive/README.md)
+- [Preserved October 6 scientific release](deliverables/Pilot_Results_Review_2023_v6_2_20261006/README.md)
 - [Active protocol](docs/v2/v6_2/protocol_v6_2.yml), [pilot plan](docs/v2/v6_2/pilot_plan_v6_2.md), [decision history](docs/v2/v6_2/decision_log_v6_2.md)
 - [Source code](src/) and [tests](tests/)
 
-Historical packages retain their original statements and checksums. Raw data, model arrays, credentials and personal correspondence remain local. The other-year extension has zero weight in the current 2023 pilot.
+Historical result packages, prediction bytes and prior commits are preserved. Their original status statements describe their execution dates. Raw downloads, model arrays, credentials and personal correspondence remain local; released scientific tables, figures, code and provenance are included here.

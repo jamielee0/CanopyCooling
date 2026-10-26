@@ -1,5 +1,17 @@
 # Current review for Prof. Alizadeh
 
+**Latest update: [Section 7, Steps 1–3 — completed 26 October 2026](advisor_steps_1_3_20261026/README.md).**
+
+Start with that page for the short summary, 23-pass input table, radiation models, figures, committed seven-pass predictions and eighteen-pass refit. [View the three main figures](advisor_steps_1_3_20261026/FIGURES.md).
+
+After accounting for shortwave, a clear afternoon deficit is no longer evident in the specified models. All seven previously unopened Phoenix observations lie within their pre-recorded prediction intervals. The small sample, limited exposure overlap and unresolved alignment/canopy issues remain important.
+
+Further synthetic calibration, temperature–energy agreement and quadratic work are stopped. **Step 4 has not started.** The older material below is preserved background, not the current action list.
+
+## Earlier six-task review
+
+The following is the preserved 13 October review, based on the earlier request. Its “current” and “latest” wording describes that historical snapshot.
+
 **Start here. This folder follows Tasks 1–6 in “Research Next Steps for Urban Tree Cooling”.** It brings together the released 2023 results and the new work since the September review. The folder arrangement is dated 13 October 2026; the latest completed scientific synthesis is 6 October. This reorganization adds no scientific fits or observations.
 
 [Open the complete deliverables checklist](DELIVERABLES_INDEX.md).

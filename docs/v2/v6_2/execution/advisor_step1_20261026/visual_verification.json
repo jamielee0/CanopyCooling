@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "image": "pass_table_qa.png",
+  "sha256": "f920f9dee9214451b4f4d1e8dab1bbafe655b3cad6319f7326cbc1d3e036bf4a",
+  "checked": "All 23 rows, column labels, dates, numeric units, scene-category summary and scope labels visible without clipping; no other-year cooling displayed."
+}

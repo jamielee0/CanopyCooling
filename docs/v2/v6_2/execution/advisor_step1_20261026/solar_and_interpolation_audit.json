@@ -1,0 +1,945 @@
+[
+  {
+    "city": "atlanta",
+    "orbit": 27835,
+    "at": {
+      "mean_solar_hour": 11.672272960906902,
+      "apparent_solar_hour": 11.709323622945252,
+      "equation_of_time_min": 2.2230397223010376,
+      "solar_zenith_deg": 12.235741904295027,
+      "solar_elevation_deg": 77.76425809570497,
+      "sin_solar_elevation": 0.9772838767692437,
+      "solar_azimuth_deg": 160.60446689435116,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 11.37757573868468,
+      "apparent_solar_hour": 11.414659595455737,
+      "equation_of_time_min": 2.225031406263412,
+      "solar_zenith_deg": 13.953296142658475,
+      "solar_elevation_deg": 76.04670385734153,
+      "sin_solar_elevation": 0.9704926031658248,
+      "solar_azimuth_deg": 144.1238884155826,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 12.37757573868468,
+      "apparent_solar_hour": 12.41454689305831,
+      "equation_of_time_min": 2.2182692624177704,
+      "solar_zenith_deg": 12.838914738962021,
+      "solar_elevation_deg": 77.16108526103798,
+      "sin_solar_elevation": 0.9749986558036543,
+      "solar_azimuth_deg": 206.82328199655998,
+      "days_in_year": 365
+    },
+    "weight": 0.2946972222222222,
+    "radiation": {
+      "shortwave_W_m2": 1017.2148653879706,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1039.663204484051,
+      "shortwave_ceiling_normalized": 1043.7214226600065
+    }
+  },
+  {
+    "city": "atlanta",
+    "orbit": 27896,
+    "at": {
+      "mean_solar_hour": 10.029525738684681,
+      "apparent_solar_hour": 10.055209145853059,
+      "equation_of_time_min": 1.541004430102697,
+      "solar_zenith_deg": 27.887687316430057,
+      "solar_elevation_deg": 62.11231268356994,
+      "sin_solar_elevation": 0.8838661663330304,
+      "solar_azimuth_deg": 105.93744045760273,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 9.37757573868468,
+      "apparent_solar_hour": 9.403342390820818,
+      "equation_of_time_min": 1.5459991281682253,
+      "solar_zenith_deg": 35.837061815155174,
+      "solar_elevation_deg": 54.162938184844826,
+      "sin_solar_elevation": 0.8106852690524975,
+      "solar_azimuth_deg": 97.79730994963539,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 10.37757573868468,
+      "apparent_solar_hour": 10.403214679951494,
+      "equation_of_time_min": 1.5383364760088758,
+      "solar_zenith_deg": 23.782098125000257,
+      "solar_elevation_deg": 66.21790187499974,
+      "sin_solar_elevation": 0.9150857095676763,
+      "solar_azimuth_deg": 111.73537966914044,
+      "days_in_year": 365
+    },
+    "weight": 0.65195,
+    "radiation": {
+      "shortwave_W_m2": 873.7775055785693,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 989.6643985452688,
+      "shortwave_ceiling_normalized": 988.0099177167751
+    }
+  },
+  {
+    "city": "atlanta",
+    "orbit": 27916,
+    "at": {
+      "mean_solar_hour": 17.35466434979579,
+      "apparent_solar_hour": 17.37627874224167,
+      "equation_of_time_min": 1.2968635467528604,
+      "solar_zenith_deg": 70.10631254646118,
+      "solar_elevation_deg": 19.893687453538817,
+      "sin_solar_elevation": 0.3402759521663669,
+      "solar_azimuth_deg": 284.6904377474175,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 16.37757573868468,
+      "apparent_solar_hour": 16.39931904118731,
+      "equation_of_time_min": 1.304598150157992,
+      "solar_zenith_deg": 58.174047912345884,
+      "solar_elevation_deg": 31.825952087654116,
+      "sin_solar_elevation": 0.5273406997936491,
+      "solar_azimuth_deg": 277.64182352967475,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 17.37757573868468,
+      "apparent_solar_hour": 17.399187106875488,
+      "equation_of_time_min": 1.2966820914485635,
+      "solar_zenith_deg": 70.38225840520722,
+      "solar_elevation_deg": 19.617741594792776,
+      "sin_solar_elevation": 0.33574326104136687,
+      "solar_azimuth_deg": 284.8557217588129,
+      "days_in_year": 365
+    },
+    "weight": 0.9770886111111111,
+    "radiation": {
+      "shortwave_W_m2": 283.3052658416499,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 930.7783407944211,
+      "shortwave_ceiling_normalized": 830.2723112556757
+    }
+  },
+  {
+    "city": "atlanta",
+    "orbit": 28145,
+    "at": {
+      "mean_solar_hour": 11.592516572018013,
+      "apparent_solar_hour": 11.56228652140108,
+      "equation_of_time_min": -1.8138030370159122,
+      "solar_zenith_deg": 11.8682146765883,
+      "solar_elevation_deg": 78.1317853234117,
+      "sin_solar_elevation": 0.9786232280587446,
+      "solar_azimuth_deg": 149.33306835200614,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 11.37757573868468,
+      "apparent_solar_hour": 11.347378296392698,
+      "equation_of_time_min": -1.811846537518935,
+      "solar_zenith_deg": 13.461650552708,
+      "solar_elevation_deg": 76.538349447292,
+      "sin_solar_elevation": 0.9725259531907904,
+      "solar_azimuth_deg": 137.93028721239654,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 12.37757573868468,
+      "apparent_solar_hour": 12.347226596620846,
+      "equation_of_time_min": -1.8209485238300336,
+      "solar_zenith_deg": 11.341058615170262,
+      "solar_elevation_deg": 78.65894138482975,
+      "sin_solar_elevation": 0.9804739901939084,
+      "solar_azimuth_deg": 205.0553925109584,
+      "days_in_year": 365
+    },
+    "weight": 0.21494083333333333,
+    "radiation": {
+      "shortwave_W_m2": 590.5159347983384,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 633.0199259551613,
+      "shortwave_ceiling_normalized": 495.28469033402587
+    }
+  },
+  {
+    "city": "atlanta",
+    "orbit": 28598,
+    "at": {
+      "mean_solar_hour": 16.149718516462457,
+      "apparent_solar_hour": 16.04247581698478,
+      "equation_of_time_min": -6.4345619686605655,
+      "solar_zenith_deg": 54.83600828318743,
+      "solar_elevation_deg": 35.16399171681257,
+      "sin_solar_elevation": 0.5759186569524184,
+      "solar_azimuth_deg": 272.3700709883824,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 15.37757573868468,
+      "apparent_solar_hour": 15.270362542834519,
+      "equation_of_time_min": -6.4327917510096455,
+      "solar_zenith_deg": 45.2193073221618,
+      "solar_elevation_deg": 44.7806926778382,
+      "sin_solar_elevation": 0.7043950614106269,
+      "solar_azimuth_deg": 265.782977381089,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 16.37757573868468,
+      "apparent_solar_hour": 16.27032436403025,
+      "equation_of_time_min": -6.435082479265771,
+      "solar_zenith_deg": 57.67099888368911,
+      "solar_elevation_deg": 32.32900111631089,
+      "sin_solar_elevation": 0.5347801228476226,
+      "solar_azimuth_deg": 274.1634667453359,
+      "days_in_year": 365
+    },
+    "weight": 0.7721427777777777,
+    "radiation": {
+      "shortwave_W_m2": 360.33335909464404,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 750.3793269149088,
+      "shortwave_ceiling_normalized": 588.8648699887398
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 6281,
+    "at": {
+      "mean_solar_hour": 16.93001072363531,
+      "apparent_solar_hour": 16.84728367192555,
+      "equation_of_time_min": -4.963623102585606,
+      "solar_zenith_deg": 67.91480414925113,
+      "solar_elevation_deg": 22.085195850748875,
+      "sin_solar_elevation": 0.3759848530527765,
+      "solar_azimuth_deg": 272.85013721822554,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 16.53588933474642,
+      "apparent_solar_hour": 16.45311185629765,
+      "equation_of_time_min": -4.96664870692624,
+      "solar_zenith_deg": 62.98370884485314,
+      "solar_elevation_deg": 27.01629115514686,
+      "sin_solar_elevation": 0.4542438250975006,
+      "solar_azimuth_deg": 269.6383586304497,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 17.53588933474642,
+      "apparent_solar_hour": 17.453239891458058,
+      "equation_of_time_min": -4.958966597301845,
+      "solar_zenith_deg": 75.46415504773061,
+      "solar_elevation_deg": 14.535844952269386,
+      "sin_solar_elevation": 0.25098564022168635,
+      "solar_azimuth_deg": 277.63784607605197,
+      "days_in_year": 365
+    },
+    "weight": 0.39412138888888887,
+    "radiation": {
+      "shortwave_W_m2": 343.5520915979806,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 964.3861715029497,
+      "shortwave_ceiling_normalized": 835.8801015616718
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 6510,
+    "at": {
+      "mean_solar_hour": 11.199441556968644,
+      "apparent_solar_hour": 11.178691728490532,
+      "equation_of_time_min": -1.2449897086867325,
+      "solar_zenith_deg": 26.402168712016216,
+      "solar_elevation_deg": 63.59783128798378,
+      "sin_solar_elevation": 0.8956949296381432,
+      "solar_azimuth_deg": 151.76861523747712,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 10.535889334746422,
+      "apparent_solar_hour": 10.514996032315302,
+      "equation_of_time_min": -1.2535981458671417,
+      "solar_zenith_deg": 31.422171863699496,
+      "solar_elevation_deg": 58.577828136300504,
+      "sin_solar_elevation": 0.8533491172207139,
+      "solar_azimuth_deg": 134.21256210135476,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 11.535889334746422,
+      "apparent_solar_hour": 11.515212286312016,
+      "equation_of_time_min": -1.2406229060643936,
+      "solar_zenith_deg": 24.77261337350661,
+      "solar_elevation_deg": 65.2273866264934,
+      "sin_solar_elevation": 0.9079778673847235,
+      "solar_azimuth_deg": 162.67415211387123,
+      "days_in_year": 365
+    },
+    "weight": 0.6635522222222222,
+    "radiation": {
+      "shortwave_W_m2": 911.1235367067043,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1010.6806197246877,
+      "shortwave_ceiling_normalized": 1020.5437057953621
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 27963,
+    "at": {
+      "mean_solar_hour": 16.20079933474642,
+      "apparent_solar_hour": 16.212501193031922,
+      "equation_of_time_min": 0.7021114971301169,
+      "solar_zenith_deg": 55.790224907018796,
+      "solar_elevation_deg": 34.209775092981204,
+      "sin_solar_elevation": 0.5622244758675763,
+      "solar_azimuth_deg": 276.7644261574465,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 15.535889334746422,
+      "apparent_solar_hour": 15.547684518209804,
+      "equation_of_time_min": 0.7077110078029395,
+      "solar_zenith_deg": 47.50146204767507,
+      "solar_elevation_deg": 42.49853795232493,
+      "sin_solar_elevation": 0.6755713938875353,
+      "solar_azimuth_deg": 271.73643072165197,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 16.53588933474642,
+      "apparent_solar_hour": 16.547544143719065,
+      "equation_of_time_min": 0.6992885383586838,
+      "solar_zenith_deg": 59.90800301028522,
+      "solar_elevation_deg": 30.09199698971478,
+      "sin_solar_elevation": 0.501389888886501,
+      "solar_azimuth_deg": 279.2489376093383,
+      "days_in_year": 365
+    },
+    "weight": 0.66491,
+    "radiation": {
+      "shortwave_W_m2": 537.2511303134673,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 999.2462694983963,
+      "shortwave_ceiling_normalized": 933.5755990077781
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 28024,
+    "at": {
+      "mean_solar_hour": 14.546579612524198,
+      "apparent_solar_hour": 14.544646487770107,
+      "equation_of_time_min": -0.11598748524545786,
+      "solar_zenith_deg": 34.87540346225243,
+      "solar_elevation_deg": 55.12459653774757,
+      "sin_solar_elevation": 0.8203974171203278,
+      "solar_azimuth_deg": 263.08254981323137,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 14.535889334746422,
+      "apparent_solar_hour": 14.533957792401822,
+      "equation_of_time_min": -0.11589254067603906,
+      "solar_zenith_deg": 34.742706884007625,
+      "solar_elevation_deg": 55.257293115992375,
+      "sin_solar_elevation": 0.8217194855390053,
+      "solar_azimuth_deg": 262.97067378972235,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 15.535889334746422,
+      "apparent_solar_hour": 15.533809739171177,
+      "equation_of_time_min": -0.12477573451466702,
+      "solar_zenith_deg": 47.2250476699385,
+      "solar_elevation_deg": 42.7749523300615,
+      "sin_solar_elevation": 0.6791204788366054,
+      "solar_azimuth_deg": 271.92728545849997,
+      "days_in_year": 365
+    },
+    "weight": 0.010690277777777778,
+    "radiation": {
+      "shortwave_W_m2": 861.5288186087847,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1050.466782863299,
+      "shortwave_ceiling_normalized": 1019.5194313332258
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 28085,
+    "at": {
+      "mean_solar_hour": 12.926147390301978,
+      "apparent_solar_hour": 12.910034169274343,
+      "equation_of_time_min": -0.9667932616581043,
+      "solar_zenith_deg": 15.642666543316077,
+      "solar_elevation_deg": 74.35733345668392,
+      "sin_solar_elevation": 0.9629620427924996,
+      "solar_azimuth_deg": 233.4280975544429,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 12.535889334746422,
+      "apparent_solar_hour": 12.519835359848475,
+      "equation_of_time_min": -0.9632384938768019,
+      "solar_zenith_deg": 12.17744465712573,
+      "solar_elevation_deg": 77.82255534287427,
+      "sin_solar_elevation": 0.9774990097232146,
+      "solar_azimuth_deg": 216.16930358775906,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 13.535889334746422,
+      "apparent_solar_hour": 13.519683541234455,
+      "equation_of_time_min": -0.9723476107180371,
+      "solar_zenith_deg": 22.359480459943423,
+      "solar_elevation_deg": 67.64051954005657,
+      "sin_solar_elevation": 0.9248152951287484,
+      "solar_azimuth_deg": 249.1501648217019,
+      "days_in_year": 365
+    },
+    "weight": 0.39025805555555554,
+    "radiation": {
+      "shortwave_W_m2": 1027.014233517765,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1069.2762376409917,
+      "shortwave_ceiling_normalized": 1062.2028729292126
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 28192,
+    "at": {
+      "mean_solar_hour": 10.465917945857534,
+      "apparent_solar_hour": 10.424742770877593,
+      "equation_of_time_min": -2.470510498796439,
+      "solar_zenith_deg": 23.023338656380606,
+      "solar_elevation_deg": 66.9766613436194,
+      "sin_solar_elevation": 0.9203456180803975,
+      "solar_azimuth_deg": 109.86263474173562,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 9.535889334746422,
+      "apparent_solar_hour": 9.494852705979135,
+      "equation_of_time_min": -2.4621977260371883,
+      "solar_zenith_deg": 34.33639347936252,
+      "solar_elevation_deg": 55.66360652063748,
+      "sin_solar_elevation": 0.8257401839903904,
+      "solar_azimuth_deg": 97.15377176998082,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 10.535889334746422,
+      "apparent_solar_hour": 10.494703738026756,
+      "equation_of_time_min": -2.471135803179967,
+      "solar_zenith_deg": 22.203815954444014,
+      "solar_elevation_deg": 67.79618404555599,
+      "sin_solar_elevation": 0.9258454181939882,
+      "solar_azimuth_deg": 111.17850527534006,
+      "days_in_year": 365
+    },
+    "weight": 0.9300286111111111,
+    "radiation": {
+      "shortwave_W_m2": 975.296880711064,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1045.6582953225638,
+      "shortwave_ceiling_normalized": 1060.7641829154784
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 28706,
+    "at": {
+      "mean_solar_hour": 13.434709612524198,
+      "apparent_solar_hour": 13.325074240149092,
+      "equation_of_time_min": -6.57812234250634,
+      "solar_zenith_deg": 22.94801726159141,
+      "solar_elevation_deg": 67.05198273840858,
+      "sin_solar_elevation": 0.9208589731595077,
+      "solar_azimuth_deg": 235.5704049797079,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 12.535889334746422,
+      "apparent_solar_hour": 12.426244912231894,
+      "equation_of_time_min": -6.57866535087166,
+      "solar_zenith_deg": 15.639265523075926,
+      "solar_elevation_deg": 74.36073447692408,
+      "sin_solar_elevation": 0.9629780464781409,
+      "solar_azimuth_deg": 202.99908287820293,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 13.535889334746422,
+      "apparent_solar_hour": 13.426254996353233,
+      "equation_of_time_min": -6.578060303591364,
+      "solar_zenith_deg": 24.007610857456317,
+      "solar_elevation_deg": 65.99238914254369,
+      "sin_solar_elevation": 0.9134914209156357,
+      "solar_azimuth_deg": 238.00245294865618,
+      "days_in_year": 365
+    },
+    "weight": 0.8988202777777777,
+    "radiation": {
+      "shortwave_W_m2": 933.100811311265,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1021.1621240104718,
+      "shortwave_ceiling_normalized": 1012.4082157062822
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 28828,
+    "at": {
+      "mean_solar_hour": 10.204663223635311,
+      "apparent_solar_hour": 10.102393451268636,
+      "equation_of_time_min": -6.136186342000472,
+      "solar_zenith_deg": 30.446333065222223,
+      "solar_elevation_deg": 59.55366693477778,
+      "sin_solar_elevation": 0.8621041756750684,
+      "solar_azimuth_deg": 115.87768273917982,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 9.535889334746422,
+      "apparent_solar_hour": 9.43357410421087,
+      "equation_of_time_min": -6.138913832133106,
+      "solar_zenith_deg": 38.260979799363476,
+      "solar_elevation_deg": 51.739020200636524,
+      "sin_solar_elevation": 0.7851982772284336,
+      "solar_azimuth_deg": 105.94408562961299,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 10.535889334746422,
+      "apparent_solar_hour": 10.433642127689854,
+      "equation_of_time_min": -6.134832423394089,
+      "solar_zenith_deg": 26.826523551623957,
+      "solar_elevation_deg": 63.17347644837604,
+      "sin_solar_elevation": 0.8923770010985514,
+      "solar_azimuth_deg": 122.31933128222758,
+      "days_in_year": 365
+    },
+    "weight": 0.6687738888888889,
+    "radiation": {
+      "shortwave_W_m2": 886.9866528169646,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1015.395230081361,
+      "shortwave_ceiling_normalized": 1035.5324764265247
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 28909,
+    "at": {
+      "mean_solar_hour": 15.915739890301978,
+      "apparent_solar_hour": 15.824449896903415,
+      "equation_of_time_min": -5.477399603913838,
+      "solar_zenith_deg": 54.51174734420908,
+      "solar_elevation_deg": 35.48825265579092,
+      "sin_solar_elevation": 0.5805360255362888,
+      "solar_azimuth_deg": 265.44959798597085,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 15.535889334746422,
+      "apparent_solar_hour": 15.444558934723487,
+      "equation_of_time_min": -5.479824001376098,
+      "solar_zenith_deg": 49.78712480515871,
+      "solar_elevation_deg": 40.21287519484129,
+      "sin_solar_elevation": 0.6456293075004044,
+      "solar_azimuth_deg": 261.9006230514701,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 16.53588933474642,
+      "apparent_solar_hour": 16.444665402811886,
+      "equation_of_time_min": -5.473435916072112,
+      "solar_zenith_deg": 62.41540117599002,
+      "solar_elevation_deg": 27.58459882400998,
+      "sin_solar_elevation": 0.463057805773345,
+      "solar_azimuth_deg": 270.45422121405693,
+      "days_in_year": 365
+    },
+    "weight": 0.3798505555555556,
+    "radiation": {
+      "shortwave_W_m2": 386.68832390152323,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 773.1726565540949,
+      "shortwave_ceiling_normalized": 491.2611648847089
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 28970,
+    "at": {
+      "mean_solar_hour": 14.358262668079753,
+      "apparent_solar_hour": 14.27834490602057,
+      "equation_of_time_min": -4.795065723550994,
+      "solar_zenith_deg": 36.42301000446464,
+      "solar_elevation_deg": 53.57698999553536,
+      "sin_solar_elevation": 0.8046554152286312,
+      "solar_azimuth_deg": 246.47411519640065,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 13.535889334746422,
+      "apparent_solar_hour": 13.455861317676938,
+      "equation_of_time_min": -4.801681024169062,
+      "solar_zenith_deg": 27.59142355247591,
+      "solar_elevation_deg": 62.40857644752409,
+      "sin_solar_elevation": 0.8862729188109342,
+      "solar_azimuth_deg": 231.10634018769417,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 14.535889334746422,
+      "apparent_solar_hour": 14.45599541243834,
+      "equation_of_time_min": -4.793635338484968,
+      "solar_zenith_deg": 38.48118576542238,
+      "solar_elevation_deg": 51.51881423457762,
+      "sin_solar_elevation": 0.7828125299982169,
+      "solar_azimuth_deg": 249.04033284588394,
+      "days_in_year": 365
+    },
+    "weight": 0.8223733333333333,
+    "radiation": {
+      "shortwave_W_m2": 775.6489768304347,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 995.5709378544582,
+      "shortwave_ceiling_normalized": 957.1222066402893
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 29092,
+    "at": {
+      "mean_solar_hour": 11.200092390301975,
+      "apparent_solar_hour": 11.150400588239203,
+      "equation_of_time_min": -2.9815081237664143,
+      "solar_zenith_deg": 24.697787835351292,
+      "solar_elevation_deg": 65.30221216464871,
+      "sin_solar_elevation": 0.908524310512048,
+      "solar_azimuth_deg": 148.87308266867137,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 10.535889334746422,
+      "apparent_solar_hour": 10.48607500445254,
+      "equation_of_time_min": -2.988859817632929,
+      "solar_zenith_deg": 30.070912179053874,
+      "solar_elevation_deg": 59.92908782094612,
+      "sin_solar_elevation": 0.8654059151601804,
+      "solar_azimuth_deg": 131.03180517838194,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 11.535889334746422,
+      "apparent_solar_hour": 11.486259519316976,
+      "equation_of_time_min": -2.977788925766797,
+      "solar_zenith_deg": 22.89292416026104,
+      "solar_elevation_deg": 67.10707583973897,
+      "sin_solar_elevation": 0.9212334540649394,
+      "solar_azimuth_deg": 160.27455939728156,
+      "days_in_year": 365
+    },
+    "weight": 0.6642030555555556,
+    "radiation": {
+      "shortwave_W_m2": 920.9638547296837,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1003.8324741688592,
+      "shortwave_ceiling_normalized": 1018.6766668637413
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 29545,
+    "at": {
+      "mean_solar_hour": 15.883219056968642,
+      "apparent_solar_hour": 16.001164344125378,
+      "equation_of_time_min": 7.076717229404182,
+      "solar_zenith_deg": 64.79127810182251,
+      "solar_elevation_deg": 25.208721898177487,
+      "sin_solar_elevation": 0.42591702468962767,
+      "solar_azimuth_deg": 253.1801462434309,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 15.535889334746422,
+      "apparent_solar_hour": 15.653744933237604,
+      "equation_of_time_min": 7.071335909470978,
+      "solar_zenith_deg": 60.66975466336999,
+      "solar_elevation_deg": 29.330245336630007,
+      "sin_solar_elevation": 0.4898427320868696,
+      "solar_azimuth_deg": 249.59209300147592,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 16.53588933474642,
+      "apparent_solar_hour": 16.654003137732985,
+      "equation_of_time_min": 7.086828179193783,
+      "solar_zenith_deg": 72.95041427620001,
+      "solar_elevation_deg": 17.049585723799993,
+      "sin_solar_elevation": 0.2931992139159492,
+      "solar_azimuth_deg": 259.0070232572783,
+      "days_in_year": 365
+    },
+    "weight": 0.34732972222222225,
+    "radiation": {
+      "shortwave_W_m2": 395.2137376225352,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 967.9724475499529,
+      "shortwave_ceiling_normalized": 852.635550525031
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 29606,
+    "at": {
+      "mean_solar_hour": 14.297814334746423,
+      "apparent_solar_hour": 14.439810661920154,
+      "equation_of_time_min": 8.519779630423857,
+      "solar_zenith_deg": 48.398021283232225,
+      "solar_elevation_deg": 41.601978716767775,
+      "sin_solar_elevation": 0.6639520375550195,
+      "solar_azimuth_deg": 232.8672644092824,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 13.535889334746422,
+      "apparent_solar_hour": 13.677694750189108,
+      "equation_of_time_min": 8.508324926561198,
+      "solar_zenith_deg": 41.4684210896181,
+      "solar_elevation_deg": 48.5315789103819,
+      "sin_solar_elevation": 0.749320814003318,
+      "solar_azimuth_deg": 219.9496993932213,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 14.535889334746422,
+      "apparent_solar_hour": 14.677945302710556,
+      "equation_of_time_min": 8.523358077848128,
+      "solar_zenith_deg": 50.8286339838291,
+      "solar_elevation_deg": 39.1713660161709,
+      "sin_solar_elevation": 0.6316419395919355,
+      "solar_azimuth_deg": 236.30446056830135,
+      "days_in_year": 365
+    },
+    "weight": 0.761925,
+    "radiation": {
+      "shortwave_W_m2": 675.5327549280042,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1039.3709096863715,
+      "shortwave_ceiling_normalized": 1010.5901105511799
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 33496,
+    "at": {
+      "mean_solar_hour": 10.988738501413088,
+      "apparent_solar_hour": 11.026783997297501,
+      "equation_of_time_min": 2.2827297530647437,
+      "solar_zenith_deg": 17.14930981729043,
+      "solar_elevation_deg": 72.85069018270957,
+      "sin_solar_elevation": 0.9555396042763804,
+      "solar_azimuth_deg": 127.66166395683814,
+      "days_in_year": 366
+    },
+    "floor": {
+      "mean_solar_hour": 10.535889334746422,
+      "apparent_solar_hour": 10.573984978211033,
+      "equation_of_time_min": 2.2857386078767474,
+      "solar_zenith_deg": 21.987478784361734,
+      "solar_elevation_deg": 68.01252121563826,
+      "sin_solar_elevation": 0.9272656976168723,
+      "solar_azimuth_deg": 115.55225651019039,
+      "days_in_year": 366
+    },
+    "ceiling": {
+      "mean_solar_hour": 11.535889334746422,
+      "apparent_solar_hour": 11.573874191391225,
+      "equation_of_time_min": 2.2790913986881263,
+      "solar_zenith_deg": 12.661840542477812,
+      "solar_elevation_deg": 77.33815945752218,
+      "sin_solar_elevation": 0.9756807469468689,
+      "solar_azimuth_deg": 151.94184720184268,
+      "days_in_year": 366
+    },
+    "weight": 0.4528491666666667,
+    "radiation": {
+      "shortwave_W_m2": 1035.3767880420025,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1080.1558452866136,
+      "shortwave_ceiling_normalized": 1087.6552310921752
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 33623,
+    "at": {
+      "mean_solar_hour": 15.799849056968643,
+      "apparent_solar_hour": 15.813087515505584,
+      "equation_of_time_min": 0.794307512216418,
+      "solar_zenith_deg": 50.83101860785111,
+      "solar_elevation_deg": 39.16898139214889,
+      "sin_solar_elevation": 0.6316096730692968,
+      "solar_azimuth_deg": 273.75783164902,
+      "days_in_year": 366
+    },
+    "floor": {
+      "mean_solar_hour": 15.535889334746422,
+      "apparent_solar_hour": 15.549164448099075,
+      "equation_of_time_min": 0.7965068011592542,
+      "solar_zenith_deg": 47.534165790731436,
+      "solar_elevation_deg": 42.465834209268564,
+      "sin_solar_elevation": 0.6751504449681184,
+      "solar_azimuth_deg": 271.70703625296784,
+      "days_in_year": 366
+    },
+    "ceiling": {
+      "mean_solar_hour": 16.53588933474642,
+      "apparent_solar_hour": 16.549025544419703,
+      "equation_of_time_min": 0.7881725803968915,
+      "solar_zenith_deg": 59.93994652691447,
+      "solar_elevation_deg": 30.06005347308553,
+      "sin_solar_elevation": 0.5009074331167882,
+      "solar_azimuth_deg": 279.2278475693878,
+      "days_in_year": 366
+    },
+    "weight": 0.26395972222222225,
+    "radiation": {
+      "shortwave_W_m2": 631.9196101425533,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1014.8551084508812,
+      "shortwave_ceiling_normalized": 960.4362050546252
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 40111,
+    "at": {
+      "mean_solar_hour": 10.503629612524197,
+      "apparent_solar_hour": 10.396258248650488,
+      "equation_of_time_min": -6.442281832422505,
+      "solar_zenith_deg": 26.531317615832858,
+      "solar_elevation_deg": 63.46868238416714,
+      "sin_solar_elevation": 0.8946903382046132,
+      "solar_azimuth_deg": 119.77833375877631,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 9.535889334746422,
+      "apparent_solar_hour": 9.428480804956761,
+      "equation_of_time_min": -6.444511787379586,
+      "solar_zenith_deg": 37.75936018845527,
+      "solar_elevation_deg": 52.24063981154473,
+      "sin_solar_elevation": 0.7905895476393647,
+      "solar_azimuth_deg": 104.44355934542101,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 10.535889334746422,
+      "apparent_solar_hour": 10.428519214762437,
+      "equation_of_time_min": -6.442207199039063,
+      "solar_zenith_deg": 26.182487660500094,
+      "solar_elevation_deg": 63.817512339499906,
+      "sin_solar_elevation": 0.8973932731348098,
+      "solar_azimuth_deg": 120.45466622822434,
+      "days_in_year": 365
+    },
+    "weight": 0.9677402777777778,
+    "radiation": {
+      "shortwave_W_m2": 946.2902745097812,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 1038.2997155604592,
+      "shortwave_ceiling_normalized": 1058.3193422198894
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 40192,
+    "at": {
+      "mean_solar_hour": 16.210550445857535,
+      "apparent_solar_hour": 16.110462044430857,
+      "equation_of_time_min": -6.0053040856006055,
+      "solar_zenith_deg": 57.51556154445873,
+      "solar_elevation_deg": 32.48443845554127,
+      "sin_solar_elevation": 0.5370705232574221,
+      "solar_azimuth_deg": 269.1242759567801,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 15.535889334746422,
+      "apparent_solar_hour": 15.435748841453755,
+      "equation_of_time_min": -6.0084295975599975,
+      "solar_zenith_deg": 49.09491821435757,
+      "solar_elevation_deg": 40.90508178564243,
+      "sin_solar_elevation": 0.6548078507274218,
+      "solar_azimuth_deg": 263.10988098602985,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 16.53588933474642,
+      "apparent_solar_hour": 16.435826103356025,
+      "equation_of_time_min": -6.003793883423806,
+      "solar_zenith_deg": 61.724830773922506,
+      "solar_elevation_deg": 28.275169226077494,
+      "sin_solar_elevation": 0.47370658435376695,
+      "solar_azimuth_deg": 271.52017703106605,
+      "days_in_year": 365
+    },
+    "weight": 0.6746611111111112,
+    "radiation": {
+      "shortwave_W_m2": 508.59772001989376,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 987.4889985851069,
+      "shortwave_ceiling_normalized": 927.4529071193692
+    }
+  },
+  {
+    "city": "phoenix",
+    "orbit": 40376,
+    "at": {
+      "mean_solar_hour": 11.318563501413088,
+      "apparent_solar_hour": 11.252333733184413,
+      "equation_of_time_min": -3.9737860937204847,
+      "solar_zenith_deg": 22.86553223388594,
+      "solar_elevation_deg": 67.13446776611406,
+      "sin_solar_elevation": 0.9214193264971944,
+      "solar_azimuth_deg": 150.81604362713898,
+      "days_in_year": 365
+    },
+    "floor": {
+      "mean_solar_hour": 10.535889334746422,
+      "apparent_solar_hour": 10.469534410478987,
+      "equation_of_time_min": -3.9812954560460945,
+      "solar_zenith_deg": 29.23090235258285,
+      "solar_elevation_deg": 60.769097647417155,
+      "sin_solar_elevation": 0.8726588242843117,
+      "solar_azimuth_deg": 128.91503353642202,
+      "days_in_year": 365
+    },
+    "ceiling": {
+      "mean_solar_hour": 11.535889334746422,
+      "apparent_solar_hour": 11.469694347830181,
+      "equation_of_time_min": -3.9716992149743953,
+      "solar_zenith_deg": 21.70544719679327,
+      "solar_elevation_deg": 68.29455280320673,
+      "sin_solar_elevation": 0.9290974149492066,
+      "solar_azimuth_deg": 158.620866674583,
+      "days_in_year": 365
+    },
+    "weight": 0.7826741666666667,
+    "radiation": {
+      "shortwave_W_m2": 936.2567957784403,
+      "shortwave_interpolation_method": "interpolated_hourly_sw_over_cosine",
+      "shortwave_floor_normalized": 990.0706649561544,
+      "shortwave_ceiling_normalized": 1023.3312190367906
+    }
+  }
+]

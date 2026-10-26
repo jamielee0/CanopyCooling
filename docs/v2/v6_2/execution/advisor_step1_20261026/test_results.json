@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "runner": "Python unittest, urbanv2 environment",
+  "suites": [
+    {
+      "command": "PYTHONPATH=src /Users/jmlee/miniforge3/envs/urbanv2/bin/python -m unittest discover -s tests/v6_2_advance -p 'test_advisor_step1_inputs.py' -v",
+      "passed": 11
+    },
+    {
+      "command": "PYTHONPATH=src /Users/jmlee/miniforge3/envs/urbanv2/bin/python -m unittest discover -s tests/v6_2_advance -p 'test_step6_inputs.py' -v",
+      "passed": 10
+    }
+  ],
+  "total_passed": 21,
+  "failed": 0,
+  "note": "pytest is not installed in this environment; the existing unittest suites were run directly and passed. No dependency installation or test substitution was needed."
+}

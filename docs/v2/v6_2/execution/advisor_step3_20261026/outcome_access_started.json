@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-26T20:41:52.293538+00:00",
+  "prediction_commit": "d33734b1fdf88860f827d680ba57900c965b0519",
+  "commit_verified_before_access": true,
+  "authorized": "user request to do advisor Step3",
+  "allowed_files": [
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/6281_paired_primary_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/6281_spatial_8km_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/6510_paired_primary_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/6510_spatial_8km_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/33496_paired_primary_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/33496_spatial_8km_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/33623_paired_primary_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/33623_spatial_8km_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40111_paired_primary_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40111_spatial_8km_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40192_paired_primary_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40192_spatial_8km_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40376_paired_primary_SEALED.npz",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40376_spatial_8km_SEALED.npz"
+  ],
+  "access": "read archived temperature canopy coefficient/draw entries only; no native cells or new Stage1 fit"
+}

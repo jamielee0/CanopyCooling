@@ -1,0 +1,33 @@
+{
+  "status": "STEP2_COMPLETE_VERIFIED",
+  "models": 6,
+  "coefficient_rows": 18,
+  "ratio_rows": 6,
+  "unique_2023_passes": 16,
+  "common_footprint_passes": 11,
+  "new_stage1_fits": 0,
+  "other_year_outcomes_opened": false,
+  "step3_predictions_computed": false,
+  "files": {
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/README.md": "c069882a4770f8f1a10caa1cbacffd3d3c1d4b24114dd03230fbe8fcad208330",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/atlanta_shortwave.pdf": "1719fd40e7a9567bc060a0bc08a5718d0f0df75291fe9ca3d29c47b3c570f887",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/atlanta_shortwave.png": "247b4a0b9c8c571742796a6a0c619285cde6c1fcd8c0e6151bf7d95f927d12df",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/atlanta_sun_elevation.pdf": "3f2a27bb2eb76d9a2d1cee27de22f056d0f11173d1e8efa1abacdab764125b0b",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/atlanta_sun_elevation.png": "a149014042446e3279a5c55a2e52571a39a4405a247455c5d634c6484b547c1d",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/coefficients.csv": "ac7bf674b960ee3a7290e7d6761fc2dfe74fb8d326f18397e4828f25e68e2683",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/fitted_values_and_residuals.csv": "281123c15489345e58dad2809fbc2b1a13cfb4cb396757b02d1f426ff01a584e",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/model_diagnostics.csv": "ac1e25f27fb5a75d3f14f30c7776655ac57955ce818f1a5d5053ac6bbe5dde9a",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/model_inputs_2023.csv": "4122e40a7273a5d29c93bc43b0afff7b75d13986d0f6f06c826fb99ba97fd541",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/morning_afternoon_ratios.csv": "e95179cd12d26bc3416f055797efa8186120563c65a81cf4b3989a3bd77dc0b2",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/phoenix_shortwave.pdf": "0920804f1c2bea6873801a41ef96ddfad565cdcd01d65a9b2074f5fb2d5cc30c",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/phoenix_shortwave.png": "3769ee7cd1383035cb8e18a33224248154f00c041de7247be30bc9b92aef0c8c",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/phoenix_sun_elevation.pdf": "89a99cca2950ed7b7d0e59f24843b423f7197d9e6b0ae92c84569e2736d535ff",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/phoenix_sun_elevation.png": "c89bda19605b330f28936e226afd50d93527871a3fc60e77c5535c37e848e9ad"
+  },
+  "tests_passed": 8,
+  "all_six_models_independently_verified": true,
+  "all_four_figures_visually_checked": true,
+  "committed": false,
+  "pushed": false,
+  "sent": false
+}

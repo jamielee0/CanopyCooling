@@ -1,10 +1,10 @@
 study: urban_tree_canopy_cooling_observation_time_v6_2
 protocol_version: '6.2'
-updated_on: '2026-10-06'
-status: CURRENT_2023_EFFECTS_RELEASED_REVIEW_COMPLETE_SCALE_MARGIN_PENDING
+updated_on: '2026-10-26'
+status: ADVISOR_STEP3_PREDICTION_TEST_COMPLETE_SEVEN_OTHER_YEAR_TEMPERATURES_RELEASED
 scope: same_v6_2_protocol_amended_in_place
 authority:
-  current_user_request: 2026-10-06_user_lifts_current2023_sealing_and_requests_next_steps_release_review_complete
+  current_user_request: 2026-10-26_do_advisor_section7_step3_including_commit_before_outcome_access
   source_order:
   - latest_explicit_user_continuation_and_prior_gradient_disclosure_authorizations_within_recorded_scope
   - new_next_steps_guidance_for_user_authorized_outcome_hierarchy_and_results_review_before_extension
@@ -16,7 +16,7 @@ authority:
   current_specification: docs/v2/v6_2/protocol_v6_2.yml
   execution_plan: docs/v2/v6_2/pilot_plan_v6_2.md
   pre_update_snapshot: docs/v2/v6_2/archive/before_meeting_update_20260919
-  current_pre_update_snapshot: docs/v2/v6_2/archive/before_results_release_20261006
+  current_pre_update_snapshot: docs/v2/v6_2/archive/before_advisor_step3_20261026
 control_boundary:
   documentation_update_authorized: true
   analysis_executed_by_this_update: true
@@ -32,7 +32,7 @@ control_boundary:
   full_city_scaling_authorized: false
   full_archive_thermal_processing_authorized: false
   release_requires: bounded_extension_and_LST_gradient_disclosure_authorized_by_user; final_scale_ruling_and_full_rollout_require_separate_recorded_decisions
-  coefficient_unsealing_authorized_by_this_update: current16pass2023_review_and_recorded_followup_authorized_without_prior_tolerance; other_year_scope_unchanged
+  coefficient_unsealing_authorized_by_this_update: current16pass2023_review_plus_seven_other_year_Phoenix_temperature_points_and_spatial_intervals_after_verified_Step3_prediction_commit; no_other_expansion
   old_gate_A_B_and_D016_stops: historical_design_results_not_current_pooled_model_gates
   old_runners: historical_preserved; use_run_v6_2_pooled_pilot.py_for_current_model
   pilot_execution_authorized: true
@@ -1277,3 +1277,115 @@ current2023_effect_release_20261006:
   other_year_release: false
   expansion: false
   external_sending: false
+
+advisor_step1_20261026:
+  status: COMPLETE_INPUTS_ONLY
+  sequence: Section 7 of latest advisor review; distinct from historical review Steps
+    1–7
+  execution_record: docs/v2/v6_2/execution/advisor_step1_20261026/
+  packet: deliverables/Advisor_Step1_Inputs_23Passes_v6_2_20261026/
+  passes:
+    main_2023: 16
+    other_year_phoenix_nonthermal_only: 7
+  geolocation:
+    product: ECO_L1B_GEO.002
+    field: L1GEOMetadata/GeolocationAccuracyQA
+    source_scenes: 40
+    best: 38
+    good: 2
+    census_usable:
+    - best
+    - good
+    exact_cached_metadata_recovery_user_approved: true
+    actual_alignment_verified: false
+  weather:
+    product: HRRR CONUS wrfsfcf00 analysis
+    hours: 46
+    shortwave_shortName: sdswrf
+    shortwave_units: W m**-2
+    domain: unchanged frozen Census urban-area grid-center support
+    shortwave_interpolation: interpolate hourly sw/cos(zenith), multiply acquisition
+      cosine; use other ratio if one hourly cosine <0.1; stop if both below
+    existing_2023_weather_reproduced: true
+  timing:
+    convention: existing model/selection-table acquisition time
+    approved_discrepancy_orbits:
+    - 6281
+    - 33623
+    - 40111
+    - 40376
+    individual_scene_times_preserved: true
+    leap_year_length_explicit: true
+  all_original_2023_fields_preserved: true
+  new_fits: 0
+  seven_other_year_outcomes_opened: false
+  further_synthetic_calibration: STOPPED
+  further_temperature_energy_agreement: STOPPED
+  further_quadratic_analysis: STOPPED
+  step2_models_executed: false
+  step3_predictions_executed: false
+  other_year_release_requires: dated committed Step3 prediction note before outcome
+    access and separately authorized execution
+  commit_push_or_external_send_authorized_by_step1: false
+
+advisor_step2_20261026:
+  status: COMPLETE_VERIFIED
+  execution_record: docs/v2/v6_2/execution/advisor_step2_20261026/
+  packet: deliverables/Advisor_Step2_Models_2023_v6_2_20261026/
+  sample: 16 existing 2023 passes only; 11 Phoenix original/common and 5 Atlanta original
+  model_count: 6
+  formulas:
+  - cooling ~ shortwave_W_m2 + after_noon
+  - cooling ~ sin_solar_elevation + after_noon
+  after_noon: apparent_solar_hour >12
+  weighting: unweighted pass-level OLS as explicitly requested
+  coefficient_uncertainty: ordinary OLS SE and t intervals; conditional on specified
+    model; full Stage1 covariance not propagated
+  residual_SD: sqrt(SSE/(n-3))
+  spatial_intervals: existing 8 km pass intervals shown separately, not weights
+  common_population_weather: same city-domain Step1 inputs for matched pass
+  ratio_summary: within-arm mean of individual cooling/shortwave ratios
+  atlanta: descriptive; n=5, residual df=2, no arm exposure-range overlap
+  all_six_after_noon_intervals_include_zero: true
+  new_stage1_fits: 0
+  other_year_outcomes_opened: false
+  step3_predictions_computed: false
+  further_synthetic_calibration_energy_agreement_quadratic: STOPPED
+  commit_push_send_authorized: false
+
+advisor_step3_20261026:
+  status: COMPLETE_VERIFIED
+  execution_record: docs/v2/v6_2/execution/advisor_step3_20261026/
+  packet: deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/
+  prediction_model: Step2 original-population Phoenix shortwave plus after_noon, 11
+    dates
+  prediction_interval: individual 95% obs_ci interval including residual variance
+  prediction_commit: d33734b1fdf88860f827d680ba57900c965b0519
+  prediction_commit_local_only: true
+  commit_bytes_verified_before_outcome_access: true
+  other_year_temperature_estimates_opened: 7
+  heldout_points_inside_PI: 7
+  afternoon_points_inside_PI: 3
+  pre_access_extrapolation_labels:
+  - 6281
+  - 33496
+  refit: same unweighted shortwave-plus-after_noon formula; all 18 Phoenix original
+    populations
+  after_noon_estimate_K_per_10pp: 0.20164104125745966
+  after_noon_SE: 0.1041296684585404
+  after_noon_ci95:
+  - -0.0203060932577864
+  - 0.4235881757727057
+  residual_SD: 0.16539472199851443
+  near_zero_margin: null
+  release_scope: seven archived temperature points, 8 km spatial intervals and prescribed
+    Step3 comparison/refit only
+  main_2023_pilot_unchanged: true
+  new_stage1_fits: 0
+  raw_thermal_cell_access: false
+  step4_started: false
+  next: Provide Steps1–3 to advisor before Step4; external sending requires explicit
+    user request
+  further_synthetic_energy_agreement_quadratic: STOPPED
+  pushed: false
+  sent: false

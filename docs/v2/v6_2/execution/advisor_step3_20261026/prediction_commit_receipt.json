@@ -1,0 +1,24 @@
+{
+  "commit": "d33734b1fdf88860f827d680ba57900c965b0519",
+  "commit_time": "2026-10-26T16:41:45-04:00",
+  "branch": "advisor-step3-20261026",
+  "checkout": "/Users/jmlee/Documents/TreeProject/outputs/v6_2/scientific/advisor_step3_20261026/git_checkout",
+  "repository": "https://github.com/jamielee0/CanopyCooling",
+  "pushed": false,
+  "other_year_outcomes_opened_at_commit": false,
+  "files": {
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/prediction_note_20261026.md": "ba3730db390bf98fe32da0473872d6254c0de443d6fa0330c7719816570ac46a",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/predictions_7.csv": "481089b4bc8530d4ef7471c4cf4bf7cd485b7e85d4ce7d7073f0a080a5fa6543",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/reproduce_predictions.py": "3e86e54b5b8397b08028901a2e974215529ff5cd7c42c20b2f6059350dd79f44",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/target_inputs_7.csv": "17c0e8ca71b341deeb2bcf4d3e85b53c0cff74a5a899ddb9cfa2f1a87ef80092",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/training_11.csv": "de576e0fabe18027d00feb99607bfe51ff95a81ce226583871c49a350ba0896d",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/training_model.json": "5827af9724b2c3a602a3e46720b52dbbcd56b5197757264fdafdfabcc9cc4659",
+    "src/v6_2_advance/advisor_step2_models.py": "467f104abdf9db7de68d04e4323c24689ed583b4859148d29858674892291c15",
+    "src/v6_2_advance/advisor_step3_prediction.py": "2f111e55d493d90edf91854d30d14a34169d3b69b948e83ab3fa40a5ec4e8c11",
+    "src/v6_2_advance/run_advisor_step3.py": "ebf8a56236b403a25e9e0ae5541153caeb9fac161c19caa40d356aae527c30af",
+    "tests/v6_2_advance/test_advisor_step3_prediction.py": "5bcd2f07281453ecf30f686eb069daa94f931595e9300da074c55ed7530b0d0c",
+    "docs/v2/v6_2/execution/advisor_step3_20261026/scope.json": "bad45e4d3899b55b549b0e7811a39ccc800f62b4d8c52f9dc6938892f320468b",
+    "docs/v2/v6_2/execution/advisor_step3_20261026/prediction_freeze.json": "0ae3bf24d8736efa54ae3430a219acb1dc00d851be6fc2f7003390774e6e164b",
+    "docs/v2/v6_2/execution/advisor_step3_20261026/pre_access_verification.json": "96809626bc258fac44960e85b7f0e471056363dd8bb8e10f70a198dc99e4187e"
+  }
+}

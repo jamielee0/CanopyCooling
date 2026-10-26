@@ -1,0 +1,18 @@
+{
+  "record_date": "2026-10-26",
+  "user_request": "Complete the entire Step 1 of Section 7 and ask before workarounds",
+  "advisor_source": "/Users/jmlee/.codex/attachments/214861ee-0fcd-4f14-9d31-4f79dc4e4a29/CanopyCooling_Pilot_Review_and_Next_Steps.docx",
+  "advisor_source_sha256": "b7eeab0ef890f9ca7a01386c383e569cef91ce0cf1a905d3c9e2c19070b0bc12",
+  "scope": "23-pass nonthermal input table, geolocation metadata, HRRR f00 surface shortwave and meteorology, sun geometry",
+  "geolocation_clarification": "User explicitly approved recovering exact GeolocationAccuracyQA from original ECO_L1B_GEO.002 metadata, cached first",
+  "approved_geo_recovery": true,
+  "step2_models_authorized": false,
+  "step3_other_year_effect_access_authorized": false,
+  "other_year_effects_opened": false,
+  "commit_or_push_authorized": false,
+  "external_sending_authorized": false,
+  "pause_synthetic_calibration_energy_agreement_and_further_quadratic": true,
+  "data_link_target": "/Users/jmlee/Documents/Documents - Jamie\u2019s Mac mini/TreeProject/project/data",
+  "approved_keep_model_table_times": true,
+  "timing_clarification": "User explicitly chose to retain model-table acquisition times for orbits 6281, 33623, 40111 and 40376 and record the approximately 52-second differences from older geometry-audit binding times."
+}

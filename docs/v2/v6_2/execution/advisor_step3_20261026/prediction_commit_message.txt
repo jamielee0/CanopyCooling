@@ -1,0 +1,3 @@
+Record seven Phoenix predictions before opening held-out outcomes
+
+Freeze the advisor Step 3 shortwave predictions, individual 95% prediction intervals, source inputs, expectation note and access-gated implementation. Held-out cooling estimates remain unopened at this commit.

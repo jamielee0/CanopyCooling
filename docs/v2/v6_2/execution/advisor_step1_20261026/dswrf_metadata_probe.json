@@ -1,0 +1,24 @@
+{
+  "shortName": "sdswrf",
+  "name": "Surface downward short-wave radiation flux",
+  "units": "W m**-2",
+  "paramId": 260087,
+  "discipline": 0,
+  "parameterCategory": 4,
+  "parameterNumber": 7,
+  "typeOfLevel": "surface",
+  "level": 0,
+  "forecastTime": 0,
+  "stepType": "instant",
+  "stepRange": "0",
+  "validityDate": 20230607,
+  "validityTime": 1500,
+  "numberOfMissing": 0,
+  "md5Section3": "78367561440d7c7b608b8532a02e4780",
+  "url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20230607/conus/hrrr.t15z.wrfsfcf00.grib2",
+  "byte_range": [
+    81042804,
+    83405005
+  ],
+  "sha256": "61205db588b152c419aef412278f4c87ab6de457f015cf282bd26f141c0a74ec"
+}

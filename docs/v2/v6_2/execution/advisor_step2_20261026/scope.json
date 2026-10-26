@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-26",
+  "request": "do step 2",
+  "source": "Section 7 Step 2 of CanopyCooling_Pilot_Review_and_Next_Steps.docx",
+  "source_path": "/Users/jmlee/.codex/attachments/214861ee-0fcd-4f14-9d31-4f79dc4e4a29/CanopyCooling_Pilot_Review_and_Next_Steps.docx",
+  "models": "Unweighted OLS cooling ~ sw + after_noon and cooling ~ sin_solar_elevation + after_noon; city-specific; Phoenix original/common populations, Atlanta original",
+  "sample": "16 existing 2023 passes only; same 11 Phoenix and 5 Atlanta dates",
+  "uncertainty": "ordinary OLS coefficient SEs and residual SD as explicitly requested; 8 km spatial pass intervals shown separately, not regression weights",
+  "outputs": [
+    "city shortwave figures",
+    "sun-elevation sensitivity figures",
+    "coefficients and SEs",
+    "model diagnostics including residual SD",
+    "morning/afternoon mean of individual cooling/shortwave ratios"
+  ],
+  "other_year_outcomes_opened": false,
+  "step3_predictions_authorized": false,
+  "new_pixel_fits": false,
+  "common_footprint_weather": "same Step1 city-domain radiation and sun reference for matched pass; no new common-domain weather extraction",
+  "commit_push_send_authorized": false,
+  "source_sha256": "b7eeab0ef890f9ca7a01386c383e569cef91ce0cf1a905d3c9e2c19070b0bc12"
+}

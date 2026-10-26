@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "pass_rows": 23,
+  "original_rows_preserved": 16,
+  "other_year_rows_with_all_outcome_fields_blank": 7,
+  "checked_outcome_fields": [
+    "maximum_slope_design_leverage",
+    "gradient_K_per_10pp",
+    "cooling_K_per_10pp",
+    "cooling_q025_1km",
+    "cooling_q975_1km",
+    "cooling_q025_2km",
+    "cooling_q975_2km",
+    "cooling_q025_4km",
+    "cooling_q975_4km",
+    "cooling_q025_8km",
+    "cooling_q975_8km",
+    "temperature_slope_K_per_canopy_fraction",
+    "equivalent_point_8km",
+    "equivalent_q025_8km",
+    "equivalent_q975_8km",
+    "difference_8km",
+    "difference_q025_8km",
+    "difference_q975_8km"
+  ],
+  "scene_categories": {
+    "best": 38,
+    "good": 2
+  },
+  "hourly_jobs": 46,
+  "checked_grib_fields": 230,
+  "historical_hourly_cell_arrays_reproduced": 32,
+  "approved_timestamp_differences_seconds": {
+    "6281": 51.97,
+    "33623": 51.969,
+    "40111": 51.97,
+    "40376": 51.97
+  },
+  "shortwave_recomputed_rows": 23,
+  "known_answer_tests_passed": 21,
+  "csv_sha256": "228305607c7334af05ca04e20f861603ca9e3708f050e3bcad31768a0e3e5f47",
+  "verifier_sha256": "c44a85a85b2e8ececbe5a1d508ea73b599f74d185b3ec068904f6ff172b0c25b"
+}

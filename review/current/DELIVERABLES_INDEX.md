@@ -1,3 +1,9 @@
+# Deliverables index
+
+**Latest: [Advisor Section 7, Steps 1–3](advisor_steps_1_3_20261026/README.md), completed 26 October 2026.** The page links every newly requested table, figure and prediction note.
+
+## Earlier six-task checklist — preserved history
+
 # Deliverables requested in Alizadeh’s document
 
 Each task folder has the same labelled checklist. Available files link directly from the tables below. Pending items are explicit.

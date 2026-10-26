@@ -1,0 +1,23 @@
+{
+  "status": "STEP1_INPUTS_COMPLETE",
+  "passes": 23,
+  "main_2023": 16,
+  "unopened_other_year": 7,
+  "scene_count": 40,
+  "scene_categories": {
+    "best": 38,
+    "good": 2,
+    "suspect": 0,
+    "poor": 0
+  },
+  "complete_radiation_rows": 23,
+  "weather_hours": 46,
+  "low_sun_single_ratio_rows": 0,
+  "all_original_2023_table_fields_preserved": true,
+  "other_year_effect_fields_blank": true,
+  "new_fits": 0,
+  "raw_thermal_values_read": false,
+  "seven_other_year_effects_opened": false,
+  "csv_sha256": "228305607c7334af05ca04e20f861603ca9e3708f050e3bcad31768a0e3e5f47",
+  "source_and_code_hashes_verified": true
+}
