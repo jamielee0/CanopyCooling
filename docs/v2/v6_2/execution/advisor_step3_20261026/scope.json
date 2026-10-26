@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-26",
+  "user_request": "do step 3",
+  "source": "Section 7 Step 3 of the advisor review",
+  "prediction_model": "Step2 Phoenix original population OLS cooling ~ shortwave_W_m2 + after_noon trained on 11 2023 passes",
+  "prediction_interval": "statsmodels get_prediction().summary_frame(alpha=.05) obs_ci_lower/upper; individual 95% prediction intervals, not mean confidence intervals",
+  "pre_access_requirement": "Save dated prediction note and commit it, verify committed bytes before any other-year coefficient file is read",
+  "expectation": "The three afternoon held-out passes fall inside their individual prediction intervals, and the after_noon term stays near zero or positive after adding all seven. No numerical near-zero margin is invented.",
+  "refit": "same unweighted formula, original populations, all 18 Phoenix passes; ordinary OLS SEs and residual SD",
+  "original_2023_primary_scope_unchanged": true,
+  "other_year_access_authorized_only_after_commit": true,
+  "seven_orbits": [
+    6281,
+    6510,
+    33496,
+    33623,
+    40111,
+    40192,
+    40376
+  ],
+  "no_stage1_refits": true,
+  "no_step4": true,
+  "further_synthetic_energy_agreement_quadratic": "STOPPED",
+  "commit_authorized_as_required_step3_component": true,
+  "push_or_external_send_authorized": false,
+  "git_strategy": "Separate local checkout of established GitHub repo, matching previous publication workflow; preserve older dirty repository and current export."
+}

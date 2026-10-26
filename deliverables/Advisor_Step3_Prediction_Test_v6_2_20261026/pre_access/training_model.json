@@ -1,0 +1,19 @@
+{
+  "formula": "cooling ~ shortwave_W_m2 + after_noon",
+  "population": "Phoenix original",
+  "n": 11,
+  "params": {
+    "Intercept": 0.2949750434389492,
+    "shortwave_W_m2": 0.0010146373884216688,
+    "after_noon": 0.1827068545034771
+  },
+  "SE": {
+    "Intercept": 0.2578492673009763,
+    "shortwave_W_m2": 0.000257963267373096,
+    "after_noon": 0.1270647796647865
+  },
+  "df_resid": 8,
+  "residual_SD": 0.16621998849999386,
+  "prediction_interval": "individual observation, 95%, obs_ci_lower/obs_ci_upper from summary_frame",
+  "expectation": "Afternoon held-out points fall inside their intervals; refitted after_noon remains near zero or positive; no numerical near-zero threshold supplied."
+}

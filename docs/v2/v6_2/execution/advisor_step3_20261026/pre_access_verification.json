@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "seven_prediction_means_and_individual_intervals_reconstructed_by_QR": true,
+  "prediction_intervals_include_residual_variance": true,
+  "extrapolation_labels_verified": true,
+  "other_year_outcomes_opened": false,
+  "known_answer_gate_and_transformation_tests_passed": 4
+}

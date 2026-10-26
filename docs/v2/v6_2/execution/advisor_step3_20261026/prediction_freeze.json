@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-26",
+  "created_utc": "2026-10-26T20:40:57.058062+00:00",
+  "data_link_target": "/Users/jmlee/Documents/Documents - Jamie\u2019s Mac mini/TreeProject/project/data",
+  "inputs": {
+    "deliverables/Advisor_Step1_Inputs_23Passes_v6_2_20261026/pass_inputs_23.csv": "228305607c7334af05ca04e20f861603ca9e3708f050e3bcad31768a0e3e5f47",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/model_inputs_2023.csv": "4122e40a7273a5d29c93bc43b0afff7b75d13986d0f6f06c826fb99ba97fd541",
+    "deliverables/Advisor_Step2_Models_2023_v6_2_20261026/coefficients.csv": "ac7bf674b960ee3a7290e7d6761fc2dfe74fb8d326f18397e4828f25e68e2683",
+    "deliverables/Sampling_Rebalance_v6_2_20260921/all18_pass_roles_and_precision.csv": "279fc5ff7931aa9afa0cf36216caa915aca7f86d279cc715f70903f03def8834",
+    "docs/v2/v6_2/rebalance_checksums_20260921.sha256": "981fa1fae67b5b21b7f15602492f4f500588f19dde978be4c67a2393a90418e8",
+    "docs/v2/v6_2/execution/advisor_step3_20261026/scope.json": "bad45e4d3899b55b549b0e7811a39ccc800f62b4d8c52f9dc6938892f320468b"
+  },
+  "code": {
+    "src/v6_2_advance/advisor_step2_models.py": "467f104abdf9db7de68d04e4323c24689ed583b4859148d29858674892291c15",
+    "src/v6_2_advance/advisor_step3_prediction.py": "2f111e55d493d90edf91854d30d14a34169d3b69b948e83ab3fa40a5ec4e8c11",
+    "src/v6_2_advance/run_advisor_step3.py": "ebf8a56236b403a25e9e0ae5541153caeb9fac161c19caa40d356aae527c30af",
+    "tests/v6_2_advance/test_advisor_step3_prediction.py": "5bcd2f07281453ecf30f686eb069daa94f931595e9300da074c55ed7530b0d0c"
+  },
+  "expected_archived_estimate_hashes_not_yet_read": {
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/6281_paired_primary_SEALED.npz": "e8bf6b49f943f007d144a6e64126ba175ccfd810fbad21999e8525e304d7fb2e",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/6281_spatial_8km_SEALED.npz": "698e4451b9de6fe94f75e3866a4260f12ea56f369a66a3ec0d5b8b5f70fba018",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/6510_paired_primary_SEALED.npz": "76c0a555ebacef07fca8e3e94219563ae27fa24fc860f70848c0616abfb6ab5d",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/6510_spatial_8km_SEALED.npz": "e51dd792ffd9fe9257d48de405e5388c04b3ff06cd7d1ff30d3cc0acfee6ee6e",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/33496_paired_primary_SEALED.npz": "7b15fc813d76cd9b1d2fc4d0b4da2e179559b044b8bcbfb430cf4a88d8c0021a",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/33496_spatial_8km_SEALED.npz": "92219568d3e817106008c0b1be0ee662bb946f1e781ca1d9a49db540cc2e1179",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/33623_paired_primary_SEALED.npz": "e7c0622fe5060efed3adde1e81ef41bd5c2c46ee3084121949bf9065790a5785",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/33623_spatial_8km_SEALED.npz": "b05881110ab679e3143fd19750ca3a44501489fe4782b0edea56144c4bf7902d",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40111_paired_primary_SEALED.npz": "456449c3b81f3aeded75d4ad795fb0403e3eaba9164cd82b4d909a6ec8f128f0",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40111_spatial_8km_SEALED.npz": "1c26c51fa6db5987ea04e655e69788fefdffe2badd99fd36afb89dc86363c3c4",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40192_paired_primary_SEALED.npz": "1a9adb3e3d548ad09dfdbf99d9e98a95ea494c8b1e2c037be8ba8f8be264f966",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40192_spatial_8km_SEALED.npz": "80910a71aa3543bbb252f4f676a0fda7d90aa4fd8477c7d0e642dacfe3898e4a",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40376_paired_primary_SEALED.npz": "ee3540e7909c5872c4565dd69680fe5e395934aaaa5673c037f22bdad8926a71",
+    "outputs/v6_2/sealed_coefficients/pooled_rebalance_20260921_phoenix/40376_spatial_8km_SEALED.npz": "f806f83df5a82e854da492aa15dcf0abd54fa201acf27c746a684d1bcfb043e9"
+  },
+  "prediction_bundle": {
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/prediction_note_20261026.md": "ba3730db390bf98fe32da0473872d6254c0de443d6fa0330c7719816570ac46a",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/predictions_7.csv": "481089b4bc8530d4ef7471c4cf4bf7cd485b7e85d4ce7d7073f0a080a5fa6543",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/reproduce_predictions.py": "3e86e54b5b8397b08028901a2e974215529ff5cd7c42c20b2f6059350dd79f44",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/target_inputs_7.csv": "17c0e8ca71b341deeb2bcf4d3e85b53c0cff74a5a899ddb9cfa2f1a87ef80092",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/training_11.csv": "de576e0fabe18027d00feb99607bfe51ff95a81ce226583871c49a350ba0896d",
+    "deliverables/Advisor_Step3_Prediction_Test_v6_2_20261026/pre_access/training_model.json": "5827af9724b2c3a602a3e46720b52dbbcd56b5197757264fdafdfabcc9cc4659"
+  },
+  "other_year_outcomes_read": false,
+  "n_target_morning": 4,
+  "n_target_afternoon": 3
+}
