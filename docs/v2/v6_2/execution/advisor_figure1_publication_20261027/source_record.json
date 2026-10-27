@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-27",
+  "request": "can u upload figure 1?",
+  "author": "M. Reza Alizadeh",
+  "source_document": "CanopyCooling_Pilot_Review_and_Next_Steps.docx",
+  "source_document_sha256": "b7eeab0ef890f9ca7a01386c383e569cef91ce0cf1a905d3c9e2c19070b0bc12",
+  "source_member": "word/media/image1.png",
+  "relationship_id": "rId7",
+  "caption": "Figure 1. Canopy-associated cooling for each 2023 pass against sun elevation at acquisition. Bars are the existing 8 km spatial intervals; the dashed curve is a fit proportional to the sine of sun elevation. Late-afternoon passes are labelled with apparent solar time.",
+  "figure": "review/current/advisor_steps_1_3_20261026/reference/reza_review_figure_1.png",
+  "figure_sha256": "569e592734ee0b2ce75d9e23819930e6b1fc4fc29f68b2278ffb576f76acf436",
+  "extraction": "Exact embedded PNG bytes; no image editing or recomputation",
+  "full_review_document_uploaded": false
+}

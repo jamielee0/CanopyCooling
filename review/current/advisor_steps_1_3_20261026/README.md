@@ -4,6 +4,8 @@
 
 The new analyses are consistent with the proposed radiative explanation: **a clear afternoon cooling deficit is no longer evident after accounting for incoming shortwave.** All seven previously unopened Phoenix estimates also fall inside their pre-recorded prediction intervals. Alignment and canopy-layer concerns remain unresolved, so these results do not establish radiation as the sole mechanism.
 
+**[Reza’s original Figure 1](FIGURES.md)** is included alongside the new figures ([direct PNG](reference/reza_review_figure_1.png)).
+
 ## What was done
 
 | Requested step | Completed work | Open the deliverable |

@@ -1,6 +1,16 @@
-# Figures for the advisor’s Steps 2–3
+# Reza’s Figure 1 and our Steps 2–3 figures
 
 [Back to the short review summary](README.md).
+
+## Reference — Figure 1 from Reza’s review
+
+Reproduced unchanged from **M. Reza Alizadeh’s _CanopyCooling Pilot Review and Next Steps_**. This is the original figure mentioned in his email, rather than a new Step 2 fit.
+
+![Figure 1 from Reza’s review: cooling versus sun elevation](reference/reza_review_figure_1.png)
+
+**Original caption:** Figure 1. Canopy-associated cooling for each 2023 pass against sun elevation at acquisition. Bars are the existing 8 km spatial intervals; the dashed curve is a fit proportional to the sine of sun elevation. Late-afternoon passes are labelled with apparent solar time.
+
+[Open/download original-resolution PNG](reference/reza_review_figure_1.png) · [Source and checksum record](../../../docs/v2/v6_2/execution/advisor_figure1_publication_20261027/source_record.json).
 
 ## Step 2 — Phoenix
 
